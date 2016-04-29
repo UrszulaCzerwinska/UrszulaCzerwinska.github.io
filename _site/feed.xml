@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Urszula Czerwinska</title>
+    <description>Science &amp;#x2192; Data Science</description>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 29 Apr 2016 15:56:55 +0200</pubDate>
+    <lastBuildDate>Fri, 29 Apr 2016 15:56:55 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Project X</title>
+        <description>&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;18% increase in M, measured by N&lt;/li&gt;
+  &lt;li&gt;…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;p&gt;Project X involved ….&lt;/p&gt;
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/works-example1.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/works-example1.html</guid>
+        
+        <category>This</category>
+        
+        <category>That</category>
+        
+        <category>The other</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>HelloWorld</title>
+        <description>&lt;p&gt;This is a HelloWorld post&lt;/p&gt;
+
+&lt;p&gt;This is R code test&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print(&#39;Hello World&#39;)&lt;/code&gt;`&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/topics/new%20cathegory/helloworld.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/topics/new%20cathegory/helloworld.html</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>topics</category>
+        
+        <category>new cathegory</category>
+        
+      </item>
+    
+      <item>
+        <title>Last topic in group</title>
+        <description>&lt;p&gt;This about sums it all up.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Apr 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/topics/my%20topic%20group/subcattest-topic3.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/topics/my%20topic%20group/subcattest-topic3.html</guid>
+        
+        
+        <category>topics</category>
+        
+        <category>my topic group</category>
+        
+      </item>
+    
+  </channel>
+</rss>
