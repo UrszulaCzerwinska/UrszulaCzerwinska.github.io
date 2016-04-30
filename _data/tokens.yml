@@ -5,7 +5,7 @@
 google-analytics: <google-analytics tracking ID>
 
 # Specify your mail form action, whether it be cgiemail, PHP, whatever
-mailaction: http://gmail.com/cgi-bin/gmail.cgi
+mailaction: https://mail.google.com
 
 # If you've added more vendor contributions that are only applicable to
 # posts on your specific site, you can add to the "credits" list here,
