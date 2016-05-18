@@ -8,7 +8,9 @@ background-image: ab_bg.png
 ---
 <!doctype html>
 <html>
+
 <head>
+
   <meta charset=utf-8 />
  
   <link href="media/cv-screen.css" type="text/css" rel="stylesheet" media="screen">
@@ -28,14 +30,17 @@ img {
     float: right;
     margin: 0% 10% 7% 7%;
 }
+
+.hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
+
 </style>
 </head>
 
-<p>  <img src="https://raw.githubusercontent.com/UrszulaCzerwinska/UrszulaCzerwinska.github.io/master/images/ula.png"  width="30%">
+<p>  <img src="{{ site.baseurl }}/images/Ula.png"  width="30%">
 </p>
 <!--<img src="https://raw.githubusercontent.com/UrszulaCzerwinska/UrszulaCzerwinska.github.io/master/images/ula.png" align="right" width= "30%" hspace="5%">-->
-    <font color="black"><h3 id="benjamin-l-moore">Urszula Czerwinska</h3></font></p>
-<p>PhD candidate in systems biology and budding data sciencist</p>
+    <font color="black"><h3>Urszula Czerwinska</h3></font></p>
+<p>PhD candidate in systems biology and budding data scientist</p>
 
 <div id="webaddress">
 <a href="mailto:ulcia.liberte@gmail.com">urszula.czerwinska@cri-paris.org</a>
@@ -45,34 +50,161 @@ img {
 <i class="fa fa-twitter"></i> <a href="http://twitter.com/ulalaparis">ulalaparis</a>
 |
 <i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/urszulaczerwinska">Urszula Czerwinska</a>
-|
-<i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="https://cv.pdf"> CV.pdf</a>
+<br>
+<br>
+<br>
 </div>
-<br>
-<br>
-<br>
-<h2 id="currently">Currently</h2>
-<p>I am awesome </p>
+<!-- <a href="{{site.baseurl}}/download-pics.php" class="button ula"> Download CV</a> -->
+<a onclick="var that=this;_gaq.push(['_trackEvent','images','ula',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/images/ula.png" class="button ula">Download CV</a>
 
+
+<!-- <p>
+<div>
+<a class="btn btn-lg btn-success fa-border" href="https://cv.pdf">
+  <i class="fa fa-file-pdf-o fa-2x pull-left" aria-hidden="true"></i> Download CV</a>
+</div>
+
+</p> -->
+
+
+<br>
+<br>
+<br>
+<h2 id="currently">Short bio</h2>
+<p class="small">Born in Poland, I have pursued my education in France and Singapore. Currently based in Paris where I do my PhD and carry on many other <a href="/works">projects</a>. I have always been fascinated by <strong>complex systems</strong>. Through my undergrad studies I have discoverd  <strong>statistics</strong> and  <strong>programming</strong>. Introduced since the begging to  <strong>Python</strong> and  <strong>R </strong>. Experience of living in Singapore tought me how to combine <strong>hard work</strong>, <strong>traveliing</strong> and <strong>networking</strong>. It stimulated my will to work in an <strong>interdisciplinary enviroment</strong> which I found in Paris. Through versatile projects I got immersed with <strong>product & graphical design</strong>, <strong>business ideas</strong> and microbiology. Since then I co-founded a <strong><a href"/works/EcoSmart">start-up</a></strong> that got transformed into non-profit exploratory project. I have also followed my passion for data and <strong> statistical modeling</strong>that leaded me to my PhD. Meanwhile, I have discoverd the whole new universe of <strong><font color=#33a4c9>Data Science</font></strong> where my skills can serve to solve problems in business, finance, marketing and many others. I became an ambassador of <a href="#">Pivigo Data Science hub</a> to spread ideas of Data Science and help other STEM students to transfer into industry.</p>
+<!-- <p>Feel free to drop me a <a href="mailto:urszula.czeriwnska@cri-paris.org">message</a> or connect with me on <a href="https://linkedin.com/in/urszulaczerwinska">linked in</a>, follow me on <a href="http://twitter.com/ulalaparis">twitter</a>, read my <a href="/thoughts/">posts</a>, see my <a href="http://github.com/urszulaczerwinska">github repository</a> and   <strong>offer me a job or a project</strong>.</p> -->
+<p>I am fascianted about <strong>Big Data</strong>, <strong>IoT</strong> and <strong>FinTech</strong> projects and <strong>Data Viz</strong>. Don't hesitate to <strong>offer me a short-term project </strong> or a job in 2018.</p>
+
+
+  <!-- Compétences -->
+      <div class="grid_8 competences">
+
+        <i class="icon fa fa-magic fa-5x fa-pull-left style5"></i>
+</br>
+        <h2 id="technical-skills">Skills</h2>
+    
+    </br>
+        <ul class="barres">
+          <li data-skills="80">R<span style="width: 90%;"></span></li>
+          <li data-skills="60">Statistics<span style="width: 70%;"></span></li>
+          <li data-skills="40">Machine learning<span style="width: 80%;"></span></li>
+          <li data-skills="75">Python<span style="width: 50%;"></span></li>
+          <li data-skills="75">Data viz<span style="width: 50%;"></span></li>
+          <li data-skills="40">Biology<span style="width: 60%;"></span></li>
+          <li data-skills="95">Graphical design<span style="width: 40%;"></span></li>
+          <li data-skills="95">Communication<span style="width: 60%;"></span></li>
+
+        </ul>
+      </div>
+
+<br>
+</br>
+
+<i class="icon fa fa-cogs fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
+<h2 id="projects">Professional experience</h2>
+<br>
+</br>
+<!-- <h3 id="blog">blog</h3> -->
+
+<p>I have been developping diverse projects in <strong>Data Science</strong>, <strong>bioinformatics</strong>, biology and others. Have a look at <a href="/works"><strong><font color=#33a4c9>Works</font></strong>.</a></p>
+
+
+
+</br>
+<i class="icon fa fa-graduation-cap fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
 <h2 id="education">Education</h2>
+</br>
+<div class="container">          
+  <table class="special">
+    <tbody>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2015- </font></td>
+        <td>Institut Curie </td>
+        <td><strong>PhD</strong> candidate in Systems Biology</td>
+      </tr>
+      <!-- <tr>
+        <td class="hideextra"><font color=#33a4c9>2013-2015</font></td>
+        <td>University Paris Diderot</td>
+        <td><strong>Master</strong> Interdisciplinary Approaches to Life Sciences (AIV), Center for Interdisciplinary Research (CRI)</td>
+      </tr>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2012-2013</font></td>
+        <td>National University of Sinagapore</td>
+        <td><strong>Exchange</strong> student in Computational Biology</td>
+      </tr>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2010-2013</font></td>
+        <td>University Pierre et Marie Curie</td>
+        <td><strong>Licence</strong> Biology & Mathematics</td>
+      </tr> -->
+   <tr>
+        <td colspan="3"><h3 id="other">Courses & certificates </h3></td>
 
-<p><code>2015-</code>
-<!-- <strong>University Paris Descartes</strong> PhD candidate in Systems Biology</p>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2016</font></td>
+        <td><strong>Machine Learning</strong> </td>
+        <td>Stanford University online course</td>
+      </tr>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2015</font></td>
+        <td><strong>Marketing and Business Strategies</strong> </td>
+        <td>Smart Albinos online course</td>
+      </tr>
+      <tr>
+        <td class="hideextra"><font color=#33a4c9>2015</font></td>
+        <td><strong>Elevator pitch</strong> </td>
+        <td>Speak the speech consulting</td>
+      </tr>
+      </tbody>
+  </table>
+</div>
 
-<p><code>2011-12</code>
-<strong>Imperial College London</strong> MSc Bioinformatics and Theoretical Systems Biology (<em>Distinction</em>)</p>
+<div class="grid_8 competences">
+<i class="icon fa fa-language fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
+<h2 id="language">Languages</h2>
 
-<p><code>2008-11</code>
-<strong>University of York</strong> BSc Biology (<em>First class honours</em>)</p>
 
-<h2 id="presentations">Presentations</h2>
+</br>
+</br>
+        <ul class="barres">
+          <li data-skills="80">English<span style="width: 97%;"></span></li>
+          <li data-skills="60">French<span style="width: 97%;"></span></li>
+          <li data-skills="40">Spanish<span style="width: 60%;"></span></li>
+          <li data-skills="75">Russian<span style="width: 40%;"></span></li>
+          <li data-skills="75">Polish<span style="width: 100%;"></span></li>
+  
+        </ul>
+      </div>
 
-<h3 id="tutorials">Tutorials</h3>
 
-<p><code>2014</code>
-WikiProject Computational Biology half-day tutorial (<em>ISMB</em>, Boston, USA)</p>
--->
-<h3 id="talks">Talks</h3>
+</br>
+<i class="icon fa fa-book fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
+<h2 id="academic">Academic</h2>
+
+<p> For <strong>publications</strong>,<strong> posters</strong>,<strong> science awards</strong> and <strong>talks</strong> please see my <a href="academicCV.pdf"><strong><font color=#33a4c9>academic CV</font></strong></a>.</p>
+
+    <div>
+      <i class="icon fa fa-star fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
+<h2 id="hobbies">Hobbies</h2>
+</br>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-bicycle fa-1x" ></i>Travels</li>
+  <li><i class="fa-li  fa fa-child fa-1x" ></i>Leadership</li>
+  <li><i class="fa-li  fa fa-bank fa-1x" ></i>Fintech</li>
+  <li><i class="fa-li  fa fa-lightbulb-o fa-1x fa-pull-left" ></i>Innovation</li>
+  <li><i class="fa-li  fa fa-paint-brush fa-1x fa-pull-left" ></i>Graphical design</li>
+
+</ul>
+ </div>
+
+
+
+<!-- <h3 id="talks">Talks</h3> -->
 <!-- 
 <p><code>2015</code>
 EdinbR: The Edinburgh R usergroup (<em>various</em>)</p>
@@ -86,8 +218,8 @@ Unravelling higher order chromatin structure (<em>4<sup>th</sup> Edinburgh Bioin
 -->
 <!-- Digital Economies 2014 conference (London, UK; declined) -->
 
-<h3 id="posters">Posters</h3>
-
+<!-- <h3 id="posters">Posters</h3>
+ -->
 <!-- 
 <p><code>2015</code>
 <em>Keystone Epigenomics</em> (Keystone CO, USA)</p>
@@ -106,16 +238,16 @@ Unravelling higher order chromatin structure (<em>4<sup>th</sup> Edinburgh Bioin
 
 -->
 
-<h2 id="publications">Publications</h2>
+<!-- <h2 id="publications">Publications</h2> -->
 
 <!-- ### Journals -->
 
 
-<p><code>2015</code>
+<!-- <p><code>2015</code> -->
 <!-- <strong>Moore BL</strong> <em>et al.</em> Integrative modeling reveals the principles of multi-scale chromatin boundary formation in human nuclear organization. <em>Genome Biology</em>, 16: 110.</p>
 -->
 
-<h2 id="non-academic">Non-academic</h2>
+<!-- <h2 id="non-academic">Non-academic</h2> -->
  <!--
 <p><code>2014</code> Pieces in <em>The Huffington Post</em> (US): Here Are the Most Overrated and Underrated Movies of All Time; Celebrity Twitter Followers, by Gender (<a href="http://www.huffingtonpost.com/benjamin-moore/">huffingtonpost.com/benjamin-moore</a>)</p>
 
@@ -123,23 +255,9 @@ Unravelling higher order chromatin structure (<em>4<sup>th</sup> Edinburgh Bioin
 
 -->
 
-<h2 id="technical-skills">Technical skills</h2>
-
-<ul>
-  <li>R</li>
-  <li>Statistics</li>
-  <li>LaTeX</li>
-  <li>Git</li>
-  <li>UNIX</li>
-  <li>Python</li>
-  <li>Machine learning</li>
-  <li>Bash</li>
-  <li>Inkscape</li>
-  <li>Data viz</li>
-
-</ul>
-
-<h2 id="projects">Projects</h2>
+<!-- <i class="icon fa fa-cogs fa-5x fa-pull-left style5" aria-hidden="true"></i>
+</br>
+<h2 id="projects">Projects</h2> -->
 
  <!--<h3 id="blog">blog</h3>
 
@@ -153,10 +271,7 @@ Unravelling higher order chromatin structure (<em>4<sup>th</sup> Edinburgh Bioin
 <p>I entered Imperial College’s <a href="https://www.imperial.ac.uk/data-science/education/summer-data-challenge/">Summer Data Challenge</a> competition, where entrants analysed a given dataset and then proposed a startup idea based on their results. I developed a modelling technique to select housing areas for investment and was awarded third place: £2,000 and startup support from Imperial Create Lab. My entry can be seen at <a href="http://blm.io/datarea">blm.io/datarea</a> and the code is shared on my github account.</p>
 
 -->
-
-<h2 id="awards">Awards</h2>
-  <!-- <p>MRC Capacity building scholarship (PhD fees + enhanced stipend)</p>
-
+  <!-- 
 <p>MRC Full postgraduate scholarship (MSc fees + stipend)</p>
 
 <p>ISCB computational biology Wikipedia competition 2013 (<a href="http://dx.doi.org/10.1371/journal.pcbi.1003242">doi:10.1371/journal.pcbi.1003242</a>; 2nd place)</p>
@@ -175,7 +290,7 @@ Unravelling higher order chromatin structure (<em>4<sup>th</sup> Edinburgh Bioin
 <strong>Wellcome Trust Sanger Institute</strong> (<em>Cambridge, UK</em>)
 Worked for two summers on the Rfam database (<a href="http://rfam.xfam.org">rfam.xfam.org</a>) in the Bateman group</p> -->
 
-<h2 id="links">Links</h2>
+<!-- <h2 id="links">Links</h2> -->
 <!-- 
 <ul>
   <li><i class="fa fa-envelope"></i> <a href="mailto:ben@blm.io">ben@blm.io</a><br /></li>

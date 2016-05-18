@@ -1,11 +1,11 @@
 ---
-key: 2
+key: 3
 title: Thoughts
 permalink: /thoughts/
 options: fullwidth
-excerpt: whatever
-image: pic01.jpg
-background-image: pic01.jpg
+excerpt: Ideas & Insights 
+image: lightbulbs.jpeg
+background-image: lightbulbs.jpeg
 ---
 
 {%  if site.posts %}{%
@@ -13,7 +13,7 @@ background-image: pic01.jpg
   <hr style="margin:0 0 1em 0;" />
   <h4>Featured</h4>
   <ul class="post-list">{%
-        for post in site.categories.topics %}{%
+        for post in site.categories.thoughts %}{%
           if post.tags contains "featured" %}
       <li>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -32,7 +32,7 @@ background-image: pic01.jpg
 
     <ul style="list-style-type: none;">{%
       assign p = '9999'
-%}{%  for post in site.categories.topics
+%}{%  for post in site.categories.thoughts
 %}{%    assign n = post.date | date: "%Y"
 %}{%    if n != p
 %}{%      assign p = n

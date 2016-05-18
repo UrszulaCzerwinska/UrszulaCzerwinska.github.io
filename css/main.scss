@@ -340,12 +340,23 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 	}
 
+	.small {
+		text-align: justify;
+    	text-justify: inter-word;
+    	font-size: 90% !important;
+		
+	}
+
+	
+
 	header {
 		p {
 			color: _palette(fg-light);
 			position: relative;
 			top: -0.25em;
 		}
+
+		
 
 		.excerpt-inline {
 			font-size: _font(hdr-size-xxsmall);
@@ -397,6 +408,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			}
 		}
 	}
+
 
 /* Form */
 
@@ -584,6 +596,53 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding: 0;
 		}
 	}
+
+/* Competences */
+	/**********************************************
+	/* Affichage des compétences sous forme de tags
+	**********************************************/
+	.competences .tags li {
+		background-color:#33a4c9;
+		border:1px solid #1b91b7;
+		border-radius: 15px;
+		color:#fff;
+		display: inline-block;
+		line-height: 13px;
+		margin: 0 7px 17px 0;
+		padding: 5px 10px;
+	}
+	
+	/************************************************
+	/* Affichage des compétences sous forme de barres
+	*************************************************/
+	.competences .barres li {
+		margin-bottom: 21px;
+		position: relative;
+	}
+	
+	.competences .barres li:after {
+		background: #e1e1e1;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		position: absolute;
+		width:100%;
+	}
+	
+	.competences .barres li span {
+		background: #33a4c9;
+		bottom: -4px;
+		content: ' ';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 1;
+	}
+	
+
 
 /* Icon */
 
@@ -872,11 +931,16 @@ $baseurl: '{{ site.baseurl }}/images';
 				&:nth-child(2n + 1) {
 					background-color: _palette(border-bg);
 				}
+
+				
+				
 			}
 		}
 
 		td {
 			padding: 0.75em 0.75em;
+
+
 		}
 
 		th {
@@ -894,7 +958,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		tfoot {
 			border-top: solid 2px _palette(border);
 		}
-
+		
+		
+		
 		&.alt {
 			border-collapse: separate;
 
@@ -908,8 +974,10 @@ $baseurl: '{{ site.baseurl }}/images';
 						&:first-child {
 							border-left-width: 1px;
 						}
-					}
 
+
+					}
+					
 					&:first-child {
 						td {
 							border-top-width: 1px;
@@ -926,7 +994,48 @@ $baseurl: '{{ site.baseurl }}/images';
 				border-top: 0;
 			}
 		}
+		&.special {
+			border-collapse: collapse !important;
+/*			border: 1px solid #fafafa !important;
+*/			
+			tbody {
+				tr {
+					border-collapse: collapse !important;
+/*					border: 1px solid #fafafa !important;
+		
+*/					padding:0 !important;
+
+				td {
+						border-collapse: collapse !important;
+						border-left-width: 0 !important;
+						border-top-width: 0 !important;
+						background: #fafafa !important;
+						border: 1px solid #fafafa !important;
+						padding: 0.5em !important;
+					
+
+						
+
+
+					}
+				
+					
+				}
+			}
+
+			thead {
+				border-bottom: 0;
+			}
+
+			tfoot {
+				border-top: 0;
+			}
+		}
 	}
+
+
+
+
 
 	@include breakpoint(small) {
 	// from https://css-tricks.com/responsive-data-tables/
@@ -947,7 +1056,9 @@ $baseurl: '{{ site.baseurl }}/images';
 			//border-bottom: 1px solid #eee;
 			position: relative;
 			padding-left: 50%;
+
 		}
+		
 	}
 
 /* Button */
@@ -986,7 +1097,15 @@ $baseurl: '{{ site.baseurl }}/images';
 		&:active {
 			background-color: _palette(border2-bg);
 		}
-
+		&.ula {
+			background-color: #1b91b7 !important;
+			text-align: center;
+			color: white !important;
+			box-shadow: none !important;
+/*			margin: 10% 10%;
+*/			display:block;
+    		margin: 10%s auto;
+		}
 		&.icon {
 			&:before {
 				margin-right: 0.5em;
@@ -1484,6 +1603,11 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		&.style5 {
 			@include wrapper(accent7);
+		}
+
+		&.style6 {
+			text-align: center;
+			background-color: transparent;
 		}
 
 		@include breakpoint(medium) {

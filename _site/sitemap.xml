@@ -2,18 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-      <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+      <lastmod>2016-05-18T18:24:30+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
     <url>
-      <loc>http://urszulaczerwinska.github.io/works/works-example1.html</loc>
-        <lastmod>2016-04-24T00:00:00+02:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-      <loc>http://urszulaczerwinska.github.io/topics/new%20cathegory/helloworld.html</loc>
+      <loc>http://urszulaczerwinska.github.io/thoughts/new%20cathegory/helloworld.html</loc>
         <lastmod>2016-04-24T00:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -25,50 +19,86 @@
         <priority>0.9</priority>
     </url>
     <url>
+      <loc>http://urszulaczerwinska.github.io/topics/template.html</loc>
+        <lastmod>2016-02-26T00:00:00+01:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/icons.html</loc>
+        <lastmod>2015-08-16T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/tohoughts/generic.html</loc>
+        <lastmod>2015-08-16T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/elements.html</loc>
+        <lastmod>2015-08-16T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/works/DeDaL.html</loc>
+        <lastmod>2014-06-30T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/my%20topic%20group/subcattest-topic2.html</loc>
+        <lastmod>2006-09-22T00:01:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/my topic group/</loc>
+        <lastmod>2006-09-22T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/works/works-example2.html</loc>
+        <lastmod>2001-01-01T00:00:00+01:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/works/works-example3.html</loc>
+        <lastmod>2000-09-01T00:00:00+02:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
       <loc>http://urszulaczerwinska.github.io/about/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://urszulaczerwinska.github.io/contact-success/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://urszulaczerwinska.github.io/contact-success/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-      <loc>http://urszulaczerwinska.github.io/contact/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+        <lastmod>2016-05-18T18:24:30+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/credits/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+        <lastmod>2016-05-18T18:24:30+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+        <lastmod>2016-05-18T18:24:30+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/thoughts/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+        <lastmod>2016-05-18T18:24:30+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/</loc>
-        <lastmod>2016-05-01T01:05:22+02:00</lastmod>
+        <lastmod>2016-05-18T18:24:30+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
