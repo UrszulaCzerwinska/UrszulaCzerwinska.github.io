@@ -19,6 +19,21 @@ background-image: ab_bg.png
   <!-- imports -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+  <script>
+/**
+* Function that tracks a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
 </head>
 <body>
   <div id="main">
@@ -55,7 +70,8 @@ img {
 <br>
 </div>
 <!-- <a href="{{site.baseurl}}/download-pics.php" class="button ula"> Download CV</a> -->
-<a onclick="var that=this;_gaq.push(['_trackEvent','images','ula',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/images/ula.png" class="button ula">Download CV</a>
+<!-- <a onclick="var that=this;_gaq.push(['_trackEvent','images','ula',this.href]);setTimeout(function(){location.href=that.href;},400);return false;" href="/images/ula.png" class="button ula">Download CV</a> -->
+<a href="/images/ula.png" onclick="trackOutboundLink('"/images/ula.png"'); return false;" class="button ula">Download CV</a>
 
 
 <!-- <p>
