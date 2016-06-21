@@ -24,13 +24,13 @@ url: "http://urszulaczerwinska.github.io" # the base hostname & protocol for you
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Welcome!  
-  text: This will be awesome
+  title: Welcome 
+  text: to the world of Data & Science
 # - title for your blog's featured posts
-features-title: Featured topics
+features-title: Recent posts
 # - displayed at the bottom
 closing-head: Thanks for visiting
-closing-para: Feel free to get in touch. Cheers!
+closing-para: Feel free to get in touch!
 
 # on all pages (and the first three you list display with greeting, if included)
 social:

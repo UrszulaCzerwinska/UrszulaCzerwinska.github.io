@@ -10,12 +10,12 @@ layout: default
 %}{%      assign idxbutton = 'Index'
 %}{%      include fn_groupsort_reverse.html unsorted=site.categories.works groupby='priority' sortby='date'
 %}{%    endif
-%}{%    if page.categories.first == 'topics' and page.categories.last != 'topics'
+%}{%    if page.categories.first == 'thoughts' and page.categories.last != 'thoughts'
 %}{%      assign idxperma = page.categories | join: '/' | prepend: '/' | append: '/'
 %}{%      assign idxtitle = 'Start page'
 %}{%      assign idxbutton = 'Start'
 %}{%      assign sorted_list = site.empty_array
-%}{%      for topic in site.categories.topics
+%}{%      for topic in site.categories.thoughts
 %}{%        if topic.categories.last == page.categories.last
 %}{%          assign sorted_list = sorted_list | push: topic
 %}{%        endif
@@ -42,7 +42,7 @@ layout: default
 
       if sorted_list and (site.navlinks == 'bottom' or site.navlinks == 'both')
 %}{%    unless perma
-%}{%      assign perma = '/topics/'
+%}{%      assign perma = '/thoughts/'
 %}{%    endunless
 %}{%    include fn_sortednav.html posclass='btnbottom'
 %}{%  endif

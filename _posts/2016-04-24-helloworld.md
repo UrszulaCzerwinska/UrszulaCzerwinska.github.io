@@ -1,7 +1,8 @@
 ---
 title: HelloWorld
 excerpt: hello
-author: urszulaczerwinska
+<!-- author: urszulaczerwinska
+ -->
 tags: featured
 categories:
   - thoughts
