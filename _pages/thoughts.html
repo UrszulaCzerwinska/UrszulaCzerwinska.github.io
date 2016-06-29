@@ -8,8 +8,13 @@ image: lightbulbs.jpeg
 background-image: lightbulbs.jpeg
 ---
 
+
 {%  if site.posts %}{%
       if site.tags.featured %}
+   
+<div class="works_inprogress">Look at my <b>Medium</b> profile
+  <a target="_blank" href="https://medium.com/@ulalaparis">@ulalaparis</a> - content of this webpage is currently under construction</div>
+
   <hr style="margin:0 0 1em 0;" />
   <h4>Featured</h4>
   <ul class="post-list">{%
@@ -45,5 +50,9 @@ background-image: lightbulbs.jpeg
       endfor
 %}
     </ul>
+    </div>{%
+  if site.works_in_progress %}
+  <div class="works_inprogress">In-progress, website under construction.</div>{%
+  endif %}
 
 {%  endif %}

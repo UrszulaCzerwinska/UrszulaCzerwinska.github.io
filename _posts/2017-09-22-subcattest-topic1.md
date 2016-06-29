@@ -5,7 +5,7 @@ permalink: /thoughts/my topic group/
 categories:
   - thoughts
   - my topic group
-date: 2006-09-22 00:00
+date: 2016-09-22 00:00
 ---
 
 Here we go.
