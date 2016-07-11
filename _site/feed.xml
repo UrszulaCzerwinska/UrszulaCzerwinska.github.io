@@ -5,9 +5,50 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Jul 2016 08:10:36 -0400</pubDate>
-    <lastBuildDate>Mon, 11 Jul 2016 08:10:36 -0400</lastBuildDate>
+    <pubDate>Mon, 11 Jul 2016 09:55:37 -0400</pubDate>
+    <lastBuildDate>Mon, 11 Jul 2016 09:55:37 -0400</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Student Council Symposium at Orlando</title>
+        <description>&lt;section&gt;
+    &lt;h3&gt;Student Council Symposium at Orlando #SCSOrlando2016&lt;/h3&gt;
+    &lt;p&gt;I started off ISMB2016 by attending the Student Council Symposium. This meeting is dedicated to students, post docs, and young researchers in the fields of Computational Biology and Bioinformatics and it gave me a chance to present my work with an oral presentation and a poster.&lt;/p&gt;
+    &lt;p&gt;The day started with an Ice Breaking event:&lt;strong&gt; Scientific speed dating. &lt;/strong&gt;We were given a few minutes to get introduced to other person present in the room. Despite myself (and many others) being massively jet-lagged, it was quite entertaining and it gave us the impression that you were continuing the day with friends, instead of strangers.&lt;/p&gt;
+    &lt;p&gt;
+        &lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/jq_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+        &lt;strong&gt;First keynote speaker&lt;/strong&gt;: John Quackenbush, professor of Computational Biology and Biology and Bioinformatics, talked to us about some of his main research lines these days entitled &lt;em&gt;Networks from gentoype to phenotype.&lt;/em&gt; The main highlight of his talk was his network-based analysis coupled with transcriptomic and mutation data. He introduced an approach where he constructed networks specific to patients and then he compared their structure described in “&lt;a href=&quot;http://arxiv.org/abs/1505.06440&quot; data-href=&quot;http://arxiv.org/abs/1505.06440&quot; class=&quot;markup--anchor markup--p-anchor&quot; target=&quot;_blank&quot;&gt;Estimating sample-specific regulatory networks&lt;/a&gt;”. He then criticized some of classical approaches calling them a ‘bio-poetry’. He also gave us quick overview of his approach to SNPs and eQTLs. He then went on to describe how important interdisciplinarity when working in computational biology is, using the example of implementing matrix formulation from quantum physics to describe network transitions.&lt;/p&gt;
+    &lt;p&gt;There were &lt;strong&gt;15 students presenting&lt;/strong&gt; for 15minutes each. This years most represented topics were protein structure reconstruction and sequence analysis. Some students shared their reflection on being in between two disciplines: biology &amp;amp; computer science. I personally found all talks very well prepared, most of speakers were clear and interesting. The participants came from different countries all around the world and some, like me, made it thanks to the &lt;a href=&quot;http://symposium.iscbsc.org/tf-announcement&quot; data-href=&quot;http://symposium.iscbsc.org/tf-announcement&quot; target=&quot;_blank&quot;&gt;ISCB travel fellowship&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;
+        &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/jt_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+        &lt;strong&gt;The second keynote&lt;/strong&gt; talk was given by Janet Thornton. She is Director Emeritus of EMBL-EBI and Senior Scientist, with scientific interest in protein structure. She not only shared with us an overview of her career path and research, but also personal reflections on different steps of her life: student, post-doc, PI. She left us with lots of very useful tips. She is a very warm and humble person and is a great example for many researchers. She expressed her belief that computational biology is an expanding field and that this will create job opportunities for young researchers. She was very passionate and happy about her unexpected career path she made from physics to computational biology.&lt;/p&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/advice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;p&gt;Elsevier, the sponsor of SCS, prepared also for us a special demo of their new product &lt;a href=&quot;https://www.elsevier.com/solutions/pathway-studio-biological-research&quot; target=&quot;_blank&quot;&gt;Pathway Studio&lt;/a&gt; and offered us a free trial! They were very patient guiding us through their step-by-step tutorial and answering numerous questions.&lt;/p&gt;
+    &lt;p&gt;The Symposium ended with a &lt;strong&gt;poster session &lt;/strong&gt;which was accompanied with some snacks.&lt;/p&gt;
+    &lt;p&gt;Participants then voted for the best poster and talk. The winners are to announced on Monday during ISCB Town Hall (!!!)&lt;/p&gt;
+    &lt;p&gt;We were also invited to closing &lt;strong&gt;social event&lt;/strong&gt; when we could talk to our peers.&lt;/p&gt;
+    &lt;p&gt;SCS was for me a great start to my trip. It was great to see other passionate students and discuss engaging research topics. Hope to cross paths with them again over the course of the main ISMB conference.&lt;/p&gt;
+    &lt;p&gt;After the SCS, I still had some time to explore the Swan &amp;amp; Dolphin hotel area. ;)&lt;/p&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/hote.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;hr&gt;
+    &lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot; target=&quot;_blank&quot;&gt;Medium&lt;/a&gt; on July 11, 2016.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://medium.com/p/bba71aad7353&quot; target=&quot;_blank&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;</description>
+        <pubDate>Fri, 08 Jul 2016 00:00:00 -0400</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/scs</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/scs</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+        <category>conferenceISMB2016</category>
+        
+      </item>
     
       <item>
         <title>Learning business at Sorbonne</title>
@@ -157,8 +198,8 @@
     &lt;/footer&gt;
 &lt;/section&gt;</description>
         <pubDate>Wed, 29 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/intro</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/intro</guid>
         
         <category>featured</category>
         
@@ -247,324 +288,6 @@ update when it is published&lt;/p&gt;
         <category>thoughts</category>
         
         <category>data</category>
-        
-      </item>
-    
-      <item>
-        <title>Elements</title>
-        <description>			&lt;section&gt;
-				&lt;p&gt;&lt;i&gt;Editor note: These are the styles available with the spectral theme by HTML5 UP
-				(n33). Note that some elements require classes, ala
-				&lt;code&gt;&amp;lt;ul class=&quot;icons&quot;&gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;div class=&quot;6u 12u$(medium)&quot;&gt;&lt;/code&gt;. View
-				the source for examples. And see &lt;a href=&quot;https://github.com/n33/skel&quot;
-				target=&quot;_blank&quot;&gt;his skel docs&lt;/a&gt; to grok the CSS.&lt;/i&gt;&lt;/p&gt;
-				&lt;h4&gt;Text&lt;/h4&gt;
-				&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; and this is &lt;strong&gt;strong&lt;/strong&gt;. This is &lt;i&gt;italic&lt;/i&gt; and this is &lt;em&gt;emphasized&lt;/em&gt;.
-				This is &lt;sup&gt;superscript&lt;/sup&gt; text and this is &lt;sub&gt;subscript&lt;/sub&gt; text.
-				This is &lt;u&gt;underlined&lt;/u&gt; and this is code: &lt;code&gt;for (;;) { ... }&lt;/code&gt;. Finally, &lt;a href=&quot;#&quot;&gt;this is a link&lt;/a&gt;.&lt;/p&gt;
-				&lt;hr /&gt;
-				&lt;header&gt;
-					&lt;h4&gt;Heading with a Subtitle&lt;/h4&gt;
-					&lt;p&gt;Lorem ipsum dolor sit amet nullam id egestas urna aliquam&lt;/p&gt;
-				&lt;/header&gt;
-				&lt;p&gt;Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.&lt;/p&gt;
-				&lt;header&gt;
-					&lt;h5&gt;Heading with a Subtitle&lt;/h5&gt;
-					&lt;p&gt;Lorem ipsum dolor sit amet nullam id egestas urna aliquam&lt;/p&gt;
-				&lt;/header&gt;
-				&lt;p&gt;Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.&lt;/p&gt;
-				&lt;hr /&gt;
-				&lt;h2&gt;Heading Level 2&lt;/h2&gt;
-				&lt;h3&gt;Heading Level 3&lt;/h3&gt;
-				&lt;h4&gt;Heading Level 4&lt;/h4&gt;
-				&lt;h5&gt;Heading Level 5&lt;/h5&gt;
-				&lt;h6&gt;Heading Level 6&lt;/h6&gt;
-				&lt;hr /&gt;
-				&lt;h5&gt;Blockquote&lt;/h5&gt;
-				&lt;blockquote&gt;Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.&lt;/blockquote&gt;
-				&lt;h5&gt;Preformatted&lt;/h5&gt;
-				&lt;pre&gt;&lt;code&gt;i = 0;
-
-while (!deck.isInOrder()) {
-  print &#39;Iteration &#39; + i;
-  deck.shuffle();
-  i++;
-}
-
-print &#39;It took &#39; + i + &#39; iterations to sort the deck.&#39;;&lt;/code&gt;&lt;/pre&gt;
-	&lt;/section&gt;
-	&lt;section&gt;
-		&lt;h4&gt;Lists&lt;/h4&gt;
-				&lt;div class=&quot;row&quot;&gt;
-					&lt;div class=&quot;6u 12u$(medium)&quot;&gt;
-						&lt;h5&gt;Unordered&lt;/h5&gt;
-						&lt;ul&gt;
-							&lt;li&gt;Dolor pulvinar etiam.&lt;/li&gt;
-							&lt;li&gt;Sagittis adipiscing.&lt;/li&gt;
-							&lt;li&gt;Felis enim feugiat.&lt;/li&gt;
-						&lt;/ul&gt;
-						&lt;h5&gt;Alternate&lt;/h5&gt;
-						&lt;ul class=&quot;alt&quot;&gt;
-							&lt;li&gt;Dolor pulvinar etiam.&lt;/li&gt;
-							&lt;li&gt;Sagittis adipiscing.&lt;/li&gt;
-							&lt;li&gt;Felis enim feugiat.&lt;/li&gt;
-						&lt;/ul&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;6u$ 12u$(medium)&quot;&gt;
-						&lt;h5&gt;Ordered&lt;/h5&gt;
-						&lt;ol&gt;
-							&lt;li&gt;Dolor pulvinar etiam.&lt;/li&gt;
-							&lt;li&gt;Etiam vel felis viverra.&lt;/li&gt;
-							&lt;li&gt;Felis enim feugiat.&lt;/li&gt;
-							&lt;li&gt;Dolor pulvinar etiam.&lt;/li&gt;
-							&lt;li&gt;Etiam vel felis lorem.&lt;/li&gt;
-							&lt;li&gt;Felis enim et feugiat.&lt;/li&gt;
-						&lt;/ol&gt;
-						&lt;h5&gt;Icons&lt;/h5&gt;
-						&lt;ul class=&quot;icons&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon fa-twitter&quot;&gt;&lt;span class=&quot;label&quot;&gt;Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon fa-facebook&quot;&gt;&lt;span class=&quot;label&quot;&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon fa-instagram&quot;&gt;&lt;span class=&quot;label&quot;&gt;Instagram&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;icon fa-github&quot;&gt;&lt;span class=&quot;label&quot;&gt;Github&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;h5&gt;Actions&lt;/h5&gt;
-				&lt;div class=&quot;row&quot;&gt;
-					&lt;div class=&quot;6u 12u$(medium)&quot;&gt;
-						&lt;ul class=&quot;actions&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-						&lt;ul class=&quot;actions small&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special small&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button small&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-						&lt;ul class=&quot;actions vertical&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-						&lt;ul class=&quot;actions vertical small&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special small&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button small&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;6u 12u$(medium)&quot;&gt;
-						&lt;ul class=&quot;actions vertical&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special fit&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button fit&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-						&lt;ul class=&quot;actions vertical small&quot;&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special small fit&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-							&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button small fit&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-						&lt;/ul&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/section&gt;
-			&lt;section&gt;
-				&lt;h4&gt;Table&lt;/h4&gt;
-				&lt;h5&gt;Default&lt;/h5&gt;
-				&lt;div class=&quot;table-wrapper&quot;&gt;
-					&lt;table&gt;
-						&lt;thead&gt;
-							&lt;tr&gt;
-								&lt;th&gt;Name&lt;/th&gt;
-								&lt;th&gt;Description&lt;/th&gt;
-								&lt;th&gt;Price&lt;/th&gt;
-							&lt;/tr&gt;
-						&lt;/thead&gt;
-						&lt;tbody&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item One&lt;/td&gt;
-								&lt;td&gt;Ante turpis integer aliquet porttitor.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Two&lt;/td&gt;
-								&lt;td&gt;Vis ac commodo adipiscing arcu aliquet.&lt;/td&gt;
-								&lt;td&gt;19.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Three&lt;/td&gt;
-								&lt;td&gt; Morbi faucibus arcu accumsan lorem.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Four&lt;/td&gt;
-								&lt;td&gt;Vitae integer tempus condimentum.&lt;/td&gt;
-								&lt;td&gt;19.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Five&lt;/td&gt;
-								&lt;td&gt;Ante turpis integer aliquet porttitor.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-						&lt;/tbody&gt;
-						&lt;tfoot&gt;
-							&lt;tr&gt;
-								&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
-								&lt;td&gt;100.00&lt;/td&gt;
-							&lt;/tr&gt;
-						&lt;/tfoot&gt;
-					&lt;/table&gt;
-				&lt;/div&gt;
-				&lt;h5&gt;Alternate&lt;/h5&gt;
-				&lt;div class=&quot;table-wrapper&quot;&gt;
-					&lt;table class=&quot;alt&quot;&gt;
-						&lt;thead&gt;
-							&lt;tr&gt;
-								&lt;th&gt;Name&lt;/th&gt;
-								&lt;th&gt;Description&lt;/th&gt;
-								&lt;th&gt;Price&lt;/th&gt;
-							&lt;/tr&gt;
-						&lt;/thead&gt;
-						&lt;tbody&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item One&lt;/td&gt;
-								&lt;td&gt;Ante turpis integer aliquet porttitor.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Two&lt;/td&gt;
-								&lt;td&gt;Vis ac commodo adipiscing arcu aliquet.&lt;/td&gt;
-								&lt;td&gt;19.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Three&lt;/td&gt;
-								&lt;td&gt; Morbi faucibus arcu accumsan lorem.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Four&lt;/td&gt;
-								&lt;td&gt;Vitae integer tempus condimentum.&lt;/td&gt;
-								&lt;td&gt;19.99&lt;/td&gt;
-							&lt;/tr&gt;
-							&lt;tr&gt;
-								&lt;td&gt;Item Five&lt;/td&gt;
-								&lt;td&gt;Ante turpis integer aliquet porttitor.&lt;/td&gt;
-								&lt;td&gt;29.99&lt;/td&gt;
-							&lt;/tr&gt;
-						&lt;/tbody&gt;
-						&lt;tfoot&gt;
-							&lt;tr&gt;
-								&lt;td colspan=&quot;2&quot;&gt;&lt;/td&gt;
-								&lt;td&gt;100.00&lt;/td&gt;
-							&lt;/tr&gt;
-						&lt;/tfoot&gt;
-					&lt;/table&gt;
-				&lt;/div&gt;
-			&lt;/section&gt;
-			&lt;section&gt;
-				&lt;h4&gt;Buttons&lt;/h4&gt;
-				&lt;ul class=&quot;actions&quot;&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special&quot;&gt;Special&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-				&lt;ul class=&quot;actions&quot;&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button big&quot;&gt;Big&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button small&quot;&gt;Small&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-				&lt;ul class=&quot;actions fit&quot;&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button fit&quot;&gt;Fit&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special fit&quot;&gt;Fit&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button fit&quot;&gt;Fit&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-				&lt;ul class=&quot;actions fit small&quot;&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special fit small&quot;&gt;Fit + Small&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button fit small&quot;&gt;Fit + Small&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special fit small&quot;&gt;Fit + Small&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-				&lt;ul class=&quot;actions&quot;&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button special icon fa-download&quot;&gt;Icon&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button icon fa-download&quot;&gt;Icon&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-				&lt;ul class=&quot;actions&quot;&gt;
-					&lt;li&gt;&lt;span class=&quot;button special disabled&quot;&gt;Disabled&lt;/span&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;span class=&quot;button disabled&quot;&gt;Disabled&lt;/span&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-			&lt;/section&gt;
-			&lt;section&gt;
-				&lt;h4&gt;Form&lt;/h4&gt;
-				&lt;form method=&quot;post&quot; action=&quot;#&quot;&gt;
-					&lt;div class=&quot;row uniform&quot;&gt;
-						&lt;div class=&quot;6u 12u$(xsmall)&quot;&gt;
-							&lt;input type=&quot;text&quot; name=&quot;demo-name&quot; id=&quot;demo-name&quot; value=&quot;&quot; placeholder=&quot;Name&quot; /&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;6u$ 12u$(xsmall)&quot;&gt;
-							&lt;input type=&quot;email&quot; name=&quot;demo-email&quot; id=&quot;demo-email&quot; value=&quot;&quot; placeholder=&quot;Email&quot; /&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;12u$&quot;&gt;
-							&lt;div class=&quot;select-wrapper&quot;&gt;
-								&lt;select name=&quot;demo-category&quot; id=&quot;demo-category&quot;&gt;
-									&lt;option value=&quot;&quot;&gt;- Category -&lt;/option&gt;
-									&lt;option value=&quot;1&quot;&gt;Manufacturing&lt;/option&gt;
-									&lt;option value=&quot;1&quot;&gt;Shipping&lt;/option&gt;
-									&lt;option value=&quot;1&quot;&gt;Administration&lt;/option&gt;
-									&lt;option value=&quot;1&quot;&gt;Human Resources&lt;/option&gt;
-								&lt;/select&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;4u 12u$(small)&quot;&gt;
-							&lt;input type=&quot;radio&quot; id=&quot;demo-priority-low&quot; name=&quot;demo-priority&quot; checked&gt;
-							&lt;label for=&quot;demo-priority-low&quot;&gt;Low&lt;/label&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;4u 12u$(small)&quot;&gt;
-							&lt;input type=&quot;radio&quot; id=&quot;demo-priority-normal&quot; name=&quot;demo-priority&quot;&gt;
-							&lt;label for=&quot;demo-priority-normal&quot;&gt;Normal&lt;/label&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;4u$ 12u$(small)&quot;&gt;
-							&lt;input type=&quot;radio&quot; id=&quot;demo-priority-high&quot; name=&quot;demo-priority&quot;&gt;
-							&lt;label for=&quot;demo-priority-high&quot;&gt;High&lt;/label&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;6u 12u$(small)&quot;&gt;
-							&lt;input type=&quot;checkbox&quot; id=&quot;demo-copy&quot; name=&quot;demo-copy&quot;&gt;
-							&lt;label for=&quot;demo-copy&quot;&gt;Email me a copy&lt;/label&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;6u$ 12u$(small)&quot;&gt;
-							&lt;input type=&quot;checkbox&quot; id=&quot;demo-human&quot; name=&quot;demo-human&quot; checked&gt;
-							&lt;label for=&quot;demo-human&quot;&gt;Not a robot&lt;/label&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;12u$&quot;&gt;
-							&lt;textarea name=&quot;demo-message&quot; id=&quot;demo-message&quot; placeholder=&quot;Enter your message&quot; rows=&quot;6&quot;&gt;&lt;/textarea&gt;
-						&lt;/div&gt;
-						&lt;div class=&quot;12u$&quot;&gt;
-							&lt;ul class=&quot;actions&quot;&gt;
-								&lt;li&gt;&lt;input type=&quot;submit&quot; value=&quot;Send Message&quot; class=&quot;special&quot; /&gt;&lt;/li&gt;
-								&lt;li&gt;&lt;input type=&quot;reset&quot; value=&quot;Reset&quot; /&gt;&lt;/li&gt;
-							&lt;/ul&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/form&gt;
-			&lt;/section&gt;
-			&lt;section&gt;
-				&lt;h4&gt;Image&lt;/h4&gt;
-				&lt;h5&gt;Fit&lt;/h5&gt;
-				&lt;div class=&quot;box alt&quot;&gt;
-					&lt;div class=&quot;row uniform 50%&quot;&gt;
-						&lt;div class=&quot;12u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/banner.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-						&lt;div class=&quot;4u&quot;&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pic03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;h5&gt;Left &amp;amp; Right&lt;/h5&gt;
-				&lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/pic04.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.&lt;/p&gt;
-				&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/pic05.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius. Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui.&lt;/p&gt;
-			&lt;/section&gt;
-</description>
-        <pubDate>Sun, 16 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/elements.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/elements.html</guid>
-        
-        
-        <category>thoughts</category>
         
       </item>
     
