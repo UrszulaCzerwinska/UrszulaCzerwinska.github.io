@@ -3,7 +3,6 @@ title: HelloWorld
 excerpt: hello
 <!-- author: urszulaczerwinska
  -->
-tags: featured
 categories:
   - thoughts
   - new cathegory
