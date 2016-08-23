@@ -1,0 +1,197 @@
+---
+priority: 0.6
+title: DeDaL 
+excerpt: Data-driven network layout
+categories: works
+background-image: 
+tags:
+  - Java
+  - Networks
+  - PCA
+  - Data viz
+---
+Project of **DeDaL** was born in 2014 (or long before) in a context of cancer research in the lab of Computational Systems Biology of Cancer in Institut Curie in Paris in the mind of my research advisor Andrei Zinovyev. 
+
+> The idea was to develop a tool that would **combine multidimentional metadata** associated with network and **network** itself in a form of an **intelligent layout**. We achieved it through performing PCA and Elastic Map (non-linear version of PCA) on the metadataset and mapping network connexions into this MDS layout.  
+
+The difference between **DeDaL** and other MDS layouts available, it that  **DeDaL** uses metadata and not the network structure in order to perform the layout. It also contains additional and more advanced features like network smoothing, alignment and morphing. **DeDaL** helps to interpret and visualize multidimentional data associated with network.
+<!-- ![The concept of DeDaL morphing]({{ site.baseurl }}/images/dedal_carton.png) --> 
+
+
+
+Today, **DeDaL** is a piece of software, I developped in Java together with A. Zinovyev, that can be used in [Cytoscape 3.0](http://www.cytoscape.org/cy3.html) workframe. It has been applied to a number of biological data which resulted in [publication](http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4) in BMC Systems Biology. Together with [DeDaL website](http://bioinfo-out.curie.fr/projects/dedal/) that contains full description and step-by-step tutorial and [github repository](https://github.com/sysbio-curie/DeDaL), the software is well documented and open.  
+&nbsp;
+
+However, **DeDaL** finds his application not only in biological data. Here I post a little demo of **DeDaL** applied to [*International Currencies 1890-1910* data from Flandreau, M. and C. Jobst](http://eh.net/database/international-currencies-1890-1910/) to encourage you to try it out with different data.  
+
+***
+> ‘For better or worse – and opinions differ on this – the choice of which language
+and which currency is made not on merit, or moral worth, but on size.’  
+(Kindleberger, 1967, p. 11)  
+
+The dataset gives measures for the international role of 45 currencies between 1890 and 1910 as well as a set of variables that can explain the relative position of these currencies.  
+Data have been collected for the years 1890, 1900 and 1910. The exchange structure matrix is
+complete from an empirical point of view, including virtually all currencies of the world in
+1890-1910. It also has the nice conceptual feature to identify two different exchange markets
+for a given currency pair, corresponding to the home countries of the two currencies involved.  
+
+The information on foreign exchange refers to ordered country pairs, i.e. for every country
+pair there are two observations: (1) whether the foreign exchange markets in the first country
+trade the second country’s currency and (2) whether the foreign exchange markets in the
+second country trade the first country’s currency. The data file is structured accordingly. The
+first two columns country_A and country_B identify the country pair, where country_A gives
+the location of the foreign exchange market and country_B the home country of the currency
+traded. There is information on 45 countries/currencies, yielding a total of 45*44 = 1980
+country pairs.  
+
+Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:  
+* **dist**: log distance as the crow flies between the cities with foreign exchange
+markets in country_A and country_B.  
+* **bitrade** gives total trade between country_A and country_B in thousand US dollars.   
+* **gold** is an indicator variable =1 if country_A has a currency convertible in gold in
+1900 and 0 otherwise.  
+* **debtburden** is the ratio of government debt over government revenues in 1900.  
+* **rlong** is the secondary market yield for gold denominated government debt in 1900.  
+* **rshort1900** is the market rate for 3 month lending, in most cases the discount rate for
+3 month commercial paper in 1900.  
+* **rshort1890** same as above for 1890.  
+* **rgdp** and **rgdpcap** give the log 1900 real gdp and the log real gdp per capita.  
+* **poldemo** reproduces the index of democracy (ID) of the Polyarchy dataset developed
+by Vanhanen (2000) for 1900.  
+* **coverage** is the logarithm of the number of currencies traded in country_A.  
+Detailed information can be found in [intro document](http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf).
+
+***
+
+Here, using **DeDaL** I will try to see how much we can learn about currency market without previous knowledge in economy, based on the network and metadata associated with each country.  
+
+Firstly, I will import the raw data from the website. I am skipping first 9 lines that contain the intro text: 
+&nbsp;
+
+*The international circulation of currencies 1890-1910*  
+*Please cite as:*
+*- When using the network data for 1890, 1900 or 1910:*  
+*Flandreau, M. and C. Jobst (2005), ‘The ties that divide: a network analysis of the international monetary system 1890–1910’, Journal of Economic History, vol. 65(4).*  
+*- When using the explanatory variables for 1900:*  
+*Flandreau, M. and C. Jobst (2009), ‘The empirics of international currencies: Networks, history and persistence’, The Economic Journal, vol. 119(April).*  
+&nbsp;
+
+And we can have a look at the imported table with function head printing first 5 lines.
+
+```{r}
+file <- "http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_data.txt"
+raw_data <- read.delim(file, header=T, skip=9)
+head(raw_data)
+```
+&nbsp;
+
+In order to import the network into DeDaL we will need 2 files:  
+1. with node to node connexions to construct the network (```country_A``` to ```country_B```) with edge atributes  
+2. table with metadata containing information about nodes (```country_A var1 var2``` *etc.*)  
+
+I will try initailly to take a look at all the connexions that occured, taking into account the link if trading was active in any year (observed), especially because we do not have detailed data for all time points, then I get rid of time information (3,4,5). I use package ```dplyr```:
+
+```{r}
+suppressMessages(library(dplyr))
+```
+```{r}
+network_table<-raw_data%>%filter(quote1890==1 | quote1900==1 | quote1910==1)%>%select(country_A:bitrade,-(quote1890:quote1910))
+network_table$colony=as.factor(network_table$colony)
+summary(network_table)
+```
+
+This table is ready to export.
+```{r}
+write.table(network_table, "network_table.txt", row.names=FALSE, col.names = TRUE, quote=FALSE, sep="\t")
+```
+
+Then I create table with information about each country. I select a unique entry by country as in Cytoscape we don't need distinction between country A and B.
+```{r}
+countries_data<-raw_data%>%select(country_A:coverage,-(country_B:bitrade))%>%distinct(country_A)%>%rename(country=country_A)
+countries_data$gold=as.factor(countries_data$gold)
+dim(countries_data)
+summary(countries_data)
+```
+
+I will use ```caret``` package to scale and center data (centering can be skipped as it is included in DeDaL).
+```{r, hide}
+suppressMessages(library(caret))
+```
+```{r}
+preProcValues <- preProcess(countries_data[,3:10], method = c("center", "scale"))
+countries_data[,3:10] <- predict(preProcValues, countries_data[,3:10])
+head(countries_data)
+```
+I also check the possibly of occurence of highly correlated variables:
+
+```{r}
+descrCor <-  cor(countries_data[,3:10])
+highCorr <- sum(abs(descrCor[upper.tri(descrCor)]) > .6)
+print(highCorr) #there is no correlated varaibles
+```
+
+Now I export this metadata into a .txt in order to import to Cytoscape 3.0
+```{r}
+write.table(countries_data, "countries_data.txt", row.names=FALSE, col.names = TRUE, quote=FALSE, sep="\t")
+```
+
+In Cytoscape I go to ```File -> Import -> Network -> File...```
+I select ```country_A``` as a source, ```country_B``` as target and otehr colums as edge attributes.
+I go to ```View -> Show graphical details``` to visualize the network.
+The image is not very informative, all countries are interconnected and graphical style makes the network unreadable. 
+First I play with graphical parameters to obtain something readable and I modify edge visual properieties to make use of edge attributes.
+&nbsp;
+
+<!-- ![Imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony varaibles]({{ site.baseurl }}/images/image.png) --> 
+
+We can compute network statistics like clustering coefficient, centrality etc.  
+Most common organic alredy inform us a bout potentially important countries that that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries. 
+&nbsp;
+
+So let's import ```countries_data.txt``` through ```File -> Import -> Table```. I check carefully all variables are imported as numerical.  
+I apply my Cytoscape plugin [DeDaL] (http://apps.cytoscape.org/apps/dedal) in order to see the PCA and Elastic Map Layouts.
+
+####PCA - principal components analysis
+I select ```Layout -> DeDaL -> Data-driven Layout```, to perform PCA without network smoothing and withouth double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:
+
+```{r,echo=FALSE}
+my_hist=data.frame(PC1=37.39, PC2=19.5, PC3=13.33, PC4=9.78, PC5=7.79,PC6=4.05, PC7= 3.32)
+barplot(as.matrix(my_hist), main="PC contributions", ylab="% of varaince explained", ylim=c(0,40))
+```
+
+Which results in the following layout:
+<!-- ![Imported network of currencies in Cytoscape 3.0. PCA layout]({{ site.baseurl }}/images/image.png) --> 
+
+From the PCA we can read that the factors best explaining variance in the data is the level of democracy, market rate (PC1) and coverage & debt (PC2). Therefore, we can see GBP is probably the most important factor. While DEU and FRA are somehow outliers. DEU being the higest in coverage and FRA in democracy index. On the opposite side, ther is NZL, AUS and suprisingly CAN & ESP that have big debt. COL, JPN and ICH seem to have high market rate. We can also observe that the countries placed on the right have higher values in bitrade and are the most connected.
+
+```{r,echo=FALSE}
+suppressMessages(library(ggbiplot))
+#dim(countries_data)
+na.countries=na.omit(countries_data)
+
+pca=prcomp(na.countries[,3:10])
+#p=ggbiplot(pca, choices = 1:2 , var.axes =FALSE, labels=na.countries[,1])+geom_point(size=2)
+#p
+
+pc1_contr=data.frame(names=row.names(pca$rotation),pc1=pca$rotation[,1])
+pc1_contr=arrange(pc1_contr,pc1)
+m=as.matrix(t(pc1_contr[,2]))
+colnames(m)=pc1_contr$names
+par(mfrow=c(1,2))
+barplot(m,cex.names=0.9, las=2, ylim=c(-0.5,0.6), main="PC1")
+
+pc1_contr=data.frame(names=row.names(pca$rotation),pc2=-pca$rotation[,2])
+pc1_contr=arrange(pc1_contr,pc2)
+m=as.matrix(t(pc1_contr[,2]))
+colnames(m)=pc1_contr$names
+barplot(m,cex.names=0.9, las=2, ylim=c(-0.6,0.8), main="PC2")
+```
+
+####Elastic Map - non linear manifolds dimention reduction
+It is also possible to perform Elastic Map layout (again no smoothing and no double-centering).  
+A window pops up with information that layout captures **79.19%** of variance.  
+In this case Elastic Map layout is quite similar to PCA meaning the problem can be explained in with linear methods. 
+
+#####Conclusions
+From the data we can easily read the most important countries. Through PCA, it is posible to identify key variables for analyzis of data varability. It cannot be compared, of course, to an expert analytical insight and models build with domain knowledge. However, **DeDaL** provides good and fast inside into the data and allows its visualisation. It can be used as exploratory tool with different types of data associated with network.
+

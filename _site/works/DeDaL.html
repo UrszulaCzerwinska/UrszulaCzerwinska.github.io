@@ -20,16 +20,16 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
   <style>
   #main > header {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/baba.svg");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/baba.svg");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/baba.svg");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/baba.svg");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/network.png");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/network.png");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/network.png");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/network.png");
   }
   </style>
   <!--[if lte IE 9]>
   <style>
   #main > header {
-    background-image: url("/images/baba.svg");
+    background-image: url("/images/network.png");
   }
   </style>
   -->
@@ -79,7 +79,7 @@
 
           <section class="wrapper style5">
     <div class="inner">
-      <span id="post-date">30 June 2014</span><hr
+      <span id="post-date">22 August 2016</span><hr
         style="margin-top:3px;" />
       <h4>Skills</h4>
   <ul class="techlist">
@@ -91,26 +91,254 @@
 
   
 
-      <h2 id="github-icon-and-link">Github icon and link</h2>
+      <p>Project of <strong>DeDaL</strong> was born in 2014 (or long before) in a context of cancer research in the lab of Computational Systems Biology of Cancer in Institut Curie in Paris in the mind of my research advisor Andrei Zinovyev.</p>
 
-<!-- <img class="image right;" src="/images/dedal.gif"> -->
+<blockquote>
+  <p>The idea was to develop a tool that would <strong>combine multidimensional meta data</strong> associated with network and <strong>network</strong> itself in a form of an <strong>intelligent layout</strong>. We achieved it through performing PCA and Elastic Map (non-linear version of PCA) on the meta dataset and mapping network connexions into this MDS layout.</p>
+</blockquote>
 
-<!-- ![](/images/dedal.gif){: style="image right"}
- -->
-<p><span class="image fit"><img src="/images/dedal.gif" alt="" width="60%" /></span></p>
+<p>The difference between <strong>DeDaL</strong> and other MDS layouts available, it that  <strong>DeDaL</strong> uses met adata and not the network structure in order to perform the layout. It also contains additional and more advanced features like network smoothing, alignment and morphing. <strong>DeDaL</strong> helps to interpret and visualize multidimensional data associated with network.</p>
 
-<h4 id="summary">Summary</h4>
+<p><img src="/images/cartoonDDL.png" width="80%" /></p>
+<p><em>Cartoon representing idea of <b>DeDaL</b></em> </p>
 
-<p>Short summary
-Links to offical website</p>
+<p>Today, <strong>DeDaL</strong> is a piece of software, I developed in Java together with A. Zinovyev, that can be used in <a href="http://www.cytoscape.org/cy3.html">Cytoscape 3.0</a> framework. It has been applied to a number of biological data which resulted in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4">publication</a> in BMC Systems Biology. Together with <a href="http://bioinfo-out.curie.fr/projects/dedal/">DeDaL website</a> that contains full description and step-by-step tutorial and <a href="https://github.com/sysbio-curie/DeDaL">github repository</a>, the software is well documented and open.<br />
+ </p>
 
-<h3 id="section">#</h3>
+<p>However, <strong>DeDaL</strong> finds his application not only in biological data. Here I post a little demo of <strong>DeDaL</strong> applied to <a href="http://eh.net/database/international-currencies-1890-1910/"><em>International Currencies 1890-1910</em> data from Flandreau, M. and C. Jobst</a> to encourage you to try it out with different data.</p>
 
-<p>Demo on social network</p>
+<hr />
 
-<p>It is also possible to used DeDaL to visualize genetic information . We applied DeDaL to create a DDL layout for a group of yeast genes involved in DNA repair and replication. The genetic interactions between these genes and the epistatic profiles (computed only with respect to this group of genes) were used from [7]. The definitions of DNA repair pathways were taken from KEGG database [8]. Figure 4 shows the difference between application of the standard organic layout for this small network of genetic interactions and PCA-based DDL (computed here without applying data matrix double-centering to take into account tendencies of genes to interact with smaller or larger number of other genes). PCA- based DDL in this case groups the genes with respect to their epistatic profiles. Firstly, local hub genes RAD27 and POL32 have distinct position in this layout. Secondly, PCA-based DDL roughly groups the genes accordingly to the DNA repair pathway in which they are involved. For example, it shows that Non-homologous end joining DNA repair pathway is closer to Homologous recombination (HR) pathway than to the Mismatch repair pathway. It also underlines that some homologous recombination genes (such as RDH54) are characterized by a different pattern of genetic interactions than the â€œcoreâ€ HR genes RAD51, RAD52, RAD54, RAD55,RAD57.</p>
+<h3 id="international-currencies-dataset">International currencies dataset</h3>
 
-<p>In the next example we apply DeDaL to the Boolean model of cell fate decisions between survival, apoptosis and non-apoptotic cell death (such as necrosis) published in [9], to group the nodes of the influence diagram accordingly to their co-activation patterns in the logical steady states. The tabl</p>
+<blockquote>
+  <p>‘For better or worse – and opinions differ on this – the choice of which language
+and which currency is made not on merit, or moral worth, but on size.’<br />
+(Kindleberger, 1967, p. 11)</p>
+</blockquote>
+
+<p>The dataset gives measures for the international role of 45 currencies between 1890 and 1910 as well as a set of variables that can explain the relative position of these currencies.<br />
+Data have been collected for the years 1890, 1900 and 1910. The exchange structure matrix is
+complete from an empirical point of view, including virtually all currencies of the world in
+1890-1910. It also has the nice conceptual feature to identify two different exchange markets
+for a given currency pair, corresponding to the home countries of the two currencies involved.</p>
+
+<p>The information on foreign exchange refers to ordered country pairs, i.e. for every country
+pair there are two observations: (1) whether the foreign exchange markets in the first country
+trade the second country’s currency and (2) whether the foreign exchange markets in the
+second country trade the first country’s currency. The data file is structured accordingly. The
+first two columns country_A and country_B identify the country pair, where country_A gives
+the location of the foreign exchange market and country_B the home country of the currency
+traded. There is information on 45 countries/currencies, yielding a total of 45*44 = 1980
+country pairs.</p>
+
+<p>Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:<br />
+* <strong>dist</strong>: log distance as the crow flies between the cities with foreign exchange
+markets in country_A and country_B.<br />
+* <strong>bitrade</strong> gives total trade between country_A and country_B in thousand US dollars. <br />
+* <strong>gold</strong> is an indicator variable =1 if country_A has a currency convertible in gold in
+1900 and 0 otherwise.<br />
+* <strong>debtburden</strong> is the ratio of government debt over government revenues in 1900.<br />
+* <strong>rlong</strong> is the secondary market yield for gold denominated government debt in 1900.<br />
+* <strong>rshort1900</strong> is the market rate for 3 month lending, in most cases the discount rate for
+3 month commercial paper in 1900.<br />
+* <strong>rshort1890</strong> same as above for 1890.<br />
+* <strong>rgdp</strong> and <strong>rgdpcap</strong> give the log 1900 real gdp and the log real gdp per capita.<br />
+* <strong>poldemo</strong> reproduces the index of democracy (ID) of the Polyarchy dataset developed
+by Vanhanen (2000) for 1900.<br />
+* <strong>coverage</strong> is the logarithm of the number of currencies traded in country_A.<br />
+Detailed information can be found in <a href="http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf">intro document</a>.</p>
+
+<hr />
+
+<h3 id="hands-on">Hands on</h3>
+<p>Here, using <strong>DeDaL</strong> I will try to see how much we can learn about currency market without previous knowledge in economy, based on the network and metadata associated with each country.</p>
+
+<p>Firstly, I will import the raw data from the website. I am skipping first 9 lines that contain the intro text: 
+ </p>
+
+<p><em>The international circulation of currencies 1890-1910</em><br />
+<em>Please cite as:</em>
+<em>- When using the network data for 1890, 1900 or 1910:</em><br />
+<em>Flandreau, M. and C. Jobst (2005), ‘The ties that divide: a network analysis of the international monetary system 1890–1910’, Journal of Economic History, vol. 65(4).</em><br />
+<em>- When using the explanatory variables for 1900:</em><br />
+<em>Flandreau, M. and C. Jobst (2009), ‘The empirics of international currencies: Networks, history and persistence’, The Economic Journal, vol. 119(April).</em><br />
+ </p>
+
+<p>And we can have a look at the imported table with function head printing first 5 lines.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">file</span> <span class="o">&lt;-</span> <span class="s2">"http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_data.txt"</span>
+<span class="n">raw_data</span> <span class="o">&lt;-</span> <span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">9</span><span class="p">)</span>
+<span class="n">head</span><span class="p">(</span><span class="n">raw_data</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##   country_A country_B quote1890 quote1900 quote1910 colony     dist
+## 1       ARG       AUH         0         0         0      0 9.374816
+## 2       ARG       AUS         0         0         0      0 9.360207
+## 3       ARG       BEL         1         1         1      0 9.330780
+## 4       ARG       BRA         0         1         1      0 7.613854
+## 5       ARG       CAN         0         0         0      0 9.105001
+## 6       ARG       CEY         0         0         0      0 9.600443
+##     bitrade gold debtburden rlong rshort1900 rshort1890     rgdp rgdpcap
+## 1   5909.76    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+## 2   1258.74    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+## 3 127361.20    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+## 4  65335.41    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+## 5   5073.84    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+## 6      0.00    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
+##   poldemo coverage gold_B debtburden_B rlong_B rshort1900_B rshort1890_B
+## 1     0.3  1.94591      1     5.222065    4.01         4.58         4.48
+## 2     0.3  1.94591      1     6.065920    3.12         5.50         7.00
+## 3     0.3  1.94591      1     4.882136    3.15         4.09         3.18
+## 4     0.3  1.94591      0     5.516892    6.97         9.20         6.30
+## 5     0.3  1.94591      1     6.784091    3.61         6.50         6.50
+## 6     0.3  1.94591      1     1.362319    3.25           NA           NA
+##     rgdp_B rgdpcap_B poldemo_B
+## 1 18.14368   7.39388      0.87
+## 2 16.52440   8.29729      6.37
+## 3 17.02921   8.22443     10.66
+## 4 16.31639   6.51915      0.22
+## 5 16.58091   7.97625      8.58
+## 6 15.43420   7.16240      0.00</code></pre></figure>
+
+<p> </p>
+
+<p>In order to import the network into DeDaL we will need 2 files:<br />
+1. with node to node connexions to construct the network (<code class="highlighter-rouge">country_A</code> to <code class="highlighter-rouge">country_B</code>) with edge attributes<br />
+2. table with meta data containing information about nodes (<code class="highlighter-rouge">country_A var1 var2</code> <em>etc.</em>)</p>
+
+<p>I will try initially to take a look at all the connexions that occurred, taking into account the link if trading was active in any year (observed), especially because we do not have detailed data for all time points, then I get rid of time information (3,4,5). I use package <code class="highlighter-rouge">dplyr</code>:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">suppressMessages</span><span class="p">(</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">network_table</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">filter</span><span class="p">(</span><span class="n">quote1890</span><span class="o">==</span><span class="m">1</span> <span class="o">|</span> <span class="n">quote1900</span><span class="o">==</span><span class="m">1</span> <span class="o">|</span> <span class="n">quote1910</span><span class="o">==</span><span class="m">1</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">bitrade</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">quote1890</span><span class="o">:</span><span class="n">quote1910</span><span class="p">))</span>
+<span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="p">)</span>
+<span class="n">summary</span><span class="p">(</span><span class="n">network_table</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##    country_A     country_B   colony       dist          bitrade       
+##  DEU    : 14   GBR    : 44   0:261   Min.   :5.373   Min.   :      0  
+##  NLD    : 13   FRA    : 38   1: 12   1st Qu.:6.783   1st Qu.:  30550  
+##  DNK    : 12   DEU    : 31           Median :7.482   Median :  93208  
+##  USA    : 12   USA    : 19           Mean   :7.674   Mean   : 248059  
+##  FRA    : 11   BEL    : 16           3rd Qu.:8.881   3rd Qu.: 286344  
+##  GBR    : 10   NLD    : 16           Max.   :9.855   Max.   :3545484  
+##  (Other):201   (Other):109</code></pre></figure>
+
+<p>This table is ready to export.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">network_table</span><span class="p">,</span> <span class="s2">"network_table.txt"</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">col.names</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
+
+<p>Then I create table with information about each country. I select a unique entry by country as in Cytoscape we don’t need distinction between country A and B.</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">countries_data</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">coverage</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">country_B</span><span class="o">:</span><span class="n">bitrade</span><span class="p">))</span><span class="o">%&gt;%</span><span class="n">distinct</span><span class="p">(</span><span class="n">country_A</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">rename</span><span class="p">(</span><span class="n">country</span><span class="o">=</span><span class="n">country_A</span><span class="p">)</span>
+<span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="p">)</span>
+<span class="n">dim</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 45 10</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">summary</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##     country   gold     debtburden         rlong          rshort1900    
+##  ARG    : 1   0:19   Min.   : 0.000   Min.   : 2.550   Min.   : 3.210  
+##  AUH    : 1   1:26   1st Qu.: 1.759   1st Qu.: 3.290   1st Qu.: 4.835  
+##  AUS    : 1          Median : 4.611   Median : 3.810   Median : 5.870  
+##  BEL    : 1          Mean   : 4.943   Mean   : 4.962   Mean   : 6.073  
+##  BRA    : 1          3rd Qu.: 7.257   3rd Qu.: 6.100   3rd Qu.: 6.750  
+##  CAN    : 1          Max.   :14.656   Max.   :12.280   Max.   :11.400  
+##  (Other):39          NA's   :3        NA's   :8        NA's   :10      
+##    rshort1890          rgdp          rgdpcap         poldemo      
+##  Min.   : 2.790   Min.   :12.69   Min.   :6.301   Min.   : 0.000  
+##  1st Qu.: 4.520   1st Qu.:15.28   1st Qu.:6.711   1st Qu.: 0.000  
+##  Median : 6.000   Median :16.28   Median :7.209   Median : 0.080  
+##  Mean   : 6.105   Mean   :16.30   Mean   :7.309   Mean   : 1.921  
+##  3rd Qu.: 7.000   3rd Qu.:17.11   3rd Qu.:7.922   3rd Qu.: 1.980  
+##  Max.   :12.000   Max.   :19.56   Max.   :8.410   Max.   :11.870  
+##  NA's   :10                                       NA's   :1       
+##     coverage    
+##  Min.   :0.000  
+##  1st Qu.:1.099  
+##  Median :1.386  
+##  Mean   :1.425  
+##  3rd Qu.:1.792  
+##  Max.   :2.565  
+## </code></pre></figure>
+
+<p>I will use <code class="highlighter-rouge">caret</code> package to scale and center data (centering can be skipped as it is included in DeDaL).</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">suppressMessages</span><span class="p">(</span><span class="n">library</span><span class="p">(</span><span class="n">caret</span><span class="p">))</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">preProcValues</span> <span class="o">&lt;-</span> <span class="n">preProcess</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">],</span> <span class="n">method</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"scale"</span><span class="p">))</span>
+<span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">predict</span><span class="p">(</span><span class="n">preProcValues</span><span class="p">,</span> <span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span>
+<span class="n">head</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##   country gold  debtburden      rlong rshort1900  rshort1890        rgdp
+## 1     ARG    1  0.49013327  0.8495516  0.5542615  1.50743024 0.044877316
+## 2     AUH    1  0.07198172 -0.3951716 -0.8386133 -0.75965830 1.124472656
+## 3     AUS    1  0.28940419 -0.7644394 -0.3219017  0.41829286 0.135869268
+## 4     BEL    1 -0.01560229 -0.7519922 -1.1138184 -1.36733152 0.444066045
+## 5     BRA    0  0.14794502  0.8329553  1.7561776  0.09108421 0.008874931
+## 6     CAN    1  0.47444370 -0.5611347  0.2397413  0.18457239 0.170369773
+##      rgdpcap    poldemo   coverage
+## 1  0.9700513 -0.5037950  0.8924360
+## 2  0.1342189 -0.3266332  0.6281442
+## 3  1.5652529  1.3828226 -2.4438245
+## 4  1.4498400  2.7161982  1.1213764
+## 5 -1.2513849 -0.5286598  0.6281442
+## 6  1.0567139  2.0697131 -1.2554244</code></pre></figure>
+
+<p>I also check the possibly of occurrence of highly correlated variables:</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">descrCor</span> <span class="o">&lt;-</span>  <span class="n">cor</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span>
+<span class="n">highCorr</span> <span class="o">&lt;-</span> <span class="n">sum</span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">descrCor</span><span class="p">[</span><span class="n">upper.tri</span><span class="p">(</span><span class="n">descrCor</span><span class="p">)])</span> <span class="o">&gt;</span> <span class="m">.6</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">highCorr</span><span class="p">)</span> <span class="err">#</span><span class="n">there</span> <span class="n">is</span> <span class="n">no</span> <span class="n">correlated</span> <span class="n">variables</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] NA</code></pre></figure>
+
+<p>Now I export this meta data into a .txt in order to import to Cytoscape 3.0</p>
+
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">countries_data</span><span class="p">,</span> <span class="s2">"countries_data.txt"</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">col.names</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
+
+<p>In Cytoscape I go to <code class="highlighter-rouge">File -&gt; Import -&gt; Network -&gt; File...</code>
+I select <code class="highlighter-rouge">country_A</code> as a source, <code class="highlighter-rouge">country_B</code> as target and other columns as edge attributes.
+I go to <code class="highlighter-rouge">View -&gt; Show graphical details</code> to visualize the network.
+The image is not very informative, all countries are interconnected and graphical style makes the network unreadable. 
+First, I play with graphical parameters to obtain something readable and I modify edge visual proprieties to make use of edge attributes.
+ </p>
+
+<p>We can compute network statistics like clustering coefficient, centrality etc. 
+<img src="/images/net_stats.png" alt="center" />
+ </p>
+
+<p>Most common organic layout already inform us about potentially important countries that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries. 
+ </p>
+
+<p><img src="/images/organic.svg" alt="" /></p>
+<p><em>Organic layout of the imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony variables</em></p>
+
+<p>So let’s import <code class="highlighter-rouge">countries_data.txt</code> through <code class="highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.<br />
+I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDaL</a> in order to see the PCA and Elastic Map Layouts.</p>
+
+<h4 id="pca--principal-components-analysis">PCA- principal components analysis</h4>
+<p>I select <code class="highlighter-rouge">Layout -&gt; DeDaL -&gt; Data-driven Layout</code>, to perform PCA without network smoothing and without double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:</p>
+
+<p><img src="/images/unnamed-chunk-9-1.png" alt="" /></p>
+
+<p>Which results in the following layout:
+<img src="/images/pca.svg" alt="PCA layout" /></p>
+
+<p>From the PCA we can read that the factors best explaining variance in the data is the level of democracy, market rate (PC1) and coverage &amp; debt (PC2). Therefore, we can see GBP is probably the most important factor. While DEU and FRA are somehow outliers. DEU being the highest in coverage and FRA in democracy index. On the opposite side, there is NZL, AUS and surprisingly CAN &amp; ESP that have big debt. COL, JPN and ICH seem to have high market rate. We can also observe that the countries placed on the right have higher values in bitrade and are the most connected.</p>
+
+<p><img src="/images/unnamed-chunk-10-1.png" alt="" /></p>
+
+<h3 id="elastic-map---non-linear-manifolds-dimension-reduction">Elastic Map - non linear manifolds dimension reduction</h3>
+<p>It is also possible to perform Elastic Map layout (again no smoothing and no double-centering).<br />
+A window pops up with information that layout captures <strong>79.19%</strong> of variance.<br />
+In this case Elastic Map layout is quite similar to PCA meaning the problem can be explained in with linear methods.</p>
+
+<p><img src="/images/elastic.svg" alt="Elastic Map layout" /></p>
+
+<h4 id="conclusions">Conclusions</h4>
+<p>From the data we can easily read the most important countries. Through PCA, it is possible to identify key variables for analysis of data variability. It cannot be compared, of course, to an expert analytical insight and models build with domain knowledge. However, <strong>DeDaL</strong> provides good and fast insight into the data and allows its visualization. It can be used as exploratory tool with different types of data associated with network. Don’t hesitate to <a href="https://github.com/sysbio-curie/DeDaL">download</a>, like and share the tool!</p>
+
 
       <div class="backnext btnbottom">
                 <div class="back">
