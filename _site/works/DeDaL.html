@@ -102,10 +102,10 @@
 <p><img src="/images/cartoonDDL.png" width="80%" /></p>
 <p><em>Cartoon representing idea of <b>DeDaL</b></em> </p>
 
-<p>Today, <strong>DeDaL</strong> is a piece of software, I developed in Java together with A. Zinovyev, that can be used in <a href="http://www.cytoscape.org/cy3.html">Cytoscape 3.0</a> framework. It has been applied to a number of biological data which resulted in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4">publication</a> in BMC Systems Biology. Together with <a href="http://bioinfo-out.curie.fr/projects/dedal/">DeDaL website</a> that contains full description and step-by-step tutorial and <a href="https://github.com/sysbio-curie/DeDaL">github repository</a>, the software is well documented and open.<br />
+<p>Today, <strong>DeDaL</strong> is a piece of software, <strong>I developed in Java</strong> together with A. Zinovyev, that can be used in <a href="http://www.cytoscape.org/cy3.html">Cytoscape 3.0</a> network visualization software. It has been applied to a number of biological data which resulted in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4">publication</a> in BMC Systems Biology. Together with <a href="http://bioinfo-out.curie.fr/projects/dedal/">DeDaL website</a> that contains full description and step-by-step tutorial and <a href="https://github.com/sysbio-curie/DeDaL">github repository</a>, the software is well documented and open.<br />
  </p>
 
-<p>However, <strong>DeDaL</strong> finds his application not only in biological data. Here I post a little demo of <strong>DeDaL</strong> applied to <a href="http://eh.net/database/international-currencies-1890-1910/"><em>International Currencies 1890-1910</em> data from Flandreau, M. and C. Jobst</a> to encourage you to try it out with different data.</p>
+<p>However, <strong>DeDaL</strong> finds its application not only in biological data. Here I post a little demo of <strong>DeDaL</strong> applied to <a href="http://eh.net/database/international-currencies-1890-1910/"><em>International Currencies 1890-1910</em> data from Flandreau, M. and C. Jobst</a> to encourage you to try it out with different data.</p>
 
 <hr />
 
@@ -134,22 +134,25 @@ the location of the foreign exchange market and country_B the home country of th
 traded. There is information on 45 countries/currencies, yielding a total of 45*44 = 1980
 country pairs.</p>
 
-<p>Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:<br />
-* <strong>dist</strong>: log distance as the crow flies between the cities with foreign exchange
-markets in country_A and country_B.<br />
-* <strong>bitrade</strong> gives total trade between country_A and country_B in thousand US dollars. <br />
-* <strong>gold</strong> is an indicator variable =1 if country_A has a currency convertible in gold in
-1900 and 0 otherwise.<br />
-* <strong>debtburden</strong> is the ratio of government debt over government revenues in 1900.<br />
-* <strong>rlong</strong> is the secondary market yield for gold denominated government debt in 1900.<br />
-* <strong>rshort1900</strong> is the market rate for 3 month lending, in most cases the discount rate for
-3 month commercial paper in 1900.<br />
-* <strong>rshort1890</strong> same as above for 1890.<br />
-* <strong>rgdp</strong> and <strong>rgdpcap</strong> give the log 1900 real gdp and the log real gdp per capita.<br />
-* <strong>poldemo</strong> reproduces the index of democracy (ID) of the Polyarchy dataset developed
-by Vanhanen (2000) for 1900.<br />
-* <strong>coverage</strong> is the logarithm of the number of currencies traded in country_A.<br />
-Detailed information can be found in <a href="http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf">intro document</a>.</p>
+<p>Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:</p>
+<ul>	
+<li><b>dist</b>: log distance as the crow flies between the cities with foreign exchange
+markets in country_A and country_B.</li>  
+<li><b>bitrade</b> gives total trade between country_A and country_B in thousand US dollars.</li>   
+<li><b>gold</b> is an indicator variable =1 if country_A has a currency convertible in gold in
+1900 and 0 otherwise.</li>  
+<li><b>debtburden</b> is the ratio of government debt over government revenues in 1900. </li> 
+<li><b>rlong</b> is the secondary market yield for gold denominated government debt in 1900. </li> 
+<li><b>rshort1900</b> is the market rate for 3 month lending, in most cases the discount rate for
+3 month commercial paper in 1900.</li>  
+<li><b>rshort1890</b> same as above for 1890.</li>  
+<li><b>rgdp</b> and <b>rgdpcap</b> give the log 1900 real gdp and the log real gdp per capita.</li>  
+<li><b>poldemo</b> reproduces the index of democracy (ID) of the Polyarchy dataset developed
+by Vanhanen (2000) for 1900.</li>  
+<li><b>coverage</b> is the logarithm of the number of currencies traded in country_A.</li>
+</ul>
+<p>Detailed information can be found in the <a href="http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf">intro document</a>.
+<b></b></p>
 
 <hr />
 
@@ -315,7 +318,8 @@ First, I play with graphical parameters to obtain something readable and I modif
 <p>Most common organic layout already inform us about potentially important countries that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries. 
  </p>
 
-<p><img src="/images/organic.svg" alt="" /></p>
+<p><img src="/images/organic.svg" width="80%" /></p>
+
 <p><em>Organic layout of the imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony variables</em></p>
 
 <p>So let’s import <code class="highlighter-rouge">countries_data.txt</code> through <code class="highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.<br />
@@ -327,14 +331,14 @@ I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDa
 
 <p>I select <code class="highlighter-rouge">Layout -&gt; DeDaL -&gt; Data-driven Layout</code>, to perform PCA without network smoothing and without double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:</p>
 
-<p><img src="/images/unnamed-chunk-9-1.png" alt="" /></p>
+<p><img src="/images/unnamed-chunk-9-1.png" width="60%" /></p>
 
 <p>Which results in the following layout:
-<img src="/images/pca.svg" alt="PCA layout" /></p>
+<img src="/images/pca.svg" width="80%" /></p>
 
 <p>From the PCA we can read that the factors best explaining variance in the data is the level of democracy, market rate (PC1) and coverage &amp; debt (PC2). Therefore, we can see GBP is probably the most important factor. While DEU and FRA are somehow outliers. DEU being the highest in coverage and FRA in democracy index. On the opposite side, there is NZL, AUS and surprisingly CAN &amp; ESP that have big debt. COL, JPN and ICH seem to have high market rate. We can also observe that the countries placed on the right have higher values in bitrade and are the most connected.</p>
 
-<p><img src="/images/unnamed-chunk-10-1.png" alt="" /></p>
+<p><img src="/images/unnamed-chunk-10-1.png" width="60%" /></p>
 
 <p>
  	<h3> Elastic Map - non linear manifolds dimension reduction</h3>
@@ -343,12 +347,24 @@ I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDa
 A window pops up with information that layout captures <strong>79.19%</strong> of variance.<br />
 In this case Elastic Map layout is quite similar to PCA meaning the problem can be explained in with linear methods.</p>
 
-<p><img src="/images/elastic.svg" alt="Elastic Map layout" /></p>
+<p><img src="/images/elastic.svg" width="80%" /></p>
+
+<p>
+ 	<h3> Networks morphing</h3>
+ </p>
+<p>Another cool function of <strong>DeDaL</strong> is network morphing, in this example networks goes from PCA layout to organic layout. Organic layout network is rotated compared to original one to minimize bias due to rotation and mirroring.<br />
+It is possible to morph any two layouts (i.e. manually created topological layout into organic layout <em>etc.</em>)</p>
+
+<p><img src="/images/dedal_anim.gif" width="80%" /></p>
 
 <p>
  	<h3> Conclusions</h3>
  </p>
 <p>From the data we can easily read the most important countries. Through PCA, it is possible to identify key variables for analysis of data variability. It cannot be compared, of course, to an expert analytical insight and models build with domain knowledge. However, <strong>DeDaL</strong> provides good and fast insight into the data and allows its visualization. It can be used as exploratory tool with different types of data associated with network. Don’t hesitate to <a href="https://github.com/sysbio-curie/DeDaL">download</a>, like and share the tool!</p>
+
+<blockquote>
+  <p>Your imagination is the limit!</p>
+</blockquote>
 
 
       <div class="backnext btnbottom">
