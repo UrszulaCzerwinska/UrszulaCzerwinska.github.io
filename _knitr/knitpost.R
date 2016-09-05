@@ -9,7 +9,7 @@
 #' setwd("~/Desktop/github/local/cpsievert.github.com/")
 #' knitPost("2013-05-15-hello-jekyll.Rmd")
 input <- commandArgs(trailingOnly = TRUE)
-knitPost <- function(post="1-example.Rmd", baseUrl="{{ site.baseurl }}/") {
+knitPost <- function(post="1-example.Rmd", baseUrl="../") {
   
   require(knitr)
   

@@ -1,0 +1,501 @@
+---
+priority: 0.6
+title: Introduction to data vizualization [FR]
+excerpt: R-plot & ggplot2
+categories: works
+background-image: baba.svg
+tags:
+  - Teaching
+  - R
+  - Data viz
+---
+
+#TP Visualisation avec R
+
+##Avant le cours
+
+Dans une publication scientifique (un article, un livre) repérez une figure que vous trouvez excellente (claire, pertinente, esthétique) et une figure que vous ne trouvez pas bien (pas claire, moche, illisible) et argumentez votre choix.
+
+***
+
+##Instalation du RStudio Desktop  
+Allez sur le [site http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/) et téléchargez le logiciel.  
+
+Si l'installation n'est pas possible allez dans la section [*sans R studio*](sansStudio)
+
+
+***
+
+##Premiers pas avec RStudio
+`File-> New File->Script`
+
+Enregistrer le nouveau script directement en cliquant sur la petite icone de disquette. N’oubliez pas de sauvegarder votre script régulièrement (*Ctr+S*).  
+
+Vous devriez voir votre écran divise en 4 parties principales: **Script**, **Console**, **Environment/History** et **Files/Plots/Packages/Help/Viewer**.  
+
+Dans la partie *script* vous écrivez les commandes et pour les faire executer vous allez dans `Code->Run`.
+Ou bien sélectionnez lines que vous voulez executer et tapez *Ctr+Enter*.
+
+Essayez
+```{r results='asis', tidy=TRUE}
+print('Hello world') #[Ctr+Enter]
+```
+
+Si vous cliquez sur **History** vous devriez voir: 
+`print('Hello world')`
+
+Historique sauvegarde les commandes effectuées dans l’ordre hronologique.
+
+Pour savoir plus sur la fonction `print`
+tapez:
+```{r results='hide'}
+?print
+```
+directement dans la console, a votre droite l’onglet **Help** va afficher directement les informations sur `print`.  
+
+Dans le R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.  
+
+##Sans *R studio* - the brute {#sansStudio}
+
+Vous allez executer les scripts R directement dans la ligne de commandes de votre Unix/Mac.
+Ouvres terminal et tapez: `R`
+Cela va ouvrir le logiciel directement dans le terminal.  
+Vous pouvez taper `print('Hello world')` directemment dans la console.  
+Vous allez voir  
+`> print('Hello world')`  
+`[1] "Hello world"`
+
+Pour l'aide sur la fonction tapez:  
+`?print`  
+(marche avec toutes les fonctions)  
+
+Dans R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.  
+
+Neanmoins, pour garder tous vos commandes dans un document, et effectuer les commandez plus complexes, sauvgarder votre commande dans un fichier et effectuez avec R.  
+
+1. tapez *gedit* (Unix) ou un autre editeur de texte simple (pas MS Word)  
+2. écrivez `print('Hello world')`  
+3. sauvgarder le fichier myscript**.R**  
+4. dans le terminal, dans le même répertoire où vous avez sauvegardé le fichier tapez `Rscript myscript.R`  
+
+Dans la console vous devriez voir  
+`[1] "Hello world"`
+
+***
+***
+##Manipulation de données
+###Importez les données
+
+Enregistrez le fichier [ozone.txt http://www.agrocampus-ouest.fr/math/livreR/ozone.txt](http://www.agrocampus-ouest.fr/math/livreR/ozone.txt) sur votre ordinateur.  
+
+Ensuite importez dans R, pour se faciliter la tâche decidez dans quel repertoire voulez avoir vos fichiers R de cette session
+
+```{r eval=FALSE}
+setwd('/chemin')
+```
+
+par example si le fichier est dans `~/Downloads`:  
+```{r eval=FALSE}
+setwd('/XXXX/xxxx/Downloads')
+```
+```{r eval=FALSE}
+setwd('/XXXX/xxxx/Downloads')
+```
+
+
+pour connaitre le chemin complet de votre fichier ozone.txt, allez dans le repértoire où il est enregistré et tapez dans le terminal:
+`pwd`  
+
+Ensuite dans le script (fenêtre Script dans Rstudio ou votre fichier *.R*):  
+```{r, results='hide', eval=FALSE}
+read.table("ozone.txt", sep=" ", header=TRUE)
+```
+```{r echo=FALSE,results='hide'}
+read.table('http://www.agrocampus-ouest.fr/math/livreR/ozone.txt', sep=" ", header=T)
+```
+
+Quoique, vous devriez éviter d’afficher les données dans la console. Dans le cas de grands jeux de données cela peut ralentir énormément le système. Donc mieux c’est:  
+
+```{r, eval=FALSE}
+mytable=read.table("ozone.txt", sep=" ", header=TRUE)
+```
+```{r echo=FALSE,results='hide'}
+mytable=read.table('http://www.agrocampus-ouest.fr/math/livreR/ozone.txt', sep=" ", header=T)
+```
+
+Dès que vous créez une variable, elle apparait dans l’onglet environnement et vous pouvez voir ses caractéristiques (*RStudio*).  
+
+**La bonne pratique**: Après avoir importé votre jeu de données, vérifiez toujours s’il est bien importé. Une manière simple, c’est de faire:  
+```{r}
+summary(mytable)
+```
+
+Pour connaître les dimensions du tableau
+```{r}
+dim(mytable)
+```
+
+**A quoi corresponds premier chiffre? deuxième chiffre?**
+ 
+
+###Organisation d’information:  
+```{r}
+head(mytable)
+```
+Cela vous donnée une idée comment sont les premières 6 lignes du tableau.
+
+1.**Afficher juste la première colonne du tableau ‘mytable’**  
+2.**Afficher juste la première ligne du tableau ‘mytable’**  
+3.**Afficher les noms de colonnes du tableau ‘mytable’**   
+4.**Créez un vecteur ‘Group’ de la meme longueur qu'une colonne du tableau contenant le chiffre 1 pour la moitié de lignes et le chiffre 2 l’autre moitié (indice function ‘rep’)**    
+5.**l’ajoutez au tableau comme une colonne (indice function ‘cbind’)**   
+6.**Supprimez la colonne que vous venez d’ajouter**    
+
+
+Pour répondre aux questions utilisez `help("fonction")` ou `?fonction`, Google etc.  
+
+<!-- **Réponses**   -->
+<!-- ```{r} -->
+<!-- #1.	 -->
+<!-- mytable[,1] -->
+<!-- #2.	 -->
+<!-- mytable[1,] -->
+<!-- #3.	 -->
+<!-- names(mytable) -->
+<!-- #4.	 -->
+<!-- Group=c(rep('1',56),rep('2',56)) -->
+<!-- length(Group) -->
+<!-- #5.  -->
+<!-- mytable=cbind(mytable, Group) -->
+<!-- summary(mytable) -->
+<!-- #6.  -->
+<!-- mytable=mytable[,-14] -->
+<!-- ``` -->
+
+
+<!-- *** -->
+***
+
+##Visualisation des données R standard  
+
+*Pour RStudio*  
+Commencer par la commande
+```{r,evaluate=FALSE, fig.keep='none', results='hide'}
+demo(graphics)
+```
+
+et observez l’onglet **Plots**
+Dans la console s’affichent les commandes utilisées pour obtenir les graphs.
+
+*Sans R studio*  
+1. Ouvrir R session dans le terminal (`R`)  
+2. Tapez directement
+```{r,evaluate=FALSE, fig.keep='none', results='hide'}
+demo(graphics)
+```
+3. Tapez la touche `Entrée`  
+4. Une fênetre blanche va s'ouvrir, revenez dans le terminal et tapez la touche `Entrée`
+***
+
+Mais commençant par nos donnés:  
+
+Le jeu de donnés contient les variables climatiques et une variable de pollution à l’ozone mesurées durant l’été 2001 à Rennes. Les variables considérées ici seront:  
+
+**max03** - maximum de l’ozone journalier  
+**T12** - température à midi  
+**vent** - direction du vent  
+**pluie**  
+**Vx12** - projection du vecteur vitesse du vent sur l’axe Est-Ouest  
+
+Regardez encore une fois 
+```{r, results='hide'}
+summary(mytable) 
+```
+
+**Lesquelles variables sont quantitatives? Qualitatives?**
+
+Sélectionnez seulement les colonnes mentionnez et enregistrez dans une variable `ozon`
+
+```{r}
+ozone=mytable[,c('T12','maxO3','vent','pluie','Vx12')]
+summary(ozone)
+```
+
+Afin de représenter deux colonnes comme un nuage de points. Observez le taux d’O3 maximale en fonction de la température à midi
+
+```{r}
+#plot(x,y)
+plot(ozone[,'T12'],ozone[,'maxO3'])
+```
+ou bien  
+```{r, fig.keep='none', results='hide'}
+plot(maxO3~T12, data=ozone)
+```
+
+
+Visualisez le taux maximal d’O3 (maxO3) en fonction de la variable  vent poursuivant la même logique    
+
+
+```{r, fig.keep='none', results='hide'}
+plot(maxO3~vent, data=ozone,xlab='Secteur du vent', ylab="pic d'ozone")
+```
+ici equivalent à
+```{r, fig.keep='none', results='hide'}
+boxplot(maxO3~vent, data=ozone,xlab='Secteur du vent', ylab="pic d'ozone")
+```
+
+**Annotez les parties de la boite à moustaches (boxplot).**  
+
+Vous pouvez aussi personnaliser le graph.  
+Ajoutez les couleurs:  
+```{r,tidy=TRUE}
+col=c("blue","red","green", "yellow")
+boxplot(maxO3~vent, data=ozone,xlab='Secteur du vent', ylab="pic d'ozone",col=c("blue","red","green", "yellow"))
+```
+
+***
+
+Si vous avez de difficultés à comprendre ce qui répresentent 'boxplot' faites une exercice:  
+
+Si l'on s’intéresse qu’à la catégorie l’Est  
+
+Selectionnez une partie du tableau qui correspond au vent de l’Est 
+```{r}
+ozoneE=ozone[ozone$vent=='Est',]
+```
+Faites une boite à moustache   
+```{r}
+boxplot(ozoneE[,2],xlab='Secteur du vent', ylab="pic d'ozone")  
+```  
+
+observez les valeurs dans l’ordre   
+```{r}
+sort(ozoneE$maxO3)
+```
+Calculez la moyenne  
+```{r}
+mean(ozoneE$maxO3)
+```
+Calculez les quantiles/ a quoi correspond-ils?  
+```{r}
+quantile(ozoneE$maxO3)
+```
+Essayez maintenant d’observer ces éléments sur le graph
+
+***
+
+Pour visualiser deux variables qualitatives essayez:  
+```{r}
+plot(pluie~vent, data=ozone)
+```
+
+**Pareil, faites un graphe de direction du vent en fonction de température**  
+
+<!-- ```{r,fig.keep='none', results='hide' } -->
+<!-- plot(vent~T12, data=ozone) -->
+<!-- ``` -->
+
+
+###Distribution 
+```{r, fig.keep='none', results='hide'}
+hist(ozone$maxO3,xlab='Ozone',main='Histogram')
+```
+
+
+**Décrivez le graph, en quels unités est l’axe y?**  
+
+**Utilisez les informations trouvé sur [le site http://www.statmethods.net/advgraphs/parameters.html](http://www.statmethods.net/advgraphs/parameters.html) pour transformer en jouant avec les paramètres.**  
+
+```{r}
+plot(maxO3~T12, data=ozone)
+```
+
+**en**  
+
+
+<!-- (réponse)   -->
+```{r, echo=FALSE}
+plot(maxO3~T12, data=ozone,col=vent,pch=16, main="Taux maximal d'O3 en fonction de la temperature",ylab="max03 [ppm]",xlab="temperature a midi [C]")
+legend("topleft", legend=c(levels(ozone[,3])),col=c("black", "red","green","blue"),pch=16)
+```
+**Notez le code R dans le compte-rendu des TD**  
+
+
+***
+
+
+##GGPLOT2 - ajoutons une couche
+
+Pour installer effectuez la commande: 
+```{r, evaluate=FALSE}
+install.packages("ggplot2") 
+```
+et ensuite 
+
+```{r}
+library(ggplot2)
+```
+
+Dans le concept de ggplot2 le graphs sont compose de différents couches superposées.  
+
+En utilisant le même jeu de données tapez  
+```{r,fig.keep='none', results='asis'}
+ggplot(ozone, aes(x = T12, y = maxO3))
+```
+
+R vous informe que le graphe n’a pas de couches  
+sauvegardez le plot dans un objet `p` et ajoutez une couche   
+
+###Scatterplot  
+
+```{r}
+p <- ggplot(ozone, aes(x = T12, y = maxO3))
+p <- p + geom_point()
+p
+```
+
+Faites attention au operateur + qui va servir toujours a ajouter les couches. Chaque nouvelle couche est une fonction qui prend en argument ses caractéristiques  
+
+Essayez  
+```{r,tidy=TRUE, fig.keep='none', results='hide'}
+ggplot(ozone, aes(x = T12, y = maxO3)) +  geom_point(color = "red", size = 5)
+```
+
+Une couche statistique  
+```{r,fig.keep='none', results='hide'}
+p <- p + stat_smooth()
+```
+La ligne représente un ‘fit’ et la bande grise, elle répresente l'intervalle de confiance établie en utilisant la méthode *`loess`*  
+
+Vous pouvez aussi visualiser la ligne sans points  
+
+```{r,fig.keep='none', results='hide'}
+ggplot(ozone, aes(x = T12, y = maxO3)) + stat_smooth()
+```
+
+Pour bien annoter le graph:  
+```{r,fig.keep='none', results='hide',  tidy=TRUE}
+p <- ggplot(ozone, aes(x = T12, y = maxO3))+ geom_point(color = "red", size = 5)+ylab("taux maximal d'O3")+
+  xlab("temperature a midi")+
+  theme_bw()+
+  labs(title = "taux d'ozone en fonction de la temperature a Rennes")
+```
+```{r, echo=FALSE, fig.keep='none', results='hide'}
+p
+```
+
+**Que fait-il theme_bw()?**  
+
+C’est facile aussi de colorier les points en fonction du type de vent  
+
+```{r,fig.keep='none', results='hide', tidy=TRUE}
+p <- ggplot(ozone, aes(x = T12, y = maxO3,color = vent))+ geom_point(size = 3)+ylab("taux maximal d'O3")+
+  xlab("temperature a midi")+
+  theme_bw()+
+  labs(title = "taux d'ozone en fonction de la temperature a Rennes")
+```
+```{r, echo=FALSE,fig.keep='none', results='hide'}
+p
+```
+Observez que la légende apparait toute seule!  
+
+Vous pouvez joindre les points avec les lignes par groupe aussi  
+```{r,tidy=TRUE,fig.keep='none', results='hide'}
+p <- ggplot(ozone, aes(x = T12, y = maxO3,color = vent))+ geom_point(size = 3)+ylab("taux maximal d'O3")+
+  xlab("temperature a midi")+
+  theme_bw()+
+  labs(title = "taux d'ozone en fonction de la temperature a Rennes")+
+  geom_line()
+```
+```{r, echo=FALSE, fig.keep='none', results='hide'}
+p
+```  
+
+Il est aussi possible de mapper les couleurs de valeurs continues  
+```{r,tidy=TRUE,fig.keep='none', results='hide'}
+p <- ggplot(ozone, aes(x = T12, y = maxO3,color = maxO3))+ geom_point(size = 3)+ylab("taux maximal d'O3")+
+  xlab("temperature a midi")+
+  theme_bw()+
+  labs(title = "taux d'ozone en fonction de la temperature a Rennes")
+```
+```{r, echo=FALSE, fig.keep='none', results='hide'}
+p
+```
+###BARPLOT
+```{r}
+p <- ggplot(ozone, aes(x =vent))+geom_bar()
+```
+avec les couleurs  
+```{r, fig.keep='none', results='hide'}
+p <- ggplot(ozone, aes(x =vent, fill=vent))+geom_bar()
+```
+```{r, echo=FALSE, fig.keep='none', results='hide'}
+p
+```  
+
+Pour changer la palette de coloration ajoutez  
+```{r, fig.keep='none', results='hide'}
+p+
+scale_fill_brewer(palette = "Set1")
+```
+Ou décidez quels couleurs vous preferez pqr vous memes  
+```{r, fig.keep='none', results='hide'}
+p+
+scale_fill_manual(values=c("bisque", "chartreuse4",
+                             "hotpink","yellow"))
+```
+
+###error bars
+```{r, fig.keep='none', results='hide'}
+ggplot(ozone, aes(vent, maxO3,fill=vent))+
+  stat_summary(fun.y = mean, geom = "bar")+
+  stat_summary(fun.data = mean_sdl, geom = "errorbar")
+```
+**mean_sdl**- retourne la moyenne du groupe, et les error bars qui correspond a l’ecart-type  
+
+vous pouvez essayer aussi  
+
+```
+mean_cl_boot()
+mean_cl_normal()
+median_hilow()
+```
+
+###Documentation:
+●	**mean_cl_boot()**  
+	This will return the sample mean, and 95% bootstrap confidence intervals.  
+●	**mean_cl_normal()**  
+	This will return the sample mean, and the 95% percent Gaussian confidence interval based on the t-distribution  
+●	**mean_sdl()**  
+	This will return the sample mean and values at 1 sd and -1 sd away. You can make it return points any arbitrary number of sds away by passing that value to mult. For example, mult = 2 will return 2 and -2 sds.  
+●	**median_hilow()**  
+	This will return the sample median, and confidence intervals running from the 0.025 quantile to the 0.975 quantile, which covers 95% of the range of the data. You can change what range of the data you want the confidence interval to cover by passing it to conf.int. For example conf.int = 0.5 will return confidence intervals ranging from the 0.25 quantile to the 0.75 quantile.  
+
+###Densité
+Executez  
+```{r, fig.keep='none', results='hide'}
+ggplot(ozone, aes(maxO3, T12))+
+  stat_density2d()+geom_point()
+```
+
+Vous pouvez jouer avec la coloration 
+```{r,fig.keep='none', results='hide'}
+ggplot(ozone, aes(maxO3, T12))+
+  stat_density2d(geom = "point",contour = F,
+             	aes(size = ..density..), alpha = 0.3)
+```
+```{r,fig.keep='none', results='hide'}
+ggplot(ozone, aes(maxO3, T12))+
+  stat_density2d(geom = "tile", contour = F, aes(fill = ..density..))
+```
+
+ou bien
+```{r,tidy=TRUE}
+ggplot(ozone, aes(maxO3, T12))+
+  stat_density2d(geom = "tile", contour = F, aes(fill = ..density..))+scale_fill_gradientn(colours = rainbow(6))
+```
+
+###Ressources  
+[handout_ggplot2.pdf](http://www.ceb-institute.org/bbs/wp-content/uploads/2011/09/handout_ggplot2.pdf)  
+[http://www.ling.upenn.edu/~joseff/avml2012/#Section_1](http://www.ling.upenn.edu/~joseff/avml2012/#Section_1)  
+[http://www.cookbook-r.com/Graphs/Bar_and_line_graphs_%28ggplot2%29/](http://www.cookbook-r.com/Graphs/Bar_and_line_graphs_%28ggplot2%29/)  
