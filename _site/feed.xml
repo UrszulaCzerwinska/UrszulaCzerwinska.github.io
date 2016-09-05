@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Sep 2016 11:57:04 +0200</pubDate>
-    <lastBuildDate>Mon, 05 Sep 2016 11:57:04 +0200</lastBuildDate>
+    <pubDate>Mon, 05 Sep 2016 12:01:28 +0200</pubDate>
+    <lastBuildDate>Mon, 05 Sep 2016 12:01:28 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -947,7 +947,7 @@ median_hilow()
 
 &lt;h3&gt;What did I learn in iGEM?&lt;/h3&gt;
 &lt;ul&gt;
-	&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/iGEM_sepia.jpg&quot; alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
+	&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/igem_sepia.jpg&quot; alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
 	&lt;li&gt;&lt;b&gt;Team work&lt;/b&gt; is tough. People working in the team often have different background, different goals and different work pace. Discussion, compromise and forgiveness are keys to achieve goals of the project.&lt;/li&gt;
 
 	&lt;li&gt;&lt;b&gt;Graphical design&lt;/b&gt; is fun and not as hard as it seems. I have been introduced to basics of software for working vector images that serves me till today.&lt;/li&gt;
