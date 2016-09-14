@@ -5,9 +5,123 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Sep 2016 12:01:28 +0200</pubDate>
-    <lastBuildDate>Mon, 05 Sep 2016 12:01:28 +0200</lastBuildDate>
+    <pubDate>Wed, 14 Sep 2016 17:27:26 +0200</pubDate>
+    <lastBuildDate>Wed, 14 Sep 2016 17:27:26 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Intro and retrospective on Computational Biology &amp; Data</title>
+        <description>&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;style&gt;
+    &lt;p&gt; body {
+        background-color: blue;
+    }
+    
+    .highlightme {
+        background-color: #ccffe5;
+    }
+    
+    &lt;/p&gt;
+    &lt;/style&gt;
+&lt;/body&gt;
+&lt;section&gt;
+    &lt;p&gt;&lt;em&gt;&lt;b&gt;Data, big data, omics data, noisy data, a lack of data, data overflow, open data.&lt;/b&gt;Data is an increasingly critical part of life as a researcher — particularly in the field of computational biology. How to treat data? How to manage data? How to smartly produce data? How to simulate data? How to reproduce data? Data, data, data…&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;But what is &lt;b&gt;Computational Biology&lt;/b&gt;? In the past, it was seen as a support for biological research; a set of tools helping answer biological questions asked by researchers — real researchers that is. However, when you consider recent breakthroughs, dynamical development of this discipline and the impact it has, it is easy to see why those in the field believe that that computational biology is and will be a driving force of biological research. What is particularly striking is the change in computational biology from &lt;b&gt;descriptive to data-driven science&lt;/b&gt;.&lt;/p&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/old_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;p&gt;It all started with genomics. When biologist trained in wet-lab work they could not treat their data themselves and this is how new discipline was born. Like all young disciplines, it had to negotiate its place in the research landscape. Today, computational biology is still expanding thanks to new technologies and the ongoing digital revolution.&lt;/p&gt;
+    &lt;h3&gt;Breakthroughs&lt;/h3&gt;
+    &lt;p&gt;An undeniable innovator of computational biology, &lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/batzoglou&quot; target=&quot;_blank&quot;&gt;Serafim Batzoglou&lt;/a&gt;, in his keynote talk at ISMB 2016, presented his vision of the past and the future of this discipline. His talk started with human genome sequencing, through to data manipulation, to personal genomics and finally artificial intelligence. He stated research need to keep up with new technologies with a quote from the TV series
+        &lt;a href=&quot;http://www.imdb.com/title/tt2575988/&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;Silicon Valley&lt;/a&gt;:&lt;/p&gt;
+    &lt;blockquote&gt;&lt;strong&gt;“I don’t want to live in a world where someone else is making the world a better place better than me”&lt;/strong&gt;&lt;/blockquote&gt;
+    &lt;p&gt;In his talk, &lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/batzoglou&quot; target=&quot;_blank&quot;&gt;Serafim Batzoglou&lt;/a&gt; made the somewhat controversial comment that &lt;span class=&quot;highlightme&quot;&gt;&lt;em&gt;AI will replace medical doctors&lt;/span&gt;&lt;/em&gt; in near future and he named his candidate for most important and promising technology: &lt;b&gt;deep learning&lt;/b&gt;.&lt;/p&gt;
+    &lt;blockquote&gt;&lt;i&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Deep_learning&quot; target=&quot;_blank&quot;&gt;Deep learning&lt;/a&gt; is a branch of machine learning based on a set of &lt;a href=&quot;https://en.wikipedia.org/wiki/Algorithm&quot; target=&quot;_blank&quot;&gt;algorithms&lt;/a&gt; that attempt to model high-level abstractions in data by using a deep graph with multiple processing layer; composed of multiple linear and &lt;a href=&quot;https://en.wikipedia.org/wiki/Linear_transformation&quot; target=&quot;_blank&quot;&gt;non-linear transformations&lt;/a&gt;.&lt;/i&gt;&lt;/blockquote&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/keynotetalk.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;b&gt;Single-cell transcriptomics&lt;/b&gt; were unofficially named most exciting technology for studying biological systems - with three out of six keynote speakers talking about their recent progress when treating single cell transcriptomics data.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/batzoglou&quot; target=&quot;_blank&quot;&gt;Serafim Batzoglou&lt;/a&gt; also mentioned clustering algorithm, called SimlR challenging existing methods of dimension reduction . The &lt;a href=&quot;http://biorxiv.org/content/early/2016/05/09/052225&quot; target=&quot;_blank&quot;&gt;preprint&lt;/a&gt; of the article is accessible at &lt;a href=&quot;http://biorxiv.org/&quot; target=&quot;_blank&quot;&gt;http://biorxiv.org/&lt;/a&gt;.&lt;/p&gt;
+    &lt;div&gt;
+        &lt;figure&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/simlR.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+            &lt;figcaption&gt;Outline of SIMLR from “Visualization and analysis of single-cell RNA-seq data by kernelbased similarity learning” — Image credit: Bo Wang et al ,2016 , (CC BY-NC-ND 4.0)&lt;/figcaption&gt;
+        &lt;/figure&gt;
+    &lt;/div&gt;
+    &lt;br&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/dudoit&quot; target=&quot;_blank&quot;&gt;Sandrine Dudoit&lt;/a&gt; also referred to single-cell data; with particular attention to treating the problem of noise to signal ratio and data reproducibility. In her lab more robust tools of clustering are under development. For example: &lt;i&gt;&lt;a href=&quot;https://github.com/epurdom/clusterExperiment&quot; target=&quot;_blank&quot;&gt;clusterExperiment&lt;/a&gt;&lt;/i&gt; decides on clusters based on many clustering methods and picks the ones that are the most stable.&lt;/p&gt;
+    &lt;p&gt;The keynote talk by Sarah Teichmann showcased a cutting-edge example of exploration of single-cell data. In publication she co-authors (&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/26950746&quot; target=&quot;_blank&quot;&gt;“Tcell fate and clonality inference from single-cell transcriptomes”&lt;/a&gt;), full-length paired T-cell receptor (TCR) sequences are reconstructed from single cell data.&lt;/p&gt;
+    &lt;p&gt;A key trend currently is to gather information at the highest level of accuracy and then group it into meaningful blocks of knowledge which best characterize the data and correspond to biological reality, or even better, discover unknown pieces of biological systems. This is how computational biology is driving biological research today.&lt;/p&gt;
+    &lt;em&gt;&lt;strong&gt;And there will be more; more data, more challenges, more breathtaking discoveries!&lt;/strong&gt;&lt;/em&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/coud_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;h3&gt;Challenges&lt;/h3&gt;
+    &lt;p&gt;One them is &lt;b&gt;education&lt;/b&gt;. &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Bourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt;, &lt;a href=&quot;http://www.nih.gov/news/health/dec2013/od-09.htm&quot; target=&quot;_blank&quot;&gt;Associate Director for Data Science of NIH&lt;/a&gt;, in the workshop &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;Education in Bioinformatics — Exploiting Cloud and Virtual Resources for Training&lt;/a&gt;, highlighted the importance of &lt;b&gt;cloud data&lt;/b&gt; training to keep the pace of technologies developed by companies (e.g. Amazon, Google, iPlant). The new generation of computational biologists and Bioinformaticians, as well as senior researchers, require solid and up-to-date training. This is why the NIH proposes numerous programs facilitating cloud training. Unfortunately, it is not the case at all research institutes currently, but it definitely should be in the future.&lt;/p&gt;
+    &lt;p&gt;Another important issue raised by &lt;a href=&quot;https://en.wikipedia.org/wiki/Philip_Bourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt; and &lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/batzoglou&quot; target=&quot;_blank&quot;&gt;Serafim Batzoglou&lt;/a&gt; was the importance of keeping data open. Phil mentioned in particular the &lt;a href=&quot;http://www.nature.com/articles/sdata201618&quot; target=&quot;_blank&quot;&gt;FAIR Data Principles&lt;/a&gt; which stand for:&lt;/p&gt;
+    &lt;blockquote&gt;&lt;em&gt;&lt;strong&gt;Findability, Accessibility, Interoperability, and Reusability&lt;/strong&gt; - These serve to guide data producers and publishers as they navigate around obstacles, thereby helping to maximize the added-value gained by contemporary, scholarly publishing.&lt;/em&gt;&lt;/blockquote&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.iscb.org/ismb2016program/keynotes/batzoglou&quot; target=&quot;_blank&quot;&gt;Serafim Batzoglou&lt;/a&gt; outlined the necessity of making data public in one of the slides in his keynote talk (quoted):&lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;h3&gt;Biggest obstacle: wide, free data availability&lt;/h3&gt;
+        &lt;h2&gt;Ideal&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Millions of publicity available genomes, medical records, phenotypes, enivornments&lt;/li&gt;
+            &lt;li&gt;Far reaching anti data-based discrimination laws; GINA great start&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2&gt;Not ideal&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Data silos in hospitals, health care providers, gov’t, direct-to-direct consumer companies&lt;/li&gt;
+            &lt;li&gt;Specialized large-scale projects (1000 genomes but no phenotypes/medical records)&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;h2&gt;What about privacy?&lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;No cancer patients have died yet because of data privacy breach&lt;/li&gt;
+            &lt;li&gt;My Facebook page reveals much more private stuff about me than my genome or medical record&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/blockquote&gt;
+    &lt;br&gt;
+&lt;h2&gt;&lt;em&gt;&lt;span class=&quot;highlightme&quot;&gt;Let’s make our data public — if 5% of us do, probably enough to make a big difference.
+Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt;
+  
+
+    &lt;hr /&gt;
+    &lt;h3&gt;Flaws&lt;/h3&gt;
+    &lt;p&gt;There are still some flaws with regards to big data — but it still represents big hope for computational biology.&lt;/p&gt;
+    &lt;p&gt;
+        According to &lt;a href=&quot;https://www.linkedin.com/in/urilaserson&quot; target=&quot;_blank&quot;&gt;Uri Laserson&lt;/a&gt; from &lt;a href=&quot;http://www.cloudera.com/&quot; target=&quot;_blank&quot;&gt;Cloudera&lt;/a&gt; (a leader platform for data management and analysis), &lt;a href=&quot;http://fr.slideshare.net/urilaserson/genomics-is-not-special-towards-data-intensive-biology&quot; target=&quot;_blank&quot;&gt;“Genomic is not special”&lt;/a&gt;. He expressed the view that:&lt;/p&gt;
+    &lt;blockquote&gt;&lt;em&gt;Computational biologists are reinventing the wheel for big data biology analysis&lt;/em&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;Even though the statement is bold, there is some truth in it. It looks like industrial solutions for big data somehow outperform research solutions. This is why &lt;b&gt;more collaboration between research and industry is needed&lt;/b&gt; to fill the gap. On the other hand, this collaboration cannot happen at the price of data ownership. Academy needs to find a solution to attract world-scale talents that right now goes where big data is linked tightly to big money.&lt;/p&gt;
+    &lt;p&gt;Another recurrent problem for many computational biologists and bioinformaticians is their place in biological research. Despite an improving amount of recognition of computational work in wet labs, there is still a number of places that lack of expertise in data analysis. Old analysis methods are reproduced and consequently spread used by others in the field — all because a number of researchers are using them.&lt;/p&gt;
+    &lt;p&gt;Programming or statistical input is not acknowledged enough and this is where there can some friction between experimentalists and theoreticians that can hinder progress. Strolling through alleys of the poster hall at ISMB 2016, overheard many accounts of interactions between wet and dry lab. Most of them recalled tension, disappointment or misunderstanding. This is why &lt;b&gt;education is really crucial&lt;/b&gt;. No one cannot be an expert in all domains, but a comprehensible overview of each other worlds, common vocabulary and goals are essential to building a common future.&lt;/p&gt;
+    &lt;hr /&gt;
+    &lt;p&gt;&lt;b&gt;Computational biology is in the heart of digital revolution.&lt;/b&gt; Paradoxically a lack and an excess of data make this discipline extremely intriguing and challenging. With individual countries frequently making decisions on policies that have an impact on the direction and pace of the development of solutions, data’s impact on our future is undeniable. &lt;b&gt;But then again, what is data? A set of numbers?&lt;/b&gt;&lt;/p&gt;
+    &lt;blockquote&gt;&lt;h3&gt;&lt;em&gt;From technical point of view, each of us is a multidimensional data-set. Can we be easily reduced to a few dimensions? Can our time dimension be predicted from real time data? Can someone own us? Are we approaching era of digital slavery?&lt;/em&gt;&lt;/h3&gt;
+    &lt;/blockquote&gt;
+    &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/hole_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;p&gt;You may be also interested in :&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://compbiofieldreports.plos.org/computational-biology-moving-into-the-future-one-click-at-a-time-83f81c0e293d#.qy67d53p8&quot; target=&quot;_blank&quot;&gt;Computational Biology: Moving into the Future One Click at a Time. Message from ISCB&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on Setpember 13, 2016.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/computational-biology-data-ismb16-1607154654ea#.ijpvjgnnw&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/section&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Tue, 13 Sep 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/compbiodata</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/compbiodata</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+        <category>conferenceISMB2016</category>
+        
+      </item>
     
       <item>
         <title>Career transition - from academia to industry</title>
@@ -169,8 +283,6 @@
         <pubDate>Fri, 08 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/scs</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/scs</guid>
-        
-        <category>featured</category>
         
         
         <category>thoughts</category>
@@ -975,306 +1087,6 @@ Images, discoveries and ideas are property of &lt;a href=&quot;http://2014.igem.
         <category>Product design</category>
         
         <category>Graphical design</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>DeDaL</title>
-        <description>&lt;p&gt;Project of &lt;strong&gt;DeDaL&lt;/strong&gt; was born in 2014 (or long before) in a context of cancer research in the lab of Computational Systems Biology of Cancer in Institut Curie in Paris in the mind of my research advisor Andrei Zinovyev.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The idea was to develop a tool that would &lt;strong&gt;combine multidimensional meta data&lt;/strong&gt; associated with network and &lt;strong&gt;network&lt;/strong&gt; itself in a form of an &lt;strong&gt;intelligent layout&lt;/strong&gt;. We achieved it through performing PCA and Elastic Map (non-linear version of PCA) on the meta dataset and mapping network connexions into this MDS layout.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The difference between &lt;strong&gt;DeDaL&lt;/strong&gt; and other MDS layouts available, it that  &lt;strong&gt;DeDaL&lt;/strong&gt; uses meta data and not the network structure in order to perform the layout. It also contains additional and more advanced features like network smoothing, alignment and morphing. &lt;strong&gt;DeDaL&lt;/strong&gt; helps to interpret and visualize multidimensional data associated with network.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/cartoonDDL.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Cartoon representing idea of &lt;b&gt;DeDaL&lt;/b&gt;&lt;/em&gt; &lt;/p&gt;
-
-&lt;p&gt;Today, &lt;strong&gt;DeDaL&lt;/strong&gt; is a piece of software, &lt;strong&gt;I developed in Java&lt;/strong&gt; together with A. Zinovyev, that can be used in &lt;a href=&quot;http://www.cytoscape.org/cy3.html&quot;&gt;Cytoscape 3.0&lt;/a&gt; network visualization interface. It has been applied to a number of biological data which resulted in &lt;a href=&quot;http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4&quot;&gt;publication&lt;/a&gt; in BMC Systems Biology. Together with &lt;a href=&quot;http://bioinfo-out.curie.fr/projects/dedal/&quot;&gt;DeDaL website&lt;/a&gt; that contains full description and step-by-step tutorial and &lt;a href=&quot;https://github.com/sysbio-curie/DeDaL&quot;&gt;github repository&lt;/a&gt;, the software is well documented and open.&lt;br /&gt;
- &lt;/p&gt;
-
-&lt;p&gt;However, &lt;strong&gt;DeDaL&lt;/strong&gt; finds its application not only in biological data. Here I post a little demo of &lt;strong&gt;DeDaL&lt;/strong&gt; applied to &lt;a href=&quot;http://eh.net/database/international-currencies-1890-1910/&quot;&gt;&lt;em&gt;International Currencies 1890-1910&lt;/em&gt; data from Flandreau, M. and C. Jobst&lt;/a&gt; to encourage you to try it out with different data.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt;International currencies dataset&lt;/h3&gt;
- &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;‘For better or worse – and opinions differ on this – the choice of which language
-and which currency is made not on merit, or moral worth, but on size.’&lt;br /&gt;
-(Kindleberger, 1967, p. 11)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The dataset gives measures for the international role of 45 currencies between 1890 and 1910 as well as a set of variables that can explain the relative position of these currencies.&lt;br /&gt;
-Data have been collected for the years 1890, 1900 and 1910. The exchange structure matrix is
-complete from an empirical point of view, including virtually all currencies of the world in
-1890-1910. It also has the nice conceptual feature to identify two different exchange markets
-for a given currency pair, corresponding to the home countries of the two currencies involved.&lt;/p&gt;
-
-&lt;p&gt;The information on foreign exchange refers to ordered country pairs, i.e. for every country
-pair there are two observations: (1) whether the foreign exchange markets in the first country
-trade the second country’s currency and (2) whether the foreign exchange markets in the
-second country trade the first country’s currency. The data file is structured accordingly. The
-first two columns country_A and country_B identify the country pair, where country_A gives
-the location of the foreign exchange market and country_B the home country of the currency
-traded. There is information on 45 countries/currencies, yielding a total of 45*44 = 1980
-country pairs.&lt;/p&gt;
-
-&lt;p&gt;Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:&lt;/p&gt;
-&lt;ul&gt;	
-&lt;li&gt;&lt;b&gt;dist&lt;/b&gt;: log distance as the crow flies between the cities with foreign exchange
-markets in country_A and country_B.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;bitrade&lt;/b&gt; gives total trade between country_A and country_B in thousand US dollars.&lt;/li&gt;   
-&lt;li&gt;&lt;b&gt;gold&lt;/b&gt; is an indicator variable =1 if country_A has a currency convertible in gold in
-1900 and 0 otherwise.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;debtburden&lt;/b&gt; is the ratio of government debt over government revenues in 1900. &lt;/li&gt; 
-&lt;li&gt;&lt;b&gt;rlong&lt;/b&gt; is the secondary market yield for gold denominated government debt in 1900. &lt;/li&gt; 
-&lt;li&gt;&lt;b&gt;rshort1900&lt;/b&gt; is the market rate for 3 month lending, in most cases the discount rate for
-3 month commercial paper in 1900.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;rshort1890&lt;/b&gt; same as above for 1890.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;rgdp&lt;/b&gt; and &lt;b&gt;rgdpcap&lt;/b&gt; give the log 1900 real gdp and the log real gdp per capita.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;poldemo&lt;/b&gt; reproduces the index of democracy (ID) of the Polyarchy dataset developed
-by Vanhanen (2000) for 1900.&lt;/li&gt;  
-&lt;li&gt;&lt;b&gt;coverage&lt;/b&gt; is the logarithm of the number of currencies traded in country_A.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Detailed information can be found in the &lt;a href=&quot;http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf&quot;&gt;intro document&lt;/a&gt;.
-&lt;b&gt;&lt;/b&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt;Hands on&lt;/h3&gt;
- &lt;/p&gt;
-&lt;p&gt;Here, using &lt;strong&gt;DeDaL&lt;/strong&gt; I will try to see how much we can learn about currency market without previous knowledge in economy, based on the network and metadata associated with each country.&lt;/p&gt;
-
-&lt;p&gt;Firstly, I will import the raw data from the website. I am skipping first 9 lines that contain the intro text: 
- &lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The international circulation of currencies 1890-1910&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;Please cite as:&lt;/em&gt;
-&lt;em&gt;- When using the network data for 1890, 1900 or 1910:&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;Flandreau, M. and C. Jobst (2005), ‘The ties that divide: a network analysis of the international monetary system 1890–1910’, Journal of Economic History, vol. 65(4).&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;- When using the explanatory variables for 1900:&lt;/em&gt;&lt;br /&gt;
-&lt;em&gt;Flandreau, M. and C. Jobst (2009), ‘The empirics of international currencies: Networks, history and persistence’, The Economic Journal, vol. 119(April).&lt;/em&gt;&lt;br /&gt;
- &lt;/p&gt;
-
-&lt;p&gt;And we can have a look at the imported table with function head printing first 5 lines.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_data.txt&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;raw_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;read.delim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##   country_A country_B quote1890 quote1900 quote1910 colony     dist
-## 1       ARG       AUH         0         0         0      0 9.374816
-## 2       ARG       AUS         0         0         0      0 9.360207
-## 3       ARG       BEL         1         1         1      0 9.330780
-## 4       ARG       BRA         0         1         1      0 7.613854
-## 5       ARG       CAN         0         0         0      0 9.105001
-## 6       ARG       CEY         0         0         0      0 9.600443
-##     bitrade gold debtburden rlong rshort1900 rshort1890     rgdp rgdpcap
-## 1   5909.76    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-## 2   1258.74    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-## 3 127361.20    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-## 4  65335.41    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-## 5   5073.84    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-## 6      0.00    1   6.844985  7.01       7.06       9.33 16.37536 7.92154
-##   poldemo coverage gold_B debtburden_B rlong_B rshort1900_B rshort1890_B
-## 1     0.3  1.94591      1     5.222065    4.01         4.58         4.48
-## 2     0.3  1.94591      1     6.065920    3.12         5.50         7.00
-## 3     0.3  1.94591      1     4.882136    3.15         4.09         3.18
-## 4     0.3  1.94591      0     5.516892    6.97         9.20         6.30
-## 5     0.3  1.94591      1     6.784091    3.61         6.50         6.50
-## 6     0.3  1.94591      1     1.362319    3.25           NA           NA
-##     rgdp_B rgdpcap_B poldemo_B
-## 1 18.14368   7.39388      0.87
-## 2 16.52440   8.29729      6.37
-## 3 17.02921   8.22443     10.66
-## 4 16.31639   6.51915      0.22
-## 5 16.58091   7.97625      8.58
-## 6 15.43420   7.16240      0.00&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;In order to import the network into DeDaL we will need 2 files:&lt;br /&gt;
-1. with node to node connexions to construct the network (&lt;code class=&quot;highlighter-rouge&quot;&gt;country_A&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;country_B&lt;/code&gt;) with edge attributes&lt;br /&gt;
-2. table with meta data containing information about nodes (&lt;code class=&quot;highlighter-rouge&quot;&gt;country_A var1 var2&lt;/code&gt; &lt;em&gt;etc.&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;I will try initially to take a look at all the connexions that occurred, taking into account the link if trading was active in any year (observed), especially because we do not have detailed data for all time points, then I get rid of time information (3,4,5). I use package &lt;code class=&quot;highlighter-rouge&quot;&gt;dplyr&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;suppressMessages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dplyr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;network_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote1890&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quote1900&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quote1910&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bitrade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote1890&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quote1910&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;network_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colony&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;network_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colony&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;network_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##    country_A     country_B   colony       dist          bitrade       
-##  DEU    : 14   GBR    : 44   0:261   Min.   :5.373   Min.   :      0  
-##  NLD    : 13   FRA    : 38   1: 12   1st Qu.:6.783   1st Qu.:  30550  
-##  DNK    : 12   DEU    : 31           Median :7.482   Median :  93208  
-##  USA    : 12   USA    : 19           Mean   :7.674   Mean   : 248059  
-##  FRA    : 11   BEL    : 16           3rd Qu.:8.881   3rd Qu.: 286344  
-##  GBR    : 10   NLD    : 16           Max.   :9.855   Max.   :3545484  
-##  (Other):201   (Other):109&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;This table is ready to export.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;write.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;network_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;network_table.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Then I create table with information about each country. I select a unique entry by country as in Cytoscape we don’t need distinction between country A and B.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;raw_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coverage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bitrade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;distinct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rename&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country_A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.factor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## [1] 45 10&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##     country   gold     debtburden         rlong          rshort1900    
-##  ARG    : 1   0:19   Min.   : 0.000   Min.   : 2.550   Min.   : 3.210  
-##  AUH    : 1   1:26   1st Qu.: 1.759   1st Qu.: 3.290   1st Qu.: 4.835  
-##  AUS    : 1          Median : 4.611   Median : 3.810   Median : 5.870  
-##  BEL    : 1          Mean   : 4.943   Mean   : 4.962   Mean   : 6.073  
-##  BRA    : 1          3rd Qu.: 7.257   3rd Qu.: 6.100   3rd Qu.: 6.750  
-##  CAN    : 1          Max.   :14.656   Max.   :12.280   Max.   :11.400  
-##  (Other):39          NA&#39;s   :3        NA&#39;s   :8        NA&#39;s   :10      
-##    rshort1890          rgdp          rgdpcap         poldemo      
-##  Min.   : 2.790   Min.   :12.69   Min.   :6.301   Min.   : 0.000  
-##  1st Qu.: 4.520   1st Qu.:15.28   1st Qu.:6.711   1st Qu.: 0.000  
-##  Median : 6.000   Median :16.28   Median :7.209   Median : 0.080  
-##  Mean   : 6.105   Mean   :16.30   Mean   :7.309   Mean   : 1.921  
-##  3rd Qu.: 7.000   3rd Qu.:17.11   3rd Qu.:7.922   3rd Qu.: 1.980  
-##  Max.   :12.000   Max.   :19.56   Max.   :8.410   Max.   :11.870  
-##  NA&#39;s   :10                                       NA&#39;s   :1       
-##     coverage    
-##  Min.   :0.000  
-##  1st Qu.:1.099  
-##  Median :1.386  
-##  Mean   :1.425  
-##  3rd Qu.:1.792  
-##  Max.   :2.565  
-## &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;I will use &lt;code class=&quot;highlighter-rouge&quot;&gt;caret&lt;/code&gt; package to scale and center data (centering can be skipped as it is included in DeDaL).&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;suppressMessages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;caret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;preProcValues&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;preProcess&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;method&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;center&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;scale&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preProcValues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##   country gold  debtburden      rlong rshort1900  rshort1890        rgdp
-## 1     ARG    1  0.49013327  0.8495516  0.5542615  1.50743024 0.044877316
-## 2     AUH    1  0.07198172 -0.3951716 -0.8386133 -0.75965830 1.124472656
-## 3     AUS    1  0.28940419 -0.7644394 -0.3219017  0.41829286 0.135869268
-## 4     BEL    1 -0.01560229 -0.7519922 -1.1138184 -1.36733152 0.444066045
-## 5     BRA    0  0.14794502  0.8329553  1.7561776  0.09108421 0.008874931
-## 6     CAN    1  0.47444370 -0.5611347  0.2397413  0.18457239 0.170369773
-##      rgdpcap    poldemo   coverage
-## 1  0.9700513 -0.5037950  0.8924360
-## 2  0.1342189 -0.3266332  0.6281442
-## 3  1.5652529  1.3828226 -2.4438245
-## 4  1.4498400  2.7161982  1.1213764
-## 5 -1.2513849 -0.5286598  0.6281442
-## 6  1.0567139  2.0697131 -1.2554244&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;I also check the possibly of occurrence of highly correlated variables:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;descrCor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;cor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;highCorr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;descrCor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper.tri&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;descrCor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;highCorr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;there&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;correlated&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;variables&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## [1] NA&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Now I export this meta data into a .txt in order to import to Cytoscape 3.0&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;write.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;countries_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;countries_data.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;row.names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;col.names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quote&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;\t&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;In Cytoscape I go to &lt;code class=&quot;highlighter-rouge&quot;&gt;File -&amp;gt; Import -&amp;gt; Network -&amp;gt; File...&lt;/code&gt;
-I select &lt;code class=&quot;highlighter-rouge&quot;&gt;country_A&lt;/code&gt; as a source, &lt;code class=&quot;highlighter-rouge&quot;&gt;country_B&lt;/code&gt; as target and other columns as edge attributes.
-I go to &lt;code class=&quot;highlighter-rouge&quot;&gt;View -&amp;gt; Show graphical details&lt;/code&gt; to visualize the network.
-The image is not very informative, all countries are interconnected and graphical style makes the network unreadable. 
-First, I play with graphical parameters to obtain something readable and I modify edge visual proprieties to make use of edge attributes.
- &lt;/p&gt;
-
-&lt;p&gt;We can compute network statistics like clustering coefficient, centrality etc.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/net_stats.png&quot; width=&quot;80%&quot; /&gt;
- &lt;/p&gt;
-
-&lt;p&gt;Most common organic layout already inform us about potentially important countries that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries. 
- &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/organic.svg&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Organic layout of the imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony variables&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;So let’s import &lt;code class=&quot;highlighter-rouge&quot;&gt;countries_data.txt&lt;/code&gt; through &lt;code class=&quot;highlighter-rouge&quot;&gt;File -&amp;gt; Import -&amp;gt; Table&lt;/code&gt;. I check carefully all variables are imported as numerical.&lt;br /&gt;
-I apply my Cytoscape plug-in &lt;a href=&quot;http://apps.cytoscape.org/apps/dedal&quot;&gt;DeDaL&lt;/a&gt; in order to see the PCA and Elastic Map Layouts.&lt;/p&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt; PCA - principal components analysis&lt;/h3&gt;
- &lt;/p&gt;
-
-&lt;p&gt;I select &lt;code class=&quot;highlighter-rouge&quot;&gt;Layout -&amp;gt; DeDaL -&amp;gt; Data-driven Layout&lt;/code&gt;, to perform PCA without network smoothing and without double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-9-1.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Which results in the following layout:
-&lt;img src=&quot;/images/pca.svg&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From the PCA we can read that the factors best explaining variance in the data is the level of democracy, market rate (PC1) and coverage &amp;amp; debt (PC2). Therefore, we can see GBP is probably the most important factor. While DEU and FRA are somehow outliers. DEU being the highest in coverage and FRA in democracy index. On the opposite side, there is NZL, AUS and surprisingly CAN &amp;amp; ESP that have big debt. COL, JPN and ICH seem to have high market rate. We can also observe that the countries placed on the right have higher values in bitrade and are the most connected.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-10-1.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt; Elastic Map - non linear manifolds dimension reduction&lt;/h3&gt;
- &lt;/p&gt;
-&lt;p&gt;It is also possible to perform Elastic Map layout (again no smoothing and no double-centering).&lt;br /&gt;
-A window pops up with information that layout captures &lt;strong&gt;79.19%&lt;/strong&gt; of variance.&lt;br /&gt;
-In this case Elastic Map layout is quite similar to PCA meaning the problem can be explained in with linear methods.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/elastic.svg&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt; Networks morphing&lt;/h3&gt;
- &lt;/p&gt;
-&lt;p&gt;Another cool function of &lt;strong&gt;DeDaL&lt;/strong&gt; is network morphing, in this example networks goes from PCA layout to organic layout. Organic layout network is rotated compared to original one to minimize bias due to rotation and mirroring.&lt;br /&gt;
-It is possible to morph any two layouts (i.e. manually created topological layout into organic layout &lt;em&gt;etc.&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/dedal_anim.gif&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Using DeDaL &lt;i&gt;morphing&lt;/i&gt; functionality any two networks can be mixed in an interactive way.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;
- 	&lt;h3&gt; Conclusions&lt;/h3&gt;
- &lt;/p&gt;
-&lt;p&gt;From the international currency exchange data, using network approach, we can easily identify countries in the focal point of this dataset. Through PCA, it is possible to identify key variables for analysis of data variability. PCA put in contrast important countries like FRA, DEU and GBR and helps to interpret the differences between them. Therefore, &lt;strong&gt;DeDaL&lt;/strong&gt; provides good and fast insight into the data and allows its visualization, thanks to Cytoscape 3.0 interface no coding sills are needed and graphical proprieties are easily modifiable. It would find the best use combined with domain knowledge and intelligent variable engineering.&lt;br /&gt;
- &lt;/p&gt;
-
-&lt;p&gt;Don’t hesitate to &lt;a href=&quot;https://github.com/sysbio-curie/DeDaL&quot;&gt;download&lt;/a&gt;, like and share the tool!&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Your imagination is the limit!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-</description>
-        <pubDate>Mon, 30 Jun 2014 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/DeDaL</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/DeDaL</guid>
-        
-        <category>Java</category>
-        
-        <category>Networks</category>
-        
-        <category>PCA</category>
-        
-        <category>Data viz</category>
         
         
         <category>works</category>
