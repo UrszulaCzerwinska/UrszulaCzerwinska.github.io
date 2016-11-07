@@ -7,18 +7,33 @@ background-image: baba.svg
 tags:
   - Unsupervised learning
   - ICA
-  - R
+  - data visualization
+  - R 
+  - public speaking
+  - scientific writing 
 ---
-##Github icon and link
-
-
 
 #### Summary
 
-Short summary
+* pushing the borders of knowledge in statistical modeling of multidimensional genetical data
+* contribution to scientific papers as data analyst
+* writing scientific publications with LaTeX
+* working in interdisciplinary team of 15 people
+* interacting with experimentalists and theoreticians 
+* 2nd place of professional pitch competiton, ABG
+* 3rd place in scientific pitch competition
+* public speaking in front of >100 scientific experts
+* public speaking in front of general public
+* creating graphical supports with vector graphics
+* teaching in Statistics, Informatics & Mathematics division at Pharma faculty
+* completing courses on: Communication, Certificate in Business & Administration:  Business & Management & Strategy & Finance , Technologies & Public Policy, Machine Learning, Analytics 
 
-####
+<div><span class="image fit"><img src="{{ site.baseurl }}/images/posterismb_clean.svg" alt="" /></span></div>
 
-dont put unpublished results
-update when it is published
+
+
+
+
+
+
 

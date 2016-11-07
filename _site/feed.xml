@@ -5,9 +5,144 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Sep 2016 17:27:26 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Sep 2016 17:27:26 +0200</lastBuildDate>
+    <pubDate>Mon, 07 Nov 2016 23:32:39 +0100</pubDate>
+    <lastBuildDate>Mon, 07 Nov 2016 23:32:39 +0100</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Data Innovation</title>
+        <description>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+     &lt;style&gt;
+
+
+    iframe {display:block;margin:auto;}
+
+
+
+
+      &lt;/style&gt;
+ 
+      &lt;/body&gt;  
+&lt;section&gt;
+    &lt;p&gt;
+        &lt;i&gt;Where is &lt;strong&gt;data today&lt;/strong&gt;? Where will be &lt;strong&gt;data tomorrow&lt;/strong&gt; ? &lt;/i&gt;
+    &lt;/p&gt;
+    &lt;h3&gt;Hello... WHAT?&lt;/h3&gt;
+    &lt;p&gt;
+        &lt;strong&gt;&lt;a href=&quot;http://summit.hello-tomorrow.org/&quot; target=&quot;_blank&quot;&gt;Hello Tomorrow Global Summit&lt;/a&gt;&lt;/strong&gt; is an international conference of trending technologies along with start-up competition fueling exchange between &lt;em&gt;research &amp; industry&lt;/em&gt;, &lt;em&gt;capital &amp; innovators&lt;/em&gt;. It aims to support world-scale innovative solutions for global challenges.
+    &lt;/p&gt;
+    &lt;p&gt;
+        Today, Hello Tomorrow is an interdisciplinary community with presence across 45 countries, gathering more than 15,000 innovators within the Hello Tomorrow ecosystem. The Hello Tomorrow Challenge, a global startup competition, has attracted nearly 5,000 startups across 112 countries since its inception in 2014.
+        &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/HT_Banner Twitter_CS6-01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;p&gt;
+            As a &lt;strong&gt;PhD candidate equals &lt;i&gt;innovator&lt;/i&gt;&lt;/strong&gt; passionated about new technologies, especially &lt;strong&gt;data&lt;/strong&gt;, I could not miss an opportunity to enjoy the show cast of the most exciting trends of tomorrow. Therefore, on the 13th &amp; 14th October at Centre 104 in Paris, I could listen, experience, network and taste the tomorrow. Here I will share with you my field report about &lt;strong&gt;Data Science&lt;/strong&gt; at &lt;strong&gt;&lt;a href=&quot;http://summit.hello-tomorrow.org/&quot; target=&quot;_blank&quot;&gt;Hello Tomorrow Global Summit&lt;/a&gt;&lt;/strong&gt;
+        &lt;/p&gt;
+        &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/HTGeneral.svg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;figcaption&gt;&lt;a href=&quot;http://challenge.hello-tomorrow.org/HTChallenge2016-mediakit.zip&quot; target=&quot;_blank&quot;&gt;Source: Press kit Hello Tomorrow&lt;/a&gt;&lt;/figcaption&gt;
+    &lt;/p&gt;
+    &lt;h3&gt;Investor panel: AI &amp; data landscape&lt;/h3&gt;
+    &lt;p&gt;
+        The panel assembled four experts investing into data universe, a mediator and employee of &lt;a href=&quot;http://www.cisco.com/&quot; target=&quot;_blank&quot;&gt;CISCO&lt;/a&gt; and a three venture capitalists : &lt;a href=&quot;https://www.linkedin.com/in/nathanbenaich&quot; target=&quot;_blank&quot;&gt;Nathan Benaich&lt;/a&gt; from &lt;a href=&quot;http://playfaircapital.com/&quot; target=&quot;_blank&quot;&gt;Payfair capital&lt;/a&gt; in London, &lt;a href=&quot;https://www.linkedin.com/in/marieekeland&quot; target=&quot;_blank&quot;&gt;Marie Ekeland&lt;/a&gt; : co-founder at &lt;a href=&quot;https://daphni.com/&quot; target=&quot;_blank&quot;&gt;Daphni&lt;/a&gt; and a fintech venture capitalist from &lt;a href=&quot;http://romuluscap.com/&quot; target=&quot;_blank&quot;&gt; Romulus capital&lt;/a&gt;.
+        &lt;p&gt;First of all, they highlighted that data solutions and tools need to answer customer need, they need to be usable by the final user and adapted to its highly specified needs. It is not cool tech behind that will bring success to a data company. It is essential to understand usage and dynamics of the market, adding value to the whole chain&lt;/p&gt;
+        &lt;p&gt;Then asked about the &lt;strong&gt;team&lt;/strong&gt;, the key seems to finding qualified experts with complementary competences and match them with business trained fellows. Some start-up tend to be evaluated on the base of number of &lt;strong&gt;PhD graduated members&lt;/strong&gt;, even though PhDs are without doubts an added value, it is not wise to estimate team value based only on this criterion&lt;/p&gt;
+        &lt;p&gt;They also shared a few tips &lt;strong&gt;how to enter the industry&lt;/strong&gt;. Again, it seems that answering the demand and carefully listening to the customer is the key. To &lt;strong&gt;start off&lt;/strong&gt; and get data, it was advised to negotiate with a customer or find a partner collecting data, simulating data can be also an option.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/nathanbenaich&quot; target=&quot;_blank&quot;&gt;Nathan Benaich&lt;/a&gt; highlights also that there are &lt;i&gt;simple&lt;/i&gt; and &lt;i&gt;complex&lt;/i&gt; cases, where with simple cases can be as much as 80% of total but the the complex ones may take same efforts or they would need to be treated individually. She referred to policy making such as visa applications for instance where immigrant from countries with clear situation could be classified and processed very easily, while immigrants for regions touched by was would need special assistance.&lt;/p&gt;
+        &lt;p&gt;&lt;strong&gt;Deep learning&lt;/strong&gt; was of course mentioned as one of trending technologies for voice, image and video processing, that gained value coupled with &lt;strong&gt;Big Data&lt;/strong&gt;, &lt;strong&gt;IoT&lt;/strong&gt; and &lt;strong&gt;AI&lt;/strong&gt;. However, this recent advances does not affect all fields of AI and still there is lots of room for progress.&lt;/p&gt;
+        &lt;blockquote&gt;Asked about &lt;strong&gt;advice for early stage entrepreneurs&lt;/strong&gt; they admitted they do not like giving advice for free.&lt;/blockquote&gt;
+        &lt;p&gt;But finally they revealed three tips
+            &lt;ul&gt;
+                &lt;li&gt;identify big issues and build a team, go big and attract right investor&lt;/li&gt;
+                &lt;li&gt;find your path, build step by step&lt;/li&gt;
+                &lt;li&gt;run your data buiness now, it is right place and right time &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/p&gt;
+        &lt;h3&gt;Panel: Responsability of AI&lt;/h3&gt;
+        &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/HTPanel.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;p&gt;In this session experts : &lt;a href=&quot;https://www.linkedin.com/in/sean-o-heigeartaigh-03b33b29&quot; target=&quot;_blank&quot;&gt; Dr Seán Ó hÉigeartaigh&lt;/a&gt; the the Executive Director of &lt;a href=&quot;http://www.csap.cam.ac.uk/network/sean-oheigeartaigh/&quot; target=&quot;_blank&quot;&gt;the Centre for the Study of Existential Risk&lt;/a&gt; at the University of Cambridge discussed possible ethical risks that can be raised by AI. &lt;/p&gt;
+        &lt;p&gt;Nowadays, systems transforms from rule-based programmable computer machines into Artificial Intelligence that can adapt and learn by itself from the provided data. Firstly, it is worth to ask the question what actually is AI (if you are interested by this subject check also &lt;a href=&quot;http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/why-alphago-is-not-ai&quot; target=&quot;_blank&quot;&gt;Why AlphaGo Is Not AI&lt;/a&gt;).
+            &lt;blockquote&gt; &lt;strong&gt;Definition of Artificial intelligence keeps changing&lt;/strong&gt;&lt;/blockquote&gt;
+            Along with an algorithm there is a question of the &lt;i&gt;body&lt;/i&gt; that will incorporate the intelligence. Also how to translate abstract thinking into computer thinking.
+        &lt;/p&gt;
+        &lt;p&gt;There is a significant progress in speech recognition. Robots can understand human language, interpret it and answer in the same terms. It also impacts significantly healthcare where data is screening for drugs side effects.&lt;/p&gt;
+        &lt;p&gt;For sure, future will bring even more progress and, according to Seán and Rodolphe, will pose serious ethical issues in 2030s This is why, a &lt;em&gt;deep reflexion about the future is necessary now&lt;/em&gt;. The society should be prepared for the AI that will probable exceed our expectations and impact us more than we can imagine.&lt;/p&gt;
+        &lt;p&gt;Right now, technology is dependent on the design but also on the users. Just like in a movie &lt;a href=&quot;http://www.imdb.com/title/tt3531824/&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Nerve&lt;/i&gt;&lt;/a&gt; recently in theaters, an innocent game can become dreadful if the users make it so. Thus, technology even today is not free from ethical dimension.&lt;/p&gt;
+        &lt;p&gt;In Rodolphe&#39;s opinion, robots will become more and more independent. They will be trained on the data we provide, to they can reflected numerous biases, i.e. they can be resist. Therefore, there must be defined legal constrains on who is responsible for the robot and its acts. Answer to many ethical questions are not clear and depends a lot on the culture and society. An example of it is &lt;i&gt;the trolley problem&lt;/i&gt; that &lt;i&gt;Google&#39;s self driving car project&lt;/i&gt; asked to consumers. The problem consist of moral dilemma: should some people be sacrificed to save others and which ones (to read more about it read in &lt;a href=&quot;https://www.washingtonpost.com/news/innovations/wp/2015/12/01/googles-leader-on-self-driving-cars-downplays-the-trolley-problem/&quot; target=&quot;_blank&quot;&gt;The Washington Post&lt;/a&gt;). If you want to experience the moral choices play this &lt;a href=&quot;http://moralmachine.mit.edu/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;game &quot;Moral Machine&quot;&lt;/b&gt;&lt;/a&gt; designed by MIT. &lt;/p&gt;
+        &lt;blockquote&gt;Therefore &lt;em&gt;AI ethics&lt;/em&gt; is more about &lt;em&gt;designing morality&lt;/em&gt;&lt;/blockquote&gt;
+        &lt;p&gt;Ethical codes implemented in machines should be consulted with the people that will interact with given robots. Education and widely accessible information is the start to make society aware that some decision taking on moral codes will be necessary. There are places, like for instance in elderly care, where robots are more than welcome to interact with people. This is because the robot will not judge, will not mock. The robot will professionally assist and elder person to the toilet or take it down the stairs. Also in the case of war, killer robots would replace humans going to dangerous zones, which already happens a lot with drones (to read more about pros and cons of AI weapons &lt;a href=&quot;http://spectrum.ieee.org/automaton/robotics/military-robots/why-should-we-ban-autonomous-weapons-to-survive&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://spectrum.ieee.org/automaton/robotics/artificial-intelligence/we-should-not-ban-killer-robots&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
+        &lt;p&gt;In general society fears novelty, it constitutes a break for the progress, but this a part of the process.&lt;/p&gt;
+        &lt;p&gt;Asked about hat will be &lt;strong&gt;the next hot topic around AI&lt;/strong&gt;. Seán answered it will be about algorithm fairness and systems that will be able to explain their logics to human. Rodolphe added that we should conceive machines that will share with us their observations and this would improve our human traditional way of thinking.&lt;/p&gt;
+        &lt;p&gt;There is no doubt intelligent designs raise ethical challenges that will need to be faced by system designers, companies, society and governments. The white house released recently a report: &lt;a href=&quot;https://www.whitehouse.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Preparing the future of AI.&lt;/strong&gt;&lt;/a&gt;. It is wise to think now about challenges of tomorrow, at least before it is too late...&lt;/p&gt;
+
+ 
+&lt;header&gt;
+    &lt;h3&gt;Keynotes&lt;/h3&gt;
+ &lt;/header&gt;
+&lt;p&gt;&lt;em&gt;You can watch entire day on YouTube if you click at this &lt;a href=&quot;https://youtu.be/KXhbBLg4WDE?t=16224&quot; target=&quot;_blank&quot;&gt;link&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;h4&gt;Hacking &amp; security&lt;/h4&gt;
+ &lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/HTsecurity.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
+&lt;a href=&quot;https://twitter.com/TheKenMunroShow&quot; target=&quot;_blank&quot;&gt;Ken Munro&lt;/a&gt; from &lt;a href=&quot;https://www.pentestpartners.com&quot; target=&quot;_blank&quot;&gt; Pen Test Parntners&lt;/a&gt;, company based in UK, specialized in hacking security systems in order to help companies find defaults in their software. He presented a few study cases of cars. In one case, there was a possibility to unlock the car though cracking the password to the app of the car. In the second case, the car software had hidden options that allowed the hacker to manipulate the vehicle. And this examples are just a drop in the see of possibilities of hacking electronic, smart devices. Most of users are not aware the systems can have security holes, they trust the company. While the companies have often an interest in hiding the fact that their devices can be hacked. An beneficial approach would be more wide spread interventions of companies like &lt;a href=&quot;https://www.pentestpartners.com&quot; target=&quot;_blank&quot;&gt; Pen Test Partners&lt;/a&gt; in order to assure the safety of software we use, especially like as in case of autonomous cars, human life can be at stake. 
+ &lt;/p&gt;
+
+               
+&lt;h4&gt;Achieving Super Vision&lt;/h4&gt;
+    &lt;p&gt;
+        &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/HT_keynoteVR.jpg&quot; alt=&quot;&quot; /&gt;&lt;br&gt;
+
+    &lt;a href=&quot;https://www.linkedin.com/in/raymond-lo-58852a92&quot; target=&quot;_blank&quot;&gt;Raymond Lo&lt;/a&gt;, CTO of &lt;a href=&quot;https://www.metavision.com/&quot; target=&quot;_blank&quot;&gt;Meta Co.&lt;/a&gt; made a live demo of his Augmented Vision device that allows to manipulate virtual objects in real time. The product can be pre-ordered now for $949.  &lt;/p&gt;&lt;p&gt;&lt;br&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; align=&quot;middle&quot; src=&quot;https://www.youtube.com/embed/TyXePLD54uU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            The augmented reality can find its application in brain and behavioral research, in business, in communication, in education, in online shopping, in computer games and in everyday life. (And it is cool!).
+        &lt;/p&gt;
+        &lt;p&gt;The company is looking for innovation, so if you have ideas how to improve their product contact Raymond!&lt;/p&gt;
+&lt;h4&gt;CARDIOLOGS: Machine Learning for healthcare &lt;/h4&gt;
+    &lt;p&gt;
+        &lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/HT_keynoteCardio.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;During an afternoon dedicated to AI &amp; Computing, 
+&lt;a href=&quot;https://www.linkedin.com/in/yann-fleureau-b1179983&quot; target=&quot;_blank&quot;&gt;Yann Fleureau&lt;/a&gt; CEO of &lt;a href=&quot;https://cardiologs.com/&quot; target=&quot;_blank&quot;&gt;CARDIOLOGS&lt;/a&gt; presented how &lt;strong&gt;Machine Learning&lt;/strong&gt; can help doctors to better diagnose cardiovascular diseases. Cardiologs technology is based on &lt;strong&gt;deep learning &amp; image recognition&lt;/strong&gt;. It is supposed to detect and highlight possible anomalies in electrocardiogram outputs. &lt;a href=&quot;https://www.linkedin.com/in/yann-fleureau-b1179983&quot; target=&quot;_blank&quot;&gt;Yann Fleureau&lt;/a&gt; highlighted that their product is not designed to replace doctors but to facilitate their work and help to save time. 
+    &lt;/p&gt;
+
+&lt;h4&gt;Building game changing data sets&lt;/h4&gt;
+ &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/HT_keynoteDeeploop.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+   
+    The last Keynote in AI &amp; Computing session was given by &lt;a href=&quot;https://www.linkedin.com/in/augustindeepomatic&quot; target=&quot;_blank&quot;&gt;Augustin Marty&lt;/a&gt; CEO of &lt;a href=&quot;https://www.deepomatic.com/#/&quot; target=&quot;_blank&quot;&gt;Deepomatic&lt;/a&gt;. The company proposes solutions for better and more adapted data science solutions. First, to advance &lt;strong&gt;deep learning&lt;/strong&gt; &lt;a href=&quot;https://www.deepomatic.com/#/&quot; target=&quot;_blank&quot;&gt;Deepomatic&lt;/a&gt; proposes a service to speed up and enhance library building that itelf uses machine learning to facilitate the tedious task of object selection and labeling (inception!).   &lt;/p&gt;    &lt;blockquote&gt; Deep Learning recipe: deep learning framework + annotated images + annotators &lt;/blockquote&gt; &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/HT_keynoteDeep.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;p&gt;It takes in average 10 min to annotate one image, and you need a good library to make your algorithm efficient, and for robotics it can take more than one hour to describe the environment. Creating datasets became real bottleneck of deep learning.&lt;/p&gt; &lt;blockquote&gt;AI is for everyone because algorithm and computing power are becoming a commodities so a bottleneck now is creating a good dataset. [Augustin Marty]&lt;/blockquote&gt; &lt;p&gt;There is a need to industrialize annotation process &amp; democratize dataset production. The key is to have dedicated software. &lt;strong&gt;Active learning&lt;/strong&gt; allows to build deep learning system with the minimal necessary number of images. It can reduce time of annotation from 70 to 10 min.&lt;/p&gt;
+    &lt;p&gt;Presented solutions look impressive, it would be interesting to get some user experience and find out if all type of objects can be annotated easier with help of active learning.&lt;/p&gt;
+
+        &lt;h3&gt;Start-up challenge winners&lt;/h3&gt;
+
+        &lt;p&gt;In the category of Data &amp; AI the start-up winning the prize of €15,000 were &lt;a href=&quot;http://www.koniku.io/&quot; target=&quot;_blank&quot;&gt;Koniku&lt;/a&gt;. The company produces drones based on biological neuronal circuits. &lt;blockquote&gt;The hybrid chipset known as the koniku kore provides a small footprint, low energy, sensory intelligent solution to address complex problems. [KONIKU]
+&lt;/blockquote&gt;
+&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/startup.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+&lt;/p&gt;
+     &lt;h3&gt;Closing remarks&lt;/h3&gt;
+
+     &lt;p&gt;In overall, &lt;strong&gt;Hello Tomorrow Global Summit&lt;/strong&gt; was great adventure. Gathering motivated people, cutting-edge technology and capital in the same place is a remarkable achievement. There is no doubts there is a lot to happen in Data Universe in upcoming years and data is present now in many industries. What is more, data is a rich topic in itself and can take different flavors combined with AI, IoT or ethics. We will for sure surprised about its potential and new technologies born from this industry.&lt;/p&gt;
+        
+&lt;/section&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/HelloT/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/HelloT/</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
     
       <item>
         <title>Intro and retrospective on Computational Biology &amp; Data</title>
@@ -481,16 +616,24 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
     
       <item>
         <title>Deconvolution of mixed samples</title>
-        <description>&lt;h2 id=&quot;github-icon-and-link&quot;&gt;Github icon and link&lt;/h2&gt;
+        <description>&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 
-&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;pushing the borders of knowledge in statistical modeling of multidimensional genetical data&lt;/li&gt;
+  &lt;li&gt;contribution to scientific papers as data analyst&lt;/li&gt;
+  &lt;li&gt;writing scientific publications with LaTeX&lt;/li&gt;
+  &lt;li&gt;working in interdisciplinary team of 15 people&lt;/li&gt;
+  &lt;li&gt;interacting with experimentalists and theoreticians&lt;/li&gt;
+  &lt;li&gt;2nd place of professional pitch competiton, ABG&lt;/li&gt;
+  &lt;li&gt;3rd place in scientific pitch competition&lt;/li&gt;
+  &lt;li&gt;public speaking in front of &amp;gt;100 scientific experts&lt;/li&gt;
+  &lt;li&gt;public speaking in front of general public&lt;/li&gt;
+  &lt;li&gt;creating graphical supports with vector graphics&lt;/li&gt;
+  &lt;li&gt;teaching in Statistics, Informatics &amp;amp; Mathematics division at Pharma faculty&lt;/li&gt;
+  &lt;li&gt;completing courses on: Communication, Certificate in Business &amp;amp; Administration:  Business &amp;amp; Management &amp;amp; Strategy &amp;amp; Finance , Technologies &amp;amp; Public Policy, Machine Learning, Analytics&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Short summary&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;#&lt;/h3&gt;
-
-&lt;p&gt;dont put unpublished results
-update when it is published&lt;/p&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/posterismb_clean.svg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Sat, 30 Jan 2016 00:00:00 +0100</pubDate>
@@ -501,7 +644,13 @@ update when it is published&lt;/p&gt;
         
         <category>ICA</category>
         
+        <category>data visualization</category>
+        
         <category>R</category>
+        
+        <category>public speaking</category>
+        
+        <category>scientific writing</category>
         
         
         <category>works</category>
@@ -1042,51 +1191,6 @@ median_hilow()
         <category>Algorithm benchmarking</category>
         
         <category>Matematica</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Teen spirit</title>
-        <description>	&lt;h2&gt;Summary&lt;/h2&gt;
-&lt;p&gt;As a master student, I took part in an international competition of &lt;b&gt;Synthetic Biology&lt;/b&gt; projects. As a part of an interdisciplinary team, I was using cutting-edge technology in order to design new generation products that would deal with unpleasant smell of human body, shown to accumulate on the skin of elder people. As far as I am concerned, I have been working on elimination of a molecule 2-nonenal that has very intense waxy cucumber-like smell. Our project was awarded at Giant iGEM Jamboree in Boston, MA with a &lt;b&gt;gold medal&lt;/b&gt;, best &lt;b&gt;New Application project prize&lt;/b&gt;, &lt;b&gt;Art &amp; Design prize&lt;/b&gt; and &lt;b&gt;Interlab Study mention&lt;/b&gt;.&lt;/p&gt;
-
-&lt;p&gt;All original materials of this project are available on the &lt;a href=&quot;http://2014.igem.org/Team:Paris_Bettencourt/Project/Old_People_Smell&quot; target=&quot;_blank&quot;&gt;official wiki of iGEM Bettencourt team 2014&lt;/a&gt;&lt;/p&gt;
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/iGEMsmell.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;Official logo and main theme picture of the project. &lt;a href=&quot;https://drive.google.com/open?id=0B66fZo417aayc2k2eGpKWjF6VWs&quot; target=&quot;_blank&quot;&gt;Click to download full presentation.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3&gt;What did I learn in iGEM?&lt;/h3&gt;
-&lt;ul&gt;
-	&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/igem_sepia.jpg&quot; alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
-	&lt;li&gt;&lt;b&gt;Team work&lt;/b&gt; is tough. People working in the team often have different background, different goals and different work pace. Discussion, compromise and forgiveness are keys to achieve goals of the project.&lt;/li&gt;
-
-	&lt;li&gt;&lt;b&gt;Graphical design&lt;/b&gt; is fun and not as hard as it seems. I have been introduced to basics of software for working vector images that serves me till today.&lt;/li&gt;
-
-	&lt;li&gt;&lt;b&gt;Product design&lt;/b&gt; - in iGEM we tried to deliver a very concrete outcome in a very short time. In our project the ultimate goal was to develop a series of cosmetics. Product would have to fulfill standards and norms for its category. It opened my eyes to project connected to science &lt;b&gt;outside of academic research&lt;/b&gt;&lt;/li&gt;
-
-	&lt;li&gt;&lt;b&gt;Microbiology&lt;/b&gt; - I have learned practical basics of work in a lab with bacterial cultures.&lt;/li&gt;
-
-	&lt;li&gt;&lt;b&gt;Wet lab work&lt;/b&gt; is hard. It demands a lot of time and good organization. Lab equipment is cost-full and easy to break. Work in a wet lab makes you train your concentration, planning and documentation.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-&lt;h5&gt;Disclaimer&lt;/h5&gt;
-&lt;p&gt;
-Images, discoveries and ideas are property of &lt;a href=&quot;http://2014.igem.org/Team:Paris_Bettencourt/Team&quot; target=&quot;_blank&quot;&gt;iGEM Bettencourt 2014 team&lt;/a&gt;, none of them belongs to individual team members. &lt;/p&gt;
-
-	</description>
-        <pubDate>Sat, 01 Nov 2014 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/iGEM</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/iGEM</guid>
-        
-        <category>Synthetic biology</category>
-        
-        <category>Product design</category>
-        
-        <category>Graphical design</category>
         
         
         <category>works</category>
