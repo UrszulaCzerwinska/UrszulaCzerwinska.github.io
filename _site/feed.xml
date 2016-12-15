@@ -5,9 +5,349 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Nov 2016 23:32:39 +0100</pubDate>
-    <lastBuildDate>Mon, 07 Nov 2016 23:32:39 +0100</lastBuildDate>
+    <pubDate>Mon, 12 Dec 2016 16:59:04 +0100</pubDate>
+    <lastBuildDate>Mon, 12 Dec 2016 16:59:04 +0100</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Outreach</title>
+        <description>&lt;!doctype html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+     &lt;style&gt;
+
+
+
+      &lt;/style&gt;
+ 
+      &lt;/body&gt;  
+&lt;section&gt;
+	&lt;h4&gt;Certificate in Business And Administration&lt;/h4&gt;
+	&lt;p&gt;I has been four years CBA at Paris Descartes train and gather together talented students from different disciplines. Network build during this two-week workshop remains a strong point of all the participants.&lt;/p&gt;
+	&lt;p&gt;If you want to find out about my experience at CBA please &lt;a href=&quot;/thoughts/CBA&quot; target=&quot;_blank&quot;&gt;check out my post&lt;/a&gt;.&lt;/p&gt;
+	&lt;p&gt;Here are some facts and figures we prepared with some CBA representatives and &lt;a href=&quot;https://twitter.com/PxGirard&quot; target=&quot;_blank&quot;&gt;Pierre Girard,&lt;/a&gt; the organiser of the Part I.&lt;/p&gt;
+ 
+
+&lt;div class=&#39;tableauPlaceholder&#39; id=&#39;viz1479135570783&#39; style=&#39;position: relative&#39;&gt;&lt;noscript&gt;&lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;Tableau de bord 1 &#39; src=&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1_rss.png&#39; style=&#39;border: none&#39; /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class=&#39;tableauViz&#39;  style=&#39;display:none;&#39;&gt;&lt;param name=&#39;host_url&#39; value=&#39;https%3A%2F%2Fpublic.tableau.com%2F&#39; /&gt; &lt;param name=&#39;site_root&#39; value=&#39;&#39; /&gt;&lt;param name=&#39;name&#39; value=&#39;CBA_2&amp;#47;Tableaudebord1&#39; /&gt;&lt;param name=&#39;tabs&#39; value=&#39;no&#39; /&gt;&lt;param name=&#39;toolbar&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;static_image&#39; value=&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1.png&#39; /&gt; &lt;param name=&#39;animate_transition&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_static_image&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_spinner&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_overlay&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_count&#39; value=&#39;yes&#39; /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type=&#39;text/javascript&#39;&gt;                    var divElement = document.getElementById(&#39;viz1479135570783&#39;);                    var vizElement = divElement.getElementsByTagName(&#39;object&#39;)[0];                    vizElement.style.width=&#39;824px&#39;;vizElement.style.height=&#39;3819px&#39;;                    var scriptElement = document.createElement(&#39;script&#39;);                    scriptElement.src = &#39;https://public.tableau.com/javascripts/api/viz_v1.js&#39;;                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
+
+&lt;/section&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Sun, 20 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/CBA_outreach</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/CBA_outreach</guid>
+        
+        <category>Tableau</category>
+        
+        <category>Infographic</category>
+        
+        <category>Communication</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>Data and the Future of Healthcare</title>
+        <description>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+
+&lt;/head&gt;
+
+ &lt;body&gt;
+
+     &lt;style&gt;
+      &lt;p&gt;    	
+        
+		body { background-color:blue; }
+		.highlightme { background-color:#ccffe5; }
+ &lt;/p&gt;
+
+      &lt;/style&gt;
+ 
+      &lt;/body&gt;  
+      &lt;section&gt;
+
+      &lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/pebourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt;&lt;/strong&gt; is a founding Editor-in-Chief of PLOS Computational Biology and the &lt;a href=&quot;http://www.sdsc.edu/~bourne/&quot; target=&quot;_blank&quot;&gt;Associate Director for Data Science (ADDS)&lt;/a&gt; at the &lt;a href=&quot;https://www.nih.gov/&quot; target=&quot;_blank&quot;&gt;National Institutes of Health&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+      &lt;p&gt;&lt;em&gt;His research focuses are countless: algorithms, text mining, machine learning, metalanguages, biological databases, and visualizations applied to problems in systems pharmacology, evolution, cell signaling, apoptosis, immunology and scientific dissemination coupled with education and public service.&lt;/em&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;Attendees  of ISMB 2016 in Orlando had the opportunity to interact with him at the workshop on Education in Bioinformatics (WEB) — ‘Exploiting Cloud and Virtual Resources for Training : Getting the Best Training in Computational Biology in an Era of Cloud Computing and Big Data’.&lt;/em&gt;&lt;/p&gt;
+
+
+      &lt;p&gt;&lt;em&gt;&lt;strong&gt;
+In this interview, Phil Bourne gives his opinion about Big Data era, the impact of data science and will impact biological research and healthcare. He also comments on frictions: between the corporate world and research, as well as formal training and citizen science. 
+&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;The list of your achievements and engagements is very long. Besides your academic ones, you also founded companies so you are familiar with corporate world. With regards to Data Science &amp; Big Data, it seems like there is a hype around them in companies right now. Do you think solutions developed for science can compete with the ones developed for big data with big money? Will academic and private Data Science work together or companies like Google will take a monopoly on data solutions?&lt;/b&gt;&lt;/li&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;Big data covers a big area — there is a need for government and private funder solutions, for company solutions and for hybrid solutions. Just as the market place benefits from government research that then gets translated into commercial products we will see the same with big data.&lt;/i&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;span class=&quot;highlightme&quot;&gt;Biomedical research and health care is a bit late in the game and has the disadvantage of not being born digital and so is relatively slow to respond.&lt;/span&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;i&gt;Notwithstanding there is a lot of fundamental research which the private sector is not likely to do that will be done by government and private foundation funding and ultimately will prove to be of great value. Areas of provenance, standards, data wrangling and security are examples that come to mind.&lt;/i&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt;Biological research is still under an ongoing digitization process. However an important number of wet lab biologist are still reluctant to learn how to use computational tools that would make their research more interesting and more quantitative. What message would you like to convey them?&lt;/b&gt;&lt;/li&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The contributions of computation and other peoples data to the biomedical research enterprise cannot be ignored at this point. It should be embraced. &lt;span class=&quot;highlightme&quot;&gt;At the same time computational biologists have an obligation to make their methods and tools accessible to a broader audience.&lt;/span&gt; We need training programs that prepare students for a future where analytical techniques go hand-in-hand with more experimental approaches. Students need to be equally adept in silico, in vivo and in vitro.&lt;/i&gt;&lt;/p&gt;
+
+	&lt;p&gt;From two &lt;i&gt;Birds of Flight&lt;/i&gt; sessions: Student Council Career Central and Navigating the Industry Career Path at ISMB 2016, I have  compiled various testimonies about doing research in industry and some tips for applicants seeking out those positions.&lt;/p&gt;
+
+	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_un1_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+
+	&lt;p&gt;In brief, the difference between industry and academia is :&lt;br&gt;&lt;blockquote&gt;&lt;strong&gt;Academia&lt;/strong&gt;: how can I generate new informantion that will improve world knowledge? Personal career is often ahead of the main goal. &lt;br&gt;&lt;strong&gt;Industry&lt;/strong&gt;: There is a specific problem we need to try to solve as quickly as we can working as a team&lt;/blockquote&gt;&lt;/p&gt;
+	&lt;h3&gt;Main differences between working in industry and in academia:&lt;/h3&gt;
+	&lt;ol&gt;
+		&lt;li&gt;faster peace — This can be a plus (stimulating) or a minus (stressful) depending on your working style or personal preference.&lt;/li&gt;
+		&lt;li&gt;real deadlines — A lot of money can be invested in projects you are part of and so there is pressure to achieve goals or abandon projects where necessary&lt;/li&gt;
+		&lt;li&gt;constructive feedback — For example, at the end of the year the &lt;i&gt;Amyris&lt;/i&gt; company gives employees &lt;strong&gt;feedback&lt;/strong&gt; on different competences. This is based on what is collected from their co-workers and project leaders, and can include evaluations on communication (written and oral), individual performance , performance in the team, leadership skills, etc.&lt;/li&gt;
+		&lt;li&gt;improve your skills with the aid of the company- i.e. Your oral presentation may be recorded and commented in detail to help you overcome your weak points&lt;/li&gt;
+		&lt;li&gt;your manager is not a PI - Your relationships within the working environment will therefore be different&lt;/li&gt;
+		&lt;li&gt;less competition, more &lt;strong&gt;collaboration&lt;/strong&gt; between research groups within the company&lt;/li&gt;
+		&lt;li&gt;working hours — Within industry employees can be expensive: you need to learn to be very efficient during your allocated working hours&lt;/li&gt;
+		&lt;li&gt;put aside your ego —  Being capable of working well within a team is crucial, &lt;strong&gt;no one wants to work with a super-star&lt;/strong&gt;&lt;/li&gt;
+		&lt;li&gt;you don’t need to raise &lt;strong&gt;money&lt;/strong&gt; — there is typically a whole department that takes care of this, you are free to focus on research&lt;/li&gt;
+		&lt;li&gt;less &lt;strong&gt;freedom&lt;/strong&gt; on your research and goals - as the topic of your research and goals are typically led by the company&lt;/li&gt;
+		&lt;li&gt;you may still be able to publish research, but it is not a high priority like in Academia - Lawyers may decide what you can actually make public&lt;/li&gt;
+		&lt;li&gt;you can and you should still network with researchers - Probably your ex-fellows&lt;/li&gt;
+		&lt;li&gt;you can collaborate with academic labs&lt;/li&gt;
+		&lt;li&gt;your creation belongs to the company — No fights to have your name on the paper, but on the other hand, you do not get credit in the traditional sense&lt;/li&gt;
+		&lt;li&gt;your work and the company can be motivated by money&lt;/li&gt;
+	&lt;/ol&gt;
+		&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/career_un_5_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+
+	&lt;h3&gt;Some tips for the job search and interview process&lt;/h3&gt;
+	&lt;h4 &gt;&lt;font color=&quot;#999999&quot;&gt;Key tips&lt;/font&gt;&lt;/h4&gt;
+	&lt;p&gt;
+		&lt;i&gt;Team work, team work, team work.&lt;/i&gt;
+	&lt;/p&gt;
+	&lt;p&gt;Industry is probably not suited to individuals who would prefer to work alone.&lt;/p&gt;
+	&lt;p&gt;
+		According to &lt;a href=&quot;mailto:nicole.bodycombe@pfizer.com&quot; target=&quot;_blank&quot;&gt;Nicole Bodycombe&lt;/a&gt;, technical skills are not the most important point of your dossier because she argues that everyone can be trained. What is much more important is the ability to &lt;strong&gt;communicate&lt;/strong&gt; with coworkers and community and also &lt;strong&gt;problem solve&lt;/strong&gt;.
+	&lt;/p&gt;
+
+		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;Interview process&lt;/font&gt;&lt;/h4&gt;
+		&lt;p&gt;Different stages can be applied: CV screening — make sure it stands out for example including recommendation letter from some in the company, phone screening, group lunch (evaluate your social skills), pairing, a task/ exercise / problem to solve (result is not the most important the process of searching for an answer is)&lt;/p&gt;
+		&lt;p&gt;&lt;strong&gt;Do your homework&lt;/strong&gt; before the interview: see products, related publications, try to get in contact with someone in the company through your network to learn about company habits, goals and ambiance.&lt;/p&gt;
+		&lt;p&gt;Use interview to &lt;strong&gt;learn more about the company&lt;/strong&gt;. What is the working environment like? What kind of vocabulary do they use? Always ask questions!&lt;/p&gt;
+		&lt;p&gt;You can read testimonies from applicants who have interviewed for different companies online in websites as &lt;a href=&quot;https://www.glassdoor.fr&quot; target=&quot;_blank&quot;&gt;https://www.glassdoor.fr&lt;/a&gt;.&lt;/p&gt;
+
+		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;Your role in the industry&lt;/font&gt;&lt;/h4&gt;
+		&lt;p&gt;
+			For a computational biologist different roles are possible: data analyst, software engineer (producing tools), project-shaping. Along with many others! Sometimes you can negotiate with the company about your role, but try to flexible and open into new opportunities.
+
+		&lt;/p&gt;
+
+		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;How to network?&lt;/font&gt;&lt;/h4&gt;
+		&lt;p&gt;
+			Most of people you know may stay in academia. It is likely that your PI will be able to offer you more advice on continuing your career is academia than they would be able to about pursuing one in industry. &lt;strong&gt;So how can you meet people from the big world outside of academia?&lt;/strong&gt; Look among your colleagues, it is likely that there is someone who has at least collaborated with industry partners. You can also use Linkedin to find more people working within industry. Reach out to people and go to local meet ups. &lt;strong&gt;Be curious and proactive&lt;/strong&gt;.
+		&lt;/p&gt;
+
+		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;PostDoc or not?&lt;/font&gt;&lt;/h4&gt;
+		&lt;p&gt;
+			For those who are debating between getting more experience in research before transitioning into industry or moving straight across, the answer is: &lt;strong&gt;it depends&lt;/strong&gt;. For more skill based positions like data analysts or developers it is not necessary to have an extensive research background. However if you wish to lead a research group in industry it can be an asset to have progressed further in academia.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			&lt;em&gt;&lt;span class=&quot;highlightme&quot;&gt;Important remark: If you are &lt;strong&gt;not U.S. resident&lt;/strong&gt; looking to land an industry job in U.S., it may be better for you to do a postdoc first for practical reasons. Getting a working visa from a distance can be a long and difficult process and having a research position can make it easier.&lt;/span&gt;&lt;/em&gt;
+		&lt;/p&gt;
+				&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;What if I want to go back to academia?&lt;/font&gt;&lt;/h4&gt;
+				&lt;p&gt;Well, it may be challenging but certainly not impossible. Prof. &lt;a href=&quot;https://medium.com/r/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjudithblake&quot; target=&quot;_blank&quot;&gt;Judith Blake&lt;/a&gt; made it. The key is to keep contact with academiaby attending conferences and keeping up to date with new research. However, it may be more challenging to obtain positions that look at your impact factor.&lt;/p&gt;
+	&lt;hr /&gt;
+	&lt;p&gt;To sum up, in order to succeed in securing jobs in academia, (according to our experts) you should do the following:&lt;/p&gt;
+	&lt;blockquote&gt;&lt;strong&gt;be open to opportunities and enjoy yourself&lt;/strong&gt;&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;div&gt;&lt;figure&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;  &lt;figcaption&gt;From left to right: Nicole Bodycombe, Blake Borgeson, Lan Hu, Scott Markel&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/div&gt;
+&lt;br&gt;
+	&lt;p&gt;The experts that contributed the testimonials that make up the basis for this post were: Dr. &lt;a href=&quot;https://www.linkedin.com/in/amoolyasingh&quot; target=&quot;_blank&quot;&gt;Amoolya Singh&lt;/a&gt; (&lt;a href=&quot;https://amyris.com/&quot; target=&quot;_blank&quot;&gt;Amyrisc Inc&lt;/a&gt;), Dr. &lt;a href=&quot;https://www.linkedin.com/in/sarah-teichmann-9975646b&quot; target=&quot;_blank&quot;&gt;Sarah Teichmann&lt;/a&gt; (&lt;a href=&quot;http://www.ebi.ac.uk/research/teichmann&quot; target=&quot;_blank&quot;&gt;Group Leader at EBI&lt;/a&gt;), Prof. &lt;a href=&quot;https://www.linkedin.com/in/judithblake&quot; target=&quot;_blank&quot;&gt;Judith Blake&lt;/a&gt; (&lt;a href=&quot;https://www.jax.org/research-and-faculty/faculty/judy-blake&quot; target=&quot;_blank&quot;&gt;Jaxon Laboratories&lt;/a&gt;, previous: &lt;a href=&quot;http://www.si.edu/&quot; target=&quot;_blank&quot;&gt;The Smithsonian Institution&lt;/a&gt;), Mrs. &lt;a href=&quot;mailto:nicole.bodycombe@pfizer.com&quot; target=&quot;_blank&quot;&gt;Nicole Bodycombe&lt;/a&gt; (&lt;a href=&quot;http://www.pfizer.com/&quot; target=&quot;_blank&quot;&gt;Pfizer&lt;/a&gt;), Dr. &lt;a href=&quot;mailto:blake.borgeson@recursionpharma.com&quot; target=&quot;_blank&quot;&gt;Blake Borgeson&lt;/a&gt; (&lt;a href=&quot;http://www.recursionpharma.com/team.html&quot; target=&quot;_blank&quot;&gt;RECURSION Pharmaceuticals&lt;/a&gt;), Dr. &lt;a href=&quot;mailto:hulan0@gmail.com&quot; target=&quot;_blank&quot;&gt;Lan Hu&lt;/a&gt; (&lt;a href=&quot;http://www.bio-rad.com/&quot; target=&quot;_blank&quot;&gt;Bio-Rad Laboratories&lt;/a&gt;)and Dr. &lt;a href=&quot;mailto:Scott.MARKEL@3ds.com&quot; target=&quot;_blank&quot;&gt;Scott Markel&lt;/a&gt; (&lt;a href=&quot;http://accelrys.com/&quot; target=&quot;_blank&quot;&gt;BIOVIA&lt;/a&gt;). All of the above (except Dr. &lt;a href=&quot;https://www.linkedin.com/in/sarah-teichmann-9975646b&quot; target=&quot;_blank&quot;&gt;Sarah Teichmann&lt;/a&gt;) were or are working an industry setting with research being a key component of what they do.&lt;/p&gt;
+	&lt;p&gt;Some of them chose to leave academia because of personal situations, working hours (industry jobs can sometimes be less time-consuming) or in an effort to have a better work-life balance. Their testimonies highlight that there are many varied and exciting opportunities within industry.&lt;/p&gt;
+	&lt;hr /&gt;
+
+	&lt;h4&gt;Closing remarks&lt;/h4&gt;
+	&lt;p&gt;&lt;strong&gt;Personally, as I strongly consider working in industry later on in my life.&lt;/strong&gt;Even though these testimonies are somewhat limited in the sense that this is only a snapshot of some people’s experience, they give an idea about the industry sector’s expectations and the benefits of working there.&lt;/p&gt;
+		&lt;p&gt;Sadly there is no magic recipe for choosing between academia and industry. &lt;strong&gt;Finding the right job is like buying shoes.&lt;/strong&gt; Some are exactly the right fit and some you may need to adjust a bit. The key is to try as many as possible and to be well-prepared. Thanks to an increasing number of career development sessions at scientific conferences, more people will be able to explore their options and contribute to research in the best way they can — be that working in academia or in industry.&lt;/p&gt;
+	&lt;p&gt;&lt;strong&gt;&lt;em&gt;I wish you all best of luck with your career!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_un_4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+	&lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on July 22, 2016.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/research-in-an-industry-setting-testimonials-from-ismb16-3d3de62ab260#.rsmuquy2c&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+		   &lt;/section&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
+&lt;/html&gt;
+
+</description>
+        <pubDate>Fri, 11 Nov 2016 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+        <category>conferenceISMB2016</category>
+        
+      </item>
+    
+      <item>
+        <title>Hi, I am Computational Biologist</title>
+        <description>&lt;html&gt;
+
+&lt;head&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+
+
+&lt;/head&gt;
+
+ &lt;body&gt;
+
+     &lt;style&gt;
+.scalable {
+  overflow: hidden;
+}
+
+.scalable iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.scalable .scalable-content {
+  height: 0;
+  position: relative;
+}
+
+.scalable-16-9 .scalable-content {
+  /* Percentage from 9 divided by 16 for ratio of 16:9. */
+  padding-bottom: 56.25%;
+}
+
+    iframe {display:block;margin:auto;width: 100%}
+
+
+      &lt;/style&gt;
+ 
+      &lt;/body&gt;   
+&lt;section&gt;
+    &lt;p&gt;
+        &lt;blockquote&gt;Hi, I am Computational Biologist, would you hire me when I graduate (from PhD)?&lt;/blockquote&gt;
+    &lt;/p&gt;
+    &lt;h3&gt;Thinking about a job&lt;/h3&gt;
+    &lt;p&gt;
+        I am in my second year of PhD in Computational Biology / Systems Biology at Cancer Institute in France. It is almost halfway here, where PhD needs to be completed in 3-4 years, so I reckon it is a safe time to find out personally how are my chances on the job market of data science. I asked the question &lt;i&gt;&lt;b&gt;Hi, I am Computational Biologist, would you hire me when I graduate (from PhD)?&lt;/b&gt;&lt;/i&gt; in many declination to different companies. I would like to share with you my experience from four &lt;strong&gt;job fairs&lt;/strong&gt;, I attended in November in Paris. 
+    &lt;/p&gt;
+    &lt;p&gt;Let me start from the end...&lt;/p&gt;
+    
+    &lt;h3&gt;To make the long story short - key messages (for busy ones)&lt;/h3&gt;
+       &lt;p&gt;&lt;ul&gt;
+                       &lt;li&gt;most of companies do not know what &lt;b&gt;computational biology&lt;/b&gt; is  - adapt your title to the company - i.e. &lt;i&gt;data analyst of biological/ genetic data / for medical sciences&lt;/i&gt;, &lt;i&gt;data scientist in (biological) research&lt;/i&gt;  etc. in order to highlight your actual role &lt;/li&gt;
+                       &lt;li&gt;most of companies are not familiar with qualities you can bring as a PhD - work on your transferable skills, convince them your are more than just a student that took longer to get a degree &lt;/li&gt;
+                       &lt;li&gt;you might hear that &lt;a href=&quot;http://www.businessinsider.com/qualities-google-looks-for-in-job-candidates-2014-4?IR=T&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Google does want people with high &quot;cognitive ability&quot;&lt;/i&gt;&lt;/a&gt; so you may think it is enough to be smart to get a position - &lt;b&gt;most of companies are not Google&lt;/b&gt;, they are &lt;b&gt;looking for solid skills&lt;/b&gt; that they will test in a technical interview i.e. your coding skills, your strategical thinking, situation analysis, problem solving &lt;/li&gt;
+                       &lt;li&gt;for most cases, PhD candidates are treated the same as a fresh graduate from a master/engineer - it is rare there are predefined posts for PhD holders, you have, for sure, different qualities and experience, which can be a plus, but don&#39;t wait for an applause&lt;/li&gt;
+                       &lt;li&gt;programming in one of languages: &lt;b&gt;Python&lt;/b&gt;, &lt;b&gt;R&lt;/b&gt; or &lt;b&gt;SAS&lt;/b&gt; is a base - which is not a big surprise&lt;/li&gt;
+                       &lt;li&gt;&lt;b&gt;data visualization, database management, big data tools&lt;/b&gt; extended knowledge can be something that distinct you from other candidates&lt;/li&gt;
+                       &lt;li&gt;&lt;b&gt;scientific writing&lt;/b&gt;, and the  whole communication toolbox, can also be a big plus, some companies release internal white papers and writing skills are highly valued &lt;/li&gt;
+                       &lt;li&gt;there is a huge need for skills of computational biologists in diverse projects in industry - lots of start-up with crazy ideas, challenging projects, there world is big out there &lt;/li&gt;
+                       &lt;li&gt;show you interest in a specific sector of industry, even an on-line course can be a plus, attend some meet-ups or events to feel the general ambiance and hot topics of the sector &lt;/li&gt;
+                       &lt;li&gt;ask questions and listen to HR advices - some of HR, especially in start-ups are actually working on projects that may interest you; some of them are new hires - they were in your situation, they are happy to give you advice on how to get into the company&lt;/li&gt;
+                       &lt;li&gt;&lt;b&gt;hiring procedures of companies&lt;/b&gt;, even with very similar profiles can be very different - take time to ask about hiring procedures, go to &lt;a href=https://www.glassdoor.fr/index.htm target=&quot;_blank&quot;&gt;&lt;i&gt;glassdoor&lt;/i&gt;&lt;/a&gt;, reach company employees on LinkedIn &lt;/li&gt;
+                       &lt;li&gt;it is fine to leave you CV early -  don&#39;t expect a call, but you never know - however, seriously &lt;b&gt;apply for jobs 6 months before the end of you PhD&lt;/b&gt;&lt;/li&gt;
+                       &lt;li&gt;add to your CV non-academic experience, courses related to business, topics of company you target, do not put too much academic details (faculty full name, professors names (unless it is someone very known) - just speak the language they do&lt;/li&gt;
+                       &lt;li&gt;&lt;b&gt;smile&lt;/b&gt;, have positive attitude - talk about your motivation for transition in a positive way&lt;/li&gt;
+                       &lt;li&gt;be cautious about your responsibilities, some companies, especially start-up would hire you to do everything related with data management, while what they need is a team of data analyst, not one PhD graduate &lt;/li&gt;
+                   &lt;/ul&gt;               
+  
+        &lt;/p&gt;
+    &lt;h3&gt;The long story (for mindful ones)&lt;/h3&gt;
+&lt;p&gt;
+French educational system is complicated. To simplify, the university master + PhD is seen as a path to academic career exclusively. This is slowly changing and we hear more and more about companies hiring PhDs. Also, universities try to promote alternative carriers organizing &#39;professional breakfasts&#39;, workshops, interview simulations or CV tuning (I have participated in some organized by &lt;a href=http://cfdip.uspc.fr/fr/ target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and &lt;a href=http://www.adoc-tm.com/ target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a&gt;). There is even a &lt;a href=http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/ target=&quot;_blank&quot;&gt;MOOC&lt;/a&gt; that should help PhDs orientate their careers. Also, recently title &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be created a nation network for PhD holders with a yearbook and a standardized e-mail address system. 
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en-gb&quot;&gt;&lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;Création d&amp;#39;un réseau des docteurs avec un annuaire annuel et une adresse mail : prenom.nom@phdfrance.fr &lt;a href=&quot;https://twitter.com/sup_recherche&quot;&gt;@sup_recherche&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thierry Mandon (@mandonthierry) &lt;a href=&quot;https://twitter.com/mandonthierry/status/800712541634560001&quot;&gt;21 November 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/p&gt; 
+&lt;p&gt;Despite all those events, PhDs are still a big unknown to most companies and HR departments. PhD Talent Fair is a job fair organized in order to make PhD profiles more familiar to enterprises and give doctors a chance to meet HR and even pass their first interviews.&lt;/p&gt;&lt;p&gt;
+
+
+  
+&lt;div class=&quot;scalable scalable-16-9&quot;&gt;
+  &lt;div class=&quot;scalable-content&quot;&gt;
+&lt;iframe src=&quot;https://www.youtube.com/embed/J6scnDFKWRI&quot;  allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt; &lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;  &lt;em&gt;Video of PhDTalent explaining value of PhDs for a company [FR]&lt;/em&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;p&gt;I have attended &lt;b&gt;PhDTalen fair&lt;/b&gt;, two data science fairs: &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;&lt;b&gt;DATAJOB&lt;/b&gt;&lt;/a&gt; and &lt;a href=http://forumdatadays.fr/programme/ target=&quot;_blank&quot;&gt;&lt;b&gt;Forum Data Paris&lt;/b&gt;&lt;/a&gt;  and one organized at &lt;a href=http://jnum.parisdescartes.fr/job-dating/ target=&quot;_blank&quot;&gt;&lt;b&gt;&lt;i&gt;Journée Numérique&lt;/i&gt;&lt;/b&gt;&lt;/a&gt; - &lt;i&gt;Digital Day&lt;/i&gt; at University Paris Descartes.&lt;/p&gt;
+&lt;p&gt;
+At any job fair, meetup or a conference when we introduce ourselves as Computational Biologists, it is not always clear what it actually means.&lt;/p&gt;
+&lt;p&gt;As a &lt;b&gt;Computational Biologist&lt;/b&gt; working on data analysis in the context of imunno-oncology, with some additional on-line training, I feel I have most of basic knowledge asked for post of data analyst or data scientist: working in R, Machine Learning, statistics, data visualization, git. However, this is not clear for people working out of research in biology and healthcare. There are so many flavors of computational biologists, using different tools and applying them to different fields of biology, that it crucial to state clear what we actually do given the desired job. What is sure, &lt;b&gt;most of computational biologist&lt;/b&gt;, with some additional training to broad their technical horizons and with open mind, &lt;b&gt;have very attractive profile for many industries&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have spend around 1-2 h of my time at each job fair, that took place during the week office hours. Even though, this time did not allow me to  talk to all companies, especially the most popular where the line were very long, I managed to leave my CV to 15 companies and talk to around 20. Here is a little summary of each job fair. &lt;/p&gt;
+ &lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/logo_PhDTalent.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=https://www.phdtalent.org/ target=&quot;_blank&quot;&gt;PhDTalent fair&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;
+PhDTalent gethered more than 70 companies form different industries. Roughly, companies presenting can be split into three groups: Biotech / Pharma, consulting, Policy, Robotics &amp; Data science &amp; Big data &amp; IT &amp; Computing. 
+
+Some like Orange or L&#39;Oréal recruit for their PostDocoral programs.
+
+I have learned that some companies in the &lt;b&gt;recruitment process&lt;/b&gt; can send applicants a &lt;b&gt;weekly challenge&lt;/b&gt; or test through &lt;b&gt;7 interviews&lt;/b&gt; for a R&amp;D position. I also talked to many start-ups that generate diverse data; they are not sure how to manage them and they do hope one PhD can replace data management team. You may encounter even very suprising job descriptions: one start-up tired to hire &lt;b&gt;bioinformatician to model hormone detection in the air by their humanoid robot&lt;/b&gt;. I am not sure if they correctly interpreted what are skills of a bioinformatician ;) (For those who are not sure what bioinformatician does have a look at the article in &lt;a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4408859/ target=&quot;_blank&quot;&gt;Frontiers of Genetics: Who qualifies to be bioinformatician?&lt;/a&gt;)
+&lt;/p&gt;
+ &lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/DATAJOBS.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/forumdata.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;Data Jobs forum at Bourse de Paris. Image credit to &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;datajobs.fr&lt;/a&gt;&lt;/em&gt;&lt;br&gt;&lt;br&gt;
+&lt;h3&gt;&lt;a href=http://forumdatadays.fr/programme/ target=&quot;_blank&quot;&gt;Forum Data&lt;/a&gt; and &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;Data Jobs&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Those two job fairs had splendid sponsors and a wide array of known companies.
+Even though, it was not designed for PhDs I found companies repentants very motivated and helpful (maybe it is the enthusiasms and potential of the data industry that was reflected in the personnel). I learned that it is, of course, too early now for me to apply but I can have a look at posts description on companies websites, some firms organize their own meetups where I would meet employees or work on a toy project for the company. I was also advised to attend &lt;a href=https://startupweekend.org/locations/europe/fr target=&quot;_blank&quot;&gt;&lt;b&gt;startup weekends&lt;/b&gt;&lt;/a&gt; where many startup present at those and similar events hire actively. I also try to find out about data analysis postions in  n important beauty company with big R&amp;D pole, I learned they only hire profiles with at least 3-year-experience working in company. Thefore, I burry my hopes to stay close to biology an healthcare. Probably for a first job, one needs to be more flexible than that.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href=http://jnum.parisdescartes.fr/job-dating/ target=&quot;_blank&quot;&gt;Journées numériques&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Among numerous activities of &lt;i&gt;Digital Day&lt;/i&gt; there were a little job fair organized. A few number of companies presented job offers. However, the &lt;i&gt;job offers in digital expertise&lt;/i&gt; is a bit misleading and most of jobs proposed were related to advances computing, IT management, web marketing and communication.&lt;/p&gt;
+
+&lt;h3&gt;How to choose a company?&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/office.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;It is very important issue. Let&#39;s imagine, you have a great profile, desired by many companies. How do you chose the company?&lt;/p&gt;
+&lt;p&gt;As a foreigner in France and academia-trained I do not have clear idea about model of functioning of different companies and possible advantage and disadvantages of specific setups.&lt;/p&gt;
+
+&lt;p&gt;I encountered many consulting offices where employees for actually for different companies to solve a an issue or work on a project. I was told, their offer can seem very attractive at the first sight: variety of subjects, cutting edge technologies, big companies. However, they are 
+some drawbacks, as employees are hired by the consulting company, they are lured by the most attractive projects, but there is no guarantee to which one they will be associated because it depends a lot on client choice, and other availabale consultants. On the other hand, even a short contract in a company developing new technologies such as &lt;i&gt;Orange&lt;/i&gt; or &lt;i&gt;Microsoft&lt;/i&gt; can be very good for your career, while consulting job can be easier to get but will not always meet your expectations.&lt;/p&gt;
+
+&lt;h3&gt;Closing remarks&lt;/h3&gt;
+&lt;p&gt;Career transition is probably not easy, future is not all roses, but with some determination, I am pretty sure a &lt;b&gt;Camputational Biologist has great chances to find a well-paid job outside academia&lt;/b&gt;. Programming skills combined with capacity of analysis seem to be in high demand. There will be still some knowledge gaps, some unknowns, but our duty is to turn them into challenges.&lt;/p&gt;
+ &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/horizon.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+        
+&lt;/section&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
     
       <item>
         <title>Data Innovation</title>
@@ -129,8 +469,12 @@
      &lt;h3&gt;Closing remarks&lt;/h3&gt;
 
      &lt;p&gt;In overall, &lt;strong&gt;Hello Tomorrow Global Summit&lt;/strong&gt; was great adventure. Gathering motivated people, cutting-edge technology and capital in the same place is a remarkable achievement. There is no doubts there is a lot to happen in Data Universe in upcoming years and data is present now in many industries. What is more, data is a rich topic in itself and can take different flavors combined with AI, IoT or ethics. We will for sure surprised about its potential and new technologies born from this industry.&lt;/p&gt;
-        
+       
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+  
 &lt;/section&gt;
+
 &lt;/html&gt;
 </description>
         <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
@@ -242,6 +586,9 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on Setpember 13, 2016.&lt;/p&gt;
         &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/computational-biology-data-ismb16-1607154654ea#.ijpvjgnnw&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
     &lt;/footer&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;
 &lt;/html&gt;
 </description>
@@ -367,6 +714,9 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/research-in-an-industry-setting-testimonials-from-ismb16-3d3de62ab260#.rsmuquy2c&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
     &lt;/footer&gt;
 		   &lt;/section&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/html&gt;
 
 </description>
@@ -414,6 +764,10 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot; target=&quot;_blank&quot;&gt;Medium&lt;/a&gt; on July 11, 2016.&lt;/p&gt;
         &lt;p&gt;&lt;a href=&quot;https://medium.com/p/bba71aad7353&quot; target=&quot;_blank&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
     &lt;/footer&gt;
+
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;</description>
         <pubDate>Fri, 08 Jul 2016 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/scs</link>
@@ -532,6 +886,9 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
     &lt;p&gt;
         In order to apply to CBA check out the &lt;a href=&quot;http://cfdip.uspc.fr/fr/formations/catalogue-des-formations/metiers-entreprises-autres-organisations/innovation-entreprise/item/199-certificate-in-business-and-administration&quot; target=&quot;_blank&quot;&gt;webpage of the course&lt;/a&gt;.
     &lt;/p&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;
 &lt;/html&gt;
 </description>
@@ -580,6 +937,9 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on June 29, 2016.&lt;/p&gt;
         &lt;p&gt;&lt;a href=&quot;https://medium.com/p/42108db287ac&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
     &lt;/footer&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;</description>
         <pubDate>Wed, 29 Jun 2016 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/intro</link>
@@ -611,589 +971,6 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         <category>thoughts</category>
         
         <category>new cathegory</category>
-        
-      </item>
-    
-      <item>
-        <title>Deconvolution of mixed samples</title>
-        <description>&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;pushing the borders of knowledge in statistical modeling of multidimensional genetical data&lt;/li&gt;
-  &lt;li&gt;contribution to scientific papers as data analyst&lt;/li&gt;
-  &lt;li&gt;writing scientific publications with LaTeX&lt;/li&gt;
-  &lt;li&gt;working in interdisciplinary team of 15 people&lt;/li&gt;
-  &lt;li&gt;interacting with experimentalists and theoreticians&lt;/li&gt;
-  &lt;li&gt;2nd place of professional pitch competiton, ABG&lt;/li&gt;
-  &lt;li&gt;3rd place in scientific pitch competition&lt;/li&gt;
-  &lt;li&gt;public speaking in front of &amp;gt;100 scientific experts&lt;/li&gt;
-  &lt;li&gt;public speaking in front of general public&lt;/li&gt;
-  &lt;li&gt;creating graphical supports with vector graphics&lt;/li&gt;
-  &lt;li&gt;teaching in Statistics, Informatics &amp;amp; Mathematics division at Pharma faculty&lt;/li&gt;
-  &lt;li&gt;completing courses on: Communication, Certificate in Business &amp;amp; Administration:  Business &amp;amp; Management &amp;amp; Strategy &amp;amp; Finance , Technologies &amp;amp; Public Policy, Machine Learning, Analytics&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/posterismb_clean.svg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 30 Jan 2016 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/DEconvolutionofTME.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/DEconvolutionofTME.html</guid>
-        
-        <category>Unsupervised learning</category>
-        
-        <category>ICA</category>
-        
-        <category>data visualization</category>
-        
-        <category>R</category>
-        
-        <category>public speaking</category>
-        
-        <category>scientific writing</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Introduction to data visualization [FR]</title>
-        <description>&lt;p&gt;&lt;h2&gt;TP Visualisation avec R&lt;/h2&gt;&lt;/p&gt;
-
-&lt;h3&gt;Avant le cours&lt;/h3&gt;
-
-&lt;p&gt;Dans une publication scientifique (un article, un livre) repérez une figure que vous trouvez excellente (claire, pertinente, esthétique) et une figure que vous ne trouvez pas bien (pas claire, moche, illisible) et argumentez votre choix.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;installation-du-rstudio-desktop&quot;&gt;Installation du RStudio Desktop&lt;/h2&gt;
-&lt;p&gt;Allez sur le &lt;a href=&quot;http://www.rstudio.com/products/rstudio/download/&quot;&gt;site http://www.rstudio.com/products/rstudio/download/&lt;/a&gt; et téléchargez le logiciel.&lt;/p&gt;
-
-&lt;p&gt;Si l’installation n’est pas possible, allez dans la section &lt;a href=&quot;#sansStudio&quot;&gt;sans R studio&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/pas.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;h2&gt;Premiers pas avec RStudio&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;File-&amp;gt; New File-&amp;gt;Script&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Enregistrer le nouveau script directement en cliquant sur la petite icone de disquette. N’oubliez pas de sauvegarder votre script régulièrement (&lt;em&gt;Ctr+S&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;Vous devriez voir votre écran divise en 4 parties principales: &lt;strong&gt;Script&lt;/strong&gt;, &lt;strong&gt;Console&lt;/strong&gt;, &lt;strong&gt;Environment/History&lt;/strong&gt; et &lt;strong&gt;Files/Plots/Packages/Help/Viewer&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dans la partie &lt;em&gt;script&lt;/em&gt; vous écrivez les commandes et pour les faire executer vous allez dans &lt;code class=&quot;highlighter-rouge&quot;&gt;Code-&amp;gt;Run&lt;/code&gt;.
-Ou bien sélectionnez lines que vous voulez executer et tapez &lt;em&gt;Ctr+Enter&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Essayez&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Ctr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;[1] “Hello world”&lt;/p&gt;
-
-&lt;p&gt;Si vous cliquez sur &lt;strong&gt;History&lt;/strong&gt; vous devriez voir: 
-&lt;code class=&quot;highlighter-rouge&quot;&gt;print(&#39;Hello world&#39;)&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Historique sauvegarde les commandes effectuées dans l’ordre hronologique.&lt;/p&gt;
-
-&lt;p&gt;Pour savoir plus sur la fonction &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;
-tapez:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;directement dans la console, a votre droite l’onglet &lt;strong&gt;Help&lt;/strong&gt; va afficher directement les informations sur &lt;code class=&quot;highlighter-rouge&quot;&gt;print&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Dans le R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.&lt;/p&gt;
-
-&lt;h2 id=&quot;sansStudio&quot;&gt;Sans &lt;i&gt;R studio&lt;/i&gt; - the brute&lt;/h2&gt;
-
-&lt;p&gt;Vous allez executer les scripts R directement dans la ligne de commandes de votre Unix/Mac.&lt;br /&gt;
-Ouvrez terminal et tapez: &lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt;&lt;br /&gt;
-Cela va ouvrir le logiciel directement dans le terminal.&lt;br /&gt;
-Vous pouvez taper &lt;code class=&quot;highlighter-rouge&quot;&gt;print(&#39;Hello world&#39;)&lt;/code&gt; directemment dans la console.&lt;br /&gt;
-Vous allez voir&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt; print(&#39;Hello world&#39;)&lt;/code&gt;&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;[1] &quot;Hello world&quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Pour l’aide sur la fonction tapez:&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;?print&lt;/code&gt;&lt;br /&gt;
-(marche avec toutes les fonctions)&lt;/p&gt;
-
-&lt;p&gt;Dans R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.&lt;/p&gt;
-
-&lt;p&gt;Neanmoins, pour garder tous vos commandes dans un document, et effectuer les commandez plus complexes, sauvgarder votre commande dans un fichier et effectuez avec R.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;tapez &lt;em&gt;gedit&lt;/em&gt; (Unix) ou un autre editeur de texte simple (pas MS Word)&lt;/li&gt;
-  &lt;li&gt;écrivez &lt;code class=&quot;highlighter-rouge&quot;&gt;print(&#39;Hello world&#39;)&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;sauvgarder le fichier myscript&lt;strong&gt;.R&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;dans le terminal, dans le même répertoire où vous avez sauvegardé le fichier tapez &lt;code class=&quot;highlighter-rouge&quot;&gt;Rscript myscript.R&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Dans la console vous devriez voir&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;[1] &quot;Hello world&quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/gears.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;manipulation-de-donnes&quot;&gt;Manipulation de données&lt;/h2&gt;
-
-&lt;h4&gt;Importez les données&lt;/h4&gt;
-
-&lt;p&gt;Enregistrez le fichier &lt;a href=&quot;http://www.agrocampus-ouest.fr/math/livreR/ozone.txt&quot;&gt;ozone.txt http://www.agrocampus-ouest.fr/math/livreR/ozone.txt&lt;/a&gt; sur votre ordinateur.&lt;/p&gt;
-
-&lt;p&gt;Ensuite importez dans R, pour se faciliter la tâche decidez dans quel repertoire voulez avoir vos fichiers R de cette session&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;setwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;/chemin&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;par example si le fichier est dans &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Downloads&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;setwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;/XXXX/xxxx/Downloads&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;pour connaitre le chemin complet de votre fichier ozone.txt, allez dans le repértoire où il est enregistré et tapez dans le terminal:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;pwd&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Ensuite dans le script (fenêtre Script dans Rstudio ou votre fichier &lt;em&gt;.R&lt;/em&gt;):&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ozone.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Quoique, vous devriez éviter d’afficher les données dans la console. Dans le cas de grands jeux de données cela peut ralentir énormément le système. Donc mieux c’est:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ozone.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sep&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Dès que vous créez une variable, elle apparait dans l’onglet environnement et vous pouvez voir ses caractéristiques (&lt;em&gt;RStudio&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;La bonne pratique&lt;/strong&gt;: Après avoir importé votre jeu de données, vérifiez toujours s’il est bien importé. Une manière simple, c’est de faire:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##      maxO3              T9             T12             T15       
-##  Min.   : 42.00   Min.   :11.30   Min.   :14.00   Min.   :14.90  
-##  1st Qu.: 70.75   1st Qu.:16.20   1st Qu.:18.60   1st Qu.:19.27  
-##  Median : 81.50   Median :17.80   Median :20.55   Median :22.05  
-##  Mean   : 90.30   Mean   :18.36   Mean   :21.53   Mean   :22.63  
-##  3rd Qu.:106.00   3rd Qu.:19.93   3rd Qu.:23.55   3rd Qu.:25.40  
-##  Max.   :166.00   Max.   :27.00   Max.   :33.50   Max.   :35.50  
-##       Ne9             Ne12            Ne15           Vx9         
-##  Min.   :0.000   Min.   :0.000   Min.   :0.00   Min.   :-7.8785  
-##  1st Qu.:3.000   1st Qu.:4.000   1st Qu.:3.00   1st Qu.:-3.2765  
-##  Median :6.000   Median :5.000   Median :5.00   Median :-0.8660  
-##  Mean   :4.929   Mean   :5.018   Mean   :4.83   Mean   :-1.2143  
-##  3rd Qu.:7.000   3rd Qu.:7.000   3rd Qu.:7.00   3rd Qu.: 0.6946  
-##  Max.   :8.000   Max.   :8.000   Max.   :8.00   Max.   : 5.1962  
-##       Vx12             Vx15            maxO3v          vent      pluie   
-##  Min.   :-7.878   Min.   :-9.000   Min.   : 42.00   Est  :10   Pluie:43  
-##  1st Qu.:-3.565   1st Qu.:-3.939   1st Qu.: 71.00   Nord :31   Sec  :69  
-##  Median :-1.879   Median :-1.550   Median : 82.50   Ouest:50             
-##  Mean   :-1.611   Mean   :-1.691   Mean   : 90.57   Sud  :21             
-##  3rd Qu.: 0.000   3rd Qu.: 0.000   3rd Qu.:106.00                        
-##  Max.   : 6.578   Max.   : 5.000   Max.   :166.00&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Pour connaître les dimensions du tableau&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## [1] 112  13&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;A quoi corresponds premier chiffre? deuxième chiffre?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/org.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;h3&gt;Organisation d’information:&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;head&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##          maxO3   T9  T12  T15 Ne9 Ne12 Ne15     Vx9    Vx12    Vx15 maxO3v
-## 20010601    87 15.6 18.5 18.4   4    4    8  0.6946 -1.7101 -0.6946     84
-## 20010602    82 17.0 18.4 17.7   5    5    7 -4.3301 -4.0000 -3.0000     87
-## 20010603    92 15.3 17.6 19.5   2    5    4  2.9544  1.8794  0.5209     82
-## 20010604   114 16.2 19.7 22.5   1    1    0  0.9848  0.3473 -0.1736     92
-## 20010605    94 17.4 20.5 20.4   8    8    7 -0.5000 -2.9544 -4.3301    114
-## 20010606    80 17.7 19.8 18.3   6    6    7 -5.6382 -5.0000 -6.0000     94
-##           vent pluie
-## 20010601  Nord   Sec
-## 20010602  Nord   Sec
-## 20010603   Est   Sec
-## 20010604  Nord   Sec
-## 20010605 Ouest   Sec
-## 20010606 Ouest Pluie&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Cela vous donnée une idée comment sont les premières 6 lignes du tableau.&lt;/p&gt;
-
-&lt;p&gt;1.&lt;strong&gt;Afficher juste la première colonne du tableau ‘mytable’&lt;/strong&gt;&lt;br /&gt;
-2.&lt;strong&gt;Afficher juste la première ligne du tableau ‘mytable’&lt;/strong&gt;&lt;br /&gt;
-3.&lt;strong&gt;Afficher les noms de colonnes du tableau ‘mytable’&lt;/strong&gt; &lt;br /&gt;
-4.&lt;strong&gt;Créez un vecteur ‘Group’ de la meme longueur qu’une colonne du tableau contenant le chiffre 1 pour la moitié de lignes et le chiffre 2 l’autre moitié (indice function ‘rep’)&lt;/strong&gt;  &lt;br /&gt;
-5.&lt;strong&gt;l’ajoutez au tableau comme une colonne (indice function ‘cbind’)&lt;/strong&gt; &lt;br /&gt;
-6.&lt;strong&gt;Supprimez la colonne que vous venez d’ajouter&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Pour répondre aux questions utilisez &lt;code class=&quot;highlighter-rouge&quot;&gt;help(&quot;fonction&quot;)&lt;/code&gt; ou &lt;code class=&quot;highlighter-rouge&quot;&gt;?fonction&lt;/code&gt;, Google etc.&lt;/p&gt;
-
-&lt;!-- **Réponses**   --&gt;
-&lt;!-- ```{r} --&gt;
-&lt;!-- #1.	 --&gt;
-&lt;!-- mytable[,1] --&gt;
-&lt;!-- #2.	 --&gt;
-&lt;!-- mytable[1,] --&gt;
-&lt;!-- #3.	 --&gt;
-&lt;!-- names(mytable) --&gt;
-&lt;!-- #4.	 --&gt;
-&lt;!-- Group=c(rep(&#39;1&#39;,56),rep(&#39;2&#39;,56)) --&gt;
-&lt;!-- length(Group) --&gt;
-&lt;!-- #5.  --&gt;
-&lt;!-- mytable=cbind(mytable, Group) --&gt;
-&lt;!-- summary(mytable) --&gt;
-&lt;!-- #6.  --&gt;
-&lt;!-- mytable=mytable[,-14] --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- *** --&gt;
-
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/art.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;h2&gt;Visualisation des données R standard&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Pour RStudio&lt;/em&gt;&lt;br /&gt;
-Commencer par la commande&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graphics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;et observez l’onglet &lt;strong&gt;Plots&lt;/strong&gt;
-Dans la console s’affichent les commandes utilisées pour obtenir les graphs.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Sans R studio&lt;/em&gt;&lt;br /&gt;
-1. Ouvrir R session dans le terminal (&lt;code class=&quot;highlighter-rouge&quot;&gt;R&lt;/code&gt;)&lt;br /&gt;
-2. Tapez directement&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graphics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Tapez la touche &lt;code class=&quot;highlighter-rouge&quot;&gt;Entrée&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Une fênetre blanche va s’ouvrir, revenez dans le terminal et tapez la touche &lt;code class=&quot;highlighter-rouge&quot;&gt;Entrée&lt;/code&gt;
-***&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Mais commençant par nos donnés:&lt;/p&gt;
-
-&lt;p&gt;Le jeu de donnés contient les variables climatiques et une variable de pollution à l’ozone mesurées durant l’été 2001 à Rennes. Les variables considérées ici seront:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;max03&lt;/strong&gt; - maximum de l’ozone journalier&lt;br /&gt;
-&lt;strong&gt;T12&lt;/strong&gt; - température à midi&lt;br /&gt;
-&lt;strong&gt;vent&lt;/strong&gt; - direction du vent&lt;br /&gt;
-&lt;strong&gt;pluie&lt;/strong&gt;&lt;br /&gt;
-&lt;strong&gt;Vx12&lt;/strong&gt; - projection du vecteur vitesse du vent sur l’axe Est-Ouest&lt;/p&gt;
-
-&lt;p&gt;Regardez encore une fois&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Lesquelles variables sont quantitatives? Qualitatives?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Sélectionnez seulement les colonnes mentionnez et enregistrez dans une variable &lt;code class=&quot;highlighter-rouge&quot;&gt;ozon&lt;/code&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mytable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;T12&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;maxO3&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;vent&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pluie&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Vx12&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##       T12            maxO3           vent      pluie         Vx12       
-##  Min.   :14.00   Min.   : 42.00   Est  :10   Pluie:43   Min.   :-7.878  
-##  1st Qu.:18.60   1st Qu.: 70.75   Nord :31   Sec  :69   1st Qu.:-3.565  
-##  Median :20.55   Median : 81.50   Ouest:50              Median :-1.879  
-##  Mean   :21.53   Mean   : 90.30   Sud  :21              Mean   :-1.611  
-##  3rd Qu.:23.55   3rd Qu.:106.00                         3rd Qu.: 0.000  
-##  Max.   :33.50   Max.   :166.00                         Max.   : 6.578&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Afin de représenter deux colonnes comme un nuage de points. Observez le taux d’O3 maximale en fonction de la température à midi&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#plot(x,y)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;T12&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;maxO3&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-17-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ou bien&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Visualisez le taux maximal d’O3 (maxO3) en fonction de la variable  vent poursuivant la même logique&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Secteur du vent&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pic d&#39;ozone&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;ici equivalent à&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Secteur du vent&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pic d&#39;ozone&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Annotez les parties de la boite à moustaches (boxplot).&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez aussi personnaliser le graph.&lt;br /&gt;
-Ajoutez les couleurs:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;green&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;yellow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Secteur du vent&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pic d&#39;ozone&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;col&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;green&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;yellow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-21-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Si vous avez de difficultés à comprendre ce qui répresentent ‘boxplot’ faites une exercice:&lt;/p&gt;
-
-&lt;p&gt;Si l’on s’intéresse qu’à la catégorie l’Est&lt;/p&gt;
-
-&lt;p&gt;Selectionnez une partie du tableau qui correspond au vent de l’Est&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ozoneE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Est&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Faites une boite à moustache&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozoneE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Secteur du vent&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pic d&#39;ozone&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-23-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;observez les valeurs dans l’ordre&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozoneE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##  [1]  45  92  96  98 106 112 114 121 126 146&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Calculez la moyenne&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozoneE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## [1] 105.6&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Calculez les quantiles/ a quoi correspond-ils?&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;quantile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozoneE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;##     0%    25%    50%    75%   100% 
-##  45.00  96.50 109.00 119.25 146.00&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Essayez maintenant d’observer ces éléments sur le graph&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Pour visualiser deux variables qualitatives essayez:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pluie&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-27-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Pareil, faites un graphe de direction du vent en fonction de température&lt;/strong&gt;&lt;/p&gt;
-
-&lt;!-- ```{r,fig.keep=&#39;none&#39;, results=&#39;hide&#39; } --&gt;
-&lt;!-- plot(vent~T12, data=ozone) --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;h4&gt;Distribution&lt;/h4&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;hist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Ozone&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Histogram&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Décrivez le graph, en quels unités est l’axe y?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Utilisez les informations trouvé sur &lt;a href=&quot;http://www.statmethods.net/advgraphs/parameters.html&quot; target=&quot;_blank&quot;&gt;le site http://www.statmethods.net/advgraphs/parameters.html&lt;/a&gt; pour transformer en jouant avec les paramètres.&lt;/b&gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-29-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;en&lt;/strong&gt;&lt;/p&gt;
-
-&lt;!-- (réponse)   --&gt;
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-30-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Notez le code R dans le compte-rendu des TD&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2&gt;GGPLOT2 - ajoutons une couche&lt;/h2&gt;
-
-&lt;p&gt;Pour installer effectuez la commande:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;install.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ggplot2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## Installing package into &#39;/Users/urszulaczerwinska/Library/R/3.3/library&#39;
-## (as &#39;lib&#39; is unspecified)&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## 
-## The downloaded binary packages are in
-## 	/var/folders/mz/7mx96rvs3xdchysdyy5w37b80000gq/T//RtmpGPMlST/downloaded_packages&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;et ensuite&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Dans le concept de ggplot2 le graphs sont compose de différents couches superposées.&lt;/p&gt;
-
-&lt;p&gt;En utilisant le même jeu de données tapez&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;R vous informe que le graphe n’a pas de couches&lt;br /&gt;
-sauvegardez le plot dans un objet &lt;code class=&quot;highlighter-rouge&quot;&gt;p&lt;/code&gt; et ajoutez une couche&lt;/p&gt;
-
-&lt;h3&gt;&lt;/h3&gt;
-&lt;p&gt;Scatterplot&amp;lt;/h3&amp;gt;&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-34-1.png&quot; width=&quot;80%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Faites attention au operateur + qui va servir toujours a ajouter les couches. Chaque nouvelle couche est une fonction qui prend en argument ses caractéristiques&lt;/p&gt;
-
-&lt;p&gt;Essayez&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Une couche statistique&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat_smooth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;La ligne représente un ‘fit’ et la bande grise, elle répresente l’intervalle de confiance établie en utilisant la méthode &lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;loess&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez aussi visualiser la ligne sans points&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat_smooth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Pour bien annoter le graph:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;taux maximal d&#39;O3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;temperature a midi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;taux d&#39;ozone en fonction de la temperature a Rennes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Que fait-il theme_bw()?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;C’est facile aussi de colorier les points en fonction du type de vent&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;taux maximal d&#39;O3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;temperature a midi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;taux d&#39;ozone en fonction de la temperature a Rennes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Observez que la légende apparait toute seule!&lt;/p&gt;
-
-&lt;p&gt;Vous pouvez joindre les points avec les lignes par groupe aussi&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;taux maximal d&#39;O3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;temperature a midi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;taux d&#39;ozone en fonction de la temperature a Rennes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;geom_line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Il est aussi possible de mapper les couleurs de valeurs continues&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;taux maximal d&#39;O3&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;temperature a midi&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;taux d&#39;ozone en fonction de la temperature a Rennes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3&gt;BARPLOT&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;avec les couleurs&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Pour changer la palette de coloration ajoutez&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;scale_fill_brewer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;palette&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Set1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Ou décidez quels couleurs vous preferez pqr vous memes&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;scale_fill_manual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bisque&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;chartreuse4&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                             &lt;span class=&quot;s2&quot;&gt;&quot;hotpink&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;yellow&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3&gt;error bars&lt;/h3&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;stat_summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun.y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;stat_summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fun.data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_sdl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;errorbar&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;## Warning: Computation failed in `stat_summary()`:
-## Hmisc package required for this function&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;mean_sdl&lt;/strong&gt;- retourne la moyenne du groupe, et les error bars qui correspond a l’ecart-type&lt;/p&gt;
-
-&lt;p&gt;vous pouvez essayer aussi&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
-mean_cl_boot()
-mean_cl_normal()
-median_hilow()
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3&gt;Documentation:&lt;/h3&gt;
-&lt;p&gt;●	&lt;strong&gt;mean_cl_boot()&lt;/strong&gt;&lt;br /&gt;
-	This will return the sample mean, and 95% bootstrap confidence intervals.&lt;br /&gt;
-●	&lt;strong&gt;mean_cl_normal()&lt;/strong&gt;&lt;br /&gt;
-	This will return the sample mean, and the 95% percent Gaussian confidence interval based on the t-distribution&lt;br /&gt;
-●	&lt;strong&gt;mean_sdl()&lt;/strong&gt;&lt;br /&gt;
-	This will return the sample mean and values at 1 sd and -1 sd away. You can make it return points any arbitrary number of sds away by passing that value to mult. For example, mult = 2 will return 2 and -2 sds.&lt;br /&gt;
-●	&lt;strong&gt;median_hilow()&lt;/strong&gt;&lt;br /&gt;
-	This will return the sample median, and confidence intervals running from the 0.025 quantile to the 0.975 quantile, which covers 95% of the range of the data. You can change what range of the data you want the confidence interval to cover by passing it to conf.int. For example conf.int = 0.5 will return confidence intervals ranging from the 0.25 quantile to the 0.75 quantile.&lt;/p&gt;
-
-&lt;h3&gt;Densité&lt;/h3&gt;
-&lt;p&gt;Executez&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;stat_density2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_point&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Vous pouvez jouer avec la coloration&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;stat_density2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;point&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-             	&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;stat_density2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;ou bien&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-r&quot; data-lang=&quot;r&quot;&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ozone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;maxO3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stat_density2d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;tile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;contour&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.density..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale_fill_gradientn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;colours&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rainbow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/unnamed-chunk-55-1.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;h2&gt;Ressources:&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bbs.ceb-institute.org/wp-content/uploads/2011/09/handout_ggplot2.pdf&quot;&gt;handout_ggplot2.pdf&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.ling.upenn.edu/~joseff/avml2012/#Section_1&quot;&gt;http://www.ling.upenn.edu/~joseff/avml2012/#Section_1&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.cookbook-r.com/Graphs/Bar_and_line_graphs_%28ggplot2%29/&quot;&gt;http://www.cookbook-r.com/Graphs/Bar_and_line_graphs_%28ggplot2%29/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://urszulaczerwinska.github.io/docs/TP_R_Etu.pdf&quot; class=&quot;button ula&quot;&gt;Télécharger le PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;b&gt;Les réponses diponibles à la demande&lt;/b&gt;&lt;/p&gt;
-
-&lt;p&gt;Le travail effectué pour &lt;a href=&quot;http://cri-paris.org/bachelor/&quot;&gt;Licence Frontières du Vivant&lt;/a&gt; at Center for Interdisciplinary Reserch.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Mar 2015 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/TP_R</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/TP_R</guid>
-        
-        <category>Teaching</category>
-        
-        <category>R</category>
-        
-        <category>Data viz</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Isotonic regression</title>
-        <description>	&lt;h3&gt;Summary&lt;/h3&gt;
-	&lt;p&gt;Embed pdf&lt;/p&gt;
-	&lt;p&gt;Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.&lt;/p&gt;
-	&lt;hr /&gt;
-	&lt;h4&gt;Feugiat aliquam&lt;/h4&gt;
-	&lt;p&gt;Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.&lt;/p&gt;
-	&lt;p&gt;Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.&lt;/p&gt;</description>
-        <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/Dengue.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/Dengue.html</guid>
-        
-        <category>Algorithm benchmarking</category>
-        
-        <category>Matematica</category>
-        
-        
-        <category>works</category>
         
       </item>
     
