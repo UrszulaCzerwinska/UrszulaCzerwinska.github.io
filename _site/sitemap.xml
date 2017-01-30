@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-      <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+      <lastmod>2017-01-30T09:10:24+01:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/jobsCB/</loc>
+        <lastmod>2017-01-30T00:00:00+01:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/CBA_outreach</loc>
@@ -110,31 +116,31 @@
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/about/</loc>
-        <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+        <lastmod>2017-01-30T09:10:24+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/credits/</loc>
-        <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+        <lastmod>2017-01-30T09:10:24+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-        <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+        <lastmod>2017-01-30T09:10:24+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/thoughts/</loc>
-        <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+        <lastmod>2017-01-30T09:10:24+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/</loc>
-        <lastmod>2016-12-30T12:16:34+01:00</lastmod>
+        <lastmod>2017-01-30T09:10:24+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
