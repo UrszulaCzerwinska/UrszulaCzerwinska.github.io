@@ -22,16 +22,16 @@
   <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
   <style>
   #main > header {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/works-sample.png");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/works-sample.png");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/works-sample.png");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/works-sample.png");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/water_gradient.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/water_gradient.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/water_gradient.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/water_gradient.jpg");
   }
   </style>
   <!--[if lte IE 9]>
   <style>
   #main > header {
-    background-image: url("/images/works-sample.png");
+    background-image: url("/images/water_gradient.jpg");
   }
   </style>
   -->
@@ -91,19 +91,75 @@
 
   
 
-      <p>put code in gihub and link</p>
+      <html>
 
-<h4 id="summary">Summary</h4>
-
-<p>Modeling MinA and MinB was a part of AIV class. 
-Mention Henry de Belly
-put code in gihub and link</p>
-
-<h4 id="results">Results</h4>
-
-<p>get pic</p>
+<head>
+	<meta name="description" content="Urszula Czerwinska. About me, data science, big data, analytics, PhD">
 
 
+</head>
+
+<body>
+</body>   
+<section>
+	<h2>Pattern formation in Escherichia coli: A model for the pole-to-pole oscillations of Min proteins and the localization of the division site</h2>
+	<h3>Intro</h3>
+	<p><span class="image right"><img src="/images/minprot.png" alt="" /></span>
+
+		<p>The positioning of the division plane is one of essential processes that allow a proper cell division in all organisms. In E.coli this plane is determined by a polymeric ring of the FtsZ protein. The site of the ring assembly is controlled by the Min system that suppresses any FtsZ assembly at non-central position. The Min proteins perform a highly dynamics behavior, with a constant pole-to-pole oscillations during the cell cycle. In this project, <b>we build a model using the equations described by Meinhardt et al. that reproduce the behavior of the system. We reproduced the main features of the system</b>. However, the model we use had a lot of simplifications and requires some assumptions. Although, it was consistent with experimental results. Several improvements could still be done to have a better fit to the experimental data. However, <b>even with such a simple model we were able to introduce new features such as chromosome segregation performed by MinD oscillations</b>.</p>
+
+		<h3>Project</h3>
+
+		<p>In this project we 
+			<ul><li>reproduce work of Hans Meinhardt and Piet A. J. de Boer from their <a href="http://www.pnas.org/content/98/25/14202.abstract" target="_blank">article</a></li>
+				<li>implement ODE in matlab using Euler method</li>    <span class="image right"><img width="50%" src="/images/ode.png" alt="" /></span>
+
+				<li>plot results in a form of heatmap</li>
+
+				<li>create dynamic modelisation of the model in time scale</li>
+				<li>we propose a simple model to model DNA division according to <a href="http://msb.embopress.org/content/9/1/686" target="_blank">Di Ventura et al. </a></li>
+				<li>we illustrate the chromosome division model alltogether with MinA MinB model</li> </ul>
+				<br>
+				<br>
+			</p>
+			<p>
+				<div class="box alt">
+					<div class="row uniform 50%">
+					<div class="6u"><span class="image fit"><img src="/images/res2minAB.png" alt="" /></span></div>
+						<div class="6u"><span class="image fit"><img src="/images//res1minAB.png" alt="" /></span></div>
+
+
+						
+					</div>
+				</div>
+			</p>
+
+			<p>Source code is accessible at <a href="https://github.com/UrszulaCzerwinska/AIV_Matlab" target="_blank">github</a> </p>
+			<p>Presentation can be acessed <a href="https://drive.google.com/file/d/0B_EhmOVt095RUEt5ME1FYWw2aTA/view?usp=sharing" target="_blank">here</a></p>
+			<p>Full report can be seen <a href="https://drive.google.com/file/d/0B_EhmOVt095Rc0JpY1lrLXBmVk0/view?usp=sharing" target="_blank">here</a></p>
+			<p>Movie can be seen <a href="https://raw.githubusercontent.com/UrszulaCzerwinska/AIV_Matlab/master/bhj.mp4" target="_blank">here</a></p>
+<div><span class="image fit"><img src="/images/res3minAB.png" alt="" /></span></div>
+
+<h3>Conclusions</h3>
+<p>
+	<ul>
+		<li>E.coli proteins MinD/C, MinE and FtsZ dynamics can be modeled</li>
+		<li><b>The model is robust and reproductible</b></li>
+		<li>Severals improvments of the model can still be done (detailled steps, precision/variation of some parameters, spatial diffusion…) </li>
+		<li>MinD Oscillations can be used to perform chromosomes segregations during the division
+</li>
+	</ul>
+</p>
+			<h3>Authors</h3>
+			<p>This code is a joint effort of myself <a href="https://github.com/UrszulaCzerwinska" target="_blank">Urszula Czerwinska</a> and <a href="http://henrydebelly.weebly.com/" target="_blank"> Henry de Belly</a>who equally contributed to this work during  our modeling class and in our free time. Big acknowledgement to our tutor <a href="https://www.uni-muenster.de/Cells-in-Motion/people/all/betz-t.ph" target="_blank">Timo Betz</a>
+			</p>
+
+
+
+
+
+		</section>
+		</html>
       <div class="backnext btnbottom">
                 <div class="back">
         <div class="bpointer"><a href="/works/metromicrobiome.html"
