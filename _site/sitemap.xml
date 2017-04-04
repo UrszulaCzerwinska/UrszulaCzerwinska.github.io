@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-      <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+      <lastmod>2017-04-04T12:33:59+02:00</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>
@@ -11,6 +11,12 @@
         <lastmod>2017-01-30T00:00:00+01:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</loc>
+        <lastmod>2017-01-30T00:00:00+01:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/CBA_outreach</loc>
@@ -73,7 +79,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-      <loc>http://urszulaczerwinska.github.io/works/metromicrobiome.html</loc>
+      <loc>http://urszulaczerwinska.github.io/works/EcoS</loc>
         <lastmod>2015-04-01T00:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
@@ -116,31 +122,31 @@
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/about/</loc>
-        <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+        <lastmod>2017-04-04T12:33:59+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/credits/</loc>
-        <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+        <lastmod>2017-04-04T12:33:59+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-        <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+        <lastmod>2017-04-04T12:33:59+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/thoughts/</loc>
-        <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+        <lastmod>2017-04-04T12:33:59+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/</loc>
-        <lastmod>2017-03-03T14:07:47+01:00</lastmod>
+        <lastmod>2017-04-04T12:33:59+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>

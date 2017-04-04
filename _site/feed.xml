@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Mar 2017 14:07:47 +0100</pubDate>
-    <lastBuildDate>Fri, 03 Mar 2017 14:07:47 +0100</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 12:33:59 +0200</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 12:33:59 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -152,6 +152,42 @@
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>From Science to Data Science</title>
+        <description>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            window.location.href = &quot;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&quot;
+        &lt;/script&gt;
+        &lt;title&gt;Page Redirection&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Note: don&#39;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&#39;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&#39;&gt;link to example&lt;/a&gt;.
+    &lt;/body&gt;
+&lt;/html&gt;</description>
+        <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Careers</category>
+        
+        <category>Data Science</category>
+        
+        <category>Data viz</category>
+        
+        
+        <category>works</category>
+        
+        <category>FSctoDs</category>
         
       </item>
     
@@ -955,26 +991,6 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         <category>thoughts</category>
         
         <category>conferenceISMB2016</category>
-        
-      </item>
-    
-      <item>
-        <title>HelloWorld</title>
-        <description>&lt;p&gt;This is a HelloWorld post&lt;/p&gt;
-
-&lt;p&gt;This is R code test&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;print(&#39;Hello World&#39;)&lt;/code&gt;`&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 24 Apr 2016 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/new%20cathegory/helloworld.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/new%20cathegory/helloworld.html</guid>
-        
-        
-        <category>thoughts</category>
-        
-        <category>new cathegory</category>
         
       </item>
     
