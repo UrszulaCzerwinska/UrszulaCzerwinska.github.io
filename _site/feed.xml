@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Apr 2017 12:36:09 +0200</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 12:36:09 +0200</lastBuildDate>
+    <pubDate>Tue, 11 Apr 2017 23:20:41 +0200</pubDate>
+    <lastBuildDate>Tue, 11 Apr 2017 23:20:41 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -265,15 +265,15 @@
       &lt;/body&gt;  
       &lt;section&gt;
 
-      &lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/pebourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt;&lt;/strong&gt; is a founding Editor-in-Chief of PLOS Computational Biology and the &lt;a href=&quot;http://www.sdsc.edu/~bourne/&quot; target=&quot;_blank&quot;&gt;Associate Director for Data Science (ADDS)&lt;/a&gt; at the &lt;a href=&quot;https://www.nih.gov/&quot; target=&quot;_blank&quot;&gt;National Institutes of Health&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/pebourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt;&lt;/strong&gt; is a founding Editor-in-Chief of PLOS Computational Biology and the &lt;a href=&quot;http://www.sdsc.edu/~bourne/&quot; target=&quot;_blank&quot;&gt;Associate Director for Data Science (ADDS)&lt;/a&gt; at the &lt;a href=&quot;https://www.nih.gov/&quot; target=&quot;_blank&quot;&gt;National Institutes of Health&lt;/a&gt;.&lt;/p&gt;
 
-      &lt;p&gt;&lt;em&gt;His research focuses are countless: algorithms, text mining, machine learning, metalanguages, biological databases, and visualizations applied to problems in systems pharmacology, evolution, cell signaling, apoptosis, immunology and scientific dissemination coupled with education and public service.&lt;/em&gt;&lt;/p&gt;
-      &lt;p&gt;&lt;em&gt;Attendees  of ISMB 2016 in Orlando had the opportunity to interact with him at the workshop on Education in Bioinformatics (WEB) — ‘Exploiting Cloud and Virtual Resources for Training : Getting the Best Training in Computational Biology in an Era of Cloud Computing and Big Data’.&lt;/em&gt;&lt;/p&gt;
+      &lt;p&gt;His research focuses are countless: algorithms, text mining, machine learning, metalanguages, biological databases, and visualizations applied to problems in systems pharmacology, evolution, cell signaling, apoptosis, immunology and scientific dissemination coupled with education and public service.&lt;/p&gt;
+      &lt;p&gt;Attendees  of ISMB 2016 in Orlando had the opportunity to interact with him at the workshop on Education in Bioinformatics (WEB) — ‘Exploiting Cloud and Virtual Resources for Training : Getting the Best Training in Computational Biology in an Era of Cloud Computing and Big Data’.&lt;/p&gt;
 
 
-      &lt;p&gt;&lt;em&gt;&lt;strong&gt;
+      &lt;p&gt;&lt;strong&gt;
 In this interview, Phil Bourne gives his opinion about Big Data era, the impact of data science and will impact biological research and healthcare. He also comments on frictions: between the corporate world and research, as well as formal training and citizen science. 
-&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;b&gt;The list of your achievements and engagements is very long. Besides your academic ones, you also founded companies so you are familiar with corporate world. With regards to Data Science &amp; Big Data, it seems like there is a hype around them in companies right now. Do you think solutions developed for science can compete with the ones developed for big data with big money? Will academic and private Data Science work together or companies like Google will take a monopoly on data solutions?&lt;/b&gt;&lt;/li&gt;
 &lt;br&gt;
@@ -286,88 +286,34 @@ In this interview, Phil Bourne gives his opinion about Big Data era, the impact 
 &lt;br&gt;
 &lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The contributions of computation and other peoples data to the biomedical research enterprise cannot be ignored at this point. It should be embraced. &lt;span class=&quot;highlightme&quot;&gt;At the same time computational biologists have an obligation to make their methods and tools accessible to a broader audience.&lt;/span&gt; We need training programs that prepare students for a future where analytical techniques go hand-in-hand with more experimental approaches. Students need to be equally adept in silico, in vivo and in vitro.&lt;/i&gt;&lt;/p&gt;
 
-	&lt;p&gt;From two &lt;i&gt;Birds of Flight&lt;/i&gt; sessions: Student Council Career Central and Navigating the Industry Career Path at ISMB 2016, I have  compiled various testimonies about doing research in industry and some tips for applicants seeking out those positions.&lt;/p&gt;
 
-	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_un1_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;li&gt;&lt;b&gt;You are the founding Editor-in-Chief of PLOS Computational Biology, and you are enthusiastic about open science; open data and open education (like MOOCs and NIH training programs like Big Data to Knowledge). Can you explain why these matters are so important to you? Do you think non-scientist citizens should have equal access to scientific research and should actively participate?&lt;br&gt;
+For instance, in Paris we had a data challenge (Epidemium) for cancer data, which involved engaging citizens to improve data management (databases) and data treatment. Do you think formal scientific education is necessary to participate in research?&lt;/b&gt;&lt;/li&gt;
+ &lt;br&gt;
+&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The future of biomedical research involves a broader spectrum of data types and data which is publicly accessible. This creates unprecedented opportunities and we are already seeing the results. Examples are predicting healthcare outcomes from electronic health records either alone or in combination with other data. Use of mobility data to influence behavior etc. We need to foster the use of these data and the new methods emerging to use such open data. &lt;span class=&quot;highlightme&quot;&gt;Openness breaks down the traditional academic hierarchy and this is a good thing.&lt;/span&gt; We are doing what we can to foster new audiences to access and discover from the these data. The Open Science Prize and the Ideas labs we run with the NSF are examples.
+&lt;blockquote&gt;While formal training is not necessary we must maintain the ethical standards and the rigor of the scientific method.&lt;/blockquote&gt;&lt;/i&gt;&lt;/p&gt;
 
-	&lt;p&gt;In brief, the difference between industry and academia is :&lt;br&gt;&lt;blockquote&gt;&lt;strong&gt;Academia&lt;/strong&gt;: how can I generate new informantion that will improve world knowledge? Personal career is often ahead of the main goal. &lt;br&gt;&lt;strong&gt;Industry&lt;/strong&gt;: There is a specific problem we need to try to solve as quickly as we can working as a team&lt;/blockquote&gt;&lt;/p&gt;
-	&lt;h3&gt;Main differences between working in industry and in academia:&lt;/h3&gt;
-	&lt;ol&gt;
-		&lt;li&gt;faster peace — This can be a plus (stimulating) or a minus (stressful) depending on your working style or personal preference.&lt;/li&gt;
-		&lt;li&gt;real deadlines — A lot of money can be invested in projects you are part of and so there is pressure to achieve goals or abandon projects where necessary&lt;/li&gt;
-		&lt;li&gt;constructive feedback — For example, at the end of the year the &lt;i&gt;Amyris&lt;/i&gt; company gives employees &lt;strong&gt;feedback&lt;/strong&gt; on different competences. This is based on what is collected from their co-workers and project leaders, and can include evaluations on communication (written and oral), individual performance , performance in the team, leadership skills, etc.&lt;/li&gt;
-		&lt;li&gt;improve your skills with the aid of the company- i.e. Your oral presentation may be recorded and commented in detail to help you overcome your weak points&lt;/li&gt;
-		&lt;li&gt;your manager is not a PI - Your relationships within the working environment will therefore be different&lt;/li&gt;
-		&lt;li&gt;less competition, more &lt;strong&gt;collaboration&lt;/strong&gt; between research groups within the company&lt;/li&gt;
-		&lt;li&gt;working hours — Within industry employees can be expensive: you need to learn to be very efficient during your allocated working hours&lt;/li&gt;
-		&lt;li&gt;put aside your ego —  Being capable of working well within a team is crucial, &lt;strong&gt;no one wants to work with a super-star&lt;/strong&gt;&lt;/li&gt;
-		&lt;li&gt;you don’t need to raise &lt;strong&gt;money&lt;/strong&gt; — there is typically a whole department that takes care of this, you are free to focus on research&lt;/li&gt;
-		&lt;li&gt;less &lt;strong&gt;freedom&lt;/strong&gt; on your research and goals - as the topic of your research and goals are typically led by the company&lt;/li&gt;
-		&lt;li&gt;you may still be able to publish research, but it is not a high priority like in Academia - Lawyers may decide what you can actually make public&lt;/li&gt;
-		&lt;li&gt;you can and you should still network with researchers - Probably your ex-fellows&lt;/li&gt;
-		&lt;li&gt;you can collaborate with academic labs&lt;/li&gt;
-		&lt;li&gt;your creation belongs to the company — No fights to have your name on the paper, but on the other hand, you do not get credit in the traditional sense&lt;/li&gt;
-		&lt;li&gt;your work and the company can be motivated by money&lt;/li&gt;
-	&lt;/ol&gt;
-		&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/career_un_5_Fotor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;li&gt;&lt;b&gt;Do you think we are capable of coping with the amount of generated data? I have experienced in my own research that dealing even with medium size datasets can be problematic and many questions can be asked when looking for data from different angles. Is there a threat that with big data we could miss important questions? Some leaders of big data businesses say that we should slow the rate of data generation as data storage is costly and we are not able to analyse all these data. What’s your opinion?&lt;/b&gt;&lt;/li&gt;
+ &lt;br&gt;
+&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;This question is getting at data sustainability and maintenance and we have much work to do as a community here. We do not have a good handle on the rate of data generation, how to determine what to keep and what to discard, how to make the community aware of the persistence of particular types of data and many more issues. In the end we have to make decisions about cost vs benefit. In business the model is clearer — if we can leverage the data for the benefit of the company keep it, otherwise discard it. In academia there is a legacy of data preservation irrespective of perceived current value and the value cannot necessarily be measured in monetary terms. We need to develop metrics and best practices to define our data and subsequently make preservation decisions based upon these supporting data.&lt;/i&gt;&lt;/p&gt;
+ 
+&lt;li&gt;&lt;b&gt;Today Big data, tomorrow…? What will be the next big step for health research?&lt;/b&gt;&lt;/li&gt;
+ &lt;br&gt;
+&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The patient will become the center of the health care system as opposed to early health care (the physician) and today (the health care organization). The patient/participant will be empowered by a usable version of their own health record and the biomedical research which has used that record. They will interpret it themselves and whole new industries will appear to help them interpret the data and make decisions with the assistance of health care providers. Healthcare providers and healthcare industries will need to adjust to this new reality.
+From a research perspective, systems based approaches will become more accepted and mainstream and be used as predictive tools Machine learning will figure more prominently.
+Neuroscience will grow further as we explore the basis of consciousness and other aspects of the human condition. The relationship of health to the environment will be facilitated by the availability of large public environmental datasets and much more. Last but not least is the use of computational techniques and associated data in first response situations, notably concerning pandemics.&lt;/i&gt;&lt;/p&gt;
+&lt;/ol&gt;
 
-	&lt;h3&gt;Some tips for the job search and interview process&lt;/h3&gt;
-	&lt;h4 &gt;&lt;font color=&quot;#999999&quot;&gt;Key tips&lt;/font&gt;&lt;/h4&gt;
-	&lt;p&gt;
-		&lt;i&gt;Team work, team work, team work.&lt;/i&gt;
-	&lt;/p&gt;
-	&lt;p&gt;Industry is probably not suited to individuals who would prefer to work alone.&lt;/p&gt;
-	&lt;p&gt;
-		According to &lt;a href=&quot;mailto:nicole.bodycombe@pfizer.com&quot; target=&quot;_blank&quot;&gt;Nicole Bodycombe&lt;/a&gt;, technical skills are not the most important point of your dossier because she argues that everyone can be trained. What is much more important is the ability to &lt;strong&gt;communicate&lt;/strong&gt; with coworkers and community and also &lt;strong&gt;problem solve&lt;/strong&gt;.
-	&lt;/p&gt;
+&lt;h2&gt;Closing remarks&lt;/h2&gt;
+&lt;p&gt;The vision of data and healthcare outlined by Phil Bourne seem to be pretty optimistic. It is easy to see that the world of Data Science is complex but it is not lacking opportunities. This provides a lot of hope to researchers and students in the field of computational biology. As a community our mission is to seek opportunities in order to make the most of this universe; to explore it and to find new solutions for improving healthcare. Now is the ideal time to come forward with any ideas you have been sitting on — the potential benefits of data solutions are now more real than ever.&lt;/p&gt;
 
-		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;Interview process&lt;/font&gt;&lt;/h4&gt;
-		&lt;p&gt;Different stages can be applied: CV screening — make sure it stands out for example including recommendation letter from some in the company, phone screening, group lunch (evaluate your social skills), pairing, a task/ exercise / problem to solve (result is not the most important the process of searching for an answer is)&lt;/p&gt;
-		&lt;p&gt;&lt;strong&gt;Do your homework&lt;/strong&gt; before the interview: see products, related publications, try to get in contact with someone in the company through your network to learn about company habits, goals and ambiance.&lt;/p&gt;
-		&lt;p&gt;Use interview to &lt;strong&gt;learn more about the company&lt;/strong&gt;. What is the working environment like? What kind of vocabulary do they use? Always ask questions!&lt;/p&gt;
-		&lt;p&gt;You can read testimonies from applicants who have interviewed for different companies online in websites as &lt;a href=&quot;https://www.glassdoor.fr&quot; target=&quot;_blank&quot;&gt;https://www.glassdoor.fr&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;We extend our thanks to Phil Bourne for participating in this interview. Phil Bourne is a founding Editor-in-Chief of PLOS Computational Biology, which manages this collaborative blog.&lt;/i&gt;&lt;/p&gt;
 
-		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;Your role in the industry&lt;/font&gt;&lt;/h4&gt;
-		&lt;p&gt;
-			For a computational biologist different roles are possible: data analyst, software engineer (producing tools), project-shaping. Along with many others! Sometimes you can negotiate with the company about your role, but try to flexible and open into new opportunities.
 
-		&lt;/p&gt;
-
-		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;How to network?&lt;/font&gt;&lt;/h4&gt;
-		&lt;p&gt;
-			Most of people you know may stay in academia. It is likely that your PI will be able to offer you more advice on continuing your career is academia than they would be able to about pursuing one in industry. &lt;strong&gt;So how can you meet people from the big world outside of academia?&lt;/strong&gt; Look among your colleagues, it is likely that there is someone who has at least collaborated with industry partners. You can also use Linkedin to find more people working within industry. Reach out to people and go to local meet ups. &lt;strong&gt;Be curious and proactive&lt;/strong&gt;.
-		&lt;/p&gt;
-
-		&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;PostDoc or not?&lt;/font&gt;&lt;/h4&gt;
-		&lt;p&gt;
-			For those who are debating between getting more experience in research before transitioning into industry or moving straight across, the answer is: &lt;strong&gt;it depends&lt;/strong&gt;. For more skill based positions like data analysts or developers it is not necessary to have an extensive research background. However if you wish to lead a research group in industry it can be an asset to have progressed further in academia.
-		&lt;/p&gt;
-
-		&lt;p&gt;
-			&lt;em&gt;&lt;span class=&quot;highlightme&quot;&gt;Important remark: If you are &lt;strong&gt;not U.S. resident&lt;/strong&gt; looking to land an industry job in U.S., it may be better for you to do a postdoc first for practical reasons. Getting a working visa from a distance can be a long and difficult process and having a research position can make it easier.&lt;/span&gt;&lt;/em&gt;
-		&lt;/p&gt;
-				&lt;h4&gt;&lt;font color=&quot;#999999&quot;&gt;What if I want to go back to academia?&lt;/font&gt;&lt;/h4&gt;
-				&lt;p&gt;Well, it may be challenging but certainly not impossible. Prof. &lt;a href=&quot;https://medium.com/r/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjudithblake&quot; target=&quot;_blank&quot;&gt;Judith Blake&lt;/a&gt; made it. The key is to keep contact with academiaby attending conferences and keeping up to date with new research. However, it may be more challenging to obtain positions that look at your impact factor.&lt;/p&gt;
-	&lt;hr /&gt;
-	&lt;p&gt;To sum up, in order to succeed in securing jobs in academia, (according to our experts) you should do the following:&lt;/p&gt;
-	&lt;blockquote&gt;&lt;strong&gt;be open to opportunities and enjoy yourself&lt;/strong&gt;&lt;/blockquote&gt;
-&lt;hr /&gt;
-&lt;div&gt;&lt;figure&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;  &lt;figcaption&gt;From left to right: Nicole Bodycombe, Blake Borgeson, Lan Hu, Scott Markel&lt;/figcaption&gt;
-&lt;/figure&gt;&lt;/div&gt;
-&lt;br&gt;
-	&lt;p&gt;The experts that contributed the testimonials that make up the basis for this post were: Dr. &lt;a href=&quot;https://www.linkedin.com/in/amoolyasingh&quot; target=&quot;_blank&quot;&gt;Amoolya Singh&lt;/a&gt; (&lt;a href=&quot;https://amyris.com/&quot; target=&quot;_blank&quot;&gt;Amyrisc Inc&lt;/a&gt;), Dr. &lt;a href=&quot;https://www.linkedin.com/in/sarah-teichmann-9975646b&quot; target=&quot;_blank&quot;&gt;Sarah Teichmann&lt;/a&gt; (&lt;a href=&quot;http://www.ebi.ac.uk/research/teichmann&quot; target=&quot;_blank&quot;&gt;Group Leader at EBI&lt;/a&gt;), Prof. &lt;a href=&quot;https://www.linkedin.com/in/judithblake&quot; target=&quot;_blank&quot;&gt;Judith Blake&lt;/a&gt; (&lt;a href=&quot;https://www.jax.org/research-and-faculty/faculty/judy-blake&quot; target=&quot;_blank&quot;&gt;Jaxon Laboratories&lt;/a&gt;, previous: &lt;a href=&quot;http://www.si.edu/&quot; target=&quot;_blank&quot;&gt;The Smithsonian Institution&lt;/a&gt;), Mrs. &lt;a href=&quot;mailto:nicole.bodycombe@pfizer.com&quot; target=&quot;_blank&quot;&gt;Nicole Bodycombe&lt;/a&gt; (&lt;a href=&quot;http://www.pfizer.com/&quot; target=&quot;_blank&quot;&gt;Pfizer&lt;/a&gt;), Dr. &lt;a href=&quot;mailto:blake.borgeson@recursionpharma.com&quot; target=&quot;_blank&quot;&gt;Blake Borgeson&lt;/a&gt; (&lt;a href=&quot;http://www.recursionpharma.com/team.html&quot; target=&quot;_blank&quot;&gt;RECURSION Pharmaceuticals&lt;/a&gt;), Dr. &lt;a href=&quot;mailto:hulan0@gmail.com&quot; target=&quot;_blank&quot;&gt;Lan Hu&lt;/a&gt; (&lt;a href=&quot;http://www.bio-rad.com/&quot; target=&quot;_blank&quot;&gt;Bio-Rad Laboratories&lt;/a&gt;)and Dr. &lt;a href=&quot;mailto:Scott.MARKEL@3ds.com&quot; target=&quot;_blank&quot;&gt;Scott Markel&lt;/a&gt; (&lt;a href=&quot;http://accelrys.com/&quot; target=&quot;_blank&quot;&gt;BIOVIA&lt;/a&gt;). All of the above (except Dr. &lt;a href=&quot;https://www.linkedin.com/in/sarah-teichmann-9975646b&quot; target=&quot;_blank&quot;&gt;Sarah Teichmann&lt;/a&gt;) were or are working an industry setting with research being a key component of what they do.&lt;/p&gt;
-	&lt;p&gt;Some of them chose to leave academia because of personal situations, working hours (industry jobs can sometimes be less time-consuming) or in an effort to have a better work-life balance. Their testimonies highlight that there are many varied and exciting opportunities within industry.&lt;/p&gt;
-	&lt;hr /&gt;
-
-	&lt;h4&gt;Closing remarks&lt;/h4&gt;
-	&lt;p&gt;&lt;strong&gt;Personally, as I strongly consider working in industry later on in my life.&lt;/strong&gt;Even though these testimonies are somewhat limited in the sense that this is only a snapshot of some people’s experience, they give an idea about the industry sector’s expectations and the benefits of working there.&lt;/p&gt;
-		&lt;p&gt;Sadly there is no magic recipe for choosing between academia and industry. &lt;strong&gt;Finding the right job is like buying shoes.&lt;/strong&gt; Some are exactly the right fit and some you may need to adjust a bit. The key is to try as many as possible and to be well-prepared. Thanks to an increasing number of career development sessions at scientific conferences, more people will be able to explore their options and contribute to research in the best way they can — be that working in academia or in industry.&lt;/p&gt;
-	&lt;p&gt;&lt;strong&gt;&lt;em&gt;I wish you all best of luck with your career!&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/carrer_un_4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 	&lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
     &lt;footer&gt;
         &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on July 22, 2016.&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/research-in-an-industry-setting-testimonials-from-ismb16-3d3de62ab260#.rsmuquy2c&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/data-and-the-future-of-healthcare-interview-with-phil-bourne-ismb16-db5ab9b296d4&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
     &lt;/footer&gt;
 		   &lt;/section&gt;
 &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
