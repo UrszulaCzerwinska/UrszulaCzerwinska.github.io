@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Aug 2017 10:20:55 +0200</pubDate>
-    <lastBuildDate>Tue, 29 Aug 2017 10:20:55 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Aug 2017 11:05:36 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Aug 2017 11:05:36 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -86,17 +86,17 @@
     &lt;/p&gt;
     &lt;h3&gt;Personal highlights&lt;/h3&gt;
    &lt;p&gt;
-    &lt;li&gt;course was great &lt;b&gt;networking&lt;/b&gt; opportunity, patrner companies posted their job openings as well as a CV repository was creaed by course organisers to facilitate their job search, also otherp articipants of the course are new connextions in my professional network that can be priceless in the future&lt;/li&gt;
+    &lt;li&gt;The course was great &lt;b&gt;networking&lt;/b&gt; opportunity, partner companies posted their job openings, as well as a CV repository, was created by course organizers to facilitate their job search, also other participants of the course are new connections in my professional network that can be priceless in the future/li&gt;
     &lt;li&gt;&lt;b&gt;D3.js&lt;/b&gt; is a very powerful tool for data visualization but its learning curve is quite steep. Learning jquery and communication with a remote data server, basics of web design are necessary to create a serious final product. So if you don&#39;t want to spend a significant amount of time learning all the toolkit better go for pre-set solutions like RShiny if you know R for instance.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Dask&lt;/b&gt; library seems to be  an interesting alternative to Spark for smaller projects, the big plus is that it is using pandas vocabulary. It can be also misleading as we encountered quite a lot of problems building a set up for our data, lots of ram memory seems to be necessary and understanding how dask is dealing with our objects differently than pandas is crucial for a successful application. &lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Spark&lt;/b&gt; contains important differences in algorithms from R or scikit-learn implementations. Therefore testing locally and comparing to the distributed version is not a good idea and difference in performance can be significant. It is important to keep it in mind from the beginning of the project. &lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Github&lt;/b&gt; has some really cool project management features like issues system and wiki. Usually, it is not extensively used in academia or only as a code repository while for us the management part was really useful and handy to organize work. If you are a student you can get a &lt;a href=&quot;https://education.github.com/pack&quot; target=&quot;_blank&quot;&gt;Student Developer Pack for free&lt;/a&gt;.&lt;/li&gt;
-    &lt;li&gt;we got a refreshment about &lt;b&gt;ML&lt;/b&gt; and &lt;b&gt;network science&lt;/b&gt;, together with some cool mini project implementations (like twitter API analysis) that can be a great starting point for a demo project one can use for its portfolio. &lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;field expert&lt;/b&gt; is an important part of the team. His needs should guide the analysis, it helps to make data scientist work really useful in the domain of its application &lt;/li&gt;
+    &lt;li&gt;We got a refreshment about &lt;b&gt;ML&lt;/b&gt; and &lt;b&gt;network science&lt;/b&gt;, together with some cool mini project implementations (like twitter API analysis) that can be a great starting point for a demo project one can use for its portfolio. &lt;/li&gt;
+    &lt;li&gt;A &lt;b&gt;field expert&lt;/b&gt; is an important part of the team. His needs should guide the analysis, it helps to make data scientist work really useful in the domain of its application &lt;/li&gt;
     &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/dataring.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/images/copyrights.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
 
     &lt;li&gt;&lt;b&gt;Data ring&lt;/b&gt; - a tool proposed by top-ix and IFC helps to plan the project and communicate within data science team and with the business partner. You can find more information about in the comprehensive handbook &lt;a href=&quot;http://www.ifc.org/wps/wcm/connect/22ca3a7a-4ee6-444a-858e-374d88354d97/IFC+Data+HandBook+FINAL.pdf?MOD=AJPERES&quot; target=&quot;_blank&quot;&gt;DATA ANALYTICS AND DIGITAL FINANCIAL SERVICES&lt;/a&gt; &lt;/li&gt;
-    &lt;li&gt;in my project, I worked with e-money transaction data and I found the problematic pretty interesting, it encouraged me to read finance and economy articles. &lt;/li&gt;
+    &lt;li&gt;In my project, I worked with e-money transaction data and I found the problematic pretty interesting, it encouraged me to read finance and economy articles. &lt;/li&gt;
     &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/final.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
 &lt;/p&gt;
    
@@ -107,7 +107,7 @@
     Even if you cannot become an expert in big data in 5 weeks this course was a great intro to new concepts.  It was also a lot of fun,  intense immersion in Italian culture with lots of sun and pizza. Don&#39;t hesitate to contact me if you want to hear more about the course.
     &lt;/p&gt;
     &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/bigdive.jpg&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
-    &lt;h3&gt;Usefull links&lt;/h3&gt;
+    &lt;h3&gt;Useful links&lt;/h3&gt;
 &lt;p&gt;
 &lt;li&gt;&lt;a href=&quot;http://www.bigdive.eu/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Big Dive website&lt;/b&gt;: http://www.bigdive.eu/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;posts on LinkedIn&lt;/b&gt;: https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&lt;/a&gt;&lt;/li&gt;
@@ -116,6 +116,10 @@
 &lt;li&gt;&lt;a href=&quot;http://www.kdnuggets.com/2016/04/data-science-comprehensive-guide-transition.html&quot; target=&quot;_blank&quot;&gt;post that inspired me to participate in Big DIVE : From Science to Data Science, a Comprehensive Guide for Transition&lt;/a&gt;&lt;/li&gt;
 &lt;/p&gt;
 
+&lt;h3&gt;Acknowledgements&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;I would like to thank Amodsen Chiota and Pierre Girard for their support for my application. As well as my PhD supervisor Andrei Zinovyev for allowing to participate in the course during my PhD time. 
+Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Programme Bettencourt.”
+&lt;/p&gt;
             
 &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
 &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
