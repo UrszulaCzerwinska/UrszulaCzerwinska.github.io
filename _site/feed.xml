@@ -5,9 +5,134 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Apr 2017 23:20:41 +0200</pubDate>
-    <lastBuildDate>Tue, 11 Apr 2017 23:20:41 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Aug 2017 10:07:40 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Aug 2017 10:07:40 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Big Dive</title>
+        <description>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;style&gt;
+        .scalable {
+            overflow: hidden;
+        }
+
+        .scalable iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .scalable .scalable-content {
+            height: 0;
+            position: relative;
+        }
+
+        .scalable-16-9 .scalable-content {
+            /* Percentage from 9 divided by 16 for ratio of 16:9. */
+            padding-bottom: 56.25%;
+        }
+
+        iframe {display:block;margin:auto;width: 100%}
+
+
+    &lt;/style&gt;
+&lt;/body&gt;
+&lt;section&gt;
+    &lt;p&gt;
+        &lt;i&gt;&lt;strong&gt;Big data - big unknown&lt;/strong&gt;&lt;/i&gt;
+    &lt;/p&gt;
+    &lt;h3&gt;When we play with data that are not so big... &lt;/h3&gt;
+    &lt;p&gt;
+        Experience with big data is among top skills of a data scientist profile.  However,  it is not trivial to learn big data tools without necessary infrastructure and proper tutoring. While pursuing my PhD in Data science dealing with medium size data frames (&lt; 1G),  usually all can be processed on one machine. In order to get some taste of methods and challenges of Big Data,  I completed &lt;a href=&quot;http://www.bigdive.eu/&quot; target=&quot;_blank&quot;&gt;Big Dive&lt;/a&gt; course organized by &lt;a href=&quot;https://www.top-ix.org/en/home-eng/&quot; target=&quot;_blank&quot;&gt;TOP-IX&lt;/a&gt;.
+    &lt;/p&gt;
+    &lt;h3&gt;... but we want to get a taste of &lt;strong&gt;BIG data&lt;/strong&gt;&lt;/h3&gt;
+    &lt;p&gt;
+  &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/companies.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
+       During the intense 5-week course I put in practice my Python - pandas skills and learned new libraries for &lt;b&gt;distributed computing&lt;/b&gt;,  as well as &lt;i&gt;Py&lt;b&gt;Spark&lt;/b&gt;&lt;/i&gt; basics.  We also spent a significant amount of time setting up the infrastructure on &lt;a href=&quot;https://aws.amazon.com/fr/?nc2=h_lg&quot; target=&quot;_blank&quot;&gt;amazon aws&lt;/a&gt; and &lt;a href=&quot;https://www.mongodb.com/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;MongoDB&lt;/b&gt;&lt;/a&gt;. Invited keynote speakers showed us important aspects and challenges of the data science for &lt;b&gt;business and science&lt;/b&gt;. A bonus was an introduction to beautiful &lt;b&gt;visualization D3.js&lt;/b&gt;. Finally, for me the most interesting and important part of the course was a &lt;b&gt;project&lt;/b&gt; realized for one of 3 companies: &lt;a href=&quot;http://www.ifc.org/wps/wcm/connect/corp_ext_content/ifc_external_corporate_site/home&quot; target=&quot;_blank&quot;&gt;IFC&lt;/a&gt;,  &lt;a href=&quot;https://eduscopio.it/&quot; target=&quot;_blank&quot;&gt;Eduscopio&lt;/a&gt; and &lt;a href=&quot;https://www.tesisquare.com/en/&quot; target=&quot;_blank&quot;&gt;TesiSquare&lt;/a&gt; where in just a few days we put our best efforts to make sense of hundreds of gigabytes of data!
+      
+
+        
+
+
+    &lt;/p&gt;
+
+
+    &lt;h3&gt;About the course&lt;/h3&gt;
+    &lt;p&gt;
+        
+        The course took place in a group of 20 students, with STEM/linguistic/design background, mostly from Italy but there were also a few foreign folks like me. Our diversity helped a lot during the group project when each of us could bring different perspective and skillset.
+        &lt;br&gt;&lt;br&gt;
+         &lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/bigdive6-WELCOME_def.jpg&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
+        In order to apply, a candidate needs to send a video explaining why he or she is a good fit for the big dive as well as state level of her/his prerequisites. 
+        &lt;br&gt;&lt;br&gt;
+        If you want to read more about the content of the course you can check out &lt;a href=&quot;http://www.bigdive.eu/&quot; target=&quot;_blank&quot;&gt;Big Dive website&lt;/a&gt; as well as read their great &lt;a href=&quot;https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&quot; target=&quot;_blank&quot;&gt;posts on LinkedIn&lt;/a&gt; of &lt;a href=&quot;https://www.linkedin.com/in/christianracca/&quot; target=&quot;_blank&quot;&gt;Christian Racca&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/bigdive.eu/&quot; target=&quot;_blank&quot;&gt;Facebook page&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/bigdive_eu&quot; target=&quot;_blank&quot;&gt;twitter @bigdive_eu&lt;/a&gt;. 
+&lt;br&gt;&lt;br&gt;
+        For most of the participants and for me it was the first time with Big data.  I found the possibility to face the problems and tools I don&#39;t encounter in my everyday work. The content of the course was quite densely packed and I will need some time after the course to practice new skills and read all material. Thanks to great teachers like among others &lt;a href=&quot;https://www.linkedin.com/in/alexcomu/&quot; target=&quot;_blank&quot;&gt;Alex Comunian&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/abusedmedia/&quot; target=&quot;_blank&quot;&gt;Fabio Franchino&lt;/a&gt; classes were very interactive and easy to follow. 
+&lt;div class=&quot;scalable scalable-16-9&quot;&gt;
+        &lt;div class=&quot;scalable-content&quot;&gt;
+            &lt;iframe src=&quot;https://www.youtube.com/watch?v=y1Zj_pOx_iE&amp;feature=youtu.be&quot;  allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt; &lt;/p&gt;
+        &lt;/div&gt;&lt;/div&gt;  &lt;em&gt;Big Dive Yearbook 2017&lt;/em&gt;
+
+&lt;br&gt;&lt;br&gt;
+    &lt;/p&gt;
+    &lt;h3&gt;Personal highlights&lt;/h3&gt;
+   &lt;p&gt;
+    &lt;li&gt;course was great &lt;b&gt;networking&lt;/b&gt; opportunity, patrner companies posted their job openings as well as a CV repository was creaed by course organisers to facilitate their job search, also otherp articipants of the course are new connextions in my professional network that can be priceless in the future&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;D3.js&lt;/b&gt; is a very powerful tool for data visualization but its learning curve is quite steep. Learning jquery and communication with a remote data server, basics of web design are necessary to create a serious final product. So if you don&#39;t want to spend a significant amount of time learning all the toolkit better go for pre-set solutions like RShiny if you know R for instance.&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Dask&lt;/b&gt; library seems to be  an interesting alternative to Spark for smaller projects, the big plus is that it is using pandas vocabulary. It can be also misleading as we encountered quite a lot of problems building a set up for our data, lots of ram memory seems to be necessary and understanding how dask is dealing with our objects differently than pandas is crucial for a successful application. &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Spark&lt;/b&gt; contains important differences in algorithms from R or scikit-learn implementations. Therefore testing locally and comparing to the distributed version is not a good idea and difference in performance can be significant. It is important to keep it in mind from the beginning of the project. &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Github&lt;/b&gt; has some really cool project management features like issues system and wiki. Usually, it is not extensively used in academia or only as a code repository while for us the management part was really useful and handy to organize work. If you are a student you can get a &lt;a href=&quot;https://education.github.com/pack&quot; target=&quot;_blank&quot;&gt;Student Developer Pack for free&lt;/a&gt;.&lt;/li&gt;
+    &lt;li&gt;we got a refreshment about &lt;b&gt;ML&lt;/b&gt; and &lt;b&gt;network science&lt;/b&gt;, together with some cool mini project implementations (like twitter API analysis) that can be a great starting point for a demo project one can use for its portfolio. &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;field expert&lt;/b&gt; is an important part of the team. His needs should guide the analysis, it helps to make data scientist work really useful in the domain of its application &lt;/li&gt;
+    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/dataring.png&quot; alt=&quot;&quot; /&gt;&lt;img src=&quot;/images/copyrights.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
+
+    &lt;li&gt;&lt;b&gt;Data ring&lt;/b&gt; - a tool proposed by top-ix and IFC helps to plan the project and communicate within data science team and with the business partner. You can find more information about in the comprehensive handbook &lt;a href=&quot;http://www.ifc.org/wps/wcm/connect/22ca3a7a-4ee6-444a-858e-374d88354d97/IFC+Data+HandBook+FINAL.pdf?MOD=AJPERES&quot; target=&quot;_blank&quot;&gt;DATA ANALYTICS AND DIGITAL FINANCIAL SERVICES&lt;/a&gt; &lt;/li&gt;
+    &lt;li&gt;in my project, I worked with e-money transaction data and I found the problematic pretty interesting, it encouraged me to read finance and economy articles. &lt;/li&gt;
+    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/final.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
+&lt;/p&gt;
+   
+        &lt;h3&gt;Final comments&lt;/h3&gt;
+        
+         
+    &lt;p&gt; 
+    Even if you cannot become an expert in big data in 5 weeks this course was a great intro to new concepts.  It was also a lot of fun,  intense immersion in Italian culture with lots of sun and pizza. Don&#39;t hesitate to contact me if you want to hear more about the course.
+    &lt;/p&gt;
+    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/bigdive.jpg&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
+    &lt;h3&gt;Usefull links&lt;/h3&gt;
+&lt;p&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.bigdive.eu/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Big Dive website&lt;/b&gt;: http://www.bigdive.eu/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;posts on LinkedIn&lt;/b&gt;: https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.facebook.com/bigdive.eu/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;Facebook page&lt;/b&gt;: https://www.facebook.com/bigdive.eu/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://twitter.com/bigdive_eu&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;twitter&lt;/b&gt;: @bigdive_eu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.kdnuggets.com/2016/04/data-science-comprehensive-guide-transition.html&quot; target=&quot;_blank&quot;&gt;post that inspired me to participate in Big DIVE : From Science to Data Science, a Comprehensive Guide for Transition&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;
+
+            
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
+&lt;/section&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
+        
+        <category>featured</category>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
     
       <item>
         <title>Hi, I am Computational Biologist</title>
@@ -886,57 +1011,6 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Blogging at ISMB2016 Florida for Plos Computational Biology</title>
-        <description>&lt;head&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
-
-&lt;/head&gt;
-&lt;section&gt;
-    &lt;h3&gt;Blogging at #SCSOrlando2016 and #ISMB2016 for #PLOSCB&lt;/h3&gt;
-    &lt;p&gt;In a week I will be attending SCS and ISMB 2016 in Orlando Walt Disney World Resort. Awesome, huh? I joined PLOSCB bloggers crew to blog for you about &lt;strong&gt;Student Council Symposium&lt;/strong&gt; #SCSOrlando2016, &lt;strong&gt;Carrer Development&lt;/strong&gt; #BoF and &lt;strong&gt;#bigdata&lt;/strong&gt; topics.&lt;/p&gt;
-    &lt;hr&gt;
-    &lt;p&gt;Don’t hesitate to meet me at my oral presentation of poster and poster sessions:
-        &lt;blockquote&gt;DECONVOLUTION OF CELL AND ENVIRONMENT SPECIFIC SIGNALS AND THEIR INTERACTIONS FROM COMPLEX MIXTURES IN BIOLOGICAL SAMPLES&lt;/blockquote&gt;
-    &lt;/p&gt;
-    &lt;h3&gt;SCS&lt;/h3&gt;
-    &lt;h5&gt;Talk&lt;/h5&gt;
-    &lt;p&gt;&lt;strong&gt;Time: &lt;/strong&gt;Friday, July 8, 4:15 pm — 4:30 pm &lt;strong&gt;Room: &lt;/strong&gt;Parrot (Swan Hall) &lt;/p&gt;
-    &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/posterismb.png&quot; alt=&quot;&quot; /&gt; &lt;a target=&quot;_blank&quot; href=&quot;/docs/Urszula_Czerwinska_ISMB2016.pdf&quot; &gt;&lt;/br&gt;&lt;i class=&quot;fa fa-download fa-1x&quot; &gt;&lt;/i&gt; Download&lt;/a&gt; &lt;/span&gt;
-    &lt;h5&gt;Poster session&lt;/h5&gt;
-    &lt;p&gt;&lt;strong&gt;Time:&lt;/strong&gt; 6:05 pm — 8:00 pm &lt;strong&gt;Room: &lt;/strong&gt;Parrot (Swan Hall)&lt;/p&gt;
-    &lt;h3&gt;ISMB Poster #OP17&lt;/h3&gt;
-    &lt;h5&gt;Talk&lt;/h5&gt;
-    &lt;p&gt;&lt;strong&gt;Time:&lt;/strong&gt; Sunday, July 10, 11:40 am — 12:40 pm &lt;strong&gt;Room: &lt;/strong&gt;America’s Seminar&lt;/p&gt;
-    &lt;h5&gt;Poster session&lt;/h5&gt;
-    &lt;p&gt;On display&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Time: &lt;/strong&gt;Monday, July 11, 10:00 a.m. through Tuesday, July 12, 2:30 p.m.&lt;/p&gt;
-    &lt;p&gt;With authors&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Time: &lt;/strong&gt;Monday,&lt;strong&gt; &lt;/strong&gt;July 11,&lt;strong&gt; &lt;/strong&gt;5:40 pm — 7:30 pm &lt;strong&gt;Room: &lt;/strong&gt;Southern Hemisphere Ballroom&lt;/p&gt;
-    &lt;h3&gt;&lt;i&gt;See you there, under the sun of Florida!&lt;/i&gt;&lt;/h3&gt;
-    &lt;hr&gt;
-    &lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
-    &lt;footer&gt;
-        &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on June 29, 2016.&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&quot;https://medium.com/p/42108db287ac&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
-    &lt;/footer&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
- 
-&lt;/section&gt;</description>
-        <pubDate>Wed, 29 Jun 2016 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/intro</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/intro</guid>
-        
-        <category>featured</category>
-        
-        
-        <category>thoughts</category>
-        
-        <category>conferenceISMB2016</category>
         
       </item>
     
