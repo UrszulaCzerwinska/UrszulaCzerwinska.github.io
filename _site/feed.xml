@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Aug 2017 11:05:36 +0200</pubDate>
-    <lastBuildDate>Tue, 29 Aug 2017 11:05:36 +0200</lastBuildDate>
+    <pubDate>Tue, 29 Aug 2017 11:15:49 +0200</pubDate>
+    <lastBuildDate>Tue, 29 Aug 2017 11:15:49 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -86,7 +86,7 @@
     &lt;/p&gt;
     &lt;h3&gt;Personal highlights&lt;/h3&gt;
    &lt;p&gt;
-    &lt;li&gt;The course was great &lt;b&gt;networking&lt;/b&gt; opportunity, partner companies posted their job openings, as well as a CV repository, was created by course organizers to facilitate their job search, also other participants of the course are new connections in my professional network that can be priceless in the future/li&gt;
+    &lt;li&gt;The course was great &lt;b&gt;networking&lt;/b&gt; opportunity, partner companies posted their job openings, as well as a CV repository, was created by course organizers to facilitate their job search, also other participants of the course are new connections in my professional network that can be priceless in the future&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;D3.js&lt;/b&gt; is a very powerful tool for data visualization but its learning curve is quite steep. Learning jquery and communication with a remote data server, basics of web design are necessary to create a serious final product. So if you don&#39;t want to spend a significant amount of time learning all the toolkit better go for pre-set solutions like RShiny if you know R for instance.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Dask&lt;/b&gt; library seems to be  an interesting alternative to Spark for smaller projects, the big plus is that it is using pandas vocabulary. It can be also misleading as we encountered quite a lot of problems building a set up for our data, lots of ram memory seems to be necessary and understanding how dask is dealing with our objects differently than pandas is crucial for a successful application. &lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Spark&lt;/b&gt; contains important differences in algorithms from R or scikit-learn implementations. Therefore testing locally and comparing to the distributed version is not a good idea and difference in performance can be significant. It is important to keep it in mind from the beginning of the project. &lt;/li&gt;
