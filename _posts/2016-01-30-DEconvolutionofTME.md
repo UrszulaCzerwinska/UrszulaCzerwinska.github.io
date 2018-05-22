@@ -1,32 +1,39 @@
 ---
 priority: 0.6
-title: Deconvolution of mixed samples 
-excerpt: Independent Components Analysis applied to gene expression
+title: PhD thesis at Institut Curie 
+excerpt: overview of the thesis
 categories: works
 background-image: baba.svg
 tags:
-  - Unsupervised learning
-  - ICA
+  - Machine learning
   - data visualization
   - R 
   - public speaking
-  - scientific writing 
+  - scientific writing
+  - healthcare 
 ---
 
 #### Summary
 
-* pushing the borders of knowledge in statistical modeling of multidimensional genetical data
-* contribution to scientific papers as data analyst
-* writing scientific publications with LaTeX
-* working in interdisciplinary team of 15 people
-* interacting with experimentalists and theoreticians 
-* 2nd place of professional pitch competiton, ABG
-* 3rd place in scientific pitch competition
-* public speaking in front of >100 scientific experts
-* public speaking in front of general public
-* creating graphical supports with vector graphics
-* teaching in Statistics, Informatics & Mathematics division at Pharma faculty
-* completing courses on: Communication, Certificate in Business & Administration:  Business & Management & Strategy & Finance , Technologies & Public Policy, Machine Learning, Analytics 
+* title: **Unsupervised deconvolution of cell and environment specific signals and thier interractions in biological samples**
+* pushed the borders of knowledge in statistical modelling of multidimensional genetical data
+* used blind source separation methods, **unsupervised machine learning**
+* analysed **big volume of data** (>100 datasets, (~30 000 samples  by ~20 000 genes))
+* applied data **clustering** and **dimension reduction**
+* worked with and publish **open source code** on git platforms and docker
+* **developed an [R package](https://urszulaczerwinska.github.io/DeconICA/)** for transcriptomic data analysis 
+* contributed > 3 to **scientific publications**  as data analyst and 2 as a first author (publication list: https://orcid.org/0000-0002-5244-0708)
+* wrote scientific publications with LaTeX/.Rmd
+* worked in **interdisciplinary team** of 15 people
+* interacted with experimentalists (bench scientists, medical doctors) and theoreticians (mathematicians, IT, physicists)
+* won 2nd place of professional pitch competition, ABG
+* won 3rd place in scientific pitch competition
+* arrived 8th/208 in Capsim Simulation **business competition** as a part of a student team 
+* delivered **scientific presentations** in front of >100 scientific experts
+* delivered pitches and presentations to general public (>1000 people)
+* created graphical supports with vector graphics
+* taught in Statistics, Informatics & Mathematics division at Pharma faculty
+* completed courses on: Big data, Machine Learning, Analytics, Communication, Certificate in Business & Administration:  Business & Management & Strategy & Finance , Technologies & Public Policy
 
 <div><span class="image fit"><img src="{{ site.baseurl }}/images/posterismb_clean.svg" alt="" /></span></div>
 

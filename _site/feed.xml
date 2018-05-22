@@ -5,9 +5,43 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Aug 2017 16:00:52 +0200</pubDate>
-    <lastBuildDate>Wed, 30 Aug 2017 16:00:52 +0200</lastBuildDate>
+    <pubDate>Tue, 22 May 2018 16:39:26 +0200</pubDate>
+    <lastBuildDate>Tue, 22 May 2018 16:39:26 +0200</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>DeconICA</title>
+        <description>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            window.location.href = &quot;https://urszulaczerwinska.github.io/DeconICA/&quot;
+        &lt;/script&gt;
+        &lt;title&gt;Page Redirection&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Note: don&#39;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&#39;https://urszulaczerwinska.github.io/DeconICA/&#39;&gt;link to example&lt;/a&gt;.
+    &lt;/body&gt;
+&lt;/html&gt;</description>
+        <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/deconica</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>R</category>
+        
+        <category>Data Science</category>
+        
+        <category>Deconvolution</category>
+        
+        
+        <category>works</category>
+        
+      </item>
     
       <item>
         <title>Big Dive</title>
@@ -455,8 +489,6 @@ Neuroscience will grow further as we explore the basis of consciousness and othe
         <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</guid>
         
-        <category>featured</category>
-        
         
         <category>thoughts</category>
         
@@ -595,8 +627,6 @@ Neuroscience will grow further as we explore the basis of consciousness and othe
         <pubDate>Thu, 27 Oct 2016 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/HelloT/</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/HelloT/</guid>
-        
-        <category>featured</category>
         
         
         <category>thoughts</category>
@@ -892,129 +922,6 @@ Let’s do it without waiting for legislation!&lt;/span&gt;&lt;/em&gt;&lt;/h2&gt
         <category>thoughts</category>
         
         <category>conferenceISMB2016</category>
-        
-      </item>
-    
-      <item>
-        <title>Learning business at Sorbonne</title>
-        <description>&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
-
-&lt;/head&gt;
-&lt;section&gt;
-    &lt;p&gt;
-        &lt;i&gt;&lt;strong&gt;Strategy, Finance and Marketing.&lt;/strong&gt; Why should I care about them if I am a Ph. D. student? Leave stereotypes behind and find out.&lt;/i&gt;
-    &lt;/p&gt;
-    &lt;h3&gt;What is CBA?&lt;/h3&gt;
-    &lt;p&gt;
-        Certificate in Business and Administration is a course organized by &lt;a href=&quot;http://cfdip.uspc.fr/fr/&quot; target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; for students of &lt;a href=&quot;http://www.sorbonne-paris-cite.fr/en&quot; target=&quot;_blank&quot;&gt;Université Sorbonne Paris Cité&lt;/a&gt;. It has been inspired by best American Universities that propose CBA for their graduate students. It is happening in two steps of 7 and 5 days separated by 6 months. Entirely in English, CBA targets motivated Ph. D. students from different fields that are interested in pursuing their career outside of academia. It fills the gap in the current educational system that not prepare STEM students to land jobs in private sector. The program not only gives an overview of how company and business works. But, even more importantly gives an on-hand experience in a &lt;a href=&quot;http://www.capsim.com/&quot; target=&quot;_blank&quot;&gt;Capsim Business Simulator&lt;/a&gt; as it is done in top Business Schools. Here is a snapshot of the first week of the CBA challenge. Check also  &lt;a href=&quot;https://twitter.com/search?src=typd&amp;q=%23CBAsorbonne&quot; target=&quot;_blank&quot;&gt;#CBASorbonne&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/PxGirard&quot; target=&quot;_blank&quot;&gt;@px.girard&lt;/a&gt;. 
-    &lt;/p&gt;
-    &lt;h3&gt;Strategy&lt;/h3&gt;
-    &lt;p&gt;
-        &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/strategy.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; 
-        Why companies pay consultants? What make a company grow and develop and other go bankrupt in the same environment? These were questions our teacher and the course coordinator &lt;a href=&quot;mailto:px.girard@gmail.com&quot;&gt;Pierre Girard&lt;/a&gt; addressed in his lecture about strategy. We learned how to analyze environment through PESTEL on a real-life study cases. We were also introduced also to ethics and the life cycle of companies. This gave us a general overview of what external factors weight most for company success and what matters we can face one working in or running a firm.
-    &lt;/p&gt;
-    &lt;h3&gt;Finance&lt;/h3&gt;
-    &lt;p&gt;
-        &lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/finance.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
-        Second day was scarified to financial matters. Jiri Tresl explained us the difference between accounting and finance where the first one is the module providing information and the second taking decision and thus they both are inseparable to run a company. 
-        &lt;br&gt;&lt;blockquote&gt;Finance is an art of money management&lt;/blockquote&gt;
-        We have been introduced to the whole new vocabulary: assets, investments, cash, liability, equity, shares, stocks, bonds and debts. We learned basic rules determining these alien world. Since  then we will all remember that 
-                &lt;blockquote&gt;profit does NOT equal cash&lt;/blockquote&gt;
-        This class really served us to understand how to manage finance of our virtual company in CAPSIM&lt;sup&gt;TM&lt;/sup&gt;!
-
-    &lt;/p&gt;
-    &lt;h3&gt;Marketing&lt;/h3&gt;
-    &lt;p&gt;
-        &lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/CCosine.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; Finally &#39;the key to business success&#39; - marketing. With dynamic Christine Coisne we went trough tactics and concepts. We studied evolution of company LEGO what is the difference between Transactional  and relational marketing, how to perform SWOT analysis and targets differentiation. Now for sure, we will not take &#39;marketing mix&#39; for a name of a drink and we will not think Maslow was a pharaoh of ancient Egypt. 
-    &lt;/p&gt;
-    &lt;header&gt;
-        &lt;h3&gt;They made it!&lt;/h3&gt;
-        &lt;p&gt;Meeting people that made career transition&lt;/p&gt;
-    &lt;/header&gt;
-            &lt;h4&gt;Maureen Alivon&lt;/h4&gt;
-    &lt;p&gt;She has a bachelor in biology and master in pharmacology. She worked in a lab of Hôpital Européen Georges Pompidou about the effects of antiangiogenic drugs on large arteries elastic properties and she got the CBA certificate during her Ph.D. And after her Ph. D. she was asking herself a question what to do. She decided to look for a job outside of academia. However it was not easy. She has sent lots of CV. She event went though interview process to hear she cannot work in marketing because she has no experience. A situation we probably hear about. Finally, 3 months after her Ph. D. defense she got recommended for Medical Communication Manager in Servier. And she enjoys her job a lot. She shared with us some tips answered generously our questions. At first place, she highlighted that Ph. D. is a big thing and everything we will learn about time and work management will be useful in our future job. She advised not to wait for engage career transition. Faster the better, in order to build our professional network. She admitted she was not good with social media and not engaged in associative activities but it can definitely help to get a job. Even though she is not continuing on making experiments and she cannot publish, she highly appreciate her actual position and she is climbing up on the corporate ladder becoming project manager in upcoming month. 
-    &lt;/p&gt;
-            &lt;h4&gt;Noemie Ballot&lt;/h4&gt; 
-                &lt;p&gt;She is now a manager of European Project Green Nano Films and in parallel works for a start-up. She told us her way from Ph.D. in Material Chemistry to project management. She found her job thanks to &lt;a href=&quot;http://www.intelliagence.fr/&quot; target=&quot;_blank&quot;&gt;ABG L&#39;intelli&#39;agence&lt;/a&gt;. She said the CBA experience gave her curiosity to learn more about management, leadership, teamwork, finance budget and helped her to practice English. As Maureen she highlighted importance of building a professional network early in the career. She said we need to talk about our job search to everyone around, use social media. She encouraged us to just talk about what we do with passion and project ourselves in different jobs with our motivation and skills, to be confident and open-minded. She listed for us some possible jobs after Ph.D.:
-                
-                        &lt;ul&gt;
-                            &lt;li&gt;R&amp;D&lt;/li&gt;
-                            &lt;li&gt;research in companies&lt;/li&gt;
-                            &lt;li&gt;science monitoring&lt;/li&gt;
-                            &lt;li&gt;patents&lt;/li&gt;
-                            &lt;li&gt;leadership consulting&lt;/li&gt;
-                            &lt;li&gt;research projects management&lt;/li&gt;
-                            &lt;li&gt;science communication&lt;/li&gt;
-                            &lt;li&gt;scientific editor&lt;/li&gt;
-
-                        &lt;/ul&gt;
-
-                    She shared also some platforms we can look for job:
-                &lt;ul&gt;
-                            &lt;li&gt;&lt;a href=&quot;http://www.intelliagence.fr/&quot; target=&quot;_blank&quot;&gt;ABG L&#39;intelli&#39;agence&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;https://www.apec.fr/&quot; target=&quot;_blank&quot;&gt;APEC&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/&quot; target=&quot;_blank&quot;&gt;Linekdin&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;http://fr.viadeo.com/en/&quot; target=&quot;_blank&quot;&gt;Viadeo&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;http://twitter.com&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;https://www.cadremploi.fr/&quot; target=&quot;_blank&quot;&gt;Cadremploi&lt;/a&gt;&lt;/li&gt;
-                            &lt;li&gt;&lt;a href=&quot;http://www.nature.com/naturejobs/science/&quot; target=&quot;_blank&quot;&gt;Naturejobs&lt;/a&gt;&lt;/li&gt;
-                        
-
-                        &lt;/ul&gt;
-                &lt;/p&gt;
-            &lt;h4&gt;Nesrine Benyahia&lt;/h4&gt;
-            &lt;p&gt;
-                Our last guest Nesrine is still a Ph. D. student in health law while working for a start up  - consulting firm &lt;a href=&quot;http://bmcconsultingfrance.wix.com/bmcconsulting&quot; target=&quot;_blank&quot;&gt;BMC Consulting&lt;/a&gt; she founded together  with two friends with law and business backgrounds. We asked her how she manages to carry on her Ph. D. and work at the same time. She confirmed it is not easy to have several tasks and that she works everywhere, in the metro, on weekends etc. but it is worth the hassle. 
-            &lt;/p&gt;
-
-    &lt;h3&gt;CAPSIM&lt;sup&gt;TM&lt;/sup&gt; Business Simulation&lt;/h3&gt;
-    &lt;p&gt;
-        The most exciting part of the course was a competition in CAPSIM&lt;sup&gt;TM&lt;/sup&gt; business simulator. For 4 days, six teams of 5-6 members managing each a B2B company producing sensors. There are five main sectors and each team starts with one product in one sector: High End, Low End, Traditional, Size and Performance. We had to manage R&amp;D, Marketing, Production and Finance. The competition was on for 6 rounds I was in Digby team with 4 great fellows: Clara, Rawan, Charlotte and Nirmal. I will share with you some of our strategy
-        &lt;br&gt;
-        &lt;strong&gt;Round 0&lt;/strong&gt; 
-        &lt;br&gt;
-        In the round 0 we had a chance to learn how to use the simulation and test some strategies. We decided to create a new product in High End as the age was the most important criterion for this sector. To estimate how much money we need to borrow and how many units we need produce we made positive and negatives estimations. We quickly realized that releasing new product is really costly and doesn&#39;t bring returns for at least 2 rounds. On the top it makes impossible to improve other products because R&amp;D works on the new products. We also took too much debt and we sold out on some products. We have seen also powerful impact of marketing where a similar product would sold much better if its awareness and accessibility were high. We tried not to repeat the errors form round 0 in the competition. 
-
-         &lt;br&gt;
-        &lt;strong&gt;Rounds 1-3&lt;/strong&gt; 
-        &lt;br&gt;
-        We made strategic decision not to introduce a new product. We decided to put our efforts and money in improving existing products, 2-3 in one round so that they are done before the end of the year. We also invested some money in automation and the maximum we could into marketing, but keeping in mind the cumulative margin of all products should be more than 30%. We based our estimations of produced units on best case estimation and our finance on the worst case estimation so that we don&#39;t need the emergency loan (because it has a very high percent). We were doing well growing slowly, but Andrew company was growing very fast and would probably take over in the round 4. 
- &lt;br&gt;
-        &lt;strong&gt;Rounds 4-6&lt;/strong&gt; 
-        &lt;br&gt;
-        Unfortunately I could not stay in the class, but my colleagues informed me about the sort of our company. They took lots of risk in the round 4 in order to overcompete Andrew, they lowered down prices and they invested a lot in marketing. But it didn&#39;t work very well because all competitors lowered prices! Since then they went back to initial strategy. They tried make their products close to perfect and also invested in automation to increase the margin. With this strategy they finished first!!!
-    &lt;/p&gt;
-     &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/capsim_res.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;h3&gt;Team work&lt;/h3&gt;
-    &lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/team.jpg-large&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
-        I have a great chance to work in a team where decision making was not a big problem. Most of emotion raised the debate about introducing or not a new product. We manage to discuss and decided together. It was probably not the case for all teams. CAPSIM&lt;sup&gt;TM&lt;/sup&gt; simulation is a great exercise of team work and tested our capability of debate and decision making. 
-       
-    &lt;/p&gt;
-    &lt;h3&gt;Closing remarks&lt;/h3&gt;
-    &lt;p&gt;
-        The CBA course is great opportunity to get some glimpse of corporate life during a Ph. D. It helps to have general culture of enterprise, helps to develop logical thinking. The business simulations gives some brief hands on. But probably most importantly is an unique chance to meet great people that are in the same mindset and that can mutually help each other in career development. I cannot wait to the second part of the course in February 2017. 
-    &lt;/p&gt;
-    &lt;h6&gt;Practical info&lt;/h6&gt;
-    &lt;p&gt;
-        In order to apply to CBA check out the &lt;a href=&quot;http://cfdip.uspc.fr/fr/formations/catalogue-des-formations/metiers-entreprises-autres-organisations/innovation-entreprise/item/199-certificate-in-business-and-administration&quot; target=&quot;_blank&quot;&gt;webpage of the course&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
- 
-&lt;/section&gt;
-&lt;/html&gt;
-</description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/CBA/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/CBA/</guid>
-        
-        <category>featured</category>
-        
-        
-        <category>thoughts</category>
         
       </item>
     
