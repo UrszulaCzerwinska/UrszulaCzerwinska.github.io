@@ -3,11 +3,13 @@
 urszulaczerwinska:
   name: Urszula Czerwinska
   bio: >
-    I am budding Data Scientist
+    <p> Data Scientist </p> 
+
+    PhD in Bio-Mathematics, Data Science & Machine Learning
   disqus_shortname: urszulaczerwinska
   url: http://urszulaczerwinska.gihub.io
   email: urszula.czerwinska@cri-paris.org
-  avatar: ula.png
+  avatar: ula.jpg
 
 n33:
   name: aj (n33co)
