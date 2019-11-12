@@ -186,7 +186,7 @@ Our Saegus Showroom including the functional webapp is coming soon. Feel free to
 
 ## *Disclaimer*
 
-This article is a result of a teamwork realized at [Saegus](http://saegus.com/fr/). Published originally in French at [Medium]().
+This article is a result of a teamwork realized at [Saegus](http://saegus.com/fr/). Published originally in French at [Medium](https://medium.com/data-by-saegus/ner-medium-articles-saegus-7ffec0f3188c).
 
 
 
