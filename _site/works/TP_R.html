@@ -55,8 +55,8 @@
         <div id="menu">
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/about/">About</a></li>
             <li><a href="/works/">Works</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a href="/thoughts/">Thoughts</a></li>
             <li><a href="/feed.xml"
                    class="icon fa-feed"> RSS Feed</a></li>
@@ -76,6 +76,7 @@
   </header>
   <ul class="breadcrumb">
   <li><a href="/index.html">Home</a></li>
+  <li>Introduction to data visualization [FR]</li>
 </ul>
 
 
@@ -101,55 +102,55 @@
 
 <hr />
 
-<h2 id="installation-du-rstudio-desktop">Installation du RStudio Desktop</h2>
-<p>Allez sur le <a href="http://www.rstudio.com/products/rstudio/download/">site http://www.rstudio.com/products/rstudio/download/</a> et téléchargez le logiciel.</p>
+<p>##Installation du RStudio Desktop<br />
+Allez sur le <a href="http://www.rstudio.com/products/rstudio/download/">site http://www.rstudio.com/products/rstudio/download/</a> et téléchargez le logiciel.</p>
 
 <p>Si l’installation n’est pas possible, allez dans la section <a href="#sansStudio">sans R studio</a>.</p>
 
 <div><span class="image fit"><img src="/images/pas.png" alt="" /></span></div>
 
 <h2>Premiers pas avec RStudio</h2>
-<p><code class="highlighter-rouge">File-&gt; New File-&gt;Script</code></p>
+<p><code class="language-plaintext highlighter-rouge">File-&gt; New File-&gt;Script</code></p>
 
 <p>Enregistrer le nouveau script directement en cliquant sur la petite icone de disquette. N’oubliez pas de sauvegarder votre script régulièrement (<em>Ctr+S</em>).</p>
 
 <p>Vous devriez voir votre écran divise en 4 parties principales: <strong>Script</strong>, <strong>Console</strong>, <strong>Environment/History</strong> et <strong>Files/Plots/Packages/Help/Viewer</strong>.</p>
 
-<p>Dans la partie <em>script</em> vous écrivez les commandes et pour les faire executer vous allez dans <code class="highlighter-rouge">Code-&gt;Run</code>.
+<p>Dans la partie <em>script</em> vous écrivez les commandes et pour les faire executer vous allez dans <code class="language-plaintext highlighter-rouge">Code-&gt;Run</code>.
 Ou bien sélectionnez lines que vous voulez executer et tapez <em>Ctr+Enter</em>.</p>
 
 <p>Essayez</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span>  <span class="err">#</span><span class="p">[</span><span class="n">Ctr</span><span class="o">+</span><span class="n">Enter</span><span class="p">]</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">print</span><span class="p">(</span><span class="s2">"Hello world"</span><span class="p">)</span><span class="w">  </span><span class="c1">#[Ctr+Enter]</span></code></pre></figure>
 
 <p>[1] “Hello world”</p>
 
 <p>Si vous cliquez sur <strong>History</strong> vous devriez voir: 
-<code class="highlighter-rouge">print('Hello world')</code></p>
+<code class="language-plaintext highlighter-rouge">print('Hello world')</code></p>
 
 <p>Historique sauvegarde les commandes effectuées dans l’ordre hronologique.</p>
 
-<p>Pour savoir plus sur la fonction <code class="highlighter-rouge">print</code>
+<p>Pour savoir plus sur la fonction <code class="language-plaintext highlighter-rouge">print</code>
 tapez:</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">?</span><span class="n">print</span></code></pre></figure>
 
-<p>directement dans la console, a votre droite l’onglet <strong>Help</strong> va afficher directement les informations sur <code class="highlighter-rouge">print</code>.</p>
+<p>directement dans la console, a votre droite l’onglet <strong>Help</strong> va afficher directement les informations sur <code class="language-plaintext highlighter-rouge">print</code>.</p>
 
 <p>Dans le R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.</p>
 
 <h2 id="sansStudio">Sans <i>R studio</i> - the brute</h2>
 
 <p>Vous allez executer les scripts R directement dans la ligne de commandes de votre Unix/Mac.<br />
-Ouvrez terminal et tapez: <code class="highlighter-rouge">R</code><br />
+Ouvrez terminal et tapez: <code class="language-plaintext highlighter-rouge">R</code><br />
 Cela va ouvrir le logiciel directement dans le terminal.<br />
-Vous pouvez taper <code class="highlighter-rouge">print('Hello world')</code> directemment dans la console.<br />
+Vous pouvez taper <code class="language-plaintext highlighter-rouge">print('Hello world')</code> directemment dans la console.<br />
 Vous allez voir<br />
-<code class="highlighter-rouge">&gt; print('Hello world')</code><br />
-<code class="highlighter-rouge">[1] "Hello world"</code></p>
+<code class="language-plaintext highlighter-rouge">&gt; print('Hello world')</code><br />
+<code class="language-plaintext highlighter-rouge">[1] "Hello world"</code></p>
 
 <p>Pour l’aide sur la fonction tapez:<br />
-<code class="highlighter-rouge">?print</code><br />
+<code class="language-plaintext highlighter-rouge">?print</code><br />
 (marche avec toutes les fonctions)</p>
 
 <p>Dans R, toutes les fonctions sont bien documentées. A la fin des informations sur la fonction vous allez toujours trouver les exemples d’utilisation.</p>
@@ -158,17 +159,17 @@ Vous allez voir<br />
 
 <ol>
   <li>tapez <em>gedit</em> (Unix) ou un autre editeur de texte simple (pas MS Word)</li>
-  <li>écrivez <code class="highlighter-rouge">print('Hello world')</code></li>
+  <li>écrivez <code class="language-plaintext highlighter-rouge">print('Hello world')</code></li>
   <li>sauvgarder le fichier myscript<strong>.R</strong></li>
-  <li>dans le terminal, dans le même répertoire où vous avez sauvegardé le fichier tapez <code class="highlighter-rouge">Rscript myscript.R</code></li>
+  <li>dans le terminal, dans le même répertoire où vous avez sauvegardé le fichier tapez <code class="language-plaintext highlighter-rouge">Rscript myscript.R</code></li>
 </ol>
 
 <p>Dans la console vous devriez voir<br />
-<code class="highlighter-rouge">[1] "Hello world"</code></p>
+<code class="language-plaintext highlighter-rouge">[1] "Hello world"</code></p>
 
 <div><span class="image fit"><img src="/images/gears.png" alt="" /></span></div>
 
-<h2 id="manipulation-de-donnes">Manipulation de données</h2>
+<p>##Manipulation de données</p>
 
 <h4>Importez les données</h4>
 
@@ -178,20 +179,20 @@ Vous allez voir<br />
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">setwd</span><span class="p">(</span><span class="s1">'/chemin'</span><span class="p">)</span></code></pre></figure>
 
-<p>par example si le fichier est dans <code class="highlighter-rouge">~/Downloads</code>:</p>
+<p>par example si le fichier est dans <code class="language-plaintext highlighter-rouge">~/Downloads</code>:</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">setwd</span><span class="p">(</span><span class="s1">'/XXXX/xxxx/Downloads'</span><span class="p">)</span></code></pre></figure>
 
 <p>pour connaitre le chemin complet de votre fichier ozone.txt, allez dans le repértoire où il est enregistré et tapez dans le terminal:
-<code class="highlighter-rouge">pwd</code></p>
+<code class="language-plaintext highlighter-rouge">pwd</code></p>
 
 <p>Ensuite dans le script (fenêtre Script dans Rstudio ou votre fichier <em>.R</em>):</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">read.table</span><span class="p">(</span><span class="s2">"ozone.txt"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">" "</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">read.table</span><span class="p">(</span><span class="s2">"ozone.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s2">" "</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p>Quoique, vous devriez éviter d’afficher les données dans la console. Dans le cas de grands jeux de données cela peut ralentir énormément le système. Donc mieux c’est:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">mytable</span><span class="o">=</span><span class="n">read.table</span><span class="p">(</span><span class="s2">"ozone.txt"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">" "</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">mytable</span><span class="o">=</span><span class="n">read.table</span><span class="p">(</span><span class="s2">"ozone.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s2">" "</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span></code></pre></figure>
 
 <p>Dès que vous créez une variable, elle apparait dans l’onglet environnement et vous pouvez voir ses caractéristiques (<em>RStudio</em>).</p>
 
@@ -223,7 +224,7 @@ Vous allez voir<br />
 
 <p>Pour connaître les dimensions du tableau</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">dim</span><span class="p">(</span><span class="n">mytable</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="nf">dim</span><span class="p">(</span><span class="n">mytable</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 112  13</code></pre></figure>
 
@@ -259,7 +260,7 @@ Vous allez voir<br />
 5.<strong>l’ajoutez au tableau comme une colonne (indice function ‘cbind’)</strong> <br />
 6.<strong>Supprimez la colonne que vous venez d’ajouter</strong></p>
 
-<p>Pour répondre aux questions utilisez <code class="highlighter-rouge">help("fonction")</code> ou <code class="highlighter-rouge">?fonction</code>, Google etc.</p>
+<p>Pour répondre aux questions utilisez <code class="language-plaintext highlighter-rouge">help("fonction")</code> ou <code class="language-plaintext highlighter-rouge">?fonction</code>, Google etc.</p>
 
 <!-- **Réponses**   -->
 <!-- ```{r} -->
@@ -293,15 +294,17 @@ Commencer par la commande</p>
 <p>et observez l’onglet <strong>Plots</strong>
 Dans la console s’affichent les commandes utilisées pour obtenir les graphs.</p>
 
-<p><em>Sans R studio</em><br />
-1. Ouvrir R session dans le terminal (<code class="highlighter-rouge">R</code>)<br />
-2. Tapez directement</p>
+<p><em>Sans R studio</em></p>
+<ol>
+  <li>Ouvrir R session dans le terminal (<code class="language-plaintext highlighter-rouge">R</code>)</li>
+  <li>Tapez directement</li>
+</ol>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">demo</span><span class="p">(</span><span class="n">graphics</span><span class="p">)</span></code></pre></figure>
 
 <ol>
-  <li>Tapez la touche <code class="highlighter-rouge">Entrée</code></li>
-  <li>Une fênetre blanche va s’ouvrir, revenez dans le terminal et tapez la touche <code class="highlighter-rouge">Entrée</code>
+  <li>Tapez la touche <code class="language-plaintext highlighter-rouge">Entrée</code></li>
+  <li>Une fênetre blanche va s’ouvrir, revenez dans le terminal et tapez la touche <code class="language-plaintext highlighter-rouge">Entrée</code>
 ***</li>
 </ol>
 
@@ -317,14 +320,14 @@ Dans la console s’affichent les commandes utilisées pour obtenir les graphs.<
 
 <p>Regardez encore une fois</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">summary</span><span class="p">(</span><span class="n">mytable</span><span class="p">)</span> </code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">summary</span><span class="p">(</span><span class="n">mytable</span><span class="p">)</span><span class="w"> </span></code></pre></figure>
 
 <p><strong>Lesquelles variables sont quantitatives? Qualitatives?</strong></p>
 
-<p>Sélectionnez seulement les colonnes mentionnez et enregistrez dans une variable <code class="highlighter-rouge">ozon</code></p>
+<p>Sélectionnez seulement les colonnes mentionnez et enregistrez dans une variable <code class="language-plaintext highlighter-rouge">ozon</code></p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ozone</span><span class="o">=</span><span class="n">mytable</span><span class="p">[,</span><span class="n">c</span><span class="p">(</span><span class="s1">'T12'</span><span class="p">,</span><span class="s1">'maxO3'</span><span class="p">,</span><span class="s1">'vent'</span><span class="p">,</span><span class="s1">'pluie'</span><span class="p">,</span><span class="s1">'Vx12'</span><span class="p">)]</span>
-<span class="n">summary</span><span class="p">(</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ozone</span><span class="o">=</span><span class="n">mytable</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s1">'T12'</span><span class="p">,</span><span class="s1">'maxO3'</span><span class="p">,</span><span class="s1">'vent'</span><span class="p">,</span><span class="s1">'pluie'</span><span class="p">,</span><span class="s1">'Vx12'</span><span class="p">)]</span><span class="w">
+</span><span class="n">summary</span><span class="p">(</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">##       T12            maxO3           vent      pluie         Vx12       
 ##  Min.   :14.00   Min.   : 42.00   Est  :10   Pluie:43   Min.   :-7.878  
@@ -336,31 +339,31 @@ Dans la console s’affichent les commandes utilisées pour obtenir les graphs.<
 
 <p>Afin de représenter deux colonnes comme un nuage de points. Observez le taux d’O3 maximale en fonction de la température à midi</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#plot(x,y)
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#plot(x,y)</span><span class="w">
 </span><span class="n">plot</span><span class="p">(</span><span class="n">ozone</span><span class="p">[,</span><span class="s1">'T12'</span><span class="p">],</span><span class="n">ozone</span><span class="p">[,</span><span class="s1">'maxO3'</span><span class="p">])</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-17-1.png" width="80%" /></p>
 
 <p>ou bien</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">T12</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
 
 <p>Visualisez le taux maximal d’O3 (maxO3) en fonction de la variable  vent poursuivant la même logique</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">,</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">,</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span></code></pre></figure>
 
 <p>ici equivalent à</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">boxplot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">,</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">boxplot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">,</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span></code></pre></figure>
 
 <p><strong>Annotez les parties de la boite à moustaches (boxplot).</strong></p>
 
 <p>Vous pouvez aussi personnaliser le graph.<br />
 Ajoutez les couleurs:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">col</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">)</span>
-<span class="n">boxplot</span><span class="p">(</span><span class="n">maxO3</span> <span class="o">~</span> <span class="n">vent</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ozone</span><span class="p">,</span> <span class="n">xlab</span> <span class="o">=</span> <span class="s2">"Secteur du vent"</span><span class="p">,</span> <span class="n">ylab</span> <span class="o">=</span> <span class="s2">"pic d'ozone"</span><span class="p">,</span> 
-    <span class="n">col</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">,</span> <span class="s2">"red"</span><span class="p">,</span> <span class="s2">"green"</span><span class="p">,</span> <span class="s2">"yellow"</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="s2">"green"</span><span class="p">,</span><span class="w"> </span><span class="s2">"yellow"</span><span class="p">)</span><span class="w">
+</span><span class="n">boxplot</span><span class="p">(</span><span class="n">maxO3</span><span class="w"> </span><span class="o">~</span><span class="w"> </span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Secteur du vent"</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"pic d'ozone"</span><span class="p">,</span><span class="w"> 
+    </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"blue"</span><span class="p">,</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="s2">"green"</span><span class="p">,</span><span class="w"> </span><span class="s2">"yellow"</span><span class="p">))</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-21-1.png" width="80%" /></p>
 
@@ -376,7 +379,7 @@ Ajoutez les couleurs:</p>
 
 <p>Faites une boite à moustache</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">boxplot</span><span class="p">(</span><span class="n">ozoneE</span><span class="p">[,</span><span class="m">2</span><span class="p">],</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span> <span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span>  </code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">boxplot</span><span class="p">(</span><span class="n">ozoneE</span><span class="p">[,</span><span class="m">2</span><span class="p">],</span><span class="n">xlab</span><span class="o">=</span><span class="s1">'Secteur du vent'</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"pic d'ozone"</span><span class="p">)</span><span class="w">  </span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-23-1.png" width="80%" /></p>
 
@@ -405,7 +408,7 @@ Ajoutez les couleurs:</p>
 
 <p>Pour visualiser deux variables qualitatives essayez:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">pluie</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">pluie</span><span class="o">~</span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-27-1.png" width="80%" /></p>
 
@@ -423,7 +426,7 @@ Ajoutez les couleurs:</p>
 
 <p><b>Utilisez les informations trouvé sur <a href="http://www.statmethods.net/advgraphs/parameters.html" target="_blank">le site http://www.statmethods.net/advgraphs/parameters.html</a> pour transformer en jouant avec les paramètres.</b></p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">T12</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">plot</span><span class="p">(</span><span class="n">maxO3</span><span class="o">~</span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">=</span><span class="n">ozone</span><span class="p">)</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-29-1.png" width="80%" /></p>
 
@@ -440,7 +443,7 @@ Ajoutez les couleurs:</p>
 
 <p>Pour installer effectuez la commande:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"ggplot2"</span><span class="p">)</span> </code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">install.packages</span><span class="p">(</span><span class="s2">"ggplot2"</span><span class="p">)</span><span class="w"> </span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## Installing package into '/Users/urszulaczerwinska/Library/R/3.3/library'
 ## (as 'lib' is unspecified)</code></pre></figure>
@@ -457,17 +460,17 @@ Ajoutez les couleurs:</p>
 
 <p>En utilisant le même jeu de données tapez</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span></code></pre></figure>
 
 <p>R vous informe que le graphe n’a pas de couches<br />
-sauvegardez le plot dans un objet <code class="highlighter-rouge">p</code> et ajoutez une couche</p>
+sauvegardez le plot dans un objet <code class="language-plaintext highlighter-rouge">p</code> et ajoutez une couche</p>
 
 <h3></h3>
 <p>Scatterplot&lt;/h3&gt;</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span>
-<span class="n">p</span> <span class="o">&lt;-</span> <span class="n">p</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">()</span>
-<span class="n">p</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span><span class="w">
+</span><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">()</span><span class="w">
+</span><span class="n">p</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-34-1.png" width="80%" /></p>
 
@@ -475,67 +478,67 @@ sauvegardez le plot dans un objet <code class="highlighter-rouge">p</code> et aj
 
 <p>Essayez</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"red"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">5</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span></code></pre></figure>
 
 <p>Une couche statistique</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">p</span> <span class="o">+</span> <span class="n">stat_smooth</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stat_smooth</span><span class="p">()</span></code></pre></figure>
 
-<p>La ligne représente un ‘fit’ et la bande grise, elle répresente l’intervalle de confiance établie en utilisant la méthode <em><code class="highlighter-rouge">loess</code></em></p>
+<p>La ligne représente un ‘fit’ et la bande grise, elle répresente l’intervalle de confiance établie en utilisant la méthode <em><code class="language-plaintext highlighter-rouge">loess</code></em></p>
 
 <p>Vous pouvez aussi visualiser la ligne sans points</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span> <span class="o">+</span> <span class="n">stat_smooth</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stat_smooth</span><span class="p">()</span></code></pre></figure>
 
 <p>Pour bien annoter le graph:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="n">color</span> <span class="o">=</span> <span class="s2">"red"</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">5</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span> <span class="o">+</span> <span class="n">theme_bw</span><span class="p">()</span> <span class="o">+</span> <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">(</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+    </span><span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
 
 <p><strong>Que fait-il theme_bw()?</strong></p>
 
 <p>C’est facile aussi de colorier les points en fonction du type de vent</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">vent</span><span class="p">))</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span> <span class="o">+</span> <span class="n">theme_bw</span><span class="p">()</span> <span class="o">+</span> <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vent</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+    </span><span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
 
 <p>Observez que la légende apparait toute seule!</p>
 
 <p>Vous pouvez joindre les points avec les lignes par groupe aussi</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">vent</span><span class="p">))</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span> <span class="o">+</span> <span class="n">theme_bw</span><span class="p">()</span> <span class="o">+</span> <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="n">geom_line</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vent</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+    </span><span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+    </span><span class="n">geom_line</span><span class="p">()</span></code></pre></figure>
 
 <p>Il est aussi possible de mapper les couleurs de valeurs continues</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">T12</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">maxO3</span><span class="p">))</span> <span class="o">+</span> <span class="n">geom_point</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span> 
-    <span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span> <span class="o">+</span> <span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span> <span class="o">+</span> <span class="n">theme_bw</span><span class="p">()</span> <span class="o">+</span> <span class="n">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">T12</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxO3</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+    </span><span class="n">ylab</span><span class="p">(</span><span class="s2">"taux maximal d'O3"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xlab</span><span class="p">(</span><span class="s2">"temperature a midi"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">labs</span><span class="p">(</span><span class="n">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"taux d'ozone en fonction de la temperature a Rennes"</span><span class="p">)</span></code></pre></figure>
 
 <h3>BARPLOT</h3>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span><span class="n">geom_bar</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span><span class="n">geom_bar</span><span class="p">()</span></code></pre></figure>
 
 <p>avec les couleurs</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span> <span class="o">&lt;-</span> <span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span><span class="n">vent</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span><span class="n">geom_bar</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span><span class="n">geom_bar</span><span class="p">()</span></code></pre></figure>
 
 <p>Pour changer la palette de coloration ajoutez</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="o">+</span>
-<span class="n">scale_fill_brewer</span><span class="p">(</span><span class="n">palette</span> <span class="o">=</span> <span class="s2">"Set1"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="o">+</span><span class="w">
+</span><span class="n">scale_fill_brewer</span><span class="p">(</span><span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Set1"</span><span class="p">)</span></code></pre></figure>
 
 <p>Ou décidez quels couleurs vous preferez pqr vous memes</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="o">+</span>
-<span class="n">scale_fill_manual</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">c</span><span class="p">(</span><span class="s2">"bisque"</span><span class="p">,</span> <span class="s2">"chartreuse4"</span><span class="p">,</span>
-                             <span class="s2">"hotpink"</span><span class="p">,</span><span class="s2">"yellow"</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">p</span><span class="o">+</span><span class="w">
+</span><span class="n">scale_fill_manual</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s2">"bisque"</span><span class="p">,</span><span class="w"> </span><span class="s2">"chartreuse4"</span><span class="p">,</span><span class="w">
+                             </span><span class="s2">"hotpink"</span><span class="p">,</span><span class="s2">"yellow"</span><span class="p">))</span></code></pre></figure>
 
 <h3>error bars</h3>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">vent</span><span class="p">,</span> <span class="n">maxO3</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span>
-  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun.y</span> <span class="o">=</span> <span class="n">mean</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">"bar"</span><span class="p">)</span><span class="o">+</span>
-  <span class="n">stat_summary</span><span class="p">(</span><span class="n">fun.data</span> <span class="o">=</span> <span class="n">mean_sdl</span><span class="p">,</span> <span class="n">geom</span> <span class="o">=</span> <span class="s2">"errorbar"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">vent</span><span class="p">,</span><span class="w"> </span><span class="n">maxO3</span><span class="p">,</span><span class="n">fill</span><span class="o">=</span><span class="n">vent</span><span class="p">))</span><span class="o">+</span><span class="w">
+  </span><span class="n">stat_summary</span><span class="p">(</span><span class="n">fun.y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="w"> </span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bar"</span><span class="p">)</span><span class="o">+</span><span class="w">
+  </span><span class="n">stat_summary</span><span class="p">(</span><span class="n">fun.data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mean_sdl</span><span class="p">,</span><span class="w"> </span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"errorbar"</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## Warning: Computation failed in `stat_summary()`:
 ## Hmisc package required for this function</code></pre></figure>
@@ -544,11 +547,10 @@ sauvegardez le plot dans un objet <code class="highlighter-rouge">p</code> et aj
 
 <p>vous pouvez essayer aussi</p>
 
-<p><code class="highlighter-rouge">
-mean_cl_boot()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mean_cl_boot()
 mean_cl_normal()
 median_hilow()
-</code></p>
+</code></pre></div></div>
 
 <h3>Documentation:</h3>
 <p>●	<strong>mean_cl_boot()</strong><br />
@@ -563,22 +565,22 @@ median_hilow()
 <h3>Densité</h3>
 <p>Executez</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span> <span class="n">T12</span><span class="p">))</span><span class="o">+</span>
-  <span class="n">stat_density2d</span><span class="p">()</span><span class="o">+</span><span class="n">geom_point</span><span class="p">()</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">T12</span><span class="p">))</span><span class="o">+</span><span class="w">
+  </span><span class="n">stat_density2d</span><span class="p">()</span><span class="o">+</span><span class="n">geom_point</span><span class="p">()</span></code></pre></figure>
 
 <p>Vous pouvez jouer avec la coloration</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span> <span class="n">T12</span><span class="p">))</span><span class="o">+</span>
-  <span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span> <span class="o">=</span> <span class="s2">"point"</span><span class="p">,</span><span class="n">contour</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
-             	<span class="n">aes</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="err">.</span><span class="n">.density..</span><span class="p">),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.3</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">T12</span><span class="p">))</span><span class="o">+</span><span class="w">
+  </span><span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"point"</span><span class="p">,</span><span class="n">contour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w">
+             	</span><span class="n">aes</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">..density..</span><span class="p">),</span><span class="w"> </span><span class="n">alpha</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.3</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span> <span class="n">T12</span><span class="p">))</span><span class="o">+</span>
-  <span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span> <span class="o">=</span> <span class="s2">"tile"</span><span class="p">,</span> <span class="n">contour</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="err">.</span><span class="n">.density..</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">T12</span><span class="p">))</span><span class="o">+</span><span class="w">
+  </span><span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tile"</span><span class="p">,</span><span class="w"> </span><span class="n">contour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">..density..</span><span class="p">))</span></code></pre></figure>
 
 <p>ou bien</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span> <span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span> <span class="n">T12</span><span class="p">))</span> <span class="o">+</span> <span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span> <span class="o">=</span> <span class="s2">"tile"</span><span class="p">,</span> <span class="n">contour</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> 
-    <span class="n">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="err">.</span><span class="n">.density..</span><span class="p">))</span> <span class="o">+</span> <span class="n">scale_fill_gradientn</span><span class="p">(</span><span class="n">colours</span> <span class="o">=</span> <span class="n">rainbow</span><span class="p">(</span><span class="m">6</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">ggplot</span><span class="p">(</span><span class="n">ozone</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">maxO3</span><span class="p">,</span><span class="w"> </span><span class="n">T12</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">stat_density2d</span><span class="p">(</span><span class="n">geom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"tile"</span><span class="p">,</span><span class="w"> </span><span class="n">contour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">,</span><span class="w"> 
+    </span><span class="n">aes</span><span class="p">(</span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">..density..</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">scale_fill_gradientn</span><span class="p">(</span><span class="n">colours</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rainbow</span><span class="p">(</span><span class="m">6</span><span class="p">))</span></code></pre></figure>
 
 <p><img src="/images/unnamed-chunk-55-1.png" width="60%" /></p>
 
@@ -602,23 +604,23 @@ median_hilow()
 
       <div class="backnext btnbottom">
                 <div class="back">
-        <div class="bpointer"><a href="/works/EcoS"
+        <div class="bpointer"><a href="/works/DeDaL"
          class="button small" title="Back">&lt; Back</a></div>
          <!-- class="icon fa-backward" title="Back"></a></div> -->
-        <div class="btitle"><a href="/works/EcoS">Metro microbiome diversity</a></div>
+        <div class="btitle"><a href="/works/DeDaL">DeDaL</a></div>
         </div>
         <div class="next">
-        <div class="npointer"><a href="/works/Dengue.html"
+        <div class="npointer"><a href="/works/CBA_outreach"
          class="button small" title="Next">Next &gt;</a></div>
          <!-- class="icon fa-forward" title="Next"></a></div> -->
-        <div class="ntitle"><a href="/works/Dengue.html">Isotonic regression</a></div>
+        <div class="ntitle"><a href="/works/CBA_outreach">Outreach</a></div>
         </div>
 
       </div>
       <script>
       document.body.onkeyup = function(e){
-        if (e.keyCode == '37') { window.location = '/works/EcoS'; }
-        if (e.keyCode == '39') { window.location = '/works/Dengue.html'; }
+        if (e.keyCode == '37') { window.location = '/works/DeDaL'; }
+        if (e.keyCode == '39') { window.location = '/works/CBA_outreach'; }
       };
       </script>
 
@@ -643,7 +645,7 @@ median_hilow()
   </ul>
   <ul class="copyright">
     <li>&copy; 2016,
-    2020
+    2021
       Urszula Czerwinska</li>
     <li><a href="/credits/">Credits</a></li>
   </ul>

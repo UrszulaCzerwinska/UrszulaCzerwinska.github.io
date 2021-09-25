@@ -5,9 +5,51 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2020 09:14:18 +0200</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2020 09:14:18 +0200</lastBuildDate>
-    <generator>Jekyll v3.0.3</generator>
+    <pubDate>Sat, 25 Sep 2021 21:39:25 +0200</pubDate>
+    <lastBuildDate>Sat, 25 Sep 2021 21:39:25 +0200</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Named Entity Recognition at Cour de Cassation</title>
+        <description>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            window.location.href = &quot;https://github.com/Cour-de-cassation/moteurNER&quot;
+        &lt;/script&gt;
+        &lt;title&gt;Page Redirection&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&apos;https://github.com/Cour-de-cassation/moteurNER&apos;&gt;link to example&lt;/a&gt;.
+    &lt;/body&gt;
+&lt;/html&gt;</description>
+        <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Python</category>
+        
+        <category>Deep Learning</category>
+        
+        <category>NER</category>
+        
+        <category>NLP</category>
+        
+        <category>Justice</category>
+        
+        <category>Flair</category>
+        
+        <category>featured</category>
+        
+        
+        <category>works</category>
+        
+      </item>
     
       <item>
         <title>Named Entity Recognition - keywords detection from Medium articles</title>
@@ -100,7 +142,7 @@ The train and test data were separated to evaluate the model.&lt;/p&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img5.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;TRAIN_DATA_ALL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_table&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mark_targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;ORG&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;PERSON&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;LOC&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;TOPIC&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;GPE&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;DATE&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;EVENT&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;WORK_OF_ART&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sents&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;ORG&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;PERSON&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;LOC&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;TOPIC&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;GPE&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;DATE&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;EVENT&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;WORK_OF_ART&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;TRAIN_DATA_ALL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mark_targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;ORG&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;PERSON&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;LOC&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;TOPIC&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;GPE&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;DATE&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;EVENT&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;WORK_OF_ART&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;sents&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;ORG&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;PERSON&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;LOC&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;TOPIC&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;GPE&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;DATE&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;EVENT&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;WORK_OF_ART&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img6.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
@@ -127,14 +169,14 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;In the &lt;strong&gt;Flow&lt;/strong&gt; on DSS, the process can be summarized by the graph:&lt;/p&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img7.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;Flow on Dataiku&#39;s DSS platform: the annotated dataset is divided into train and test, the model learned on the train data is evaluated on the train and test batches.&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;Flow on Dataiku&apos;s DSS platform: the annotated dataset is divided into train and test, the model learned on the train data is evaluated on the train and test batches.&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
 &lt;p&gt;To return to the example on Barack Obama, our algorithm detects the &lt;em&gt;NLP algorithm&lt;/em&gt; entity as TOPIC in addition to the ORG (organization) and PERSON entities.
 We have succeeded! 🚀&lt;/p&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img8.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
-&lt;p&gt;The finalized model can be compiled as an independent python library (instructions here) and installed with &lt;code class=&quot;highlighter-rouge&quot;&gt;pip&lt;/code&gt;. This is very practical for deploying the model in another environment and for production setup.&lt;/p&gt;
+&lt;p&gt;The finalized model can be compiled as an independent python library (instructions here) and installed with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pip&lt;/code&gt;. This is very practical for deploying the model in another environment and for production setup.&lt;/p&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img9.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
@@ -269,16 +311,12 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;body&gt;
 
 	&lt;style&gt;
-		&lt;p&gt;    	
-		body { background-color:blue; }
 		.highlightme { background-color:#ccffe5; }
- 		&lt;/p&gt;
-
     &lt;/style&gt;
 
 
 &lt;section&gt;
-	&lt;h3&gt;Have you ever felt like you don&#39;t know how to put accurate words on your
+	&lt;h3&gt;Have you ever felt like you don&apos;t know how to put accurate words on your
 		ideas when speaking with a business person?&lt;/h3&gt;
 	&lt;p&gt;&lt;em&gt;If like me you have been within the academic universe for some time
 			and have tried to get a job in the private sector, you have probably
@@ -293,7 +331,7 @@ We have succeeded! 🚀&lt;/p&gt;
 				different and worth exploring.&lt;/strong&gt;
 		&lt;/em&gt;&lt;/p&gt;
 
-	&lt;p&gt;To begin with, let&#39;s compare the environment. In academia, the goal is to
+	&lt;p&gt;To begin with, let&apos;s compare the environment. In academia, the goal is to
 		excel in some aspect and to be more innovative and original than others.
 		This is why words commonly used (and overused) related to this aspect are:
 		&lt;b&gt;novel&lt;/b&gt;, &lt;b&gt;insight&lt;/b&gt;, &lt;b&gt;paradigm&lt;/b&gt;, &lt;b&gt;extremely&lt;/b&gt;,
@@ -317,7 +355,7 @@ We have succeeded! 🚀&lt;/p&gt;
 
 	&lt;p&gt;
 		Researches are trained to keep their critical spirit awake and challenge
-		each other. One of the first things I was told at a &#39;how to get a job&#39;
+		each other. One of the first things I was told at a &apos;how to get a job&apos;
 		workshop for PhDs was to &lt;b&gt;be less critical&lt;/b&gt;. When I listen to my
 		colleagues who are now working in business, I often hear phrases like
 		&lt;b&gt;opportunities for improvement&lt;/b&gt; used instead of phrases like
@@ -370,7 +408,7 @@ We have succeeded! 🚀&lt;/p&gt;
 		CV writing
 	&lt;/h3&gt;
 	&lt;p&gt;
-		Your journey to the corporate world starts with a CV. A researcher&#39;s CV
+		Your journey to the corporate world starts with a CV. A researcher&apos;s CV
 		is usually a very complete and long list of projects, contributions,
 		presentations and publications in a chronological order. The CV you will
 		send to hiring managers in the private sector should be quite different.
@@ -378,14 +416,14 @@ We have succeeded! 🚀&lt;/p&gt;
 		to follow the &lt;a href=&quot;https://www.businessinsider.fr/us/google-exec-gives-key-to-perfect-resume-2014-9&quot;&gt;Google
 			recommendations&lt;/a&gt; for tech jobs at least. The format and wording of
 		your CV should be inspired by the corporate world and speak in a
-		business tone. For example, instead of writing &#39;Studied system X in
+		business tone. For example, instead of writing &apos;Studied system X in
 		conditions A, B and published a paper entitled Novel landscape of system
-		X indicates [very long technical word] in conditions A, B&#39;, you can
-		write: &#39;Achieved Z/Improved by Z/Discovered Z when studying the system
-		X&#39;. You should also add your logistical duties of the project for
-		example &#39;Managed a team of N people/ (international) project&#39; or
-		&#39;Monthly reported progress to an international commission in a form of
-		dashboards and [format] presentations&#39;.
+		X indicates [very long technical word] in conditions A, B&apos;, you can
+		write: &apos;Achieved Z/Improved by Z/Discovered Z when studying the system
+		X&apos;. You should also add your logistical duties of the project for
+		example &apos;Managed a team of N people/ (international) project&apos; or
+		&apos;Monthly reported progress to an international commission in a form of
+		dashboards and [format] presentations&apos;.
 
 
 	&lt;/p&gt;
@@ -459,8 +497,6 @@ We have succeeded! 🚀&lt;/p&gt;
         <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>
         
-        <category>featured</category>
-        
         
         <category>thoughts</category>
         
@@ -479,8 +515,8 @@ We have succeeded! 🚀&lt;/p&gt;
         &lt;title&gt;Page Redirection&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;!-- Note: don&#39;t tell people to `click` the link, just tell them that it is a link. --&gt;
-        If you are not redirected automatically, follow this &lt;a href=&#39;https://urszulaczerwinska.github.io/UCzPhDThesis/&#39;&gt;link to example&lt;/a&gt;.
+        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/UCzPhDThesis/&apos;&gt;link to example&lt;/a&gt;.
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
@@ -513,8 +549,8 @@ We have succeeded! 🚀&lt;/p&gt;
         &lt;title&gt;Page Redirection&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;!-- Note: don&#39;t tell people to `click` the link, just tell them that it is a link. --&gt;
-        If you are not redirected automatically, follow this &lt;a href=&#39;https://urszulaczerwinska.github.io/DeconICA/&#39;&gt;link to example&lt;/a&gt;.
+        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/DeconICA/&apos;&gt;link to example&lt;/a&gt;.
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
@@ -601,7 +637,7 @@ We have succeeded! 🚀&lt;/p&gt;
         &lt;br&gt;&lt;br&gt;
         If you want to read more about the content of the course you can check out &lt;a href=&quot;http://www.bigdive.eu/&quot; target=&quot;_blank&quot;&gt;Big Dive website&lt;/a&gt; as well as read their great &lt;a href=&quot;https://www.linkedin.com/in/christianracca/detail/recent-activity/posts/&quot; target=&quot;_blank&quot;&gt;posts on LinkedIn&lt;/a&gt; of &lt;a href=&quot;https://www.linkedin.com/in/christianracca/&quot; target=&quot;_blank&quot;&gt;Christian Racca&lt;/a&gt;, &lt;a href=&quot;https://www.facebook.com/bigdive.eu/&quot; target=&quot;_blank&quot;&gt;Facebook page&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/bigdive_eu&quot; target=&quot;_blank&quot;&gt;twitter @bigdive_eu&lt;/a&gt;. 
 &lt;br&gt;&lt;br&gt;
-        For most of the participants and for me it was the first time with Big data.  I found the possibility to face the problems and tools I don&#39;t encounter in my everyday work. The content of the course was quite densely packed and I will need some time after the course to practice new skills and read all material. Thanks to great teachers like among others &lt;a href=&quot;https://www.linkedin.com/in/alexcomu/&quot; target=&quot;_blank&quot;&gt;Alex Comunian&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/abusedmedia/&quot; target=&quot;_blank&quot;&gt;Fabio Franchino&lt;/a&gt; classes were very interactive and easy to follow. 
+        For most of the participants and for me it was the first time with Big data.  I found the possibility to face the problems and tools I don&apos;t encounter in my everyday work. The content of the course was quite densely packed and I will need some time after the course to practice new skills and read all material. Thanks to great teachers like among others &lt;a href=&quot;https://www.linkedin.com/in/alexcomu/&quot; target=&quot;_blank&quot;&gt;Alex Comunian&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/abusedmedia/&quot; target=&quot;_blank&quot;&gt;Fabio Franchino&lt;/a&gt; classes were very interactive and easy to follow. 
 &lt;div class=&quot;scalable scalable-16-9&quot;&gt;
         &lt;div class=&quot;scalable-content&quot;&gt;
             &lt;iframe src=&quot;https://www.youtube.com/embed/y1Zj_pOx_iE&quot;  allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt; &lt;/p&gt;
@@ -612,7 +648,7 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;h3&gt;Personal highlights&lt;/h3&gt;
    &lt;p&gt;
     &lt;li&gt;The course was great &lt;b&gt;networking&lt;/b&gt; opportunity, partner companies posted their job openings, as well as a CV repository, was created by course organizers to facilitate their job search, also other participants of the course are new connections in my professional network that can be priceless in the future&lt;/li&gt;
-    &lt;li&gt;&lt;b&gt;D3.js&lt;/b&gt; is a very powerful tool for data visualization but its learning curve is quite steep. Learning jquery and communication with a remote data server, basics of web design are necessary to create a serious final product. So if you don&#39;t want to spend a significant amount of time learning all the toolkit better go for pre-set solutions like RShiny if you know R for instance.&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;D3.js&lt;/b&gt; is a very powerful tool for data visualization but its learning curve is quite steep. Learning jquery and communication with a remote data server, basics of web design are necessary to create a serious final product. So if you don&apos;t want to spend a significant amount of time learning all the toolkit better go for pre-set solutions like RShiny if you know R for instance.&lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Dask&lt;/b&gt; library seems to be  an interesting alternative to Spark for smaller projects, the big plus is that it is using pandas vocabulary. It can be also misleading as we encountered quite a lot of problems building a set up for our data, lots of ram memory seems to be necessary and understanding how dask is dealing with our objects differently than pandas is crucial for a successful application. &lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Spark&lt;/b&gt; contains important differences in algorithms from R or scikit-learn implementations. Therefore testing locally and comparing to the distributed version is not a good idea and difference in performance can be significant. It is important to keep it in mind from the beginning of the project. &lt;/li&gt;
     &lt;li&gt;&lt;b&gt;Github&lt;/b&gt; has some really cool project management features like issues system and wiki. Usually, it is not extensively used in academia or only as a code repository while for us the management part was really useful and handy to organize work. If you are a student you can get a &lt;a href=&quot;https://education.github.com/pack&quot; target=&quot;_blank&quot;&gt;Student Developer Pack for free&lt;/a&gt;.&lt;/li&gt;
@@ -629,7 +665,7 @@ We have succeeded! 🚀&lt;/p&gt;
         
          
     &lt;p&gt; 
-    Even if you cannot become an expert in big data in 5 weeks this course was a great intro to new concepts.  It was also a lot of fun,  intense immersion in Italian culture with lots of sun and pizza. Don&#39;t hesitate to contact me if you want to hear more about the course.
+    Even if you cannot become an expert in big data in 5 weeks this course was a great intro to new concepts.  It was also a lot of fun,  intense immersion in Italian culture with lots of sun and pizza. Don&apos;t hesitate to contact me if you want to hear more about the course.
     &lt;/p&gt;
     &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/bigdive.jpg&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Image rights TOP-IX&lt;/em&gt;&lt;/span&gt;
     &lt;h3&gt;Useful links&lt;/h3&gt;
@@ -655,8 +691,6 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
-        
-        <category>featured</category>
         
         
         <category>thoughts</category>
@@ -719,7 +753,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 		&lt;li&gt;many companies will not know what &lt;b&gt;computational biology&lt;/b&gt; is -  so adapt your title to the company - i.e. &lt;i&gt;data analyst of biological/ genetic data / for medical sciences&lt;/i&gt;, &lt;i&gt;data scientist in (biological) research&lt;/i&gt;  etc. in order to highlight your actual role &lt;/li&gt;
 		&lt;li&gt;most of companies may not be familiar with qualities you can bring as a PhD graduate - work on communication of your transferable skills, convince them your are more than just a student that took longer to get a degree &lt;/li&gt;
 		&lt;li&gt;you might hear that &lt;a href=&quot;http://www.businessinsider.com/qualities-google-looks-for-in-job-candidates-2014-4?IR=T&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Google does want people with high &quot;cognitive ability&quot;&lt;/i&gt;&lt;/a&gt; so you may think it is enough to be smart to get a position - even though your learning capability and intelligence are strong assets, &lt;b&gt;most of companies are not Google&lt;/b&gt;, they are &lt;b&gt;looking for solid skills&lt;/b&gt; that they will test in a technical interview i.e. your coding skills, your strategical thinking, situation analysis, problem solving. &lt;/li&gt;
-		&lt;li&gt;in most cases, PhD graduates are treated the same way as fresh graduates from a master/engineer degree - it is rare there are predefined posts for PhD holders, you posses, for sure, different qualities and experience, which can be a plus, but don&#39;t wait for an applause, &lt;b&gt;be flexible&lt;/b&gt;.&lt;/li&gt;
+		&lt;li&gt;in most cases, PhD graduates are treated the same way as fresh graduates from a master/engineer degree - it is rare there are predefined posts for PhD holders, you posses, for sure, different qualities and experience, which can be a plus, but don&apos;t wait for an applause, &lt;b&gt;be flexible&lt;/b&gt;.&lt;/li&gt;
 		&lt;li&gt; Programming in &lt;b&gt;R&lt;/b&gt;, &lt;b&gt;Python&lt;/b&gt; or &lt;b&gt;SAS&lt;/b&gt; is the base (not a surprise) for data science&lt;/li&gt;
 		&lt;li&gt;skills in &lt;b&gt;data visualization, database management, big data tools&lt;/b&gt; can be something that distinct you from other candidates&lt;/li&gt;
 		&lt;li&gt;&lt;b&gt;scientific writing&lt;/b&gt; and the whole communication toolbox, can also be a big plus, some companies release internal white papers and writing skills are highly valued &lt;/li&gt;
@@ -736,7 +770,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 &lt;/p&gt;
 &lt;h3&gt;The long story (for mindful ones)&lt;/h3&gt;
 &lt;p&gt;
-	French educational system is complicated. To simplify, the university master and PhD is seen as a path exclusiv for academic career. This view is slowly changing and we hear more and more about companies hiring PhDs. Universities are also trying to promote alternative carriers organizing &#39;professional breakfasts&#39;, workshops, interview simulations or CV tuning (I have participated in some organized by &lt;a href=http://cfdip.uspc.fr/fr/ target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and &lt;a href=http://www.adoc-tm.com/ target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a&gt;). There is even a &lt;a href=http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/ target=&quot;_blank&quot;&gt;MOOC&lt;/a&gt; that should help PhDs orientate their careers. Also, recently title &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be created a nation network for PhD holders with a yearbook and a standardized e-mail address system. 
+	French educational system is complicated. To simplify, the university master and PhD is seen as a path exclusiv for academic career. This view is slowly changing and we hear more and more about companies hiring PhDs. Universities are also trying to promote alternative carriers organizing &apos;professional breakfasts&apos;, workshops, interview simulations or CV tuning (I have participated in some organized by &lt;a href=http://cfdip.uspc.fr/fr/ target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and &lt;a href=http://www.adoc-tm.com/ target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a&gt;). There is even a &lt;a href=http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/ target=&quot;_blank&quot;&gt;MOOC&lt;/a&gt; that should help PhDs orientate their careers. Also, recently title &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be created a nation network for PhD holders with a yearbook and a standardized e-mail address system. 
 
 	&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en-gb&quot;&gt;&lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;Création d&amp;#39;un réseau des docteurs avec un annuaire annuel et une adresse mail : prenom.nom@phdfrance.fr &lt;a href=&quot;https://twitter.com/sup_recherche&quot;&gt;@sup_recherche&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thierry Mandon (@mandonthierry) &lt;a href=&quot;https://twitter.com/mandonthierry/status/800712541634560001&quot;&gt;21 November 2016&lt;/a&gt;&lt;/blockquote&gt;
 	&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
@@ -758,7 +792,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 			&lt;p&gt;As a &lt;b&gt;Computational Biologist&lt;/b&gt; working on data analysis in the context of imunno-oncology, with some additional on-line training, I believe I have most of basic knowledge asked for post of data analyst or data scientist: working in R, Machine Learning, statistics, data visualization, git. However, this is not clear for people working out of research in biology and healthcare. There are so many flavors of computational biologists, using different tools and applying them to different fields of biology, that it crucial to state clear what we actually do given the desired job. Computational biologist profile also usually comes with weak points as lack of professional experience out of academia, no professional network, little experience with business and consumers. What is sure, &lt;b&gt;most of computational biologist&lt;/b&gt;, with some additional training to broad their technical horizons and with open mind, &lt;b&gt;have very attractive profile for many industries&lt;/b&gt;.
 			&lt;/p&gt;
 
-			&lt;p&gt;I have spend around 1-2 h of my time at each job fair, that took place during the week office hours. Even though, I didn&#39;t manage to talk to all companies, especially the most popular, where the line were very long, I managed to leave my CV to 15 companies and talk to around 20. Here is a little summary of each job fair. 
+			&lt;p&gt;I have spend around 1-2 h of my time at each job fair, that took place during the week office hours. Even though, I didn&apos;t manage to talk to all companies, especially the most popular, where the line were very long, I managed to leave my CV to 15 companies and talk to around 20. Here is a little summary of each job fair. 
 			&lt;/p&gt;
 			&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/logo_PhDTalent.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
 
@@ -766,7 +800,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 			&lt;p&gt;
 				PhDTalent attracted  more than 70 companies form different industries. These could be roughly  split into three groups: Biotech / Pharma, consulting, Policy, Robotics &amp; Data science &amp; Big data &amp; IT &amp; Computing. 
 
-				There were presented a wide variety of different job offers. Some like Orange or L&#39;Oréal recruit for their PostDocoral programs.
+				There were presented a wide variety of different job offers. Some like Orange or L&apos;Oréal recruit for their PostDocoral programs.
 
 				During the day, I have learned that some companies, during the &lt;b&gt;recruitment process&lt;/b&gt; can send applicants a &lt;b&gt;weekly challenge&lt;/b&gt; or test through up to &lt;b&gt;7 interviews&lt;/b&gt; for a R&amp;D position. In addition, I also spoke to various start-ups that generate diverse data; they need people to manage them and sometimes they do hope one PhD can replace data management team. I also encountered even very surprising job descriptions: one start-up in particular was looking to hire &lt;b&gt;bioinformatician to model hormone detection in the air by their humanoid robot&lt;/b&gt;. I am not sure if they correctly interpreted what the skills of a bioinformatician are ;) (For those who are not sure what bioinformatician does have a look at the article in &lt;a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4408859/ target=&quot;_blank&quot;&gt;Frontiers of Genetics: Who qualifies to be bioinformatician?&lt;/a&gt;)
 			&lt;/p&gt;
@@ -784,7 +818,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 				&lt;h3&gt;How to choose a company?&lt;/h3&gt;
 				&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/office.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
 
-				&lt;p&gt;It is very important issue. Let&#39;s imagine, you have a great profile, desired by many companies. How do you chose the company?&lt;/p&gt;
+				&lt;p&gt;It is very important issue. Let&apos;s imagine, you have a great profile, desired by many companies. How do you chose the company?&lt;/p&gt;
 				&lt;p&gt;As a foreigner in France and academia-trained I do not have clear idea about model of functioning of different companies and possible advantage and disadvantages of specific setups.&lt;/p&gt;
 
 				&lt;p&gt;I encountered many consulting offices, where employees work actually for different companies to solve an issue or work on a project. I was told, their offer can seem very attractive at the first sight: variety of subjects, cutting edge technologies, big companies. However, they also are some drawbacks, as employees are hired by the consulting company, they are lured by the most attractive projects, but there is no guarantee to which one they will be associated because it depends a lot on client choice, and other available consultants. On the other hand, even a short contract in a company developing new technologies such as &lt;i&gt;Orange&lt;/i&gt; or &lt;i&gt;Microsoft&lt;/i&gt; can be very good for your career, while consulting job can be easier to get but will not always meet your expectations.&lt;/p&gt;
@@ -801,8 +835,6 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
-        
-        <category>featured</category>
         
         
         <category>thoughts</category>
@@ -822,8 +854,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
         &lt;title&gt;Page Redirection&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;!-- Note: don&#39;t tell people to `click` the link, just tell them that it is a link. --&gt;
-        If you are not redirected automatically, follow this &lt;a href=&#39;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&#39;&gt;link to example&lt;/a&gt;.
+        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&apos;&gt;link to example&lt;/a&gt;.
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
@@ -858,13 +890,13 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 
 &lt;body&gt;
 
-     &lt;style&gt;
+  &lt;style&gt;
 
 
 
-      &lt;/style&gt;
+  &lt;/style&gt;
  
-      &lt;/body&gt;  
+&lt;/body&gt;  
 &lt;section&gt;
 	&lt;h4&gt;Certificate in Business And Administration&lt;/h4&gt;
 	&lt;p&gt;I has been four years CBA at Paris Descartes train and gather together talented students from different disciplines. Network build during this two-week workshop remains a strong point of all the participants.&lt;/p&gt;
@@ -876,7 +908,7 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 
  
 
-&lt;div class=&#39;tableauPlaceholder&#39; id=&#39;viz1479135570783&#39; style=&#39;position: relative&#39;&gt;&lt;noscript&gt;&lt;a href=&#39;#&#39;&gt;&lt;img alt=&#39;Tableau de bord 1 &#39; src=&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1_rss.png&#39; style=&#39;border: none&#39; /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class=&#39;tableauViz&#39;  style=&#39;display:none;&#39;&gt;&lt;param name=&#39;host_url&#39; value=&#39;https%3A%2F%2Fpublic.tableau.com%2F&#39; /&gt; &lt;param name=&#39;site_root&#39; value=&#39;&#39; /&gt;&lt;param name=&#39;name&#39; value=&#39;CBA_2&amp;#47;Tableaudebord1&#39; /&gt;&lt;param name=&#39;tabs&#39; value=&#39;no&#39; /&gt;&lt;param name=&#39;toolbar&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;static_image&#39; value=&#39;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1.png&#39; /&gt; &lt;param name=&#39;animate_transition&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_static_image&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_spinner&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_overlay&#39; value=&#39;yes&#39; /&gt;&lt;param name=&#39;display_count&#39; value=&#39;yes&#39; /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type=&#39;text/javascript&#39;&gt;                    var divElement = document.getElementById(&#39;viz1479135570783&#39;);                    var vizElement = divElement.getElementsByTagName(&#39;object&#39;)[0];                    vizElement.style.width=&#39;824px&#39;;vizElement.style.height=&#39;3819px&#39;;                    var scriptElement = document.createElement(&#39;script&#39;);                    scriptElement.src = &#39;https://public.tableau.com/javascripts/api/viz_v1.js&#39;;                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
+&lt;div class=&apos;tableauPlaceholder&apos; id=&apos;viz1479135570783&apos; style=&apos;position: relative&apos;&gt;&lt;noscript&gt;&lt;a href=&apos;#&apos;&gt;&lt;img alt=&apos;Tableau de bord 1 &apos; src=&apos;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1_rss.png&apos; style=&apos;border: none&apos; /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class=&apos;tableauViz&apos;  style=&apos;display:none;&apos;&gt;&lt;param name=&apos;host_url&apos; value=&apos;https%3A%2F%2Fpublic.tableau.com%2F&apos; /&gt; &lt;param name=&apos;site_root&apos; value=&apos;&apos; /&gt;&lt;param name=&apos;name&apos; value=&apos;CBA_2&amp;#47;Tableaudebord1&apos; /&gt;&lt;param name=&apos;tabs&apos; value=&apos;no&apos; /&gt;&lt;param name=&apos;toolbar&apos; value=&apos;yes&apos; /&gt;&lt;param name=&apos;static_image&apos; value=&apos;https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;CB&amp;#47;CBA_2&amp;#47;Tableaudebord1&amp;#47;1.png&apos; /&gt; &lt;param name=&apos;animate_transition&apos; value=&apos;yes&apos; /&gt;&lt;param name=&apos;display_static_image&apos; value=&apos;yes&apos; /&gt;&lt;param name=&apos;display_spinner&apos; value=&apos;yes&apos; /&gt;&lt;param name=&apos;display_overlay&apos; value=&apos;yes&apos; /&gt;&lt;param name=&apos;display_count&apos; value=&apos;yes&apos; /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type=&apos;text/javascript&apos;&gt;                    var divElement = document.getElementById(&apos;viz1479135570783&apos;);                    var vizElement = divElement.getElementsByTagName(&apos;object&apos;)[0];                    vizElement.style.width=&apos;824px&apos;;vizElement.style.height=&apos;3819px&apos;;                    var scriptElement = document.createElement(&apos;script&apos;);                    scriptElement.src = &apos;https://public.tableau.com/javascripts/api/viz_v1.js&apos;;                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
 
 &lt;/section&gt;
 &lt;/html&gt;
@@ -893,97 +925,6 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
         
         
         <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Data and the Future of Healthcare</title>
-        <description>&lt;!doctype html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
-
-&lt;/head&gt;
-
- &lt;body&gt;
-
-     &lt;style&gt;
-      &lt;p&gt;    	
-        
-		body { background-color:blue; }
-		.highlightme { background-color:#ccffe5; }
- &lt;/p&gt;
-
-      &lt;/style&gt;
- 
-      &lt;/body&gt;  
-      &lt;section&gt;
-
-      &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://twitter.com/pebourne&quot; target=&quot;_blank&quot;&gt;Phil Bourne&lt;/a&gt;&lt;/strong&gt; is a founding Editor-in-Chief of PLOS Computational Biology and the &lt;a href=&quot;http://www.sdsc.edu/~bourne/&quot; target=&quot;_blank&quot;&gt;Associate Director for Data Science (ADDS)&lt;/a&gt; at the &lt;a href=&quot;https://www.nih.gov/&quot; target=&quot;_blank&quot;&gt;National Institutes of Health&lt;/a&gt;.&lt;/p&gt;
-
-      &lt;p&gt;His research focuses are countless: algorithms, text mining, machine learning, metalanguages, biological databases, and visualizations applied to problems in systems pharmacology, evolution, cell signaling, apoptosis, immunology and scientific dissemination coupled with education and public service.&lt;/p&gt;
-      &lt;p&gt;Attendees  of ISMB 2016 in Orlando had the opportunity to interact with him at the workshop on Education in Bioinformatics (WEB) — ‘Exploiting Cloud and Virtual Resources for Training : Getting the Best Training in Computational Biology in an Era of Cloud Computing and Big Data’.&lt;/p&gt;
-
-
-      &lt;p&gt;&lt;strong&gt;
-In this interview, Phil Bourne gives his opinion about Big Data era, the impact of data science and will impact biological research and healthcare. He also comments on frictions: between the corporate world and research, as well as formal training and citizen science. 
-&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;b&gt;The list of your achievements and engagements is very long. Besides your academic ones, you also founded companies so you are familiar with corporate world. With regards to Data Science &amp; Big Data, it seems like there is a hype around them in companies right now. Do you think solutions developed for science can compete with the ones developed for big data with big money? Will academic and private Data Science work together or companies like Google will take a monopoly on data solutions?&lt;/b&gt;&lt;/li&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;Big data covers a big area — there is a need for government and private funder solutions, for company solutions and for hybrid solutions. Just as the market place benefits from government research that then gets translated into commercial products we will see the same with big data.&lt;/i&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;span class=&quot;highlightme&quot;&gt;Biomedical research and health care is a bit late in the game and has the disadvantage of not being born digital and so is relatively slow to respond.&lt;/span&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;i&gt;Notwithstanding there is a lot of fundamental research which the private sector is not likely to do that will be done by government and private foundation funding and ultimately will prove to be of great value. Areas of provenance, standards, data wrangling and security are examples that come to mind.&lt;/i&gt;&lt;/p&gt;
-
-&lt;li&gt;&lt;b&gt;Biological research is still under an ongoing digitization process. However an important number of wet lab biologist are still reluctant to learn how to use computational tools that would make their research more interesting and more quantitative. What message would you like to convey them?&lt;/b&gt;&lt;/li&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The contributions of computation and other peoples data to the biomedical research enterprise cannot be ignored at this point. It should be embraced. &lt;span class=&quot;highlightme&quot;&gt;At the same time computational biologists have an obligation to make their methods and tools accessible to a broader audience.&lt;/span&gt; We need training programs that prepare students for a future where analytical techniques go hand-in-hand with more experimental approaches. Students need to be equally adept in silico, in vivo and in vitro.&lt;/i&gt;&lt;/p&gt;
-
-
-&lt;li&gt;&lt;b&gt;You are the founding Editor-in-Chief of PLOS Computational Biology, and you are enthusiastic about open science; open data and open education (like MOOCs and NIH training programs like Big Data to Knowledge). Can you explain why these matters are so important to you? Do you think non-scientist citizens should have equal access to scientific research and should actively participate?&lt;br&gt;
-For instance, in Paris we had a data challenge (Epidemium) for cancer data, which involved engaging citizens to improve data management (databases) and data treatment. Do you think formal scientific education is necessary to participate in research?&lt;/b&gt;&lt;/li&gt;
- &lt;br&gt;
-&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The future of biomedical research involves a broader spectrum of data types and data which is publicly accessible. This creates unprecedented opportunities and we are already seeing the results. Examples are predicting healthcare outcomes from electronic health records either alone or in combination with other data. Use of mobility data to influence behavior etc. We need to foster the use of these data and the new methods emerging to use such open data. &lt;span class=&quot;highlightme&quot;&gt;Openness breaks down the traditional academic hierarchy and this is a good thing.&lt;/span&gt; We are doing what we can to foster new audiences to access and discover from the these data. The Open Science Prize and the Ideas labs we run with the NSF are examples.
-&lt;blockquote&gt;While formal training is not necessary we must maintain the ethical standards and the rigor of the scientific method.&lt;/blockquote&gt;&lt;/i&gt;&lt;/p&gt;
-
-&lt;li&gt;&lt;b&gt;Do you think we are capable of coping with the amount of generated data? I have experienced in my own research that dealing even with medium size datasets can be problematic and many questions can be asked when looking for data from different angles. Is there a threat that with big data we could miss important questions? Some leaders of big data businesses say that we should slow the rate of data generation as data storage is costly and we are not able to analyse all these data. What’s your opinion?&lt;/b&gt;&lt;/li&gt;
- &lt;br&gt;
-&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;This question is getting at data sustainability and maintenance and we have much work to do as a community here. We do not have a good handle on the rate of data generation, how to determine what to keep and what to discard, how to make the community aware of the persistence of particular types of data and many more issues. In the end we have to make decisions about cost vs benefit. In business the model is clearer — if we can leverage the data for the benefit of the company keep it, otherwise discard it. In academia there is a legacy of data preservation irrespective of perceived current value and the value cannot necessarily be measured in monetary terms. We need to develop metrics and best practices to define our data and subsequently make preservation decisions based upon these supporting data.&lt;/i&gt;&lt;/p&gt;
- 
-&lt;li&gt;&lt;b&gt;Today Big data, tomorrow…? What will be the next big step for health research?&lt;/b&gt;&lt;/li&gt;
- &lt;br&gt;
-&lt;p&gt;&lt;b&gt;Answer:&lt;/b&gt; &lt;i&gt;The patient will become the center of the health care system as opposed to early health care (the physician) and today (the health care organization). The patient/participant will be empowered by a usable version of their own health record and the biomedical research which has used that record. They will interpret it themselves and whole new industries will appear to help them interpret the data and make decisions with the assistance of health care providers. Healthcare providers and healthcare industries will need to adjust to this new reality.
-From a research perspective, systems based approaches will become more accepted and mainstream and be used as predictive tools Machine learning will figure more prominently.
-Neuroscience will grow further as we explore the basis of consciousness and other aspects of the human condition. The relationship of health to the environment will be facilitated by the availability of large public environmental datasets and much more. Last but not least is the use of computational techniques and associated data in first response situations, notably concerning pandemics.&lt;/i&gt;&lt;/p&gt;
-&lt;/ol&gt;
-
-&lt;h2&gt;Closing remarks&lt;/h2&gt;
-&lt;p&gt;The vision of data and healthcare outlined by Phil Bourne seem to be pretty optimistic. It is easy to see that the world of Data Science is complex but it is not lacking opportunities. This provides a lot of hope to researchers and students in the field of computational biology. As a community our mission is to seek opportunities in order to make the most of this universe; to explore it and to find new solutions for improving healthcare. Now is the ideal time to come forward with any ideas you have been sitting on — the potential benefits of data solutions are now more real than ever.&lt;/p&gt;
-
-&lt;p&gt;&lt;i&gt;We extend our thanks to Phil Bourne for participating in this interview. Phil Bourne is a founding Editor-in-Chief of PLOS Computational Biology, which manages this collaborative blog.&lt;/i&gt;&lt;/p&gt;
-
-
-	&lt;p&gt;&lt;strong&gt;Disclaimer: &lt;/strong&gt;Any views expressed are those of the author, not necessarily those of PLOS.&lt;/p&gt;
-    &lt;footer&gt;
-        &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on July 22, 2016.&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/data-and-the-future-of-healthcare-interview-with-phil-bourne-ismb16-db5ab9b296d4&quot;&gt;View the original&lt;/a&gt;&lt;/p&gt;
-    &lt;/footer&gt;
-		   &lt;/section&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
- 
-&lt;/html&gt;
-
-</description>
-        <pubDate>Fri, 11 Nov 2016 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/conferenceISMB2016/interviewPhilBourne</guid>
-        
-        
-        <category>thoughts</category>
-        
-        <category>conferenceISMB2016</category>
         
       </item>
     

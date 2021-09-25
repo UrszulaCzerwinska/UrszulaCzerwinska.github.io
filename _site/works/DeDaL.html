@@ -55,8 +55,8 @@
         <div id="menu">
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/about/">About</a></li>
             <li><a href="/works/">Works</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a href="/thoughts/">Thoughts</a></li>
             <li><a href="/feed.xml"
                    class="icon fa-feed"> RSS Feed</a></li>
@@ -76,6 +76,7 @@
   </header>
   <ul class="breadcrumb">
   <li><a href="/index.html">Home</a></li>
+  <li>DeDaL</li>
 </ul>
 
 
@@ -177,9 +178,9 @@ by Vanhanen (2000) for 1900.</li>
 
 <p>And we can have a look at the imported table with function head printing first 5 lines.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">file</span> <span class="o">&lt;-</span> <span class="s2">"http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_data.txt"</span>
-<span class="n">raw_data</span> <span class="o">&lt;-</span> <span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">skip</span><span class="o">=</span><span class="m">9</span><span class="p">)</span>
-<span class="n">head</span><span class="p">(</span><span class="n">raw_data</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">file</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_data.txt"</span><span class="w">
+</span><span class="n">raw_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.delim</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="o">=</span><span class="nb">T</span><span class="p">,</span><span class="w"> </span><span class="n">skip</span><span class="o">=</span><span class="m">9</span><span class="p">)</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">raw_data</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">##   country_A country_B quote1890 quote1900 quote1910 colony     dist
 ## 1       ARG       AUH         0         0         0      0 9.374816
@@ -212,17 +213,19 @@ by Vanhanen (2000) for 1900.</li>
 
 <p> </p>
 
-<p>In order to import the network into DeDaL we will need 2 files:<br />
-1. with node to node connexions to construct the network (<code class="highlighter-rouge">country_A</code> to <code class="highlighter-rouge">country_B</code>) with edge attributes<br />
-2. table with meta data containing information about nodes (<code class="highlighter-rouge">country_A var1 var2</code> <em>etc.</em>)</p>
+<p>In order to import the network into DeDaL we will need 2 files:</p>
+<ol>
+  <li>with node to node connexions to construct the network (<code class="language-plaintext highlighter-rouge">country_A</code> to <code class="language-plaintext highlighter-rouge">country_B</code>) with edge attributes</li>
+  <li>table with meta data containing information about nodes (<code class="language-plaintext highlighter-rouge">country_A var1 var2</code> <em>etc.</em>)</li>
+</ol>
 
-<p>I will try initially to take a look at all the connexions that occurred, taking into account the link if trading was active in any year (observed), especially because we do not have detailed data for all time points, then I get rid of time information (3,4,5). I use package <code class="highlighter-rouge">dplyr</code>:</p>
+<p>I will try initially to take a look at all the connexions that occurred, taking into account the link if trading was active in any year (observed), especially because we do not have detailed data for all time points, then I get rid of time information (3,4,5). I use package <code class="language-plaintext highlighter-rouge">dplyr</code>:</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">suppressMessages</span><span class="p">(</span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">))</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">network_table</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">filter</span><span class="p">(</span><span class="n">quote1890</span><span class="o">==</span><span class="m">1</span> <span class="o">|</span> <span class="n">quote1900</span><span class="o">==</span><span class="m">1</span> <span class="o">|</span> <span class="n">quote1910</span><span class="o">==</span><span class="m">1</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">bitrade</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">quote1890</span><span class="o">:</span><span class="n">quote1910</span><span class="p">))</span>
-<span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="p">)</span>
-<span class="n">summary</span><span class="p">(</span><span class="n">network_table</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">network_table</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">filter</span><span class="p">(</span><span class="n">quote1890</span><span class="o">==</span><span class="m">1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">quote1900</span><span class="o">==</span><span class="m">1</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">quote1910</span><span class="o">==</span><span class="m">1</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">bitrade</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">quote1890</span><span class="o">:</span><span class="n">quote1910</span><span class="p">))</span><span class="w">
+</span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="p">)</span><span class="w">
+</span><span class="n">summary</span><span class="p">(</span><span class="n">network_table</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">##    country_A     country_B   colony       dist          bitrade       
 ##  DEU    : 14   GBR    : 44   0:261   Min.   :5.373   Min.   :      0  
@@ -235,13 +238,13 @@ by Vanhanen (2000) for 1900.</li>
 
 <p>This table is ready to export.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">network_table</span><span class="p">,</span> <span class="s2">"network_table.txt"</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">col.names</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">network_table</span><span class="p">,</span><span class="w"> </span><span class="s2">"network_table.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">col.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
 
 <p>Then I create table with information about each country. I select a unique entry by country as in Cytoscape we don’t need distinction between country A and B.</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">countries_data</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">coverage</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">country_B</span><span class="o">:</span><span class="n">bitrade</span><span class="p">))</span><span class="o">%&gt;%</span><span class="n">distinct</span><span class="p">(</span><span class="n">country_A</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">rename</span><span class="p">(</span><span class="n">country</span><span class="o">=</span><span class="n">country_A</span><span class="p">)</span>
-<span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="p">)</span>
-<span class="n">dim</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">countries_data</span><span class="o">&lt;-</span><span class="n">raw_data</span><span class="o">%&gt;%</span><span class="n">select</span><span class="p">(</span><span class="n">country_A</span><span class="o">:</span><span class="n">coverage</span><span class="p">,</span><span class="o">-</span><span class="p">(</span><span class="n">country_B</span><span class="o">:</span><span class="n">bitrade</span><span class="p">))</span><span class="o">%&gt;%</span><span class="n">distinct</span><span class="p">(</span><span class="n">country_A</span><span class="p">)</span><span class="o">%&gt;%</span><span class="n">rename</span><span class="p">(</span><span class="n">country</span><span class="o">=</span><span class="n">country_A</span><span class="p">)</span><span class="w">
+</span><span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">countries_data</span><span class="o">$</span><span class="n">gold</span><span class="p">)</span><span class="w">
+</span><span class="nf">dim</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] 45 10</code></pre></figure>
 
@@ -272,13 +275,13 @@ by Vanhanen (2000) for 1900.</li>
 ##  Max.   :2.565  
 ## </code></pre></figure>
 
-<p>I will use <code class="highlighter-rouge">caret</code> package to scale and center data (centering can be skipped as it is included in DeDaL).</p>
+<p>I will use <code class="language-plaintext highlighter-rouge">caret</code> package to scale and center data (centering can be skipped as it is included in DeDaL).</p>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">suppressMessages</span><span class="p">(</span><span class="n">library</span><span class="p">(</span><span class="n">caret</span><span class="p">))</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">preProcValues</span> <span class="o">&lt;-</span> <span class="n">preProcess</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">],</span> <span class="n">method</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">"center"</span><span class="p">,</span> <span class="s2">"scale"</span><span class="p">))</span>
-<span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">predict</span><span class="p">(</span><span class="n">preProcValues</span><span class="p">,</span> <span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span>
-<span class="n">head</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">preProcValues</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">preProcess</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">],</span><span class="w"> </span><span class="n">method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"center"</span><span class="p">,</span><span class="w"> </span><span class="s2">"scale"</span><span class="p">))</span><span class="w">
+</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">predict</span><span class="p">(</span><span class="n">preProcValues</span><span class="p">,</span><span class="w"> </span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">##   country gold  debtburden      rlong rshort1900  rshort1890        rgdp
 ## 1     ARG    1  0.49013327  0.8495516  0.5542615  1.50743024 0.044877316
@@ -297,19 +300,19 @@ by Vanhanen (2000) for 1900.</li>
 
 <p>I also check the possibly of occurrence of highly correlated variables:</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">descrCor</span> <span class="o">&lt;-</span>  <span class="n">cor</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span>
-<span class="n">highCorr</span> <span class="o">&lt;-</span> <span class="n">sum</span><span class="p">(</span><span class="n">abs</span><span class="p">(</span><span class="n">descrCor</span><span class="p">[</span><span class="n">upper.tri</span><span class="p">(</span><span class="n">descrCor</span><span class="p">)])</span> <span class="o">&gt;</span> <span class="m">.6</span><span class="p">)</span>
-<span class="n">print</span><span class="p">(</span><span class="n">highCorr</span><span class="p">)</span> <span class="err">#</span><span class="n">there</span> <span class="n">is</span> <span class="n">no</span> <span class="n">correlated</span> <span class="n">variables</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">descrCor</span><span class="w"> </span><span class="o">&lt;-</span><span class="w">  </span><span class="n">cor</span><span class="p">(</span><span class="n">countries_data</span><span class="p">[,</span><span class="m">3</span><span class="o">:</span><span class="m">10</span><span class="p">])</span><span class="w">
+</span><span class="n">highCorr</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">descrCor</span><span class="p">[</span><span class="n">upper.tri</span><span class="p">(</span><span class="n">descrCor</span><span class="p">)])</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">.6</span><span class="p">)</span><span class="w">
+</span><span class="n">print</span><span class="p">(</span><span class="n">highCorr</span><span class="p">)</span><span class="w"> </span><span class="c1">#there is no correlated variables</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-text" data-lang="text">## [1] NA</code></pre></figure>
 
 <p>Now I export this meta data into a .txt in order to import to Cytoscape 3.0</p>
 
-<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">countries_data</span><span class="p">,</span> <span class="s2">"countries_data.txt"</span><span class="p">,</span> <span class="n">row.names</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">col.names</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">quote</span><span class="o">=</span><span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">write.table</span><span class="p">(</span><span class="n">countries_data</span><span class="p">,</span><span class="w"> </span><span class="s2">"countries_data.txt"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">col.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">quote</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">,</span><span class="w"> </span><span class="n">sep</span><span class="o">=</span><span class="s2">"\t"</span><span class="p">)</span></code></pre></figure>
 
-<p>In Cytoscape I go to <code class="highlighter-rouge">File -&gt; Import -&gt; Network -&gt; File...</code>
-I select <code class="highlighter-rouge">country_A</code> as a source, <code class="highlighter-rouge">country_B</code> as target and other columns as edge attributes.
-I go to <code class="highlighter-rouge">View -&gt; Show graphical details</code> to visualize the network.
+<p>In Cytoscape I go to <code class="language-plaintext highlighter-rouge">File -&gt; Import -&gt; Network -&gt; File...</code>
+I select <code class="language-plaintext highlighter-rouge">country_A</code> as a source, <code class="language-plaintext highlighter-rouge">country_B</code> as target and other columns as edge attributes.
+I go to <code class="language-plaintext highlighter-rouge">View -&gt; Show graphical details</code> to visualize the network.
 The image is not very informative, all countries are interconnected and graphical style makes the network unreadable. 
 First, I play with graphical parameters to obtain something readable and I modify edge visual proprieties to make use of edge attributes.
  </p>
@@ -326,14 +329,14 @@ First, I play with graphical parameters to obtain something readable and I modif
 
 <p><em>Organic layout of the imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony variables</em></p>
 
-<p>So let’s import <code class="highlighter-rouge">countries_data.txt</code> through <code class="highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.<br />
+<p>So let’s import <code class="language-plaintext highlighter-rouge">countries_data.txt</code> through <code class="language-plaintext highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.<br />
 I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDaL</a> in order to see the PCA and Elastic Map Layouts.</p>
 
 <p>
  	<h3> PCA - principal components analysis</h3>
  </p>
 
-<p>I select <code class="highlighter-rouge">Layout -&gt; DeDaL -&gt; Data-driven Layout</code>, to perform PCA without network smoothing and without double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:</p>
+<p>I select <code class="language-plaintext highlighter-rouge">Layout -&gt; DeDaL -&gt; Data-driven Layout</code>, to perform PCA without network smoothing and without double centering. A window pops up with percentage of variance explained what can be illustrated with barplot:</p>
 
 <p><img src="/images/unnamed-chunk-9-1.png" width="60%" /></p>
 
@@ -383,23 +386,23 @@ It is possible to morph any two layouts (i.e. manually created topological layou
 
       <div class="backnext btnbottom">
                 <div class="back">
-        <div class="bpointer"><a href="/works/iGEM"
+        <div class="bpointer"><a href="/works/DEconvolutionofTME.html"
          class="button small" title="Back">&lt; Back</a></div>
          <!-- class="icon fa-backward" title="Back"></a></div> -->
-        <div class="btitle"><a href="/works/iGEM">Teen spirit</a></div>
+        <div class="btitle"><a href="/works/DEconvolutionofTME.html">PhD thesis at Institut Curie</a></div>
         </div>
         <div class="next">
-        <div class="npointer"><a href="/works/matlabAIV.html"
+        <div class="npointer"><a href="/works/TP_R"
          class="button small" title="Next">Next &gt;</a></div>
          <!-- class="icon fa-forward" title="Next"></a></div> -->
-        <div class="ntitle"><a href="/works/matlabAIV.html">Modeling MinA and MinB</a></div>
+        <div class="ntitle"><a href="/works/TP_R">Introduction to data visualization [FR]</a></div>
         </div>
 
       </div>
       <script>
       document.body.onkeyup = function(e){
-        if (e.keyCode == '37') { window.location = '/works/iGEM'; }
-        if (e.keyCode == '39') { window.location = '/works/matlabAIV.html'; }
+        if (e.keyCode == '37') { window.location = '/works/DEconvolutionofTME.html'; }
+        if (e.keyCode == '39') { window.location = '/works/TP_R'; }
       };
       </script>
 
@@ -424,7 +427,7 @@ It is possible to morph any two layouts (i.e. manually created topological layou
   </ul>
   <ul class="copyright">
     <li>&copy; 2016,
-    2020
+    2021
       Urszula Czerwinska</li>
     <li><a href="/credits/">Credits</a></li>
   </ul>

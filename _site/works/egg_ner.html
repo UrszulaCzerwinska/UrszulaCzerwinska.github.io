@@ -55,8 +55,8 @@
         <div id="menu">
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/about/">About</a></li>
             <li><a href="/works/">Works</a></li>
+            <li><a href="/about/">About</a></li>
             <li><a href="/thoughts/">Thoughts</a></li>
             <li><a href="/feed.xml"
                    class="icon fa-feed"> RSS Feed</a></li>
@@ -76,6 +76,7 @@
   </header>
   <ul class="breadcrumb">
   <li><a href="/index.html">Home</a></li>
+  <li>Named Entity Recognition - keywords detection from Medium articles</li>
 </ul>
 
 
@@ -182,7 +183,7 @@ The train and test data were separated to evaluate the model.</p>
 
 <div><span class="image fit"><img src="/images/NER_img5.png" alt="" /></span></div>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">TRAIN_DATA_ALL</span> <span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">train_table</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">mark_targets</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="s">'ORG'</span><span class="p">,</span> <span class="s">'PERSON'</span><span class="p">,</span> <span class="s">'LOC'</span><span class="p">,</span> <span class="s">'TOPIC'</span><span class="p">,</span> <span class="s">'GPE'</span><span class="p">,</span><span class="s">'DATE'</span><span class="p">,</span> <span class="s">'EVENT'</span><span class="p">,</span> <span class="s">'WORK_OF_ART'</span><span class="p">],</span> <span class="s">"sents"</span><span class="p">,</span> <span class="p">[</span><span class="s">'ORG'</span><span class="p">,</span> <span class="s">'PERSON'</span><span class="p">,</span> <span class="s">'LOC'</span><span class="p">,</span> <span class="s">'TOPIC'</span><span class="p">,</span> <span class="s">'GPE'</span><span class="p">,</span><span class="s">'DATE'</span><span class="p">,</span> <span class="s">'EVENT'</span><span class="p">,</span> <span class="s">'WORK_OF_ART'</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">TRAIN_DATA_ALL</span> <span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">train_table</span><span class="p">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="n">mark_targets</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="s">'ORG'</span><span class="p">,</span> <span class="s">'PERSON'</span><span class="p">,</span> <span class="s">'LOC'</span><span class="p">,</span> <span class="s">'TOPIC'</span><span class="p">,</span> <span class="s">'GPE'</span><span class="p">,</span><span class="s">'DATE'</span><span class="p">,</span> <span class="s">'EVENT'</span><span class="p">,</span> <span class="s">'WORK_OF_ART'</span><span class="p">],</span> <span class="s">"sents"</span><span class="p">,</span> <span class="p">[</span><span class="s">'ORG'</span><span class="p">,</span> <span class="s">'PERSON'</span><span class="p">,</span> <span class="s">'LOC'</span><span class="p">,</span> <span class="s">'TOPIC'</span><span class="p">,</span> <span class="s">'GPE'</span><span class="p">,</span><span class="s">'DATE'</span><span class="p">,</span> <span class="s">'EVENT'</span><span class="p">,</span> <span class="s">'WORK_OF_ART'</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span></code></pre></figure>
 
 <div><span class="image fit"><img src="/images/NER_img6.png" alt="" /></span></div>
 
@@ -216,7 +217,7 @@ We have succeeded! 🚀</p>
 
 <div><span class="image fit"><img src="/images/NER_img8.png" alt="" /></span></div>
 
-<p>The finalized model can be compiled as an independent python library (instructions here) and installed with <code class="highlighter-rouge">pip</code>. This is very practical for deploying the model in another environment and for production setup.</p>
+<p>The finalized model can be compiled as an independent python library (instructions here) and installed with <code class="language-plaintext highlighter-rouge">pip</code>. This is very practical for deploying the model in another environment and for production setup.</p>
 
 <div><span class="image fit"><img src="/images/NER_img9.jpg" alt="" /></span></div>
 
@@ -263,19 +264,23 @@ We have succeeded! 🚀</p>
 
       <div class="backnext btnbottom">
                 <div class="back">
+        <div class="bpointer"><a href="/works/ner_cc"
+         class="button small" title="Back">&lt; Back</a></div>
+         <!-- class="icon fa-backward" title="Back"></a></div> -->
+        <div class="btitle"><a href="/works/ner_cc">Named Entity Recognition at Cour de Cassation</a></div>
         </div>
         <div class="next">
-        <div class="npointer"><a href="/works/wihads"
+        <div class="npointer"><a href="/works/PhDThesis.html"
          class="button small" title="Next">Next &gt;</a></div>
          <!-- class="icon fa-forward" title="Next"></a></div> -->
-        <div class="ntitle"><a href="/works/wihads">Women in Healthcare Analytics and Data Science (WiHADS)</a></div>
+        <div class="ntitle"><a href="/works/PhDThesis.html">PhD Thesis</a></div>
         </div>
 
       </div>
       <script>
       document.body.onkeyup = function(e){
-        if (e.keyCode == '37') { window.location = ''; }
-        if (e.keyCode == '39') { window.location = '/works/wihads'; }
+        if (e.keyCode == '37') { window.location = '/works/ner_cc'; }
+        if (e.keyCode == '39') { window.location = '/works/PhDThesis.html'; }
       };
       </script>
 
@@ -300,7 +305,7 @@ We have succeeded! 🚀</p>
   </ul>
   <ul class="copyright">
     <li>&copy; 2016,
-    2020
+    2021
       Urszula Czerwinska</li>
     <li><a href="/credits/">Credits</a></li>
   </ul>
