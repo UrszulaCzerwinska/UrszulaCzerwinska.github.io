@@ -1,0 +1,571 @@
+---
+priority: 0.8
+title: Push the limits of explainability
+excerpt: an ultimate guide to SHAP library
+permalink: /works/interpretability-shap
+categories: works
+background-image: engineering.jpg
+tags:
+- data science
+- interpretability
+- XAI
+- machine learning
+- featured
+---
+
+
+<html>
+
+<head>
+  <meta name="description" content="Urszula Czerwinska. About me, data science, big data, analytics, PhD">
+
+
+</head>
+
+<body>
+</body>
+<section>
+  <h3>Summary</h3>
+  <p>
+    This article is a guide to the advanced and lesser-known features of the python SHAP library. It is based on an
+    example of tabular data classification.
+  </p>
+
+  <section name="baac" class="section section--body section--first">
+    <p>But first, let’s talk about the motivation and
+      interest in explainability at Saegus that motivated and financed my explorations.</p>
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/engineering.jpg" alt="" width=70% /></span>
+
+    <h3>Explainability — the theory</h3>
+    <p>The explainability of algorithms is taking more and
+      more place in the discussions about Data Science. We know that algorithms are powerful, we know that they can
+      assist us in many tasks: price prediction, document classification, video recommendation.</p>
+    <p>From now on, more and more questions are being asked
+      about this prediction:<br>- Is it ethical?<br>- Is it affected by bias?<br>- Is it used for the right reasons?
+    </p>
+    <p>In many domains such as medicine, banking or
+      insurance, algorithms can be used if, and only if, it is possible to trace and explain (or better, interpret)
+      the decisions of these algorithms.</p>
+    <h4>Vocabulary parenthesis</h4>
+    <p>In this article we would like to distinguish the
+      terms :</p>
+    <p><strong>Explainability</strong>: possibility to explain from a technical
+      point of view the prediction of an algorithm.</p>
+    <p><strong>Interpretability</strong>: the ability to explain or provide meaning
+      in terms that are understandable by a human being.</p>
+    <p><strong>Transparency</strong>: a model is considered transparent if it is
+      understandable on its own.</p>
+    <h4>Why do we care about interpretability ?</h4>
+    <p>Interpretability helps to ensure impartiality in
+      decision-making, i.e. to detect and therefore correct biases in the training data set. In addition, it
+      facilitates robustness by highlighting potential adverse disturbances that could change the prediction. It can
+      also act as an assurance that only significant features infer the outcome.</p>
+    <p>Sometimes, it would be more advisable to abandon the
+      machine learning approach, and use deterministic algorithms based on rules justified by industry knowledge or
+      legislation [1].</p>
+    <p>Nevertheless, it is too tempting to access the
+      capabilities of machine learning algorithms that can offer high accuracy. We can talk about the trade-off
+      between accuracy and explainability. This trade-off consists in discarding more complex models such as neural
+      networks for simpler algorithms that can be explained.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/model-interpret.png" alt="" /><em>As described in [2]
+        relation between interpretability and accuracy of the
+        model. For some models improvements can be made towards a more interpretable or more relevant model.</em></span>
+    <p>To achieve these goals, a new field has
+      emerged: XAI (Explainable Artificial Intelligence), which aims to produce algorithms that are both powerful
+      and explainable.</p>
+    <p>Many frameworks have been proposed to help explain
+      non-transparent algorithms. A very good presentation of these methods can be found in the Cloudera white paper
+      [3].</p>
+    <p>In this article we will deal with one of the most
+      used frameworks: SHAP.</p>
+    <h4>XAI, who’s it for?</h4>
+    <p>Different profiles interested in expainability or
+      interpretability have been identified:</p>
+    <ul>
+      <li>Business expert/model user — in order to trust
+        the model, understand the causality of the prediction</li>
+      <li>Regulatory bodies to certify compliance with
+        the legislation, auditing</li>
+      <li>Managers and executive board to assess
+        regulatory compliance, understand enterprise AI applications</li>
+      <li>Users impacted by model decisions in order to
+        understand the situation, verify decisions</li>
+      <li>Data scientist, developer, PO to ensure/improve
+        product performance, find new features, explain functioning/predictions to superiors</li>
+    </ul>
+    <p>In order to make explainability accessible to
+      people with low technical skills, first of all, the creator: a data scientist/developer must be comfortable
+      with the tools of explainability.</p>
+    <p>The data scientist will use them above all to
+      understand and improve his model and then to communicate with his superiors and regulatory
+      bodies.<br>Recently, explainability tools have become more and more accessible.</p>
+    <p>For example, <a href="https://www.dataiku.com/" data-href="https://www.dataiku.com/"
+        class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Dataiku </a>— ML’s platform — has added
+      in its latest version 7.0 published on March 2, 2020
+      explainability tools: Shapley values and “The Individual Conditional Expectation” (ICE).</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/dataiku.png" alt="" /><em>Dataiku prediction
+        studio</em></span>
+    <p><a href="https://azure.microsoft.com/en-us/services/machine-learning/">Azure ML</a> proposes its own version
+      of Shap and alternative tools adding interactive <a
+        href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-aml">dashboards</a>.
+    </p>
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/azure.png" alt="" /><em>Azure ML interpretability
+        dashboard</em></span>
+
+    <p>There are also open-source webapps such as this
+      one described in the medium article [4] that facilitate the exploration of the SHAP library.</p>
+    <div><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f">Understand
+        the machine learning Blackbox with ML
+        interpreter</strong><br><em class="markup--em markup--mixtapeEmbed-em">There are dangers in having models
+          running the world and making decisions from hiring to criminal justice</em>towardsdatascience.com</a><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"></a>
+    </div>
+    <div></br></br></div>
+    <p>These tools, very interesting to get a
+      quick overview of interpretation, do not necessarily give an understanding of the full potential of the SHAP
+      library. Few allow to explore interaction values or to use different background or display sets.</p>
+    <p>I investigated the SHAP framework and I present you
+      my remarks and the usage of less known features, available in the official version of the library in open
+      source. I also propose some interactive visualizations easy to integrate in your projects.</p>
+    <h3>Explainability — the practice</h3>
+    <p>Most data scientists have already heard of the SHAP
+      framework.<br>In this post, we won’t explain in detail how the calculations behind the library are done. Many
+      resources are available online such as the SHAP documentation [5], publications by authors of the library
+      [6,7], the great book “Interpretable Machine Learning” [8] and multiple medium articles [9,10,11].</p>
+    <p>In summary, Shapley’s values calculate the
+      importance of a feature by comparing what a model predicts with and without this feature. However, since the
+      order in which a model sees the features can affect its predictions, this is done in all possible ways, so
+      that the features are compared fairly. This approach is inspired by game theory.</p>
+    <p>Having worked with many clients, for example in the
+      banking and insurance sectors, one can see that their data scientists are struggling to exploit the full
+      potential of SHAP. They don’t know how this tool could really be useful for understanding a model and how to
+      use it to go beyond simply extracting the importance of features.</p>
+    <blockquote>The devil is in the detail
+    </blockquote>
+    <p>SHAP comes with a set of visualizations
+      that are quite complex and not always intuitive, even for a data scientist.</p>
+    <p>On top of that, there are several technical nuances
+      to be able to use SHAP with your data. Francesco Porchetti’s blog article [12] expresses some of these
+      frustrations by exploring the SHAP, <a href="https://github.com/marcotcr/lime">LIME</a>, <a
+        href="https://github.com/SauceCat/PDPbox" data-href="https://github.com/SauceCat/PDPbox">PDPbox </a>(PDP and
+      ICE) and <a
+        href="https://eli5.readthedocs.io/en/latest/autodocs/sklearn.html#module-eli5.sklearn.permutation_importance">ELI5
+      </a>libraries.</p>
+    <p><strong><em>At Saegus, I worked on a course which aims to give more clarity to the
+          SHAP framework and to facilitate the use of this tool.</em></strong></p>
+    <p>In this post I would like to share with you some observations collected during that process.</p>
+    <p>SHAP is used to explain an existing model. Taking a
+      binary classification case built with a sklearn model. We train, tune and test our model. Then we can use our
+      data and the model to create an additional SHAP model that explains our classification model.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/shap.png" alt="" /><em>Image source:
+        SHAP github</em></span>
+    <h4>Vocabulary</h4>
+    <p>It is important to understand all the bricks that make up a SHAP explanation.</p>
+    <p>Often, by using default values for parameters, the complexity of the choices we make remains obscure.</p>
+    <p><strong>global explanations<br></strong>explanations of how the model works from a general point of view</p>
+    <p><strong>local explanations</strong><br>explanations of the model for a sample (a data point)</p>
+    <p><strong>explainer </strong>(shap.explainer_type(params))<br>type of
+      explainability algorithm to be chosen according to the model used.</p>
+    <p>The parameters are different for each type of model. Usually, the model and training data must be provided, at a
+      minimum.</p>
+    <p><strong>base value</strong> (explainer.expected_value)<br><em>E(y_hat)</em> is “the value
+      that would be predicted if we didn’t know any features of the current output” is the <em>mean(y_hat)</em>
+      prediction for the training data set or the background set.
+      We can call it “reference value”, it’s a scalar (<em>n</em>).</p>
+    <p>It’s important to choose your background set carefully — if we have the unbalanced training set this will result
+      in a base value placed among the majority
+      of samples. This can also be a desired effect: for example if for a bank loan we want to answer the question:
+      “how is the customer in question different from customers who have been approved for the loan” or “how is my
+      false positive different from the true positives”.</p>
+    {% highlight python %}
+    # equilibrated case
+    background = X.sample(1000) #X is equilibrated
+    # background used in explainer defines base value
+    explainer = shap.TreeExplainer(xgb_model,background,model_output="raw" )
+    shap_values = explainer.shap_values(X)
+    # background used in the plot, the points that are visible on the plot
+    shap.summary_plot(shap_values,background, feature_names=background.columns)
+    {% endhighlight %}
+    {% highlight python %}
+
+    # base value shifted
+    class1 = X.loc[class1,:] #X is equilibrated
+    # background from class 1 is used in explainer defines base value
+    explainer = shap.TreeExplainer(xgb_model,class1,model_output="raw" )
+    shap_values = explainer.shap_values(X)
+    # points from class 0 is used in the plot, the points that are visible on the plot
+    shap.summary_plot(shap_values,X.loc[class0,:], feature_names=X.columns)
+    {% endhighlight %}
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/background-shap.png" alt="" /><em>Selecting the
+        background dataset changes the question answered by
+        shap values.</em></span>
+    <p>SHAPley values</strong> (explainer.shap_values(x))<br>the average
+      contribution of each feature to each prediction for each sample based on all possible features. It is a
+      (<em>n,m</em>) <em>n </em>— samples, <em>m </em>— features matrix that represents the contribution of each feature
+      to
+      each sample.</p>
+    <p><strong>output value</strong> (for a sample)<br>the value predicted by the
+      algorithm (the probability, logit or raw output values of the model)</p>
+    <p><strong>display features</strong> (<em>n
+      </em>x <em>m</em>)<br>a matrix of original values — before
+      transformation/encoding/engineering of features etc. — that can be provided to some graphs to improve
+      interpretation. Often overlooked and essential for interpretation.</p>
+    <p>____</p>
+    <p><strong>SHAPley values</strong></p>
+    <p>Shapley values remain the central element. Once we
+      realize that this is simply a matrix with the same dimensions as our input data and that we can analyze it in
+      different ways to explain the model and not only. We can reduce its dimensions, we can cluster it, we can use
+      it to create new features. An interesting exploration described in the article [12] aims at improving anomaly
+      detection using auto encoders and SHAP. The SHAP library proposes a rich but not exchaustive exploration
+      through visualizations.</p>
+    <h4>Visualizations</h4>
+    <p>The SHAP library offers different visualizations. A
+      good explanation on how to read the colors of the summary plot can be found in this medium article [14].</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/shap-global.png" alt="" /><em>A summary of
+        graphical visualizations to analyze global explanations</em></span>
+    <p><strong>The summary plot</strong> shows the most important features and the
+      magnitude of their impact on the model. It can take several graphical forms and for the models explained by
+      TreeExplainer we can also observe the<strong><em> interaction values </em></strong>using the “compact dot” with
+      shap_interaction_values in input.</p>
+    <p><strong>The
+        dependency plot</strong> allows to analyze the features two by two by suggesting a possibility to observe
+      the interactions. The scatter plot represents a dependency between a feature(x) and the shapley values (y)
+      colored by a second feature(hue).</p>
+    <p>On a personal note, I find that an observation of a
+      three-factor relationship at the same time is not intuitive for the human brain (at least mine). I also doubt
+      that an observation of dependency by observing colours can be scientifically accurate. Shap can give us an
+      interaction relationship that is calculated as a correlation between the shapley values of the first feature
+      and the values of the second feature. If possible (for TreeExplainer) it makes more sense to use the shapley
+      interaction values to observe interactions.</p>
+    <figure>
+      <script src="https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js"></script>
+      <figcaption class="imageCaption">Snippet code to reproduce my dependence plot variant.</figcaption>
+    </figure>
+    <p>I propose an interactive variant of dependency
+      plot that allows to observe the relationship between a feature(x), the shapley values (y) and the prediction
+      (histogram colors). What seems important to me in this version is the possibility to display on the graph the
+      original values (Income in k USD) instead of the normalized space used by the model.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/my-dep-plot.png" alt=""/><em>My variant of dependence
+        plot</em></span>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/shap-local.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+    <p>There are three alternatives for the visualization of explanations of a sample: force plot, decision plot and
+      waterfall plot.</p>
+    <p>For a sample, these three representations are
+      redundant, they represent the information in a very similar way. At the same time, some elements of these
+      graphs are complementary. By putting the three side by side, I have the impression to understand the result in
+      a more intuitive way. The force plot is good to see where the “output value” fits in relation to the “base
+      value”. We also see which features have a positive (red) or negative (blue) impact on the prediction and the
+      magnitude of this impact. The water plot also allows us to see the amplitude and the nature of the impact of a
+      feature with its quantification. It also allows to see the order of importance of the features and the values
+      taken by each feature for the studied sample. The Decision plot makes it possible to observe the amplitude of
+      each change, “a trajectory” taken by a samplefor the values of the displayed features.</p>
+    <p>By using force plot and decision plot we can
+      represent several samples at the same time.</p>
+    <p>The force plot for a set of samples can be compared
+      to the last level of a dendrogram. The samples are grouped by similarity or by selected feature. In my
+      opinion, this graph is difficult to read for a random sample. It is much more meaningful if we represent the
+      contrasting cases or with a hypothesis behind.</p>
+    <p>The decision plot, for a set of samples, quickly
+      becomes cumbersome if we select too many samples. It is very useful to observe a ‘trajectory deviation’ or
+      ‘diverging/converging trajectories’ of a limited group of samples.</p>
+    <h4>Explainers</h4>
+    <p>Explainers are the models used to calculate shapley
+      values. The diagram below shows different types of Explainers.</p>
+    <p>The choice of Explainers depends mainly on the
+      selected learning model. For linear models, the “Linear Explainer” is used, for decision trees and “set” type
+      models — “TreeExplainer”. “Kernel Explainer” is slower than the above mentioned explainers.</p>
+    <p>In addition the “Tree Explainer” allows to display
+      the interaction values (see next section). It also allows to transform the model output into probabilities or
+      logloss, which is useful for a better understanding of the model or to compare several models.</p>
+    <p>The Kernel Explainer creates a model that
+      substitutes the closest to our model. Kernel Explainer can be used to explain neural networks. For deep
+      learning models, there are the Deep Explainer and the Grandient Explainer. For this paper we have not
+      investigated the explainability of neural networks.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/explainer.png" alt="" /><em>a summary of Explainer types
+        in the SHAP library</em></span>
+    <h4>Shapley values of interactions</h4>
+    <p>One of the properties that allows to go further in
+      the analysis of a model that can be explained with the “Tree Explainer” is the calculation of shapley values
+      of interactions.</p>
+    <p>These values make it possible to quantify the impact
+      of an interaction between two features on the prediction for each sample. As the matrix of shapley values has
+      two dimensions (samples x features), the interactions are a tensor with three dimensions (samples x features x
+      features).</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/interactions-1.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/interactions-2.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/interactions-3.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+
+    <p><strong>Here’s how interaction values help interpret a binary classification
+        model.</strong></p>
+    <p>I used a Kaggle [15] dataset that represents a
+      client base and the binary dependent feature: did the client accept the personal loan? NO/YES (0/1).</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/table.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+
+    <p>I’ve trained several models, including an
+      xgboost model that we treated with the Tree Explainer.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/sklearn-model.png" alt="" /><em>a summary of graphical
+        visualizations to analyze local explanations</em></span>
+
+    <p>The background dataset was balanced and
+      represented 40% of the dataset.</p>
+    {% highlight python %}
+    # xgb - traned model
+    # X_background - background dataset
+    explainer_raw = shap.TreeExplainer(xgb,X_background, model_output="raw", feature_perturbation="tree_path_dependent"
+    )
+    # project data point of background datasetshap_values = explainer_raw.shap_values(X_background)
+    # obtain interaction values
+    shap_interaction_values = explainer_raw.shap_interaction_values(X_background)
+    # dimensions
+    shap_values.shape
+    >>>(2543, 16)
+    shap_interaction_values.shape
+    >>>(2543, 16, 16)
+    shap.summary_plot(shap_interaction_values,
+    X_background, plot_type="compact_dot")
+    {% endhighlight %}
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/summary-plot.png" alt="" /><em>Summary plot with
+        interactions</em></span>
+
+    <p>To better explore interactions, a heatmap can be very useful.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/histogram.png" alt="" /><em>Histogram of interaction
+        values</em></span>
+    <p>In the Summary_plot one can observe the
+      importance of features and the importance the interactions. The interactions appear in double which confuses a
+      little the reading.</p>
+    <p>In the histogram, we observe directly the
+      interactions. The strongests of them of being: Income-Education, Income — Family, Income — CCAvg and
+      Family-Education, Income-Age.</p>
+    <p>Then I investigated the interactions two by
+      two.<br>To understand the difference between a dependency_plot and a dependency_plot of interactions here are
+      the two:</p>
+
+    {% highlight python %}
+    # dependence_plot classique
+    shap.dependence_plot("Age", shap_values, features= X_background, 
+    display_features=X_background_display, interaction_index="Income")
+    {% endhighlight %}
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/dep-plot.png" alt="" /></span>
+    {% highlight python %}
+    # dependence_plot des interactions
+    shap.dependence_plot(("Age","Income"), shap_interaction_values, features=
+    X_background,display_features=X_background_display)
+    {% endhighlight %}
+    <span class="image fit"><img src="{{ site.baseurl }}/images/interaction-dep-plot.png" alt="" /></span>
+
+    <p>Even when using the ‘display_features’
+      parameter, the Age and Income values are displayed in the transformed space.</p>
+    <p>For this reasons I offer an interactive version,
+      which displays the non-transformed values.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/interactive-dep-plot.png" alt="" /></span>
+
+    <p>And here is the code to reproduce this plot:
+    </p>
+    <figure>
+      <script src="https://gist.github.com/UrszulaCzerwinska/b78e85c6e1795d949321209cbe41587a.js"></script>
+    </figure>
+    <p>Here we have the strongest interactions:</p>
+    <p>Income — Education</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/income-education.png" alt="" /></span>
+
+    <p>In this graph, we notice that with an Education
+      level 1 (undergrad), low income (under 100 k USD) is an encouraging factor to take a credit, and high income
+      (over 120 k USD) is an inhibiting interaction.<br>For individuals with Education 2 &amp; 3 (graduated &amp;
+      advanced/professional), the interaction effect is slightly lower and opposite to that for Education == 1.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/income-family.png" alt="" /></span>
+
+    <p>For the features “Family” and “number of
+      people” in the household, the interaction is positive when income is low (below USD 100k) and the family has
+      1–2 members. For higher incomes (&gt; 120 k USD), for family with 1–2 members has a negative effect. The
+      opposite is true for families of 3–4 people.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/income-ccavg.png" alt="" /></span>
+
+    <p>The interaction between income and credit card
+      average spending is more complex. For low income (&lt;100 k USD) and low CCAvg (&lt;4 k USD) the interaction
+      has a negative effect, for income between 50 and 110 k USD and CCAvg 2–6 k USD the effect is strongly
+      positive, this could define a potential target for credit canvassing along these two axes. For high incomes
+      (&gt; 120 k USD), the low CCAvg has a positive impact on the prediction of class 1, high CCAvg has a small
+      negative effect on the predictions, the medium CCAvg has a stronger negative impact.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/family-education.png" alt="" /></span>
+    <p>The interaction between two features is a
+      little less readible. For a family of 1 and 2 members with “undergrad” education, the interaction has a
+      negative impact. For a family of 3–4 members the effect is the opposite.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/income-age.png" alt="" /></span>
+
+    <p>For low incomes (&lt; 70k USD),
+      impact changes linearly with age, the higher the age, the more the impact varies positively. For high incomes
+      (&gt;120k USD), the interaction impact is lower, at middle age (~40 years) the impact is slightly positive, at
+      low age the impact is negative and for age &gt;45 the impact is neutral.</p>
+    <p>These findings would be more complicated to
+      interpret if the values of the features had not corresponded to original values. For instance, speaking of age
+      or income in negative in units. Therefore, representing explanations in an understandable dimension
+      facilitates interpretation.</p>
+    <h4>Compare models</h4>
+    <p>In some situations, we may want to compare the
+      predictions of different models for the same samples. Understand why one model classifies the sample correctly
+      and the other one does not.<br>To start, we can display the summary plots for each model, look at the
+      importance of features and the shapley value distributions. This gives a first general idea.</p>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/tree-explainer.png" alt="" /></span>
+
+    <p>Decision plot allows to compare on the same
+      graph the predictions of different models for the same sample.<br>You just have to create an object that
+      simulates multiclass classification.</p>
+    {% highlight python %}
+    # we have tree models : xgb, gbt, rf
+    # for each model we get an explainer(*_explainer), probabilities (*_probs), predictions (*_pred) and shapley
+    values(*_values)
+    #xgb
+    xgb_explainer = shap.TreeExplainer(xgb, X_background, model_output="probability",
+    feature_perturbation="interventional")
+    xgb_values = xgb_explainer.shap_values(X_background)
+    xgb_probs = xgb.predict_proba(pipeline_trans.transform(x_background))
+    xgb_pred = xgb.predict(pipeline_trans.transform(x_background))
+    # rf
+    rf_explainer = shap.TreeExplainer(rf, X_background, model_output="probability",
+    feature_perturbation="interventional")
+    rf_values = rf_explainer.shap_values(X_background)
+    rf_probs = rf.predict_proba(pipeline_trans.transform(x_background))
+    rf_pred = rf.predict(pipeline_trans.transform(x_background))
+    # gbt
+    gbt_explainer = shap.TreeExplainer(gbt, X_background, model_output="probability",
+    feature_perturbation="interventional")
+    gbt_values = gbt_explainer.shap_values(X_background)
+    gbt_probs = gbt.predict_proba(pipeline_trans.transform(x_background))
+    gbt_pred = gbt.predict(pipeline_trans.transform(x_background))
+    ########
+    # we make a list of model explaners
+    base_values = [xgb_explainer.expected_value, rf_explainer.expected_value[1], gbt_explainer.expected_value]
+    shap_values = [xgb_values, rf_values[1], gbt_values]
+    predictions = [xgb_probs,rf_probs,gbt_probs]
+    labels = ["xgb", "rf", "gbt"]
+    # index of a sample
+    # Plot
+    idx = 100
+    shap.multioutput_decision_plot(base_values, shap_values, idx,
+    feature_names=X_background.columns.to_list(),legend_labels=labels, legend_location='lower right')
+    {% endhighlight %}
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/model-comparison.png" alt="" /></span>
+
+    <p>The only difficulty consists in checking the
+      dimensions of shapley values because for some models, shapley values are calculated for each class, in the
+      case of the binary classification (class 0 and 1), while for others we obtain a single matrix which
+      corresponds to class 1. In our example, we select a second matrix (index 1) for random forest.</p>
+    <h4>Simulations</h4>
+    <p>By default SHAP does not contain functions that
+      make it easier to answer the “What if?” question. “What if I could earn an extra 10K USD a year, would my
+      credit be extended?”<br>Nevertheless, it is possible to run the simulations by varying a feature and
+      calculating hypothetical shapley values.</p>
+    {% highlight python %}
+    explainer_margin_i = shap.TreeExplainer(xgb,X_background, model_output="raw", 
+    feature_perturbation="interventional")
+    idx = 100
+    rg = range(1, 202, 10)
+    r, R, hypothetical_shap_values, hypothetical_predictions, y_r = 
+    simulate_with_shap(x_background, 100, "Income", rg, explainer_margin_i, 
+    pipeline_trans=pipeline_trans)
+    {% endhighlight%}
+    <p>I created a `simulate_with_shap` function that
+      simulates different values of the feature and calculates the hypothetical shapley values.</p>
+    <figure>
+      <script src="https://gist.github.com/UrszulaCzerwinska/c324a8ec8e37ebe4758f4affe52456be.js"></script>
+    </figure>
+    <span class="image fit"><img src="{{ site.baseurl }}/images/simulation.png" alt="" /></span>
+
+    <p>This simulation allows us to see for the
+      selected sample, if we freeze all the features apart from Income, how we could change the prediction and what
+      the shapley values would be for these new values.</p>
+    <p>It is possible to simulate the changes ‘feature by
+      feature’, it would be interesting to be able to make several changes simultaneously.</p>
+    <h3>Final note</h3>
+    <p>AI algorithms are taking up more and more space in
+      our lives. The explanability of predictions is an important topic for data scientists, decision-makers and
+      individuals who are impacted by predictions.</p>
+    <p>Several frameworks have been proposed in order to
+      transform non-explainable models into explainable ones. One of the best known and most widely used frameworks
+      is SHAP.</p>
+    <p>Despite very good documentation, it is not clear how
+      to exploit all its features in depth.</p>
+    <p>I have proposed some simple graphical enhancements
+      and tried to demonstrate the usefulness of less known and not understood features in most standard uses of
+      SHAP.</p>
+    <h3>Acknowledgements</h3>
+    <p>I would like to thank the Saegus DATA team who
+      participated in this work with good advice, in particular Manager Fréderic Brajon and Senior Consultant
+      Manager Clément Moutard.</p>
+    <h3>Bibliography</h3>
+    <p>[1] Stop Explaining Black Box Machine Learning
+      Models for High Stakes Decisions and Use Interpretable Models Instead; Cynthia Rudin <a
+        href="https://arxiv.org/pdf/1811.10154.pdf" data-href="https://arxiv.org/pdf/1811.10154.pdf"
+        target="_blank">https://arxiv.org/pdf/1811.10154.pdf</a></p>
+    <p>[2] Explainable Artificial Intelligence (XAI):
+      Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI; Arrietaa et al. <a
+        href="https://arxiv.org/pdf/1910.10045.pdf" data-href="https://arxiv.org/pdf/1910.10045.pdf"
+        target="_blank">https://arxiv.org/pdf/1910.10045.pdf</a></p>
+    <p>[3] Cloudera Fast Forward Interpretability: <a
+        href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        data-href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        target="_blank">https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282</a>
+    </p>
+    <p>[4] <a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        data-href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        target="_blank">https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f</a>
+    </p>
+    <p>[5] <a href="https://github.com/slundberg/shap" data-href="https://github.com/slundberg/shap"
+        target="_blank">https://github.com/slundberg/shap</a></p>
+    <p>[6] <a href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        data-href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        target="_blank">http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions</a>
+    </p>
+    <p>[7] <a href="https://www.nature.com/articles/s42256-019-0138-9"
+        data-href="https://www.nature.com/articles/s42256-019-0138-9"
+        target="_blank">https://www.nature.com/articles/s42256-019-0138-9</a></p>
+    <p>[8] <a href="https://christophm.github.io/interpretable-ml-book/"
+        data-href="https://christophm.github.io/interpretable-ml-book/"
+        target="_blank">https://christophm.github.io/interpretable-ml-book/</a></p>
+    <p>[9] <a
+        href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        data-href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        target="_blank">https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30</a>
+    </p>
+    <p>[10] <a href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        data-href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        target="_blank">https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83</a>
+    </p>
+    <p>[11] <a
+        href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        data-href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        target="_blank">https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22</a>
+    </p>
+    <p>[12] <a href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        data-href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        target="_blank">https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/</a></p>
+    <p>[13] Explaining Anomalies Detected by Autoencoders
+      Using SHAP; Antwarg et al. <a href="https://arxiv.org/pdf/1903.02407.pdf"
+        data-href="https://arxiv.org/pdf/1903.02407.pdf" target="_blank">https://arxiv.org/pdf/1903.02407.pdf</a></p>
+    <p>[14] <a
+        href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        data-href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        target="_blank">https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12</a>
+    </p>
+    <p></p>[15] <a href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      data-href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      target="_blank">https://www.kaggle.com/itsmesunil/bank-loan-modelling</a></p>
+    </div>
+    </div>
+  </section>
+</section>
+
+</html>
