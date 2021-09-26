@@ -1,5 +1,5 @@
 ---
-priority: 0.9
+priority: 0.8
 title: Named Entity Recognition - keywords detection from Medium articles
 excerpt: Demo for EGG Paris 2019 conference - SAEGUS
 categories: works
@@ -189,7 +189,8 @@ Our Saegus Showroom including the functional webapp is coming soon. Feel free to
 This article is a result of a teamwork realized at [Saegus](http://saegus.com/fr/). Published originally in French at [Medium](https://medium.com/data-by-saegus/ner-medium-articles-saegus-7ffec0f3188c).
 
 
-
+<section>
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script> 
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
- 
+<section>
+

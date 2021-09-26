@@ -5,8 +5,8 @@
     <description>Science &amp;#x2192; Data Science</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Sep 2021 19:34:05 +0200</pubDate>
-    <lastBuildDate>Sun, 26 Sep 2021 19:34:05 +0200</lastBuildDate>
+    <pubDate>Mon, 27 Sep 2021 00:02:38 +0200</pubDate>
+    <lastBuildDate>Mon, 27 Sep 2021 00:02:38 +0200</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -25,6 +25,9 @@
         &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
         If you are not redirected automatically, follow this &lt;a href=&apos;https://github.com/Cour-de-cassation/moteurNER&apos;&gt;link to example&lt;/a&gt;.
     &lt;/body&gt;
+      &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
         <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
@@ -597,6 +600,9 @@
     &lt;/div&gt;
     &lt;/div&gt;
   &lt;/section&gt;
+  &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;
 
 &lt;/html&gt;</description>
@@ -782,12 +788,12 @@ We have succeeded! 🚀&lt;/p&gt;
 
 &lt;p&gt;This article is a result of a teamwork realized at &lt;a href=&quot;http://saegus.com/fr/&quot;&gt;Saegus&lt;/a&gt;. Published originally in French at &lt;a href=&quot;https://medium.com/data-by-saegus/ner-medium-articles-saegus-7ffec0f3188c&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+&lt;section&gt;
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+&lt;section&gt;
 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
+&lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
         <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
@@ -846,6 +852,10 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Please contact us if you want to host a meetup or sponsor a buffet!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/wihads3.jpeg&quot; alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
+
+  &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
 &lt;/section&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
@@ -1085,6 +1095,9 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;body&gt;
         &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
         If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/UCzPhDThesis/&apos;&gt;link to example&lt;/a&gt;.
+          &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
@@ -1119,6 +1132,9 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;body&gt;
         &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
         If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/DeconICA/&apos;&gt;link to example&lt;/a&gt;.
+          &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+ 
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
