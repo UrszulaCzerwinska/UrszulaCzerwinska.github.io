@@ -1,30 +1,19 @@
-# Welcome to Jekyll!
-
-
-# In addition to these settings, there is a file _data/tokens-template.yml
-# that you'll want to customize for your site. It's named 'tokens' because
-# that was it's original purpose, but because tokens.yml is .gitexcluded, it's
-# a good place to store your site-specific data that you'd rather not have
-# forked or cloned. Of course, that means you'd want to back it up elsewhere.
-
-# Also, for your post bylines, add author info for yourself in `_data/authors.yml`.
-# (Using that method instead of site.owner, in case your posts get cloned with your repo.)
-
 # Site settings
-title: Urszula Czerwinska
-description: Science &#x2192; Data Science
+title: Personal website of Urszula Czerwinska, Deep Learning Engineer,  Data Scientist
+description: Blog and personal journey to Data Science, Machine Learning, Deep Learning, Artificial Intelligence | How to become a Data Scientist | How to become a Machine Learning Engineer | My journey from PhD to Data Scientist
+tagline: A blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence
 owner:
   name: Urszula Czerwinska # or company name
   email: urszula.czerwinska@cri-paris.com
   url: http://urszulaczerwinska.github.io
-first_published: 2016 # if migrating another site, the year of your first publish
-baseurl: "" # the subpath of your site, e.g. /blog
+first_published: 2016
+baseurl: ""
 url: "http://urszulaczerwinska.github.io" # the base hostname & protocol for your site
 
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Welcome 
+  title: Welcome
   text: to the world of Data & Science
 # - title for your blog's featured posts
 features-title: Recent posts
@@ -37,54 +26,13 @@ social:
   twitter: https://twitter.com/ulalaparis
   github: https://github.com/urszulaczerwinska
   linkedin-square: https://linkedin.com/in/urszulaczerwinska
-  #facebook-official: https://facebook.com/gary.faircloth
-  #google-plus-square: https://plus.google.com/u/0/+GaryFaircloth
   email: mailto:ulcia.liberte@gmail.com
-  #flickr:
-  #instagram:
-  #youtube-square:
-  #spotify:
-  #stack-overflow:
-  #vimeo:
-  #reddit:
-  #stubleupon:
-  #delicious:
-  #pied-piper:
-  #digg:
-  #soundcloud:
-  #deviantart:
-  #angellist:
-  #tumblr-square:
-  #stackexchange:
-  #weibo:
-  #trello:
-  #foursquare:
-  #linux:
-  #bitbucket-square:
-  #vk:
-  #slack:
-  #vine:
-  #weixin:
-  #yelp:
-  #skyatlas:
-  #leanpub:
-  #connectdevelop:
-  #ils:
-  #forumbee:
-  #tripadvisor:
-  #amazon:
 
-# if you use this repo's `ruby compose.rb` script to initiate new posts, put the
-# command to invoke your editor here. (I didn't spend time dealing with spaces
-# and full paths of the various OSes in compose.rb. For my Windows
-# environment, I just put a subl.cmd file in my PATH that points to the full
-# path to Sublime's subl.exe.) Also, put your most common post extension.
 compose:
   editor: subl
   extension: md
 
-# choose where to put back and next links:
-# top, bottom, both, none
+
 navlinks: bottom
 
 # expecting more works? mark your list as in-progress
@@ -116,6 +64,9 @@ defaults:
     values:
       layout: post
 
+plugins:
+  - jekyll-seo-tag
 # to initialize arrays in assignments (assign myarr = site.empty_array)
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
+

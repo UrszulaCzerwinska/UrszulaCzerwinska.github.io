@@ -344,10 +344,10 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: justify;
     	text-justify: inter-word;
     	font-size: 90% !important;
-		
+
 	}
 
-	
+
 
 	header {
 		p {
@@ -356,7 +356,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			top: -0.25em;
 		}
 
-		
+
 
 		.excerpt-inline {
 			font-size: _font(hdr-size-xxsmall);
@@ -611,7 +611,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		margin: 0 7px 17px 0;
 		padding: 5px 10px;
 	}
-	
+
 	/************************************************
 	/* Affichage des compétences sous forme de barres
 	*************************************************/
@@ -619,7 +619,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		margin-bottom: 21px;
 		position: relative;
 	}
-	
+
 	.competences .barres li:after {
 		background: #e1e1e1;
 		bottom: -4px;
@@ -629,7 +629,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		position: absolute;
 		width:100%;
 	}
-	
+
 	.competences .barres li span {
 		background: #33a4c9;
 		bottom: -4px;
@@ -641,7 +641,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		width: inherit;
 		z-index: 1;
 	}
-	
+
 
 
 /* Icon */
@@ -932,8 +932,8 @@ $baseurl: '{{ site.baseurl }}/images';
 					background-color: _palette(border-bg);
 				}
 
-				
-				
+
+
 			}
 		}
 
@@ -958,9 +958,9 @@ $baseurl: '{{ site.baseurl }}/images';
 		tfoot {
 			border-top: solid 2px _palette(border);
 		}
-		
-		
-		
+
+
+
 		&.alt {
 			border-collapse: separate;
 
@@ -977,7 +977,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 
 					}
-					
+
 					&:first-child {
 						td {
 							border-top-width: 1px;
@@ -997,12 +997,12 @@ $baseurl: '{{ site.baseurl }}/images';
 		&.special {
 			border-collapse: collapse !important;
 /*			border: 1px solid #fafafa !important;
-*/			
+*/
 			tbody {
 				tr {
 					border-collapse: collapse !important;
 /*					border: 1px solid #fafafa !important;
-		
+
 */					padding:0 !important;
 
 				td {
@@ -1012,14 +1012,14 @@ $baseurl: '{{ site.baseurl }}/images';
 						background: #fafafa !important;
 						border: 1px solid #fafafa !important;
 						padding: 0.5em !important;
-					
 
-						
+
+
 
 
 					}
-				
-					
+
+
 				}
 			}
 
@@ -1058,7 +1058,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding-left: 50%;
 
 		}
-		
+
 	}
 
 /* Button */
@@ -1674,6 +1674,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		top: 0;
 		width: 20em;
 		z-index: _misc(z-index-base) + 2;
+
 
 		ul {
 			list-style: none;
