@@ -23,7 +23,9 @@ closing-para: Feel free to get in touch!
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
-  twitter: https://twitter.com/ulalaparis
+  twitter:
+    username: ulalaparis
+    card: summary
   github: https://github.com/urszulaczerwinska
   linkedin-square: https://linkedin.com/in/urszulaczerwinska
   email: mailto:ulcia.liberte@gmail.com
@@ -47,6 +49,7 @@ permalink: /:categories/:title.html
 markdown: kramdown
 #sass:
 #  style: compressed
+
 exclude: ['site.bat','compose.rb','README.md']
 include: ['_pages','.htaccess']
 defaults:
@@ -54,15 +57,24 @@ defaults:
       path: _pages
     values:
       layout: page
-      #permalink: /:slug/ # dunna work. See github.com/jekyll/jekyll/issues/2280
+      seo_description_max_words: 200
+      image:
+        path: images/engineering.jpg
+        alt: Personal webpage about Machine Learning, Deep Learning, Data Science
   - scope:
       path: _posts
     values:
       layout: post
+      seo_description_max_words: 200
+      image:
+        path: images/writing.jpeg
+        alt: Creative tech blog writing
   - scope:
       path: _drafts
     values:
       layout: post
+      seo_description_max_words: 200
+
 
 plugins:
   - jekyll-seo-tag
