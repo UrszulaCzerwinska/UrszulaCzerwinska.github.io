@@ -3,10 +3,10 @@
   <channel>
     <title>Urszula Czerwinska</title>
     <description>Science &amp;#x2192; Data Science</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Jul 2024 15:45:16 +0200</pubDate>
-    <lastBuildDate>Fri, 12 Jul 2024 15:45:16 +0200</lastBuildDate>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 07 Aug 2024 11:23:44 +0200</pubDate>
+    <lastBuildDate>Wed, 07 Aug 2024 11:23:44 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -30,8 +30,8 @@
  
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/ner_cc</link>
-        <guid isPermaLink="true">http://localhost:4000/works/ner_cc</guid>
+        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
         
         <category>Machine Learning</category>
         
@@ -607,8 +607,8 @@
 
 &lt;/html&gt;</description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/interpretability-shap</link>
-        <guid isPermaLink="true">http://localhost:4000/works/interpretability-shap</guid>
+        <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>
         
         <category>data science</category>
         
@@ -796,8 +796,8 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/egg_ner</link>
-        <guid isPermaLink="true">http://localhost:4000/works/egg_ner</guid>
+        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
         
         <category>NLP</category>
         
@@ -859,8 +859,8 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;/section&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/wihads</link>
-        <guid isPermaLink="true">http://localhost:4000/works/wihads</guid>
+        <link>http://urszulaczerwinska.github.io/works/wihads</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/wihads</guid>
         
         <category>data science</category>
         
@@ -1072,8 +1072,8 @@ We have succeeded! 🚀&lt;/p&gt;
 
 &lt;/html&gt;</description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/businesslang</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/businesslang</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>
         
         
         <category>thoughts</category>
@@ -1101,8 +1101,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/PhDThesis.html</link>
-        <guid isPermaLink="true">http://localhost:4000/works/PhDThesis.html</guid>
+        <link>http://urszulaczerwinska.github.io/works/PhDThesis.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/PhDThesis.html</guid>
         
         <category>Machine Learning</category>
         
@@ -1138,8 +1138,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/deconica</link>
-        <guid isPermaLink="true">http://localhost:4000/works/deconica</guid>
+        <link>http://urszulaczerwinska.github.io/works/deconica</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
         
         <category>Machine Learning</category>
         
@@ -1273,8 +1273,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 &lt;/html&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/bigdive/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/bigdive/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
         
         
         <category>thoughts</category>
@@ -1417,8 +1417,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 				&lt;/html&gt;
 </description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/jobsCB/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/jobsCB/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
         
         
         <category>thoughts</category>
@@ -1443,8 +1443,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/FromSciencetoDataScience</link>
-        <guid isPermaLink="true">http://localhost:4000/works/FromSciencetoDataScience</guid>
+        <link>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</guid>
         
         <category>Machine Learning</category>
         
