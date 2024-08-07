@@ -2,8 +2,8 @@
 
 # If you want to use Google analytics to monitor your site traffic,
 # register your site https://www.google.com/analytics/standard/
-google-analytics: UA-77911349-1
-
+#google-analytics: UA-77911349-1
+google-analytics: G-FHFCL9KQ5D
 # Specify your mail form action, whether it be cgiemail, PHP, whatever
 #mailaction: <url>
 
@@ -17,7 +17,7 @@ google-analytics: UA-77911349-1
 # image-credit: |
 #   <li><img class="imgref" src="/path/to/images/nicepic.png" />
 #   <a target="_blank" href="http://artistsite.com">Artist</a>,
-#   generous open creative license</li>  
+#   generous open creative license</li>
 
 # Any other site-specific things you'd rather have .gitexcluded
 # ...

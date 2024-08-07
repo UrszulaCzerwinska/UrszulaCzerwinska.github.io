@@ -22,19 +22,19 @@ background-image: ab_bg.png
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
   <script>
-/**
-* Function that tracks a click on an outbound link in Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-* using 'navigator.sendBeacon' in browser that support it.
-*/
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {
-     'transport': 'beacon',
-     'hitCallback': function(){document.location = url;}
-   });
-}
-</script>
+  /**
+  * Function that tracks a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL string
+  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+  * using 'navigator.sendBeacon' in browser that support it.
+  */
+  var trackOutboundLink = function(url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
+  }
+  </script>
 </head>
 <body>
   <div id="main">
@@ -69,17 +69,17 @@ var trackOutboundLink = function(url) {
 
 
 
-img {
-    float: right;
-    margin: 0% 10% 7% 7%;
-}
+    .specificImage {
+        float: right;
+        margin: 0% 10% 7% 7%;
+    }
 
 .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
 
 </style>
 </head>
 
-<p>  <img src="{{ site.baseurl }}/images/ula3.jpg"  width="30%">
+<p>  <img class=specificImage src="{{ site.baseurl }}/images/ula3.jpg"  width="30%">
 </p>
 <!--<img src="https://raw.githubusercontent.com/UrszulaCzerwinska/UrszulaCzerwinska.github.io/master/images/ula.png" align="right" width= "30%" hspace="5%">-->
     <font color="black"><h3>Urszula Czerwinska</h3></font></p>
