@@ -23,9 +23,7 @@ closing-para: Feel free to get in touch!
 
 # on all pages (and the first three you list display with greeting, if included)
 social:
-  twitter:
-    username: ulalaparis
-    card: summary
+  twitter: https://twitter.com/ulalaparis
   github: https://github.com/urszulaczerwinska
   linkedin-square: https://linkedin.com/in/urszulaczerwinska
   email: mailto:ulcia.liberte@gmail.com
