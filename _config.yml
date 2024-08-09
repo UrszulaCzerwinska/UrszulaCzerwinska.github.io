@@ -1,6 +1,6 @@
 # Site settings
-title: Personal website of Urszula Czerwinska, Deep Learning Engineer,  Data Scientist
-description: Blog and personal journey to Data Science, Machine Learning, Deep Learning, Artificial Intelligence | How to become a Data Scientist | How to become a Machine Learning Engineer | My journey from PhD to Data Scientist
+title: Urszula Czerwinska | Data Scientist & Deep Learning Engineer
+description: Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer."
 tagline: A blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence
 owner:
   name: Urszula Czerwinska # or company name
@@ -13,14 +13,13 @@ url: "http://urszulaczerwinska.github.io" # the base hostname & protocol for you
 # on landing page
 # - set the greeting only if you want to display the first green section
 greeting:
-  title: Welcome
-  text: to the world of Data & Science
+  title: Welcome to My Data Science Journey
+  text: Welcome to my personal blog, where I documented my transition from a PhD in Computational Biology to a thriving career in Data Science. Here, you'll find insights on where to learn data science, how data science and machine learning, artificial intelligence are revolutionizing various fields, and explore whether data science can be self-taught, are data science bootcamps or courses worth it. Discover why data science is important in today's world.
 # - title for your blog's featured posts
 features-title: Recent posts
 # - displayed at the bottom
-closing-head: Thanks for visiting
-closing-para: Feel free to get in touch!
-
+closing-head: Thanks for visiting, dear Data Science Lover !
+closing-para: Feel free to get in touch and talk about how deep learning can help your business or solve your problem. Let's connect!
 # on all pages (and the first three you list display with greeting, if included)
 social:
   twitter: https://twitter.com/ulalaparis
@@ -36,7 +35,7 @@ compose:
 navlinks: bottom
 
 # expecting more works? mark your list as in-progress
-works_in_progress: yes
+works_in_progress: no
 
 # If you have custom extensions, specifically includes/_my/custom.scss,
 # set this to yes
@@ -58,7 +57,7 @@ defaults:
       seo_description_max_words: 200
       image:
         path: images/engineering.jpg
-        alt: Personal webpage about Machine Learning, Deep Learning, Data Science
+        alt: Urszula Czerwinska | Data Scientist & Deep Learning Engineer | Data Science Projects | Machine Learning | Deep Learning | Artificial Intelligence | Deep Learning Algorithms in industry
   - scope:
       path: _posts
     values:
@@ -66,7 +65,7 @@ defaults:
       seo_description_max_words: 200
       image:
         path: images/writing.jpeg
-        alt: Creative tech blog writing
+        alt: Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry
   - scope:
       path: _drafts
     values:

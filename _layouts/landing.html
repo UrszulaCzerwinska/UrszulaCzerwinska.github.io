@@ -19,8 +19,8 @@
         <!-- Banner -->
           <section id="banner">
             <div class="inner">
-              <h2>Urszula Czerwinska</h2>
-              <p>Science &#x2192; Data Science</p>
+              <h1>Urszula Czerwinska</h1>
+              <h2>Science &#x2192; Data Science</h2>
               <!--
               <ul class="actions">
                 <li><a href="#" class="button special">Activate</a></li>
@@ -74,8 +74,10 @@
               <div class="content">
                 <a href="{{ my_page.url | prepend:site.baseurl }}">
                 <h2>{{ my_page.title }}</h2>
-                <p>{{ my_page.excerpt markdownify | strip_html | strip_newlines | escape_once }}</p>
-                </a>
+
+                <p>{{ my_page.descritption markdownify | strip_html | strip_newlines | escape_once }}</p>
+
+              </a>
               </div>
             </section>{%
                 endunless %}{%
@@ -89,7 +91,7 @@
             <div class="inner">
               <header class="major">
                 <h2>{{ site.features-title }}</h2>
-                <!-- <p>Blog posts with decent content</p> -->
+                <p>Explore my latest highlights, featuring standout projects and insights on the transition from academia to industry & life of Data Scientist / Deep learning engineer. Whether it’s hands-on work or reflections from the field, these featured posts capture the key moments of my data science journey.</p>
               </header>
               <ul class="features">{%
                 for my_post in site.posts %}{%
