@@ -20,6 +20,16 @@
 </script>
 {% endif %}{%
 if jekyll.environment == "production" %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHFCL9KQ5D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FHFCL9KQ5D');
+  </script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -29,5 +39,26 @@ if jekyll.environment == "production" %}
   ga('create', '{{ site.data.tokens.google-analytics }}', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script type="application/ld+json"> {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "headline": "Urszula Czerwinska | Data Scientist & Deep Learning Engineer",
+  "about": [
+    {"@type": "Thing","name": "Personal website","sameAs": "https://en.wikipedia.org/wiki/Website"},
+    {"@type": "Thing","name": "Deep Learning","sameAs": "https://en.wikipedia.org/wiki/Deep_learning"},
+    {"@type": "Thing","name": "Data Scientist","sameAs": "https://en.wikipedia.org/wiki/Data_science"},
+    {"@type": "Thing","name": "Data","sameAs": "https://en.wikipedia.org/wiki/Data"}
+  ],
+  "mentions": [
+    {"@type": "Thing","name": "Blog","sameAs": "https://en.wikipedia.org/wiki/Blog"},
+    {"@type": "Thing","name": "Machine Learning","sameAs": "https://en.wikipedia.org/wiki/Machine_learning"},
+    {"@type": "Thing","name": "Artificial Intelligence","sameAs": "https://en.wikipedia.org/wiki/Artificial_intelligence"},
+    {"@type": "Thing","name": "PhD","sameAs": "https://en.wikipedia.org/wiki/Doctor_of_Philosophy"},
+    {"@type": "Thing","name": "portfolio","sameAs": "https://en.wikipedia.org/wiki/Business_networking"},
+    {"@type": "Thing","name": "Named Entity Recognition","sameAs": "https://en.wikipedia.org/wiki/Named-entity_recognition"},
+    {"@type": "Organization","name": "cour de cassation","sameAs": "https://en.wikipedia.org/wiki/Court_of_Cassation_(France)"}
+  ]
+}
 </script>
 {% endif %}

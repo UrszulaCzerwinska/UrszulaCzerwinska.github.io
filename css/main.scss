@@ -116,6 +116,16 @@ $baseurl: '{{ site.baseurl }}/images';
 			text-decoration: none;
 		}
 	}
+	h1 {
+		font-size: _font(hdr-size-large);
+		line-height: _font(hdr-lheight-large);
+		letter-spacing: 0.15em;
+
+		@include breakpoint(small) {
+			font-size: _font(hdr-size-large);
+			line-height: _font(hdr-lheight-normal);
+		}
+	}
 
 	h2 {
 		font-size: _font(hdr-size-xlarge);
@@ -1337,7 +1347,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				color: _palette($p, fg-bold);
 			}
 
-			h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5, h6 {
 				color: _palette($p, fg-bold);
 			}
 
@@ -1362,7 +1372,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				}
 
 				&.major {
-					h2, h3, h4, h5, h6 {
+					h1, h2, h3, h4, h5, h6 {
 						border-color: _palette($p, border);
 					}
 
@@ -2050,6 +2060,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 /* Articles */
+
 
 	#standard {
 		> header {

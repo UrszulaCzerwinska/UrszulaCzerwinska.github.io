@@ -79,3 +79,7 @@ plugins:
 # (easier to grok than assign myarr = '' | split',')
 empty_array: []
 
+author:
+  name: "Urszula Czerwinska"
+  description: "Data Scientist & Deep Learning Engineer"
+  url: "https://www.linkedin.com/in/urszula-czerwinska/"

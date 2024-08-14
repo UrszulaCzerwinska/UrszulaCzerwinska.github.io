@@ -1,0 +1,220 @@
+---
+priority: 0.9
+title: paddleocr
+excerpt: an ultimate guide to SHAP library
+permalink: /works/paddleocr
+categories: works
+background-image: engineering.jpg
+tags:
+- data science
+- interpretability
+- XAI
+- machine learning
+author: urszulaczerwinska
+---
+
+
+
+
+<head>
+  <meta name="description"
+    content="Urszula Czerwinska. About me, data science, big data, analytics, PhD">
+
+
+</head>
+
+<body>
+</body>
+<section>
+  <h3>Summary</h3>
+  <p>
+
+  </p>
+
+  <section name="baac" class="section section--body section--first">
+    <p></p>
+
+    <span class="image fit"><img
+        src="{{ site.baseurl }}/images/engineering.jpg" alt=""
+        width=70% /></span>
+
+    <h3></h3>
+    <p></p>
+    <h4></h4>
+    <p></p>
+    <span class="image fit"><img
+        src="{{ site.baseurl }}/images/model-interpret.png" alt="" /><em>As
+        described in [2]
+        relation between interpretability and accuracy of the
+        model. For some models improvements can be made towards a more
+        interpretable or more relevant model.</em></span>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <p></p>
+
+    <span class="image fit"><img src="{{ site.baseurl }}/images/azure.png"
+        alt="" /><em>Azure ML interpretability
+        dashboard</em></span>
+
+    <p>There are also open-source webapps such as this
+      one described in the medium article [4] that facilitate the exploration
+      of the SHAP library.</p>
+    <div><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f">Understand
+        the machine learning Blackbox with ML
+        interpreter</strong><br><em
+          class="markup--em markup--mixtapeEmbed-em">There are dangers in
+          having models
+          running the world and making decisions from hiring to criminal
+          justice </em>towardsdatascience.com</a><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"></a>
+    </div>
+    <div></br></br></div>
+    <blockquote>The devil is in the detail
+    </blockquote>
+
+    {% highlight python %}
+    # equilibrated case
+    background = X.sample(1000) #X is equilibrated
+    # background used in explainer defines base value
+    explainer = shap.TreeExplainer(xgb_model,background,model_output="raw" )
+    shap_values = explainer.shap_values(X)
+    # background used in the plot, the points that are visible on the plot
+    shap.summary_plot(shap_values,background, feature_names=background.columns)
+    {% endhighlight %}
+    {% highlight python %}
+
+    # base value shifted
+    class1 = X.loc[class1,:] #X is equilibrated
+    # background from class 1 is used in explainer defines base value
+    explainer = shap.TreeExplainer(xgb_model,class1,model_output="raw" )
+    shap_values = explainer.shap_values(X)
+    # points from class 0 is used in the plot, the points that are visible on
+    the plot
+    shap.summary_plot(shap_values,X.loc[class0,:], feature_names=X.columns)
+    {% endhighlight %}
+
+    <span class="image fit"><img
+        src="{{ site.baseurl }}/images/background-shap.png"
+        alt="" /><em>Selecting the
+        background dataset changes the question answered by
+        shap values.</em></span>
+
+    <p>____</p>
+
+    <figure>
+      <script
+        src="https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js"></script>
+      <figcaption class="imageCaption">Snippet code to reproduce my dependence
+        plot variant.</figcaption>
+    </figure>
+
+
+    {% highlight python %}
+    # xgb - traned model
+    # X_background - background dataset
+    explainer_raw = shap.TreeExplainer(xgb,X_background, model_output="raw",
+    feature_perturbation="tree_path_dependent"
+    )
+    # project data point of background datasetshap_values =
+    explainer_raw.shap_values(X_background)
+    # obtain interaction values
+    shap_interaction_values =
+    explainer_raw.shap_interaction_values(X_background)
+    # dimensions
+    shap_values.shape
+    >>>(2543, 16)
+    shap_interaction_values.shape
+    >>>(2543, 16, 16)
+    shap.summary_plot(shap_interaction_values,
+    X_background, plot_type="compact_dot")
+    {% endhighlight %}
+
+
+    <h3>Bibliography</h3>
+    <p>[1] Stop Explaining Black Box Machine Learning
+      Models for High Stakes Decisions and Use Interpretable Models Instead;
+      Cynthia Rudin <a href="https://arxiv.org/pdf/1811.10154.pdf"
+        data-href="https://arxiv.org/pdf/1811.10154.pdf"
+        target="_blank">https://arxiv.org/pdf/1811.10154.pdf</a></p>
+    <p>[2] Explainable Artificial Intelligence (XAI):
+      Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI;
+      Arrietaa et al. <a href="https://arxiv.org/pdf/1910.10045.pdf"
+        data-href="https://arxiv.org/pdf/1910.10045.pdf"
+        target="_blank">https://arxiv.org/pdf/1910.10045.pdf</a></p>
+    <p>[3] Cloudera Fast Forward Interpretability: <a
+        href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        data-href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        target="_blank">https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282</a>
+    </p>
+    <p>[4] <a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        data-href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        target="_blank">https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f</a>
+    </p>
+    <p>[5] <a href="https://github.com/slundberg/shap"
+        data-href="https://github.com/slundberg/shap"
+        target="_blank">https://github.com/slundberg/shap</a></p>
+    <p>[6] <a
+        href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        data-href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        target="_blank">http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions</a>
+    </p>
+    <p>[7] <a href="https://www.nature.com/articles/s42256-019-0138-9"
+        data-href="https://www.nature.com/articles/s42256-019-0138-9"
+        target="_blank">https://www.nature.com/articles/s42256-019-0138-9</a>
+    </p>
+    <p>[8] <a href="https://christophm.github.io/interpretable-ml-book/"
+        data-href="https://christophm.github.io/interpretable-ml-book/"
+        target="_blank">https://christophm.github.io/interpretable-ml-book/</a>
+    </p>
+    <p>[9] <a
+        href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        data-href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        target="_blank">https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30</a>
+    </p>
+    <p>[10] <a
+        href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        data-href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        target="_blank">https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83</a>
+    </p>
+    <p>[11] <a
+        href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        data-href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        target="_blank">https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22</a>
+    </p>
+    <p>[12] <a
+        href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        data-href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        target="_blank">https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/</a>
+    </p>
+    <p>[13] Explaining Anomalies Detected by Autoencoders
+      Using SHAP; Antwarg et al. <a href="https://arxiv.org/pdf/1903.02407.pdf"
+        data-href="https://arxiv.org/pdf/1903.02407.pdf"
+        target="_blank">https://arxiv.org/pdf/1903.02407.pdf</a></p>
+    <p>[14] <a
+        href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        data-href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        target="_blank">https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12</a>
+    </p>
+    <p></p>[15] <a href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      data-href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      target="_blank">https://www.kaggle.com/itsmesunil/bank-loan-modelling</a>
+    </p>
+    </div>
+    </div>
+
+    <footer>
+      <p>Exported from <a href="https://medium.com">Medium</a> on July 22,
+        2016.</p>
+      <p><a
+          href="https://medium.com/plos-comp-biol-field-reports-2016/data-and-the-future-of-healthcare-interview-with-phil-bourne-ismb16-db5ab9b296d4">View
+          the original</a></p>
+    </footer>
+    <script type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script>
+    <div class="addthis_inline_share_toolbox"></div>
+
+  </section>

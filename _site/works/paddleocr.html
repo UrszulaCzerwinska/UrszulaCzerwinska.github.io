@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--
+  Original Design: Spectral by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Jekyll build mod and further hacks by @arkadianriver, MIT license
+-->
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>paddleocr</title>
+  <meta name="google-site-verification" content="WrNs4kb-PL779UWOhOTLegwiql-42uVzYDfCoJxQRPs" />
+  <meta name="description" content="an ultimate guide to SHAP library">
+  <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="canonical" href="http://urszulaczerwinska.github.io/works/paddleocr">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="/css/main.css" />
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>paddleocr | Urszula Czerwinska Data Scientist &amp; Deep Learning Engineer</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="paddleocr" />
+<meta name="author" content="Urszula Czerwinska" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="an ultimate guide to SHAP library" />
+<meta property="og:description" content="an ultimate guide to SHAP library" />
+<link rel="canonical" href="http://urszulaczerwinska.github.io/works/paddleocr" />
+<meta property="og:url" content="http://urszulaczerwinska.github.io/works/paddleocr" />
+<meta property="og:site_name" content="Urszula Czerwinska Data Scientist &amp; Deep Learning Engineer" />
+<meta property="og:image" content="http://urszulaczerwinska.github.io/images/writing.jpeg" />
+<meta property="og:image:alt" content="Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-08-23T00:00:00+02:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://urszulaczerwinska.github.io/images/writing.jpeg" />
+<meta name="twitter:image:alt" content="Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry" />
+<meta property="twitter:title" content="paddleocr" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Urszula Czerwinska","url":"http://urszulaczerwinska.github.io"},"dateModified":"2023-08-23T00:00:00+02:00","datePublished":"2023-08-23T00:00:00+02:00","description":"an ultimate guide to SHAP library","headline":"paddleocr","image":{"alt":"Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry","url":"http://urszulaczerwinska.github.io/images/writing.jpeg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://urszulaczerwinska.github.io/works/paddleocr"},"url":"http://urszulaczerwinska.github.io/works/paddleocr"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Add JSON-LD for Article and Person Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "paddleocr",
+      "description": "an ultimate guide to SHAP library",
+      "datePublished": "2023-08-23",
+      "dateModified": "2023-08-23",
+      "author": {
+        "@type": "Person",
+        "name": "Urszula Czerwinska",
+        "description": "Data Scientist & Deep Learning Engineer",
+        "url": "https://www.linkedin.com/in/urszula-czerwinska/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "http://urszulaczerwinska.github.io/images/writing.jpeg",  // Update this with a dynamic path if needed
+        "width": 1200,
+        "height": 630
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Urszula Czerwinska",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://urszulaczerwinska.github.io/images/logo.png",
+          "width": 60,
+          "height": 60
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://urszulaczerwinska.github.io/works/paddleocr"
+      }
+    }
+  </script>
+  <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+  <style>
+  #main > header {
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/engineering.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/engineering.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/engineering.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/engineering.jpg");
+  }
+  </style>
+  <!--[if lte IE 9]>
+  <style>
+  #main > header {
+    background-image: url("/images/engineering.jpg");
+  }
+  </style>
+  -->
+  <link rel="alternate" type="application/rss+xml" title="Urszula Czerwinska | Data Scientist & Deep Learning Engineer" href="http://urszulaczerwinska.github.io/feed.xml">
+</head>
+
+  <!-- Semantic Schema generated by InLinks -->
+
+
+  
+  <body>
+
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+      <!-- Header -->
+<header id="header">
+  <h1><a href="/index.html"> <span><img src="/favicon.ico" alt="Logo" style="height: 40px; vertical-align: middle; margin-right: 5px;"> Urszula Czerwinska </span></a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle">  <span>
+          Menu
+        </span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/works/">Works</a></li>
+            <li><a href="/thoughts/">Thoughts</a></li>
+            <li><a href="/feed.xml"
+                   class="icon fa-feed"> RSS Feed</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+      <article id="main">
+
+          <header>
+    <h2>paddleocr</h2>
+    <p>an ultimate guide to SHAP library</p>
+  </header>
+  <ul class="breadcrumb">
+  <li><a href="/index.html">Home</a></li>
+  <li>paddleocr</li>
+</ul>
+
+
+
+          <section class="wrapper style5">
+    <div class="inner">
+      <span id="post-date">23 August 2023</span><hr
+        style="margin-top:3px;" />
+      <h4>Skills</h4>
+  <ul class="techlist">
+<li><span class="tech">data science</span></li>
+<li><span class="tech">interpretability</span></li>
+<li><span class="tech">XAI</span></li>
+<li><span class="tech">machine learning</span></li>
+</ul>
+
+  
+
+      <head>
+  <meta name="description"
+    content="Urszula Czerwinska. About me, data science, big data, analytics, PhD">
+
+
+</head>
+
+<body>
+</body>
+<section>
+  <h3>Summary</h3>
+  <p>
+
+  </p>
+
+  <section name="baac" class="section section--body section--first">
+    <p></p>
+
+    <span class="image fit"><img
+        src="/images/engineering.jpg" alt=""
+        width=70% /></span>
+
+    <h3></h3>
+    <p></p>
+    <h4></h4>
+    <p></p>
+    <span class="image fit"><img
+        src="/images/model-interpret.png" alt="" /><em>As
+        described in [2]
+        relation between interpretability and accuracy of the
+        model. For some models improvements can be made towards a more
+        interpretable or more relevant model.</em></span>
+    <ul>
+      <li></li>
+      <li></li>
+    </ul>
+    <p></p>
+
+    <span class="image fit"><img src="/images/azure.png"
+        alt="" /><em>Azure ML interpretability
+        dashboard</em></span>
+
+    <p>There are also open-source webapps such as this
+      one described in the medium article [4] that facilitate the exploration
+      of the SHAP library.</p>
+    <div><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f">Understand
+        the machine learning Blackbox with ML
+        interpreter</strong><br><em
+          class="markup--em markup--mixtapeEmbed-em">There are dangers in
+          having models
+          running the world and making decisions from hiring to criminal
+          justice </em>towardsdatascience.com</a><a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"></a>
+    </div>
+    <div></br></br></div>
+    <blockquote>The devil is in the detail
+    </blockquote>
+
+    <figure class="highlight"><pre><code class="language-python" data-lang="python">    <span class="c1"># equilibrated case
+</span>    <span class="n">background</span> <span class="o">=</span> <span class="n">X</span><span class="p">.</span><span class="nf">sample</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="c1">#X is equilibrated
+</span>    <span class="c1"># background used in explainer defines base value
+</span>    <span class="n">explainer</span> <span class="o">=</span> <span class="n">shap</span><span class="p">.</span><span class="nc">TreeExplainer</span><span class="p">(</span><span class="n">xgb_model</span><span class="p">,</span><span class="n">background</span><span class="p">,</span><span class="n">model_output</span><span class="o">=</span><span class="sh">"</span><span class="s">raw</span><span class="sh">"</span> <span class="p">)</span>
+    <span class="n">shap_values</span> <span class="o">=</span> <span class="n">explainer</span><span class="p">.</span><span class="nf">shap_values</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="c1"># background used in the plot, the points that are visible on the plot
+</span>    <span class="n">shap</span><span class="p">.</span><span class="nf">summary_plot</span><span class="p">(</span><span class="n">shap_values</span><span class="p">,</span><span class="n">background</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">background</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+    </code></pre></figure>
+    <figure class="highlight"><pre><code class="language-python" data-lang="python">    <span class="c1"># base value shifted
+</span>    <span class="n">class1</span> <span class="o">=</span> <span class="n">X</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">class1</span><span class="p">,:]</span> <span class="c1">#X is equilibrated
+</span>    <span class="c1"># background from class 1 is used in explainer defines base value
+</span>    <span class="n">explainer</span> <span class="o">=</span> <span class="n">shap</span><span class="p">.</span><span class="nc">TreeExplainer</span><span class="p">(</span><span class="n">xgb_model</span><span class="p">,</span><span class="n">class1</span><span class="p">,</span><span class="n">model_output</span><span class="o">=</span><span class="sh">"</span><span class="s">raw</span><span class="sh">"</span> <span class="p">)</span>
+    <span class="n">shap_values</span> <span class="o">=</span> <span class="n">explainer</span><span class="p">.</span><span class="nf">shap_values</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="c1"># points from class 0 is used in the plot, the points that are visible on
+</span>    <span class="n">the</span> <span class="n">plot</span>
+    <span class="n">shap</span><span class="p">.</span><span class="nf">summary_plot</span><span class="p">(</span><span class="n">shap_values</span><span class="p">,</span><span class="n">X</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">class0</span><span class="p">,:],</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">X</span><span class="p">.</span><span class="n">columns</span><span class="p">)</span>
+    </code></pre></figure>
+
+    <span class="image fit"><img
+        src="/images/background-shap.png"
+        alt="" /><em>Selecting the
+        background dataset changes the question answered by
+        shap values.</em></span>
+
+    <p>____</p>
+
+    <figure>
+      <script
+        src="https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js"></script>
+      <figcaption class="imageCaption">Snippet code to reproduce my dependence
+        plot variant.</figcaption>
+    </figure>
+
+
+    <figure class="highlight"><pre><code class="language-python" data-lang="python">    <span class="c1"># xgb - traned model
+</span>    <span class="c1"># X_background - background dataset
+</span>    <span class="n">explainer_raw</span> <span class="o">=</span> <span class="n">shap</span><span class="p">.</span><span class="nc">TreeExplainer</span><span class="p">(</span><span class="n">xgb</span><span class="p">,</span><span class="n">X_background</span><span class="p">,</span> <span class="n">model_output</span><span class="o">=</span><span class="sh">"</span><span class="s">raw</span><span class="sh">"</span><span class="p">,</span>
+    <span class="n">feature_perturbation</span><span class="o">=</span><span class="sh">"</span><span class="s">tree_path_dependent</span><span class="sh">"</span>
+    <span class="p">)</span>
+    <span class="c1"># project data point of background datasetshap_values =
+</span>    <span class="n">explainer_raw</span><span class="p">.</span><span class="nf">shap_values</span><span class="p">(</span><span class="n">X_background</span><span class="p">)</span>
+    <span class="c1"># obtain interaction values
+</span>    <span class="n">shap_interaction_values</span> <span class="o">=</span>
+    <span class="n">explainer_raw</span><span class="p">.</span><span class="nf">shap_interaction_values</span><span class="p">(</span><span class="n">X_background</span><span class="p">)</span>
+    <span class="c1"># dimensions
+</span>    <span class="n">shap_values</span><span class="p">.</span><span class="n">shape</span>
+    <span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="mi">2543</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+    <span class="n">shap_interaction_values</span><span class="p">.</span><span class="n">shape</span>
+    <span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="mi">2543</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+    <span class="n">shap</span><span class="p">.</span><span class="nf">summary_plot</span><span class="p">(</span><span class="n">shap_interaction_values</span><span class="p">,</span>
+    <span class="n">X_background</span><span class="p">,</span> <span class="n">plot_type</span><span class="o">=</span><span class="sh">"</span><span class="s">compact_dot</span><span class="sh">"</span><span class="p">)</span>
+    </code></pre></figure>
+
+
+    <h3>Bibliography</h3>
+    <p>[1] Stop Explaining Black Box Machine Learning
+      Models for High Stakes Decisions and Use Interpretable Models Instead;
+      Cynthia Rudin <a href="https://arxiv.org/pdf/1811.10154.pdf"
+        data-href="https://arxiv.org/pdf/1811.10154.pdf"
+        target="_blank">https://arxiv.org/pdf/1811.10154.pdf</a></p>
+    <p>[2] Explainable Artificial Intelligence (XAI):
+      Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI;
+      Arrietaa et al. <a href="https://arxiv.org/pdf/1910.10045.pdf"
+        data-href="https://arxiv.org/pdf/1910.10045.pdf"
+        target="_blank">https://arxiv.org/pdf/1910.10045.pdf</a></p>
+    <p>[3] Cloudera Fast Forward Interpretability: <a
+        href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        data-href="https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282"
+        target="_blank">https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_282</a>
+    </p>
+    <p>[4] <a
+        href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        data-href="https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f"
+        target="_blank">https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f</a>
+    </p>
+    <p>[5] <a href="https://github.com/slundberg/shap"
+        data-href="https://github.com/slundberg/shap"
+        target="_blank">https://github.com/slundberg/shap</a></p>
+    <p>[6] <a
+        href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        data-href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions"
+        target="_blank">http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions</a>
+    </p>
+    <p>[7] <a href="https://www.nature.com/articles/s42256-019-0138-9"
+        data-href="https://www.nature.com/articles/s42256-019-0138-9"
+        target="_blank">https://www.nature.com/articles/s42256-019-0138-9</a>
+    </p>
+    <p>[8] <a href="https://christophm.github.io/interpretable-ml-book/"
+        data-href="https://christophm.github.io/interpretable-ml-book/"
+        target="_blank">https://christophm.github.io/interpretable-ml-book/</a>
+    </p>
+    <p>[9] <a
+        href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        data-href="https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30"
+        target="_blank">https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30</a>
+    </p>
+    <p>[10] <a
+        href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        data-href="https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83"
+        target="_blank">https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83</a>
+    </p>
+    <p>[11] <a
+        href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        data-href="https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22"
+        target="_blank">https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22</a>
+    </p>
+    <p>[12] <a
+        href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        data-href="https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/"
+        target="_blank">https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/</a>
+    </p>
+    <p>[13] Explaining Anomalies Detected by Autoencoders
+      Using SHAP; Antwarg et al. <a href="https://arxiv.org/pdf/1903.02407.pdf"
+        data-href="https://arxiv.org/pdf/1903.02407.pdf"
+        target="_blank">https://arxiv.org/pdf/1903.02407.pdf</a></p>
+    <p>[14] <a
+        href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        data-href="https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12"
+        target="_blank">https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12</a>
+    </p>
+    <p></p>[15] <a href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      data-href="https://www.kaggle.com/itsmesunil/bank-loan-modelling"
+      target="_blank">https://www.kaggle.com/itsmesunil/bank-loan-modelling</a>
+    </p>
+    </div>
+    </div>
+
+    <footer>
+      <p>Exported from <a href="https://medium.com">Medium</a> on July 22,
+        2016.</p>
+      <p><a
+          href="https://medium.com/plos-comp-biol-field-reports-2016/data-and-the-future-of-healthcare-interview-with-phil-bourne-ismb16-db5ab9b296d4">View
+          the original</a></p>
+    </footer>
+    <script type="text/javascript"
+      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script>
+    <div class="addthis_inline_share_toolbox"></div>
+
+  </section>
+      <div class="backnext btnbottom">
+                <div class="back">
+        </div>
+        <div class="next">
+        <div class="npointer"><a href="/works/ner_cc"
+         class="button small" title="Next">Next &gt;</a></div>
+         <!-- class="icon fa-forward" title="Next"></a></div> -->
+        <div class="ntitle"><a href="/works/ner_cc">Named Entity Recognition Tool by Cour de Cassation</a></div>
+        </div>
+
+      </div>
+      <script>
+      document.body.onkeyup = function(e){
+        if (e.keyCode == '37') { window.location = ''; }
+        if (e.keyCode == '39') { window.location = '/works/ner_cc'; }
+      };
+      </script>
+<hr style="margin-bottom:12px;" />
+<div class="author">
+<!-- style="margin:8px 28px 12px 0;position:relative;float:left;"> -->
+  <!-- style="position: relative; float: left;margin:0;padding:0;" -->
+  <div style="display:inline-block;border-radius:7px;overflow:hidden;height:100px;width:100px;background:url(/images/ula.jpg);background-size:100px;"></div>
+  <div style="display:inline-block;padding-left:12px;vertical-align:top;"><b>by:<br />Urszula Czerwinska</b><br />(<a href="mailto:urszula.czerwinska@cri-paris.org">urszula.czerwinska@cri-paris.org</a>)<br
+    /><i><a href="http://urszulaczerwinska.github.io" target="_blank">http://urszulaczerwinska.github.io</a></i>
+  </div>
+  <div class="auth-desc"><p> Senior Data Scientist / Deep Learning Engineer </p> PhD in Bio-Mathematics, Data Science & Machine Learning
+</div>
+</div>
+<hr style="margin-top:9px;" />
+
+  
+    </div>
+  </section>
+
+
+      </article>
+
+      <!-- Footer -->
+<footer id="footer">
+  <ul class="icons">
+    <li><a target="_blank" href="https://twitter.com/ulalaparis" class="icon fa-twitter"
+           ><span class="label">twitter</span></a></li>
+    <li><a target="_blank" href="https://github.com/urszulaczerwinska" class="icon fa-github"
+           ><span class="label">github</span></a></li>
+    <li><a target="_blank" href="https://linkedin.com/in/urszulaczerwinska" class="icon fa-linkedin-square"
+           ><span class="label">linkedin-square</span></a></li>
+    <li><a target="_blank" href="mailto:ulcia.liberte@gmail.com" class="icon fa-envelope"
+           ><span class="label">E-mail</span></a></li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy; 2016,
+    2024
+      Urszula Czerwinska</li>
+    <li><a href="/credits/">Credits</a></li>
+  </ul>
+</footer>
+
+
+      <!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+<script src="/js/main.js"></script>
+
+    </div>
+
+  </body>
+
+
+
+</html>
