@@ -3,228 +3,11 @@
   <channel>
     <title>Urszula Czerwinska | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.&quot;</description>
-    <link>http://urszulaczerwinska.github.io/</link>
-    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Aug 2024 00:22:53 +0200</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 00:22:53 +0200</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 Aug 2024 00:25:16 +0200</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 00:25:16 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
-    
-      <item>
-        <title>paddleocr</title>
-        <description>&lt;head&gt;
-  &lt;meta name=&quot;description&quot;
-    content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
-
-
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-&lt;section&gt;
-  &lt;h3&gt;Summary&lt;/h3&gt;
-  &lt;p&gt;
-
-  &lt;/p&gt;
-
-  &lt;section name=&quot;baac&quot; class=&quot;section section--body section--first&quot;&gt;
-    &lt;p&gt;&lt;/p&gt;
-
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img
-        src=&quot;/images/engineering.jpg&quot; alt=&quot;&quot;
-        width=70% /&gt;&lt;/span&gt;
-
-    &lt;h3&gt;&lt;/h3&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;h4&gt;&lt;/h4&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img
-        src=&quot;/images/model-interpret.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;As
-        described in [2]
-        relation between interpretability and accuracy of the
-        model. For some models improvements can be made towards a more
-        interpretable or more relevant model.&lt;/em&gt;&lt;/span&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p&gt;&lt;/p&gt;
-
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/azure.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;Azure ML interpretability
-        dashboard&lt;/em&gt;&lt;/span&gt;
-
-    &lt;p&gt;There are also open-source webapps such as this
-      one described in the medium article [4] that facilitate the exploration
-      of the SHAP library.&lt;/p&gt;
-    &lt;div&gt;&lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;&gt;Understand
-        the machine learning Blackbox with ML
-        interpreter&lt;/strong&gt;&lt;br&gt;&lt;em
-          class=&quot;markup--em markup--mixtapeEmbed-em&quot;&gt;There are dangers in
-          having models
-          running the world and making decisions from hiring to criminal
-          justice &lt;/em&gt;towardsdatascience.com&lt;/a&gt;&lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;&gt;&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div&gt;&lt;/br&gt;&lt;/br&gt;&lt;/div&gt;
-    &lt;blockquote&gt;The devil is in the detail
-    &lt;/blockquote&gt;
-
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# equilibrated case
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#X is equilibrated
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# background used in explainer defines base value
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# background used in the plot, the points that are visible on the plot
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# base value shifted
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#X is equilibrated
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# background from class 1 is used in explainer defines base value
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# points from class 0 is used in the plot, the points that are visible on
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img
-        src=&quot;/images/background-shap.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;Selecting the
-        background dataset changes the question answered by
-        shap values.&lt;/em&gt;&lt;/span&gt;
-
-    &lt;p&gt;____&lt;/p&gt;
-
-    &lt;figure&gt;
-      &lt;script
-        src=&quot;https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js&quot;&gt;&lt;/script&gt;
-      &lt;figcaption class=&quot;imageCaption&quot;&gt;Snippet code to reproduce my dependence
-        plot variant.&lt;/figcaption&gt;
-    &lt;/figure&gt;
-
-
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# xgb - traned model
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# X_background - background dataset
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;tree_path_dependent&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# project data point of background datasetshap_values =
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# obtain interaction values
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# dimensions
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2543&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2543&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;compact_dot&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-
-    &lt;h3&gt;Bibliography&lt;/h3&gt;
-    &lt;p&gt;[1] Stop Explaining Black Box Machine Learning
-      Models for High Stakes Decisions and Use Interpretable Models Instead;
-      Cynthia Rudin &lt;a href=&quot;https://arxiv.org/pdf/1811.10154.pdf&quot;
-        data-href=&quot;https://arxiv.org/pdf/1811.10154.pdf&quot;
-        target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1811.10154.pdf&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[2] Explainable Artificial Intelligence (XAI):
-      Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI;
-      Arrietaa et al. &lt;a href=&quot;https://arxiv.org/pdf/1910.10045.pdf&quot;
-        data-href=&quot;https://arxiv.org/pdf/1910.10045.pdf&quot;
-        target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1910.10045.pdf&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[3] Cloudera Fast Forward Interpretability: &lt;a
-        href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
-        data-href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
-        target=&quot;_blank&quot;&gt;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[4] &lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
-        data-href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
-        target=&quot;_blank&quot;&gt;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[5] &lt;a href=&quot;https://github.com/slundberg/shap&quot;
-        data-href=&quot;https://github.com/slundberg/shap&quot;
-        target=&quot;_blank&quot;&gt;https://github.com/slundberg/shap&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[6] &lt;a
-        href=&quot;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&quot;
-        data-href=&quot;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&quot;
-        target=&quot;_blank&quot;&gt;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[7] &lt;a href=&quot;https://www.nature.com/articles/s42256-019-0138-9&quot;
-        data-href=&quot;https://www.nature.com/articles/s42256-019-0138-9&quot;
-        target=&quot;_blank&quot;&gt;https://www.nature.com/articles/s42256-019-0138-9&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[8] &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;
-        data-href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;
-        target=&quot;_blank&quot;&gt;https://christophm.github.io/interpretable-ml-book/&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[9] &lt;a
-        href=&quot;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&quot;
-        data-href=&quot;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&quot;
-        target=&quot;_blank&quot;&gt;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[10] &lt;a
-        href=&quot;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&quot;
-        data-href=&quot;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&quot;
-        target=&quot;_blank&quot;&gt;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[11] &lt;a
-        href=&quot;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&quot;
-        data-href=&quot;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&quot;
-        target=&quot;_blank&quot;&gt;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[12] &lt;a
-        href=&quot;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&quot;
-        data-href=&quot;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&quot;
-        target=&quot;_blank&quot;&gt;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[13] Explaining Anomalies Detected by Autoencoders
-      Using SHAP; Antwarg et al. &lt;a href=&quot;https://arxiv.org/pdf/1903.02407.pdf&quot;
-        data-href=&quot;https://arxiv.org/pdf/1903.02407.pdf&quot;
-        target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1903.02407.pdf&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[14] &lt;a
-        href=&quot;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&quot;
-        data-href=&quot;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&quot;
-        target=&quot;_blank&quot;&gt;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;&lt;/p&gt;[15] &lt;a href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
-      data-href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
-      target=&quot;_blank&quot;&gt;https://www.kaggle.com/itsmesunil/bank-loan-modelling&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;footer&gt;
-      &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on July 22,
-        2016.&lt;/p&gt;
-      &lt;p&gt;&lt;a
-          href=&quot;https://medium.com/plos-comp-biol-field-reports-2016/data-and-the-future-of-healthcare-interview-with-phil-bourne-ismb16-db5ab9b296d4&quot;&gt;View
-          the original&lt;/a&gt;&lt;/p&gt;
-    &lt;/footer&gt;
-    &lt;script type=&quot;text/javascript&quot;
-      src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-    &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-  &lt;/section&gt;</description>
-        <pubDate>Wed, 23 Aug 2023 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/paddleocr</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/paddleocr</guid>
-        
-        <category>data science</category>
-        
-        <category>interpretability</category>
-        
-        <category>XAI</category>
-        
-        <category>machine learning</category>
-        
-        
-        <category>works</category>
-        
-      </item>
     
       <item>
         <title>Named Entity Recognition Tool by Cour de Cassation</title>
@@ -248,8 +31,8 @@
 
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
+        <link>http://localhost:4000/works/ner_cc</link>
+        <guid isPermaLink="true">http://localhost:4000/works/ner_cc</guid>
         
         <category>Machine Learning</category>
         
@@ -1266,8 +1049,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>
+        <link>http://localhost:4000/works/interpretability-shap</link>
+        <guid isPermaLink="true">http://localhost:4000/works/interpretability-shap</guid>
         
         <category>data science</category>
         
@@ -1455,8 +1238,8 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
+        <link>http://localhost:4000/works/egg_ner</link>
+        <guid isPermaLink="true">http://localhost:4000/works/egg_ner</guid>
         
         <category>NLP</category>
         
@@ -1518,8 +1301,8 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;/section&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/wihads</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/wihads</guid>
+        <link>http://localhost:4000/works/wihads</link>
+        <guid isPermaLink="true">http://localhost:4000/works/wihads</guid>
         
         <category>data science</category>
         
@@ -1731,8 +1514,8 @@ We have succeeded! 🚀&lt;/p&gt;
 
 &lt;/html&gt;</description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>
+        <link>http://localhost:4000/thoughts/businesslang</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/businesslang</guid>
         
         
         <category>thoughts</category>
@@ -1760,8 +1543,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/PhDThesis.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/PhDThesis.html</guid>
+        <link>http://localhost:4000/works/PhDThesis.html</link>
+        <guid isPermaLink="true">http://localhost:4000/works/PhDThesis.html</guid>
         
         <category>Machine Learning</category>
         
@@ -1797,8 +1580,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/deconica</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
+        <link>http://localhost:4000/works/deconica</link>
+        <guid isPermaLink="true">http://localhost:4000/works/deconica</guid>
         
         <category>Machine Learning</category>
         
@@ -1932,8 +1715,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 &lt;/html&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
+        <link>http://localhost:4000/thoughts/bigdive/</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/bigdive/</guid>
         
         
         <category>thoughts</category>
@@ -2076,11 +1859,47 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 				&lt;/html&gt;
 </description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
+        <link>http://localhost:4000/thoughts/jobsCB/</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/jobsCB/</guid>
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>From Science to Data Science</title>
+        <description>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en-US&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            window.location.href = &quot;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&quot;
+        &lt;/script&gt;
+        &lt;title&gt;Page Redirection&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
+        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&apos;&gt;link to example&lt;/a&gt;.
+    &lt;/body&gt;
+&lt;/html&gt;</description>
+        <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/works/FromSciencetoDataScience</link>
+        <guid isPermaLink="true">http://localhost:4000/works/FromSciencetoDataScience</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Careers</category>
+        
+        <category>Data Science</category>
+        
+        <category>Data viz</category>
+        
+        
+        <category>works</category>
+        
+        <category>FSctoDs</category>
         
       </item>
     
