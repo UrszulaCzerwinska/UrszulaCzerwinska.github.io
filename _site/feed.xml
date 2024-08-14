@@ -5,8 +5,8 @@
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.&quot;</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Aug 2024 18:02:32 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Aug 2024 18:02:32 +0200</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2024 00:22:53 +0200</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 00:22:53 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -273,757 +273,998 @@
       </item>
     
       <item>
-        <title>Push the limits of explainability</title>
+        <title>Push the limits of machine learning explainability</title>
         <description>&lt;head&gt;
-  &lt;meta name=&quot;description&quot;
-    content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
-
+  &lt;meta
+    name=&quot;description&quot;
+    content=&quot;Explore deep learning AI with this ultimate guide to SHAP, focused on data science projects, interpretability, and machine learning models.&quot;
+  /&gt;
 &lt;/head&gt;
 
-
 &lt;section&gt;
-  &lt;h1&gt;Summary&lt;/h1&gt;
+  &lt;h1&gt;
+    Summary - A Comprehensive Guide to SHAP: Enhancing Machine Learning
+    Interpretability
+  &lt;/h1&gt;
   &lt;p&gt;
     This article is a guide to the advanced and lesser-known features of the
-    python SHAP library. It is based on an
-    example of tabular data classification.
+    python SHAP library. It is based on an example of tabular data
+    classification.
   &lt;/p&gt;
-  &lt;p&gt;But first, let’s talk about the motivation and
-    interest in explainability at Saegus that motivated and financed my
-    explorations.&lt;/p&gt;
+  &lt;p&gt;
+    But first, let’s talk about the motivation and interest in explainability at
+    Saegus that motivated and financed my explorations.
+  &lt;/p&gt;
 
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/engineering.jpg&quot;
-      alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/engineering.jpg&quot; alt=&quot;&quot; width=&quot;70%&quot;
+  /&gt;&lt;/span&gt;
 
-  &lt;h3&gt;Explainability — the theory&lt;/h3&gt;
-  &lt;p&gt;The explainability of algorithms is taking more and
-    more place in the discussions about Data Science. We know that algorithms
-    are powerful, we know that they can
-    assist us in many tasks: price prediction, document classification, video
-    recommendation.&lt;/p&gt;
-    &lt;p&gt;From now on, more and more questions are being asked
-    about this prediction:&lt;br&gt;- Is it ethical?&lt;br&gt;- Is it affected by
-    bias?&lt;br&gt;- Is it used for the right reasons?
-    &lt;/p&gt;
-    &lt;p&gt;In many domains such as medicine, banking or
-    insurance, algorithms can be used if, and only if, it is possible to
-    trace and explain (or better, interpret)
-    the decisions of these algorithms.&lt;/p&gt;
-    &lt;h4&gt;Vocabulary parenthesis&lt;/h4&gt;
-    &lt;p&gt;In this article we would like to distinguish the
-      terms :&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Explainability&lt;/strong&gt;: possibility to explain from a technical
-      point of view the prediction of an algorithm.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Interpretability&lt;/strong&gt;: the ability to explain or provide
-    meaning
-    in terms that are understandable by a human being.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Transparency&lt;/strong&gt;: a model is considered transparent if it
-    is
-    understandable on its own.&lt;/p&gt;
-  &lt;h4&gt;Why do we care about interpretability ?&lt;/h4&gt;
-  &lt;p&gt;Interpretability helps to ensure impartiality in
-    decision-making, i.e. to detect and therefore correct biases in the
-    training data set. In addition, it
-    facilitates robustness by highlighting potential adverse disturbances
-    that could change the prediction. It can
-    also act as an assurance that only significant features infer the
-    outcome.&lt;/p&gt;
-    &lt;p&gt;Sometimes, it would be more advisable to abandon the
-    machine learning approach, and use deterministic algorithms based on
-    rules justified by industry knowledge or
-    legislation [1].&lt;/p&gt;
-    &lt;p&gt;Nevertheless, it is too tempting to access the
-    capabilities of machine learning algorithms that can offer high accuracy.
-    We can talk about the trade-off
-    between accuracy and explainability. This trade-off consists in
-    discarding more complex models such as neural
-    networks for simpler algorithms that can be explained.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/model-interpret.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;As
-      described in [2]
-      relation between interpretability and accuracy of the
+  &lt;h3&gt;The Theory Behind Explainability in AI and Machine Learning&lt;/h3&gt;
+  &lt;p&gt;
+    The explainability of algorithms is taking more and more place in the
+    discussions about Data Science. We know that algorithms are powerful, we
+    know that they can assist us in many tasks: price prediction, document
+    classification, video recommendation.
+  &lt;/p&gt;
+  &lt;p&gt;
+    From now on, more and more questions are being asked about this
+    prediction:&lt;br /&gt;- Is it ethical?&lt;br /&gt;- Is it affected by bias?&lt;br /&gt;- Is
+    it used for the right reasons?
+  &lt;/p&gt;
+  &lt;p&gt;
+    In many domains such as medicine, banking or insurance, algorithms can be
+    used if, and only if, it is possible to trace and explain (or better,
+    interpret) the decisions of these algorithms.
+  &lt;/p&gt;
+  &lt;h4&gt;Key Terminology in Machine Learning Interpretability and SHAP&lt;/h4&gt;
+  &lt;p&gt;In this article we would like to distinguish the terms:&lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Explainability&lt;/strong&gt;: possibility to explain from a technical
+    point of view the prediction of an algorithm.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Interpretability&lt;/strong&gt;: the ability to explain or provide meaning
+    in terms that are understandable by a human being.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;Transparency&lt;/strong&gt;: a model is considered transparent if it is
+    understandable on its own.
+  &lt;/p&gt;
+  &lt;h4&gt;Why Explainability Matters in Data Science ?&lt;/h4&gt;
+  &lt;p&gt;
+    Interpretability helps to ensure impartiality in decision-making, i.e. to
+    detect and therefore correct biases in the training data set. In addition,
+    it facilitates robustness by highlighting potential adverse disturbances
+    that could change the prediction. It can also act as an assurance that only
+    significant features infer the outcome.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Sometimes, it would be more advisable to abandon the machine learning
+    approach, and use deterministic algorithms based on rules justified by
+    industry knowledge or legislation [1].
+  &lt;/p&gt;
+  &lt;p&gt;
+    Nevertheless, it is too tempting to access the capabilities of machine
+    learning algorithms that can offer high accuracy. We can talk about the
+    trade-off between accuracy and explainability. This trade-off consists in
+    discarding more complex models such as neural networks for simpler
+    algorithms that can be explained.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/model-interpret.png&quot; alt=&quot;&quot; /&gt;&lt;em
+      &gt;As described in [2] relation between interpretability and accuracy of the
       model. For some models improvements can be made towards a more
-      interpretable or more relevant model.&lt;/em&gt;&lt;/span&gt;
-      &lt;p&gt;To achieve these goals, a new field has
-    emerged: XAI (Explainable Artificial Intelligence), which aims to produce
-    algorithms that are both powerful
-    and explainable.&lt;/p&gt;
-    &lt;p&gt;Many frameworks have been proposed to help explain
-    non-transparent algorithms. A very good presentation of these methods can
-    be found in the Cloudera white paper
-    [3].&lt;/p&gt;
-    &lt;p&gt;In this article we will deal with one of the most
-      used frameworks: SHAP.&lt;/p&gt;
-    &lt;h4&gt;XAI, who’s it for?&lt;/h4&gt;
-    &lt;p&gt;Different profiles interested in expainability or
-      interpretability have been identified:&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Business expert/model user — in order to trust
-        the model, understand the causality of the prediction&lt;/li&gt;
-      &lt;li&gt;Regulatory bodies to certify compliance with
-        the legislation, auditing&lt;/li&gt;
-      &lt;li&gt;Managers and executive board to assess
-        regulatory compliance, understand enterprise AI applications&lt;/li&gt;
-      &lt;li&gt;Users impacted by model decisions in order to
-        understand the situation, verify decisions&lt;/li&gt;
-      &lt;li&gt;Data scientist, developer, PO to ensure/improve
-      product performance, find new features, explain functioning/predictions
-      to superiors&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;p&gt;In order to make explainability accessible to
-    people with low technical skills, first of all, the creator: a data
-    scientist/developer must be comfortable
-    with the tools of explainability.&lt;/p&gt;
-    &lt;p&gt;The data scientist will use them above all to
-    understand and improve his model and then to communicate with his
-    superiors and regulatory
-    bodies.&lt;br&gt;Recently, explainability tools have become more and more
-    accessible.&lt;/p&gt;
-    &lt;p&gt;For example, &lt;a href=&quot;https://www.dataiku.com/&quot;
-        data-href=&quot;https://www.dataiku.com/&quot;
-        class=&quot;markup--anchor markup--p-anchor&quot; rel=&quot;noopener&quot;
-        target=&quot;_blank&quot;&gt;Dataiku &lt;/a&gt;— ML’s platform — has added
-      in its latest version 7.0 published on March 2, 2020
-    explainability tools: Shapley values and “The Individual Conditional
-    Expectation” (ICE).&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/dataiku.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;Dataiku prediction
-        studio&lt;/em&gt;&lt;/span&gt;
-  &lt;p&gt;&lt;a href=&quot;https://azure.microsoft.com/en-us/services/machine-learning/&quot;&gt;Azure
-      ML&lt;/a&gt; proposes its own version
-    of Shap and alternative tools adding interactive &lt;a
-      href=&quot;https://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-aml&quot;&gt;dashboards&lt;/a&gt;.
+      interpretable or more relevant model.&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    To achieve these goals, a new field has emerged: XAI (Explainable Artificial
+    Intelligence), which aims to produce algorithms that are both powerful and
+    explainable.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Many frameworks have been proposed to help explain non-transparent
+    algorithms. A very good presentation of these methods can be found in the
+    Cloudera white paper [3].
+  &lt;/p&gt;
+  &lt;p&gt;
+    In this article we will deal with one of the most used frameworks: SHAP.
+  &lt;/p&gt;
+  &lt;h4&gt;Exploring the Audience for Explainable AI in Data Science&lt;/h4&gt;
+  &lt;p&gt;
+    Different profiles interested in expainability or interpretability have been
+    identified:
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      Business expert/model user — in order to trust the model, understand the
+      causality of the prediction
+    &lt;/li&gt;
+    &lt;li&gt;
+      Regulatory bodies to certify compliance with the legislation, auditing
+    &lt;/li&gt;
+    &lt;li&gt;
+      Managers and executive board to assess regulatory compliance, understand
+      enterprise AI applications
+    &lt;/li&gt;
+    &lt;li&gt;
+      Users impacted by model decisions in order to understand the situation,
+      verify decisions
+    &lt;/li&gt;
+    &lt;li&gt;
+      Data scientist, developer, PO to ensure/improve product performance, find
+      new features, explain functioning/predictions to superiors
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;
+    In order to make explainability accessible to people with low technical
+    skills, first of all, the creator: a data scientist/developer must be
+    comfortable with the tools of explainability.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The data scientist will use them above all to understand and improve his
+    model and then to communicate with his superiors and regulatory bodies.&lt;br /&gt;Recently,
+    explainability tools have become more and more accessible.
+  &lt;/p&gt;
+  &lt;p&gt;
+    For example,
+    &lt;a
+      href=&quot;https://www.dataiku.com/&quot;
+      data-href=&quot;https://www.dataiku.com/&quot;
+      class=&quot;markup--anchor markup--p-anchor&quot;
+      rel=&quot;noopener&quot;
+      target=&quot;_blank&quot;
+      &gt;Dataiku &lt;/a
+    &gt;— ML’s platform — has added in its latest version 7.0 published on March 2,
+    2020 explainability tools: Shapley values and “The Individual Conditional
+    Expectation” (ICE).
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/dataiku.png&quot; alt=&quot;&quot; /&gt;&lt;em
+      &gt;Dataiku prediction studio&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    &lt;a href=&quot;https://azure.microsoft.com/en-us/services/machine-learning/&quot;
+      &gt;Azure ML&lt;/a
+    &gt;
+    proposes its own version of Shap and alternative tools adding interactive
+    &lt;a
+      href=&quot;https://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-aml&quot;
+      &gt;dashboards&lt;/a
+    &gt;.
   &lt;/p&gt;
 
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/azure.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;Azure ML interpretability
-      dashboard&lt;/em&gt;&lt;/span&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/azure.png&quot; alt=&quot;&quot; /&gt;&lt;em
+      &gt;Azure ML interpretability dashboard&lt;/em
+    &gt;&lt;/span
+  &gt;
 
-  &lt;p&gt;There are also open-source webapps such as this
-    one described in the medium article [4] that facilitate the exploration
-    of the SHAP library.&lt;/p&gt;
-    &lt;div&gt;&lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;&gt;Understand
-        the machine learning Blackbox with ML
-      interpreter&lt;/strong&gt;&lt;br&gt;&lt;em class=&quot;markup--em markup--mixtapeEmbed-em&quot;&gt;There
-        are dangers in
-        having models
-        running the world and making decisions from hiring to criminal
-        justice&lt;/em&gt;towardsdatascience.com&lt;/a&gt;&lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;&gt;&lt;/a&gt;
-      &lt;/div&gt;
-      &lt;div&gt;&lt;/br&gt;&lt;/br&gt;&lt;/div&gt;
-      &lt;p&gt;These tools, very interesting to get a
-    quick overview of interpretation, do not necessarily give an
-    understanding of the full potential of the SHAP
+  &lt;p&gt;
+    There are also open-source webapps such as this one described in the medium
+    article [4] that facilitate the exploration of the SHAP library.
+  &lt;/p&gt;
+  &lt;div&gt;
+    &lt;a
+      href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
+      &gt;&lt;strong
+        &gt;Understand the machine learning Blackbox with ML interpreter&lt;/strong
+      &gt;&lt;br /&gt;&lt;em class=&quot;markup--em markup--mixtapeEmbed-em&quot;
+        &gt;There are dangers in having models running the world and making
+        decisions from hiring to criminal justice&lt;/em
+      &gt;towardsdatascience.com&lt;/a
+    &gt;&lt;a
+      href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
+    &gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div&gt;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;
+  &lt;p&gt;
+    These tools, very interesting to get a quick overview of interpretation, do
+    not necessarily give an understanding of the full potential of the SHAP
     library. Few allow to explore interaction values or to use different
-    background or display sets.&lt;/p&gt;
-    &lt;p&gt;I investigated the SHAP framework and I present you
-    my remarks and the usage of less known features, available in the
-    official version of the library in open
-    source. I also propose some interactive visualizations easy to integrate
-    in your projects.&lt;/p&gt;
-    &lt;h3&gt;Explainability — the practice&lt;/h3&gt;
-    &lt;p&gt;Most data scientists have already heard of the SHAP
-    framework.&lt;br&gt;In this post, we won’t explain in detail how the
-    calculations behind the library are done. Many
-    resources are available online such as the SHAP documentation [5],
-    publications by authors of the library
-    [6,7], the great book “Interpretable Machine Learning” [8] and multiple
-    medium articles [9,10,11].&lt;/p&gt;
-    &lt;p&gt;In summary, Shapley’s values calculate the
-    importance of a feature by comparing what a model predicts with and
-    without this feature. However, since the
-    order in which a model sees the features can affect its predictions, this
-    is done in all possible ways, so
-    that the features are compared fairly. This approach is inspired by game
-    theory.&lt;/p&gt;
-    &lt;p&gt;Having worked with many clients, for example in the
-    banking and insurance sectors, one can see that their data scientists are
-    struggling to exploit the full
-    potential of SHAP. They don’t know how this tool could really be useful
-    for understanding a model and how to
-    use it to go beyond simply extracting the importance of features.&lt;/p&gt;
-    &lt;blockquote&gt;The devil is in the detail
-    &lt;/blockquote&gt;
-    &lt;p&gt;SHAP comes with a set of visualizations
-    that are quite complex and not always intuitive, even for a data
-    scientist.&lt;/p&gt;
-    &lt;p&gt;On top of that, there are several technical nuances
-    to be able to use SHAP with your data. Francesco Porchetti’s blog article
-    [12] expresses some of these
-    frustrations by exploring the SHAP, &lt;a
-      href=&quot;https://github.com/marcotcr/lime&quot;&gt;LIME&lt;/a&gt;, &lt;a
-      href=&quot;https://github.com/SauceCat/PDPbox&quot;
-      data-href=&quot;https://github.com/SauceCat/PDPbox&quot;&gt;PDPbox &lt;/a&gt;(PDP and
-    ICE) and &lt;a
-      href=&quot;https://eli5.readthedocs.io/en/latest/autodocs/sklearn.html#module-eli5.sklearn.permutation_importance&quot;&gt;ELI5
-    &lt;/a&gt;libraries.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;At Saegus, I worked on a course which aims to give more
-        clarity to the
-        SHAP framework and to facilitate the use of this tool.&lt;/em&gt;&lt;/strong&gt;
+    background or display sets.
   &lt;/p&gt;
-  &lt;p&gt;In this post I would like to share with you some observations collected
-    during that process.&lt;/p&gt;
-  &lt;p&gt;SHAP is used to explain an existing model. Taking a
-    binary classification case built with a sklearn model. We train, tune and
-    test our model. Then we can use our
-    data and the model to create an additional SHAP model that explains our
-    classification model.&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/shap.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;Image source:
-        SHAP github&lt;/em&gt;&lt;/span&gt;
-    &lt;h4&gt;Vocabulary&lt;/h4&gt;
-  &lt;p&gt;It is important to understand all the bricks that make up a SHAP
-    explanation.&lt;/p&gt;
-  &lt;p&gt;Often, by using default values for parameters, the complexity of the
-    choices we make remains obscure.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;global explanations&lt;br&gt;&lt;/strong&gt;explanations of how the model
-    works from a general point of view&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;local explanations&lt;/strong&gt;&lt;br&gt;explanations of the model for a
-    sample (a data point)&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;explainer &lt;/strong&gt;(shap.explainer_type(params))&lt;br&gt;type of
-    explainability algorithm to be chosen according to the model used.&lt;/p&gt;
-  &lt;p&gt;The parameters are different for each type of model. Usually, the model
-    and training data must be provided, at a
-    minimum.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;base value&lt;/strong&gt;
-    (explainer.expected_value)&lt;br&gt;&lt;em&gt;E(y_hat)&lt;/em&gt; is “the value
-    that would be predicted if we didn’t know any features of the current
-    output” is the &lt;em&gt;mean(y_hat)&lt;/em&gt;
-    prediction for the training data set or the background set.
-    We can call it “reference value”, it’s a scalar (&lt;em&gt;n&lt;/em&gt;).&lt;/p&gt;
-  &lt;p&gt;It’s important to choose your background set carefully — if we have the
-    unbalanced training set this will result
-    in a base value placed among the majority
-    of samples. This can also be a desired effect: for example if for a bank
-    loan we want to answer the question:
-    “how is the customer in question different from customers who have been
-    approved for the loan” or “how is my
-    false positive different from the true positives”.&lt;/p&gt;
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# equilibrated case
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#X is equilibrated
-&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;# background used in explainer defines base value
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# background used in the plot, the points that are visible on the plot
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;  &lt;span class=&quot;c1&quot;&gt;# base value shifted
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#X is equilibrated
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# background from class 1 is used in explainer defines base value
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# points from class 0 is used in the plot, the points that are visible on
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;p&gt;
+    I investigated the SHAP framework and I present you my remarks and the usage
+    of less known features, available in the official version of the library in
+    open source. I also propose some interactive visualizations easy to
+    integrate in your projects.
+  &lt;/p&gt;
+  &lt;h3&gt;Step-by-Step Guide: Using SHAP for Machine Learning Models&lt;/h3&gt;
+  &lt;p&gt;
+    Most data scientists have already heard of the SHAP framework.&lt;br /&gt;In this
+    post, we won’t explain in detail how the calculations behind the library are
+    done. Many resources are available online such as the SHAP documentation
+    [5], publications by authors of the library [6,7], the great book
+    “Interpretable Machine Learning” [8] and multiple medium articles [9,10,11].
+  &lt;/p&gt;
+  &lt;p&gt;
+    In summary, Shapley’s values calculate the importance of a feature by
+    comparing what a model predicts with and without this feature. However,
+    since the order in which a model sees the features can affect its
+    predictions, this is done in all possible ways, so that the features are
+    compared fairly. This approach is inspired by game theory.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Having worked with many clients, for example in the banking and insurance
+    sectors, one can see that their data scientists are struggling to exploit
+    the full potential of SHAP. They don’t know how this tool could really be
+    useful for understanding a model and how to use it to go beyond simply
+    extracting the importance of features.
+  &lt;/p&gt;
+  &lt;blockquote&gt;The devil is in the detail&lt;/blockquote&gt;
+  &lt;p&gt;
+    SHAP comes with a set of visualizations that are quite complex and not
+    always intuitive, even for a data scientist.
+  &lt;/p&gt;
+  &lt;p&gt;
+    On top of that, there are several technical nuances to be able to use SHAP
+    with your data. Francesco Porchetti’s blog article [12] expresses some of
+    these frustrations by exploring the SHAP,
+    &lt;a href=&quot;https://github.com/marcotcr/lime&quot;&gt;LIME&lt;/a&gt;,
+    &lt;a
+      href=&quot;https://github.com/SauceCat/PDPbox&quot;
+      data-href=&quot;https://github.com/SauceCat/PDPbox&quot;
+      &gt;PDPbox &lt;/a
+    &gt;(PDP and ICE) and
+    &lt;a
+      href=&quot;https://eli5.readthedocs.io/en/latest/autodocs/sklearn.html#module-eli5.sklearn.permutation_importance&quot;
+      &gt;ELI5 &lt;/a
+    &gt;libraries.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong
+      &gt;&lt;em
+        &gt;At Saegus, I worked on a course which aims to give more clarity to the
+        SHAP framework and to facilitate the use of this tool.&lt;/em
+      &gt;&lt;/strong
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    In this post I would like to share with you some observations collected
+    during that process.
+  &lt;/p&gt;
+  &lt;p&gt;
+    SHAP is used to explain an existing model. Taking a binary classification
+    case built with a sklearn model. We train, tune and test our model. Then we
+    can use our data and the model to create an additional SHAP model that
+    explains our classification model.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/shap.png&quot;
+      alt=&quot;SHAP plot demonstrating deep learning AI model interpretability in data science.&quot;
+    /&gt;&lt;em&gt;Image source: SHAP github&lt;/em&gt;&lt;/span
+  &gt;
+  &lt;h4&gt;Vocabulary&lt;/h4&gt;
+  &lt;p&gt;
+    It is important to understand all the bricks that make up a SHAP
+    explanation.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Often, by using default values for parameters, the complexity of the choices
+    we make remains obscure.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;global explanations&lt;br /&gt;&lt;/strong&gt;explanations of how the model
+    works from a general point of view
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;local explanations&lt;/strong&gt;&lt;br /&gt;explanations of the model for a
+    sample (a data point)
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;explainer &lt;/strong&gt;(shap.explainer_type(params))&lt;br /&gt;type of
+    explainability algorithm to be chosen according to the model used.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The parameters are different for each type of model. Usually, the model and
+    training data must be provided, at a minimum.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;base value&lt;/strong&gt; (explainer.expected_value)&lt;br /&gt;&lt;em
+      &gt;E(y_hat)&lt;/em
+    &gt;
+    is “the value that would be predicted if we didn’t know any features of the
+    current output” is the &lt;em&gt;mean(y_hat)&lt;/em&gt; prediction for the training data
+    set or the background set. We can call it “reference value”, it’s a scalar
+    (&lt;em&gt;n&lt;/em&gt;).
+  &lt;/p&gt;
+  &lt;p&gt;
+    It’s important to choose your background set carefully — if we have the
+    unbalanced training set this will result in a base value placed among the
+    majority of samples. This can also be a desired effect: for example if for a
+    bank loan we want to answer the question: “how is the customer in question
+    different from customers who have been approved for the loan” or “how is my
+    false positive different from the true positives”.
+  &lt;/p&gt;
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;# equilibrated case background = X.sample(1000) #X is
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;equilibrated&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# background used in explainer defines base value explainer =
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# background used in the plot, the points that are
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;#
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shifted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#X is equilibrated # background
+&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;1 &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;used&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;defines&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# points from class 0 is used in the plot, the points
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;visible&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:],&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/background-shap.png&quot; alt=&quot;&quot; /&gt;&lt;em&gt;Selecting
-      the
-      background dataset changes the question answered by
-      shap values.&lt;/em&gt;&lt;/span&gt;
-  &lt;p&gt;SHAPley values&lt;/strong&gt; (explainer.shap_values(x))&lt;br&gt;the average
-    contribution of each feature to each prediction for each sample based on
-    all possible features. It is a
-    (&lt;em&gt;n,m&lt;/em&gt;) &lt;em&gt;n &lt;/em&gt;— samples, &lt;em&gt;m &lt;/em&gt;— features matrix that
-    represents the contribution of each feature
-    to
-    each sample.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;output value&lt;/strong&gt; (for a sample)&lt;br&gt;the value predicted by
-    the
-    algorithm (the probability, logit or raw output values of the model)&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;display features&lt;/strong&gt; (&lt;em&gt;n
-    &lt;/em&gt;x &lt;em&gt;m&lt;/em&gt;)&lt;br&gt;a matrix of original values — before
-    transformation/encoding/engineering of features etc. — that can be
-    provided to some graphs to improve
-    interpretation. Often overlooked and essential for interpretation.&lt;/p&gt;
-    &lt;p&gt;____&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;SHAPley values&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Shapley values remain the central element. Once we
-    realize that this is simply a matrix with the same dimensions as our
-    input data and that we can analyze it in
-    different ways to explain the model and not only. We can reduce its
-    dimensions, we can cluster it, we can use
-    it to create new features. An interesting exploration described in the
-    article [12] aims at improving anomaly
-    detection using auto encoders and SHAP. The SHAP library proposes a rich
-    but not exchaustive exploration
-    through visualizations.&lt;/p&gt;
-    &lt;h4&gt;Visualizations&lt;/h4&gt;
-    &lt;p&gt;The SHAP library offers different visualizations. A
-    good explanation on how to read the colors of the summary plot can be
-    found in this medium article [14].&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/shap-global.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;A summary
-        of
-        graphical visualizations to analyze global explanations&lt;/em&gt;&lt;/span&gt;
-  &lt;p&gt;&lt;strong&gt;The summary plot&lt;/strong&gt; shows the most important features and
-    the
-    magnitude of their impact on the model. It can take several graphical
-    forms and for the models explained by
-    TreeExplainer we can also observe the&lt;strong&gt;&lt;em&gt; interaction values
-      &lt;/em&gt;&lt;/strong&gt;using the “compact dot” with
-    shap_interaction_values in input.&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;The
-      dependency plot&lt;/strong&gt; allows to analyze the features two by two by
-      suggesting a possibility to observe
-      the interactions. The scatter plot represents a dependency between a
-      feature(x) and the shapley values (y)
-      colored by a second feature(hue).&lt;/p&gt;
-      &lt;p&gt;On a personal note, I find that an observation of a
-    three-factor relationship at the same time is not intuitive for the human
-    brain (at least mine). I also doubt
-    that an observation of dependency by observing colours can be
-    scientifically accurate. Shap can give us an
-    interaction relationship that is calculated as a correlation between the
-    shapley values of the first feature
-    and the values of the second feature. If possible (for TreeExplainer) it
-    makes more sense to use the shapley
-    interaction values to observe interactions.&lt;/p&gt;
-    &lt;figure&gt;
-    &lt;script
-      src=&quot;https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js&quot;&gt;&lt;/script&gt;
-    &lt;figcaption class=&quot;imageCaption&quot;&gt;Snippet code to reproduce my dependence
-      plot variant.&lt;/figcaption&gt;
-    &lt;/figure&gt;
-    &lt;p&gt;I propose an interactive variant of dependency
-    plot that allows to observe the relationship between a feature(x), the
-    shapley values (y) and the prediction
-    (histogram colors). What seems important to me in this version is the
-    possibility to display on the graph the
-    original values (Income in k USD) instead of the normalized space used by
-    the model.&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/my-dep-plot.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;My variant
-        of dependence
-        plot&lt;/em&gt;&lt;/span&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/shap-local.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a summary of graphical
-      visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-  &lt;p&gt;There are three alternatives for the visualization of explanations of a
-    sample: force plot, decision plot and
-    waterfall plot.&lt;/p&gt;
-  &lt;p&gt;For a sample, these three representations are
-    redundant, they represent the information in a very similar way. At the
-    same time, some elements of these
-    graphs are complementary. By putting the three side by side, I have the
-    impression to understand the result in
-    a more intuitive way. The force plot is good to see where the “output
-    value” fits in relation to the “base
-    value”. We also see which features have a positive (red) or negative
-    (blue) impact on the prediction and the
-    magnitude of this impact. The water plot also allows us to see the
-    amplitude and the nature of the impact of a
-    feature with its quantification. It also allows to see the order of
-    importance of the features and the values
-    taken by each feature for the studied sample. The Decision plot makes it
-    possible to observe the amplitude of
-    each change, “a trajectory” taken by a samplefor the values of the
-    displayed features.&lt;/p&gt;
-    &lt;p&gt;By using force plot and decision plot we can
-      represent several samples at the same time.&lt;/p&gt;
-    &lt;p&gt;The force plot for a set of samples can be compared
-    to the last level of a dendrogram. The samples are grouped by similarity
-    or by selected feature. In my
-    opinion, this graph is difficult to read for a random sample. It is much
-    more meaningful if we represent the
-    contrasting cases or with a hypothesis behind.&lt;/p&gt;
-    &lt;p&gt;The decision plot, for a set of samples, quickly
-    becomes cumbersome if we select too many samples. It is very useful to
-    observe a ‘trajectory deviation’ or
-    ‘diverging/converging trajectories’ of a limited group of samples.&lt;/p&gt;
-    &lt;h4&gt;Explainers&lt;/h4&gt;
-    &lt;p&gt;Explainers are the models used to calculate shapley
-      values. The diagram below shows different types of Explainers.&lt;/p&gt;
-    &lt;p&gt;The choice of Explainers depends mainly on the
-    selected learning model. For linear models, the “Linear Explainer” is
-    used, for decision trees and “set” type
-    models — “TreeExplainer”. “Kernel Explainer” is slower than the above
-    mentioned explainers.&lt;/p&gt;
-    &lt;p&gt;In addition the “Tree Explainer” allows to display
-    the interaction values (see next section). It also allows to transform
-    the model output into probabilities or
-    logloss, which is useful for a better understanding of the model or to
-    compare several models.&lt;/p&gt;
-    &lt;p&gt;The Kernel Explainer creates a model that
-    substitutes the closest to our model. Kernel Explainer can be used to
-    explain neural networks. For deep
-    learning models, there are the Deep Explainer and the Grandient
-    Explainer. For this paper we have not
-    investigated the explainability of neural networks.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/explainer.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a summary of Explainer types
-      in the SHAP library&lt;/em&gt;&lt;/span&gt;
-  &lt;h4&gt;Shapley values of interactions&lt;/h4&gt;
-  &lt;p&gt;One of the properties that allows to go further in
-    the analysis of a model that can be explained with the “Tree Explainer”
-    is the calculation of shapley values
-    of interactions.&lt;/p&gt;
-    &lt;p&gt;These values make it possible to quantify the impact
-    of an interaction between two features on the prediction for each sample.
-    As the matrix of shapley values has
-    two dimensions (samples x features), the interactions are a tensor with
-    three dimensions (samples x features x
-    features).&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/interactions-1.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a
-      summary of graphical
-      visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/interactions-2.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a
-      summary of graphical
-      visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/interactions-3.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a
-      summary of graphical
-      visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-
-  &lt;p&gt;&lt;strong&gt;Here’s how interaction values help interpret a binary
-      classification
-      model.&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;I used a Kaggle [15] dataset that represents a
-    client base and the binary dependent feature: did the client accept the
-    personal loan? NO/YES (0/1).&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/table.png&quot;
-        alt=&quot;&quot; /&gt;&lt;em&gt;a summary of graphical
-        visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-
-  &lt;p&gt;I’ve trained several models, including an
-    xgboost model that we treated with the Tree Explainer.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/sklearn-model.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;a
-      summary of graphical
-      visualizations to analyze local explanations&lt;/em&gt;&lt;/span&gt;
-
-  &lt;p&gt;The background dataset was balanced and
-    represented 40% of the dataset.&lt;/p&gt;
-  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;  &lt;span class=&quot;c1&quot;&gt;# xgb - traned model
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# X_background - background dataset
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;tree_path_dependent&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# project data point of background datasetshap_values =
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# obtain interaction values
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# dimensions
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2543&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2543&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plot_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;compact_dot&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/summary-plot.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;Summary
-      plot with
-      interactions&lt;/em&gt;&lt;/span&gt;
-
-  &lt;p&gt;To better explore interactions, a heatmap can be very useful.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/histogram.png&quot;
-      alt=&quot;&quot; /&gt;&lt;em&gt;Histogram of interaction
-      values&lt;/em&gt;&lt;/span&gt;
-  &lt;p&gt;In the Summary_plot one can observe the
-    importance of features and the importance the interactions. The
-    interactions appear in double which confuses a
-    little the reading.&lt;/p&gt;
-    &lt;p&gt;In the histogram, we observe directly the
-    interactions. The strongests of them of being: Income-Education,
-    Income — Family, Income — CCAvg and
-    Family-Education, Income-Age.&lt;/p&gt;
-    &lt;p&gt;Then I investigated the interactions two by
-    two.&lt;br&gt;To understand the difference between a dependency_plot and a
-    dependency_plot of interactions here are
-    the two:&lt;/p&gt;
-
-  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;  &lt;span class=&quot;c1&quot;&gt;# dependence_plot classique
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dependence_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Age&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;display_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interaction_index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Income&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/dep-plot.png&quot;
-      alt=&quot;&quot; /&gt;&lt;/span&gt;
-  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;  &lt;span class=&quot;c1&quot;&gt;# dependence_plot des interactions
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dependence_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Age&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Income&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/interaction-dep-plot.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
-
-  &lt;p&gt;Even when using the ‘display_features’
-    parameter, the Age and Income values are displayed in the transformed
-    space.&lt;/p&gt;
-    &lt;p&gt;For this reasons I offer an interactive version,
-      which displays the non-transformed values.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/interactive-dep-plot.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
-
-  &lt;p&gt;And here is the code to reproduce this plot:
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/background-shap.png&quot; alt=&quot;&quot; /&gt;&lt;em
+      &gt;Selecting the background dataset changes the question answered by
+      shap values.&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    &lt;strong&gt;SHAPley values&lt;/strong&gt; (explainer.shap_values(x))&lt;br /&gt;the average
+    contribution of each feature to each prediction for each sample based on all
+    possible features. It is a (&lt;em&gt;n,m&lt;/em&gt;) &lt;em&gt;n &lt;/em&gt;— samples,
+    &lt;em&gt;m &lt;/em&gt;— features matrix that represents the contribution of each
+    feature to each sample.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;output value&lt;/strong&gt; (for a sample)&lt;br /&gt;the value predicted by the
+    algorithm (the probability, logit or raw output values of the model)
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;display features&lt;/strong&gt; (&lt;em&gt;n &lt;/em&gt;x &lt;em&gt;m&lt;/em&gt;)&lt;br /&gt;a matrix of
+    original values — before transformation/encoding/engineering of features
+    etc. — that can be provided to some graphs to improve interpretation. Often
+    overlooked and essential for interpretation.
+  &lt;/p&gt;
+  &lt;p&gt;____&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;SHAPley values&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;
+    Shapley values remain the central element. Once we realize that this is
+    simply a matrix with the same dimensions as our input data and that we can
+    analyze it in different ways to explain the model and not only. We can
+    reduce its dimensions, we can cluster it, we can use it to create new
+    features. An interesting exploration described in the article [12] aims at
+    improving anomaly detection using auto encoders and SHAP. The SHAP library
+    proposes a rich but not exchaustive exploration through visualizations.
+  &lt;/p&gt;
+  &lt;h4&gt;Visualizing SHAP: Enhancing Interpretability in Deep Learning Models&lt;/h4&gt;
+  &lt;p&gt;
+    The SHAP library offers different visualizations. A good explanation on how
+    to read the colors of the summary plot can be found in this medium article
+    [14].
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img src=&quot;/images/shap-global.png&quot; alt=&quot;&quot; /&gt;&lt;em
+      &gt;A summary of graphical visualizations to analyze global explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    &lt;strong&gt;The summary plot&lt;/strong&gt; shows the most important features and the
+    magnitude of their impact on the model. It can take several graphical forms
+    and for the models explained by TreeExplainer we can also observe the&lt;strong
+      &gt;&lt;em&gt; interaction values &lt;/em&gt;&lt;/strong
+    &gt;using the “compact dot” with shap_interaction_values in input.
+  &lt;/p&gt;
+  &lt;p&gt;
+    &lt;strong&gt;The dependency plot&lt;/strong&gt; allows to analyze the features two by
+    two by suggesting a possibility to observe the interactions. The scatter
+    plot represents a dependency between a feature(x) and the shapley values (y)
+    colored by a second feature(hue).
+  &lt;/p&gt;
+  &lt;p&gt;
+    On a personal note, I find that an observation of a three-factor
+    relationship at the same time is not intuitive for the human brain (at least
+    mine). I also doubt that an observation of dependency by observing colours
+    can be scientifically accurate. Shap can give us an interaction relationship
+    that is calculated as a correlation between the shapley values of the first
+    feature and the values of the second feature. If possible (for
+    TreeExplainer) it makes more sense to use the shapley interaction values to
+    observe interactions.
   &lt;/p&gt;
   &lt;figure&gt;
-    &lt;script
-      src=&quot;https://gist.github.com/UrszulaCzerwinska/b78e85c6e1795d949321209cbe41587a.js&quot;&gt;&lt;/script&gt;
-    &lt;/figure&gt;
-    &lt;p&gt;Here we have the strongest interactions:&lt;/p&gt;
-    &lt;p&gt;Income — Education&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/income-education.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+    &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/b7853f5f0b209f2f89e2a3590dd6f329.js&quot;&gt;&lt;/script&gt;
+    &lt;figcaption class=&quot;imageCaption&quot;&gt;
+      Snippet code to reproduce my dependence plot variant.
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;p&gt;
+    I propose an interactive variant of dependency plot that allows to observe
+    the relationship between a feature(x), the shapley values (y) and the
+    prediction (histogram colors). What seems important to me in this version is
+    the possibility to display on the graph the original values (Income in k
+    USD) instead of the normalized space used by the model.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/my-dep-plot.png&quot;
+      alt=&quot;Histogram visualizing SHAP interaction values in a data science model analysis.&quot;
+    /&gt;&lt;em&gt;My variant of dependence plot&lt;/em&gt;&lt;/span
+  &gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/shap-local.png&quot;
+      alt=&quot;Histogram visualizing SHAP interaction values in a data science model analysis.&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    There are three alternatives for the visualization of explanations of a
+    sample: force plot, decision plot and waterfall plot.
+  &lt;/p&gt;
+  &lt;p&gt;
+    For a sample, these three representations are redundant, they represent the
+    information in a very similar way. At the same time, some elements of these
+    graphs are complementary. By putting the three side by side, I have the
+    impression to understand the result in a more intuitive way. The force plot
+    is good to see where the “output value” fits in relation to the “base
+    value”. We also see which features have a positive (red) or negative (blue)
+    impact on the prediction and the magnitude of this impact. The water plot
+    also allows us to see the amplitude and the nature of the impact of a
+    feature with its quantification. It also allows to see the order of
+    importance of the features and the values taken by each feature for the
+    studied sample. The Decision plot makes it possible to observe the amplitude
+    of each change, “a trajectory” taken by a samplefor the values of the
+    displayed features.
+  &lt;/p&gt;
+  &lt;p&gt;
+    By using force plot and decision plot we can represent several samples at
+    the same time.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The force plot for a set of samples can be compared to the last level of a
+    dendrogram. The samples are grouped by similarity or by selected feature. In
+    my opinion, this graph is difficult to read for a random sample. It is much
+    more meaningful if we represent the contrasting cases or with a hypothesis
+    behind.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The decision plot, for a set of samples, quickly becomes cumbersome if we
+    select too many samples. It is very useful to observe a ‘trajectory
+    deviation’ or ‘diverging/converging trajectories’ of a limited group of
+    samples.
+  &lt;/p&gt;
+  &lt;h4&gt;
+    Explainers in SHAP: Understanding Different Model Interpretability
+    Approaches
+  &lt;/h4&gt;
+  &lt;p&gt;
+    Explainers are the models used to calculate shapley values. The diagram
+    below shows different types of Explainers.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The choice of Explainers depends mainly on the selected learning model. For
+    linear models, the “Linear Explainer” is used, for decision trees and “set”
+    type models — “TreeExplainer”. “Kernel Explainer” is slower than the above
+    mentioned explainers.
+  &lt;/p&gt;
+  &lt;p&gt;
+    In addition the “Tree Explainer” allows to display the interaction values
+    (see next section). It also allows to transform the model output into
+    probabilities or logloss, which is useful for a better understanding of the
+    model or to compare several models.
+  &lt;/p&gt;
+  &lt;p&gt;
+    The Kernel Explainer creates a model that substitutes the closest to our
+    model. Kernel Explainer can be used to explain neural networks. For deep
+    learning models, there are the Deep Explainer and the Grandient Explainer.
+    For this paper we have not investigated the explainability of neural
+    networks.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/explainer.png&quot;
+      alt=&quot;Force plot visualization of SHAP values enhancing transparency in AI model predictions; Waterfall plot depicting SHAP value contributions to machine learning predictions.&quot;
+    /&gt;&lt;em&gt;a summary of Explainer types in the SHAP library&lt;/em&gt;&lt;/span
+  &gt;
+  &lt;h4&gt;Shapley values of interactions&lt;/h4&gt;
+  &lt;p&gt;
+    One of the properties that allows to go further in the analysis of a model
+    that can be explained with the “Tree Explainer” is the calculation of
+    shapley values of interactions.
+  &lt;/p&gt;
+  &lt;p&gt;
+    These values make it possible to quantify the impact of an interaction
+    between two features on the prediction for each sample. As the matrix of
+    shapley values has two dimensions (samples x features), the interactions are
+    a tensor with three dimensions (samples x features x features).
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/interactions-1.png&quot;
+      alt=&quot;Interactive SHAP dependence plot showing feature impact in deep learning models.&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/interactions-2.png&quot;
+      alt=&quot;Interactive SHAP dependence plot showing feature impact in deep learning models.&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/interactions-3.png&quot;
+      alt=&quot;Interactive SHAP dependence plot showing feature impact in deep learning models.&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
 
-  &lt;p&gt;In this graph, we notice that with an Education
-    level 1 (undergrad), low income (under 100 k USD) is an encouraging
-    factor to take a credit, and high income
-    (over 120 k USD) is an inhibiting interaction.&lt;br&gt;For individuals with
-    Education 2 &amp;amp; 3 (graduated &amp;amp;
-    advanced/professional), the interaction effect is slightly lower and
-    opposite to that for Education == 1.&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/income-family.png&quot;
-        alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;p&gt;
+    &lt;strong
+      &gt;Here’s how interaction values help interpret a binary classification
+      model.&lt;/strong
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    I used a Kaggle [15] dataset that represents a client base and the binary
+    dependent feature: did the client accept the personal loan? NO/YES (0/1).
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/table.png&quot;
+      alt=&quot;A summary of SHAP graphical
+      visualizations to analyze local explanations of machine learning model&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
 
-  &lt;p&gt;For the features “Family” and “number of
-    people” in the household, the interaction is positive when income is low
-    (below USD 100k) and the family has
-    1–2 members. For higher incomes (&amp;gt; 120 k USD), for family with 1–2
-    members has a negative effect. The
-    opposite is true for families of 3–4 people.&lt;/p&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/income-ccavg.png&quot;
-      alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;p&gt;
+    I’ve trained several models, including an xgboost model that we treated with
+    the Tree Explainer.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/sklearn-model.png&quot;
+      alt=&quot;A summary of SHAP graphical
+        visualizations to analyze local explanations of machine learning model&quot;
+    /&gt;&lt;em
+      &gt;a summary of graphical visualizations to analyze local explanations&lt;/em
+    &gt;&lt;/span
+  &gt;
 
-  &lt;p&gt;The interaction between income and credit card
-    average spending is more complex. For low income (&amp;lt;100 k USD) and low
-    CCAvg (&amp;lt;4 k USD) the interaction
-    has a negative effect, for income between 50 and 110 k USD and CCAvg 2–6
-    k USD the effect is strongly
-    positive, this could define a potential target for credit canvassing
-    along these two axes. For high incomes
-    (&amp;gt; 120 k USD), the low CCAvg has a positive impact on the prediction
-    of class 1, high CCAvg has a small
-    negative effect on the predictions, the medium CCAvg has a stronger
-    negative impact.&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img
-        src=&quot;/images/family-education.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
-    &lt;p&gt;The interaction between two features is a
-    little less readible. For a family of 1 and 2 members with “undergrad”
-    education, the interaction has a
+  &lt;p&gt;The background dataset was balanced and represented 40% of the dataset.&lt;/p&gt;
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;# xgb - traned model # X_background - background
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;dataset&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;tree_path_dependent&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# project
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;point&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;background&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datasetshap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# obtain interaction values
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer_raw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# dimensions shap_values.shape &amp;gt;&amp;gt;&amp;gt;(2543, 16) shap_interaction_values.shape
+&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2543&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;summary_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;plot_type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;compact_dot&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/summary-plot.png&quot;
+      alt=&quot;Summary plot showcasing SHAP values and feature interactions in machine learning models.&quot;
+    /&gt;&lt;em&gt;Summary plot with interactions&lt;/em&gt;&lt;/span
+  &gt;
+
+  &lt;p&gt;To better explore interactions, a heatmap can be very useful.&lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/histogram.png&quot;
+      alt=&quot;Heatmap illustrating SHAP values and feature interactions in machine learning models.&quot;
+    /&gt;&lt;em&gt;Histogram of interaction values&lt;/em&gt;&lt;/span
+  &gt;
+  &lt;p&gt;
+    In the Summary_plot one can observe the importance of features and the
+    importance the interactions. The interactions appear in double which
+    confuses a little the reading.
+  &lt;/p&gt;
+  &lt;p&gt;
+    In the histogram, we observe directly the interactions. The strongests of
+    them of being: Income-Education, Income — Family, Income — CCAvg and
+    Family-Education, Income-Age.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Then I investigated the interactions two by two.&lt;br /&gt;To understand the
+    difference between a dependency_plot and a dependency_plot of interactions
+    here are the two:
+  &lt;/p&gt;
+
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;# dependence_plot classique shap.dependence_plot(&quot;Age&quot;,
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;display_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;interaction_index&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Income&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/dep-plot.png&quot;
+      alt=&quot;SHAP dependency plot illustrating interaction effects in machine learning algorithm&quot;
+  /&gt;&lt;/span&gt;
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;# dependence_plot des interactions
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;dependence_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Age&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Income&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_interaction_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;display_features&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background_display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/interaction-dep-plot.png&quot;
+      alt=&quot;SHAP dependency plot illustrating interaction effects in machine learning algorithm&quot;
+  /&gt;&lt;/span&gt;
+
+  &lt;p&gt;
+    Even when using the ‘display_features’ parameter, the Age and Income values
+    are displayed in the transformed space.
+  &lt;/p&gt;
+  &lt;p&gt;
+    For this reasons I offer an interactive version, which displays the
+    non-transformed values.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/interactive-dep-plot.png&quot;
+      alt=&quot;SHAP dependency plot illustrating interaction effects in machine learning algorithm&quot;
+  /&gt;&lt;/span&gt;
+
+  &lt;p&gt;And here is the code to reproduce this plot:&lt;/p&gt;
+  &lt;figure&gt;
+    &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/b78e85c6e1795d949321209cbe41587a.js&quot;&gt;&lt;/script&gt;
+  &lt;/figure&gt;
+  &lt;p&gt;Here we have the strongest interactions:&lt;/p&gt;
+  &lt;p&gt;Income — Education&lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/income-education.png&quot;
+      alt=&quot;Shapley interaction plot for better visualization of features interaction in machine learning model&quot;
+  /&gt;&lt;/span&gt;
+
+  &lt;p&gt;
+    In this graph, we notice that with an Education level 1 (undergrad), low
+    income (under 100 k USD) is an encouraging factor to take a credit, and high
+    income (over 120 k USD) is an inhibiting interaction.&lt;br /&gt;For individuals
+    with Education 2 &amp;amp; 3 (graduated &amp;amp; advanced/professional), the
+    interaction effect is slightly lower and opposite to that for Education ==
+    1.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/income-family.png&quot;
+      alt=&quot;Shapley interaction plot for better visualization of features interaction in machine learning model&quot;
+  /&gt;&lt;/span&gt;
+
+  &lt;p&gt;
+    For the features “Family” and “number of people” in the household, the
+    interaction is positive when income is low (below USD 100k) and the family
+    has 1–2 members. For higher incomes (&amp;gt; 120 k USD), for family with 1–2
+    members has a negative effect. The opposite is true for families of 3–4
+    people.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/income-ccavg.png&quot;
+      alt=&quot;Shapley interaction plot for better visualization of features interaction in machine learning model&quot;
+  /&gt;&lt;/span&gt;
+
+  &lt;p&gt;
+    The interaction between income and credit card average spending is more
+    complex. For low income (&amp;lt;100 k USD) and low CCAvg (&amp;lt;4 k USD) the
+    interaction has a negative effect, for income between 50 and 110 k USD and
+    CCAvg 2–6 k USD the effect is strongly positive, this could define a
+    potential target for credit canvassing along these two axes. For high
+    incomes (&amp;gt; 120 k USD), the low CCAvg has a positive impact on the
+    prediction of class 1, high CCAvg has a small negative effect on the
+    predictions, the medium CCAvg has a stronger negative impact.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/family-education.png&quot;
+      alt=&quot;Shapley interaction plot for better visualization of features interaction in machine learning model&quot;
+  /&gt;&lt;/span&gt;
+  &lt;p&gt;
+    The interaction between two features is a little less readible. For a family
+    of 1 and 2 members with “undergrad” education, the interaction has a
     negative impact. For a family of 3–4 members the effect is the opposite.
-    &lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/income-age.png&quot;
-        alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/income-age.png&quot;
+      alt=&quot;Shapley interaction plot for better visualization of features interaction in machine learning model&quot;
+  /&gt;&lt;/span&gt;
 
-  &lt;p&gt;For low incomes (&amp;lt; 70k USD),
-    impact changes linearly with age, the higher the age, the more the impact
-    varies positively. For high incomes
-    (&amp;gt;120k USD), the interaction impact is lower, at middle age (~40
-    years) the impact is slightly positive, at
-    low age the impact is negative and for age &amp;gt;45 the impact is neutral.
-    &lt;/p&gt;
-    &lt;p&gt;These findings would be more complicated to
-    interpret if the values of the features had not corresponded to original
-    values. For instance, speaking of age
-    or income in negative in units. Therefore, representing explanations in
-    an understandable dimension
-    facilitates interpretation.&lt;/p&gt;
-    &lt;h4&gt;Compare models&lt;/h4&gt;
-    &lt;p&gt;In some situations, we may want to compare the
-    predictions of different models for the same samples. Understand why one
-    model classifies the sample correctly
-    and the other one does not.&lt;br&gt;To start, we can display the summary plots
-    for each model, look at the
-    importance of features and the shapley value distributions. This gives a
-    first general idea.&lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/tree-explainer.png&quot;
-        alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;p&gt;
+    For low incomes (&amp;lt; 70k USD), impact changes linearly with age, the higher
+    the age, the more the impact varies positively. For high incomes (&amp;gt;120k
+    USD), the interaction impact is lower, at middle age (~40 years) the impact
+    is slightly positive, at low age the impact is negative and for age &amp;gt;45
+    the impact is neutral.
+  &lt;/p&gt;
+  &lt;p&gt;
+    These findings would be more complicated to interpret if the values of the
+    features had not corresponded to original values. For instance, speaking of
+    age or income in negative in units. Therefore, representing explanations in
+    an understandable dimension facilitates interpretation.
+  &lt;/p&gt;
+  &lt;h4&gt;Comparing Models: How SHAP Improves Machine Learning Interpretability&lt;/h4&gt;
+  &lt;p&gt;
+    In some situations, we may want to compare the predictions of different
+    models for the same samples. Understand why one model classifies the sample
+    correctly and the other one does not.&lt;br /&gt;To start, we can display the
+    summary plots for each model, look at the importance of features and the
+    shapley value distributions. This gives a first general idea.
+  &lt;/p&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/tree-explainer.png&quot;
+      alt=&quot;SHAP tree explainer illustrating how to compare the predictions of different models for the same samples&quot;
+  /&gt;&lt;/span&gt;
 
-  &lt;p&gt;Decision plot allows to compare on the same
-    graph the predictions of different models for the same sample.&lt;br&gt;You
-    just have to create an object that
-    simulates multiclass classification.&lt;/p&gt;
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;    &lt;span class=&quot;c1&quot;&gt;# we have tree models : xgb, gbt, rf
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# for each model we get an explainer(*_explainer), probabilities (*_probs),
-&lt;/span&gt;  &lt;span class=&quot;nf&quot;&gt;predictions &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shapley&lt;/span&gt;
-  &lt;span class=&quot;nf&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;#xgb
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;xgb_explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;xgb_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;xgb_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;xgb_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# rf
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;rf_explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;rf_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;rf_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;rf_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# gbt
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;gbt_explainer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;gbt_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;gbt_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;gbt_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;########
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# we make a list of model explaners
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;base_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;rf_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gbt_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# index of a sample
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Plot
-&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;multioutput_decision_plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;p&gt;
+    Decision plot allows to compare on the same graph the predictions of
+    different models for the same sample.&lt;br /&gt;You just have to create an object
+    that simulates multiclass classification.
+  &lt;/p&gt;
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;c1&quot;&gt;# we have tree models : xgb, gbt, rf # for each model
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;we&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;probabilities &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_pred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shapley&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#xgb xgb_explainer =
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;xgb_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;xgb_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# rf rf_explainer =
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;rf_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# gbt gbt_explainer =
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;probability&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gbt_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_probs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict_proba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;######## # we make a list
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explaners&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;rf_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_explainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expected_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rf_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gbt_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gbt_probs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;rf&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;gbt&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# index of a
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;sample&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Plot idx = 100 shap.multioutput_decision_plot(base_values,
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;to_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend_labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;legend_location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;lower right&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;span class=&quot;n&quot;&gt;legend_location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;lower right&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img
-      src=&quot;/images/model-comparison.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/model-comparison.png&quot;
+      alt=&quot;Comparative analysis of machine learning models using SHAP values for data science insights.&quot;
+  /&gt;&lt;/span&gt;
 
-  &lt;p&gt;The only difficulty consists in checking the
-    dimensions of shapley values because for some models, shapley values are
-    calculated for each class, in the
-    case of the binary classification (class 0 and 1), while for others we
-    obtain a single matrix which
-    corresponds to class 1. In our example, we select a second matrix (index
-    1) for random forest.&lt;/p&gt;
-    &lt;h4&gt;Simulations&lt;/h4&gt;
-    &lt;p&gt;By default SHAP does not contain functions that
-    make it easier to answer the “What if?” question. “What if I could earn
-    an extra 10K USD a year, would my
-    credit be extended?”&lt;br&gt;Nevertheless, it is possible to run the
-    simulations by varying a feature and
-    calculating hypothetical shapley values.&lt;/p&gt;
-    &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;  &lt;span class=&quot;n&quot;&gt;explainer_margin_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;rg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;202&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hypothetical_shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hypothetical_predictions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;p&gt;
+    The only difficulty consists in checking the dimensions of shapley values
+    because for some models, shapley values are calculated for each class, in
+    the case of the binary classification (class 0 and 1), while for others we
+    obtain a single matrix which corresponds to class 1. In our example, we
+    select a second matrix (index 1) for random forest.
+  &lt;/p&gt;
+  &lt;h4&gt;
+    Running Simulations with SHAP: Enhancing Model Predictions in Data Science
+  &lt;/h4&gt;
+  &lt;p&gt;
+    By default SHAP does not contain functions that make it easier to answer the
+    “What if?” question. “What if I could earn an extra 10K USD a year, would my
+    credit be extended?”&lt;br /&gt;Nevertheless, it is possible to run the
+    simulations by varying a feature and calculating hypothetical shapley
+    values.
+  &lt;/p&gt;
+  &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt; &lt;span class=&quot;n&quot;&gt;explainer_margin_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TreeExplainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xgb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model_output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;feature_perturbation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;interventional&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;202&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;hypothetical_shap_values&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hypothetical_predictions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
   &lt;span class=&quot;nf&quot;&gt;simulate_with_shap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Income&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;explainer_margin_i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-  &lt;p&gt;I created a `simulate_with_shap` function that
-    simulates different values of the feature and calculates the hypothetical
-    shapley values.&lt;/p&gt;
-    &lt;figure&gt;
-    &lt;script
-      src=&quot;https://gist.github.com/UrszulaCzerwinska/c324a8ec8e37ebe4758f4affe52456be.js&quot;&gt;&lt;/script&gt;
-    &lt;/figure&gt;
-  &lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/simulation.png&quot;
-      alt=&quot;&quot; /&gt;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pipeline_trans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+  &lt;p&gt;
+    I created a `simulate_with_shap` function that simulates different values of
+    the feature and calculates the hypothetical shapley values.
+  &lt;/p&gt;
+  &lt;figure&gt;
+    &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/c324a8ec8e37ebe4758f4affe52456be.js&quot;&gt;&lt;/script&gt;
+  &lt;/figure&gt;
+  &lt;span class=&quot;image fit&quot;
+    &gt;&lt;img
+      src=&quot;/images/simulation.png&quot;
+      alt=&quot;The SHAP simulation allows to see how we could change the prediction using new values and what the shapley values would be for these&quot;
+  /&gt;&lt;/span&gt;
 
-  &lt;p&gt;This simulation allows us to see for the
-    selected sample, if we freeze all the features apart from Income, how we
-    could change the prediction and what
-    the shapley values would be for these new values.&lt;/p&gt;
-    &lt;p&gt;It is possible to simulate the changes ‘feature by
-    feature’, it would be interesting to be able to make several changes
-    simultaneously.&lt;/p&gt;
-    &lt;h3&gt;Final note&lt;/h3&gt;
-    &lt;p&gt;AI algorithms are taking up more and more space in
-    our lives. The explanability of predictions is an important topic for
-    data scientists, decision-makers and
-    individuals who are impacted by predictions.&lt;/p&gt;
-    &lt;p&gt;Several frameworks have been proposed in order to
-    transform non-explainable models into explainable ones. One of the best
-    known and most widely used frameworks
-    is SHAP.&lt;/p&gt;
-    &lt;p&gt;Despite very good documentation, it is not clear how
-      to exploit all its features in depth.&lt;/p&gt;
-    &lt;p&gt;I have proposed some simple graphical enhancements
-    and tried to demonstrate the usefulness of less known and not understood
-    features in most standard uses of
-    SHAP.&lt;/p&gt;
-    &lt;h3&gt;Acknowledgements&lt;/h3&gt;
-    &lt;p&gt;I would like to thank the Saegus DATA team who
-    participated in this work with good advice, in particular Manager
-    Fréderic Brajon and Senior Consultant
-    Manager Clément Moutard.&lt;/p&gt;
-    &lt;h3&gt;Bibliography&lt;/h3&gt;
-    &lt;p&gt;[1] Stop Explaining Black Box Machine Learning
-    Models for High Stakes Decisions and Use Interpretable Models Instead;
-    Cynthia Rudin &lt;a href=&quot;https://arxiv.org/pdf/1811.10154.pdf&quot;
+  &lt;p&gt;
+    This simulation allows us to see for the selected sample, if we freeze all
+    the features apart from Income, how we could change the prediction and what
+    the shapley values would be for these new values.
+  &lt;/p&gt;
+  &lt;p&gt;
+    It is possible to simulate the changes ‘feature by feature’, it would be
+    interesting to be able to make several changes simultaneously.
+  &lt;/p&gt;
+  &lt;h3&gt;
+    Future Trends in Data Science: The Growing Role of SHAP and Interpretability
+  &lt;/h3&gt;
+  &lt;p&gt;
+    AI algorithms are taking up more and more space in our lives. The
+    explanability of predictions is an important topic for data scientists,
+    decision-makers and individuals who are impacted by predictions.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Several frameworks have been proposed in order to transform non-explainable
+    models into explainable ones. One of the best known and most widely used
+    frameworks is SHAP.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Despite very good documentation, it is not clear how to exploit all its
+    features in depth.
+  &lt;/p&gt;
+  &lt;p&gt;
+    I have proposed some simple graphical enhancements and tried to demonstrate
+    the usefulness of less known and not understood features in most standard
+    uses of SHAP.
+  &lt;/p&gt;
+  &lt;h3&gt;Acknowledgements&lt;/h3&gt;
+  &lt;p&gt;
+    I would like to thank the Saegus DATA team who participated in this work
+    with good advice, in particular Manager Fréderic Brajon and Senior
+    Consultant Manager Clément Moutard.
+  &lt;/p&gt;
+  &lt;h3&gt;Bibliography&lt;/h3&gt;
+  &lt;p&gt;
+    [1] Stop Explaining Black Box Machine Learning Models for High Stakes
+    Decisions and Use Interpretable Models Instead; Cynthia Rudin
+    &lt;a
+      href=&quot;https://arxiv.org/pdf/1811.10154.pdf&quot;
       data-href=&quot;https://arxiv.org/pdf/1811.10154.pdf&quot;
-      target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1811.10154.pdf&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[2] Explainable Artificial Intelligence (XAI):
-    Concepts, Taxonomies, Opportunities and Challenges toward Responsible AI;
-    Arrietaa et al. &lt;a href=&quot;https://arxiv.org/pdf/1910.10045.pdf&quot;
+      target=&quot;_blank&quot;
+      &gt;https://arxiv.org/pdf/1811.10154.pdf&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [2] Explainable Artificial Intelligence (XAI): Concepts, Taxonomies,
+    Opportunities and Challenges toward Responsible AI; Arrietaa et al.
+    &lt;a
+      href=&quot;https://arxiv.org/pdf/1910.10045.pdf&quot;
       data-href=&quot;https://arxiv.org/pdf/1910.10045.pdf&quot;
-      target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1910.10045.pdf&lt;/a&gt;&lt;/p&gt;
-    &lt;p&gt;[3] Cloudera Fast Forward Interpretability: &lt;a
-        href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
-        data-href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
-        target=&quot;_blank&quot;&gt;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&lt;/a&gt;
-    &lt;/p&gt;
-    &lt;p&gt;[4] &lt;a
-        href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
-        data-href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
-        target=&quot;_blank&quot;&gt;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&lt;/a&gt;
-    &lt;/p&gt;
-  &lt;p&gt;[5] &lt;a href=&quot;https://github.com/slundberg/shap&quot;
+      target=&quot;_blank&quot;
+      &gt;https://arxiv.org/pdf/1910.10045.pdf&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [3] Cloudera Fast Forward Interpretability:
+    &lt;a
+      href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
+      data-href=&quot;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&quot;
+      target=&quot;_blank&quot;
+      &gt;https://ff06-2020.fastforwardlabs.com/?utm_campaign=Data_Elixir&amp;amp;utm_source=Data_Elixir_282&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [4]
+    &lt;a
+      href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
+      data-href=&quot;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&quot;
+      target=&quot;_blank&quot;
+      &gt;https://towardsdatascience.com/understand-the-machine-learning-blackbox-with-ml-interpreter-7b0f9a2d8e9f&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [5]
+    &lt;a
+      href=&quot;https://github.com/slundberg/shap&quot;
       data-href=&quot;https://github.com/slundberg/shap&quot;
-      target=&quot;_blank&quot;&gt;https://github.com/slundberg/shap&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;[6] &lt;a
+      target=&quot;_blank&quot;
+      &gt;https://github.com/slundberg/shap&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [6]
+    &lt;a
       href=&quot;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&quot;
       data-href=&quot;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&quot;
-      target=&quot;_blank&quot;&gt;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[7] &lt;a href=&quot;https://www.nature.com/articles/s42256-019-0138-9&quot;
+  &lt;p&gt;
+    [7]
+    &lt;a
+      href=&quot;https://www.nature.com/articles/s42256-019-0138-9&quot;
       data-href=&quot;https://www.nature.com/articles/s42256-019-0138-9&quot;
-      target=&quot;_blank&quot;&gt;https://www.nature.com/articles/s42256-019-0138-9&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://www.nature.com/articles/s42256-019-0138-9&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[8] &lt;a href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;
+  &lt;p&gt;
+    [8]
+    &lt;a
+      href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;
       data-href=&quot;https://christophm.github.io/interpretable-ml-book/&quot;
-      target=&quot;_blank&quot;&gt;https://christophm.github.io/interpretable-ml-book/&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://christophm.github.io/interpretable-ml-book/&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[9] &lt;a
+  &lt;p&gt;
+    [9]
+    &lt;a
       href=&quot;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&quot;
       data-href=&quot;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&quot;
-      target=&quot;_blank&quot;&gt;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[10] &lt;a
+  &lt;p&gt;
+    [10]
+    &lt;a
       href=&quot;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&quot;
       data-href=&quot;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&quot;
-      target=&quot;_blank&quot;&gt;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://medium.com/@gabrieltseng/interpreting-complex-models-with-shap-values-1c187db6ec83&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[11] &lt;a
+  &lt;p&gt;
+    [11]
+    &lt;a
       href=&quot;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&quot;
       data-href=&quot;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&quot;
-      target=&quot;_blank&quot;&gt;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://medium.com/@stanleyg1/a-detailed-walk-through-of-shap-example-for-interpretable-machine-learning-d265c693ac22&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[12] &lt;a
+  &lt;p&gt;
+    [12]
+    &lt;a
       href=&quot;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&quot;
       data-href=&quot;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&quot;
-      target=&quot;_blank&quot;&gt;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://francescopochetti.com/whitening-a-black-box-how-to-interpret-a-ml-model/&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;[13] Explaining Anomalies Detected by Autoencoders
-    Using SHAP; Antwarg et al. &lt;a href=&quot;https://arxiv.org/pdf/1903.02407.pdf&quot;
+  &lt;p&gt;
+    [13] Explaining Anomalies Detected by Autoencoders Using SHAP; Antwarg et
+    al.
+    &lt;a
+      href=&quot;https://arxiv.org/pdf/1903.02407.pdf&quot;
       data-href=&quot;https://arxiv.org/pdf/1903.02407.pdf&quot;
-      target=&quot;_blank&quot;&gt;https://arxiv.org/pdf/1903.02407.pdf&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;[14] &lt;a
+      target=&quot;_blank&quot;
+      &gt;https://arxiv.org/pdf/1903.02407.pdf&lt;/a
+    &gt;
+  &lt;/p&gt;
+  &lt;p&gt;
+    [14]
+    &lt;a
       href=&quot;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&quot;
       data-href=&quot;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&quot;
-      target=&quot;_blank&quot;&gt;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&lt;/a&gt;
+      target=&quot;_blank&quot;
+      &gt;https://medium.com/fiddlerlabs/case-study-explaining-credit-modeling-predictions-with-shap-2a7b3f86ec12&lt;/a
+    &gt;
   &lt;/p&gt;
-  &lt;p&gt;&lt;/p&gt;[15] &lt;a href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
-    data-href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
-    target=&quot;_blank&quot;&gt;https://www.kaggle.com/itsmesunil/bank-loan-modelling&lt;/a&gt;
+  &lt;p&gt;
+    [15]
+    &lt;a
+      href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
+      data-href=&quot;https://www.kaggle.com/itsmesunil/bank-loan-modelling&quot;
+      target=&quot;_blank&quot;
+      &gt;https://www.kaggle.com/itsmesunil/bank-loan-modelling&lt;/a
+    &gt;
   &lt;/p&gt;
 
   &lt;footer&gt;
-&lt;/footer&gt;
-&lt;script type=&quot;text/javascript&quot;
-    src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-
-
-&lt;/section&gt;</description>
+    This blog post was originally published with
+    &lt;a
+      href=&quot;https://medium.com/swlh&quot;
+      alt=&quot;Get smarter at building your thing. Follow to join The Startup’s +8 million monthly readers &amp; +778K followers.&quot;
+      &gt;The Startup&lt;/a
+    &gt;
+    at
+    &lt;a
+      href=&quot;https://medium.com/swlh/push-the-limits-of-explainability-an-ultimate-guide-to-shap-library-a110af566a02&quot;
+      alt=&quot;Discover how to push the boundaries of explainability in data science and machine learning. This comprehensive guide to SHAP (SHapley Additive exPlanations) covers everything from deep learning algorithms to model interpretability, making complex AI models more transparent and trustworthy. Ideal for data science professionals and enthusiasts looking to enhance their understanding of machine learning interpretability with cutting-edge tools and techniques.&quot;
+      &gt;Medium&lt;/a
+    &gt;. &lt;br /&gt;&lt;br /&gt;
+  &lt;/footer&gt;
+  &lt;script
+    type=&quot;text/javascript&quot;
+    src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
+  &gt;&lt;/script&gt;
+  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+&lt;/section&gt;
+</description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
         <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>

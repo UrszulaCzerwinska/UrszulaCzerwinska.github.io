@@ -20,9 +20,10 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "{{ page.title | escape }}",
-      "description": "{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
-      "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
-      "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+      "description": "{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
+      "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}",
+      "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}",
+      "keywords": "{% assign keywords = page.tags | where_exp: 'tag', 'tag != "featured"' | join: ', ' %}{{ keywords }}",
       "author": {
         "@type": "Person",
         "name": "{{ site.author.name }}",
@@ -50,7 +51,7 @@
         "@id": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
       }
     }
-  </script>
+    </script>
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->{%
   if page.background-image %}{%
