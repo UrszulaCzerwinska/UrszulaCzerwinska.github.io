@@ -10,6 +10,9 @@ tags:
   - Python
   - Saegus
   - featured
+  - machine learning
+author: urszulaczerwinska
+description:
 ---
 
 ## Introduction

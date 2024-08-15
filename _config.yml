@@ -35,11 +35,11 @@ compose:
 navlinks: bottom
 
 # expecting more works? mark your list as in-progress
-works_in_progress: no
+# works_in_progress: no
 
 # If you have custom extensions, specifically includes/_my/custom.scss,
 # set this to yes
-custom_extensions: no
+custom_extensions: false
 
 # Build settings
 permalink: /:categories/:title.html
