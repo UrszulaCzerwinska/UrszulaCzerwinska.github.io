@@ -3,7 +3,7 @@ priority: 0.9
 title: Mastering Named Entity Recognition (NER) in Data Science
 excerpt: Extracting Keywords from Medium Articles Using SpaCy
 categories: works
-permalink: works/ner-medium-articles-keywords-nlp
+permalink: works/egg_ner
 background-image: text_cover.jpg
 tags:
   - NLP
