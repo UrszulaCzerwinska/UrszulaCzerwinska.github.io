@@ -3,10 +3,10 @@
   <channel>
     <title>Urszula Czerwinska | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.&quot;</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Aug 2024 00:25:16 +0200</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 00:25:16 +0200</lastBuildDate>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 Aug 2024 10:13:53 +0200</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 10:13:53 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -31,8 +31,8 @@
 
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/ner_cc</link>
-        <guid isPermaLink="true">http://localhost:4000/works/ner_cc</guid>
+        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
         
         <category>Machine Learning</category>
         
@@ -60,7 +60,7 @@
         <description>&lt;head&gt;
   &lt;meta
     name=&quot;description&quot;
-    content=&quot;Explore deep learning AI with this ultimate guide to SHAP, focused on data science projects, interpretability, and machine learning models.&quot;
+    content=&quot;Explore the power of SHAP in enhancing model interpretability in data science and machine learning. This guide provides detailed insights and practical examples for data professionals.&quot;
   /&gt;
 &lt;/head&gt;
 
@@ -1049,8 +1049,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/interpretability-shap</link>
-        <guid isPermaLink="true">http://localhost:4000/works/interpretability-shap</guid>
+        <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>
         
         <category>data science</category>
         
@@ -1061,6 +1061,8 @@
         <category>machine learning</category>
         
         <category>featured</category>
+        
+        <category>explainable AI</category>
         
         
         <category>works</category>
@@ -1231,15 +1233,15 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;p&gt;This article is a result of a teamwork realized at &lt;a href=&quot;http://saegus.com/fr/&quot;&gt;Saegus&lt;/a&gt;. Published originally in French at &lt;a href=&quot;https://medium.com/data-by-saegus/ner-medium-articles-saegus-7ffec0f3188c&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
 
 &lt;section&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
+&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
 &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
 &lt;section&gt;
 
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/egg_ner</link>
-        <guid isPermaLink="true">http://localhost:4000/works/egg_ner</guid>
+        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
         
         <category>NLP</category>
         
@@ -1257,52 +1259,254 @@ We have succeeded! 🚀&lt;/p&gt;
       <item>
         <title>Women in Healthcare Analytics and Data Science (WiHADS)</title>
         <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta
+      name=&quot;description&quot;
+      content=&quot;Urszula Czerwinska orgnaiser of a meetup WiHADS | Join WiHADS, a pioneering community promoting women in data science, healthcare analytics, and deep learning AI. Explore opportunities to lead data science projects, engage with deep learning models, and shape the future of AI in healthcare.&quot;
+    /&gt;
+  &lt;/head&gt;
 
-&lt;head&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+  &lt;body&gt;&lt;/body&gt;
+  &lt;section&gt;
+    &lt;h2&gt;
+      Introduction: Empowering Women in Data Science and AI for Healthcare
+    &lt;/h2&gt;
+    &lt;p&gt;
+      In today’s rapidly evolving world, data science is driving innovation
+      across industries, particularly in healthcare where AI and deep learning
+      models are transforming patient outcomes. The
+      &lt;strong&gt;Women in Healthcare Analytics and Data Science (WiHADS)&lt;/strong&gt;
+      initiative is leading the charge, empowering women in data science to
+      spearhead crucial data science projects that are revolutionizing the
+      healthcare sector.
+    &lt;/p&gt;
+    &lt;h2&gt;The Beginnings of WiHADS: A Movement in Data Science and Healthcare&lt;/h2&gt;
+    &lt;p&gt;
+      WiHADS began in 2017, spearheaded by
+      &lt;a href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;&gt;Sameh Megrhi&lt;/a&gt;,
+      with a vision to amplify the voices of women in data science and
+      healthcare analytics.&lt;br /&gt;
+    &lt;/p&gt;
 
+    &lt;blockquote&gt;
+      &lt;p&gt;
+        The initiative was created to address the underrepresentation of women
+        in fields like deep learning models, data science and engineering, and
+        AI in healthcare. By highlighting the significant contributions of
+        women, WiHADS aims to inspire more women to enter and thrive in these
+        critical sectors.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Since its inception, WiHADS has brought together a healthcare data
+        science community. The platform provides a space where women can share
+        their experiences and insights, fostering a collaborative environment
+        that encourages innovation in data science and machine learning. These
+        meetups are not just about discussions—they are about solving real-world
+        challenges using deep learning algorithms and data science
+        methodologies.
+      &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;h2&gt;WiHADS Meetups: A Hub for Innovation in Data Science and Healthcare&lt;/h2&gt;
+    &lt;p&gt;
+      WiHADS meetups have become a central platform for women in data science to
+      exchange ideas, network, and discuss the latest trends in data science and
+      machine learning. Since 2017, WiHADS has organized four major meetups in
+      Paris, each focusing on the intersection of data science and healthcare.
+      These events have garnered attention within the data science community and
+      beyond, as they provide invaluable insights into how data science and deep
+      learning AI are transforming the healthcare industry.
+    &lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;b
+        &gt;Join us at
+        &lt;a
+          href=&quot;https://www.meetup.com/fr-FR/Healthcare-Analytics-Data-Science/&quot;
+          alt=&quot;The WiHADS meetups are place to exchange about woman in Data Science, Machine Learning and AI&quot;
+          &gt;our meetup webpage&lt;/a
+        &gt;&lt;/b
+      &gt;
+    &lt;/blockquote&gt;
 
-&lt;/head&gt;
+    &lt;h2&gt;Key Components of WiHADS Meetups:&lt;/h2&gt;
 
-&lt;body&gt;
-&lt;/body&gt;   
-&lt;section&gt;
-&lt;h3&gt;Summary&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Speakers:&lt;/strong&gt; The meetups feature accomplished women from
+        top companies like
+        &lt;a
+          alt=&quot;IQVIA, a global leader in clinical research and healthcare data, drives innovation to enhance patient and public health. By integrating data, insights, technology, and expertise, IQVIA empowers clients and partners to advance and market cutting-edge therapies.&quot;
+          href=&quot;https://www.iqvia.com/fr-fr/locations/france&quot;
+          &gt;IQvia&lt;/a
+        &gt;,
+        &lt;a
+          alt=&quot;Doctolib a leader in AI for healthcare.&quot;
+          href=&quot;https://about.doctolib.fr/?utm_button=header&amp;utm_website=doctolib_career%2F&quot;
+          &gt;Doctolib&lt;/a
+        &gt;, and
+        &lt;a
+          alt=&quot;Democratizing expert cardiac care through medical-grade AI and cloud technology&quot;
+          href=&quot;https://cardiologs.com/&quot;
+          &gt;Cardiologs&lt;/a
+        &gt;, who share their expertise on data science projects, deep learning
+        models, and their applications in healthcare. These sessions provide
+        attendees with a deeper understanding of how data science is applied in
+        real-world healthcare settings.
+      &lt;/li&gt;
 
-&lt;p&gt;Project started in 2017 for initiative of &lt;a href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;&gt;Sameh Megrhi&lt;/a&gt;&lt;br&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Opportunities:&lt;/strong&gt; The events offer a unique chance for
+        women in data science to connect, collaborate, and learn from each
+        other. This networking is crucial for building a strong data science and
+        engineering network that can support professional growth and innovation.
+      &lt;/li&gt;
 
-    &lt;blockquote&gt; &lt;p&gt;The purpose of this group is to highlight the advances of Artificial Intelligence in the field of Health. We would like to give weight to profiles of women who have made significant contributions in this field in order to promote the place of women in this sector, which is still too often represented by men.&lt;/p&gt;
-    &lt;p&gt;WiHADS meetup will engage data scientists, industry experts, researchers, medical.
-        We set out to portray, encourage the community to discuss and share knowledge and experiences to help solve the most complex issues around data, analytics, privacy, standards, quality of care and discuss perspectives of the evolving use of Big Data in and healthcare and, to examine opportunities and challenges.
-    &lt;/p&gt;&lt;/blockquote&gt; 
+      &lt;li&gt;
+        &lt;strong&gt;Roundtable Discussions:&lt;/strong&gt; After the presentations,
+        participants engage in roundtable discussions, where they explore the
+        ethical implications of AI in healthcare, the challenges of implementing
+        deep learning algorithms in medical practice, and the future of data
+        science in healthcare.
+      &lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;/p&gt;
+    &lt;p&gt;
+      WiHADS is committed to fostering a supportive environment where women in
+      data science can thrive. The meetups are free to attend, thanks to the
+      generous support of sponsors like
+      &lt;a
+        alt=&quot;Doctolib a leader in AI for healthcare.&quot;
+        href=&quot;https://about.doctolib.fr/?utm_button=header&amp;utm_website=doctolib_career%2F&quot;
+        &gt;Doctolib&lt;/a
+      &gt;,
+      &lt;a
+        alt=&quot;IQVIA, a global leader in clinical research and healthcare data, drives innovation to enhance patient and public health. By integrating data, insights, technology, and expertise, IQVIA empowers clients and partners to advance and market cutting-edge therapies.&quot;
+        href=&quot;https://www.iqvia.com/fr-fr/locations/france&quot;
+        &gt;IQvia&lt;/a
+      &gt;, and
+      &lt;a
+        alt=&quot;Saegus is supporting businesses in their transition to a combined intelligence model, where artificial intelligence serves humanity&quot;
+        href=&quot;https://www.saegus.com/&quot;
+        &gt;Saegus&lt;/a
+      &gt;, who believe in the importance of promoting diversity in data science
+      and AI.
+    &lt;/p&gt;
 
-&lt;p&gt;Since 2017 four meetup evenings took place in Paris and we are not stopping there!&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Join us at &lt;a href=&quot;https://www.meetup.com/fr-FR/Healthcare-Analytics-Data-Science/&quot;&gt;our meetup webpage&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+    &lt;h2&gt;The Vision Behind WiHADS: Promoting Women in Data Science&lt;/h2&gt;
+    &lt;p&gt;
+      The driving force behind WiHADS is the belief that women have a critical
+      role to play in the future of data science and healthcare. With a
+      background in systems biology and extensive experience in machine learning
+      within academia and the pharmaceutical industry, I joined WiHADS in 2018
+      to promote the visibility of women in these fields. My goal was to build a
+      platform where women could not only showcase their achievements in data
+      science and AI in healthcare but also mentor and support one another.
+      Working alongside
+      &lt;a
+        alt=&quot;Data scientist Sameh Megrhi is one of leaders in Machine Learning&quot;
+        href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;
+        &gt;Sameh Megrhi&lt;/a
+      &gt;,&lt;a
+        alt=&quot;Imen Helali working in Healthcare and Pharmaceutics is highly motivated promote Healthcare and Data Science fields&quot;
+        href=&quot;https://www.linkedin.com/in/imen-helali-phd-a6a4222b/&quot;
+      &gt;
+        Imen Helali&lt;/a
+      &gt;
+      and
+      &lt;a
+        atl=&quot;Young data science professional Avani Tanna is promoting woman in tech importance&quot;
+        href=&quot;https://www.linkedin.com/in/avani-tanna-b20b8a77/&quot;
+        &gt;Avani Tanna&lt;/a
+      &gt;, we crafted a unique meetup format that balances expert presentations
+      with interactive, community-driven discussions. Our vision is to create a
+      vibrant healthcare data science community where women can gain the skills
+      and confidence needed to lead impactful data science projects.
+    &lt;/p&gt;
+    &lt;h2&gt;The Impact of WiHADS on the Healthcare Data Science Community&lt;/h2&gt;
+    &lt;p&gt;
+      WiHADS has had a profound impact on the healthcare data science community
+      by providing a platform that not only highlights the achievements of women
+      but also encourages ongoing education and professional development. The
+      meetups have sparked important conversations about the future of data
+      science in healthcare and the role of deep learning AI in improving
+      patient care. Through WiHADS, we have seen an increase in the number of
+      women pursuing careers in data science and machine learning, particularly
+      in the healthcare sector. By offering opportunities for mentorship,
+      networking, and skill development, WiHADS is helping to close the gender
+      gap in data science and ensure that women are well-represented in the
+      future of AI in healthcare.
+    &lt;/p&gt;
+    &lt;h2&gt;
+      Get Involved with WiHADS: Join the Movement in Data Science and Healthcare
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Whether you are an experienced data scientist or just beginning your
+      journey in data science and machine learning, WiHADS offers a welcoming
+      community where you can grow, learn, and contribute. There are many ways
+      to get involved with WiHADS and become part of this exciting movement.
+    &lt;/p&gt;
+    &lt;h2&gt;Ways to Participate:&lt;/h2&gt;
 
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Attend a Meetup:&lt;/strong&gt;Join us at our next event to connect
+        with fellow professionals and learn about the latest developments in
+        data science and deep learning models for healthcare. Stay updated on
+        upcoming events by visiting our
+        &lt;a
+          alt=&quot;Join WiHADS, a pioneering community promoting women in data science, healthcare analytics, and deep learning AI. Explore opportunities to lead data science projects, engage with deep learning models, and shape the future of AI in healthcare.&quot;
+          href=&quot;https://www.meetup.com/fr-FR/Healthcare-Analytics-Data-Science/&quot;
+          &gt;Meetup page&lt;/a
+        &gt;.
+      &lt;/li&gt;
 
-&lt;h3&gt;The idea&lt;/h3&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Become a Speaker:&lt;/strong&gt; Share your knowledge and experience
+        in data science projects or deep learning algorithms by speaking at one
+        of our meetups. We are always looking for new voices to contribute to
+        our discussions on AI in healthcare.
+      &lt;/li&gt;
 
-&lt;p&gt;The field of Data and Analytics is expanding in all sectors. It will have impact on the future of Economy, Education and Healthcare. Holding Ph.D. in Systems Biology and helping to solve Machine Learning problems in academia and pharma, I could observe how it is in the healthcare sector and the impact it can have on people lives.&lt;/p&gt;
+      &lt;li&gt;
+        &lt;strong&gt;Sponsor an Event:&lt;/strong&gt; Help us continue to provide free,
+        high-quality events by sponsoring a WiHADS meetup. Your support will
+        enable us to reach more women in data science and expand our impact in
+        the healthcare industry.
+      &lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;p&gt;My motivation for joining WiHADS in 2018 was to promote women role models, to learn from their experience and share our point of views. Also to build a strong professional network and help early-career women forge their path.&lt;/p&gt;
-&lt;p&gt;Together with &lt;a href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;&gt;Sameh Megrhi&lt;/a&gt;,&lt;a href=&quot;https://www.linkedin.com/in/imen-helali-phd-a6a4222b/&quot;&gt; Imen Helali&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/avani-tanna-b20b8a77/&quot;&gt;Avani Tanna&lt;/a&gt; we developed our meetup formulae of 2-3 speakers, buffet and then round table debate.&lt;/p&gt;
-&lt;p&gt;We hosted women speakers from IQvia, Doctolib, PhP, Cardiologs, Dr.Data.&lt;/p&gt;
-&lt;p&gt;Our organisation it fully pro-bono, entrance is free, place and food are provided thanks to our great sponsors. Our sponsors were: Doctolib, IQvia, Saegus.&lt;/p&gt;
-&lt;/br&gt;
-&lt;p&gt;&lt;strong&gt;Please contact us if you want to host a meetup or sponsor a buffet!&lt;/strong&gt;&lt;/p&gt;
+    &lt;h2&gt;Conclusion: Shaping the Future of Data Science in Healthcare&lt;/h2&gt;
+    &lt;p&gt;
+      As we look to the future, data science and AI will continue to shape
+      healthcare, and WiHADS is committed to ensuring that women in tech are at
+      the forefront of this transformation. By joining us, you’re becoming part
+      of a powerful movement dedicated to advancing deep learning algorithms and
+      data science in healthcare. Together, we can lead the way in pioneering
+      solutions that enhance patient care and drive innovation
 
-&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/wihads3.jpeg&quot; alt=&quot;&quot; width=70% /&gt;&lt;/span&gt;
+      &lt;p&gt;&lt;strong&gt;Contact Us:&lt;/strong&gt; If you&apos;re interested in hosting a meetup or
+      sponsoring an event, please reach out to us. We look forward to welcoming
+      you to the WiHADS community.&lt;/p&gt;
+    &lt;/p&gt;
+    &lt;span class=&quot;image fit&quot;
+      &gt;&lt;img
+        src=&quot;/images/wihads3.jpeg&quot;
+        alt=&quot;Group of women leaders in healthcare analytics and data science at a WiHADS meetup, fostering innovation in data science, deep learning AI, and healthcare.&quot;
+        width=&quot;70%&quot;
+    /&gt;&lt;/span&gt;
 
-  &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
- 
-&lt;/section&gt;
-&lt;/html&gt;</description>
+    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+    &lt;script
+      type=&quot;text/javascript&quot;
+      src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
+    &gt;&lt;/script&gt;
+    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+    &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/html&gt;
+</description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/wihads</link>
-        <guid isPermaLink="true">http://localhost:4000/works/wihads</guid>
+        <link>http://urszulaczerwinska.github.io/works/women-healthcare-data-science-analytics-wihads</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/women-healthcare-data-science-analytics-wihads</guid>
         
         <category>data science</category>
         
@@ -1514,8 +1718,8 @@ We have succeeded! 🚀&lt;/p&gt;
 
 &lt;/html&gt;</description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/businesslang</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/businesslang</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>
         
         
         <category>thoughts</category>
@@ -1543,8 +1747,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/PhDThesis.html</link>
-        <guid isPermaLink="true">http://localhost:4000/works/PhDThesis.html</guid>
+        <link>http://urszulaczerwinska.github.io/works/PhDThesis.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/PhDThesis.html</guid>
         
         <category>Machine Learning</category>
         
@@ -1580,8 +1784,8 @@ We have succeeded! 🚀&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/deconica</link>
-        <guid isPermaLink="true">http://localhost:4000/works/deconica</guid>
+        <link>http://urszulaczerwinska.github.io/works/deconica</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
         
         <category>Machine Learning</category>
         
@@ -1715,8 +1919,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 &lt;/html&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/bigdive/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/bigdive/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
         
         
         <category>thoughts</category>
@@ -1859,8 +2063,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
 				&lt;/html&gt;
 </description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/jobsCB/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/jobsCB/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
         
         
         <category>thoughts</category>
@@ -1885,8 +2089,8 @@ Funding was provided by “Ecole Doctorale Frontières du Vivant (FdV) – Progr
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/FromSciencetoDataScience</link>
-        <guid isPermaLink="true">http://localhost:4000/works/FromSciencetoDataScience</guid>
+        <link>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</guid>
         
         <category>Machine Learning</category>
         

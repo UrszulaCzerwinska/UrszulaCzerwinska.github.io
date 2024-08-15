@@ -1,5 +1,5 @@
 ---
-priority: 0.8
+priority: 0.9
 title: Named Entity Recognition - keywords detection from Medium articles
 excerpt: Demo for EGG Paris 2019 conference - SAEGUS
 categories: works
@@ -22,7 +22,7 @@ This solution applied to blog articles can be used to **automatically generate t
 
 In a broad sense, entity detection allows automated and intelligent text analysis, especially useful for long and complex documents such as scientific or legal pieces.
 
-To demonstrate its use, we have integrated a voice command, based on [Azure's cognitive services API](https://azure.microsoft.com/en-us/services/cognitive-services/). The *speech to text* module allows to return query text as input to the algorithm. The output is represented as a recommendation of articles, classified by relevance according to the field of research. 
+To demonstrate its use, we have integrated a voice command, based on [Azure's cognitive services API](https://azure.microsoft.com/en-us/services/cognitive-services/). The *speech to text* module allows to return query text as input to the algorithm. The output is represented as a recommendation of articles, classified by relevance according to the field of research.
 
 This article explains our approach to creating the underlying NLP model.
 
@@ -43,7 +43,7 @@ If you label it with common terms, such as "TECHNOLOGY" or "MINDFULNESS" or "LOV
 
 We will therefore try to self-tag articles to increase their relevance.
 
-Thanks to these "new tags", or "keywords", we could quickly search for the articles that mention them and thus increase the effectiveness of our search. 
+Thanks to these "new tags", or "keywords", we could quickly search for the articles that mention them and thus increase the effectiveness of our search.
 
 We could go even further and build a recommendation system, by advising articles close to the one we are reading, or by advising ourselves of new articles related to our reading habits.
 
@@ -162,7 +162,7 @@ Thus, for the article: [https://towardsdatascience.com/cat-dog-or-elon-musk-1456
 <div><span class="image fit"><img src="{{ site.baseurl }}/images/NER_img10.png" alt=""></span></div>
 
 
-Inspired by [Xu LIANG's](https://towardsdatascience.com/@bramblexu) [post](https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0), we also used his way of representing the relationship between words in the form of a graph of linguistic dependencies. Unlike in his method, we did not use TextRank or TFIDF to detect keywords but we only applied our pre-trained NER model. 
+Inspired by [Xu LIANG's](https://towardsdatascience.com/@bramblexu) [post](https://towardsdatascience.com/textrank-for-keyword-extraction-by-python-c0bae21bcec0), we also used his way of representing the relationship between words in the form of a graph of linguistic dependencies. Unlike in his method, we did not use TextRank or TFIDF to detect keywords but we only applied our pre-trained NER model.
 
 Then, like [Xu LIANG](https://towardsdatascience.com/@bramblexu), we used the capacity of Parts-of-Speech (PoS) Tagging, inherited by our model from the original model ([en_core_web_md](https://github.com/explosion/spacy-models/releases/tag/en_core_web_md-2.2.0)), to link the entities together with the edges, which forms the graph below.
 
@@ -190,7 +190,7 @@ This article is a result of a teamwork realized at [Saegus](http://saegus.com/fr
 
 
 <section>
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script> 
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
 <section>
 
