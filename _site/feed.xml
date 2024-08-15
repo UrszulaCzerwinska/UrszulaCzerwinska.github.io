@@ -5,8 +5,8 @@
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.&quot;</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Aug 2024 10:28:11 +0200</pubDate>
-    <lastBuildDate>Thu, 15 Aug 2024 10:28:11 +0200</lastBuildDate>
+    <pubDate>Thu, 15 Aug 2024 22:20:20 +0200</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 22:20:20 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -1070,109 +1070,102 @@
       </item>
     
       <item>
-        <title>Named Entity Recognition - keywords detection from Medium articles</title>
-        <description>&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+        <title>Mastering Named Entity Recognition (NER) in Data Science</title>
+        <description>&lt;h2 id=&quot;context-of-development-of-a-keyword-extraction-application-using-nlp-language-model&quot;&gt;Context of development of a keyword extraction application using NLP language model&lt;/h2&gt;
 
-&lt;p&gt;Inspired by a solution developed for a customer in the Pharmaceutical industry,we presented at the &lt;a href=&quot;https://paris.egg.dataiku.com/&quot;&gt;EGG PARIS 2019&lt;/a&gt;conference an application based on NLP (Natural Language Processing) and developed on a &lt;a href=&quot;https://www.dataiku.com/&quot;&gt;Dataiku&lt;/a&gt; &lt;a href=&quot;https://www.dataiku.com/dss/&quot;&gt;DSS&lt;/a&gt; environment.&lt;/p&gt;
+&lt;p&gt;Named Entity Recognition, often abbreviated as NER, has gained traction as a critical tool for extracting meaningful insights from text data. Whether you’re diving into data science projects or exploring the cutting edge of AI applied to language, understanding how to utilize NER is essential. In this post, I’ll walk you through a practical example of using SpaCy, a go-to library for NLP, to detect keywords from Medium articles. But first, let’s explore why NER is becoming a must-have skill in the data science and engineering toolbox.&lt;/p&gt;
+
+&lt;p&gt;Inspired by a solution developed for a customer in the Pharmaceutical industry, we presented at the &lt;a href=&quot;https://paris.egg.dataiku.com/&quot;&gt;EGG PARIS 2019&lt;/a&gt; conference an application based on NLP (Natural Language Processing) and developed on a &lt;a href=&quot;https://www.dataiku.com/&quot;&gt;Dataiku&lt;/a&gt; &lt;a href=&quot;https://www.dataiku.com/dss/&quot;&gt;DSS&lt;/a&gt; environment.&lt;/p&gt;
 
 &lt;p&gt;More precisely, we trained a deep learning model to recognize the keywords of a blog article, precisely from &lt;a href=&quot;https://medium.com/&quot;&gt;Medium blogging platform&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This solution applied to blog articles can be used to &lt;strong&gt;automatically generate tags and/or keywords&lt;/strong&gt; so that the content offered by the platforms is personalized and meets readers’ expectations.&lt;/p&gt;
+&lt;p&gt;By &lt;strong&gt;automatically generate tags and/or keywords&lt;/strong&gt;, this approach enables personalized content recommendations, improving user experience by aligning content with reader expectations. The method holds significant potential, particularly for automated text analysis of complex documents, including scientific papers and legal texts.&lt;/p&gt;
 
-&lt;p&gt;In a broad sense, entity detection allows automated and intelligent text analysis, especially useful for long and complex documents such as scientific or legal pieces.&lt;/p&gt;
+&lt;p&gt;To showcase its functionality, we integrated a voice command feature using &lt;a href=&quot;https://azure.microsoft.com/en-us/services/cognitive-services/&quot;&gt;Azure’s cognitive services API&lt;/a&gt;. The &lt;em&gt;speech to text&lt;/em&gt; module translates spoken queries into text, which is then processed by the algorithm. The output is a recommendation of articles, classified by relevance according to the field of research.&lt;/p&gt;
 
-&lt;p&gt;To demonstrate its use, we have integrated a voice command, based on &lt;a href=&quot;https://azure.microsoft.com/en-us/services/cognitive-services/&quot;&gt;Azure’s cognitive services API&lt;/a&gt;. The &lt;em&gt;speech to text&lt;/em&gt; module allows to return query text as input to the algorithm. The output is represented as a recommendation of articles, classified by relevance according to the field of research.&lt;/p&gt;
-
-&lt;p&gt;This article explains our approach to creating the underlying NLP model.&lt;/p&gt;
+&lt;p&gt;In this article, I’ll walk you through our approach to creating the underlying NLP model.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/zg0pTe-GyF0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;[to view the comments, please enable subtitles] A video that illustrates our web application  created for the EGG Dataiku 2019 conference&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;[To view the comments, please enable subtitles] A video that illustrates our web application created for the EGG Dataiku 2019 conference&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;why-extract-keywords-from-medium-blog-articles&quot;&gt;Why extract keywords from Medium blog articles?&lt;/h2&gt;
+&lt;h2 id=&quot;why-extract-keywords-from-medium-blog-articles-with-ai-&quot;&gt;Why Extract Keywords from Medium Blog Articles with AI ?&lt;/h2&gt;
 
 &lt;p&gt;Medium has two categorization systems: &lt;strong&gt;tags&lt;/strong&gt; and &lt;strong&gt;topics&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;The topics are imposed by the platform. The author cannot select his topic. They correspond to fairly generic categories such as data science or machine learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Topics&lt;/strong&gt; are predefined by the platform and correspond to broad categories like data science or machine learning. Authors have no control over these.&lt;/p&gt;
 
-&lt;p&gt;The tags, a maximum of 5 per article, are essentially keywords that the author decides to list under his post in order to make it visible. Thus an article may have tags that may have nothing to do with the content of the article/history.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt;, on the other hand, are keywords selected by the author, with a maximum of five tags per article. These tags help increase the visibility of the article but often may not accurately reflect the content. For instance, tags like “TECHNOLOGY,” “MINDFULNESS,” or “LIFE LESSONS” might make an article easier to find but can complicate the reader’s search for specific content.&lt;/p&gt;
 
-&lt;p&gt;If you label it with common terms, such as “TECHNOLOGY” or “MINDFULNESS” or “LOVE” or “LIFE LESSONS”, your item will be easier to find. But it makes life more difficult for a reader who is looking for a specific subject.&lt;/p&gt;
+&lt;p&gt;Our approach aims to improve this by automatically tagging articles, increasing their relevance. With these “new tags” or “keywords,” searching for articles becomes more efficient.&lt;/p&gt;
 
-&lt;p&gt;We will therefore try to self-tag articles to increase their relevance.&lt;/p&gt;
-
-&lt;p&gt;Thanks to these “new tags”, or “keywords”, we could quickly search for the articles that mention them and thus increase the effectiveness of our search.&lt;/p&gt;
-
-&lt;p&gt;We could go even further and build a recommendation system, by advising articles close to the one we are reading, or by advising ourselves of new articles related to our reading habits.&lt;/p&gt;
+&lt;p&gt;Going further, this method could be used to build a recommendation system that suggests related articles based on the one you’re currently reading or aligned with your reading habits.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-ner-named-entity-recognition-approach&quot;&gt;The NER (Named Entity Recognition) approach&lt;/h2&gt;
 
-&lt;p&gt;Using the NER (Named Entity Recognition) approach, it is possible to extract entities from different categories. There are several basic  pre-trained models, such as &lt;a href=&quot;https://github.com/explosion/spacy-models/releases/tag/en_core_web_md-2.2.0&quot;&gt;en_core_web_md&lt;/a&gt;, which is able to recognize people, places, dates…&lt;/p&gt;
+&lt;p&gt;Using the NER (Named Entity Recognition) approach, we can extract entities across various categories. Several pre-trained models, like &lt;a href=&quot;https://github.com/explosion/spacy-models/releases/tag/en_core_web_md-2.2.0&quot;&gt;en_core_web_md&lt;/a&gt; can recognize entities like people, places, dates, etc.&lt;/p&gt;
 
-&lt;p&gt;Let’s take the example of the sentence &lt;em&gt;I think Barack Obama puts founder of Facebook at occasion of a release of a new NLP algorithm&lt;/em&gt;. The en_core_web_md model detects Facebook and Barack Obama as entities.&lt;/p&gt;
+&lt;p&gt;For example, in the sentence &lt;em&gt;“I think Barack Obama met founder of Facebook at occasion of a release of a new NLP algorithm.”&lt;/em&gt;, the en_core_web_md model detects “Facebook” and “Barack Obama” as entities.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/11a8fab0cc4c936b67e374e2b55e0fa0.js&quot;&gt;&lt;/script&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img1.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img1.png&quot; alt=&quot;NER process using SpaCy in data science&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;Dependency graph: result of line 9 (# 1)&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img2.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img2.png&quot; alt=&quot;NER process using SpaCy in data science&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;Entity detection: result of line 10 (# 2)&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
-&lt;p&gt;In our use case : extracting topics from Medium articles, we would like the model to recognize an additional entity in the “TOPIC” category: “NLP algorithm”.&lt;/p&gt;
+&lt;p&gt;With some annotated data, we trained the algorithm to detect this new entity type.&lt;/p&gt;
 
-&lt;p&gt;With some annotated data we can “teach” the algorithm to detect a new type of entities.&lt;/p&gt;
+&lt;p&gt;The concept is straightforward: an article tagged with “Data Science,” “AI,” “Machine Learning,” or “Python” might still cover vastly different technologies. Our algorithm is designed to detect specific technologies mentioned in the article, such as GANs, reinforcement learning, or Python libraries, while still recognizing places, organizations, and people.&lt;/p&gt;
 
-&lt;p&gt;The idea is simple: an article tagged Data Science, AI, Machine Learning, Python can concern very different technologies. Our algorithm would thus be able to detect a specific technology cited in the article, for example GAN, reinforcement learning, or the names of python libraries used. It also retains the ability of a basic model to recognize places, names of organizations and names of people.&lt;/p&gt;
+&lt;p&gt;During training, the model learns to identify keywords without prior knowledge. For example, it might recognize “random forest” as a topic, even if it wasn’t in the training data. By analyzing other algorithms discussed in articles, the NER model can identify phrase patterns that indicate a specific topic.&lt;/p&gt;
 
-&lt;p&gt;During training, the model learns to recognize the keywords, without knowing them a priori. The model will be able to recognize for example the topic: random forest without even being present in the learning data. Based on articles that discuss other algorithms (e.g. linear regression), the NER model will be able to recognize the phrase turn of phrase that indicates that we are talking about an algorithm.&lt;/p&gt;
+&lt;h2 id=&quot;the-machine-learning-language-model-behind&quot;&gt;The machine learning language model behind&lt;/h2&gt;
 
-&lt;h2 id=&quot;the-model&quot;&gt;The model&lt;/h2&gt;
+&lt;h3 id=&quot;spacy-framework-for-nlp&quot;&gt;SpaCy Framework for NLP&lt;/h3&gt;
 
-&lt;h3 id=&quot;spacy-framework&quot;&gt;SpaCy Framework&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://spacy.io/&quot;&gt;SpaCy&lt;/a&gt; is an open-source library tailored for advanced natural language processing in Python. It’s built for production use and helps create applications that process large volumes of text. SpaCy can be used to build information extraction systems, natural language understanding systems, or text preprocessing pipelines for deep learning. Among its features are tokenization, parts-of-speech (PoS) tagging, text classification, and named entity recognition.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://spacy.io/&quot;&gt;SpaCy&lt;/a&gt; is an open-source library for advanced natural language processing in Python. It is designed specifically for use in production and helps to build applications that handle large volumes of text. It can be used to build information extraction systems, natural language comprehension systems or text preprocessing systems for in-depth learning. Among the functions offered by SpaCy are: Tokenization, Parts-of-Speech (PoS) Tagging, Text Classification and Named Entity Recognition.&lt;/p&gt;
+&lt;p&gt;SpaCy offers an efficient, statistical system for NER in Python. Beyond the default entities, SpaCy allows us to add custom classes to the NER model and train it with new examples.&lt;/p&gt;
 
-&lt;p&gt;SpaCy provides an exceptionally efficient statistical system for NER in python. In addition to entities included by default, SpaCy also gives us the freedom to add arbitrary classes to the NER model, training the model to update it with new examples formed.
-SpaCy’s NER model is based on &lt;strong&gt;CNN&lt;/strong&gt; (&lt;strong&gt;Convolutional Neural Networks&lt;/strong&gt;).
-For the curious, the details of how SpaCy’s NER model works are explained in the video:&lt;/p&gt;
+&lt;p&gt;SpaCy’s NER model is based on &lt;strong&gt;Convolutional Neural Networks (CNNs)&lt;/strong&gt;. For those interested, more details on how SpaCy’s NER model works can be found in the video below:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sqDHBH9IjRU&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;training-data&quot;&gt;Training data&lt;/h3&gt;
 
-&lt;p&gt;To start training the model to recognize tech keywords, we recovered some Medium articles through &lt;strong&gt;web scraping&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To train our model to recognize tech keywords, we scraped some Medium articles through &lt;strong&gt;web scraping&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/db0aa37b1cb10ec94205d847f63ddc4f.js&quot;&gt;&lt;/script&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img3.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img3.png&quot; alt=&quot;Table showing training data for language model&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;An extract from the table containing the contents of the medium articles&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
-&lt;p&gt;The text of each article has been divided into sentences to facilitate annotation.&lt;/p&gt;
+&lt;p&gt;The text of each article was split into sentences for easier annotation.&lt;/p&gt;
 
-&lt;p&gt;There are annotation tools for NER such as Prodigy or other, mentioned here. We used a simple spreadsheet and in the dedicated columns we marked the entities.&lt;/p&gt;
+&lt;p&gt;For NER annotation, there are tools like &lt;strong&gt;Prodigy&lt;/strong&gt;, but we opted for a simple spreadsheet where we manually marked the entities in dedicated columns.&lt;/p&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img4.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img4.png&quot; alt=&quot;Table showing training data for language model and first predictions&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
-&lt;p&gt;To give an idea of the volume required, with about twenty articles (~600 sentences) our model started to show an interesting performance (&amp;gt;0.78 accuracy on test set).
-The train and test data were separated to evaluate the model.&lt;/p&gt;
+&lt;p&gt;With around twenty articles (~600 sentences), our model began to show promising performance, achieving over 0.78 accuracy on the test set. We separated the train and test data to evaluate the model effectively.&lt;/p&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img5.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img5.png&quot; alt=&quot;Table showing training data for language model and first predictions&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;TRAIN_DATA_ALL&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;train_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mark_targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ORG&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;PERSON&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;LOC&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;GPE&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;DATE&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;EVENT&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;WORK_OF_ART&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;sents&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;ORG&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;PERSON&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;LOC&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;TOPIC&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;GPE&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;DATE&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;EVENT&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;WORK_OF_ART&lt;/span&gt;&lt;span class=&quot;sh&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img6.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img6.png&quot; alt=&quot;Table showing training data for language model and first predictions&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
-&lt;p&gt;Then, we fine-tuned our algorithm by playing on several parameters: number of iterations, drop rate, learning rate and batch size.&lt;/p&gt;
+&lt;p&gt;We fine-tuned the algorithm by adjusting parameters like the number of iterations, dropout rate, learning rate, and batch size.&lt;/p&gt;
 
-&lt;h3 id=&quot;model-assesment&quot;&gt;Model assesment&lt;/h3&gt;
+&lt;h3 id=&quot;the-nlp-model-assesment&quot;&gt;The NLP model assesment&lt;/h3&gt;
 
-&lt;p&gt;In addition to the loss metric of the model, we have implemented the indicators: precision, recall and F1 score, to more accurately measure the performance of our model.&lt;/p&gt;
+&lt;p&gt;In addition to the model’s loss metric, we implemented precision, recall, and F1 score to measure performance more accurately.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/UrszulaCzerwinska/c23ce9e0edffe6f9790a2bbf8f018a4b.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Once trained on all the annotated data, the performance of the best model on our test set was quite impressive. Especially if we take into account the modest size of the train data: ~3000 sentences.&lt;/p&gt;
+&lt;p&gt;After training on the annotated data, the best model’s performance on our test set was quite impressive, especially considering the modest training data size (~3000 sentences).&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;precision :  0.9588053949903661
 recall :  0.9211764705882353
@@ -1189,8 +1182,11 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img7.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;p align=&quot;center&quot;&gt;&lt;sub&gt;&lt;sup&gt;Flow on Dataiku&apos;s DSS platform: the annotated dataset is divided into train and test, the model learned on the train data is evaluated on the train and test batches.&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
 
-&lt;p&gt;To return to the example on Barack Obama, our algorithm detects the &lt;em&gt;NLP algorithm&lt;/em&gt; entity as TOPIC in addition to the ORG (organization) and PERSON entities.
-We have succeeded! 🚀&lt;/p&gt;
+&lt;p&gt;Returning to our Barack Obama example, our algorithm now detects the NLP algorithm entity as a TOPIC, in addition to the ORG (organization), LOC (location), GPE (geopolitical entity), and DATE categories.&lt;/p&gt;
+
+&lt;p&gt;We have succeeded! 🚀&lt;/p&gt;
+
+&lt;p&gt;The next step involves incorporating the model into our recommendation system, enhancing the customization of articles offered to users based on detected topics.&lt;/p&gt;
 
 &lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/NER_img8.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
 
@@ -1228,6 +1224,12 @@ We have succeeded! 🚀&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;The project we have outlined here can easily be transposed into the various fields of industry: technical, legal and medical documents. It could be very interesting to analyse the civil, criminal and law… with this approach for a better efficiency in the research that all legal professionals do.&lt;/strong&gt;&lt;/p&gt;
 
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;To conclude, by recognizing topics within Medium articles, this solution represents a significant leap forward in content personalization. Whether for individual readers or professionals seeking articles on specific subjects, automatic keyword extraction offers a tailored experience. This model’s ability to classify articles based on finely-tuned NER allows for precise, relevant recommendations, improving overall user satisfaction and engagement.&lt;/p&gt;
+
+&lt;p&gt;We invite you to explore this exciting field and consider how such technology could be adapted to your specific needs.&lt;/p&gt;
+
 &lt;h2 id=&quot;disclaimer&quot;&gt;&lt;em&gt;Disclaimer&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;This article is a result of a teamwork realized at &lt;a href=&quot;http://saegus.com/fr/&quot;&gt;Saegus&lt;/a&gt;. Published originally in French at &lt;a href=&quot;https://medium.com/data-by-saegus/ner-medium-articles-saegus-7ffec0f3188c&quot;&gt;Medium&lt;/a&gt;.&lt;/p&gt;
@@ -1240,18 +1242,20 @@ We have succeeded! 🚀&lt;/p&gt;
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
+        <link>http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp</guid>
         
         <category>NLP</category>
         
         <category>Python</category>
         
-        <category>Saegus</category>
-        
         <category>featured</category>
         
         <category>machine learning</category>
+        
+        <category>NER</category>
+        
+        <category>language models</category>
         
         
         <category>works</category>

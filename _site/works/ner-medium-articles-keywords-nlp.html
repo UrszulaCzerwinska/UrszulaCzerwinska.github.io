@@ -9,11 +9,11 @@
   <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Named Entity Recognition - keywords detection from Medium articles</title>
+  <title>Mastering Named Entity Recognition (NER) in Data Science</title>
   <meta name="google-site-verification" content="WrNs4kb-PL779UWOhOTLegwiql-42uVzYDfCoJxQRPs" />
-  <meta name="description" content="Demo for EGG Paris 2019 conference - SAEGUS">
+  <meta name="description" content="Extracting Keywords from Medium Articles Using SpaCy">
   <!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="canonical" href="http://urszulaczerwinska.github.io/works/egg_ner">
+  <link rel="canonical" href="http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp">
   <link rel="shortcut icon" href="/favicon.ico">
 
   <link rel="stylesheet" href="/css/main.css" />
@@ -21,15 +21,15 @@
 
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Named Entity Recognition - keywords detection from Medium articles | Urszula Czerwinska Data Scientist &amp; Deep Learning Engineer</title>
+<title>Mastering Named Entity Recognition (NER) in Data Science | Urszula Czerwinska Data Scientist &amp; Deep Learning Engineer</title>
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Named Entity Recognition - keywords detection from Medium articles" />
+<meta property="og:title" content="Mastering Named Entity Recognition (NER) in Data Science" />
 <meta name="author" content="Urszula Czerwinska" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Demo for EGG Paris 2019 conference - SAEGUS" />
-<meta property="og:description" content="Demo for EGG Paris 2019 conference - SAEGUS" />
-<link rel="canonical" href="http://urszulaczerwinska.github.io/works/egg_ner" />
-<meta property="og:url" content="http://urszulaczerwinska.github.io/works/egg_ner" />
+<meta name="description" content="Explore how Named Entity Recognition (NER) in data science, powered by deep learning and NLP models, is used to extract keywords from Medium articles. Learn to apply SpaCy for advanced AI-driven language processing tasks" />
+<meta property="og:description" content="Explore how Named Entity Recognition (NER) in data science, powered by deep learning and NLP models, is used to extract keywords from Medium articles. Learn to apply SpaCy for advanced AI-driven language processing tasks" />
+<link rel="canonical" href="http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp" />
+<meta property="og:url" content="http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp" />
 <meta property="og:site_name" content="Urszula Czerwinska Data Scientist &amp; Deep Learning Engineer" />
 <meta property="og:image" content="http://urszulaczerwinska.github.io/images/writing.jpeg" />
 <meta property="og:image:alt" content="Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry" />
@@ -38,9 +38,9 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="http://urszulaczerwinska.github.io/images/writing.jpeg" />
 <meta name="twitter:image:alt" content="Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry" />
-<meta property="twitter:title" content="Named Entity Recognition - keywords detection from Medium articles" />
+<meta property="twitter:title" content="Mastering Named Entity Recognition (NER) in Data Science" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Urszula Czerwinska","url":"http://urszulaczerwinska.github.io"},"dateModified":"2019-11-11T00:00:00+01:00","datePublished":"2019-11-11T00:00:00+01:00","description":"Demo for EGG Paris 2019 conference - SAEGUS","headline":"Named Entity Recognition - keywords detection from Medium articles","image":{"alt":"Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry","url":"http://urszulaczerwinska.github.io/images/writing.jpeg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://urszulaczerwinska.github.io/works/egg_ner"},"url":"http://urszulaczerwinska.github.io/works/egg_ner"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Urszula Czerwinska","url":"http://urszulaczerwinska.github.io"},"dateModified":"2019-11-11T00:00:00+01:00","datePublished":"2019-11-11T00:00:00+01:00","description":"Explore how Named Entity Recognition (NER) in data science, powered by deep learning and NLP models, is used to extract keywords from Medium articles. Learn to apply SpaCy for advanced AI-driven language processing tasks","headline":"Mastering Named Entity Recognition (NER) in Data Science","image":{"alt":"Stories / blog about Data Science, Machine Learning, Deep Learning, Artificial Intelligence, transition from PhD to Data Science | from academia to industry","url":"http://urszulaczerwinska.github.io/images/writing.jpeg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp"},"url":"http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -49,11 +49,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Named Entity Recognition - keywords detection from Medium articles",
-      "description": "Demo for EGG Paris 2019 conference - SAEGUS",
+      "headline": "Mastering Named Entity Recognition (NER) in Data Science",
+      "description": "Explore how Named Entity Recognition (NER) in data science, powered by deep learning and NLP models, is used to extract keywords from Medium articles. Learn ...",
       "datePublished": "2019-11-11T00:00:00+01:00",
       "dateModified": "2019-11-11T00:00:00+01:00",
-      "keywords": "NLP, Python, Saegus, machine learning",
+      "keywords": "NLP, Python, machine learning, NER, language models",
       "author": {
         "@type": "Person",
         "name": "Urszula Czerwinska",
@@ -78,7 +78,7 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://urszulaczerwinska.github.io/works/egg_ner"
+        "@id": "http://urszulaczerwinska.github.io/works/ner-medium-articles-keywords-nlp"
       }
     }
     </script>
@@ -140,12 +140,12 @@
       <article id="main">
 
           <header>
-    <h2>Named Entity Recognition - keywords detection from Medium articles</h2>
-    <p>Demo for EGG Paris 2019 conference - SAEGUS</p>
+    <h2>Mastering Named Entity Recognition (NER) in Data Science</h2>
+    <p>Extracting Keywords from Medium Articles Using SpaCy</p>
   </header>
   <ul class="breadcrumb">
   <li><a href="/index.html">Home</a></li>
-  <li>Named Entity Recognition - keywords detection from Medium articles</li>
+  <li>Mastering Named Entity Recognition (NER) in Data Science</li>
 </ul>
 
 
@@ -158,114 +158,108 @@
   <ul class="techlist">
 <li><span class="tech">NLP</span></li>
 <li><span class="tech">Python</span></li>
-<li><span class="tech">Saegus</span></li>
 <li><span class="tech">machine learning</span></li>
+<li><span class="tech">NER</span></li>
+<li><span class="tech">language models</span></li>
 </ul>
 
   
 
-      <h2 id="introduction">Introduction</h2>
+      <h2 id="context-of-development-of-a-keyword-extraction-application-using-nlp-language-model">Context of development of a keyword extraction application using NLP language model</h2>
 
-<p>Inspired by a solution developed for a customer in the Pharmaceutical industry,we presented at the <a href="https://paris.egg.dataiku.com/">EGG PARIS 2019</a>conference an application based on NLP (Natural Language Processing) and developed on a <a href="https://www.dataiku.com/">Dataiku</a> <a href="https://www.dataiku.com/dss/">DSS</a> environment.</p>
+<p>Named Entity Recognition, often abbreviated as NER, has gained traction as a critical tool for extracting meaningful insights from text data. Whether you’re diving into data science projects or exploring the cutting edge of AI applied to language, understanding how to utilize NER is essential. In this post, I’ll walk you through a practical example of using SpaCy, a go-to library for NLP, to detect keywords from Medium articles. But first, let’s explore why NER is becoming a must-have skill in the data science and engineering toolbox.</p>
+
+<p>Inspired by a solution developed for a customer in the Pharmaceutical industry, we presented at the <a href="https://paris.egg.dataiku.com/">EGG PARIS 2019</a> conference an application based on NLP (Natural Language Processing) and developed on a <a href="https://www.dataiku.com/">Dataiku</a> <a href="https://www.dataiku.com/dss/">DSS</a> environment.</p>
 
 <p>More precisely, we trained a deep learning model to recognize the keywords of a blog article, precisely from <a href="https://medium.com/">Medium blogging platform</a>.</p>
 
-<p>This solution applied to blog articles can be used to <strong>automatically generate tags and/or keywords</strong> so that the content offered by the platforms is personalized and meets readers’ expectations.</p>
+<p>By <strong>automatically generate tags and/or keywords</strong>, this approach enables personalized content recommendations, improving user experience by aligning content with reader expectations. The method holds significant potential, particularly for automated text analysis of complex documents, including scientific papers and legal texts.</p>
 
-<p>In a broad sense, entity detection allows automated and intelligent text analysis, especially useful for long and complex documents such as scientific or legal pieces.</p>
+<p>To showcase its functionality, we integrated a voice command feature using <a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Azure’s cognitive services API</a>. The <em>speech to text</em> module translates spoken queries into text, which is then processed by the algorithm. The output is a recommendation of articles, classified by relevance according to the field of research.</p>
 
-<p>To demonstrate its use, we have integrated a voice command, based on <a href="https://azure.microsoft.com/en-us/services/cognitive-services/">Azure’s cognitive services API</a>. The <em>speech to text</em> module allows to return query text as input to the algorithm. The output is represented as a recommendation of articles, classified by relevance according to the field of research.</p>
-
-<p>This article explains our approach to creating the underlying NLP model.</p>
+<p>In this article, I’ll walk you through our approach to creating the underlying NLP model.</p>
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/zg0pTe-GyF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-<p align="center"><sub><sup>[to view the comments, please enable subtitles] A video that illustrates our web application  created for the EGG Dataiku 2019 conference</sup></sub></p>
+<p align="center"><sub><sup>[To view the comments, please enable subtitles] A video that illustrates our web application created for the EGG Dataiku 2019 conference</sup></sub></p>
 
 <hr />
 
-<h2 id="why-extract-keywords-from-medium-blog-articles">Why extract keywords from Medium blog articles?</h2>
+<h2 id="why-extract-keywords-from-medium-blog-articles-with-ai-">Why Extract Keywords from Medium Blog Articles with AI ?</h2>
 
 <p>Medium has two categorization systems: <strong>tags</strong> and <strong>topics</strong>.</p>
 
-<p>The topics are imposed by the platform. The author cannot select his topic. They correspond to fairly generic categories such as data science or machine learning.</p>
+<p><strong>Topics</strong> are predefined by the platform and correspond to broad categories like data science or machine learning. Authors have no control over these.</p>
 
-<p>The tags, a maximum of 5 per article, are essentially keywords that the author decides to list under his post in order to make it visible. Thus an article may have tags that may have nothing to do with the content of the article/history.</p>
+<p><strong>Tags</strong>, on the other hand, are keywords selected by the author, with a maximum of five tags per article. These tags help increase the visibility of the article but often may not accurately reflect the content. For instance, tags like “TECHNOLOGY,” “MINDFULNESS,” or “LIFE LESSONS” might make an article easier to find but can complicate the reader’s search for specific content.</p>
 
-<p>If you label it with common terms, such as “TECHNOLOGY” or “MINDFULNESS” or “LOVE” or “LIFE LESSONS”, your item will be easier to find. But it makes life more difficult for a reader who is looking for a specific subject.</p>
+<p>Our approach aims to improve this by automatically tagging articles, increasing their relevance. With these “new tags” or “keywords,” searching for articles becomes more efficient.</p>
 
-<p>We will therefore try to self-tag articles to increase their relevance.</p>
-
-<p>Thanks to these “new tags”, or “keywords”, we could quickly search for the articles that mention them and thus increase the effectiveness of our search.</p>
-
-<p>We could go even further and build a recommendation system, by advising articles close to the one we are reading, or by advising ourselves of new articles related to our reading habits.</p>
+<p>Going further, this method could be used to build a recommendation system that suggests related articles based on the one you’re currently reading or aligned with your reading habits.</p>
 
 <h2 id="the-ner-named-entity-recognition-approach">The NER (Named Entity Recognition) approach</h2>
 
-<p>Using the NER (Named Entity Recognition) approach, it is possible to extract entities from different categories. There are several basic  pre-trained models, such as <a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_md-2.2.0">en_core_web_md</a>, which is able to recognize people, places, dates…</p>
+<p>Using the NER (Named Entity Recognition) approach, we can extract entities across various categories. Several pre-trained models, like <a href="https://github.com/explosion/spacy-models/releases/tag/en_core_web_md-2.2.0">en_core_web_md</a> can recognize entities like people, places, dates, etc.</p>
 
-<p>Let’s take the example of the sentence <em>I think Barack Obama puts founder of Facebook at occasion of a release of a new NLP algorithm</em>. The en_core_web_md model detects Facebook and Barack Obama as entities.</p>
+<p>For example, in the sentence <em>“I think Barack Obama met founder of Facebook at occasion of a release of a new NLP algorithm.”</em>, the en_core_web_md model detects “Facebook” and “Barack Obama” as entities.</p>
 
 <script src="https://gist.github.com/UrszulaCzerwinska/11a8fab0cc4c936b67e374e2b55e0fa0.js"></script>
 
-<div><span class="image fit"><img src="/images/NER_img1.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img1.png" alt="NER process using SpaCy in data science" /></span></div>
 <p align="center"><sub><sup>Dependency graph: result of line 9 (# 1)</sup></sub></p>
 
-<div><span class="image fit"><img src="/images/NER_img2.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img2.png" alt="NER process using SpaCy in data science" /></span></div>
 <p align="center"><sub><sup>Entity detection: result of line 10 (# 2)</sup></sub></p>
 
-<p>In our use case : extracting topics from Medium articles, we would like the model to recognize an additional entity in the “TOPIC” category: “NLP algorithm”.</p>
+<p>With some annotated data, we trained the algorithm to detect this new entity type.</p>
 
-<p>With some annotated data we can “teach” the algorithm to detect a new type of entities.</p>
+<p>The concept is straightforward: an article tagged with “Data Science,” “AI,” “Machine Learning,” or “Python” might still cover vastly different technologies. Our algorithm is designed to detect specific technologies mentioned in the article, such as GANs, reinforcement learning, or Python libraries, while still recognizing places, organizations, and people.</p>
 
-<p>The idea is simple: an article tagged Data Science, AI, Machine Learning, Python can concern very different technologies. Our algorithm would thus be able to detect a specific technology cited in the article, for example GAN, reinforcement learning, or the names of python libraries used. It also retains the ability of a basic model to recognize places, names of organizations and names of people.</p>
+<p>During training, the model learns to identify keywords without prior knowledge. For example, it might recognize “random forest” as a topic, even if it wasn’t in the training data. By analyzing other algorithms discussed in articles, the NER model can identify phrase patterns that indicate a specific topic.</p>
 
-<p>During training, the model learns to recognize the keywords, without knowing them a priori. The model will be able to recognize for example the topic: random forest without even being present in the learning data. Based on articles that discuss other algorithms (e.g. linear regression), the NER model will be able to recognize the phrase turn of phrase that indicates that we are talking about an algorithm.</p>
+<h2 id="the-machine-learning-language-model-behind">The machine learning language model behind</h2>
 
-<h2 id="the-model">The model</h2>
+<h3 id="spacy-framework-for-nlp">SpaCy Framework for NLP</h3>
 
-<h3 id="spacy-framework">SpaCy Framework</h3>
+<p><a href="https://spacy.io/">SpaCy</a> is an open-source library tailored for advanced natural language processing in Python. It’s built for production use and helps create applications that process large volumes of text. SpaCy can be used to build information extraction systems, natural language understanding systems, or text preprocessing pipelines for deep learning. Among its features are tokenization, parts-of-speech (PoS) tagging, text classification, and named entity recognition.</p>
 
-<p><a href="https://spacy.io/">SpaCy</a> is an open-source library for advanced natural language processing in Python. It is designed specifically for use in production and helps to build applications that handle large volumes of text. It can be used to build information extraction systems, natural language comprehension systems or text preprocessing systems for in-depth learning. Among the functions offered by SpaCy are: Tokenization, Parts-of-Speech (PoS) Tagging, Text Classification and Named Entity Recognition.</p>
+<p>SpaCy offers an efficient, statistical system for NER in Python. Beyond the default entities, SpaCy allows us to add custom classes to the NER model and train it with new examples.</p>
 
-<p>SpaCy provides an exceptionally efficient statistical system for NER in python. In addition to entities included by default, SpaCy also gives us the freedom to add arbitrary classes to the NER model, training the model to update it with new examples formed.
-SpaCy’s NER model is based on <strong>CNN</strong> (<strong>Convolutional Neural Networks</strong>).
-For the curious, the details of how SpaCy’s NER model works are explained in the video:</p>
+<p>SpaCy’s NER model is based on <strong>Convolutional Neural Networks (CNNs)</strong>. For those interested, more details on how SpaCy’s NER model works can be found in the video below:</p>
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/sqDHBH9IjRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
 
 <h3 id="training-data">Training data</h3>
 
-<p>To start training the model to recognize tech keywords, we recovered some Medium articles through <strong>web scraping</strong>.</p>
+<p>To train our model to recognize tech keywords, we scraped some Medium articles through <strong>web scraping</strong>.</p>
 
 <script src="https://gist.github.com/UrszulaCzerwinska/db0aa37b1cb10ec94205d847f63ddc4f.js"></script>
 
-<div><span class="image fit"><img src="/images/NER_img3.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img3.png" alt="Table showing training data for language model" /></span></div>
 <p align="center"><sub><sup>An extract from the table containing the contents of the medium articles</sup></sub></p>
 
-<p>The text of each article has been divided into sentences to facilitate annotation.</p>
+<p>The text of each article was split into sentences for easier annotation.</p>
 
-<p>There are annotation tools for NER such as Prodigy or other, mentioned here. We used a simple spreadsheet and in the dedicated columns we marked the entities.</p>
+<p>For NER annotation, there are tools like <strong>Prodigy</strong>, but we opted for a simple spreadsheet where we manually marked the entities in dedicated columns.</p>
 
-<div><span class="image fit"><img src="/images/NER_img4.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img4.png" alt="Table showing training data for language model and first predictions" /></span></div>
 
-<p>To give an idea of the volume required, with about twenty articles (~600 sentences) our model started to show an interesting performance (&gt;0.78 accuracy on test set).
-The train and test data were separated to evaluate the model.</p>
+<p>With around twenty articles (~600 sentences), our model began to show promising performance, achieving over 0.78 accuracy on the test set. We separated the train and test data to evaluate the model effectively.</p>
 
-<div><span class="image fit"><img src="/images/NER_img5.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img5.png" alt="Table showing training data for language model and first predictions" /></span></div>
 
 <figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">TRAIN_DATA_ALL</span> <span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">train_table</span><span class="p">.</span><span class="nf">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span> <span class="p">:</span> <span class="nf">mark_targets</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="sh">'</span><span class="s">ORG</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">PERSON</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">LOC</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">TOPIC</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">GPE</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">DATE</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">EVENT</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">WORK_OF_ART</span><span class="sh">'</span><span class="p">],</span> <span class="sh">"</span><span class="s">sents</span><span class="sh">"</span><span class="p">,</span> <span class="p">[</span><span class="sh">'</span><span class="s">ORG</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">PERSON</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">LOC</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">TOPIC</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">GPE</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">DATE</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">EVENT</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">WORK_OF_ART</span><span class="sh">'</span><span class="p">]),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span></code></pre></figure>
 
-<div><span class="image fit"><img src="/images/NER_img6.png" alt="" /></span></div>
+<div><span class="image fit"><img src="/images/NER_img6.png" alt="Table showing training data for language model and first predictions" /></span></div>
 
-<p>Then, we fine-tuned our algorithm by playing on several parameters: number of iterations, drop rate, learning rate and batch size.</p>
+<p>We fine-tuned the algorithm by adjusting parameters like the number of iterations, dropout rate, learning rate, and batch size.</p>
 
-<h3 id="model-assesment">Model assesment</h3>
+<h3 id="the-nlp-model-assesment">The NLP model assesment</h3>
 
-<p>In addition to the loss metric of the model, we have implemented the indicators: precision, recall and F1 score, to more accurately measure the performance of our model.</p>
+<p>In addition to the model’s loss metric, we implemented precision, recall, and F1 score to measure performance more accurately.</p>
 
 <script src="https://gist.github.com/UrszulaCzerwinska/c23ce9e0edffe6f9790a2bbf8f018a4b.js"></script>
 
-<p>Once trained on all the annotated data, the performance of the best model on our test set was quite impressive. Especially if we take into account the modest size of the train data: ~3000 sentences.</p>
+<p>After training on the annotated data, the best model’s performance on our test set was quite impressive, especially considering the modest training data size (~3000 sentences).</p>
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">precision :  0.9588053949903661
 recall :  0.9211764705882353
@@ -282,8 +276,11 @@ TOPIC SciPy</code></pre></figure>
 <div><span class="image fit"><img src="/images/NER_img7.png" alt="" /></span></div>
 <p align="center"><sub><sup>Flow on Dataiku's DSS platform: the annotated dataset is divided into train and test, the model learned on the train data is evaluated on the train and test batches.</sup></sub></p>
 
-<p>To return to the example on Barack Obama, our algorithm detects the <em>NLP algorithm</em> entity as TOPIC in addition to the ORG (organization) and PERSON entities.
-We have succeeded! 🚀</p>
+<p>Returning to our Barack Obama example, our algorithm now detects the NLP algorithm entity as a TOPIC, in addition to the ORG (organization), LOC (location), GPE (geopolitical entity), and DATE categories.</p>
+
+<p>We have succeeded! 🚀</p>
+
+<p>The next step involves incorporating the model into our recommendation system, enhancing the customization of articles offered to users based on detected topics.</p>
 
 <div><span class="image fit"><img src="/images/NER_img8.png" alt="" /></span></div>
 
@@ -320,6 +317,12 @@ We have succeeded! 🚀</p>
 <p>Our Saegus Showroom including the functional webapp is coming soon. Feel free to follow our page <a href="https://medium.com/data-by-saegus">https://medium.com/data-by-saegus</a> to be kept informed.</p>
 
 <p><strong>The project we have outlined here can easily be transposed into the various fields of industry: technical, legal and medical documents. It could be very interesting to analyse the civil, criminal and law… with this approach for a better efficiency in the research that all legal professionals do.</strong></p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>To conclude, by recognizing topics within Medium articles, this solution represents a significant leap forward in content personalization. Whether for individual readers or professionals seeking articles on specific subjects, automatic keyword extraction offers a tailored experience. This model’s ability to classify articles based on finely-tuned NER allows for precise, relevant recommendations, improving overall user satisfaction and engagement.</p>
+
+<p>We invite you to explore this exciting field and consider how such technology could be adapted to your specific needs.</p>
 
 <h2 id="disclaimer"><em>Disclaimer</em></h2>
 
