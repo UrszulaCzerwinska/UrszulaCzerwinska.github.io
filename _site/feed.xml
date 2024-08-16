@@ -3,10 +3,10 @@
   <channel>
     <title>Urszula Czerwinska | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Aug 2024 15:48:20 +0200</pubDate>
-    <lastBuildDate>Fri, 16 Aug 2024 15:48:20 +0200</lastBuildDate>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 16 Aug 2024 16:43:13 +0200</pubDate>
+    <lastBuildDate>Fri, 16 Aug 2024 16:43:13 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -31,8 +31,8 @@
 
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/ner_cc</link>
-        <guid isPermaLink="true">http://localhost:4000/works/ner_cc</guid>
+        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
         
         <category>Machine Learning</category>
         
@@ -1049,8 +1049,8 @@
 &lt;/section&gt;
 </description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/interpretability-shap</link>
-        <guid isPermaLink="true">http://localhost:4000/works/interpretability-shap</guid>
+        <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>
         
         <category>data science</category>
         
@@ -1242,8 +1242,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/egg_ner</link>
-        <guid isPermaLink="true">http://localhost:4000/works/egg_ner</guid>
+        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
         
         <category>NLP</category>
         
@@ -1511,8 +1511,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;/html&gt;
 </description>
         <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/women-healthcare-data-science-analytics-wihads</link>
-        <guid isPermaLink="true">http://localhost:4000/works/women-healthcare-data-science-analytics-wihads</guid>
+        <link>http://urszulaczerwinska.github.io/works/women-healthcare-data-science-analytics-wihads</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/women-healthcare-data-science-analytics-wihads</guid>
         
         <category>data science</category>
         
@@ -1723,8 +1723,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;/html&gt;
 </description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/businesslang</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/businesslang</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>
         
         
         <category>thoughts</category>
@@ -1752,8 +1752,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/PhDThesis.html</link>
-        <guid isPermaLink="true">http://localhost:4000/works/PhDThesis.html</guid>
+        <link>http://urszulaczerwinska.github.io/works/PhDThesis.html</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/PhDThesis.html</guid>
         
         <category>Machine Learning</category>
         
@@ -1789,8 +1789,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/deconica</link>
-        <guid isPermaLink="true">http://localhost:4000/works/deconica</guid>
+        <link>http://urszulaczerwinska.github.io/works/deconica</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
         
         <category>Machine Learning</category>
         
@@ -2303,8 +2303,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;/html&gt;
 </description>
         <pubDate>Mon, 28 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/bigdive/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/bigdive/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/bigdive/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/bigdive/</guid>
         
         
         <category>thoughts</category>
@@ -2314,141 +2314,374 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
       <item>
         <title>Hi, I am Computational Biologist</title>
         <description>&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta
+      name=&quot;description&quot;
+      content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD | Explore career opportunities in computational biology and bioinformatics. Gain insights into the skills needed, job market trends, and tips for breaking into this dynamic field. Perfect for scientists and data professionals looking to advance their careers in computational biology.&quot;
+    /&gt;
+  &lt;/head&gt;
 
-&lt;head&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD&quot;&gt;
+  &lt;body&gt;
+    &lt;style&gt;
+      .scalable {
+      	overflow: hidden;
+      }
+
+      .scalable iframe {
+      	height: 100%;
+      	left: 0;
+      	position: absolute;
+      	top: 0;
+      	width: 100%;
+      }
+
+      .scalable .scalable-content {
+      	height: 0;
+      	position: relative;
+      }
+
+      .scalable-16-9 .scalable-content {
+      	/* Percentage from 9 divided by 16 for ratio of 16:9. */
+      	padding-bottom: 56.25%;
+      }
+
+      iframe {display:block;margin:auto;width: 100%}
+    &lt;/style&gt;
+  &lt;/body&gt;
+  &lt;section&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;blockquote&gt;
+      Hi, I am Computational Biologist, would you hire me when I graduate (from
+      PhD)?
+    &lt;/blockquote&gt;
+
+    &lt;h3&gt;Thinking about a job&lt;/h3&gt;
+    &lt;p&gt;
+      I am in my second year of PhD in Computational Biology / Systems Biology
+      at Cancer Institute in France. It is almost halfway to graduation here,
+      where PhD needs to be completed in 3-4 years, so I reckon it is a right
+      time to find out personally how are my chances of getting a job in the
+      &lt;b&gt;data science&lt;/b&gt; market. So I asked the question
+      &lt;i
+        &gt;&lt;b
+          &gt;Hi, I am Computational Biologist, would you hire me when I graduate
+          (from PhD)?&lt;/b
+        &gt;&lt;/i
+      &gt;
+      in many declinations to different companies. I would like to share with
+      you my experience from four &lt;strong&gt;job fairs&lt;/strong&gt;, I attended in
+      November in Paris.
+    &lt;/p&gt;
+    &lt;p&gt;Let me start from the end...&lt;/p&gt;
+
+    &lt;h3&gt;To make the long story short - key messages (for busy ones)&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;b&gt;scientific writing&lt;/b&gt; and the whole communication toolbox, can also
+        be a big plus, some companies release internal white papers and writing
+        skills are highly valued
+      &lt;/li&gt;
+      &lt;li&gt;
+        there is a huge need for skills of computational biologists in diverse
+        projects in industry - lots of start-up with crazy ideas, challenging
+        projects, there world is big out there
+      &lt;/li&gt;
+      &lt;li&gt;
+        show you interest in a specific sector of industry, even an on-line
+        course can be a plus, attend some meet-ups or events to feel the general
+        ambiance and hot topics of the sector
+      &lt;/li&gt;
+      &lt;li&gt;
+        ask questions and listen to HR advice - some of HR, especially in
+        start-ups are actually working on projects that may interest you; some
+        of them are new hires and they are happy to give you advice on how to
+        get into the company
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;b&gt;hiring procedures of companies&lt;/b&gt;, even with very similar profiles
+        can be very different - take time to ask about hiring procedures, go to
+        &lt;a href=&quot;https://www.glassdoor.fr/index.htm&quot; target=&quot;_blank&quot;
+          &gt;glassdoor&lt;/a
+        &gt;, reach company employees on LinkedIn
+      &lt;/li&gt;
+      &lt;li&gt;
+        it is fine to submit your CV to employers before your finish your
+        PhD — you never know — however, make sure you start
+        &lt;b&gt;applying for jobs 6 months before the end of you PhD&lt;/b&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        add your non-academic experience to your CV, courses related to
+        business. Do not put too many academic details, i.e. faculty full names,
+        professors names — unless it is someone very well known— just speak the
+        language they do.
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;b&gt;smile&lt;/b&gt;, have positive attitude - talk about your motivation for
+        transition in a positive way
+      &lt;/li&gt;
+      &lt;li&gt;
+        be cautious about your responsibilities, some companies, especially
+        start-up would hire you to do everything related with data management,
+        while what they need is a team of data analyst, not one PhD graduate
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;The long story (for mindful ones)&lt;/h3&gt;
+    &lt;p&gt;
+      French educational system is complicated. To simplify, the university
+      master and PhD is seen as a path exclusiv for academic career. This view
+      is slowly changing and we hear more and more about companies hiring PhDs.
+      Universities are also trying to promote alternative carriers organizing
+      &apos;professional breakfasts&apos;, workshops, interview simulations or CV tuning
+      (I have participated in some organized by
+      &lt;a href=&quot;http://cfdip.uspc.fr/fr/&quot; target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and
+      &lt;a href=&quot;http://www.adoc-tm.com/&quot; target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a
+      &gt;). There is even a
+      &lt;a
+        href=&quot;http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/&quot;
+        target=&quot;_blank&quot;
+        &gt;MOOC&lt;/a
+      &gt;
+      that should help PhDs orientate their careers. Also, recently title
+      &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be
+      created a nation network for PhD holders with a yearbook and a
+      standardized e-mail address system.
+    &lt;/p&gt;
 
 
-&lt;/head&gt;
+    &lt;p&gt;
+      Despite this, PhD graduates still face big challenges entering the world
+      of work. This is why, as a PhD student, I decided to find out a bit more
+      about hiring companies and their requirements by participating in four job
+      fairs organized in Paris in November.
+    &lt;/p&gt;
 
-&lt;body&gt;
+    &lt;div class=&quot;scalable scalable-16-9&quot;&gt;
+      &lt;div class=&quot;scalable-content&quot;&gt;
+        &lt;iframe
+          src=&quot;https://www.youtube.com/embed/J6scnDFKWRI&quot;
+          allowfullscreen
+        &gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;em&gt;Video of PhDTalent explaining value of PhDs for a company [FR]&lt;/em&gt;
+    &lt;br /&gt;&lt;br /&gt;
+    &lt;p&gt;
+      &lt;b&gt;PhDTalent fair&lt;/b&gt;, two data science fairs:
+      &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;DATAJOB&lt;/b&gt;&lt;/a&gt; and
+      &lt;a href=&quot;http://forumdatadays.fr/programme/&quot; target=&quot;_blank&quot;
+        &gt;&lt;b&gt;Forum Data Paris&lt;/b&gt;&lt;/a
+      &gt;
+      and one organized at
+      &lt;a href=&quot;http://jnum.parisdescartes.fr/job-dating/&quot; target=&quot;_blank&quot;
+        &gt;&lt;b&gt;&lt;i&gt;Journée Numérique&lt;/i&gt;&lt;/b&gt;&lt;/a
+      &gt;
+      - &lt;i&gt;Digital Day&lt;/i&gt; at University Paris Descartes.
+    &lt;/p&gt;
 
-	&lt;style&gt;
-		.scalable {
-			overflow: hidden;
-		}
+    &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en-gb&quot;&gt;
+      &lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;
+        Création d&amp;#39;un réseau des docteurs avec un annuaire annuel et une
+        adresse mail : prenom.nom@phdfrance.fr
+        &lt;a href=&quot;https://x.com/sup_recherche&quot;&gt;@sup_recherche&lt;/a&gt;
+      &lt;/p&gt;
+      &amp;mdash; Thierry Mandon (@mandonthierry)
+      &lt;a href=&quot;https://x.com/mandonthierry/status/800712541634560001&quot;
+        &gt;21 November 2016&lt;/a
+      &gt;
+    &lt;/blockquote&gt;
+    &lt;script
+      async
+      src=&quot;//platform.x.com/widgets.js&quot;
+      charset=&quot;utf-8&quot;
+    &gt;&lt;/script&gt;
 
-		.scalable iframe {
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+    &lt;p&gt;
+      At any job fair, meetup or a conference when we introduce ourselves as
+      Computational Biologists, it is not always clear to other people what it
+      actually means.
+    &lt;/p&gt;
+    &lt;p&gt;
+      As a &lt;b&gt;Computational Biologist&lt;/b&gt; working on data analysis in the
+      context of imunno-oncology, with some additional on-line training, I
+      believe I have most of basic knowledge asked for post of data analyst or
+      data scientist: working in R, Machine Learning, statistics, data
+      visualization, git. However, this is not clear for people working out of
+      research in biology and healthcare. There are so many flavors of
+      computational biologists, using different tools and applying them to
+      different fields of biology, that it crucial to state clear what we
+      actually do given the desired job. Computational biologist profile also
+      usually comes with weak points as lack of professional experience out of
+      academia, no professional network, little experience with business and
+      consumers. What is sure, &lt;b&gt;most of computational biologist&lt;/b&gt;, with some
+      additional training to broad their technical horizons and with open mind,
+      &lt;b&gt;have very attractive profile for many industries&lt;/b&gt;.
+    &lt;/p&gt;
 
-		.scalable .scalable-content {
-			height: 0;
-			position: relative;
-		}
+    &lt;p&gt;
+      I have spend around 1-2 h of my time at each job fair, that took place
+      during the week office hours. Even though, I didn&apos;t manage to talk to all
+      companies, especially the most popular, where the line were very long, I
+      managed to leave my CV to 15 companies and talk to around 20. Here is a
+      little summary of each job fair.
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span class=&quot;image right&quot;
+        &gt;&lt;img src=&quot;/images/logo_PhDTalent.png&quot; alt=&quot;&quot;
+      /&gt;&lt;/span&gt;
+    &lt;/p&gt;
 
-		.scalable-16-9 .scalable-content {
-			/* Percentage from 9 divided by 16 for ratio of 16:9. */
-			padding-bottom: 56.25%;
-		}
+    &lt;h3&gt;
+      &lt;a href=&quot;https://www.phdtalent.org/&quot; target=&quot;_blank&quot;&gt;PhDTalent fair&lt;/a&gt;
+    &lt;/h3&gt;
+    &lt;p&gt;
+      PhDTalent attracted more than 70 companies form different industries.
+      These could be roughly split into three groups: Biotech / Pharma,
+      consulting, Policy, Robotics &amp; Data science &amp; Big data &amp; IT &amp; Computing.
+      There were presented a wide variety of different job offers. Some like
+      Orange or L&apos;Oréal recruit for their PostDocoral programs. During the day,
+      I have learned that some companies, during the
+      &lt;b&gt;recruitment process&lt;/b&gt; can send applicants a
+      &lt;b&gt;weekly challenge&lt;/b&gt; or test through up to &lt;b&gt;7 interviews&lt;/b&gt; for a
+      R&amp;D position. In addition, I also spoke to various start-ups that generate
+      diverse data; they need people to manage them and sometimes they do hope
+      one PhD can replace data management team. I also encountered even very
+      surprising job descriptions: one start-up in particular was looking to
+      hire
+      &lt;b
+        &gt;bioinformatician to model hormone detection in the air by their
+        humanoid robot&lt;/b
+      &gt;. I am not sure if they correctly interpreted what the skills of a
+      bioinformatician are ;) (For those who are not sure what bioinformatician
+      does have a look at the article in
+      &lt;a
+        href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4408859/&quot;
+        target=&quot;_blank&quot;
+        &gt;Frontiers of Genetics: Who qualifies to be bioinformatician?&lt;/a
+      &gt;)
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span class=&quot;image left&quot;
+        &gt;&lt;img src=&quot;/images/DATAJOBS.jpg&quot; alt=&quot;&quot;
+      /&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span class=&quot;image right&quot;
+        &gt;&lt;img src=&quot;/images/forumdata.jpg&quot; alt=&quot;&quot;
+      /&gt;&lt;/span&gt;
+    &lt;/p&gt;
 
-		iframe {display:block;margin:auto;width: 100%}
+    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;em
+      &gt;Data Jobs forum at Bourse de Paris. Image credit to
+      &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;datajobs.fr&lt;/a&gt;&lt;/em
+    &gt;&lt;br /&gt;&lt;br /&gt;
+    &lt;h3&gt;
+      &lt;a href=&quot;http://forumdatadays.fr/programme/&quot; target=&quot;_blank&quot;
+        &gt;Forum Data&lt;/a
+      &gt;
+      and &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;Data Jobs&lt;/a&gt;
+    &lt;/h3&gt;
+    &lt;p&gt;
+      Those two job fairs had splendid sponsors and a wide array of known
+      companies present. Even though, it was not designed solely for PhD
+      graduates I found companies representatives very enthousiastic and helpful
+      - perhaps reflecting vigor for the potential that the data industry has to
+      offer. Key things that I took home from these events were that, of course,
+      it is too early now for me to apply being mid-way through my PhD. However
+      they recommended looking at role descriptions on company websites and
+      keeping an eye out for events to get involved with. For example, some
+      firms organize their own meetups where you have the opportunity to meet
+      employees or work on mini projects for the company. I was also advised to
+      attend
+      &lt;a href=&quot;https://startupweekend.org/locations/europe/fr &quot; target=&quot;_blank&quot;
+        &gt;&lt;b&gt;startup weekends&lt;/b&gt;&lt;/a
+      &gt;
+      where many startup present at those and similar events hire actively. When
+      trying to gather information about data analysis positions in an
+      established beauty company with big R&amp;D sector, I was surprised to
+      discover that they &lt;b&gt;only&lt;/b&gt; hire PhD graduates with at least three year
+      experience working in company (whilst hiring engineers straight away). In
+      contrast, Other companies were also looking for three years experience.
+      However in practice, if companies are looking for people and you interview
+      well, you have every chance of being hired. &lt;br /&gt;Therefore, I buried my
+      hopes to stay close to biology an healthcare, and analyze biological data.
+      Probably for a first job, one needs to be more flexible than that.
+    &lt;/p&gt;
 
+    &lt;h3&gt;
+      &lt;a href=&quot;http://jnum.parisdescartes.fr/job-dating/&quot; target=&quot;_blank&quot;
+        &gt;Journées numériques&lt;/a
+      &gt;
+    &lt;/h3&gt;
+    &lt;p&gt;
+      Among numerous activities of &lt;i&gt;Digital Day&lt;/i&gt; there were a little job
+      fair organized. A few number of companies presented job offers. However,
+      the &lt;i&gt;job offers in digital expertise&lt;/i&gt; was a bit misleading and most
+      of jobs proposed were related to advanced computing, IT management, web
+      marketing and communication.
+    &lt;/p&gt;
 
-	&lt;/style&gt;
+    &lt;h3&gt;How to choose a company?&lt;/h3&gt;
+    &lt;p&gt;
+      &lt;span class=&quot;image fit&quot;
+        &gt;&lt;img src=&quot;/images/office.jpg&quot; alt=&quot;&quot;
+      /&gt;&lt;/span&gt;
+    &lt;/p&gt;
 
-&lt;/body&gt;   
-&lt;section&gt;
-	&lt;p&gt;
-		&lt;blockquote&gt;Hi, I am Computational Biologist, would you hire me when I graduate (from PhD)?&lt;/blockquote&gt;
-	&lt;/p&gt;
-	&lt;h3&gt;Thinking about a job&lt;/h3&gt;
-	&lt;p&gt;
-		I am in my second year of PhD in Computational Biology / Systems Biology at Cancer Institute in France. It is almost halfway to graduation here, where PhD needs to be completed in 3-4 years, so I reckon it is a right time to find out personally how are my chances of getting a job in the &lt;b&gt;data science&lt;/b&gt; market. So I asked the question &lt;i&gt;&lt;b&gt;Hi, I am Computational Biologist, would you hire me when I graduate (from PhD)?&lt;/b&gt;&lt;/i&gt; in many declinations to different companies. I would like to share with you my experience from four &lt;strong&gt;job fairs&lt;/strong&gt;, I attended in November in Paris. 
-	&lt;/p&gt;
-	&lt;p&gt;Let me start from the end...&lt;/p&gt;
+    &lt;p&gt;
+      It is very important issue. Let&apos;s imagine, you have a great profile,
+      desired by many companies. How do you chose the company?
+    &lt;/p&gt;
+    &lt;p&gt;
+      As a foreigner in France and academia-trained I do not have clear idea
+      about model of functioning of different companies and possible advantage
+      and disadvantages of specific setups.
+    &lt;/p&gt;
 
-	&lt;h3&gt;To make the long story short - key messages (for busy ones)&lt;/h3&gt;
-	&lt;p&gt;&lt;ul&gt;
-		&lt;li&gt;many companies will not know what &lt;b&gt;computational biology&lt;/b&gt; is -  so adapt your title to the company - i.e. &lt;i&gt;data analyst of biological/ genetic data / for medical sciences&lt;/i&gt;, &lt;i&gt;data scientist in (biological) research&lt;/i&gt;  etc. in order to highlight your actual role &lt;/li&gt;
-		&lt;li&gt;most of companies may not be familiar with qualities you can bring as a PhD graduate - work on communication of your transferable skills, convince them your are more than just a student that took longer to get a degree &lt;/li&gt;
-		&lt;li&gt;you might hear that &lt;a href=&quot;http://www.businessinsider.com/qualities-google-looks-for-in-job-candidates-2014-4?IR=T&quot; target=&quot;_blank&quot;&gt;&lt;i&gt;Google does want people with high &quot;cognitive ability&quot;&lt;/i&gt;&lt;/a&gt; so you may think it is enough to be smart to get a position - even though your learning capability and intelligence are strong assets, &lt;b&gt;most of companies are not Google&lt;/b&gt;, they are &lt;b&gt;looking for solid skills&lt;/b&gt; that they will test in a technical interview i.e. your coding skills, your strategical thinking, situation analysis, problem solving. &lt;/li&gt;
-		&lt;li&gt;in most cases, PhD graduates are treated the same way as fresh graduates from a master/engineer degree - it is rare there are predefined posts for PhD holders, you posses, for sure, different qualities and experience, which can be a plus, but don&apos;t wait for an applause, &lt;b&gt;be flexible&lt;/b&gt;.&lt;/li&gt;
-		&lt;li&gt; Programming in &lt;b&gt;R&lt;/b&gt;, &lt;b&gt;Python&lt;/b&gt; or &lt;b&gt;SAS&lt;/b&gt; is the base (not a surprise) for data science&lt;/li&gt;
-		&lt;li&gt;skills in &lt;b&gt;data visualization, database management, big data tools&lt;/b&gt; can be something that distinct you from other candidates&lt;/li&gt;
-		&lt;li&gt;&lt;b&gt;scientific writing&lt;/b&gt; and the whole communication toolbox, can also be a big plus, some companies release internal white papers and writing skills are highly valued &lt;/li&gt;
-		&lt;li&gt;there is a huge need for skills of computational biologists in diverse projects in industry - lots of start-up with crazy ideas, challenging projects, there world is big out there &lt;/li&gt;
-		&lt;li&gt;show you interest in a specific sector of industry, even an on-line course can be a plus, attend some meet-ups or events to feel the general ambiance and hot topics of the sector &lt;/li&gt;
-		&lt;li&gt;ask questions and listen to HR advice - some of HR, especially in start-ups are actually working on projects that may interest you; some of them are new hires and they are happy to give you advice on how to get into the company&lt;/li&gt;
-		&lt;li&gt;&lt;b&gt;hiring procedures of companies&lt;/b&gt;, even with very similar profiles can be very different - take time to ask about hiring procedures, go to &lt;a href=https://www.glassdoor.fr/index.htm target=&quot;_blank&quot;&gt;&lt;i&gt;glassdoor&lt;/i&gt;&lt;/a&gt;, reach company employees on LinkedIn &lt;/li&gt;
-		&lt;li&gt;t is fine to submit your CV to employers before your finish your PhD — you never know — however, make sure you start &lt;b&gt;applying for jobs 6 months before the end of you PhD&lt;/b&gt;&lt;/li&gt;
-		&lt;li&gt;add your non-academic experience to your CV, courses related to business. Do not put too many academic details, i.e. faculty full names, professors names — unless it is someone very well known— just speak the language they do.&lt;/li&gt;
-		&lt;li&gt;&lt;b&gt;smile&lt;/b&gt;, have positive attitude - talk about your motivation for transition in a positive way&lt;/li&gt;
-		&lt;li&gt;be cautious about your responsibilities, some companies, especially start-up would hire you to do everything related with data management, while what they need is a team of data analyst, not one PhD graduate &lt;/li&gt;
-	&lt;/ul&gt;               
+    &lt;p&gt;
+      I encountered many consulting offices, where employees work actually for
+      different companies to solve an issue or work on a project. I was told,
+      their offer can seem very attractive at the first sight: variety of
+      subjects, cutting edge technologies, big companies. However, they also are
+      some drawbacks, as employees are hired by the consulting company, they are
+      lured by the most attractive projects, but there is no guarantee to which
+      one they will be associated because it depends a lot on client choice, and
+      other available consultants. On the other hand, even a short contract in a
+      company developing new technologies such as &lt;i&gt;Orange&lt;/i&gt; or
+      &lt;i&gt;Microsoft&lt;/i&gt; can be very good for your career, while consulting job
+      can be easier to get but will not always meet your expectations.
+    &lt;/p&gt;
 
-&lt;/p&gt;
-&lt;h3&gt;The long story (for mindful ones)&lt;/h3&gt;
-&lt;p&gt;
-	French educational system is complicated. To simplify, the university master and PhD is seen as a path exclusiv for academic career. This view is slowly changing and we hear more and more about companies hiring PhDs. Universities are also trying to promote alternative carriers organizing &apos;professional breakfasts&apos;, workshops, interview simulations or CV tuning (I have participated in some organized by &lt;a href=http://cfdip.uspc.fr/fr/ target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and &lt;a href=http://www.adoc-tm.com/ target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a&gt;). There is even a &lt;a href=http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/ target=&quot;_blank&quot;&gt;MOOC&lt;/a&gt; that should help PhDs orientate their careers. Also, recently title &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be created a nation network for PhD holders with a yearbook and a standardized e-mail address system. 
-
-	&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en-gb&quot;&gt;&lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;Création d&amp;#39;un réseau des docteurs avec un annuaire annuel et une adresse mail : prenom.nom@phdfrance.fr &lt;a href=&quot;https://twitter.com/sup_recherche&quot;&gt;@sup_recherche&lt;/a&gt;&lt;/p&gt;&amp;mdash; Thierry Mandon (@mandonthierry) &lt;a href=&quot;https://twitter.com/mandonthierry/status/800712541634560001&quot;&gt;21 November 2016&lt;/a&gt;&lt;/blockquote&gt;
-	&lt;script async src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;/p&gt; 
-
-&lt;p&gt;Despite this, PhD graduates still face big challenges entering the world of work. This is why, as a PhD student, I decided to find out a bit more about hiring companies and their requirements by participating in four job fairs organized in Paris in November.
-&lt;/p&gt;
-
-&lt;p&gt;  
-	&lt;div class=&quot;scalable scalable-16-9&quot;&gt;
-		&lt;div class=&quot;scalable-content&quot;&gt;
-			&lt;iframe src=&quot;https://www.youtube.com/embed/J6scnDFKWRI&quot;  allowfullscreen&gt;&lt;/iframe&gt;&lt;br&gt; &lt;/p&gt;
-		&lt;/div&gt;&lt;/div&gt;  &lt;em&gt;Video of PhDTalent explaining value of PhDs for a company [FR]&lt;/em&gt;
-		&lt;br&gt;&lt;br&gt;
-		&lt;p&gt;&lt;b&gt;PhDTalent fair&lt;/b&gt;, two data science fairs: &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;&lt;b&gt;DATAJOB&lt;/b&gt;&lt;/a&gt; and &lt;a href=http://forumdatadays.fr/programme/ target=&quot;_blank&quot;&gt;&lt;b&gt;Forum Data Paris&lt;/b&gt;&lt;/a&gt;  and one organized at &lt;a href=http://jnum.parisdescartes.fr/job-dating/ target=&quot;_blank&quot;&gt;&lt;b&gt;&lt;i&gt;Journée Numérique&lt;/i&gt;&lt;/b&gt;&lt;/a&gt; - &lt;i&gt;Digital Day&lt;/i&gt; at University Paris Descartes.&lt;/p&gt;
-		&lt;p&gt;
-			At any job fair, meetup or a conference when we introduce ourselves as Computational Biologists, it is not always clear to other people what it actually means.
-		&lt;/p&gt;
-			&lt;p&gt;As a &lt;b&gt;Computational Biologist&lt;/b&gt; working on data analysis in the context of imunno-oncology, with some additional on-line training, I believe I have most of basic knowledge asked for post of data analyst or data scientist: working in R, Machine Learning, statistics, data visualization, git. However, this is not clear for people working out of research in biology and healthcare. There are so many flavors of computational biologists, using different tools and applying them to different fields of biology, that it crucial to state clear what we actually do given the desired job. Computational biologist profile also usually comes with weak points as lack of professional experience out of academia, no professional network, little experience with business and consumers. What is sure, &lt;b&gt;most of computational biologist&lt;/b&gt;, with some additional training to broad their technical horizons and with open mind, &lt;b&gt;have very attractive profile for many industries&lt;/b&gt;.
-			&lt;/p&gt;
-
-			&lt;p&gt;I have spend around 1-2 h of my time at each job fair, that took place during the week office hours. Even though, I didn&apos;t manage to talk to all companies, especially the most popular, where the line were very long, I managed to leave my CV to 15 companies and talk to around 20. Here is a little summary of each job fair. 
-			&lt;/p&gt;
-			&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/logo_PhDTalent.png&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
-
-			&lt;h3&gt;&lt;a href=https://www.phdtalent.org/ target=&quot;_blank&quot;&gt;PhDTalent fair&lt;/a&gt;&lt;/h3&gt;
-			&lt;p&gt;
-				PhDTalent attracted  more than 70 companies form different industries. These could be roughly  split into three groups: Biotech / Pharma, consulting, Policy, Robotics &amp; Data science &amp; Big data &amp; IT &amp; Computing. 
-
-				There were presented a wide variety of different job offers. Some like Orange or L&apos;Oréal recruit for their PostDocoral programs.
-
-				During the day, I have learned that some companies, during the &lt;b&gt;recruitment process&lt;/b&gt; can send applicants a &lt;b&gt;weekly challenge&lt;/b&gt; or test through up to &lt;b&gt;7 interviews&lt;/b&gt; for a R&amp;D position. In addition, I also spoke to various start-ups that generate diverse data; they need people to manage them and sometimes they do hope one PhD can replace data management team. I also encountered even very surprising job descriptions: one start-up in particular was looking to hire &lt;b&gt;bioinformatician to model hormone detection in the air by their humanoid robot&lt;/b&gt;. I am not sure if they correctly interpreted what the skills of a bioinformatician are ;) (For those who are not sure what bioinformatician does have a look at the article in &lt;a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4408859/ target=&quot;_blank&quot;&gt;Frontiers of Genetics: Who qualifies to be bioinformatician?&lt;/a&gt;)
-			&lt;/p&gt;
-			&lt;p&gt;&lt;span class=&quot;image left&quot;&gt;&lt;img src=&quot;/images/DATAJOBS.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/p&gt;
-			&lt;p&gt;&lt;span class=&quot;image right&quot;&gt;&lt;img src=&quot;/images/forumdata.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
-
-			&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;em&gt;Data Jobs forum at Bourse de Paris. Image credit to &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;datajobs.fr&lt;/a&gt;&lt;/em&gt;&lt;br&gt;&lt;br&gt;
-			&lt;h3&gt;&lt;a href=http://forumdatadays.fr/programme/ target=&quot;_blank&quot;&gt;Forum Data&lt;/a&gt; and &lt;a href=http://www.datajob.fr/ target=&quot;_blank&quot;&gt;Data Jobs&lt;/a&gt;&lt;/h3&gt;
-			&lt;p&gt;Those two job fairs had splendid sponsors and a wide array of known companies present.
-				Even though, it was not designed solely for PhD graduates I found companies representatives very enthousiastic and helpful  - perhaps reflecting vigor for the potential that the data industry has to offer. Key things that I took home from these events were that, of course, it is too early now for me to apply being mid-way through my PhD. However they recommended looking at role descriptions on company websites and keeping an eye out for events to get involved with. For example, some firms organize their own meetups where you have the opportunity to meet employees or work on mini projects for the company. I was also advised to attend &lt;a href=https://startupweekend.org/locations/europe/fr target=&quot;_blank&quot;&gt;&lt;b&gt;startup weekends&lt;/b&gt;&lt;/a&gt; where many startup present at those and similar events hire actively. When trying to gather information about data analysis positions in an established beauty company with big R&amp;D sector, I was surprised to discover that they &lt;b&gt;only&lt;/b&gt; hire PhD graduates with at least three year experience working in company (whilst hiring engineers straight away). In contrast, Other companies were also looking for three years experience. However in practice, if companies are looking for people and you interview well, you have every chance of being hired. &lt;br&gt;Therefore, I buried my hopes to stay close to biology an healthcare, and analyze biological data. Probably for a first job, one needs to be more flexible than that.&lt;/p&gt;
-
-				&lt;h3&gt;&lt;a href=http://jnum.parisdescartes.fr/job-dating/ target=&quot;_blank&quot;&gt;Journées numériques&lt;/a&gt;&lt;/h3&gt;
-				&lt;p&gt;Among numerous activities of &lt;i&gt;Digital Day&lt;/i&gt; there were a little job fair organized. A few number of companies presented job offers. However, the &lt;i&gt;job offers in digital expertise&lt;/i&gt; was a bit misleading and most of jobs proposed were related to advanced computing, IT management, web marketing and communication.&lt;/p&gt;
-
-				&lt;h3&gt;How to choose a company?&lt;/h3&gt;
-				&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/office.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
-
-				&lt;p&gt;It is very important issue. Let&apos;s imagine, you have a great profile, desired by many companies. How do you chose the company?&lt;/p&gt;
-				&lt;p&gt;As a foreigner in France and academia-trained I do not have clear idea about model of functioning of different companies and possible advantage and disadvantages of specific setups.&lt;/p&gt;
-
-				&lt;p&gt;I encountered many consulting offices, where employees work actually for different companies to solve an issue or work on a project. I was told, their offer can seem very attractive at the first sight: variety of subjects, cutting edge technologies, big companies. However, they also are some drawbacks, as employees are hired by the consulting company, they are lured by the most attractive projects, but there is no guarantee to which one they will be associated because it depends a lot on client choice, and other available consultants. On the other hand, even a short contract in a company developing new technologies such as &lt;i&gt;Orange&lt;/i&gt; or &lt;i&gt;Microsoft&lt;/i&gt; can be very good for your career, while consulting job can be easier to get but will not always meet your expectations.&lt;/p&gt;
-
-					&lt;h3&gt;Closing remarks&lt;/h3&gt;
-					&lt;p&gt;Career transition is probably not easy, future is not all roses, but with some determination, I am pretty sure a &lt;b&gt;Camputational Biologist has great chances to find a well-paid job outside academia&lt;/b&gt;. Job market is very competitive and demands are high. Luckily for us, programming skills combined with capacity for analysis seem to be in high demand. There will be still some knowledge gaps, some unknowns, but our duty is to turn them into challenges.&lt;/p&gt;
-					&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/horizon.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt; &lt;/p&gt;
-					&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt; 
-					&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-				&lt;/section&gt;
-				&lt;/html&gt;
+    &lt;h3&gt;Closing remarks&lt;/h3&gt;
+    &lt;p&gt;
+      Career transition is probably not easy, future is not all roses, but with
+      some determination, I am pretty sure a
+      &lt;b
+        &gt;Camputational Biologist has great chances to find a well-paid job
+        outside academia&lt;/b
+      &gt;. Job market is very competitive and demands are high. Luckily for us,
+      programming skills combined with capacity for analysis seem to be in high
+      demand. There will be still some knowledge gaps, some unknowns, but our
+      duty is to turn them into challenges.
+    &lt;/p&gt;
+    &lt;p&gt;
+      &lt;span class=&quot;image fit&quot;
+        &gt;&lt;img src=&quot;/images/horizon.jpg&quot; alt=&quot;&quot;
+      /&gt;&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+    &lt;script
+      type=&quot;text/javascript&quot;
+      src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
+    &gt;&lt;/script&gt;
+    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+    &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/html&gt;
 </description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/jobsCB/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/jobsCB/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
         
         
         <category>thoughts</category>
@@ -2473,8 +2706,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
     &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/FromSciencetoDataScience</link>
-        <guid isPermaLink="true">http://localhost:4000/works/FromSciencetoDataScience</guid>
+        <link>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</guid>
         
         <category>Machine Learning</category>
         
