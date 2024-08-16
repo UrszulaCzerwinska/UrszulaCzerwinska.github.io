@@ -26,7 +26,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "DeDaL"
-      "description": "Data-driven network layout",
+      "description": "DeDaL is a tool for data-driven network layout. It combines multidimensional meta data associated with network and network itself in a form of an intelligent...",
       "datePublished": "2014-06-30T00:00:00+02:00",
       "dateModified": "2014-06-30T00:00:00+02:00",
       "keywords": "Java, Networks, PCA, Data viz",
@@ -153,7 +153,7 @@
 <p><img src="/images/cartoonDDL.png" width="80%" /></p>
 <p><em>Cartoon representing idea of <b>DeDaL</b></em> </p>
 
-<p>Today, <strong>DeDaL</strong> is a piece of software, <strong>I developed in Java</strong> together with A. Zinovyev, that can be used in <a href="http://www.cytoscape.org/cy3.html">Cytoscape 3.0</a> network visualization interface. It has been applied to a number of biological data which resulted in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4">publication</a> in BMC Systems Biology. Together with <a href="http://bioinfo-out.curie.fr/projects/dedal/">DeDaL website</a> that contains full description and step-by-step tutorial and <a href="https://github.com/sysbio-curie/DeDaL">github repository</a>, the software is well documented and open.<br />
+<p>Today, <strong>DeDaL</strong> is a piece of software, <strong>I developed in Java</strong> together with A. Zinovyev, that can be used in <a href="http://www.cytoscape.org/cy3.html">Cytoscape 3.0</a> network visualization interface. It has been applied to a number of biological data which resulted in <a href="http://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-015-0189-4">publication</a> in BMC Systems Biology. Together with <a href="http://bioinfo-out.curie.fr/projects/dedal/">DeDaL website</a> that contains full description and step-by-step tutorial and <a href="https://github.com/sysbio-curie/DeDaL">github repository</a>, the software is well documented and open.
  </p>
 
 <p>However, <strong>DeDaL</strong> finds its application not only in biological data. Here I post a little demo of <strong>DeDaL</strong> applied to <a href="http://eh.net/database/international-currencies-1890-1910/"><em>International Currencies 1890-1910</em> data from Flandreau, M. and C. Jobst</a> to encourage you to try it out with different data.</p>
@@ -166,11 +166,11 @@
 
 <blockquote>
   <p>‘For better or worse – and opinions differ on this – the choice of which language
-and which currency is made not on merit, or moral worth, but on size.’<br />
+and which currency is made not on merit, or moral worth, but on size.’
 (Kindleberger, 1967, p. 11)</p>
 </blockquote>
 
-<p>The dataset gives measures for the international role of 45 currencies between 1890 and 1910 as well as a set of variables that can explain the relative position of these currencies.<br />
+<p>The dataset gives measures for the international role of 45 currencies between 1890 and 1910 as well as a set of variables that can explain the relative position of these currencies.
 Data have been collected for the years 1890, 1900 and 1910. The exchange structure matrix is
 complete from an empirical point of view, including virtually all currencies of the world in
 1890-1910. It also has the nice conceptual feature to identify two different exchange markets
@@ -186,20 +186,20 @@ traded. There is information on 45 countries/currencies, yielding a total of 45*
 country pairs.</p>
 
 <p>Article by Flandreau, M. and C. Jobst describes the world currency market based on the set of variables:</p>
-<ul>	
+<ul>
 <li><b>dist</b>: log distance as the crow flies between the cities with foreign exchange
-markets in country_A and country_B.</li>  
-<li><b>bitrade</b> gives total trade between country_A and country_B in thousand US dollars.</li>   
+markets in country_A and country_B.</li>
+<li><b>bitrade</b> gives total trade between country_A and country_B in thousand US dollars.</li>
 <li><b>gold</b> is an indicator variable =1 if country_A has a currency convertible in gold in
-1900 and 0 otherwise.</li>  
-<li><b>debtburden</b> is the ratio of government debt over government revenues in 1900. </li> 
-<li><b>rlong</b> is the secondary market yield for gold denominated government debt in 1900. </li> 
+1900 and 0 otherwise.</li>
+<li><b>debtburden</b> is the ratio of government debt over government revenues in 1900. </li>
+<li><b>rlong</b> is the secondary market yield for gold denominated government debt in 1900. </li>
 <li><b>rshort1900</b> is the market rate for 3 month lending, in most cases the discount rate for
-3 month commercial paper in 1900.</li>  
-<li><b>rshort1890</b> same as above for 1890.</li>  
-<li><b>rgdp</b> and <b>rgdpcap</b> give the log 1900 real gdp and the log real gdp per capita.</li>  
+3 month commercial paper in 1900.</li>
+<li><b>rshort1890</b> same as above for 1890.</li>
+<li><b>rgdp</b> and <b>rgdpcap</b> give the log 1900 real gdp and the log real gdp per capita.</li>
 <li><b>poldemo</b> reproduces the index of democracy (ID) of the Polyarchy dataset developed
-by Vanhanen (2000) for 1900.</li>  
+by Vanhanen (2000) for 1900.</li>
 <li><b>coverage</b> is the logarithm of the number of currencies traded in country_A.</li>
 </ul>
 <p>Detailed information can be found in the <a href="http://eh.net/wp-content/uploads/2014/08/flandreau_jobst_internationalcurrencies_intro.pdf">intro document</a>.
@@ -212,15 +212,15 @@ by Vanhanen (2000) for 1900.</li>
  </p>
 <p>Here, using <strong>DeDaL</strong> I will try to see how much we can learn about currency market without previous knowledge in economy, based on the network and metadata associated with each country.</p>
 
-<p>Firstly, I will import the raw data from the website. I am skipping first 9 lines that contain the intro text: 
+<p>Firstly, I will import the raw data from the website. I am skipping first 9 lines that contain the intro text:
  </p>
 
-<p><em>The international circulation of currencies 1890-1910</em><br />
+<p><em>The international circulation of currencies 1890-1910</em>
 <em>Please cite as:</em>
-<em>- When using the network data for 1890, 1900 or 1910:</em><br />
-<em>Flandreau, M. and C. Jobst (2005), ‘The ties that divide: a network analysis of the international monetary system 1890–1910’, Journal of Economic History, vol. 65(4).</em><br />
-<em>- When using the explanatory variables for 1900:</em><br />
-<em>Flandreau, M. and C. Jobst (2009), ‘The empirics of international currencies: Networks, history and persistence’, The Economic Journal, vol. 119(April).</em><br />
+<em>- When using the network data for 1890, 1900 or 1910:</em>
+<em>Flandreau, M. and C. Jobst (2005), ‘The ties that divide: a network analysis of the international monetary system 1890–1910’, Journal of Economic History, vol. 65(4).</em>
+<em>- When using the explanatory variables for 1900:</em>
+<em>Flandreau, M. and C. Jobst (2009), ‘The empirics of international currencies: Networks, history and persistence’, The Economic Journal, vol. 119(April).</em>
  </p>
 
 <p>And we can have a look at the imported table with function head printing first 5 lines.</p>
@@ -274,13 +274,13 @@ by Vanhanen (2000) for 1900.</li>
 </span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="o">=</span><span class="n">as.factor</span><span class="p">(</span><span class="n">network_table</span><span class="o">$</span><span class="n">colony</span><span class="p">)</span><span class="w">
 </span><span class="n">summary</span><span class="p">(</span><span class="n">network_table</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-text" data-lang="text">##    country_A     country_B   colony       dist          bitrade       
-##  DEU    : 14   GBR    : 44   0:261   Min.   :5.373   Min.   :      0  
-##  NLD    : 13   FRA    : 38   1: 12   1st Qu.:6.783   1st Qu.:  30550  
-##  DNK    : 12   DEU    : 31           Median :7.482   Median :  93208  
-##  USA    : 12   USA    : 19           Mean   :7.674   Mean   : 248059  
-##  FRA    : 11   BEL    : 16           3rd Qu.:8.881   3rd Qu.: 286344  
-##  GBR    : 10   NLD    : 16           Max.   :9.855   Max.   :3545484  
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##    country_A     country_B   colony       dist          bitrade
+##  DEU    : 14   GBR    : 44   0:261   Min.   :5.373   Min.   :      0
+##  NLD    : 13   FRA    : 38   1: 12   1st Qu.:6.783   1st Qu.:  30550
+##  DNK    : 12   DEU    : 31           Median :7.482   Median :  93208
+##  USA    : 12   USA    : 19           Mean   :7.674   Mean   : 248059
+##  FRA    : 11   BEL    : 16           3rd Qu.:8.881   3rd Qu.: 286344
+##  GBR    : 10   NLD    : 16           Max.   :9.855   Max.   :3545484
 ##  (Other):201   (Other):109</code></pre></figure>
 
 <p>This table is ready to export.</p>
@@ -297,30 +297,30 @@ by Vanhanen (2000) for 1900.</li>
 
 <figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="n">summary</span><span class="p">(</span><span class="n">countries_data</span><span class="p">)</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-text" data-lang="text">##     country   gold     debtburden         rlong          rshort1900    
-##  ARG    : 1   0:19   Min.   : 0.000   Min.   : 2.550   Min.   : 3.210  
-##  AUH    : 1   1:26   1st Qu.: 1.759   1st Qu.: 3.290   1st Qu.: 4.835  
-##  AUS    : 1          Median : 4.611   Median : 3.810   Median : 5.870  
-##  BEL    : 1          Mean   : 4.943   Mean   : 4.962   Mean   : 6.073  
-##  BRA    : 1          3rd Qu.: 7.257   3rd Qu.: 6.100   3rd Qu.: 6.750  
-##  CAN    : 1          Max.   :14.656   Max.   :12.280   Max.   :11.400  
-##  (Other):39          NA's   :3        NA's   :8        NA's   :10      
-##    rshort1890          rgdp          rgdpcap         poldemo      
-##  Min.   : 2.790   Min.   :12.69   Min.   :6.301   Min.   : 0.000  
-##  1st Qu.: 4.520   1st Qu.:15.28   1st Qu.:6.711   1st Qu.: 0.000  
-##  Median : 6.000   Median :16.28   Median :7.209   Median : 0.080  
-##  Mean   : 6.105   Mean   :16.30   Mean   :7.309   Mean   : 1.921  
-##  3rd Qu.: 7.000   3rd Qu.:17.11   3rd Qu.:7.922   3rd Qu.: 1.980  
-##  Max.   :12.000   Max.   :19.56   Max.   :8.410   Max.   :11.870  
-##  NA's   :10                                       NA's   :1       
-##     coverage    
-##  Min.   :0.000  
-##  1st Qu.:1.099  
-##  Median :1.386  
-##  Mean   :1.425  
-##  3rd Qu.:1.792  
-##  Max.   :2.565  
-## </code></pre></figure>
+<figure class="highlight"><pre><code class="language-text" data-lang="text">##     country   gold     debtburden         rlong          rshort1900
+##  ARG    : 1   0:19   Min.   : 0.000   Min.   : 2.550   Min.   : 3.210
+##  AUH    : 1   1:26   1st Qu.: 1.759   1st Qu.: 3.290   1st Qu.: 4.835
+##  AUS    : 1          Median : 4.611   Median : 3.810   Median : 5.870
+##  BEL    : 1          Mean   : 4.943   Mean   : 4.962   Mean   : 6.073
+##  BRA    : 1          3rd Qu.: 7.257   3rd Qu.: 6.100   3rd Qu.: 6.750
+##  CAN    : 1          Max.   :14.656   Max.   :12.280   Max.   :11.400
+##  (Other):39          NA's   :3        NA's   :8        NA's   :10
+##    rshort1890          rgdp          rgdpcap         poldemo
+##  Min.   : 2.790   Min.   :12.69   Min.   :6.301   Min.   : 0.000
+##  1st Qu.: 4.520   1st Qu.:15.28   1st Qu.:6.711   1st Qu.: 0.000
+##  Median : 6.000   Median :16.28   Median :7.209   Median : 0.080
+##  Mean   : 6.105   Mean   :16.30   Mean   :7.309   Mean   : 1.921
+##  3rd Qu.: 7.000   3rd Qu.:17.11   3rd Qu.:7.922   3rd Qu.: 1.980
+##  Max.   :12.000   Max.   :19.56   Max.   :8.410   Max.   :11.870
+##  NA's   :10                                       NA's   :1
+##     coverage
+##  Min.   :0.000
+##  1st Qu.:1.099
+##  Median :1.386
+##  Mean   :1.425
+##  3rd Qu.:1.792
+##  Max.   :2.565
+##</code></pre></figure>
 
 <p>I will use <code class="language-plaintext highlighter-rouge">caret</code> package to scale and center data (centering can be skipped as it is included in DeDaL).</p>
 
@@ -360,7 +360,7 @@ by Vanhanen (2000) for 1900.</li>
 <p>In Cytoscape I go to <code class="language-plaintext highlighter-rouge">File -&gt; Import -&gt; Network -&gt; File...</code>
 I select <code class="language-plaintext highlighter-rouge">country_A</code> as a source, <code class="language-plaintext highlighter-rouge">country_B</code> as target and other columns as edge attributes.
 I go to <code class="language-plaintext highlighter-rouge">View -&gt; Show graphical details</code> to visualize the network.
-The image is not very informative, all countries are interconnected and graphical style makes the network unreadable. 
+The image is not very informative, all countries are interconnected and graphical style makes the network unreadable.
 First, I play with graphical parameters to obtain something readable and I modify edge visual proprieties to make use of edge attributes.
  </p>
 
@@ -369,14 +369,14 @@ First, I play with graphical parameters to obtain something readable and I modif
 <p><img src="/images/net_stats.png" width="80%" />
  </p>
 
-<p>Most common organic layout already inform us about potentially important countries that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries. 
+<p>Most common organic layout already inform us about potentially important countries that are highly connected: USA, GBR, FRA, DEU. Layouts based on edge parameters like Biolayout based of bitrade can be even more informative. However, we still do not use actual information about countries.
  </p>
 
 <p><img src="/images/organic.svg" width="80%" /></p>
 
 <p><em>Organic layout of the imported network of currencies in Cytoscape 3.0. Edge width corresponds to distance, edge colors to bitrade, edge line type to colony variables</em></p>
 
-<p>So let’s import <code class="language-plaintext highlighter-rouge">countries_data.txt</code> through <code class="language-plaintext highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.<br />
+<p>So let’s import <code class="language-plaintext highlighter-rouge">countries_data.txt</code> through <code class="language-plaintext highlighter-rouge">File -&gt; Import -&gt; Table</code>. I check carefully all variables are imported as numerical.
 I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDaL</a> in order to see the PCA and Elastic Map Layouts.</p>
 
 <p>
@@ -397,8 +397,8 @@ I apply my Cytoscape plug-in <a href="http://apps.cytoscape.org/apps/dedal">DeDa
 <p>
  	<h3> Elastic Map - non linear manifolds dimension reduction</h3>
  </p>
-<p>It is also possible to perform Elastic Map layout (again no smoothing and no double-centering).<br />
-A window pops up with information that layout captures <strong>79.19%</strong> of variance.<br />
+<p>It is also possible to perform Elastic Map layout (again no smoothing and no double-centering).
+A window pops up with information that layout captures <strong>79.19%</strong> of variance.
 In this case Elastic Map layout is quite similar to PCA meaning the problem can be explained in with linear methods.</p>
 
 <p><img src="/images/elastic.svg" width="80%" /></p>
@@ -406,7 +406,7 @@ In this case Elastic Map layout is quite similar to PCA meaning the problem can 
 <p>
  	<h3> Networks morphing</h3>
  </p>
-<p>Another cool function of <strong>DeDaL</strong> is network morphing, in this example networks goes from PCA layout to organic layout. Organic layout network is rotated compared to original one to minimize bias due to rotation and mirroring.<br />
+<p>Another cool function of <strong>DeDaL</strong> is network morphing, in this example networks goes from PCA layout to organic layout. Organic layout network is rotated compared to original one to minimize bias due to rotation and mirroring.
 It is possible to morph any two layouts (i.e. manually created topological layout into organic layout <em>etc.</em>)</p>
 
 <p><img src="/images/dedal_anim.gif" width="80%" /></p>
@@ -415,7 +415,7 @@ It is possible to morph any two layouts (i.e. manually created topological layou
 <p>
  	<h3> Conclusions</h3>
  </p>
-<p>From the international currency exchange data, using network approach, we can easily identify countries in the focal point of this dataset. Through PCA, it is possible to identify key variables for analysis of data variability. PCA put in contrast important countries like FRA, DEU and GBR and helps to interpret the differences between them. Therefore, <strong>DeDaL</strong> provides good and fast insight into the data and allows its visualization, thanks to Cytoscape 3.0 interface no coding sills are needed and graphical proprieties are easily modifiable. It would find the best use combined with domain knowledge and intelligent variable engineering.<br />
+<p>From the international currency exchange data, using network approach, we can easily identify countries in the focal point of this dataset. Through PCA, it is possible to identify key variables for analysis of data variability. PCA put in contrast important countries like FRA, DEU and GBR and helps to interpret the differences between them. Therefore, <strong>DeDaL</strong> provides good and fast insight into the data and allows its visualization, thanks to Cytoscape 3.0 interface no coding sills are needed and graphical proprieties are easily modifiable. It would find the best use combined with domain knowledge and intelligent variable engineering.
  </p>
 
 <p>Don’t hesitate to <a href="https://github.com/sysbio-curie/DeDaL">download</a>, like and share the tool!</p>
@@ -452,6 +452,18 @@ It is possible to morph any two layouts (i.e. manually created topological layou
         if (e.keyCode == '39') { window.location = '/works/TP_R'; }
       };
       </script>
+<hr style="margin-bottom:12px;" />
+<div class="author">
+<!-- style="margin:8px 28px 12px 0;position:relative;float:left;"> -->
+  <!-- style="position: relative; float: left;margin:0;padding:0;" -->
+  <div style="display:inline-block;border-radius:7px;overflow:hidden;height:100px;width:100px;background:url(/images/ula.jpg);background-size:100px;"></div>
+  <div style="display:inline-block;padding-left:12px;vertical-align:top;"><b>by:<br />Urszula Czerwinska</b><br />(<a href="mailto:urszula.czerwinska@cri-paris.org">urszula.czerwinska@cri-paris.org</a>)<br
+    /><i><a href="http://urszulaczerwinska.github.io" target="_blank">http://urszulaczerwinska.github.io</a></i>
+  </div>
+  <div class="auth-desc"><p> Senior Data Scientist / Deep Learning Engineer </p> PhD in Bio-Mathematics, Data Science & Machine Learning
+</div>
+</div>
+<hr style="margin-top:9px;" />
 
   
     </div>
