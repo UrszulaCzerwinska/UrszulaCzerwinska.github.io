@@ -5,8 +5,8 @@
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Aug 2024 09:35:27 +0200</pubDate>
-    <lastBuildDate>Fri, 16 Aug 2024 09:35:27 +0200</lastBuildDate>
+    <pubDate>Fri, 16 Aug 2024 14:47:36 +0200</pubDate>
+    <lastBuildDate>Fri, 16 Aug 2024 14:47:36 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -1529,200 +1529,199 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
     
       <item>
         <title>Language gap between academia and business</title>
-        <description>&lt;!doctype html&gt;
+        <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta
+      name=&quot;description&quot;
+      content=&quot;An insider view on the language gap between academia and business, and how to bridge it from a data scientist perspective. | Transitioning from academia to industry.&quot;
+    /&gt;
+  &lt;/head&gt;
 
-&lt;head&gt;
-	&lt;meta name=&quot;description&quot; content=&quot;Urszula Czerwinska. About me, data
-	science, big data, analytics, PhD&quot;&gt;
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-	&lt;style&gt;
-		.highlightme { background-color:#ccffe5; }
+  &lt;body&gt;
+    &lt;style&gt;
+      .highlightme { background-color:#ccffe5; }
     &lt;/style&gt;
 
+    &lt;section&gt;
+      &lt;h2&gt;
+        Transitioning from Academia to Industry: A Guide for Aspiring Data
+        Scientists
+      &lt;/h2&gt;
+      &lt;p&gt;
+        &lt;em
+          &gt;Have you ever struggled to communicate your ideas effectively to
+          business professionals when transitioning from academia to industry?
+          If you&apos;re coming from an academic background and aiming for a career
+          in the private sector, you may find the jargon and communication
+          styles quite different.&lt;/em
+        &gt;
+      &lt;/p&gt;
+      &lt;h3&gt;Understanding the Language Gap Between Academia and Business&lt;/h3&gt;
+      &lt;p&gt;
+        Academia and the private sector often speak different languages. In
+        academia, the focus is on innovation and originality, leading to the use
+        of terms like
+        &lt;b&gt;novel&lt;/b&gt;, &lt;b&gt;insight&lt;/b&gt;, &lt;b&gt;paradigm&lt;/b&gt;, &lt;b&gt;robust&lt;/b&gt;, and
+        &lt;b&gt;elucidate&lt;/b&gt;. Research often involves complex landscapes and
+        frameworks, with a tendency to use words like &lt;b&gt;putative&lt;/b&gt;,
+        &lt;b&gt;respectively&lt;/b&gt;, and &lt;b&gt;potentially&lt;/b&gt; to handle uncertainty and
+        criticism.
+      &lt;/p&gt;
 
-&lt;section&gt;
-	&lt;h3&gt;Have you ever felt like you don&apos;t know how to put accurate words on your
-		ideas when speaking with a business person?&lt;/h3&gt;
-	&lt;p&gt;&lt;em&gt;If like me you have been within the academic universe for some time
-			and have tried to get a job in the private sector, you have probably
-			realized it is not always easy to understand each other.
+      &lt;p&gt;
+        On the other hand, the business world values clarity and efficiency.
+        Terms such as &lt;b&gt;ballpark&lt;/b&gt;, &lt;b&gt;itemize&lt;/b&gt;, &lt;b&gt;prioritize&lt;/b&gt;,
+        &lt;b&gt;agile&lt;/b&gt;, &lt;b&gt;incentivize&lt;/b&gt;, &lt;b&gt;proactive&lt;/b&gt;, and
+        &lt;b&gt;empowerment&lt;/b&gt; reflect the need for quick solutions and strategic
+        thinking. Business professionals focus on value, profit, and material
+        gains, often using expressions like &lt;b&gt;push the envelope&lt;/b&gt; and
+        &lt;b&gt;added value&lt;/b&gt;.
+      &lt;/p&gt;
+      &lt;div&gt;
+        &lt;span class=&quot;image fit&quot;
+          &gt;&lt;img
+            src=&quot;/images/boss.jpg&quot;
+            alt=&quot;Transitioning from academia to industry can be challenging but rewarding&quot;
+        /&gt;&lt;/span&gt;
+      &lt;/div&gt;
 
-			On one side of the barrier, researchers and engineers. On the other,
-			business professionals. Both species originating from the common
-			Homo Sapiens Sapiens but which have developed divergent vocabulary
-			and related behavior because of the environmental pressure.
+      &lt;h2&gt;The Critical Attitude Shift&lt;/h2&gt;
 
-			&lt;strong&gt;Jokes apart, the language of science and business are quite
-				different and worth exploring.&lt;/strong&gt;
-		&lt;/em&gt;&lt;/p&gt;
+      &lt;p&gt;
+        Academics are trained to be critical and challenge ideas rigorously.
+        However, in the business world, being overly critical can be
+        counterproductive. In business, you&apos;ll often hear terms like
+        &lt;b&gt;opportunities for improvement&lt;/b&gt; rather than &lt;i&gt;pitfalls&lt;/i&gt;. Issues
+        are described as &lt;b&gt;in development&lt;/b&gt; or &lt;b&gt;with growth potential&lt;/b&gt;,
+        and even terminations are referred to as &lt;b&gt;restructuring&lt;/b&gt;. Adapting
+        to this language and attitude is crucial for fitting into the corporate
+        environment.
+      &lt;/p&gt;
 
-	&lt;p&gt;To begin with, let&apos;s compare the environment. In academia, the goal is to
-		excel in some aspect and to be more innovative and original than others.
-		This is why words commonly used (and overused) related to this aspect are:
-		&lt;b&gt;novel&lt;/b&gt;, &lt;b&gt;insight&lt;/b&gt;, &lt;b&gt;paradigm&lt;/b&gt;, &lt;b&gt;extremely&lt;/b&gt;,
-		&lt;b&gt;elucidate&lt;/b&gt; and &lt;b&gt;robust&lt;/b&gt;. The research often aims to
-		understand and describe things, this is why it is common to talk about
-		&lt;b&gt;landscapes&lt;/b&gt; and
-		&lt;b&gt;frameworks&lt;/b&gt;. What counts is the global impact of the work, how
-		broad it is. There is usually a hypothesis somewhere on the line,
-		uncertainty that needs to be acknowledged to avoid the critics with
-		&lt;b&gt;putative&lt;/b&gt;, &lt;b&gt;respectively&lt;/b&gt;,
-		&lt;b&gt;potentially&lt;/b&gt;. &lt;/p&gt;
+      &lt;h2&gt;Adapting to Corporate Culture&lt;/h2&gt;
 
-	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/boss.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;p&gt;
+        Business professionals often prioritize efficiency and profit. Words
+        like
+        &lt;b&gt;ballpark&lt;/b&gt;, &lt;b&gt;itemize&lt;/b&gt;, &lt;b&gt;agile&lt;/b&gt;, and
+        &lt;b&gt;takeaways&lt;/b&gt; emphasize task management and speed. Expressions such
+        as &lt;b&gt;incentivize&lt;/b&gt;, &lt;b&gt;proactive&lt;/b&gt;, and &lt;b&gt;repurpose&lt;/b&gt; highlight
+        the dynamic nature of corporate work. When discussing strategy, terms
+        like &lt;b&gt;empowerment&lt;/b&gt; and &lt;b&gt;leverage&lt;/b&gt; are common, reflecting a
+        focus on strategic impact and financial value.
+      &lt;/p&gt;
 
-	&lt;p&gt;It is also common to use &lt;em&gt;we&lt;/em&gt; even for a one-person task or
-		overusing the passive voice. This use of &lt;em&gt;we&lt;/em&gt; often sounds odd to
-		business people and results in an uncertainty of which part of the project
-		you actually did yourself. &lt;/p&gt;
-	&lt;h3&gt;Critical attitude&lt;/h3&gt;
+      &lt;blockquote&gt;
+        The difference in wording reflects different attitudes and methods used
+        in business and research. However, the skills gained in research can be
+        valuable in the business world.
+        &lt;span class=&quot;highlightme&quot;
+          &gt;&lt;b
+            &gt;Mastering the art of communication can facilitate a smooth
+            transition from academia to industry.&lt;/b
+          &gt;&lt;/span
+        &gt;
+        Effective communication is crucial for team success and overall company
+        performance.
+      &lt;/blockquote&gt;
 
+      &lt;p&gt;
+        In academia, you often manage a project from start to finish,
+        communicating with peers who are already familiar with your topic. In
+        contrast, the corporate world involves working within a larger process,
+        requiring clear communication and documentation. Corporate language
+        often emphasizes organization and management.
+      &lt;/p&gt;
 
-	&lt;p&gt;
-		Researches are trained to keep their critical spirit awake and challenge
-		each other. One of the first things I was told at a &apos;how to get a job&apos;
-		workshop for PhDs was to &lt;b&gt;be less critical&lt;/b&gt;. When I listen to my
-		colleagues who are now working in business, I often hear phrases like
-		&lt;b&gt;opportunities for improvement&lt;/b&gt; used instead of phrases like
-		&lt;i&gt;pitfalls&lt;/i&gt;. When something is not working, it would be said that it
-		is &lt;b&gt;in development&lt;/b&gt;, &lt;b&gt;with growth potential&lt;/b&gt;. Spending longer
-		than usual to understand a complex case is an investment in the company
-		knowledge capital. Even firing employees can be called restructuring.
-		Like it or not, attitude is different and working in a corporate
-		universe means you should try to fit in and formulate your critiques
-		with prudence.
-	&lt;/p&gt;
-	&lt;h3&gt;Working culture&lt;/h3&gt;
+      &lt;h2&gt;Crafting a Business-Ready CV&lt;/h2&gt;
 
-	&lt;p&gt;Corporate people often prefer fast (and sometimes ugly) solutions, that
-		minimize time and maximize profit. This why words such as &lt;b&gt;ballpark&lt;/b&gt;
-		are often used. &lt;b&gt;Itemize&lt;/b&gt;, &lt;b&gt;prioritize&lt;/b&gt;, &lt;b&gt;agile&lt;/b&gt;,
-		&lt;b&gt;takeaways&lt;/b&gt; show that time and task management plays an important role
-		in the work culture. Another type of expressions are &lt;b&gt;incentivize&lt;/b&gt;,
-		&lt;b&gt;proactive&lt;/b&gt;, &lt;b&gt;repurpose&lt;/b&gt;, it reflects how dynamic the corporate
-		world is. You are required to act and react quickly, find solutions rather
-		than questions. It is common to talk about &lt;b&gt;empowerment&lt;/b&gt; and
-		&lt;b&gt;leverage&lt;/b&gt; when discussing strategy, words that are rare in
-		academia. Business is about money, therefore some expressions higlight
-		value, profit, and material gains; such as &lt;b&gt;push the envelope&lt;/b&gt; and
-		&lt;b&gt;added value&lt;/b&gt;. &lt;/p&gt;
+      &lt;p&gt;
+        When transitioning to a corporate role, your CV needs to shift from the
+        academic format. Instead of a detailed list of projects and
+        publications, focus on achievements and contributions that align with
+        business needs. Follow
+        &lt;a
+          alt=&quot;Google&apos;s recommendations for tech jobs&quot;
+          href=&quot;https://www.businessinsider.fr/us/google-exec-gives-key-to-perfect-resume-2014-9&quot;
+          &gt;Google&apos;s recommendations&lt;/a
+        &gt;
+        for tech jobs, using a business tone and highlighting impact. For
+        example, replace academic jargon with phrases like &apos;Achieved Z&apos; or
+        &apos;Managed a team of N people&apos;.
+      &lt;/p&gt;
 
-	&lt;blockquote&gt;The difference in wording reflects different attitudes and
-		methods used in business and research worlds. This does not mean that skills
-		gained in one universe cannot be useful in the another. However, the
-		competence one gains in research needs to be worded in a way it can be
-		understood and considered useful in the corporate world.
-		&lt;span class=&quot;highlightme&quot;&gt;
-			&lt;b&gt;The skill of making yourself understood can really help foster a
-				smooth transition into the business world.&lt;/b&gt; Communication, in
-			general, is a very important skill for any team and a key factor for
-			company success. &lt;/span&gt;
-	&lt;/blockquote&gt;
+      &lt;p&gt;
+        In the business world, the emphasis is less on publications and more on
+        the skills and logistics involved in achieving results. Break down your
+        academic achievements into understandable and valuable skills for
+        potential employers.
+      &lt;/p&gt;
 
-	&lt;p&gt;
-		A researcher, even when working in a team, is responsible for his
-		project from A to Z. He or she communicates with other researches that
-		already have a lot of knowledge about your topic. Conversely, in the
-		corporate world, your work is just a part of a bigger process and so you
-		need to properly communicate and document your work. This is why a lot
-		of place in the corporate vernacular is given to the organization of
-		work and management.
-	&lt;/p&gt;
+      &lt;div&gt;
+        &lt;span class=&quot;image fit&quot;
+          &gt;&lt;img
+            src=&quot;/images/work.jpg&quot;
+            alt=&quot;Effective CV writing is crucial for transitioning from academia to industry&quot;
+        /&gt;&lt;/span&gt;
+      &lt;/div&gt;
 
-	&lt;h3&gt;
-		CV writing
-	&lt;/h3&gt;
-	&lt;p&gt;
-		Your journey to the corporate world starts with a CV. A researcher&apos;s CV
-		is usually a very complete and long list of projects, contributions,
-		presentations and publications in a chronological order. The CV you will
-		send to hiring managers in the private sector should be quite different.
-		Even though writing CVs is a whole different subject, I can advise you
-		to follow the &lt;a href=&quot;https://www.businessinsider.fr/us/google-exec-gives-key-to-perfect-resume-2014-9&quot;&gt;Google
-			recommendations&lt;/a&gt; for tech jobs at least. The format and wording of
-		your CV should be inspired by the corporate world and speak in a
-		business tone. For example, instead of writing &apos;Studied system X in
-		conditions A, B and published a paper entitled Novel landscape of system
-		X indicates [very long technical word] in conditions A, B&apos;, you can
-		write: &apos;Achieved Z/Improved by Z/Discovered Z when studying the system
-		X&apos;. You should also add your logistical duties of the project for
-		example &apos;Managed a team of N people/ (international) project&apos; or
-		&apos;Monthly reported progress to an international commission in a form of
-		dashboards and [format] presentations&apos;.
+      &lt;h2&gt;Presenting Your Research&lt;/h2&gt;
 
+      &lt;p&gt;
+        When discussing your research, practice explaining it to non-academic
+        audiences. Focus on the big picture and avoid technical jargon. Use
+        everyday language and make parallels with business or everyday life.
+        Consider preparing an
+        &lt;a
+          href=&quot;http://thepostdocway.com/content/elevator-pitches-scientists-what-when-where-and-how&quot;
+          &gt;elevator pitch&lt;/a
+        &gt;
+        or reviewing
+        &lt;a href=&quot;https://vimeo.com/threeminutethesis&quot;&gt;3MT&lt;/a&gt; videos for
+        inspiration.
+      &lt;/p&gt;
 
-	&lt;/p&gt;
+      &lt;h2&gt;Effective Presentations&lt;/h2&gt;
 
-	&lt;p&gt;In the research world, the second wording may sound unnatural. Also, no
-		one cares if and how you were reporting or managing your project if you
-		published a great paper. In the private sector, the fixation over the
-		publications is not well understood so it is hard for them to see what
-		skills it takes to publish a journal paper. This is why such an achievement
-		needs to be decomposed in smaller tasks that can be understood and valued. &lt;/p&gt;
+      &lt;p&gt;
+        In the corporate world, presentations are crucial for persuading and
+        informing. Unlike academic presentations, business presentations require
+        a strong focus on the form and visual appeal. Ensure your slides are
+        well-designed and that your presentation highlights the big picture
+        before delving into details.
+      &lt;/p&gt;
 
-		&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/work.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;h2&gt;Final Thoughts&lt;/h2&gt;
 
-	&lt;h3&gt;
-		Tell me about your research
-	&lt;/h3&gt;
-	&lt;p&gt;
-		If you have never prepared an answer to this question, practice on your
-		non-academic friends and/or family members, usually you lose your
-		listener in the first two sentences. Start your response with why not with
-		how, focus on the big picture, avoid technical words, scientific names
-		and try to make parallels with every day or business life. You should
-		always adapt your vocabulary to your interlocutor. Do not be afraid to
-		speak too broadly, you can always go into specifics if they ask for more
-		details on certain aspects that you mention in your pitch. To get
-		inspired with short presentation format, you can have a look at
-		guidelines for &lt;a href=&quot;http://thepostdocway.com/content/elevator-pitches-scientists-what-when-where-and-how&quot;&gt;elevator
-			pitch &lt;/a&gt; or &lt;a href=&quot;https://vimeo.com/threeminutethesis&quot;&gt;3MT&lt;/a&gt; videos.
-	&lt;/p&gt;
+      &lt;p&gt;
+        Although there is a significant gap between academia and business,
+        bridging this divide can be rewarding. Adapting to business language and
+        practices will open new doors and enhance your career opportunities.
+        Engage with industry events, practice your communication skills, and be
+        prepared for interviews to ensure a successful transition.
+      &lt;/p&gt;
 
-	&lt;h3&gt;
-		Presentations
-	&lt;/h3&gt;
+      &lt;div&gt;
+        &lt;span class=&quot;image fit&quot;
+          &gt;&lt;img
+            src=&quot;/images/raising.jpg&quot;
+            alt=&quot;Successfully transitioning from academia to industry opens new career opportunities&quot;
+        /&gt;&lt;/span&gt;
+      &lt;/div&gt;
+	  &lt;p&gt;Also published on &lt;a alt=&quot;Discover more stories about Deep Learnig, Machine Learning and Data Science by Urszula Czerwinska&quot; href=&quot;https://medium.com/@ulalaparis/language-gap-between-academia-and-business-ef534ce71d10&quot;&gt;Medium&lt;/a&gt;&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+  &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+  &lt;script
+    type=&quot;text/javascript&quot;
+    src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
+  &gt;&lt;/script&gt;
 
-	&lt;p&gt;Another form of communication often used in the business world are
-		presentations, usually with support slides. In the private sector, presentations
-		are used a lot. And if you think that the content matters more than the form,
-		you are right. But, the &lt;b&gt;form is very important&lt;/b&gt;, much much more than in
-		scientific word. The purpose of presentations is to persuade and inform your
-		audience. This is why putting the big picture first, just like for the elevator
-		pitch is crucial. Don’t neglect the visuals. Beautiful illustrations and tidy
-		design can help develop your message.&lt;/p&gt;
-		&lt;h3&gt;
-		Final word
-	&lt;/h3&gt;
-	&lt;p&gt;
-		Even though there is a gap between science and business, it does not
-		mean one cannot belong to both. It may take some effort, just like
-		learning to speak another language but learning to adapt to the business
-		world can give you a lot of satisfaction and open the doors. So go out
-		to the world, participate in the events organized by the industry and
-		converse with them. Do not get taken by surprise at your dream
-		job/internship interview, it would be dull to miss it because of the
-		content ‘lost in translation’. 
-
-
-	&lt;/p&gt;
-	
-	&lt;div&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;img src=&quot;/images/raising.jpg&quot; alt=&quot;&quot; /&gt;&lt;/span&gt;&lt;/div&gt;
-
-&lt;/section&gt;
-&lt;/body&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-&lt;/html&gt;</description>
+  &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
+  &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+&lt;/html&gt;
+</description>
         <pubDate>Sat, 19 Jan 2019 00:00:00 +0100</pubDate>
         <link>http://urszulaczerwinska.github.io/thoughts/businesslang</link>
         <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/businesslang</guid>

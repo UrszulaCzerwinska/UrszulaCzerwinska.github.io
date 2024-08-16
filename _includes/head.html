@@ -11,16 +11,13 @@
   <link rel="stylesheet" href="{{ '/css/main.css' | prepend: site.baseurl }}" />
 
 
-
-  {% seo %}
-
   {% assign keywords = page.tags | where_exp: 'tag', 'tag != "featured"' | join: ', ' %}
   <!-- Add JSON-LD for Article and Person Schema -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "{{ page.title | escape }}",
+      "headline": "{% if page.title %}{{ page.title | escape }}{% else %}Urszula Czerwinska | Data Scientist & Deep Learning Engineer{% endif %}"
       "description": "{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}",
       "datePublished": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}",
       "dateModified": "{{ page.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}",
@@ -97,7 +94,7 @@
   endif %}{%
   if page.style %}
 <style>
-{{ page.style }}
+{ page.style }
 </style>{%
   endif %}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
