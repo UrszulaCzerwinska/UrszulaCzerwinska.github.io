@@ -1,7 +1,7 @@
 ---
 priority: 0.9
 title: Text in Image 2.0 - improving OCR service with PaddleOCR
-excerpt: Read how the Cognition team improved the Text in Image service across Adevinta marketplaces using PaddleOC
+excerpt: Read how the Cognition team improved the Text in Image service across Adevinta marketplaces using PaddleOCR
 permalink: /works/text-in-image-2-0-improving-ocr-service-with-paddleocr
 categories: works
 background-image: text-in-image-2.jpg
