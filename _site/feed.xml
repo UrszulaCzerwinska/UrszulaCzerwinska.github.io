@@ -5,9 +5,329 @@
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Aug 2024 21:56:29 +0200</pubDate>
-    <lastBuildDate>Fri, 16 Aug 2024 21:56:29 +0200</lastBuildDate>
+    <pubDate>Tue, 27 Aug 2024 23:24:36 +0200</pubDate>
+    <lastBuildDate>Tue, 27 Aug 2024 23:24:36 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
+    
+      <item>
+        <title>Deep Dive in PaddleOCR inference</title>
+        <description>&lt;head&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;A deep dive into the complexities of using PaddleOCR for text extraction from images and how the Cognition team improved the service. Learn about the challenges and solutions that enhanced user experience in OCR services.&quot; /&gt;
+&lt;/head&gt;
+
+&lt;p&gt;This article is a deep dive into part of our work as described in &lt;a href=&quot;/works/text-in-image-2-0-improving-ocr-service-with-paddleocr&quot;&gt;&lt;strong&gt;Article 1: Text in Image 2.0: improving OCR service with PaddleOCR&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We are Cognition, an &lt;a href=&quot;https://www.adevinta.com/&quot;&gt;Adevinta&lt;/a&gt; Computer Vision Machine Learning (ML) team working on solutions for our marketplaces. Adevinta is a global classifieds specialist with market-leading positions in key European markets that aims to find perfect matches between its users and the platforms’ goods. As a Global Team, our team, Cognition, provides image processing APIs to all of our marketplaces.&lt;/p&gt;
+
+&lt;p&gt;In the process of improving our OCR API for text extraction from images, we updated our existing Text in Image service to the &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; framework, which was the winner of our benchmarks. In order to test if this framework was the most suitable solution, we carried out a deeper analysis of their code base. This article shares the challenges we encountered and how we overcame them.&lt;/p&gt;
+
+&lt;p&gt;We believe our code version is easier to work with, given the use case of text extraction from images. The different steps and pre-processing and post-processing parts are clearly separated so they can be called independently, which should make further community extensions easier to add. It also makes putting into production easier, as the simplified, modular code combines well with the structure of &lt;em&gt;inference.py&lt;/em&gt; for serving SageMaker endpoints. Our proposed code version does not alter predictions (compared to the 2.6 release) for images.&lt;/p&gt;
+
+&lt;h2 id=&quot;understanding-the-paddleocr-framework&quot;&gt;Understanding the PaddleOCR framework&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/PaddlePaddle/Paddle&quot;&gt;PaddlePaddle&lt;/a&gt; (short for Parallel Distributed Deep Learning) is an open source deep learning platform developed by Baidu Research. It is written in C++ and Python, and is designed to be easy to use and efficient for large-scale machine learning tasks.&lt;/p&gt;
+
+&lt;p&gt;PaddlePaddle provides a range of tools and libraries for building and training deep learning models, including support for convolutional neural networks (CNNs), recurrent neural networks (RNNs) and long short-term memory (LSTM) networks.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; builds on PaddlePaddle, an unfamiliar framework that our team had not used before. To make things even more challenging, PaddleOCR is not just one algorithm, it includes a range of pre-trained models and tools for recognising text in images and documents, as well as for training custom OCR models.&lt;/p&gt;
+
+&lt;p&gt;PaddleOCR is divided into two main sections:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;PP-OCR&lt;/strong&gt;, an OCR system used for text extraction from images&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PP-Structure&lt;/strong&gt;, a document analysis system which aims to perform layout analysis and table recognition&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PP-OCR exists in three different versions (V1, V2 and V3). In these different releases, major improvements were brought to the models’ architecture.&lt;/p&gt;
+
+&lt;p&gt;For our Text in Image service update, we focused on the most recent and most performant PP-OCRv3 release.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-paddleocrv3-models-architecture&quot;&gt;The PaddleOCRv3 models architecture&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*1mI3YTIjAut_QMrl&quot; alt=&quot;PaddleOCRv3 Architecture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PP-OCRv3 is composed of three parts: detection, classification and recognition, all of which can be used independently. Each part has its own model trained with the PaddlePaddle framework. For those interested, model details can be found in this dedicated research article PP-OCRv3: &lt;a href=&quot;https://arxiv.org/abs/2206.03001v2&quot;&gt;More Attempts for the Improvement of Ultra Lightweight OCR System (Yanjun et al., 2022)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;PP-OCRv3 text detection is made with the Differentiable Binarization algorithm (&lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_en/algorithm_det_db_en.md&quot;&gt;DB&lt;/a&gt;) trained using distillation strategy. The PP-OCRv3 recogniser is optimised based on the text recognition algorithm, Scene Text Recognition with a Single Visual Model (&lt;a href=&quot;https://arxiv.org/abs/2205.00159&quot;&gt;SVTR, Du et al. 2022)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;PP-OCRv3 adopts the text recognition network SVTR_LCNet, and uses &lt;a href=&quot;https://arxiv.org/abs/2002.01276&quot;&gt;the guided training of Connectionist Temporal Classification (CTC&lt;/a&gt;, Z&lt;a href=&quot;https://arxiv.org/search/cs?searchtype=author&amp;amp;query=Lin%2C+Z&quot;&gt;hiping&lt;/a&gt; et al., 2020) by the attention, data augmentation strategy, TextConAug, Unified Deep Mutual Learning and Unlabelled Images Mining (first introduced in &lt;a href=&quot;https://arxiv.org/abs/2109.03144&quot;&gt;PaddleOCRv2, Yanjun et al. 2021&lt;/a&gt;). The Text classifier is a simple binary classifier with classes 0 and 180°.&lt;/p&gt;
+
+&lt;h3 id=&quot;paddleocr-inference-in-practice&quot;&gt;PaddleOCR inference in practice&lt;/h3&gt;
+
+&lt;p&gt;While testing on our benchmarks, we used the PaddleOCR code for inference with default parameters and “latin” as a language (see their &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_en/quickstart_en.md&quot;&gt;QuickStart page&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Reading the documentation and looking into the class parameters, we saw lots of model combinations to test and therefore more opportunities to potentially improve our score.&lt;/p&gt;
+
+&lt;p&gt;For instance, the &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/doc/doc_en/detection_en.md&quot;&gt;documentation&lt;/a&gt; suggests there is a choice between “DB” and “EAST” algorithms for detection, but it’s only the main inference &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/paddleocr.py&quot;&gt;script&lt;/a&gt; where the algorithm has to be “DB” — the &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/tools/infer/predict_det.py#L62&quot;&gt;script&lt;/a&gt; of detection inference goes through a long list of algorithms. A similar situation occurs with text recognition where the pre-trained algorithm for Latin is “SVTR_LCNet”, but in &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/paddleocr.py#L51&quot;&gt;theory&lt;/a&gt;, the accepted values are “‘CRNN’ and ‘SVTR_LCNet’ with the general &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/inference_args_en.md&quot;&gt;documentation&lt;/a&gt; mentioning a plethora of models.&lt;/p&gt;
+
+&lt;p&gt;Pre-trained English models are available in “‘CRNN’ and ‘SVTR_LCNet’ architectures. However, to find the information, the user would need to look into the pretrained model &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/configs/rec/PP-OCRv3/en_PP-OCRv3_rec.yml#L39&quot;&gt;config&lt;/a&gt;. If the user does not specify the “rec_algorithm”, the default value, “SVTR_LCNet”, would be used, even if it isn’t correct. This doesn’t actually make any difference to the inference &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/tools/infer/predict_rec.py&quot;&gt;code&lt;/a&gt; as none of the “if” applies to ‘CRNN’ or ‘SVTR_LCNet’.&lt;/p&gt;
+
+&lt;p&gt;In order to test a different architecture, we would need to train it ourselves and chain dedicated scripts.&lt;/p&gt;
+
+&lt;h2 id=&quot;clarifying-paddleocr-inference&quot;&gt;Clarifying PaddleOCR inference&lt;/h2&gt;
+
+&lt;p&gt;From digging into the code, we discovered several complexities, unnecessary for our use case. Firstly, the code seemed to grow organically, where the inference version is a limited choice entry to the multi-option code. This leaves us with numerous “factory patterns” and “if .. elses”, where the user has no choice at all. The English documentation was confusing and referenced different usage cases. We struggled to follow the logic as it neither explained parameters, nor clearly defined the limitations of the inference code.&lt;/p&gt;
+
+&lt;p&gt;Despite these complexities, we managed to clarify the general way of working, calling the PaddleOCR.ocr() method from the ‘master’ file, &lt;em&gt;paddleocr.py&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*zwImfJ-4pOxDvrEI&quot; alt=&quot;PaddleOCR.ocr() Method&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The input image and parameters are entered into the PaddleOCR.ocr() method which calls TextSystem class in order: TextDetector, TextClassifier and TextRecogniser, with a selection of helper functions, including one that formats the outputs of TextDetector into a list of cropped images being input to TextClassifier and TextRecogniser.&lt;/p&gt;
+
+&lt;p&gt;The PaddleOCR.ocr() method is parsing params, including the language, version, type of OCR (or structure), downloads inference models and imports actual image (with check_image).&lt;/p&gt;
+
+&lt;p&gt;If we want our image to go through a full OCR process, the TextSystem class will sequentially call classes responsible for detection, classification and recognition.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*B-7pY0A4Xv7eNTcr&quot; alt=&quot;TextSystem Class Flow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each of the main classes has an &lt;em&gt;__init__&lt;/em&gt; method that initialises pre- &amp;amp; post- processing classes and loads the model (create_predictor), and &lt;em&gt;__call__&lt;/em&gt; method that executes (pre- &amp;amp;) post-processing on the image and performs the model inference for the input image(s).&lt;/p&gt;
+
+&lt;p&gt;Most of the scripts used for inference can be found under ‘tools/infer/’. The pre-processing scripts are under “ppocr/data/imaug/operators.py”. The post-processing classes are under ‘ppocr/postprocess/’.&lt;/p&gt;
+
+&lt;p&gt;This schema enables us to reduce the essential inference code to just a couple of files and better understand exactly how the code works. To make it easier to maintain, we decided to reformat the code, keeping only the essential parts for our use case.&lt;/p&gt;
+
+&lt;h2 id=&quot;paddleocr-inference-code-caveats-andfixes&quot;&gt;PaddleOCR inference code caveats and fixes&lt;/h2&gt;
+
+&lt;p&gt;Let’s walk you through the PaddleOCR features we didn’t like and suggestions on how they could be improved.&lt;/p&gt;
+
+&lt;h3 id=&quot;spaghetti-code&quot;&gt;Spaghetti code&lt;/h3&gt;
+
+&lt;p&gt;Overall, most of the code is in object oriented programming style where classes are not modular and most things happen in very long &lt;em&gt;__init__&lt;/em&gt; and &lt;em&gt;__call__&lt;/em&gt; methods. We have noticed (fig. 2 and fig. 3) that generally, three parts can be extracted: pre-processing, inference and post-processing. We have removed ‘create_operators’ and ‘build_post_process’ intermediate functions and called directly the class performing the task such as “DBPostprocess” and “NormalizeImage”. To make things more straightforward, we transformed them into simple functions, performing what their &lt;em&gt;__call__&lt;/em&gt; method was doing before. This leaves us with more modular code and direct logic that fits our needs.&lt;/p&gt;
+
+&lt;h3 id=&quot;parameter-parsing&quot;&gt;&lt;em&gt;Parameter parsing&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;We found it problematic that the inference class requires 105 parameters, of which more than 70 were ignored.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*jPMJx-wOF-R5DsmqJFs5BA.png&quot; alt=&quot;PaddleOCR inference parameters are not all used&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/inference_args_en.md&quot;&gt;English documentation&lt;/a&gt; lists the parameters and gives a succinct definition of them. In the code, they are defined in at least three different places: &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/paddleocr.py#L307&quot;&gt;paddleocr.py&lt;/a&gt;, &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/ppstructure/utility.py#L21&quot;&gt;utility.py&lt;/a&gt; and different &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/34b9569800a38af41a27ed893b12567757ef6c89/tools/infer/utility.py#L34&quot;&gt;utility.py&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;However while executing the code, we found that only 20 parameters were useful in our refactored code:&lt;/p&gt;
+
+&lt;p&gt;When rewriting the code, we cleaned the parameter list, leaving only the relevant parameters.&lt;/p&gt;
+
+&lt;h3 id=&quot;parameter-impact-on-prediction&quot;&gt;&lt;em&gt;Parameter impact on prediction&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Some of the parameter definitions and effect they would have when changed from default, were not clear to us. We built a &lt;a href=&quot;https://streamlit.io/&quot;&gt;Streamlit app&lt;/a&gt; to visualise the changes in params on the predictions. For instance, “unclip ratio” would impact the size of the box, and “threshold” would detect two bounding boxes instead of one. We advise you to play with your own data and model to see how different parameters affect the detection. Overall, we were not able to see a major improvement from changing defaults.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*B4uqn-7vcxfu5aPz&quot; alt=&quot;The illustration of PaddleOCR parameters impact on the machine learning model prediction&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;language-choice&quot;&gt;&lt;em&gt;Language choice&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Normally in our role, we work with “‘PP-OCRv3”, the most recent version of the framework. As we are dealing with European languages, we would choose “fr”, “en”, “es” as the “lang” param, thinking that this means different models are being called. However, while looking into the paddleocr.py, we saw how the languages are interpreted:&lt;/p&gt;
+
+&lt;p&gt;The first definition serves to define the recognition model name/path. But if we typed “fr” or “es”, it becomes lang = “latin”, yet “en” remains “en”. Then another simplification happens for the detection model.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;if lang in [“en”, “latin”]:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;det_lang = “en”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We are left with an English detection model and a Latin recognition model for any European language written with Latin characters except English, which has its own recognition model.&lt;/p&gt;
+
+&lt;h3 id=&quot;downloading-models&quot;&gt;&lt;em&gt;Downloading models&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Based on the language parameter and framework version, the first time we call the PaddleOCR class with those parameters, the model will be downloaded from the url encoded in paddleocr.py.&lt;/p&gt;
+
+&lt;p&gt;Firstly, this could cause some issues when running the code in secure or offline environments.&lt;/p&gt;
+
+&lt;p&gt;Secondly, we found inconsistencies between the model urls in the paddleocr.py and the models provided in the dedicated &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/models_list_en.md&quot;&gt;documentation page&lt;/a&gt;. For instance, “en_PP-OCRv3_det_slim” is not an option when models are downloaded by the paddleocr.py script. In order to use some of the models from Model Zoo, a database of pre-trained models and code, you would need to download the model and provide the path to it manually.&lt;/p&gt;
+
+&lt;p&gt;In order to remove this ambiguity and use the specific model we needed, we decided to pre-download the chosen model, then provide the path directly. In the original code, it is possible to provide det_model_dir, cls_model_dir and rec_model_dir. The language param will then be ignored and any pre-trained model with the accepted backbones can be used. After this process, we removed the model download functionality from our code.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-onnxmodels&quot;&gt;&lt;em&gt;Using ONNX models&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;PaddleOCR provides a &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/deploy/paddle2onnx/readme.md&quot;&gt;handy way&lt;/a&gt; to export models to the &lt;a href=&quot;https://onnx.ai/&quot;&gt;ONNX framework&lt;/a&gt; that can serve or integrate in different pipelines. We exported the pre-trained models using PaddleOCR instructions. In the PaddleOCR class, there is a parameter “use_onnx”. If one sets “use_onnx” and provides a direct path to the ONNX models to PaddleOCR(), the model would use the ONNX model for prediction. However, there is a small bug that occurs while running ONNX with GPUs, described further in this &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/issues/8688&quot;&gt;issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We applied the modification suggested and tested the code with ONNX models, obtaining satisfactory results on both CPU and GPU (even though we noticed small numerical differences between the Paddle and ONNX model versions).&lt;/p&gt;
+
+&lt;h3 id=&quot;documentation&quot;&gt;&lt;em&gt;Documentation&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;If you look at the &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/tree/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc&quot;&gt;documentation pages&lt;/a&gt;, you will find a lot of resources in both English and Chinese. However, when looking at &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/issues&quot;&gt;Issues&lt;/a&gt;, you will find most of them are in Chinese, Japanese or Korean. The same applies to blog posts and community resources online. We also found that some documentation is only partially translated to English and the Chinese version contains much more detail.&lt;/p&gt;
+
+&lt;p&gt;We did not find a solution for this. We made sure to always check both the English and Chinese documentation (translated to English by an automatic translator) to ensure that we have all the possible information.&lt;/p&gt;
+
+&lt;h3 id=&quot;tests--pylint-typing&quot;&gt;&lt;em&gt;Tests &amp;amp;&lt;/em&gt; &lt;a href=&quot;https://pylint.pycqa.org/en/latest/&quot;&gt;&lt;em&gt;pylint&lt;/em&gt;&lt;/a&gt; &lt;em&gt;&amp;amp;&lt;/em&gt; &lt;a href=&quot;https://docs.python.org/3/library/typing.html&quot;&gt;&lt;em&gt;typing&lt;/em&gt;&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;In general, as the original code is not modular, it was not tested according to the standards of our team. Once we cleaned and simplified the code, we worked on linting and variable typing. Our next step will be to write meaningful unit tests to secure the code base.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;PaddleOCR is a powerful and optimised library for the extraction of text from images. However, we found that the code doesn’t fit the standards of our team as it is too complex to maintain and understand. In this article, we pointed out some of the pain points for us that other PaddleOCR users may experience when working with this framework. The fixes we proposed made our lives easier and the code more transparent for any team member and the wider community, without compromising the speed or the original model accuracy.&lt;/p&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on June 06,
+    2023.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/deep-dive-in-paddleocr-inference-e86f618a0937&quot;&gt;View
+      the original&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</guid>
+        
+        <category>data science</category>
+        
+        <category>OCR</category>
+        
+        <category>deep learning</category>
+        
+        <category>computer vision</category>
+        
+        <category>machine learning</category>
+        
+        <category>featured</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>Text in Image 2.0 - improving OCR service with PaddleOCR</title>
+        <description>&lt;head&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Discover how the Cognition team at Adevinta enhanced the Text in Image service using PaddleOCR, leading to significant improvements in OCR accuracy and performance.&quot; /&gt;
+&lt;/head&gt;
+
+&lt;h2 id=&quot;understanding-ocr-what-is-optical-character-recognition&quot;&gt;Understanding OCR: What is Optical Character Recognition?&lt;/h2&gt;
+
+&lt;p&gt;Optical Character Recognition (OCR) is a popular topic for both industry and personal use. In this article, we share how we tested and used an existing open source library, PaddleOCR, to extract text from an image. This read is for anyone who would like to find out more about OCR, the needs of our customers at &lt;a href=&quot;https://www.adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, and the challenges we face in attending to them. You’ll find out how we upgraded an existing service, benchmarked different solutions and delivered the selected one to satisfy our customers.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-ocr-applications-how-ocr-transforms-business-and-daily-operations&quot;&gt;Key OCR applications: How OCR transforms business and daily operations&lt;/h2&gt;
+
+&lt;p&gt;OCR stands for “Optical Character Recognition” and is a technology that allows computers to recognise and extract text from images and scanned documents. OCR software uses optical recognition algorithms to interpret the text in images and convert it into machine-readable text that can be edited, searched and stored electronically.&lt;/p&gt;
+
+&lt;p&gt;There are numerous use-cases where OCR can be used:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Digitising paper documents&lt;/strong&gt;: to convert scanned images of text into digital text. This is useful for organisations that want to reduce their reliance on paper and improve their document management processes.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Extracting data from images&lt;/strong&gt;: eg from documents such as invoices, receipts and forms. This can be useful for automating data entry tasks and reducing the need for manual data entry.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Translating documents&lt;/strong&gt;: to extract text from images of documents written in foreign languages and translate them into a different language.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Archiving&lt;/strong&gt;: to create digital copies of important documents that need to be preserved for long periods of time.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Improving accessibility&lt;/strong&gt;: to make scanned documents more accessible to people with disabilities by converting the text into a format that can be read by assistive technologies such as screen readers.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Searching documents&lt;/strong&gt;: to make scanned documents searchable, allowing users to easily find specific information within a large collection of documents.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-adevinta-context-why-ocr-matters-in-global-marketplace&quot;&gt;The Adevinta context: Why OCR matters in global marketplace&lt;/h2&gt;
+
+&lt;p&gt;Within &lt;a href=&quot;https://www.adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, a global classifieds specialist with market-leading positions in key European markets, there is space for all of the cited use cases. However, for this article, we focus specifically on “extracting data from images.”&lt;/p&gt;
+
+&lt;p&gt;Applying deep learning to images is the main expertise of our team, Cognition. We are Data Scientists and Machine Learning (ML) Engineers that work together to develop image-based ML solutions at scale, helping Adevinta’s marketplaces build better products and experiences for their customers. Adevinta’s mission is to connect buyers and sellers, enabling people to find jobs, homes, cars, consumer goods and more. By making an accessible ML API with features tailored to our different marketplaces’ needs, Adevinta’s marketplaces are empowered with ML tools at a reasonable cost.&lt;/p&gt;
+
+&lt;h2 id=&quot;text-extraction-in-images-why-its-crucial-for-adevintas-services&quot;&gt;Text Extraction in Images: Why It’s Crucial for Adevinta’s Services&lt;/h2&gt;
+&lt;p&gt;Text extraction from images enables us to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Detect unwanted content in ads (e.g., insults, hidden messages).&lt;/li&gt;
+  &lt;li&gt;Better understand image content to improve search capabilities.&lt;/li&gt;
+  &lt;li&gt;Support more efficient searches using visible text on items.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With over 100 million requests per month and growing, our existing Text in Image service was ripe for enhancement. We aimed to improve accuracy and performance, leading to the development of Text in Image 2.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-we-chose-paddleocr-benchmarking-the-best-ocr-solution&quot;&gt;Why we chose PaddleOCR: Benchmarking the best OCR solution&lt;/h2&gt;
+
+&lt;p&gt;The existing service was based on &lt;a href=&quot;https://arxiv.org/abs/1801.01671&quot;&gt;Fast Oriented Text Spotting with a Unified Network (Yan et al., 2018)&lt;/a&gt;. Despite being state of the art in 2018, the algorithm achieved 0.4 accuracy on our internal benchmark of 200 marketplace images. Nevertheless, accuracy was not the sole criteria of choice for the Text in Image 2.0, so we compiled a list of edge cases where our partner marketplaces require high-performing algorithms.&lt;/p&gt;
+
+&lt;p&gt;After reviewing different open source OCR frameworks (including &lt;a href=&quot;https://github.com/open-mmlab/mmocr&quot;&gt;MMOCR&lt;/a&gt;, &lt;a href=&quot;https://github.com/JaidedAI/EasyOCR&quot;&gt;EASY OCR&lt;/a&gt;, &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; and &lt;a href=&quot;https://thehive.ai/apis/ocr&quot;&gt;HiveOCR&lt;/a&gt;) and different combinations of proposed models on our internal benchmark and on the edge cases, a indisputable winner was PaddleOCR with an average accuracy of 0.8 and an acceptable performance on our edge cases. This result competes with the paid &lt;a href=&quot;https://cloud.google.com/vision/docs/ocr&quot;&gt;Google Cloud Vision OCR API&lt;/a&gt; on the best accuracy we measured.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*UUEf-TKs1Lfn7_wx&quot; alt=&quot;Graph showing benchmark results for various OCR frameworks&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;how-we-validated-paddleocr-building-a-comprehensive-benchmark&quot;&gt;How We Validated PaddleOCR: Building a Comprehensive Benchmark&lt;/h2&gt;
+
+&lt;p&gt;In order to construct our independent benchmark and validate the choice of PaddleOCR at scale, we built a “Text in Image generator” that uses open source images from &lt;a href=&quot;https://unsplash.com/license&quot;&gt;Unsplash&lt;/a&gt; and &lt;a href=&quot;https://pikwizard.com/free-license&quot;&gt;Pikwizard&lt;/a&gt; and adds randomly generated text on top of them. The created tool is highly customisable in order to simulate a wide variety of cases that combine factors such as font type, rotation, text length, background type, image resolution etc. Using a simulated benchmark of 20k images with a distribution of cases matching business needs, we obtained an improvement factor of x1.4.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*sWpBlrJtdxsRlqj4&quot; alt=&quot;Sample of Text in Image generator output showing simulated text scenarios&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges-with-paddleocr-identifying-and-mitigating-issues&quot;&gt;Challenges with PaddleOCR: Identifying and mitigating issues&lt;/h2&gt;
+
+&lt;p&gt;We identified several cases where PaddleOCR fails. This is mostly when there are different angles of rotated text, some alternative fonts and differing colour/contrast. We also observed that in some cases, the correct words are detected but the spaces between them are not placed correctly. This may or may not be an issue depending on the way the extracted text is used further.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*3CO2dWUYPpVPPBZJDpx4EA.png&quot; alt=&quot;Example of OCR results with incorrectly spaced text&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;deep-dive-how-we-optimized-paddleocr-for-production&quot;&gt;Deep Dive: How We Optimized PaddleOCR for Production&lt;/h2&gt;
+
+&lt;p&gt;In order to evaluate the potential for improvement and mitigation of these errors, in addition to defining the serving strategy, we had to deep dive into the PaddleOCR framework.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; builds on &lt;a href=&quot;https://github.com/PaddlePaddle/Paddle&quot;&gt;PaddlePaddle.&lt;/a&gt; Our team had no previous experience with this and it’s less popular in our community than other frameworks such as Tensorflow, Keras or Pytorch.&lt;/p&gt;
+
+&lt;p&gt;From a technical point of view, PaddleOCR is composed of three distinct models:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Detection&lt;/strong&gt;, for detecting a bounding box where possible text is&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Classification&lt;/strong&gt;, rotating the text 180° if necessary&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recognition&lt;/strong&gt;, translating the detected image frame to raw text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pre-trained models in different languages are &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/models_list_en.md&quot;&gt;provided by authors&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;refactoring-paddleocr-creating-a-clean-production-ready-codebase&quot;&gt;Refactoring PaddleOCR: Creating a Clean, Production-Ready Codebase&lt;/h3&gt;
+
+&lt;p&gt;Whilst exploring the code base of PaddleOCR for inference, we were faced with convoluted code, which was difficult to read and understand. As we wanted to use the PaddleOCR solution in production, we decided to refactor the code, keeping in mind to preserve the performance and the speed of the original code. You can read about the details of that process and the PaddleOCR model in the complementary article of this series. After refactoring the code, we had created a clean and readable code base.&lt;/p&gt;
+
+&lt;p&gt;We believe our code version is easier to work with, given the use case of text extraction from images, and are working on making the code available open source. The different steps and pre-processing and post-processing parts are clearly separated, so they can be called independently, which should make further community extensions easier to add. It also makes putting into production easier, as the simplified, modular code combines well with the structure of inference.py for serving SageMaker endpoints. Our proposed code version does not alter predictions (compared to the 2.6 release) for images.&lt;/p&gt;
+
+&lt;h2 id=&quot;deploying-text-in-image-20-achieving-superior-performance-with-paddleocr&quot;&gt;Deploying Text in Image 2.0: Achieving Superior Performance with PaddleOCR&lt;/h2&gt;
+
+&lt;p&gt;Using the refactored code, we made the model available as an API. To help our customers’ transition, we maintained the same API contract used in the previous service.&lt;/p&gt;
+
+&lt;p&gt;Serving PaddleOCR can be done in multiple ways. The straightforward approach is calling its own Python API (provided by the &lt;a href=&quot;https://pypi.org/project/paddleocr/&quot;&gt;PaddleOCR&lt;/a&gt; package) from within a well-known framework. We selected Multi Model Server, Flask and FastAPI to conduct our benchmark. All our proposed solutions are served by AWS SageMaker Endpoint, building our own container (BYOC) from the same Docker base image.&lt;/p&gt;
+
+&lt;p&gt;MultiModel Server uses its own JAVA ModelServer, while for Flask and FastAPI, we use nginx+gunicorn (combined with &lt;a href=&quot;https://fastapi.tiangolo.com/deployment/server-workers/&quot;&gt;uvicorn workers for the ASGI FastAPI&lt;/a&gt;). The frontend for our customers is served by an API Gateway, which is out of the scope of this article.&lt;/p&gt;
+
+&lt;h2 id=&quot;benchmarking-deployment-options-multi-model-server-flask-and-fastapi&quot;&gt;Benchmarking Deployment Options: Multi-Model Server, Flask, and FastAPI&lt;/h2&gt;
+
+&lt;p&gt;For the performance testing, we recreated a number of requests with a controlled amount of text and different image sizes, mimicking the expected distribution from our customers. We used &lt;a href=&quot;https://locust.io/&quot;&gt;Locust&lt;/a&gt; as the testing framework, and stimulated heavy bursts in the &lt;a href=&quot;https://docs.locust.io/en/stable/writing-a-locustfile.html#wait-time-attribute&quot;&gt;waiting time&lt;/a&gt; as a stress test.&lt;/p&gt;
+
+&lt;p&gt;With the data gathered from the performance tests, we were able to define our infrastructure (type of instance and autoscaling policy) in relation to the Service Level Agreement (SLA) terms, while balancing the risk of a sudden shift from the observed distribution (the service is sensitive to the amount of text per image).&lt;/p&gt;
+
+&lt;p&gt;Currently, we deal with 330 million requests per month, and we have estimated that next year, more Adevinta marketplaces will onboard a Text in Image service, resulting in a 400% growth.&lt;/p&gt;
+
+&lt;h2 id=&quot;results-and-impact-transforming-text-in-image-service-with-paddleocr&quot;&gt;Results and impact: Transforming Text in Image service with PaddleOCR&lt;/h2&gt;
+
+&lt;p&gt;The new API resulted in an improved latency 7.5x compared to the FOTS-based solution, while providing a 7% cost reduction in serving. Also, since the new API being 12x cheaper than a typical external solution, such as GCP OCR, we received positive feedback from our users about both the speed and the accuracy of the Text in Image 2.0.&lt;/p&gt;
+
+&lt;h2 id=&quot;key-takeaways-enhancing-ocr-with-paddleocr&quot;&gt;Key Takeaways: Enhancing OCR with PaddleOCR&lt;/h2&gt;
+
+&lt;p&gt;As a computer vision team working for an international company serving millions of people every day, we aimed to improve our OCR API for text extraction from classified ads. After testing numerous frameworks, we built an image simulator in order to find the algorithm matching the needs of our users. The selected framework, PaddleOCR, went through our internal review and revamp. (There were challenges along the way and you can read more about them in &lt;a href=&quot;/works/deep-dive-in-paddleocr-inference&quot;&gt;&lt;strong&gt;Article 2: Deep Dive in PaddleOCR inference&lt;/strong&gt;&lt;/a&gt;). Now, we’re pleased to say we’re providing a more accurate, faster and cheaper API using the PaddleOCR framework.&lt;/p&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on June 06,
+    2023.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/text-in-image-2-0-improving-ocr-service-with-paddleocr-61614c886f93&quot;&gt;This article was orignally co-authored by Cognition team members, special credits to Joaquin Cabezas&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</guid>
+        
+        <category>data science</category>
+        
+        <category>OCR</category>
+        
+        <category>deep learning</category>
+        
+        <category>computer vision</category>
+        
+        <category>machine learning</category>
+        
+        <category>API</category>
+        
+        
+        <category>works</category>
+        
+      </item>
     
       <item>
         <title>Named Entity Recognition Tool by Cour de Cassation</title>
@@ -2310,419 +2630,6 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         
         
         <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>Hi, I am Computational Biologist</title>
-        <description>&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta
-      name=&quot;description&quot;
-      content=&quot;Urszula Czerwinska. About me, data science, big data, analytics, PhD | Explore career opportunities in computational biology and bioinformatics. Gain insights into the skills needed, job market trends, and tips for breaking into this dynamic field. Perfect for scientists and data professionals looking to advance their careers in computational biology.&quot;
-    /&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;style&gt;
-      .scalable {
-      	overflow: hidden;
-      }
-
-      .scalable iframe {
-      	height: 100%;
-      	left: 0;
-      	position: absolute;
-      	top: 0;
-      	width: 100%;
-      }
-
-      .scalable .scalable-content {
-      	height: 0;
-      	position: relative;
-      }
-
-      .scalable-16-9 .scalable-content {
-      	/* Percentage from 9 divided by 16 for ratio of 16:9. */
-      	padding-bottom: 56.25%;
-      }
-
-      iframe {display:block;margin:auto;width: 100%}
-    &lt;/style&gt;
-  &lt;/body&gt;
-  &lt;section&gt;
-    &lt;p&gt;&lt;/p&gt;
-    &lt;blockquote&gt;
-      Hi, I am Computational Biologist, would you hire me when I graduate (from
-      PhD)?
-    &lt;/blockquote&gt;
-
-    &lt;h3&gt;Thinking about a job&lt;/h3&gt;
-    &lt;p&gt;
-      I am in my second year of PhD in Computational Biology / Systems Biology
-      at Cancer Institute in France. It is almost halfway to graduation here,
-      where PhD needs to be completed in 3-4 years, so I reckon it is a right
-      time to find out personally how are my chances of getting a job in the
-      &lt;b&gt;data science&lt;/b&gt; market. So I asked the question
-      &lt;i
-        &gt;&lt;b
-          &gt;Hi, I am Computational Biologist, would you hire me when I graduate
-          (from PhD)?&lt;/b
-        &gt;&lt;/i
-      &gt;
-      in many declinations to different companies. I would like to share with
-      you my experience from four &lt;strong&gt;job fairs&lt;/strong&gt;, I attended in
-      November in Paris.
-    &lt;/p&gt;
-    &lt;p&gt;Let me start from the end...&lt;/p&gt;
-
-    &lt;h3&gt;To make the long story short - key messages (for busy ones)&lt;/h3&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;b&gt;scientific writing&lt;/b&gt; and the whole communication toolbox, can also
-        be a big plus, some companies release internal white papers and writing
-        skills are highly valued
-      &lt;/li&gt;
-      &lt;li&gt;
-        there is a huge need for skills of computational biologists in diverse
-        projects in industry - lots of start-up with crazy ideas, challenging
-        projects, there world is big out there
-      &lt;/li&gt;
-      &lt;li&gt;
-        show you interest in a specific sector of industry, even an on-line
-        course can be a plus, attend some meet-ups or events to feel the general
-        ambiance and hot topics of the sector
-      &lt;/li&gt;
-      &lt;li&gt;
-        ask questions and listen to HR advice - some of HR, especially in
-        start-ups are actually working on projects that may interest you; some
-        of them are new hires and they are happy to give you advice on how to
-        get into the company
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;b&gt;hiring procedures of companies&lt;/b&gt;, even with very similar profiles
-        can be very different - take time to ask about hiring procedures, go to
-        &lt;a href=&quot;https://www.glassdoor.fr/index.htm&quot; target=&quot;_blank&quot;
-          &gt;glassdoor&lt;/a
-        &gt;, reach company employees on LinkedIn
-      &lt;/li&gt;
-      &lt;li&gt;
-        it is fine to submit your CV to employers before your finish your
-        PhD — you never know — however, make sure you start
-        &lt;b&gt;applying for jobs 6 months before the end of you PhD&lt;/b&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        add your non-academic experience to your CV, courses related to
-        business. Do not put too many academic details, i.e. faculty full names,
-        professors names — unless it is someone very well known— just speak the
-        language they do.
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;b&gt;smile&lt;/b&gt;, have positive attitude - talk about your motivation for
-        transition in a positive way
-      &lt;/li&gt;
-      &lt;li&gt;
-        be cautious about your responsibilities, some companies, especially
-        start-up would hire you to do everything related with data management,
-        while what they need is a team of data analyst, not one PhD graduate
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h3&gt;The long story (for mindful ones)&lt;/h3&gt;
-    &lt;p&gt;
-      French educational system is complicated. To simplify, the university
-      master and PhD is seen as a path exclusiv for academic career. This view
-      is slowly changing and we hear more and more about companies hiring PhDs.
-      Universities are also trying to promote alternative carriers organizing
-      &apos;professional breakfasts&apos;, workshops, interview simulations or CV tuning
-      (I have participated in some organized by
-      &lt;a href=&quot;http://cfdip.uspc.fr/fr/&quot; target=&quot;_blank&quot;&gt;CFDiP&lt;/a&gt; and
-      &lt;a href=&quot;http://www.adoc-tm.com/&quot; target=&quot;_blank&quot;&gt;Adoc Talent Managment&lt;/a
-      &gt;). There is even a
-      &lt;a
-        href=&quot;http://hub11.ecolearning.eu/course/doctorat-et-poursuite-de-carriere/&quot;
-        target=&quot;_blank&quot;
-        &gt;MOOC&lt;/a
-      &gt;
-      that should help PhDs orientate their careers. Also, recently title
-      &lt;i&gt;Docteur-PhD&lt;/i&gt; has been officially recognized and there will be
-      created a nation network for PhD holders with a yearbook and a
-      standardized e-mail address system.
-    &lt;/p&gt;
-
-
-    &lt;p&gt;
-      Despite this, PhD graduates still face big challenges entering the world
-      of work. This is why, as a PhD student, I decided to find out a bit more
-      about hiring companies and their requirements by participating in four job
-      fairs organized in Paris in November.
-    &lt;/p&gt;
-
-    &lt;div class=&quot;scalable scalable-16-9&quot;&gt;
-      &lt;div class=&quot;scalable-content&quot;&gt;
-        &lt;iframe
-          src=&quot;https://www.youtube.com/embed/J6scnDFKWRI&quot;
-          allowfullscreen
-        &gt;&lt;/iframe&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;em&gt;Video of PhDTalent explaining value of PhDs for a company [FR]&lt;/em&gt;
-    &lt;br /&gt;&lt;br /&gt;
-    &lt;p&gt;
-      &lt;b&gt;PhDTalent fair&lt;/b&gt;, two data science fairs:
-      &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;&lt;b&gt;DATAJOB&lt;/b&gt;&lt;/a&gt; and
-      &lt;a href=&quot;http://forumdatadays.fr/programme/&quot; target=&quot;_blank&quot;
-        &gt;&lt;b&gt;Forum Data Paris&lt;/b&gt;&lt;/a
-      &gt;
-      and one organized at
-      &lt;a href=&quot;http://jnum.parisdescartes.fr/job-dating/&quot; target=&quot;_blank&quot;
-        &gt;&lt;b&gt;&lt;i&gt;Journée Numérique&lt;/i&gt;&lt;/b&gt;&lt;/a
-      &gt;
-      - &lt;i&gt;Digital Day&lt;/i&gt; at University Paris Descartes.
-    &lt;/p&gt;
-
-    &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en-gb&quot;&gt;
-      &lt;p lang=&quot;fr&quot; dir=&quot;ltr&quot;&gt;
-        Création d&amp;#39;un réseau des docteurs avec un annuaire annuel et une
-        adresse mail : prenom.nom@phdfrance.fr
-        &lt;a href=&quot;https://x.com/sup_recherche&quot;&gt;@sup_recherche&lt;/a&gt;
-      &lt;/p&gt;
-      &amp;mdash; Thierry Mandon (@mandonthierry)
-      &lt;a href=&quot;https://x.com/mandonthierry/status/800712541634560001&quot;
-        &gt;21 November 2016&lt;/a
-      &gt;
-    &lt;/blockquote&gt;
-    &lt;script
-      async
-      src=&quot;//platform.x.com/widgets.js&quot;
-      charset=&quot;utf-8&quot;
-    &gt;&lt;/script&gt;
-
-    &lt;p&gt;
-      At any job fair, meetup or a conference when we introduce ourselves as
-      Computational Biologists, it is not always clear to other people what it
-      actually means.
-    &lt;/p&gt;
-    &lt;p&gt;
-      As a &lt;b&gt;Computational Biologist&lt;/b&gt; working on data analysis in the
-      context of imunno-oncology, with some additional on-line training, I
-      believe I have most of basic knowledge asked for post of data analyst or
-      data scientist: working in R, Machine Learning, statistics, data
-      visualization, git. However, this is not clear for people working out of
-      research in biology and healthcare. There are so many flavors of
-      computational biologists, using different tools and applying them to
-      different fields of biology, that it crucial to state clear what we
-      actually do given the desired job. Computational biologist profile also
-      usually comes with weak points as lack of professional experience out of
-      academia, no professional network, little experience with business and
-      consumers. What is sure, &lt;b&gt;most of computational biologist&lt;/b&gt;, with some
-      additional training to broad their technical horizons and with open mind,
-      &lt;b&gt;have very attractive profile for many industries&lt;/b&gt;.
-    &lt;/p&gt;
-
-    &lt;p&gt;
-      I have spend around 1-2 h of my time at each job fair, that took place
-      during the week office hours. Even though, I didn&apos;t manage to talk to all
-      companies, especially the most popular, where the line were very long, I
-      managed to leave my CV to 15 companies and talk to around 20. Here is a
-      little summary of each job fair.
-    &lt;/p&gt;
-    &lt;p&gt;
-      &lt;span class=&quot;image right&quot;
-        &gt;&lt;img src=&quot;/images/logo_PhDTalent.png&quot; alt=&quot;&quot;
-      /&gt;&lt;/span&gt;
-    &lt;/p&gt;
-
-    &lt;h3&gt;
-      &lt;a href=&quot;https://www.phdtalent.org/&quot; target=&quot;_blank&quot;&gt;PhDTalent fair&lt;/a&gt;
-    &lt;/h3&gt;
-    &lt;p&gt;
-      PhDTalent attracted more than 70 companies form different industries.
-      These could be roughly split into three groups: Biotech / Pharma,
-      consulting, Policy, Robotics &amp; Data science &amp; Big data &amp; IT &amp; Computing.
-      There were presented a wide variety of different job offers. Some like
-      Orange or L&apos;Oréal recruit for their PostDocoral programs. During the day,
-      I have learned that some companies, during the
-      &lt;b&gt;recruitment process&lt;/b&gt; can send applicants a
-      &lt;b&gt;weekly challenge&lt;/b&gt; or test through up to &lt;b&gt;7 interviews&lt;/b&gt; for a
-      R&amp;D position. In addition, I also spoke to various start-ups that generate
-      diverse data; they need people to manage them and sometimes they do hope
-      one PhD can replace data management team. I also encountered even very
-      surprising job descriptions: one start-up in particular was looking to
-      hire
-      &lt;b
-        &gt;bioinformatician to model hormone detection in the air by their
-        humanoid robot&lt;/b
-      &gt;. I am not sure if they correctly interpreted what the skills of a
-      bioinformatician are ;) (For those who are not sure what bioinformatician
-      does have a look at the article in
-      &lt;a
-        href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4408859/&quot;
-        target=&quot;_blank&quot;
-        &gt;Frontiers of Genetics: Who qualifies to be bioinformatician?&lt;/a
-      &gt;)
-    &lt;/p&gt;
-    &lt;p&gt;
-      &lt;span class=&quot;image left&quot;
-        &gt;&lt;img src=&quot;/images/DATAJOBS.jpg&quot; alt=&quot;&quot;
-      /&gt;&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-      &lt;span class=&quot;image right&quot;
-        &gt;&lt;img src=&quot;/images/forumdata.jpg&quot; alt=&quot;&quot;
-      /&gt;&lt;/span&gt;
-    &lt;/p&gt;
-
-    &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;em
-      &gt;Data Jobs forum at Bourse de Paris. Image credit to
-      &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;datajobs.fr&lt;/a&gt;&lt;/em
-    &gt;&lt;br /&gt;&lt;br /&gt;
-    &lt;h3&gt;
-      &lt;a href=&quot;http://forumdatadays.fr/programme/&quot; target=&quot;_blank&quot;
-        &gt;Forum Data&lt;/a
-      &gt;
-      and &lt;a href=&quot;http://www.datajob.fr/&quot; target=&quot;_blank&quot;&gt;Data Jobs&lt;/a&gt;
-    &lt;/h3&gt;
-    &lt;p&gt;
-      Those two job fairs had splendid sponsors and a wide array of known
-      companies present. Even though, it was not designed solely for PhD
-      graduates I found companies representatives very enthousiastic and helpful
-      - perhaps reflecting vigor for the potential that the data industry has to
-      offer. Key things that I took home from these events were that, of course,
-      it is too early now for me to apply being mid-way through my PhD. However
-      they recommended looking at role descriptions on company websites and
-      keeping an eye out for events to get involved with. For example, some
-      firms organize their own meetups where you have the opportunity to meet
-      employees or work on mini projects for the company. I was also advised to
-      attend
-      &lt;a href=&quot;https://startupweekend.org/locations/europe/fr &quot; target=&quot;_blank&quot;
-        &gt;&lt;b&gt;startup weekends&lt;/b&gt;&lt;/a
-      &gt;
-      where many startup present at those and similar events hire actively. When
-      trying to gather information about data analysis positions in an
-      established beauty company with big R&amp;D sector, I was surprised to
-      discover that they &lt;b&gt;only&lt;/b&gt; hire PhD graduates with at least three year
-      experience working in company (whilst hiring engineers straight away). In
-      contrast, Other companies were also looking for three years experience.
-      However in practice, if companies are looking for people and you interview
-      well, you have every chance of being hired. &lt;br /&gt;Therefore, I buried my
-      hopes to stay close to biology an healthcare, and analyze biological data.
-      Probably for a first job, one needs to be more flexible than that.
-    &lt;/p&gt;
-
-    &lt;h3&gt;
-      &lt;a href=&quot;http://jnum.parisdescartes.fr/job-dating/&quot; target=&quot;_blank&quot;
-        &gt;Journées numériques&lt;/a
-      &gt;
-    &lt;/h3&gt;
-    &lt;p&gt;
-      Among numerous activities of &lt;i&gt;Digital Day&lt;/i&gt; there were a little job
-      fair organized. A few number of companies presented job offers. However,
-      the &lt;i&gt;job offers in digital expertise&lt;/i&gt; was a bit misleading and most
-      of jobs proposed were related to advanced computing, IT management, web
-      marketing and communication.
-    &lt;/p&gt;
-
-    &lt;h3&gt;How to choose a company?&lt;/h3&gt;
-    &lt;p&gt;
-      &lt;span class=&quot;image fit&quot;
-        &gt;&lt;img src=&quot;/images/office.jpg&quot; alt=&quot;&quot;
-      /&gt;&lt;/span&gt;
-    &lt;/p&gt;
-
-    &lt;p&gt;
-      It is very important issue. Let&apos;s imagine, you have a great profile,
-      desired by many companies. How do you chose the company?
-    &lt;/p&gt;
-    &lt;p&gt;
-      As a foreigner in France and academia-trained I do not have clear idea
-      about model of functioning of different companies and possible advantage
-      and disadvantages of specific setups.
-    &lt;/p&gt;
-
-    &lt;p&gt;
-      I encountered many consulting offices, where employees work actually for
-      different companies to solve an issue or work on a project. I was told,
-      their offer can seem very attractive at the first sight: variety of
-      subjects, cutting edge technologies, big companies. However, they also are
-      some drawbacks, as employees are hired by the consulting company, they are
-      lured by the most attractive projects, but there is no guarantee to which
-      one they will be associated because it depends a lot on client choice, and
-      other available consultants. On the other hand, even a short contract in a
-      company developing new technologies such as &lt;i&gt;Orange&lt;/i&gt; or
-      &lt;i&gt;Microsoft&lt;/i&gt; can be very good for your career, while consulting job
-      can be easier to get but will not always meet your expectations.
-    &lt;/p&gt;
-
-    &lt;h3&gt;Closing remarks&lt;/h3&gt;
-    &lt;p&gt;
-      Career transition is probably not easy, future is not all roses, but with
-      some determination, I am pretty sure a
-      &lt;b
-        &gt;Camputational Biologist has great chances to find a well-paid job
-        outside academia&lt;/b
-      &gt;. Job market is very competitive and demands are high. Luckily for us,
-      programming skills combined with capacity for analysis seem to be in high
-      demand. There will be still some knowledge gaps, some unknowns, but our
-      duty is to turn them into challenges.
-    &lt;/p&gt;
-    &lt;p&gt;
-      &lt;span class=&quot;image fit&quot;
-        &gt;&lt;img src=&quot;/images/horizon.jpg&quot; alt=&quot;&quot;
-      /&gt;&lt;/span&gt;
-    &lt;/p&gt;
-    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-    &lt;script
-      type=&quot;text/javascript&quot;
-      src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
-    &gt;&lt;/script&gt;
-    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-    &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-  &lt;/section&gt;
-&lt;/html&gt;
-</description>
-        <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/jobsCB/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/jobsCB/</guid>
-        
-        
-        <category>thoughts</category>
-        
-      </item>
-    
-      <item>
-        <title>From Science to Data Science</title>
-        <description>&lt;!DOCTYPE HTML&gt;
-&lt;html lang=&quot;en-US&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
-        &lt;script type=&quot;text/javascript&quot;&gt;
-            window.location.href = &quot;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&quot;
-        &lt;/script&gt;
-        &lt;title&gt;Redirecting to the project page. It lists all the presentations and talks that were given during the seminars.&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
-        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/FromSciencetoDataScience/&apos;&gt;link to example&lt;/a&gt;.
-    &lt;/body&gt;
-&lt;/html&gt;</description>
-        <pubDate>Mon, 30 Jan 2017 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/FromSciencetoDataScience</guid>
-        
-        <category>Machine Learning</category>
-        
-        <category>Careers</category>
-        
-        <category>Data Science</category>
-        
-        <category>Data viz</category>
-        
-        
-        <category>works</category>
-        
-        <category>FSctoDs</category>
         
       </item>
     
