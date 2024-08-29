@@ -190,19 +190,25 @@
 
 <p>After reviewing different open source OCR frameworks (including <a href="https://github.com/open-mmlab/mmocr">MMOCR</a>, <a href="https://github.com/JaidedAI/EasyOCR">EASY OCR</a>, <a href="https://github.com/PaddlePaddle/PaddleOCR">PaddleOCR</a> and <a href="https://thehive.ai/apis/ocr">HiveOCR</a>) and different combinations of proposed models on our internal benchmark and on the edge cases, a indisputable winner was PaddleOCR with an average accuracy of 0.8 and an acceptable performance on our edge cases. This result competes with the paid <a href="https://cloud.google.com/vision/docs/ocr">Google Cloud Vision OCR API</a> on the best accuracy we measured.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/800/0*UUEf-TKs1Lfn7_wx" alt="Graph showing benchmark results for various OCR frameworks" /></p>
+<p><span class="image fit">
+<img src="https://cdn-images-1.medium.com/max/800/0*UUEf-TKs1Lfn7_wx" alt="Graph showing benchmark results for various OCR frameworks" />
+</span></p>
 
 <h2 id="how-we-validated-paddleocr-building-a-comprehensive-benchmark">How We Validated PaddleOCR: Building a Comprehensive Benchmark</h2>
 
 <p>In order to construct our independent benchmark and validate the choice of PaddleOCR at scale, we built a “Text in Image generator” that uses open source images from <a href="https://unsplash.com/license">Unsplash</a> and <a href="https://pikwizard.com/free-license">Pikwizard</a> and adds randomly generated text on top of them. The created tool is highly customisable in order to simulate a wide variety of cases that combine factors such as font type, rotation, text length, background type, image resolution etc. Using a simulated benchmark of 20k images with a distribution of cases matching business needs, we obtained an improvement factor of x1.4.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/800/0*sWpBlrJtdxsRlqj4" alt="Sample of Text in Image generator output showing simulated text scenarios" /></p>
+<p><span class="image fit">
+<img src="https://cdn-images-1.medium.com/max/800/0*sWpBlrJtdxsRlqj4" alt="Sample of Text in Image generator output showing simulated text scenarios" />
+</span></p>
 
 <h2 id="challenges-with-paddleocr-identifying-and-mitigating-issues">Challenges with PaddleOCR: Identifying and mitigating issues</h2>
 
 <p>We identified several cases where PaddleOCR fails. This is mostly when there are different angles of rotated text, some alternative fonts and differing colour/contrast. We also observed that in some cases, the correct words are detected but the spaces between them are not placed correctly. This may or may not be an issue depending on the way the extracted text is used further.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/800/1*3CO2dWUYPpVPPBZJDpx4EA.png" alt="Example of OCR results with incorrectly spaced text" /></p>
+<p><span class="image fit">
+<img src="https://cdn-images-1.medium.com/max/800/1*3CO2dWUYPpVPPBZJDpx4EA.png" alt="Example of OCR results with incorrectly spaced text" />
+</span></p>
 
 <h2 id="deep-dive-how-we-optimized-paddleocr-for-production">Deep Dive: How We Optimized PaddleOCR for Production</h2>
 

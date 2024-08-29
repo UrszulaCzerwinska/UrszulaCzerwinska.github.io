@@ -1,4 +1,7 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": false
+  "editor.formatOnPaste": false,
+  "cSpell.words": [
+    "convolutional"
+  ]
 }

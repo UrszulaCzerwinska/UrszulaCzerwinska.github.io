@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-      <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+      <lastmod>2024-08-29T16:12:35+02:00</lastmod>
+    </url>
+    <url>
+      <loc>http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</loc>
+        <lastmod>2024-02-03T00:00:00+01:00</lastmod>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</loc>
@@ -118,22 +122,22 @@
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/about/</loc>
-        <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+        <lastmod>2024-08-29T16:12:35+02:00</lastmod>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/credits/</loc>
-        <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+        <lastmod>2024-08-29T16:12:35+02:00</lastmod>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/</loc>
-        <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+        <lastmod>2024-08-29T16:12:35+02:00</lastmod>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/thoughts/</loc>
-        <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+        <lastmod>2024-08-29T16:12:35+02:00</lastmod>
     </url>
     <url>
       <loc>http://urszulaczerwinska.github.io/works/</loc>
-        <lastmod>2024-08-27T23:39:37+02:00</lastmod>
+        <lastmod>2024-08-29T16:12:35+02:00</lastmod>
     </url>
 </urlset>

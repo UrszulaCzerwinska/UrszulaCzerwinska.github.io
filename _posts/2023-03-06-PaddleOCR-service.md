@@ -58,20 +58,25 @@ The existing service was based on [Fast Oriented Text Spotting with a Unified Ne
 
 After reviewing different open source OCR frameworks (including [MMOCR](https://github.com/open-mmlab/mmocr), [EASY OCR](https://github.com/JaidedAI/EasyOCR), [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and [HiveOCR](https://thehive.ai/apis/ocr)) and different combinations of proposed models on our internal benchmark and on the edge cases, a indisputable winner was PaddleOCR with an average accuracy of 0.8 and an acceptable performance on our edge cases. This result competes with the paid [Google Cloud Vision OCR API](https://cloud.google.com/vision/docs/ocr) on the best accuracy we measured.
 
+<span class="image fit">
 ![Graph showing benchmark results for various OCR frameworks](https://cdn-images-1.medium.com/max/800/0*UUEf-TKs1Lfn7_wx)
-
+</span>
 
 ## How We Validated PaddleOCR: Building a Comprehensive Benchmark
 
 In order to construct our independent benchmark and validate the choice of PaddleOCR at scale, we built a “Text in Image generator” that uses open source images from [Unsplash](https://unsplash.com/license) and [Pikwizard](https://pikwizard.com/free-license) and adds randomly generated text on top of them. The created tool is highly customisable in order to simulate a wide variety of cases that combine factors such as font type, rotation, text length, background type, image resolution etc. Using a simulated benchmark of 20k images with a distribution of cases matching business needs, we obtained an improvement factor of x1.4.
 
+<span class="image fit">
 ![Sample of Text in Image generator output showing simulated text scenarios](https://cdn-images-1.medium.com/max/800/0*sWpBlrJtdxsRlqj4)
+</span>
 
 ## Challenges with PaddleOCR: Identifying and mitigating issues
 
 We identified several cases where PaddleOCR fails. This is mostly when there are different angles of rotated text, some alternative fonts and differing colour/contrast. We also observed that in some cases, the correct words are detected but the spaces between them are not placed correctly. This may or may not be an issue depending on the way the extracted text is used further.
 
+<span class="image fit">
 ![Example of OCR results with incorrectly spaced text](https://cdn-images-1.medium.com/max/800/1*3CO2dWUYPpVPPBZJDpx4EA.png)
+</span>
 
 ## Deep Dive: How We Optimized PaddleOCR for Production
 

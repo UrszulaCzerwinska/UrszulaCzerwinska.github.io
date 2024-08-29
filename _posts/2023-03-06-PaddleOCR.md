@@ -47,7 +47,9 @@ For our Text in Image service update, we focused on the most recent and most per
 
 ### The PaddleOCRv3 models architecture
 
+<span class="image fit">
 ![PaddleOCRv3 Architecture](https://cdn-images-1.medium.com/max/800/0*1mI3YTIjAut_QMrl)
+</span>
 
 PP-OCRv3 is composed of three parts: detection, classification and recognition, all of which can be used independently. Each part has its own model trained with the PaddlePaddle framework. For those interested, model details can be found in this dedicated research article PP-OCRv3: [More Attempts for the Improvement of Ultra Lightweight OCR System (Yanjun et al., 2022)](https://arxiv.org/abs/2206.03001v2).
 
@@ -73,7 +75,9 @@ From digging into the code, we discovered several complexities, unnecessary for 
 
 Despite these complexities, we managed to clarify the general way of working, calling the PaddleOCR.ocr() method from the ‘master’ file, _paddleocr.py_.
 
+<span class="image fit">
 ![PaddleOCR.ocr() Method](https://cdn-images-1.medium.com/max/800/0*zwImfJ-4pOxDvrEI)
+</span>
 
 The input image and parameters are entered into the PaddleOCR.ocr() method which calls TextSystem class in order: TextDetector, TextClassifier and TextRecogniser, with a selection of helper functions, including one that formats the outputs of TextDetector into a list of cropped images being input to TextClassifier and TextRecogniser.
 
@@ -81,7 +85,9 @@ The PaddleOCR.ocr() method is parsing params, including the language, version, t
 
 If we want our image to go through a full OCR process, the TextSystem class will sequentially call classes responsible for detection, classification and recognition.
 
+<span class="image fit">
 ![TextSystem Class Flow](https://cdn-images-1.medium.com/max/800/0*B-7pY0A4Xv7eNTcr)
+</span>
 
 Each of the main classes has an _\_\_init\_\__ method that initialises pre- & post- processing classes and loads the model (create\_predictor), and _\_\_call\_\__ method that executes (pre- &) post-processing on the image and performs the model inference for the input image(s).
 
@@ -101,7 +107,9 @@ Overall, most of the code is in object oriented programming style where classes 
 
 We found it problematic that the inference class requires 105 parameters, of which more than 70 were ignored.
 
+<span class="image fit">
 ![PaddleOCR inference parameters are not all used](https://cdn-images-1.medium.com/max/800/1*jPMJx-wOF-R5DsmqJFs5BA.png)
+</span>
 
 [English documentation](https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/inference_args_en.md) lists the parameters and gives a succinct definition of them. In the code, they are defined in at least three different places: [paddleocr.py](https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/paddleocr.py#L307), [utility.py](https://github.com/PaddlePaddle/PaddleOCR/blob/23e034c40ecd5755af48d7b14dcc1bf6c5cf1128/ppstructure/utility.py#L21) and different [utility.py](https://github.com/PaddlePaddle/PaddleOCR/blob/34b9569800a38af41a27ed893b12567757ef6c89/tools/infer/utility.py#L34).
 
@@ -113,7 +121,9 @@ When rewriting the code, we cleaned the parameter list, leaving only the relevan
 
 Some of the parameter definitions and effect they would have when changed from default, were not clear to us. We built a [Streamlit app](https://streamlit.io/) to visualise the changes in params on the predictions. For instance, “unclip ratio” would impact the size of the box, and “threshold” would detect two bounding boxes instead of one. We advise you to play with your own data and model to see how different parameters affect the detection. Overall, we were not able to see a major improvement from changing defaults.
 
+<span class="image fit">
 ![The illustration of PaddleOCR parameters impact on the machine learning model prediction](https://cdn-images-1.medium.com/max/800/0*B4uqn-7vcxfu5aPz)
+</span>
 
 ### _Language choice_
 
@@ -163,7 +173,7 @@ PaddleOCR is a powerful and optimised library for the extraction of text from im
     2023.</p>
   <p><a
       href="https://medium.com/adevinta-tech-blog/deep-dive-in-paddleocr-inference-e86f618a0937">View
-      the original</a></p>
+      the original. This article was orignally co-authored by Cognition team members, special credits to Joaquin Cabezas</a></p>
 </footer>
 <script type="text/javascript"
   src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84"></script>
