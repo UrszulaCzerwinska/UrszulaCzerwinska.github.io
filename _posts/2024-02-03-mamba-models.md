@@ -27,7 +27,7 @@ Here I compiled a short overview of all (?) those papers adapting the template f
 
 here is a list of mamba papers : [https://github.com/yyyujintang/Awesome-Mamba-Papers](https://github.com/yyyujintang/Awesome-Mamba-Papers)
 
-Arxiv 23.12.01: **Mamba: Linear-Time Sequence Modeling with Selective State Spaces**
+## Arxiv 23.12.01: Mamba: Linear-Time Sequence Modeling with Selective State Spaces
 
 #mamba
 
@@ -75,7 +75,7 @@ The key contribution of the paper lies in the novel implementation of **Selectiv
 *   [mamba-revolutionizing-sequence-modeling-with-selective-state-spaces](https://medium.com/@joeajiteshvarun/mamba-revolutionizing-sequence-modeling-with-selective-state-spaces-8a691319b34b)
 *   [mamba-and-state-space-models-explained](https://medium.com/@athekunal/mamba-and-state-space-models-explained-b1bf3cb3bb77)
 
-Arxiv 24.01.08: **MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts**
+## Arxiv 24.01.08: **MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts**
 
 #LLM
 
@@ -116,7 +116,7 @@ This design choice enables MoE-Mamba to leverage the conditional processing capa
 
 Authors also investigate a unified Mamba module containg MoE
 
-Arxiv 24.01.09: **U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation**
+## Arxiv 24.01.09: **U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation**
 
 [Paper](https://arxiv.org/abs/2401.04722)
 
@@ -168,7 +168,7 @@ The U-Mamba architecture follows the encoder-decoder pattern of U-Net, known for
 *   U-Mamba\_Bot: Uses the U-Mamba block only in the bottleneck.
 *   U-Mamba\_Enc: Employs the U-Mamba block in all encoder blocks.
 
-Arxiv 24.01.17: **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model**
+## Arxiv 24.01.17: **Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model**
 
 [Paper](https://arxiv.org/abs/2401.09417``)
 
@@ -212,7 +212,7 @@ Vim utilizes bidirectional State Space Models (SSMs) to process image sequences.
 *   This bidirectionality allows for more robust capturing of visual contexts and dependencies, particularly in dense prediction tasks.
 *   The model effectively compresses the visual representation, leveraging position embeddings to maintain spatial awareness.
 
-Arxiv 24.01.18 : **VMamba: Visual State Space Model**
+## Arxiv 24.01.18 : **VMamba: Visual State Space Model**
 
 [Paper](https://arxiv.org/abs/2401.10166)
 
@@ -264,7 +264,7 @@ VMamba beats Vim on ADE20k benchmark
 
 *   numbers are not directly comparable but Vmamaba seems to have better perfomance
 
-Arxiv 24.01.24 : **SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation**
+## Arxiv 24.01.24 : **SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation**
 
 [Paper](https://arxiv.org/abs/2401.13560)
 
@@ -290,7 +290,7 @@ _We’re Thinking:_ Questions arise about SegMamba’s applicability to various 
 
 The key difference is in their approach to enhancing the U-Net architecture. SegMamba emphasizes the Mamba model for 3D segmentation, while U-Mamba combines CNNs with SSMs for versatile segmentation tasks.
 
-Arxiv 24.01.24: **MambaByte: Token-free Selective State Space Model**
+## Arxiv 24.01.24: **MambaByte: Token-free Selective State Space Model**
 
 [Paper](https://arxiv.org/abs/2401.13660)
 
@@ -315,7 +315,7 @@ This model is token-free, directly learning from raw bytes and bypassing the bia
 
 **We’re Thinking:** This paper shows a potential for token free llm learning. New applications outside of LLM should come soon.
 
-Arxiv 24.01.25 **Vivim: a Video Vision Mamba for Medical Video Object Segmentation**
+## Arxiv 24.01.25 **Vivim: a Video Vision Mamba for Medical Video Object Segmentation**
 
 [Paper](https://arxiv.org/abs/2401.14168)
 
@@ -351,7 +351,7 @@ A framework for medical video object segmentation, focusing on addressing challe
 *   For temporal modeling, it transposes and flattens the spatiotemporal feature embedding into a 1D long sequence.
 *   The Mamba module within the block tackles the correlation among patches in input frames, while the Detail-specific FeedForward focuses on preserving fine-grained details through depth-wise convolution.
 
-Arxiv 24.01.25: **MambaMorph: a Mamba-based Backbone with Contrastive Feature Learning for Deformable MR-CT Registration**
+## Arxiv 24.01.25: **MambaMorph: a Mamba-based Backbone with Contrastive Feature Learning for Deformable MR-CT Registration**
 
 [Paper](https://arxiv.org/pdf/2401.13934.pdf)
 
