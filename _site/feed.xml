@@ -5,8 +5,8 @@
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
     <link>http://urszulaczerwinska.github.io/</link>
     <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Aug 2024 16:12:35 +0200</pubDate>
-    <lastBuildDate>Thu, 29 Aug 2024 16:12:35 +0200</lastBuildDate>
+    <pubDate>Mon, 02 Sep 2024 22:07:44 +0200</pubDate>
+    <lastBuildDate>Mon, 02 Sep 2024 22:07:44 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;p&gt;here is a list of mamba papers : &lt;a href=&quot;https://github.com/yyyujintang/Awesome-Mamba-Papers&quot;&gt;https://github.com/yyyujintang/Awesome-Mamba-Papers&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Arxiv 23.12.01: &lt;strong&gt;Mamba: Linear-Time Sequence Modeling with Selective State Spaces&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-231201-mamba-linear-time-sequence-modeling-with-selective-state-spaces&quot;&gt;Arxiv 23.12.01: Mamba: Linear-Time Sequence Modeling with Selective State Spaces&lt;/h2&gt;
 
 &lt;p&gt;#mamba&lt;/p&gt;
 
@@ -79,7 +79,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
   &lt;li&gt;&lt;a href=&quot;https://medium.com/@athekunal/mamba-and-state-space-models-explained-b1bf3cb3bb77&quot;&gt;mamba-and-state-space-models-explained&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Arxiv 24.01.08: &lt;strong&gt;MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240108-moe-mamba-efficient-selective-state-space-models-with-mixture-of-experts&quot;&gt;Arxiv 24.01.08: &lt;strong&gt;MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;#LLM&lt;/p&gt;
 
@@ -120,7 +120,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 &lt;p&gt;Authors also investigate a unified Mamba module containg MoE&lt;/p&gt;
 
-&lt;p&gt;Arxiv 24.01.09: &lt;strong&gt;U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240109-u-mamba-enhancing-long-range-dependency-for-biomedical-image-segmentation&quot;&gt;Arxiv 24.01.09: &lt;strong&gt;U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.04722&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -176,7 +176,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
   &lt;li&gt;U-Mamba_Enc: Employs the U-Mamba block in all encoder blocks.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Arxiv 24.01.17: &lt;strong&gt;Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240117-vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-space-model&quot;&gt;Arxiv 24.01.17: &lt;strong&gt;Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.09417``&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -228,7 +228,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
   &lt;li&gt;The model effectively compresses the visual representation, leveraging position embeddings to maintain spatial awareness.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Arxiv 24.01.18 : &lt;strong&gt;VMamba: Visual State Space Model&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240118-vmamba-visual-state-space-model&quot;&gt;Arxiv 24.01.18 : &lt;strong&gt;VMamba: Visual State Space Model&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.10166&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -285,7 +285,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
   &lt;li&gt;numbers are not directly comparable but Vmamaba seems to have better perfomance&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Arxiv 24.01.24 : &lt;strong&gt;SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240124-segmamba-long-range-sequential-modeling-mamba-for-3d-medical-image-segmentation&quot;&gt;Arxiv 24.01.24 : &lt;strong&gt;SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.13560&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -311,7 +311,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 &lt;p&gt;The key difference is in their approach to enhancing the U-Net architecture. SegMamba emphasizes the Mamba model for 3D segmentation, while U-Mamba combines CNNs with SSMs for versatile segmentation tasks.&lt;/p&gt;
 
-&lt;p&gt;Arxiv 24.01.24: &lt;strong&gt;MambaByte: Token-free Selective State Space Model&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240124-mambabyte-token-free-selective-state-space-model&quot;&gt;Arxiv 24.01.24: &lt;strong&gt;MambaByte: Token-free Selective State Space Model&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.13660&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -338,7 +338,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 &lt;p&gt;&lt;strong&gt;We’re Thinking:&lt;/strong&gt; This paper shows a potential for token free llm learning. New applications outside of LLM should come soon.&lt;/p&gt;
 
-&lt;p&gt;Arxiv 24.01.25 &lt;strong&gt;Vivim: a Video Vision Mamba for Medical Video Object Segmentation&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240125-vivim-a-video-vision-mamba-for-medical-video-object-segmentation&quot;&gt;Arxiv 24.01.25 &lt;strong&gt;Vivim: a Video Vision Mamba for Medical Video Object Segmentation&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2401.14168&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -378,7 +378,7 @@ This in various domains such as language, genomics, audio modeling. It efficient
   &lt;li&gt;The Mamba module within the block tackles the correlation among patches in input frames, while the Detail-specific FeedForward focuses on preserving fine-grained details through depth-wise convolution.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Arxiv 24.01.25: &lt;strong&gt;MambaMorph: a Mamba-based Backbone with Contrastive Feature Learning for Deformable MR-CT Registration&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;arxiv-240125-mambamorph-a-mamba-based-backbone-with-contrastive-feature-learning-for-deformable-mr-ct-registration&quot;&gt;Arxiv 24.01.25: &lt;strong&gt;MambaMorph: a Mamba-based Backbone with Contrastive Feature Learning for Deformable MR-CT Registration&lt;/strong&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/2401.13934.pdf&quot;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 
@@ -426,6 +426,266 @@ This in various domains such as language, genomics, audio modeling. It efficient
         
         
         <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>AI Foundation Models</title>
+        <description>&lt;head&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;Discover how AI foundation models are revolutionizing e-commerce by enhancing product development, driving sustainability, and fostering collaboration. Explore the challenges and strategies for successful implementation.&quot; /&gt;
+&lt;/head&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;“Foundation models are models that are trained on broad data and can be adapted to a wide range of downstream tasks. (…) In choosing this term, we take ‘foundation’ to designate the function of these models: a foundation is built first and it alone is fundamentally unfinished, requiring (possibly substantial) subsequent building to be useful. ‘Foundation’ also conveys the gravity of building durable, robust, and reliable bedrock through deliberate and judicious action.”&lt;/em&gt;&lt;/strong&gt;
+ — the Stanford Institute for Human-Centred AI founded the &lt;a href=&quot;https://arxiv.org/pdf/2108.07258.pdf&quot;&gt;Center for Research on Foundation Models&lt;/a&gt; (CRFM), 2021&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*PDC2WWQyZPpIcKZU&quot; alt=&quot;Members of the Cognition team at Adevinta discussing the latest trends in AI and computer vision.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;In the competitive realm of digital commerce, embracing technological advancements is not a luxury but a necessity for maintaining success. Among ML tools, foundation models are emerging as a formidable force. But what are foundation models, and why have they become a focal point among technologists and business leaders?&lt;/p&gt;
+
+&lt;p&gt;As members of ‘Cognition’, a team dedicated to computer vision at &lt;a href=&quot;https://adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, we are eager to share the insights we have gathered through our technology trends watch and recent attendance of the &lt;a href=&quot;https://iccv2023.thecvf.com/&quot;&gt;ICCV 2023&lt;/a&gt; conference. This practice not only ensures our internal services remain up to date but also improves the standards experienced by our users, enhancing the services provided to customers across &lt;a href=&quot;https://adevinta.com/our-brands&quot;&gt;Adevinta’s brands&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-foundation-models&quot;&gt;What are foundation models ?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Foundation models&lt;/strong&gt; are a breed of artificial intelligence (AI) models pre-trained on a vast amount of data, laying a robust groundwork for further customisation on specific tasks.&lt;/p&gt;
+
+&lt;p&gt;Unlike traditional machine learning models, which require from-scratch training or fine tuning for every new task, &lt;strong&gt;foundation models offer a substantial head start&lt;/strong&gt;. They have already learned a good deal from the data they were initially trained on, which includes recognising patterns, objects, and in the domain of computer vision, even understanding the semantics of a scene.&lt;/p&gt;
+
+&lt;p&gt;Foundation models can be leveraged in various ways, each with its own balance of resource consumption and performance enhancement. The most resource-efficient method involves extracting features from an image, “freezing” them, and then using them directly as a zero-shot retrieval, classifier or detector. This zero-shot approach requires no further learning, allowing for immediate application.&lt;/p&gt;
+
+&lt;p&gt;Alternatively, these embeddings can serve as inputs to other models, such as an MLP or an XGBoost classifier, through transfer learning. This strategy necessitates a minimal training dataset, yet it remains swift and cost-effective. &lt;a href=&quot;https://arxiv.org/abs/2209.07932&quot;&gt;Pastore et al&lt;/a&gt; reported that there can be &lt;strong&gt;10x to 100x speed increase&lt;/strong&gt; coupled with limited accuracy decrease (1–5% on average), depending on the dataset, when using a kernel classifier on top of frozen features. For a well-known CIFAR100 dataset, the authors observed 10x to 12x speed increase and −3.70% accuracy decrease. From our preliminary experiments, preparing for deploying image embedding services for Adevinta marketplaces, we noted a 5x to 10x speed increase with less than 3% accuracy drop for ImageNet1K dataset with Dinov2 frozen features compared to fine tuning a CNN backbone.&lt;/p&gt;
+
+&lt;p&gt;For those seeking even greater performance enhancements, fine-tuning either the last layers or the entire network is an option. This process may demand a deeper understanding of machine learning and a larger dataset for model refinement, but can lead to substantial improvements. A key challenge in this approach is maintaining the model’s generalisability and preventing it from “forgetting” previously learned datasets.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*yvtVGxc_UkJgw2q6&quot; alt=&quot;A visual representation of the AI model development process, highlighting the efficiency gained by using foundation models.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;To further enrich the model with bespoke data, one can explore self-supervised learning techniques for pre-training or distillation on domain-specific data. Moreover, to ensure the model remains current with new data, continuous learning methodologies can be employed. These advanced techniques not only enhance the model’s performance, but also tailor it more closely to specific business needs and data environments.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*2ccVFc0mWHKRw6L0&quot; alt=&quot;An illustration of the fine-tuning process in AI model development, emphasizing the balance between performance and resource use&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Beyond the singular applications of foundation models lies the potential for a transformative synergy. By harnessing models trained on diverse datasets with various loss functions, we can unlock new heights of performance. This approach was masterfully demonstrated by &lt;a href=&quot;https://arxiv.org/abs/2306.00984?utm_campaign=The%20Batch&amp;amp;utm_medium=email&amp;amp;_hsmi=281785463&amp;amp;utm_content=281787502&amp;amp;utm_source=hs_email&quot;&gt;Krishnan et al&lt;/a&gt;, who capitalised on images synthesised by Stable Diffusion. They adeptly trained another model (StableRep) using a contrastive loss approach and ViT backbone to achieve remarkable success in a classification benchmark. This strategy showcases the innovative fusion of generative and discriminative model capabilities, setting a new standard for adaptive and robust AI applications.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;“Different foundation models understand different aspects of the world. It’s exciting that a large diffusion model, which is good at generating images, can be used to train a large vision transformer, which is good at analysing images!”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;—&lt;/em&gt;&lt;/strong&gt; &lt;a href=&quot;https://info.deeplearning.ai/openai-empowers-developers-ai-risk-in-the-spotlight-decoding-schizophrenic-language-synthetic-data-helps-image-classification-1?ecid=ACsprvum6jLSdI3_MtO8GVvBlJrsfj1iNuU7d7wJk3k6DmAu6jDwlmqxh0ZqOYQpd5P6T9SkgLDq&amp;amp;utm_campaign=The%20Batch&amp;amp;utm_medium=email&amp;amp;_hsmi=281785463&amp;amp;_hsenc=p2ANqtz-_AfPCrj7xxHY4m3H4td4jKSdynMLio8p3y-HqpQE0KbMIn5qoGh6dicKnKqf-6eVEcThLfdSR4_uMpwahHLcZqGQKfVg&amp;amp;utm_content=281787502&amp;amp;utm_source=hs_email&quot;&gt;The Batch @Deeplearning.ai newsletter&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;the-rise-of-foundation-models&quot;&gt;The rise of foundation models&lt;/h2&gt;
+
+&lt;p&gt;The history of foundation models is closely tied to the rise of deep learning, particularly with the advent of large-scale models like GPT (Generative Pre-trained Transformer) by OpenAI and BERT (Bidirectional Encoder Representations from Transformers) by Google, which demonstrated the feasibility and effectiveness of pre-training models on vast datasets and then fine-tuning them for specific tasks.&lt;/p&gt;
+
+&lt;p&gt;As technology advanced, so did the scale and capabilities of these models, with models like GPT-3, GPT-4 and T5 showcasing unprecedented levels of generalisation and adaptability across numerous domains including natural language processing, computer vision, and even multimodal tasks combining both vision and text. The success of these models started &lt;strong&gt;a new era where the focus shifted from training task-specific models from scratch to developing robust, versatile foundation models.&lt;/strong&gt; This new type of model could be fine-tuned or used in transfer-learning to excel at a broad spectrum of tasks. This shift not only catalysed significant advancements in AI research but also broadened adoption of AI across various industries, paving the way for more sophisticated and capable foundation models that continue to push the boundaries of what’s achievable with Artificial Intelligence.&lt;/p&gt;
+
+&lt;p&gt;Notable examples of foundation models abound in the tech landscape. For instance, DINOv2 and MAE (Masked Autoencoder) by Meta AI for image understanding. On the other hand, models like CLIP and BLIP from OpenAI have shown the potential of bridging the gap between vision and language. These models, pre-trained on diverse and voluminous datasets, encapsulate a broad spectrum of knowledge that can be adapted for more specialised tasks, making them particularly advantageous for industries with data-rich environments like e-commerce.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*EHZAOKUjrq7Sz6uP&quot; alt=&quot;An illustration demonstrating the innovative use of foundation models to achieve advanced AI capabilities.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a short description of a few of those models:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DINOv2:&lt;/strong&gt; Developed by Meta, &lt;a href=&quot;https://ai.meta.com/blog/dino-v2-computer-vision-self-supervised-learning/&quot;&gt;DINOv2&lt;/a&gt; is recognised for its self-supervised learning approach in training computer vision models, achieving significant results.&lt;/p&gt;
+
+&lt;p&gt;The model underscores the potency of self-supervised learning in advancing computer vision capabilities​​.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Masked Autoencoders (&lt;/strong&gt;&lt;a href=&quot;https://arxiv.org/abs/2111.06377#:~:text=This%20paper%20shows%20that%20masked,based%20on%20two%20core%20designs&quot;&gt;&lt;strong&gt;MAE&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;):&lt;/strong&gt; MAE is a scalable self-supervised learning approach for computer vision that involves masking random patches of the input image and reconstructing the missing pixels.&lt;/p&gt;
+
+&lt;p&gt;Meta AI demonstrated the effectiveness of MAE pre-pre training for billion-scale pretraining, combining self-supervised (1st stage) and weakly-supervised learning (2nd stage) for improved performance​.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2103.00020&quot;&gt;&lt;strong&gt;CLIP&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;(Contrastive Language-Image Pre-Training):&lt;/strong&gt; Developed by OpenAI, CLIP is a groundbreaking model that bridges computer vision and natural language processing, leveraging an abundantly available source of supervision: the text paired with images found across the internet.&lt;/p&gt;
+
+&lt;p&gt;CLIP is the first multimodal model tackling computer vision, trained on a variety of (image, text) pairs, achieving competitive zero-shot performance on a variety of image classification datasets. It brings many of the recent developments from the realm of natural language processing into the mainstream of computer vision, including unsupervised learning, transformers, and multimodality​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Segment Anything Model (&lt;/strong&gt;&lt;a href=&quot;https://segment-anything.com/&quot;&gt;&lt;strong&gt;SAM&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;):&lt;/strong&gt; Developed by Meta’s FAIR lab, SAM is a state-of-the-art image segmentation model that aims to revolutionise the field of computer vision by identifying which pixels in an image belong to which object, producing detailed object masks from input prompts.&lt;/p&gt;
+
+&lt;p&gt;SAM is built on foundation models that have significantly impacted natural language processing (NLP), and focuses on promptable segmentation tasks, adapting to diverse downstream segmentation problems using prompt engineering​.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2211.06220&quot;&gt;&lt;strong&gt;OneFormer&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;/&lt;/strong&gt; &lt;a href=&quot;https://arxiv.org/abs/2105.15203&quot;&gt;&lt;strong&gt;SegFormer&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;:&lt;/strong&gt; A state-of-the-art multi-task image segmentation framework implemented using transformers. Parameters: 219 million. Architecture: ViT&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.microsoft.com/en-us/research/publication/florence-a-new-foundation-model-for-computer-vision/#:~:text=While%20existing%20vision%20foundation%20models,videos&quot;&gt;&lt;strong&gt;Florence&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;:&lt;/strong&gt; Introduced by Microsoft, this foundation model has set new benchmarks on several leaderboards such as TextCaps Challenge 2021, nocaps, Kinetics-400/Kinetics-600 action classification, and OK-VQA Leaderboard. Florence aims to expand representations from coarse (scene) to fine (object), and from static (images) to dynamic (videos)​.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2112.10752&quot;&gt;&lt;strong&gt;Stable Diffusion&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;:&lt;/strong&gt; A generative model utilising AI and deep learning to generate images, functioning as a diffusion model with a sequential application of denoising autoencoders​.&lt;/p&gt;
+
+&lt;p&gt;It employs a U-Net model, specifically a Residual Neural Network (ResNet), originally developed for image segmentation in biomedicine, to denoise images and control the image generation process without retraining​​.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://openai.com/dall-e-3&quot;&gt;&lt;strong&gt;DALL-E&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;:&lt;/strong&gt; Developed by OpenAI, DALL-E is a generative model capable of creating images from textual descriptions, showcasing a unique blend of natural language understanding and image generation. It employs a version of the GPT-3 architecture to generate images, demonstrating the potential of transformer models in tasks beyond natural language processing​&lt;/p&gt;
+
+&lt;p&gt;The tech titans, often bundled as GAFA (Google, Amazon, Facebook and Apple), alongside several other companies such as Hugging Face, Anthropic, AI21 Labs, Cohere, Aleph Alpha, Open AI and Salesforce have been instrumental in developing, utilising and advancing foundation models. Substantial investments in these models underscore their potential, as these corporations harness foundation models to augment various facets of their operations, setting a benchmark for &lt;a href=&quot;https://crfm.stanford.edu/2021/10/18/reflections.html#:~:text=Simultaneously%2C%20in%20industry%2C%20several%20startups,that%20impact%20billions%20of%20people&quot;&gt;other sectors&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Insights from industry leaders at &lt;a href=&quot;https://venturebeat.com/ai/foundation-models-2022s-ai-paradigm-shift/#:~:text=Foundation%20models%20like%20DALL,computer%20science%20%20department%20at&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://www.microsoft.com/en-us/research/academic-program/accelerate-foundation-models-research-fall-2023/#:~:text=About%20the%20program,society%20while%20mitigating%20risks&quot;&gt;Microsoft&lt;/a&gt; and &lt;a href=&quot;https://research.ibm.com/topics/foundation-models&quot;&gt;IBM&lt;/a&gt;, alongside academic institutions, provide a rich tapestry of knowledge and perspectives​.&lt;/p&gt;
+
+&lt;p&gt;Percy Liang, a director of the Center for Research on Foundation Models, emphasised in &lt;a href=&quot;https://www.protocol.com/enterprise/foundation-models-ai-standards-stanford&quot;&gt;this article&lt;/a&gt; that foundation models like DALL-E and GPT-3 herald new creative opportunities and novel interaction mechanisms with systems, showcasing the innovation that these models can bring to the table. He also mentions potential risks of such powerful models​.&lt;/p&gt;
+
+&lt;p&gt;At the &lt;a href=&quot;https://iccv2023.thecvf.com/&quot;&gt;ICCV 2023 conference&lt;/a&gt;, held this year in Paris, foundation models were a very present topic. William T. Freeman, Professor of Computer Science, MIT, talked about the foundation models in his talk in &lt;a href=&quot;https://gkioxari.github.io/Tutorials/iccv2023/&quot;&gt;QUO VADIS Computer Vision&lt;/a&gt; workshop. He cited reasons why he &lt;a href=&quot;https://drive.google.com/file/d/1HfSrxSMS54c6-rYQNKBZnqgk_eRYqwOx/view&quot;&gt;does not like foundation models&lt;/a&gt; as an academic:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;They don’t tell us how vision works.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;They’re not fundamental (and therefore not stable)&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;They separate academia from industry&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This highlights the importance of foundation models for the future of computer vision and their established position and pragmatic aspect of those models focusing on performance.&lt;/p&gt;
+
+&lt;p&gt;IBM Research posits that &lt;a href=&quot;https://research.ibm.com/topics/foundation-models&quot;&gt;foundation models will significantly expedite AI adoption&lt;/a&gt; in business settings. The general applicability of these models, enabled through self-supervised learning and fine-tuning, allows for a wide range of AI applications, thereby accelerating AI deployment across various business domains​.&lt;/p&gt;
+
+&lt;p&gt;Microsoft Research highlights that foundation models are instigating &lt;a href=&quot;https://research.ibm.com/topics/foundation-models&quot;&gt;a fundamental shift in computing research&lt;/a&gt; and across various scientific domains. This shift is underpinned by the models’ ability to fuel industry-led advances in AI, thereby contributing to a vibrant and diverse research ecosystem that’s poised to unlock the promise of AI for societal benefit while addressing associated risks.&lt;/p&gt;
+
+&lt;p&gt;Experts also underscore the critical role of computer vision foundation models in solving real-world applications, emphasising their &lt;a href=&quot;https://crfm.stanford.edu/2021/10/18/reflections.html#:~:text=Simultaneously%2C%20in%20industry%2C%20several%20startups,that%20impact%20billions%20of%20people&quot;&gt;adaptability to a myriad of downstream&lt;/a&gt; tasks due to training on diverse, large-scale datasets​. Moreover, foundation models like CLIP &lt;a href=&quot;https://arxiv.org/abs/2103.00020&quot;&gt;enable zero-shot learning&lt;/a&gt;, allowing for versatile applications like classifying video frames, identifying scene changes and building semantic image search engines without necessitating prior training.&lt;/p&gt;
+
+&lt;p&gt;In another workshop of ICCV 2023, &lt;a href=&quot;https://bigmac-vision.github.io/&quot;&gt;BigMAC&lt;/a&gt;: Big Model Adaptation for Computer Vision, the &lt;a href=&quot;https://bigmac-vision.github.io/pdfs/ludwig.pdf&quot;&gt;robustness of the CLIP model&lt;/a&gt; on the popular ImageNet benchmark was discussed. In conclusion, thanks to training on a large, versatile dataset means that zero-shot predictions of the CLIP model are less vulnerable to data drift than popular CNN models trained and fine tuned on imageNet. In this &lt;a href=&quot;https://www.youtube.com/watch?v=XiouM3MEOKs&amp;amp;t=4546s&quot;&gt;recording of Ludwig’s presentation&lt;/a&gt; different ways to preserve CLIP robustness while fine-tuned are discussed.&lt;/p&gt;
+
+&lt;p&gt;On a side note, the ICCV conference was quite an event. With five days of workshops, talks and demos! Big tech companies such as Meta marked their presence with impressive hubs, answering attendees’ questions. Numerous poster sessions gave us a chance to interact with authors and select some ideas we would like to contribute to the tech stack at Adevinta.&lt;/p&gt;
+
+&lt;p&gt;In the subsequent sections, we will dig into real-world instances, underscoring their impact on e-commerce and elaborate how investing in this technology can galvanise collaboration and innovation across various teams within a company.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*ZtACVLp3aedfQYAy&quot; alt=&quot;An overview of popular foundation models and their applications in various AI domains.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;real-world-adoption-of-foundation-models&quot;&gt;Real-World Adoption of foundation models&lt;/h2&gt;
+
+&lt;p&gt;Major tech companies have paved the way in producing and distributing ready-to-use foundation models, which are now being utilised by various businesses to &lt;a href=&quot;https://www.forbes.com/sites/moorinsights/2023/07/21/the-extraordinary-ubiquity-of-generative-ai-and-how-major-companies-are-using-it/&quot;&gt;enhance or create new products&lt;/a&gt; for tech-savvy consumers&lt;a href=&quot;https://www.forbes.com/sites/moorinsights/2023/07/21/the-extraordinary-ubiquity-of-generative-ai-and-how-major-companies-are-using-it/&quot;&gt;​&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-commerce-andretail&quot;&gt;E-commerce and retail&lt;/h2&gt;
+
+&lt;p&gt;In the sphere of e-commerce, companies like Pinterest and eBay, have &lt;a href=&quot;https://developer.nvidia.com/blog/pinterest-uses-ai-to-enhance-its-recommendations-system/#:~:text=Developers%20from%20Pinterest%2C%20along%20with,objects%20saved%20has%20crossed&quot;&gt;invested in deep learning&lt;/a&gt; and machine learning technologies to enhance user experiences. Pinterest has developed PinSage for advertising and shopping recommendations and a multi-task deep metric &lt;a href=&quot;https://blog.acolyer.org/2019/10/11/learning-a-unified-embedding-for-visual-search-at-pinterest/#:~:text=The%20foundation%20of%20Pinterest%E2%80%99s%20approach,task%20learning&quot;&gt;learning system for unified image embedding&lt;/a&gt; to aid in &lt;a href=&quot;https://arxiv.org/abs/1908.01707&quot;&gt;visual search&lt;/a&gt; and recommendation systems​&lt;a href=&quot;https://blog.acolyer.org/2019/10/11/learning-a-unified-embedding-for-visual-search-at-pinterest/#:~:text=The%20foundation%20of%20Pinterest%E2%80%99s%20approach,task%20learning&quot;&gt;​&lt;/a&gt;. eBay, on the other hand, utilises a convolutional neural network for its &lt;a href=&quot;https://www.ebayinc.com/stories/news/an-easier-way-to-search-ebay-computer-vision-with-find-it-on-ebay-and-image-search-is-now-live/#:~:text=When%20you%20upload%20images%20to,the%20live%20listings%20on%20eBay&quot;&gt;image search feature&lt;/a&gt;, “Find It On eBay.”​&lt;/p&gt;
+
+&lt;p&gt;Computer vision applications are transforming e-commerce, aiding in creating seamless omnichannel shopping experiences​. When it comes to the importance of visuals in shopping experiences, a study by PowerReviews found that &lt;strong&gt;88% of consumers specifically&lt;/strong&gt; &lt;a href=&quot;https://www.ebayinc.com/stories/news/an-easier-way-to-search-ebay-computer-vision-with-find-it-on-ebay-and-image-search-is-now-live/#:~:text=When%20you%20upload%20images%20to,the%20live%20listings%20on%20eBay&quot;&gt;&lt;strong&gt;look for visuals&lt;/strong&gt;&lt;/a&gt; submitted by other consumers prior to making a purchase​.&lt;/p&gt;
+
+&lt;h3 id=&quot;broader-techindustry&quot;&gt;Broader tech industry&lt;/h3&gt;
+
+&lt;p&gt;In the broader tech industry, Microsoft has introduced &lt;a href=&quot;https://www.ebayinc.com/stories/news/an-easier-way-to-search-ebay-computer-vision-with-find-it-on-ebay-and-image-search-is-now-live/#:~:text=When%20you%20upload%20images%20to,the%20live%20listings%20on%20eBay&quot;&gt;Florence&lt;/a&gt;, a novel foundation model for computer vision. The underlying technology of foundation models is designed to provide a solid base that can be fine-tuned for various specific tasks, an advantage that has been recognised and harnessed by industry giants.&lt;/p&gt;
+
+&lt;p&gt;Take Copenhagen-based startup Modl.ai for instance, which relies on foundation models, self-supervised training and computer vision for &lt;a href=&quot;https://the-decoder.com/ai-startup-wants-to-bring-foundation-models-to-game-development/#:~:text=Copenhagen,with%20and%20against%20human%20players&quot;&gt;developing AI bots&lt;/a&gt; to test video games for bugs and performance. Such applications demonstrate the versatility and potential of foundation models in different sectors​.&lt;/p&gt;
+
+&lt;p&gt;The practical implementations of foundation models in these different sectors underscores their potential to drive innovation, enhance user experiences and foster cross-functional collaboration within and beyond the e-commerce spectrum. The flexibility and adaptability of foundation models, as demonstrated by these real-world examples, make them a valuable asset for companies striving to stay ahead in the competitive e-commerce landscape.&lt;/p&gt;
+
+&lt;h2 id=&quot;investing-in-foundation-models-cost-benefit-analysis&quot;&gt;Investing in foundation models: Cost-benefit analysis&lt;/h2&gt;
+
+&lt;p&gt;The investment in foundation models for computer vision transcends the mere financial outlay. It encapsulates a strategic foresight to harness advanced AI technologies for bolstering e-commerce operations.&lt;/p&gt;
+
+&lt;p&gt;Investing in foundation models for computer vision in e-commerce does entail upfront costs such as acquiring computational resources and the requisite expertise. OpenAI’s GPT-3 model, for example, reportedly cost $4.6M to train. According to another OpenAI report, the cost of training a large AI model is &lt;a href=&quot;https://encord.com/blog/visual-foundation-models-vfms-explained/#:~:text=OpenAI%E2%80%99s%20GPT%2D3%20model%2C%20for%20example%2C%20reportedly%20cost%20%244.6MM%20to%20train.%20According%20to%20another%20OpenAI%20report%2C%20the%20cost%20of%20training%20a%20large%20AI%20model%20is%20projected%20to%20rise%20from%20%24100MM%20to%20%24500MM%20by%202030.&quot;&gt;projected to rise&lt;/a&gt; from $100M to $500M by 2030.&lt;/p&gt;
+
+&lt;p&gt;However, the potential benefits could justify the investment. For instance, the &lt;strong&gt;global visual search market,&lt;/strong&gt; which is significantly powered by computer vision technology, is projected to reach &lt;strong&gt;$15 billion by 2023&lt;/strong&gt;. Early adopters who incorporate visual search on their platforms could see &lt;a href=&quot;https://blog.taskmonk.ai/what-role-will-computer-vision-play-in-the-future-of-ecommerce/#:~:text=Early%20adopters%20who%20incorporate%20visual,of%20their%20online%20shopping%20experience&quot;&gt;&lt;strong&gt;revenues increase by 30%&lt;/strong&gt;&lt;/a&gt;. The computer vision market itself is soaring with an expected &lt;strong&gt;annual growth rate of 19.5%&lt;/strong&gt;, predicted to reach a value of $100.4 billion by 2023​&lt;a href=&quot;https://encord.com/blog/visual-foundation-models-vfms-explained/#:~:text=April%2024%2C%202023%20%E2%80%A2%205,9Bn%20in%202022&quot;&gt;​&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These figures suggest that the integration of computer vision, particularly through foundation models, can be a lucrative venture in the long-term. Consumers are increasingly leaning towards platforms that offer visual search and other AI-driven features. Therefore, the cost of investment could be offset by the subsequent increase in revenue, enhanced user engagement and improved operational efficiency brought about by the advanced capabilities of foundation models in computer vision.​&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;“Foundation models cut down on data labelling requirements anywhere from a factor of like 10 times, 200 times, depending on the use case”&lt;/em&gt;&lt;/strong&gt;— &lt;a href=&quot;https://venturebeat.com/ai/foundation-models-2022s-ai-paradigm-shift/#:~:text=%E2%80%9CFoundation%20models%20cut%20down%20on%20data%20labeling%20requirements%20anywhere%20from%20a%20factor%20of%20like%2010%20times%2C%20200%20times%2C%20depending%20on%20the%20use%20case%2C%E2%80%9D%20Dakshi%20Agrawal%2C%20IBM%20fellow%20and%20CTO%20of%20IBM%20AI%2C&quot;&gt;Dakshi Agrawal&lt;/a&gt;, IBM fellow and CTO of IBM AI&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Moreover, the global computer vision market, which encompasses technologies enabling such visual experiences, is expected to &lt;a href=&quot;https://www.syte.ai/blog/visual-ai/how-visual-ai-is-changing-omnichannel-retail/&quot;&gt;grow substantially&lt;/a&gt;, indicating the increasing importance of investment in visual technologies for retail and e-commerce​. The role of visual AI, which includes &lt;a href=&quot;https://research.aimultiple.com/computer-vision-retail/#:~:text=The%20global%20computer%20vision%20market,improve%20efficiency%20in%20omnichannel&quot;&gt;computer vision&lt;/a&gt;, is also highlighted in how it’s changing omnichannel retail, showcasing the intertwined relationship between visual technology and &lt;a href=&quot;https://losspreventionmedia.com/computer-vision-future-of-retail/&quot;&gt;enhanced shopping experiences&lt;/a&gt; across channels​.&lt;/p&gt;
+
+&lt;h2 id=&quot;examples-of-application-of-foundation-models-in-e-commerce&quot;&gt;Examples of application of foundation models in e-commerce&lt;/h2&gt;
+
+&lt;p&gt;Because of their pre-training on expansive datasets, foundation models in computer vision bring a treasure trove of capabilities to the table. &lt;strong&gt;The pre-trained nature of foundation models significantly accelerates the deployment of computer vision applications in e-commerce, as they require less data and resources for fine-tuning compared to training models from scratch.&lt;/strong&gt; Let’s illustrate this through real-world examples within the e-commerce sector.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Product Categorisation&lt;/strong&gt;: Leveraging a foundation model for automated product categorisation can be a time and resource-saver.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Visual Search&lt;/strong&gt;: Implementing visual search features can be expedited with foundation models. Their pre-trained knowledge can be leveraged to recognise fashion or product trends, making visual search more intuitive.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Counterfeit Detection&lt;/strong&gt;: Counterfeit detection is a complex task; however, with a foundation model, the pre-existing knowledge about different objects can be fine-tuned to identify subtle discrepancies between genuine and counterfeit products&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Moderation&lt;/strong&gt;: Detection of unwanted or harmful content can be done through a classification head added on top of image embeddings generated by a foundation model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*xDEvavmYRc4MF2xE&quot; alt=&quot;A diagram showcasing the various applications of foundation models in e-commerce, from product categorization to counterfeit detection.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Beyond these examples, foundation models also hold promise in enhancing user experiences in recommendation systems and augmented reality (AR) shopping.&lt;/p&gt;
+
+&lt;p&gt;Most of this use-case could be applied to Adevinta marketplaces or replace existing services based on more traditional models.&lt;/p&gt;
+
+&lt;h2 id=&quot;empowering-teams-across-the-e-commerce-spectrum&quot;&gt;Empowering teams across the e-commerce spectrum&lt;/h2&gt;
+
+&lt;p&gt;Foundation models in computer vision open up avenues for fostering cross-functional collaboration, expediting product development, and making data-driven decision-making a norm across an e-commerce enterprise. Let’s delve into how these models can act as catalysts in harmonising the efforts of various teams and speeding up the journey from conception to market-ready solutions.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*3hnJ3nPcTBr68D70&quot; alt=&quot;Members of the Cognition team at Adevinta discussing the latest trends in AI and computer vision.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;accelerating-the-product-development-cycle&quot;&gt;Accelerating the product development cycle&lt;/h2&gt;
+
+&lt;p&gt;The pre-trained nature of foundation models significantly &lt;strong&gt;cuts down the time traditionally required to develop, train and deploy machine learning models&lt;/strong&gt;. This acceleration in the product development cycle is invaluable in the fiercely competitive e-commerce market, where being the first to introduce innovative features can provide a substantial competitive edge. Moreover, the resource efficiency of foundation models ensures that &lt;strong&gt;teams can iterate and improve upon models swiftly&lt;/strong&gt;, aligning with dynamic market trends and customer expectations.&lt;/p&gt;
+
+&lt;h2 id=&quot;stepping-stone-to-broader-business-objectives&quot;&gt;Stepping stone to broader business objectives&lt;/h2&gt;
+
+&lt;p&gt;Foundation models can act as a springboard towards achieving broader business goals such as sustainability and promoting the second-hand goods trade. By enabling smarter product listings and verifications through image recognition and visual search capabilities, these models can streamline the process of listing and verifying second-hand goods. This, in turn, &lt;strong&gt;promotes a circular economy, encouraging the reuse and recycling of products&lt;/strong&gt;, which aligns with the sustainability goals of many modern e-commerce platforms.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges-and-overcoming-strategies&quot;&gt;Challenges and overcoming strategies&lt;/h2&gt;
+
+&lt;p&gt;Incorporating foundation models for computer vision within an e-commerce setting comes with a range of challenges, but with the right strategies, these hurdles can be navigated to unlock the models’ full potential.&lt;/p&gt;
+
+&lt;h2 id=&quot;computational-requirements&quot;&gt;Computational requirements&lt;/h2&gt;
+
+&lt;p&gt;Foundation models are computationally intensive due to their large-scale nature, which necessitates &lt;a href=&quot;https://snorkel.ai/foundation-models/#:~:text=Cost,for%20their%20end%20use%20caes&quot;&gt;significant computational resources&lt;/a&gt; for training and fine-tuning. The good news is that, once the substantial work of domain-learning or fine tuning is done, numerous teams and projects can benefit from the foundation model with minimal additional effort and cost.&lt;/p&gt;
+
+&lt;h2 id=&quot;bias-andfairness&quot;&gt;Bias and fairness&lt;/h2&gt;
+
+&lt;p&gt;Foundation models may inherit biases present in the training data, which can lead to unfair or discriminatory behaviour. For instance, &lt;a href=&quot;https://datagen.tech/blog/the-opportunities-and-risks-of-foundation-models/&quot;&gt;DALL-E and CLIP have shown biases&lt;/a&gt; regarding gender and race when generating images or interpreting text and images​. Implementing robust data preprocessing and bias mitigation strategies will help to address potential biases in training data.&lt;/p&gt;
+
+&lt;h2 id=&quot;interpretability-andcontrol&quot;&gt;Interpretability and control&lt;/h2&gt;
+
+&lt;p&gt;Understanding and controlling the behaviour of foundation models like CLIP remains a challenge due to their black-box nature. This makes it difficult to interpret the models’ predictions, which is a hurdle in applications where &lt;a href=&quot;https://arxiv.org/abs/2103.00020&quot;&gt;explainability is crucial&lt;/a&gt;​​. CRFM released recently a &lt;a href=&quot;https://crfm.stanford.edu/fmti/?utm_campaign=The%20Batch&amp;amp;utm_medium=email&amp;amp;_hsmi=280825441&amp;amp;utm_content=280827829&amp;amp;utm_source=hs_email&quot;&gt;Foundation Model Transparency Index&lt;/a&gt; “scoring 10 popular models on how well their makers disclosed details of their training, characteristics and use.”&lt;/p&gt;
+
+&lt;p&gt;Foundation models, if widely adopted, could introduce &lt;strong&gt;single points of failure&lt;/strong&gt; in machine learning systems. If adversaries find vulnerabilities in a foundation model, they could &lt;a href=&quot;https://arxiv.org/abs/2103.11251&quot;&gt;exploit these weaknesses&lt;/a&gt; across multiple systems utilising the same model​.&lt;/p&gt;
+
+&lt;p&gt;Foundation models are &lt;strong&gt;not the answer to all&lt;/strong&gt; machine learning problems.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;“Foundation models are neither ‘foundational’ nor the foundations of AI. We deliberately chose ‘foundation’ rather than ‘foundational,’ because we found that ‘foundational’ implied that these models provide fundamental principles in a way that ‘foundation’ does not. (…) Further, ‘foundation’ describes the (role of) model and not AI; we neither claim nor believe that foundation models alone are the foundation of AI, but instead note they are ‘only one component (though an increasingly important component) of an AI system.’”&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;— the Stanford Institute for Human-Centred AI founded the Center for &lt;a href=&quot;https://arxiv.org/pdf/2108.07258.pdf&quot;&gt;Research on Foundation Models&lt;/a&gt; (CRFM), 2021&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The transformative potential of foundation models in computer vision is unmistakable and pivotal for advancing the e-commerce domain. They encapsulate a significant stride towards creating smarter, more intuitive and user-centric online shopping experiences. The notable successes of early adopters, alongside the burgeoning global visual search market, exhibit the financial promise inherent in embracing these models​.&lt;/p&gt;
+
+&lt;p&gt;The real-world implications extend beyond just improved product discovery and categorisation, to fostering a sustainable trading ecosystem for second-hand goods. &lt;strong&gt;The expertise and investment in these models can expedite the product development cycle, encourage data-driven decision-making and stimulate cross-functional collaboration across various company departments.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;However, it’s crucial to acknowledge the technical and ethical challenges that come with the deployment of foundation models. The computational costs, potential biases and the necessity for robust infrastructures demand a well-thought-out strategic approach. Yet, with the right investment in computational infrastructure, continuous learning and a commitment to ethical AI practices, these hurdles can be navigated successfully.&lt;/p&gt;
+
+&lt;p&gt;While the promise of foundation models in computer vision is evident, discerning which model will perform optimally with your specific data remains a complex challenge.&lt;/p&gt;
+
+&lt;p&gt;This uncertainty underscores the vital &lt;strong&gt;need for comprehensive benchmarks&lt;/strong&gt; that can guide businesses in selecting the most appropriate model. Investing time in testing and evaluation is crucial, as it enables a more informed decision-making process. A recent study highlighted in the article “&lt;a href=&quot;https://arxiv.org/pdf/2310.19909.pdf&quot;&gt;A Comprehensive Study on Backbone Architectures for Regular and Vision Transformers&lt;/a&gt;” delves into this subject by testing different model backbones across a range of downstream tasks and datasets. Such research is invaluable for businesses looking to capitalise on foundation models, as it provides critical insights into model performance and applicability, ensuring that their investment in AI is both strategic and effective.&lt;/p&gt;
+
+&lt;p&gt;In Adevinta, as an e-commerce leader, we are evaluating the pros and cons of foundation models to best leverage their potential within our company. In Cognition, we are also working on internal benchmarks that will help to chose right foundation model for the task, estimate ressources needed and showcase its potential performance on the marketplace data.&lt;/p&gt;
+
+&lt;p&gt;With industry behemoths and experts leading the era of foundation models, the call to action for e-commerce directors is clear: &lt;strong&gt;Embrace the paradigm shift that foundation models represent, and consider them as a long-term strategic asset for maintaining a competitive edge in the rapidly evolving e-commerce landscape.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Check out this mine of knowledge about foundation models: &lt;a href=&quot;https://cs.uwaterloo.ca/~wenhuche/teaching/cs886/&quot;&gt;https://cs.uwaterloo.ca/~wenhuche/teaching/cs886/&lt;/a&gt;&lt;/p&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on December 19
+    2023.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/foundation-models-a-new-vision-for-e-commerce-76904a3066e8&quot;&gt;View
+      the original&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 19 Dec 2023 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
+        
+        
+        <category>thoughts</category>
+        
+        <category>featured</category>
         
       </item>
     
@@ -2520,43 +2780,6 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <category>Data Science</category>
         
         <category>biomedical applications</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>DeconICA</title>
-        <description>&lt;!DOCTYPE HTML&gt;
-&lt;html lang=&quot;en-US&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;1; url=&quot;&gt;
-        &lt;script type=&quot;text/javascript&quot;&gt;
-            window.location.href = &quot;https://urszulaczerwinska.github.io/DeconICA/&quot;
-        &lt;/script&gt;
-        &lt;title&gt;Redirecting to the project page on Github that details the usage and application of the R library deconica&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!-- Note: don&apos;t tell people to `click` the link, just tell them that it is a link. --&gt;
-        If you are not redirected automatically, follow this &lt;a href=&apos;https://urszulaczerwinska.github.io/DeconICA/&apos;&gt;link to example&lt;/a&gt;.
-          &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-    &lt;/body&gt;
-&lt;/html&gt;</description>
-        <pubDate>Tue, 22 May 2018 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/deconica</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deconica</guid>
-        
-        <category>Machine Learning</category>
-        
-        <category>R</category>
-        
-        <category>Data Science</category>
-        
-        <category>Deconvolution</category>
         
         
         <category>works</category>
