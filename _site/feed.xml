@@ -3,10 +3,10 @@
   <channel>
     <title>Urszula Czerwinska | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 04 Sep 2024 22:59:27 +0200</pubDate>
-    <lastBuildDate>Wed, 04 Sep 2024 22:59:27 +0200</lastBuildDate>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 09 Sep 2024 21:38:09 +0200</pubDate>
+    <lastBuildDate>Mon, 09 Sep 2024 21:38:09 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
@@ -110,8 +110,8 @@
 
 </description>
         <pubDate>Thu, 25 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -212,8 +212,8 @@
 
 </description>
         <pubDate>Sat, 13 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -632,8 +632,288 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Sat, 03 Feb 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>From PCA to SSL - A personal odyssey in Data Science</title>
+        <description>&lt;head&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;A reflection on my personal journey through the data science field, tracing the evolution from fundamental techniques like Principal Component Analysis (PCA) and Independent Component Analysis (ICA) to modern Self-Supervised Learning (SSL). This post explores how foundational concepts have influenced my career and the field&apos;s progress.&quot; /&gt;
+&lt;/head&gt;
+
+&lt;p&gt;Welcome to a journey through the evolving landscape of Data Science, a journey that parallels my own academic and professional path. In this article, I will share how fundamental concepts like Principal Component Analysis (PCA) and Independent Component Analysis (ICA) have been instrumental in leading me to the field of Self-Supervised Learning (SSL).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So, why share this story?&lt;/strong&gt; It’s not merely a chronicle of progress in Data Science; it’s a testament to the profound synergy between the foundational theories I mastered during my doctoral studies and the avant-garde techniques I am navigating now. This path hasn’t just shaped my career; it has fundamentally altered my perspective on the potential and direction of Data Science.&lt;/p&gt;
+
+&lt;p&gt;I hope it can inspire you, dear reader, that fundamental concepts are reborn under a different form.&lt;/p&gt;
+
+&lt;p&gt;We will start by looking at the basics of PCA and ICA, the building blocks of my entry into data analysis. From there, we’ll see how these methods have evolved into today’s more dynamic and autonomous SSL approaches.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What lessons did I learn in this transition? How do these experiences mirror the broader changes in the field of Data Science?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This exploration aims to provide a deeper understanding of how the field is evolving and what it means to us as practitioners and enthusiasts.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-roots-in-unsupervised-learning&quot;&gt;My roots in Unsupervised Learning&lt;/h2&gt;
+
+&lt;h3 id=&quot;discovering-pca-and-ica-during-myphd&quot;&gt;Discovering PCA and ICA during my PhD&lt;/h3&gt;
+
+&lt;h4 id=&quot;beginning-my-journey-in-unsupervised-learning&quot;&gt;&lt;strong&gt;Beginning my journey in Unsupervised Learning&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;My initial encounter with unsupervised learning occurred during my undergraduate studies, deepening significantly through my P&lt;a href=&quot;https://urszulaczerwinska.github.io/UCzPhDThesis/&quot;&gt;h.D. research at the Curie Institute.&lt;/a&gt; This experience wasn’t just academic; it represented my first foray into applying complex data science concepts to real-world biological data. It was here that I delved into Principal Component Analysis (PCA) and Independent Component Analysis (ICA), exploring their capabilities in a practical, research-driven environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*zuJ046QrOnct_PPF.jpg&quot; alt=&quot;Graphical representation of Principal Component Analysis (PCA) and Independent Component Analysis (ICA) in the context of data science, illustrating their application to complex biological data.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;applying-pca-and-ica-to-transcriptomic-analysis&quot;&gt;&lt;strong&gt;Applying PCA and ICA to transcriptomic analysis&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;In my early systems bilolgy research days, PCA was a fundamental tool for analyzing gene expression data. Its primary function was to reduce the dimensionality of large datasets, allowing me to identify and focus on the most significant variables in the data. This method was crucial for managing the complexity of transcriptomes and extracting meaningful insights from vast amounts of data.&lt;/p&gt;
+
+&lt;p&gt;ICA, in contrast, served a different but equally vital role. It was instrumental in separating mixed signals in the data, enabling the identification of independent sources of variation. This technique was particularly useful in dissecting a complex gene expression pattern in tissue representing a mix of normal, cancer and immune cells, allowing for a clearer understanding of the underlying biological processes of an immune response to immunotherapy.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*kTN_M6iax9U6zrqK.png&quot; alt=&quot;Visualization of Principal Component Analysis (PCA) and Independent Component Analysis (ICA) applied to gene expression data, highlighting their roles in reducing dimensionality and identifying independent sources of variation in transcriptomic analysis.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;navigating-the-maze-challenges-and-limitations&quot;&gt;&lt;strong&gt;Navigating the maze: challenges and limitations&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*WZpscmnhCoIiTCHOaggWbA.png&quot; alt=&quot;Diagram illustrating the challenges and limitations of PCA and ICA, including issues with linear assumptions and component stability in the analysis of biological data.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite their utility, both PCA and ICA have limitations, especially when applied to biological data. One major limitation of PCA is its inherent assumption of linear relationships and multivariate normal distribution of data. However, biological processes are often intricate and non-linear, and microarray gene expression measurements, for instance, tend to follow a super-Gaussian distribution, not accurately &lt;a href=&quot;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-24&quot;&gt;captured by PCA&lt;/a&gt;​​. This limitation becomes particularly evident when the biological questions at hand are not directly related to the highest variance in the data, a fundamental aspect of PCA’s data decomposition approach.&lt;/p&gt;
+
+&lt;p&gt;ICA, while effective in separating mixed signals and identifying non-Gaussian components, also presents challenges. Its results can be unstable and dependent on the number of components extracted. This is compounded by the fact that ICA does not inherently order its components by relevance, necessitating multiple runs and averaging of results to obtain robust outcomes. The high dimensionality of biological datasets often requires PCA to be used as a pre-processing step before applying ICA, which can further &lt;a href=&quot;https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-13-24&quot;&gt;complicate the analysis&lt;/a&gt;​​.&lt;/p&gt;
+
+&lt;p&gt;Also, both approaches, belongs to the realm of statistical analysis. In a world of fast-paced innovation and deep learning, they seem covered with dust and old-fashioned.&lt;/p&gt;
+
+&lt;p&gt;The challenges and insights gained from working extensively with ICA during my Ph.D. significantly contributed to my expertise in machine learning. Post-Ph.D., I ventured into the field of natural language processing, applying deep learning techniques to tackle complex linguistic data. My career then led me to Adevinta, where I expanded my focus to include computer vision, leveraging deep learning in new and innovative ways. This diverse experience in ML and DL paved the way for my current exploration into Self-Supervised Learning (SSL), marking a continuous journey through the evolving landscape of artificial intelligence.&lt;/p&gt;
+
+&lt;h4 id=&quot;transitioning-to-self-supervised-learning&quot;&gt;&lt;strong&gt;Transitioning to Self-Supervised Learning&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;These experiences with PCA and ICA were more than just academic exercises; they were foundational in shaping my approach to data analysis. They prepared me for the another phase of my career in Self-Supervised Learning (SSL), where I would apply the principles of unsupervised learning to even more complex and dynamic datasets, such as image datasets. &lt;strong&gt;The core idea of finding robust abstraction of a data object (image, dataset, text) remains common to PCA and SSL.&lt;/strong&gt; This non-linear transition marked a significant shift from analyzing biological data to exploring the frontiers of artificial intelligence, but at the same time it is very connected in an intriguing way.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-evolution-of-unsupervised-learning&quot;&gt;&lt;strong&gt;The Evolution of Unsupervised Learning&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;from-pca-and-ica-to-deep-learning&quot;&gt;&lt;strong&gt;From PCA and ICA to Deep Learning&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The evolution from traditional unsupervised methods like PCA and ICA to Self-Supervised Learning (SSL) in Deep Learning is a significant development in the field of machine learning. While PCA and ICA were pivotal in their time for dimensionality reduction and signal separation, they have limitations with non-linear, high-dimensional data structures common in modern datasets.&lt;/p&gt;
+
+&lt;p&gt;The advent of SSL in Deep Learning has revolutionized our approach to data. SSL, unlike its predecessors, leverages deep neural networks to learn from unlabeled data, extracting complex patterns and features without the need for explicit annotations. This advancement not only overcomes the constraints of labeled data but also opens new possibilities in diverse domains, ranging from natural language processing to computer vision.&lt;/p&gt;
+
+&lt;p&gt;SSL represents a paradigm shift, offering a more nuanced and comprehensive understanding of data. It signifies the ongoing evolution and sophistication of machine learning techniques, marking a new era in the exploration and utilization of data.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“If intelligence was a cake, unsupervised learning would be the cake, supervised learning would be the icing on the cake, and reinforcement learning would be the cherry on the cake.”&lt;/em&gt; — Yann LeCun&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;in-2019-yann-lecun-updated-the-above-quote-changing-unsupervised-learning-to-self-supervised-learning-and-in-2020-he-declared-that-self-supervised-learning-ssl-is-the-future-of-machine-learning-source&quot;&gt;&lt;strong&gt;In 2019, Yann LeCun updated the above quote, changing &lt;em&gt;“unsupervised learning”&lt;/em&gt; to “&lt;/strong&gt;&lt;a href=&quot;https://www.eyerys.com/articles/people/1560388243/opinions/the-next-ai-revolution-will-not-be-supervised?ref=blog.salesforceairesearch.com&quot;&gt;&lt;strong&gt;&lt;em&gt;self-supervised learning&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;,”&lt;/em&gt; and in 2020 he declared that self-supervised learning (SSL) is &lt;em&gt;the future of machine learning (&lt;/em&gt;&lt;/strong&gt;&lt;a href=&quot;https://blog.salesforceairesearch.com/learning-vision-without-labels/&quot;&gt;&lt;strong&gt;&lt;em&gt;source&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;)&lt;/em&gt;.&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*4QwOfU5uUYZrliLz.png&quot; alt=&quot;Image featuring a quote by Yann LeCun about the future of machine learning, emphasizing the importance of Self-Supervised Learning (SSL) in the field.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction-to-self-supervised-learningssl&quot;&gt;Introduction to Self-Supervised Learning (SSL)&lt;/h2&gt;
+
+&lt;h4 id=&quot;what-is-ssl&quot;&gt;&lt;strong&gt;What is SSL?&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;Self-Supervised Learning (SSL) represents the latest frontier in this evolutionary journey. SSL, in a sense, is a clever workaround to the challenge of labeled data scarcity. It leverages the data itself to generate its own supervision. Think of it as a student who, instead of relying solely on a teacher’s guidance, learns by exploring and questioning the world around them.&lt;/p&gt;
+
+&lt;p&gt;The system learns to understand and work with data by creating its own labels from the inherent structure of the data. This is a significant departure from traditional supervised learning, where models are trained on a dataset explicitly labeled by humans.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*W6QT1xPyNisB2ptcmN8i6w.png&quot; alt=&quot;Diagram or visualization explaining the concept of Self-Supervised Learning (SSL), illustrating how the model generates its own supervision from the data.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;For instance, in image processing, an SSL algorithm might learn to predict missing parts of an image, or in text processing, to predict the next word in a sentence. Through these tasks, the model gains an intrinsic understanding of the structure and context of the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Gz_gg4DZBQzd72sKpiphmA.png&quot; alt=&quot;Illustration of an SSL algorithm in action, such as predicting missing parts of an image or the next word in a sentence, demonstrating how Self-Supervised Learning models understand data structure.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Self-Supervised Learning, a subset of unsupervised learning, has evolved dramatically, introducing various families of models, each with its unique approach to learning from unlabeled data. Here are some of the primary &lt;a href=&quot;https://arxiv.org/abs/2301.05712&quot;&gt;families of SSL algorithms&lt;/a&gt;:&lt;/p&gt;
+
+&lt;h4 id=&quot;1-contrastive-learning-models&quot;&gt;&lt;strong&gt;1. Contrastive Learning Models:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Principle: These models learn representations by contrasting positive pairs (similar or related data points) against negative pairs (dissimilar or unrelated data points).&lt;/li&gt;
+  &lt;li&gt;SimCLR (Simple Framework for Contrastive Learning of Visual Representations): Utilizes a simple contrastive learning framework for visual representations.&lt;/li&gt;
+  &lt;li&gt;MoCo (Momentum Contrast for Unsupervised Visual Representation Learning): Focuses on building dynamic dictionaries for contrastive learning in vision.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-predictive-learning-models&quot;&gt;&lt;strong&gt;2. Predictive Learning Models:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Principle: These models predict some parts of the data using other parts, thereby learning useful representations.&lt;/li&gt;
+  &lt;li&gt;BERT (Bidirectional Encoder Representations from Transformers): Predicts missing words in a sentence, gaining contextual understanding in NLP.&lt;/li&gt;
+  &lt;li&gt;GPT (Generative Pretrained Transformer): Predicts the next word in a sequence, learning sequential and contextual patterns in text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-generative-models&quot;&gt;&lt;strong&gt;3. Generative Models:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Principle: These models learn to generate or reconstruct data, thereby understanding the distribution and structure of the dataset.&lt;/li&gt;
+  &lt;li&gt;VAE (Variational Autoencoders): Learns to reconstruct input data, capturing the probabilistic distribution.&lt;/li&gt;
+  &lt;li&gt;GANs (Generative Adversarial Networks): Involves a generator and a discriminator learning in a competitive manner to produce realistic data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;4-clustering-based-models&quot;&gt;&lt;strong&gt;4. Clustering-Based Models:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Principle: This approach involves clustering data points and learning representations that respect these cluster assignments.&lt;/li&gt;
+  &lt;li&gt;DeepCluster: Utilizes clustering of features and subsequent representation learning.&lt;/li&gt;
+  &lt;li&gt;SwAV (Swapping Assignments between Views): Employs a unique approach where it clusters data points and enforces consistency between cluster assignments of different augmented views of the same image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;5-transformation-recognition-models&quot;&gt;&lt;strong&gt;5. Transformation Recognition Models:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Principle: These models learn by recognizing transformations applied to the input data.&lt;/li&gt;
+  &lt;li&gt;Jigsaw Puzzles as a task: The model learns by solving jigsaw puzzles, essentially recognizing spatial relations and transformations.&lt;/li&gt;
+  &lt;li&gt;RotNet: Involves learning by recognizing the rotation applied to images.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each of these families represents a different angle of approaching the challenge of learning from unlabeled data. Self-Supervised Learning (SSL) marks a significant evolution in machine learning, especially in the realms of deep learning. It transforms the challenge of learning from unlabeled data into an opportunity. In practice, SSL has been revolutionary, particularly in fields like natural language processing and computer vision, where it has expanded the boundaries of machine learning applications.&lt;/p&gt;
+
+&lt;h4 id=&quot;limitations&quot;&gt;&lt;strong&gt;Limitations&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;SSL’s transformative potential is undeniable, but its journey to widespread industry adoption is hindered by several key challenges. The most notable is the high computational cost. Training SSL models demands significant resources, posing a barrier for smaller entities, as highlighted in industry analyses. Additionally, the technical complexity of SSL algorithms is a daunting hurdle, requiring deep expertise for effective implementation and task-specific fine-tuning.&lt;/p&gt;
+
+&lt;p&gt;Data quality and variety are crucial for SSL effectiveness. In data-limited or sensitive industries, SSL models face difficulties in learning efficiently. Moreover, the industry lags in developing readily usable SSL frameworks, slowing down practical application despite rapid academic progress.&lt;/p&gt;
+
+&lt;p&gt;Another critical aspect is the ethical and privacy implications of using large datasets essential for SSL. The industry must navigate this delicate balance to ensure ethical data utilization.&lt;/p&gt;
+
+&lt;h4 id=&quot;bridge-between-pca-and-ssl&quot;&gt;&lt;strong&gt;Bridge between PCA and SSL&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;The intriguing aspect of SSL, especially in the context of contrastive learning (CL) and its relation to PCA, is highlighted in studies such as “&lt;a href=&quot;https://arxiv.org/pdf/2201.12680v2.pdf&quot;&gt;Deep Contrastive Learning is Provably (almost) Principal Component Analysis&lt;/a&gt;.” This research provides a novel perspective on CL, showing that with deep linear networks, the representation learning aspect of CL aligns closely with PCA’s principles​​. This connection underlines the evolutionary link from traditional statistical methods like PCA to advanced SSL techniques.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*_5M3NTt8CSpFtazdwIY_QQ.png&quot; alt=&quot;Diagram or illustration from research showing the relationship between Deep Contrastive Learning (CL) and Principal Component Analysis (PCA), highlighting the theoretical connection between these methods.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We provide a novel game-theoretical perspective of con- trastive learning (CL) over loss functions (e.g., InfoNCE) and prove that with deep linear network, the representation learning part is equivalent to Principal Component Analysis (PCA).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By leveraging deep neural networks, CL in SSL transcends PCA’s linear constraints, enabling the extraction of complex, nonlinear relationships within data. This progression from PCA to SSL illustrates how foundational data science concepts continue to shape contemporary technologies. Understanding this link allows us to appreciate SSL, particularly in deep learning, as a modern interpretation of long-standing principles in data analysis.&lt;/p&gt;
+
+&lt;p&gt;The transition from PCA and ICA to SSL represents a leap forward in our capacity to not just recognize but deeply comprehend patterns in data, opening new horizons in data science and beyond.&lt;/p&gt;
+
+&lt;h2 id=&quot;linking-the-past-with-the-present-personal-perspective&quot;&gt;Linking the past with the present: personal perspective&lt;/h2&gt;
+
+&lt;h3 id=&quot;my-encounter-withssl&quot;&gt;My encounter with SSL&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*WKF4iR5aQVEX9Mv73dsNPQ.png&quot; alt=&quot;Image representing the personal journey into Self-Supervised Learning (SSL), reflecting the transition from traditional methods like PCA and ICA to advanced SSL techniques in data science&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;My journey into the realm of Self-Supervised Learning (SSL) was like stepping into a new world, yet one that felt strangely familiar. I first encountered SSL while expanding my horizons in the ever-evolving landscape of data science. Coming from a background heavily influenced by PCA and ICA in computational biology, the leap to SSL was both intriguing and formidable.&lt;/p&gt;
+
+&lt;p&gt;Initially, SSL seemed like a puzzle. It promised a more nuanced understanding of data without the explicit need for labels, a concept that was both challenging and exciting and above all very familiar. This resonated with my earlier work where we often grappled with unlabeled biological datasets. SSL’s approach of learning from the data itself, finding patterns, and using them to build more robust models, was a game changer. It was like watching the evolution of my previous work in PCA and ICA but on a more intricate and expansive scale.&lt;/p&gt;
+
+&lt;h3 id=&quot;insights-from-the-recent-sotaarticles&quot;&gt;&lt;strong&gt;Insights from the recent SOTA articles&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;The insights from ICCV 2023, particularly the &lt;a href=&quot;https://bigmac-vision.github.io/&quot;&gt;BigMAC workshop,&lt;/a&gt; illuminated the recent strides in SSL. The workshop’s focus on large model adaptation for computer vision highlighted the challenges and opportunities arising from the increasing size and complexity of neural networks, especially in adapting them to novel tasks and domains​​.&lt;/p&gt;
+
+&lt;p&gt;Key talks such as Neil Houlsby’s on “&lt;a href=&quot;https://www.youtube.com/watch?v=ZwtMEF0u5cM&quot;&gt;Advances in Visual Pretraining for LLMs&lt;/a&gt;” emphasized the scalability of Vision Transformers and their growing visual capabilities, marking significant progress in visual pre-training​​. I&lt;a href=&quot;https://arxiv.org/abs/2111.06377&quot;&gt;shan Misra’s discussion&lt;/a&gt; on leveraging SSL for scaling multimodal models demonstrated how SSL can enhance model efficiency and improve foundational multimodal models, even in the context of scarce paired data​​.&lt;/p&gt;
+
+&lt;p&gt;The session on fine-tuning pretrained models revealed crucial insights into mitigating feature distortion, a challenge often overlooked but vital for preserving the robustness and accuracy of models​​. Additionally, talks on controlling large-scale text-to-image diffusion models like DALL-E 2 and Imagen offered perspectives on enhancing user control in the generation process, blending training-time and inference-time techniques​​.&lt;/p&gt;
+
+&lt;p&gt;These developments at ICCV 2023 underscored SSL’s dynamic evolution and its transition from traditional PCA and ICA methodologies to more sophisticated, nuanced models capable of deeper and more intuitive data understanding.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-future-of-multimodal-data-alignment-inbiology&quot;&gt;The future of multimodal data alignment in Biology&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*SodBq0lnsOvDWBNvSGjCVQ.png&quot; alt=&quot;Diagram or illustration related to the alignment of multimodal biological data using advanced AI techniques, showcasing concepts discussed at ICCV 2023 and models like I-JEPA.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the most exciting prospects brought to light at &lt;a href=&quot;https://openaccess.thecvf.com/ICCV2023?day=2023-10-04&quot;&gt;ICCV 2023&lt;/a&gt;, a conference rich in innovative ideas as evident in its proceedings, was the potential of AI in aligning multimodal biological data. The discussions led by pioneers like Yann LeCun, whose publications and &lt;a href=&quot;https://www.youtube.com/playlist?list=PL80I41oVxglK--is17UhoHVosOLFEJzKQ&quot;&gt;talks&lt;/a&gt; have been a personal beacon for me, particularly on AI models like &lt;a href=&quot;https://ai.meta.com/blog/yann-lecun-ai-model-i-jepa/&quot;&gt;I-JEPA&lt;/a&gt; for different modalities, opened up a new realm of possibilities. This approach could revolutionize how we handle complex biological datasets, like transcriptomes, microscopy images, immunoscores, single-cell data, and proteomics.&lt;/p&gt;
+
+&lt;p&gt;The idea of integrating these diverse data types using advanced SSL techniques is not just a technological leap; it’s a new way of thinking about biological research. Reflecting on my journey, where resources like “&lt;a href=&quot;https://www.nature.com/articles/d41586-018-02174-z&quot;&gt;Deep Learning for Biology&lt;/a&gt;” have been instrumental in understanding the application of deep learning in biology, I see how we’re transitioning from isolated data types to a holistic, interconnected understanding of life’s complexities. Likewise, the survey ‘&lt;a href=&quot;https://arxiv.org/abs/1705.09406&quot;&gt;Multimodal Machine Learning: A Survey and Taxonomy&lt;/a&gt;’ by Morency et al. has been enlightening in understanding the methodologies of multimodal data integration. These readings have not only informed my professional growth but have also mirrored the evolution of data science itself — from focusing on singular data types to embracing an integrated, multi-dimensional approach that resonates with my own professional evolution and reaffirms my belief in the transformative power of data science.&lt;/p&gt;
+
+&lt;h2 id=&quot;practical-implications-and-future-directions&quot;&gt;Practical implications and future directions&lt;/h2&gt;
+
+&lt;h3 id=&quot;applying-ssl-in-my-currentprojects&quot;&gt;Applying SSL in my current projects&lt;/h3&gt;
+
+&lt;p&gt;Integrating Self-Supervised Learning (SSL) into my work at Adevinta has been akin to embarking on an exhilarating expedition into uncharted territories of computer vision. Reding about models like &lt;a href=&quot;https://betterprogramming.pub/dinov2-the-new-frontier-in-self-supervised-learning-b3a939f6d533&quot;&gt;DINO v2&lt;/a&gt; and &lt;a href=&quot;https://arxiv.org/abs/2111.06377&quot;&gt;masked autoencoders&lt;/a&gt;, the versatility and transformative power of these tools continually astound me. In my role, which orbits primarily around vision classifiers and deep learning frameworks like TensorFlow and PyTorch, SSL has emerged not just as a tool but as a concept, enabling me to push for an operational paradigm shift for data users and ML/DS teams.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-boundless-horizon-ofssl&quot;&gt;The Boundless Horizon of SSL&lt;/h3&gt;
+
+&lt;p&gt;Peering into the future, I envision SSL as the an important advancement. Its prowess in harnessing the untapped potential of unlabeled data heralds a new era of possibilities. Imagine a world where SSL is the norm in data science, especially in data-rich yet label-poor realms like healthcare and finance. The implications are monumental.&lt;/p&gt;
+
+&lt;p&gt;Inspired by visionaries like Yann LeCun, the prospect of SSL in aligning disparate biological data types — from the intricate patterns of transcriptomics to the dynamic landscapes of proteomics — is not just exciting; it’s revolutionary. It’s akin to finding a Rosetta Stone in a sea of biological data, offering us a more integrated and nuanced understanding of complex systems.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-vanguard-of-computer-vision-ssls-transformative-role&quot;&gt;The vanguard of Computer Vision: SSL’s transformative role&lt;/h3&gt;
+
+&lt;p&gt;The realm of computer vision (CV) is undergoing a metamorphosis, thanks to SSL. The ICCV 2023 conference in Paris was a revelatory experience for me, showcasing the boundless potential of SSL in CV. It’s not just about big models and fine-tuning; it’s a paradigm shift in how we interact with visual data. Think of SSL combined with weak supervision as the new alchemists in the world of visual understanding.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/foundation-models-a-new-vision-for-e-commerce-76904a3066e8&quot;&gt;Foundation models&lt;/a&gt; in SSL, these behemoths of pre-trained knowledge, are poised to redefine tasks from image classification to the more intricate challenges of visual reasoning. Their true magic lies in their chameleon-like ability to adapt to specific tasks, offering unparalleled versatility and efficiency.&lt;/p&gt;
+
+&lt;h3 id=&quot;ssl-the-dawn-of-a-newera&quot;&gt;SSL, the dawn of a new era&lt;/h3&gt;
+
+&lt;p&gt;The journey of SSL is just beginning. Its evolution promises to be more than just incremental; it’s set to be revolutionary, reshaping how we approach, analyze, and derive meaning from data. The future of SSL, particularly in computer vision and the broader landscape of data science, is not just brimming with promise — it’s poised to be a transformative force.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;As I reflect on this odyssey from the structured realms of PCA and ICA during my Ph.D. at the Curie Institute, to the explorative and innovative universe of Self-Supervised Learning (SSL), it feels like an enlightening journey, threading together various phases of my life. This transition symbolizes more than a shift in methodologies; it represents a personal evolution in understanding and harnessing the power of data.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
+&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*HMFH9LJvEuar1UqaLl8kww.png&quot; alt=&quot;Image symbolizing the journey from traditional PCA and ICA to the modern landscape of Self-Supervised Learning (SSL), reflecting the personal and professional evolution in understanding and applying data science methodologies.&quot; /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Throughout this journey, several &lt;strong&gt;key learnings&lt;/strong&gt; stand out. Firstly, the importance of foundational understanding — the principles of PCA and ICA have been crucial in grasping the nuances of SSL. Secondly, adaptability and continuous learning are not just beneficial but essential in the ever-evolving field of data science. Lastly, interdisciplinary collaboration, as I experienced in Paris, has been invaluable, teaching me that diverse perspectives often lead to groundbreaking innovations.&lt;/p&gt;
+
+&lt;p&gt;Looking ahead, I foresee SSL playing a pivotal role in areas beyond its current applications. The integration of SSL with emerging technologies like quantum computing or augmented reality could open new frontiers in data analysis and interpretation. Additionally, as artificial intelligence becomes increasingly autonomous, SSL may become central in developing more intuitive, self-improving AI systems.&lt;/p&gt;
+
+&lt;p&gt;For the data science industry, the implications are vast. SSL’s ability to leverage unlabeled data will become increasingly crucial as data volumes grow exponentially. This could lead to more efficient data processing and a deeper understanding of complex patterns, significantly benefiting sectors like healthcare, finance, and environmental science. Moreover, as SSL continues to evolve, it will likely drive a shift towards more sophisticated, nuanced data analysis methods across the industry.&lt;/p&gt;
+
+&lt;p&gt;In my current role, exploring different facets of data science, including my recent involvement in computer vision at &lt;a href=&quot;https://adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, I’ve seen firsthand the transformative impact of SSL. It’s a vivid reminder that our expertise is always evolving, built upon the foundations of our past experiences.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To my readers, I share this journey as an encouragement to embrace the vast and varied landscape of data science. Let your experiences guide and inspire you to explore new territories. The application of SSL across different fields, including my own explorations in computer vision, demonstrates the exciting potential of integrating past knowledge with cutting-edge innovations.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In the ever-changing world of data science, our greatest strength lies in our willingness to learn and adapt. The path of learning is endless, and I am eager to see where our collective curiosity and innovation will lead us next.&lt;/p&gt;
+
+&lt;h3 id=&quot;recommended-reading&quot;&gt;Recommended reading:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2301.05712&quot;&gt;https://arxiv.org/abs/2301.05712&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/pdf/2201.12680v2.pdf&quot;&gt;https://arxiv.org/pdf/2201.12680v2.pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2305.13689&quot;&gt;https://arxiv.org/abs/2305.13689&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2305.00729&quot;&gt;https://arxiv.org/abs/2305.00729&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2111.06377&quot;&gt;https://arxiv.org/abs/2111.06377&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2301.08243&quot;&gt;https://arxiv.org/abs/2301.08243&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2304.07193&quot;&gt;https://arxiv.org/abs/2304.07193&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;my-relatedworks&quot;&gt;My related works&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PCA : &lt;a href=&quot;http://bioinfo-out.curie.fr/projects/dedal/&quot;&gt;DeDaL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;ICA: &lt;a href=&quot;https://urszulaczerwinska.github.io/DeconICA/&quot;&gt;DeconICA&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://urszulaczerwinska.github.io/UCzPhDThesis/&quot;&gt;PhD Thesis&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/foundation-models-a-new-vision-for-e-commerce-76904a3066e8&quot;&gt;Foundation models blog post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://urszulaczerwinska.github.io/about/&quot;&gt;about me&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on Jan 03
+    2024.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/@ulalaparis/from-pca-to-ssl-a-personal-odyssey-in-data-science-ba41ef311c5b&quot;&gt;View
+      the original&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 03 Jan 2024 00:00:00 +0100</pubDate>
+        <link>http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</guid>
         
         
         <category>thoughts</category>
@@ -890,8 +1170,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Tue, 19 Dec 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
         
         
         <category>thoughts</category>
@@ -1071,8 +1351,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/deep-dive-in-paddleocr-inference</link>
-        <guid isPermaLink="true">http://localhost:4000/works/deep-dive-in-paddleocr-inference</guid>
+        <link>http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</guid>
         
         <category>data science</category>
         
@@ -1216,8 +1496,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</link>
-        <guid isPermaLink="true">http://localhost:4000/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</guid>
+        <link>http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</guid>
         
         <category>data science</category>
         
@@ -1258,8 +1538,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 &lt;/html&gt;</description>
         <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/ner_cc</link>
-        <guid isPermaLink="true">http://localhost:4000/works/ner_cc</guid>
+        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
         
         <category>Machine Learning</category>
         
@@ -2276,8 +2556,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 &lt;/section&gt;
 </description>
         <pubDate>Sun, 01 Mar 2020 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/interpretability-shap</link>
-        <guid isPermaLink="true">http://localhost:4000/works/interpretability-shap</guid>
+        <link>http://urszulaczerwinska.github.io/works/interpretability-shap</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/interpretability-shap</guid>
         
         <category>data science</category>
         
@@ -2471,8 +2751,8 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;/section&gt;&lt;/section&gt;
 </description>
         <pubDate>Mon, 11 Nov 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/egg_ner</link>
-        <guid isPermaLink="true">http://localhost:4000/works/egg_ner</guid>
+        <link>http://urszulaczerwinska.github.io/works/egg_ner</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/egg_ner</guid>
         
         <category>NLP</category>
         
@@ -2485,271 +2765,6 @@ TOPIC SciPy&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
         <category>NER</category>
         
         <category>language models</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Women in Healthcare Analytics and Data Science (WiHADS)</title>
-        <description>&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta
-      name=&quot;description&quot;
-      content=&quot;Urszula Czerwinska orgnaiser of a meetup WiHADS | Join WiHADS, a pioneering community promoting women in data science, healthcare analytics, and deep learning AI. Explore opportunities to lead data science projects, engage with deep learning models, and shape the future of AI in healthcare.&quot;
-    /&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;&lt;/body&gt;
-  &lt;section&gt;
-    &lt;h2&gt;
-      Introduction: Empowering Women in Data Science and AI for Healthcare
-    &lt;/h2&gt;
-    &lt;p&gt;
-      In today’s rapidly evolving world, data science is driving innovation
-      across industries, particularly in healthcare where AI and deep learning
-      models are transforming patient outcomes. The
-      &lt;strong&gt;Women in Healthcare Analytics and Data Science (WiHADS)&lt;/strong&gt;
-      initiative is leading the charge, empowering women in data science to
-      spearhead crucial data science projects that are revolutionizing the
-      healthcare sector.
-    &lt;/p&gt;
-    &lt;h2&gt;The Beginnings of WiHADS: A Movement in Data Science and Healthcare&lt;/h2&gt;
-    &lt;p&gt;
-      WiHADS began in 2017, spearheaded by
-      &lt;a href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;&gt;Sameh Megrhi&lt;/a&gt;,
-      with a vision to amplify the voices of women in data science and
-      healthcare analytics.&lt;br /&gt;
-    &lt;/p&gt;
-
-    &lt;blockquote&gt;
-      &lt;p&gt;
-        The initiative was created to address the underrepresentation of women
-        in fields like deep learning models, data science and engineering, and
-        AI in healthcare. By highlighting the significant contributions of
-        women, WiHADS aims to inspire more women to enter and thrive in these
-        critical sectors.
-      &lt;/p&gt;
-      &lt;p&gt;
-        Since its inception, WiHADS has brought together a healthcare data
-        science community. The platform provides a space where women can share
-        their experiences and insights, fostering a collaborative environment
-        that encourages innovation in data science and machine learning. These
-        meetups are not just about discussions—they are about solving real-world
-        challenges using deep learning algorithms and data science
-        methodologies.
-      &lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;h2&gt;WiHADS Meetups: A Hub for Innovation in Data Science and Healthcare&lt;/h2&gt;
-    &lt;p&gt;
-      WiHADS meetups have become a central platform for women in data science to
-      exchange ideas, network, and discuss the latest trends in data science and
-      machine learning. Since 2017, WiHADS has organized four major meetups in
-      Paris, each focusing on the intersection of data science and healthcare.
-      These events have garnered attention within the data science community and
-      beyond, as they provide invaluable insights into how data science and deep
-      learning AI are transforming the healthcare industry.
-    &lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;b
-        &gt;Join us at
-        &lt;a
-          href=&quot;https://www.meetup.com/fr-FR/Healthcare-Analytics-Data-Science/&quot;
-          alt=&quot;The WiHADS meetups are place to exchange about woman in Data Science, Machine Learning and AI&quot;
-          &gt;our meetup webpage&lt;/a
-        &gt;&lt;/b
-      &gt;
-    &lt;/blockquote&gt;
-
-    &lt;h2&gt;Key Components of WiHADS Meetups:&lt;/h2&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Speakers:&lt;/strong&gt; The meetups feature accomplished women from
-        top companies like
-        &lt;a
-          alt=&quot;IQVIA, a global leader in clinical research and healthcare data, drives innovation to enhance patient and public health. By integrating data, insights, technology, and expertise, IQVIA empowers clients and partners to advance and market cutting-edge therapies.&quot;
-          href=&quot;https://www.iqvia.com/fr-fr/locations/france&quot;
-          &gt;IQvia&lt;/a
-        &gt;,
-        &lt;a
-          alt=&quot;Doctolib a leader in AI for healthcare.&quot;
-          href=&quot;https://about.doctolib.fr/?utm_button=header&amp;utm_website=doctolib_career%2F&quot;
-          &gt;Doctolib&lt;/a
-        &gt;, and
-        &lt;a
-          alt=&quot;Democratizing expert cardiac care through medical-grade AI and cloud technology&quot;
-          href=&quot;https://cardiologs.com/&quot;
-          &gt;Cardiologs&lt;/a
-        &gt;, who share their expertise on data science projects, deep learning
-        models, and their applications in healthcare. These sessions provide
-        attendees with a deeper understanding of how data science is applied in
-        real-world healthcare settings.
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;strong&gt;Opportunities:&lt;/strong&gt; The events offer a unique chance for
-        women in data science to connect, collaborate, and learn from each
-        other. This networking is crucial for building a strong data science and
-        engineering network that can support professional growth and innovation.
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;strong&gt;Roundtable Discussions:&lt;/strong&gt; After the presentations,
-        participants engage in roundtable discussions, where they explore the
-        ethical implications of AI in healthcare, the challenges of implementing
-        deep learning algorithms in medical practice, and the future of data
-        science in healthcare.
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;p&gt;
-      WiHADS is committed to fostering a supportive environment where women in
-      data science can thrive. The meetups are free to attend, thanks to the
-      generous support of sponsors like
-      &lt;a
-        alt=&quot;Doctolib a leader in AI for healthcare.&quot;
-        href=&quot;https://about.doctolib.fr/?utm_button=header&amp;utm_website=doctolib_career%2F&quot;
-        &gt;Doctolib&lt;/a
-      &gt;,
-      &lt;a
-        alt=&quot;IQVIA, a global leader in clinical research and healthcare data, drives innovation to enhance patient and public health. By integrating data, insights, technology, and expertise, IQVIA empowers clients and partners to advance and market cutting-edge therapies.&quot;
-        href=&quot;https://www.iqvia.com/fr-fr/locations/france&quot;
-        &gt;IQvia&lt;/a
-      &gt;, and
-      &lt;a
-        alt=&quot;Saegus is supporting businesses in their transition to a combined intelligence model, where artificial intelligence serves humanity&quot;
-        href=&quot;https://www.saegus.com/&quot;
-        &gt;Saegus&lt;/a
-      &gt;, who believe in the importance of promoting diversity in data science
-      and AI.
-    &lt;/p&gt;
-
-    &lt;h2&gt;The Vision Behind WiHADS: Promoting Women in Data Science&lt;/h2&gt;
-    &lt;p&gt;
-      The driving force behind WiHADS is the belief that women have a critical
-      role to play in the future of data science and healthcare. With a
-      background in systems biology and extensive experience in machine learning
-      within academia and the pharmaceutical industry, I joined WiHADS in 2018
-      to promote the visibility of women in these fields. My goal was to build a
-      platform where women could not only showcase their achievements in data
-      science and AI in healthcare but also mentor and support one another.
-      Working alongside
-      &lt;a
-        alt=&quot;Data scientist Sameh Megrhi is one of leaders in Machine Learning&quot;
-        href=&quot;https://www.linkedin.com/in/sameh-m-8575a3179/&quot;
-        &gt;Sameh Megrhi&lt;/a
-      &gt;,&lt;a
-        alt=&quot;Imen Helali working in Healthcare and Pharmaceutics is highly motivated promote Healthcare and Data Science fields&quot;
-        href=&quot;https://www.linkedin.com/in/imen-helali-phd-a6a4222b/&quot;
-      &gt;
-        Imen Helali&lt;/a
-      &gt;
-      and
-      &lt;a
-        atl=&quot;Young data science professional Avani Tanna is promoting woman in tech importance&quot;
-        href=&quot;https://www.linkedin.com/in/avani-tanna-b20b8a77/&quot;
-        &gt;Avani Tanna&lt;/a
-      &gt;, we crafted a unique meetup format that balances expert presentations
-      with interactive, community-driven discussions. Our vision is to create a
-      vibrant healthcare data science community where women can gain the skills
-      and confidence needed to lead impactful data science projects.
-    &lt;/p&gt;
-    &lt;h2&gt;The Impact of WiHADS on the Healthcare Data Science Community&lt;/h2&gt;
-    &lt;p&gt;
-      WiHADS has had a profound impact on the healthcare data science community
-      by providing a platform that not only highlights the achievements of women
-      but also encourages ongoing education and professional development. The
-      meetups have sparked important conversations about the future of data
-      science in healthcare and the role of deep learning AI in improving
-      patient care. Through WiHADS, we have seen an increase in the number of
-      women pursuing careers in data science and machine learning, particularly
-      in the healthcare sector. By offering opportunities for mentorship,
-      networking, and skill development, WiHADS is helping to close the gender
-      gap in data science and ensure that women are well-represented in the
-      future of AI in healthcare.
-    &lt;/p&gt;
-    &lt;h2&gt;
-      Get Involved with WiHADS: Join the Movement in Data Science and Healthcare
-    &lt;/h2&gt;
-    &lt;p&gt;
-      Whether you are an experienced data scientist or just beginning your
-      journey in data science and machine learning, WiHADS offers a welcoming
-      community where you can grow, learn, and contribute. There are many ways
-      to get involved with WiHADS and become part of this exciting movement.
-    &lt;/p&gt;
-    &lt;h2&gt;Ways to Participate:&lt;/h2&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;strong&gt;Attend a Meetup:&lt;/strong&gt;Join us at our next event to connect
-        with fellow professionals and learn about the latest developments in
-        data science and deep learning models for healthcare. Stay updated on
-        upcoming events by visiting our
-        &lt;a
-          alt=&quot;Join WiHADS, a pioneering community promoting women in data science, healthcare analytics, and deep learning AI. Explore opportunities to lead data science projects, engage with deep learning models, and shape the future of AI in healthcare.&quot;
-          href=&quot;https://www.meetup.com/fr-FR/Healthcare-Analytics-Data-Science/&quot;
-          &gt;Meetup page&lt;/a
-        &gt;.
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;strong&gt;Become a Speaker:&lt;/strong&gt; Share your knowledge and experience
-        in data science projects or deep learning algorithms by speaking at one
-        of our meetups. We are always looking for new voices to contribute to
-        our discussions on AI in healthcare.
-      &lt;/li&gt;
-
-      &lt;li&gt;
-        &lt;strong&gt;Sponsor an Event:&lt;/strong&gt; Help us continue to provide free,
-        high-quality events by sponsoring a WiHADS meetup. Your support will
-        enable us to reach more women in data science and expand our impact in
-        the healthcare industry.
-      &lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h2&gt;Conclusion: Shaping the Future of Data Science in Healthcare&lt;/h2&gt;
-    &lt;p&gt;
-      As we look to the future, data science and AI will continue to shape
-      healthcare, and WiHADS is committed to ensuring that women in tech are at
-      the forefront of this transformation. By joining us, you’re becoming part
-      of a powerful movement dedicated to advancing deep learning algorithms and
-      data science in healthcare. Together, we can lead the way in pioneering
-      solutions that enhance patient care and drive innovation
-
-      &lt;p&gt;&lt;strong&gt;Contact Us:&lt;/strong&gt; If you&apos;re interested in hosting a meetup or
-      sponsoring an event, please reach out to us. We look forward to welcoming
-      you to the WiHADS community.&lt;/p&gt;
-    &lt;/p&gt;
-    &lt;span class=&quot;image fit&quot;
-      &gt;&lt;img
-        src=&quot;/images/wihads3.jpeg&quot;
-        alt=&quot;Group of women leaders in healthcare analytics and data science at a WiHADS meetup, fostering innovation in data science, deep learning AI, and healthcare.&quot;
-        width=&quot;70%&quot;
-    /&gt;&lt;/span&gt;
-
-    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-    &lt;script
-      type=&quot;text/javascript&quot;
-      src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;
-    &gt;&lt;/script&gt;
-    &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt;
-    &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-  &lt;/section&gt;
-&lt;/html&gt;
-</description>
-        <pubDate>Tue, 01 Oct 2019 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/women-healthcare-data-science-analytics-wihads</link>
-        <guid isPermaLink="true">http://localhost:4000/works/women-healthcare-data-science-analytics-wihads</guid>
-        
-        <category>data science</category>
-        
-        <category>events</category>
-        
-        <category>healthcare</category>
-        
-        <category>networking</category>
         
         
         <category>works</category>
