@@ -38,8 +38,8 @@ here is a list of mamba papers : [https://github.com/yyyujintang/Awesome-Mamba-
 This paper is the first to introduce the Mamba architecture. Mamba offers faster inference, linear scaling with sequence length, and strong performance.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*aPbcg2rPGh68SViRpTi21Q.png)
-![](https://cdn-images-1.medium.com/max/800/1*bAj0TMSgZetUghDij6U-zA.png)
+![Deep learing mamaba model schema](https://cdn-images-1.medium.com/max/800/1*aPbcg2rPGh68SViRpTi21Q.png)
+![Mamba model illustration of architecture](https://cdn-images-1.medium.com/max/800/1*bAj0TMSgZetUghDij6U-zA.png)
 </span>
 
 **What’s New**
@@ -84,7 +84,7 @@ The key contribution of the paper lies in the novel implementation of **Selectiv
 The paper introduces a novel model in the field of sequential modeling.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*wCH-77Q_ThqTubu4H-Sl9w.png)
+![MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts](https://cdn-images-1.medium.com/max/800/1*wCH-77Q_ThqTubu4H-Sl9w.png)
 </span>
 
 **Introduction:** The paper presents MoE-Mamba, a model that integrates State Space Models (SSMs) with Mixture of Experts (MoE) to enhance sequential modeling. This combination aims to leverage the strengths of both SSMs, known for their efficient performance, and MoE, a technique for scaling up models efficiently.
@@ -111,7 +111,7 @@ The paper introduces a novel model in the field of sequential modeling.
 This design choice enables MoE-Mamba to leverage the conditional processing capabilities of MoE and the context integration of Mamba. By alternating between unconditional processing by the Mamba layer and conditional processing by a MoE layer, MoE-Mamba achieves a balance between efficient state compression and selective information retention.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*hsiJ04bKp4QspHpyFmrApw.png)
+![Integration of MoE layers into the Mamba architecture](https://cdn-images-1.medium.com/max/800/1*hsiJ04bKp4QspHpyFmrApw.png)
 </span>
 
 Authors also investigate a unified Mamba module containg MoE
@@ -125,7 +125,7 @@ Authors also investigate a unified Mamba module containg MoE
 #biomedical #segmentation #cv
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*RM4DAO5rm5n7kE79iWtw_w.png)
+![U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation](https://cdn-images-1.medium.com/max/800/1*RM4DAO5rm5n7kE79iWtw_w.png)
 </span>
 
 This paper presents an innovative network architecture for biomedical image segmentation.
@@ -177,7 +177,7 @@ The U-Mamba architecture follows the encoder-decoder pattern of U-Net, known for
 #computervision #classification #segmentation
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*D6KVLVs8MJYnd_DBCDUKuw.png)
+![Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model](https://cdn-images-1.medium.com/max/800/1*D6KVLVs8MJYnd_DBCDUKuw.png)
 </span>
 
 Vim utilizes bidirectional State Space Models (SSMs) to process image sequences.
@@ -235,8 +235,8 @@ It dethrones Vim just the next day of Vim publication.
 **Why it matters:** VMamba’s approach combines the strengths of CNNs and ViTs and on the top it is computationally efficient.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*F7uFR9RPyq4bDvrO4a3Ycg.png)
-![](https://cdn-images-1.medium.com/max/800/1*yK0hfDpKYFnGk0NupiBHXg.png)
+![VMamba: Visual State Space Model](https://cdn-images-1.medium.com/max/800/1*F7uFR9RPyq4bDvrO4a3Ycg.png)
+![VMamba has a unique architecture: integrates global receptive fields and dynamic weights within a linear computational complexity framework](https://cdn-images-1.medium.com/max/800/1*yK0hfDpKYFnGk0NupiBHXg.png)
 </span>
 
 
@@ -247,7 +247,7 @@ It dethrones Vim just the next day of Vim publication.
 **VMamba’s 2D Selective Scan** operates by dynamically adjusting weights based on the importance of different areas in an image. This process involves an algorithm that assesses each pixel’s contribution to the target task. The scan prioritizes regions with higher information content, therefore it reduces computational load on less relevant areas. This method contrasts with traditional approaches where all pixels are treated equally. Which also leads to higher computational costs.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/1200/1*Ajt_aoa_ElU82EEXM63n2g.jpeg)
+![VMamba’s 2D Selective Scan](https://cdn-images-1.medium.com/max/1200/1*Ajt_aoa_ElU82EEXM63n2g.jpeg)
 </span>
 
 **_Vim vs VMamba_**
@@ -326,7 +326,7 @@ This model is token-free, directly learning from raw bytes and bypassing the bia
 A framework for medical video object segmentation, focusing on addressing challenges in long-sequence modeling in video analysis. It uses a Temporal Mamba Block, which allows the model to obtain excellent segmentation results with improved speed performance compared to existing methods.
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*uqxFkqdGvoi3vf7opR57mQ.png)
+![Vivim: a Video Vision Mamba for Medical Video Object Segmentation](https://cdn-images-1.medium.com/max/800/1*uqxFkqdGvoi3vf7opR57mQ.png)
 </span>
 
 **What’s New:** Vivim integrates the Mamba model into a multi-level transformer architecture, transforming video clips into feature sequences containing spatiotemporal information at various scales.
@@ -360,7 +360,7 @@ A framework for medical video object segmentation, focusing on addressing challe
 #biomedical
 
 <span class="image fit">
-![](https://cdn-images-1.medium.com/max/800/1*QNfM9VLXeYFlpF57yU69Ag.png)
+![MambaMorph: a Mamba-based Backbone with Contrastive Feature Learning for Deformable MR-CT Registration](https://cdn-images-1.medium.com/max/800/1*QNfM9VLXeYFlpF57yU69Ag.png)
 </span>
 
 A multi-modality deformable registration network designed specifically for aligning Magnetic Resonance (MR) and Computed Tomography (CT) images.
