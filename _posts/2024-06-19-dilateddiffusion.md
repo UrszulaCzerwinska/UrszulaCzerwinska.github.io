@@ -18,6 +18,7 @@ description: "Discover how DemoFusion's dilated diffusion transforms AI image ge
 **TDLR:** see demo of dilated diffusion [in a collab](https://colab.research.google.com/drive/1gHCjibaI91a50bXjYbemUE7khRdZmyle?usp=sharing)
 
 <span class="image fit">
+
 ![Graphical representation of dilated sampling in stable diffusion Unicorn diffusion art](https://cdn-images-1.medium.com/max/800/0*ZPCdjBebme6X_8-0.png)
 </span>
 

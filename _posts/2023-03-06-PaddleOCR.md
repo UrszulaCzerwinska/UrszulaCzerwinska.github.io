@@ -1,5 +1,5 @@
 ---
-priority: 0.9
+priority: 0.5
 title: Deep Dive in PaddleOCR inference
 excerpt: Discover the complexities of using PaddleOCR as a Text in Image service and how the Cognition team overcame the challenges to improve user experience
 permalink: /works/deep-dive-in-paddleocr-inference

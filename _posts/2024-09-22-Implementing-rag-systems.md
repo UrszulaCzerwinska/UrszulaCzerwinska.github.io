@@ -1,11 +1,11 @@
 ---
 priority: 0.9
-title: GenAI Workshop: Insights on implementing RAG in production environments
+title: GenAI Workshop - Insights on implementing RAG in production environments
 excerpt: My experience with Generative AI and Retrieval-Augmented Generation through a hands-on workshop.
 permalink: /works/genai-workshop-implementation
 categories: works
 background-image: genai-course-background.jpg
-published: false
+date: 2024-09-22
 tags:
   - GenerativeAI
   - RAG

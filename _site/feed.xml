@@ -3,14 +3,581 @@
   <channel>
     <title>Urszula Czerwinska | Python, TensorFlow Expert | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
-    <link>http://urszulaczerwinska.github.io/</link>
-    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Sep 2024 09:49:10 +0200</pubDate>
-    <lastBuildDate>Fri, 27 Sep 2024 09:49:10 +0200</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 14 May 2025 17:43:11 +0200</pubDate>
+    <lastBuildDate>Wed, 14 May 2025 17:43:11 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
-        <title></title>
+        <title>How to choose the best image embeddings for your e-commerce business ?</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*eSwizQN9nC4jaMvw&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine uploading a picture of a designer lamp and instantly finding similar items on &lt;em&gt;Leboncoin&lt;/em&gt;. You don’t need imagine any longer, you can go to &lt;em&gt;Leboncoin&lt;/em&gt; app and try it out by youself ! &lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*O_hLOiIUpaZTmRxGTUluuQ.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This magic happens because AI converts images into &lt;strong&gt;embeddings&lt;/strong&gt; — compact numerical representations that capture the essential features of an image. These embeddings can be used for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Image Search:&lt;/strong&gt; Finding visually similar products&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Product Categorization:&lt;/strong&gt; Automatically tagging and sorting listings&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Image classification:&lt;/strong&gt; Detect catgory, weight range, color…&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recommendations:&lt;/strong&gt; Suggesting related products to users&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But not all embeddings are created equal. F&lt;strong&gt;oundation models aren’t optimized for e-commerce out of the box&lt;/strong&gt;. You need to decide whether to fine-tune them, use them as-is, or apply a lightweight tuning approach. &lt;strong&gt;So, which strategy is best?&lt;/strong&gt; That’s exactly what we set out to benchmark.&lt;/p&gt;
+
+&lt;p&gt;You can find the full article accepted for “&lt;a href=&quot;https://saiconference.com/FTC&quot;&gt;Future Technologies Conference (FTC) 2025&lt;/a&gt;” that will happen in Munich, Germany 6–7 November 2025 on arxiv at &lt;a href=&quot;https://arxiv.org/abs/2504.07567&quot;&gt;this link&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Come to say hi if you are attending, &lt;a href=&quot;https://www.linkedin.com/in/jeremychamoux/&quot;&gt;Jeremy Chamoux&lt;/a&gt; will present our work there.&lt;/p&gt;
+
+&lt;p&gt;FTC is the world’s pre-eminent forum for reporting research breakthroughs in Artificial Intelligence, Robotics, Data Science, Computing, Ambient Intelligence and related fields. It has emerged as the foremost world-wide gathering of academic researchers, Ph.D. &amp;amp; graduate students, top research think tanks &amp;amp; industry technology developers.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-challenge-finding-the-best-ai-model-for-thejob&quot;&gt;The challenge: Finding the best AI model for the job&lt;/h3&gt;
+
+&lt;p&gt;There’s no shortage of AI models that can generate image embeddings. Some are designed for &lt;strong&gt;general-purpose vision tasks&lt;/strong&gt;, while others specialize in &lt;strong&gt;e-commerce or multimodal learning (combining images and text).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*YnrSr_AmE29Eg7jWLYD5-A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;To determine the best approach for &lt;em&gt;Leboncoin’s&lt;/em&gt; marketplace, we benchmarked three main types of AI models:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervised Learning Models:&lt;/strong&gt; Trained on labeled data (e.g., images explicitly tagged with categories).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ConvNext&lt;/li&gt;
+  &lt;li&gt;ResNet&lt;/li&gt;
+  &lt;li&gt;ViT&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Self-Supervised Learning (SSL) Models:&lt;/strong&gt; Learn patterns without labeled data, making them more flexible.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DINO&lt;/li&gt;
+  &lt;li&gt;DINOv2&lt;/li&gt;
+  &lt;li&gt;Maws&lt;/li&gt;
+  &lt;li&gt;MAE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Contrastive Learning Models (Text-Image):&lt;/strong&gt; Models like CLIP, which link images to text descriptions for richer representations.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CLIP (different versions with pretraining)&lt;/li&gt;
+  &lt;li&gt;SigLIP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also tested different &lt;strong&gt;supervised&lt;/strong&gt; &lt;strong&gt;fine-tuning strategies&lt;/strong&gt; to see whether adapting these models to e-commerce data would improve results.&lt;/p&gt;
+
+&lt;p&gt;Selecting these models families we also had in mind the possible adaption work we planned to conduct as a next step. &lt;/p&gt;
+
+&lt;p&gt;Adapting different models family requires different input data, for supervised learning we would need images and labels on a task making model learn information generic enough to reuse for different applications, for contrastive learning we would need image caption(s) pairs, while for self-supervised learning just images would be enough (which would allow us to leverage Tb of images).&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*0lI1KyCIzWdHSfbrehN9AA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-we-tested-ai-models-on-e-commerce-data&quot;&gt;How we tested AI models on e-commerce data&lt;/h3&gt;
+
+&lt;p&gt;To ensure a fair comparison, we evaluated AI models on &lt;strong&gt;six real-world e-commerce datasets&lt;/strong&gt; covering different product categories:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*lJg5nMhonkm4tdkWVz47QQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;key-experiments-weran&quot;&gt;Key experiments we ran&lt;/h3&gt;
+
+&lt;p&gt;Each AI model was tested on two core tasks:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Product Classification:&lt;/strong&gt; Can the AI correctly categorize images into predefined product types?&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Image Retrieval:&lt;/strong&gt; Given a query image, can the AI find the most visually similar products (where similarity is defined as from the same category)?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;For retrieval, we used &lt;strong&gt;vector search&lt;/strong&gt; (storing embeddings in a database and finding nearest neighbors) with Millvus and evaluated the models using industry-standard ranking metrics like &lt;strong&gt;Mean Average Precision (MAP)&lt;/strong&gt; and &lt;strong&gt;Recall@K&lt;/strong&gt; (how often the correct product appears in the top results).&lt;/p&gt;
+
+&lt;h3 id=&quot;understanding-image-embeddings-the-three-main-approaches&quot;&gt;Understanding image embeddings: The three main approaches&lt;/h3&gt;
+
+&lt;p&gt;When working with image-based AI in e-commerce, you have &lt;strong&gt;three primary choices&lt;/strong&gt; for generating embeddings:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-pre-trained-embeddings-off-the-shelf-models&quot;&gt;1. Pre-trained embeddings (Off-the-shelf models)&lt;/h3&gt;
+
+&lt;p&gt;These embeddings come from large-scale models trained on general-purpose datasets like &lt;strong&gt;ImageNet&lt;/strong&gt;. Examples include:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;
+- No training required — just use them as-is
+- Works well for general image understanding
+- Ideal for companies with limited ML expertise&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;
+- May not capture e-commerce-specific nuances (e.g., distinguishing a luxury bag from a knockoff)
+- Suboptimal performance in fine-grained product categorization&lt;/p&gt;
+
+&lt;h3 id=&quot;2-fully-fine-tuned-embeddings-training-on-your-owndata&quot;&gt;2. Fully fine-tuned embeddings (Training on your own data)&lt;/h3&gt;
+
+&lt;p&gt;Fine-tuning means &lt;strong&gt;adapting a pre-trained model to your specific e-commerce dataset&lt;/strong&gt; by updating all of its parameters. This makes the embeddings &lt;strong&gt;highly specialized&lt;/strong&gt; for tasks like product classification or search.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;
+- Best accuracy for domain-specific tasks
+- Captures subtle differences in product categories&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;
+- Computationally expensive (requires GPUs, storage, and time)
+- Risk of overfitting, especially with small datasets
+- Requires ML expertise to tune hyperparameters effectively&lt;/p&gt;
+
+&lt;h3 id=&quot;3-top-tuned-embeddings-the-sweet-spot-for-e-commerce&quot;&gt;3. Top-tuned embeddings (The sweet spot for e-commerce)&lt;/h3&gt;
+
+&lt;p&gt;Top-tuning is a middle ground: instead of fine-tuning the entire model, we &lt;strong&gt;freeze the base layers and only train a lightweight classifier on top&lt;/strong&gt;. This is much cheaper than full fine-tuning but can still provide a performance boost.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt;
+- Significant improvement over pre-trained models
+- Requires far fewer resources than full fine-tuning
+- Faster to deploy in production&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt;
+- Not always as strong as fully fine-tuned models for classification tasks
+- Still requires some labeled data for training&lt;/p&gt;
+
+&lt;h3 id=&quot;key-results&quot;&gt;Key results&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*qbKsOd8pSZsMzj8qmm2P6Q.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*erow3Ys7hQrfzkGZ&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;1-different-model-types-excel-in-different-scenarios&quot;&gt;1. Different Model Types Excel in Different Scenarios&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Supervised fine-tuned models&lt;/strong&gt; (e.g., ConvNeXt-Base, ViT-B) achieve &lt;strong&gt;the highest accuracy&lt;/strong&gt; but require &lt;strong&gt;significant computational resources&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Self-supervised models (SSL)&lt;/strong&gt; (e.g., DINO-ViT, MAWS-ViT) show &lt;strong&gt;high variance&lt;/strong&gt;, making them &lt;strong&gt;less stable&lt;/strong&gt; but useful with &lt;strong&gt;top-tuning&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Contrastive text-image models&lt;/strong&gt; (e.g., SigLIP, Marqo, Apple CLIP) &lt;strong&gt;excel in retrieval tasks&lt;/strong&gt; with minimal adaptation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Top-tuned models&lt;/strong&gt; add lightweight layers to pre-trained models, often &lt;strong&gt;matching full fine-tuning&lt;/strong&gt; while reducing compute costs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Cross-tuned models&lt;/strong&gt;, trained on one dataset and used on another, show &lt;strong&gt;mixed results&lt;/strong&gt;, performing well only when datasets share characteristics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-convnext-base-leads-in-supervised-fine-tuning&quot;&gt;2. ConvNeXt-Base Leads in Supervised Fine-Tuning&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ConvNeXt-Base achieved 93% accuracy&lt;/strong&gt;, outperforming &lt;strong&gt;ViT-B and DINO-ResNet50 by 3.6%&lt;/strong&gt; in classification tasks.&lt;/li&gt;
+  &lt;li&gt;It also dominated retrieval performance on &lt;strong&gt;Cars196, SOP, and Fashion&lt;/strong&gt;, but struggled on &lt;strong&gt;Product-10k&lt;/strong&gt;, where &lt;strong&gt;ViT-B excelled&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;3-vit-models-offer-strong-generalization&quot;&gt;3. ViT Models Offer Strong Generalization&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ViT-base performed consistently well across datasets&lt;/strong&gt;, balancing accuracy and efficiency.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ViT-large, despite being 4.6× more expensive to train than ViT-B, underperformed&lt;/strong&gt;, suggesting dataset size impacts ViT-L’s effectiveness.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;4-self-supervised-learning-ssl-shows-highvariance&quot;&gt;4. Self-Supervised Learning (SSL) Shows High Variance&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;DINO-ViT-B and MAWS-ViT-B showed competitive performance&lt;/strong&gt;, but SSL models exhibited &lt;strong&gt;10× higher variance&lt;/strong&gt; than supervised models.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DINOv2 was the best-performing SSL model&lt;/strong&gt;, but overall, SSL models were less stable without additional fine-tuning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*a4akPXoge0Vcgjhw6M2xoQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;5-contrastive-text-image-models-excel-in-retrieval&quot;&gt;5. Contrastive Text-Image Models Excel in Retrieval&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;SigLIP achieved state-of-the-art retrieval performance&lt;/strong&gt; across five of six datasets, proving its versatility.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Marqo performed strongly, particularly in Product-10k, SOP, and Fashion datasets&lt;/strong&gt;, highlighting its effectiveness for fine-grained retrieval but in image-image retrieval it did not beat SigLip (while &lt;a href=&quot;https://www.marqo.ai/blog/introducing-marqos-ecommerce-embedding-models&quot;&gt;according to authors&lt;/a&gt; it beats SigLip on text-image benchmark).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Apple CLIP ranked among the top models&lt;/strong&gt;, excelling in &lt;strong&gt;RP2K and retrieval-heavy tasks&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*vYtN_0ZUPq2DGUU6KGGrxQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;6-fine-tuning-is-crucial-but-not-always-necessary&quot;&gt;6. Fine-Tuning is Crucial, But Not Always Necessary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Fine-tuning significantly improves retrieval accuracy&lt;/strong&gt;, often &lt;strong&gt;matching or surpassing previous state-of-the-art (SOTA) benchmarks&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Top-Tuning&lt;/strong&gt; (adding lightweight layers) &lt;strong&gt;boosts self-supervised and text-image models&lt;/strong&gt;, often matching full fine-tuning at &lt;strong&gt;a fraction of the computational cost&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*Pq7CdxIxckhlUexbRGOvjw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;7-top-tuning-shows-the-biggest-gains-for-sslmodels&quot;&gt;7. Top-Tuning Shows the Biggest Gains for SSL Models&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Self-supervised models saw a 5% average performance boost&lt;/strong&gt; with top-tuning, sometimes &lt;strong&gt;matching fully fine-tuned models&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;However, &lt;strong&gt;DINO-ResNet50 and MAE models saw performance drops&lt;/strong&gt; with top-tuning, showing that its effectiveness depends on architecture.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JnxLfvfeZjsV35Zauq6IgA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;8-cross-tuning-is-dataset-dependent&quot;&gt;8. Cross-Tuning is Dataset-Dependent&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Cross-tuned models struggled on dissimilar datasets&lt;/strong&gt;, with performance dropping &lt;strong&gt;up to -0.5 mMP@5&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;However, &lt;strong&gt;Cars196 fine-tuned models transferred well to RP2K&lt;/strong&gt;, suggesting that dataset &lt;strong&gt;specialization plays a key role in cross-tuning success&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;9-training-time-trade-offs-matter&quot;&gt;9. Training Time Trade-Offs Matter&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;ConvNeXt and ViT-Large require the longest training times&lt;/strong&gt;, making them less ideal for rapid deployment.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ViT-B and ResNet50 offer strong performance with much faster training&lt;/strong&gt;, making them efficient choices.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;practical-recommendations-for-e-commerce-ai&quot;&gt;Practical recommendations for e-commerce AI&lt;/h3&gt;
+
+&lt;p&gt;After humndreds of tests, here’s what we recommend for online marketplaces:&lt;/p&gt;
+
+&lt;h3 id=&quot;for-visual-search--recommendations&quot;&gt;For Visual Search &amp;amp; Recommendations&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use top-tuned contrastive models like SigLIP&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=&amp;gt; They perform best in image retrieval, even without labeled data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Pretrained contrastive models (like CLIP) perform surprisingly well retrieval.&lt;/strong&gt;
+These models, originally trained for multimodal tasks, excel at &lt;strong&gt;image-to-image retrieval&lt;/strong&gt; without requiring domain-specific fine-tuning. This makes them ideal for visual search applications.&lt;/p&gt;
+
+&lt;h3 id=&quot;for-auto-tagging--categorization&quot;&gt;For auto-tagging &amp;amp; categorization&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use fully fine-tuned supervised models (ViT, ConvNeXt) when accuracy is critical&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=&amp;gt; This is ideal for structured catalogs where precision matters.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fine-tuning is powerful but costly.&lt;/strong&gt;
+Fully fine-tuned models perform the best but require &lt;strong&gt;significant computational resources&lt;/strong&gt;. If you have a dedicated ML team and the budget, this is the best approach for classification tasks.&lt;/p&gt;
+
+&lt;h3 id=&quot;for-fast--cost-effective-ai-deployment&quot;&gt;For fast &amp;amp; cost-effective AI deployment&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use pre-trained SSL models with top-tuning&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=&amp;gt; They provide flexibility while keeping computational costs low.&lt;/p&gt;
+
+&lt;p&gt;Applying a lightweight classifier on frozen embeddings provides a &lt;strong&gt;3.9%–5.0% improvement&lt;/strong&gt; over pre-trained models while using a fraction of the compute required for full fine-tuning.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Takeaway:&lt;/strong&gt; If you need a quick performance boost without massive compute costs, &lt;strong&gt;top-tuning is the way to go.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;for-cross-domain-adaptation-eg-fashion--generalretail&quot;&gt;For cross-domain adaptation (e.g., Fashion → General Retail)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Use cross-tuned models (trained on one dataset, applied to another)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=&amp;gt; This works well when datasets share similar characteristics.&lt;/p&gt;
+
+&lt;p&gt;Adapting embeddings from one dataset to another only works well when the datasets have &lt;strong&gt;similar characteristics&lt;/strong&gt;. Otherwise, performance can degrade significantly.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-this-means-for-leboncoin&quot;&gt;What this means for Leboncoin&lt;/h3&gt;
+
+&lt;p&gt;At &lt;em&gt;Leboncoin&lt;/em&gt;, this research helps us make &lt;strong&gt;data-driven decisions on AI adoption&lt;/strong&gt; for improving product search, recommendations, and categorization. By choosing the right AI models, we can:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Deliver better models&lt;/strong&gt; exploiting users images.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Optimize AI costs&lt;/strong&gt; by using efficient training strategies.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Guide ML teams&lt;/strong&gt; towards most effective strategy for the embeddings choice&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This study confirms that &lt;strong&gt;choosing the right image embedding strategy can significantly impact e-commerce performance &amp;amp; ml time to market&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;💡 &lt;strong&gt;If your business relies on image-based search, classification, or recommendations, investing in contrastive embeddings and lightweight tuning is a no-brainer.&lt;/strong&gt; It delivers high accuracy while keeping computational costs in check.&lt;/p&gt;
+
+&lt;p&gt;If you’re working on &lt;strong&gt;image search, retrieval, or classification in e-commerce&lt;/strong&gt;, what’s been your experience? Let’s discuss in the comments&lt;/p&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on April 13,
+    2025.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/leboncoin-tech-blog/how-to-choose-the-best-image-embeddings-for-your-e-commerce-business-8006f17b495a&quot;&gt;View
+      the original. This article was orignally co-authored by Cognition team members and published by LeboncoinTech&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Sun, 13 Apr 2025 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/works/foundation-models-image-embeddings</link>
+        <guid isPermaLink="true">http://localhost:4000/works/foundation-models-image-embeddings</guid>
+        
+        <category>FoundationModels</category>
+        
+        <category>ComputerVision</category>
+        
+        <category>DeepLearning</category>
+        
+        <category>AI</category>
+        
+        <category>Embeddings</category>
+        
+        <category>featured</category>
+        
+        
+        <category>works</category>
+        
+      </item>
+    
+      <item>
+        <title>Beyond denoising - rethinking inference-time scaling in diffusion models</title>
+        <description>&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*p3GtIq_UgFgPA7ObBMaITw.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Generative AI is experiencing a paradigm shift. While early breakthroughs in diffusion models emphasized &lt;strong&gt;training-time scaling&lt;/strong&gt; — bigger models, more data, and longer training — recent research suggests that &lt;strong&gt;inference-time scaling&lt;/strong&gt; might be an equally powerful lever for improving generation quality. Unlike static architectures, diffusion models offer the unique ability to allocate compute dynamically during sampling, yet standard techniques (like increasing denoising steps) hit diminishing returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/2501.09732&quot;&gt;Maq et al. (2025)&lt;/a&gt; challenge this bottleneck, proposing that inference-time compute should be viewed not as a simple iteration counter but as a &lt;strong&gt;search problem&lt;/strong&gt; — one where strategically refining injected noise can unlock better outputs. This perspective fundamentally reframes how we think about sample generation, drawing intriguing parallels with &lt;strong&gt;search-driven optimizations in Large Language Models (LLMs)&lt;/strong&gt;, such as tree-of-thoughts prompting or best-of-n decoding.&lt;/p&gt;
+
+&lt;p&gt;Are we witnessing the emergence of an &lt;strong&gt;active generation paradigm&lt;/strong&gt;, where models don’t just passively map noise to images but dynamically explore pathways to the best output?&lt;/p&gt;
+
+&lt;h3 id=&quot;why-scaling-matters-in-generative-ai&quot;&gt;Why scaling matters in Generative AI&lt;/h3&gt;
+
+&lt;p&gt;Let me introduce some context first.&lt;/p&gt;
+
+&lt;p&gt;The success of &lt;strong&gt;large generative models&lt;/strong&gt; — whether in text (LLMs like GPT-4), images (Stable Diffusion, DALL·E), or even video and audio — rests on a simple but powerful idea:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;More compute → Better results.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This principle, known as &lt;strong&gt;scaling laws&lt;/strong&gt;, tells us that as we increase &lt;strong&gt;model size, training data, and compute power&lt;/strong&gt;, generative models tend to improve in a predictable way.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*dvU8hFuvO6NUGWwF89bEhg.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;However, until recently, research on scaling has focused &lt;strong&gt;almost exclusively on training&lt;/strong&gt;. The assumption has been:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Train a bigger model on more data → get better outputs.&lt;/li&gt;
+  &lt;li&gt;Once trained, the model is &lt;strong&gt;fixed&lt;/strong&gt; — inference simply runs it as-is.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But what if we could make models &lt;strong&gt;smarter at inference time&lt;/strong&gt;, allowing them to refine their outputs dynamically?&lt;/p&gt;
+
+&lt;h3 id=&quot;scaling-inllms&quot;&gt;Scaling in LLMs&lt;/h3&gt;
+
+&lt;p&gt;In the world of &lt;strong&gt;Large Language Models (LLMs)&lt;/strong&gt;, researchers have recently found that performance can improve &lt;strong&gt;even after training is complete&lt;/strong&gt;, simply by &lt;strong&gt;allocating more compute at inference time&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is done through:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Search-based decoding&lt;/strong&gt; (e.g., “best-of-n” sampling, tree-of-thoughts, reranking).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Iterative refinement&lt;/strong&gt; (models generating multiple responses and selecting the best).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Verifier-guided outputs&lt;/strong&gt; (using reward models like RLHF to optimize responses).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These techniques allow LLMs to generate &lt;strong&gt;higher-quality, more accurate, and more contextually relevant&lt;/strong&gt; outputs without retraining.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rVRrc9bx_YNxwm3p6QJdpQ.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;There are numerous great ressources on scaling laws for LLM, I recommend you check these ones out:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cameronrwolfe.substack.com/p/llm-scaling-laws&quot; title=&quot;https://cameronrwolfe.substack.com/p/llm-scaling-laws&quot;&gt;&lt;strong&gt;Scaling Laws for LLMs: From GPT-3 to o3&lt;/strong&gt;
+_Understanding the current state of LLM scaling and the future of AI research…_cameronrwolfe.substack.com&lt;/a&gt;&lt;a href=&quot;https://cameronrwolfe.substack.com/p/llm-scaling-laws&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lifearchitect.ai/chinchilla/&quot; title=&quot;https://lifearchitect.ai/chinchilla/&quot;&gt;&lt;strong&gt;Chinchilla data-optimal scaling laws: In plain English&lt;/strong&gt;
+_Important: This page summarizes data scaling only, using tokens to parameters as a ratio, and as derived from large…_lifearchitect.ai&lt;/a&gt;&lt;a href=&quot;https://lifearchitect.ai/chinchilla/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.interconnects.ai/p/openai-strawberry-and-inference-scaling-laws&quot; title=&quot;https://www.interconnects.ai/p/openai-strawberry-and-inference-scaling-laws&quot;&gt;&lt;strong&gt;OpenAI’s Strawberry and inference scaling laws&lt;/strong&gt;
+_OpenAI’s Strawberry, LM self-talk, inference scaling laws, and spending more on inference. Coming waves in LLMs._www.interconnects.ai&lt;/a&gt;&lt;a href=&quot;https://www.interconnects.ai/p/openai-strawberry-and-inference-scaling-laws&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-diffusion-models&quot;&gt;What about Diffusion Models?&lt;/h3&gt;
+
+&lt;p&gt;Diffusion models — used in &lt;strong&gt;AI-generated art, photorealistic synthesis, and video generation&lt;/strong&gt; — have a built-in way to allocate compute at inference:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Instead of producing an image in one step (like a GAN), they &lt;strong&gt;start from random noise&lt;/strong&gt; and progressively refine it over multiple steps.&lt;/li&gt;
+  &lt;li&gt;The number of &lt;strong&gt;denoising steps&lt;/strong&gt; (or &lt;strong&gt;NFEs, Number of Function Evaluations&lt;/strong&gt;) determines &lt;strong&gt;output quality vs. compute cost&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*cyZ4Ak47TauJ4pT5uC-ugw.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;If you need to better understand diffusion models and denoising, here are some great ressources:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.deeplearning.ai/courses/diffusion-models/&quot; title=&quot;https://learn.deeplearning.ai/courses/diffusion-models/&quot;&gt;&lt;strong&gt;How Diffusion Models Work - DeepLearning.AI&lt;/strong&gt;
+_Learn and build diffusion models from the ground up, understanding each step. Learn about diffusion models in use today…_learn.deeplearning.ai&lt;/a&gt;&lt;a href=&quot;https://learn.deeplearning.ai/courses/diffusion-models/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://lilianweng.github.io/posts/2021-07-11-diffusion-models/&quot; title=&quot;https://lilianweng.github.io/posts/2021-07-11-diffusion-models/&quot;&gt;&lt;strong&gt;What are Diffusion Models?&lt;/strong&gt;
+_Updated on 2021-09-19: Highly recommend this blog post on score-based generative modeling by Yang Song (author of…_lilianweng.github.io&lt;/a&gt;&lt;a href=&quot;https://lilianweng.github.io/posts/2021-07-11-diffusion-models/&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;==&amp;gt; But here’s the problem&lt;/strong&gt;: Simply increasing denoising steps &lt;strong&gt;only helps up to a point&lt;/strong&gt;. Beyond a certain threshold, &lt;strong&gt;performance gains flatten out&lt;/strong&gt; — more steps &lt;strong&gt;don’t&lt;/strong&gt; improve quality much.&lt;/p&gt;
+
+&lt;p&gt;Maq et al. (2025) propose a new way forward:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;Instead of blindly adding denoising steps, we should actively search for better noise to start with.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This idea reframes inference-time scaling &lt;strong&gt;not as a matter of iteration count&lt;/strong&gt;, but as a &lt;strong&gt;search problem&lt;/strong&gt; — one that could make diffusion models &lt;strong&gt;far more powerful and efficient&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-limits-of-traditional-inference-scaling&quot;&gt;The limits of traditional inference scaling&lt;/h3&gt;
+
+&lt;p&gt;Scaling inference-time compute in generative models isn’t new, but its limitations have been stark. Most diffusion models operate under a straightforward assumption: &lt;strong&gt;more denoising steps = better samples&lt;/strong&gt;. While this holds in early iterations, studies have shown that performance gains flatten quickly beyond a certain number of denoising function evaluations (NFEs).&lt;/p&gt;
+
+&lt;p&gt;Maq et al. (2025) provide empirical evidence of this plateau, reinforcing what past work (e.g., Karras et al., 2022) has hinted at — more iterations introduce &lt;strong&gt;approximation errors&lt;/strong&gt; and &lt;strong&gt;discretization artifacts&lt;/strong&gt;, limiting the benefits of brute-force step scaling. This raises a critical question:&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*7Qb7lwpubNreFoceYT7ZMw.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;If adding more denoising steps isn’t the answer, where should we invest our compute budget instead?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Their proposed solution: &lt;strong&gt;optimize the starting noise itself&lt;/strong&gt;. Not all noise samples are equal — some lead to better generations than others. By reframing sample generation as a &lt;strong&gt;search over noise candidates&lt;/strong&gt;, the model can actively seek higher-quality results rather than blindly committing to a single path.&lt;/p&gt;
+
+&lt;p&gt;This shift from &lt;strong&gt;passive denoising to active search&lt;/strong&gt; echoes trends in LLMs, where inference-time optimizations (e.g., re-ranking outputs, iterative reasoning) have led to significant performance boosts without retraining. Could similar techniques unlock new frontiers for diffusion models?&lt;/p&gt;
+
+&lt;h3 id=&quot;the-searchparadigm&quot;&gt;The Search Paradigm&lt;/h3&gt;
+
+&lt;p&gt;At the heart of Maq et al.’s framework is a &lt;strong&gt;two-axis search strategy&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Verifier Functions&lt;/strong&gt;: Instead of passively denoising noise into images, a &lt;strong&gt;verifier&lt;/strong&gt; scores generated samples, helping guide search toward higher-quality outputs. The paper explores three types:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Oracle Verifiers&lt;/strong&gt; (ideal but impractical, using ground-truth FID or IS scores)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Supervised Verifiers&lt;/strong&gt; (pretrained classifiers like CLIP)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Self-Supervised Verifiers&lt;/strong&gt; (consistency-based scoring without external labels)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Bx9m3OO-j0crc_hCK4TD-A.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Search Algorithms&lt;/strong&gt;: Instead of iterating endlessly on a single noise sample, the model actively &lt;strong&gt;evaluates multiple noise candidates&lt;/strong&gt; and refines the search:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Random Search:&lt;/strong&gt; Generate multiple samples and pick the best (best-of-n selection).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-Order Search:&lt;/strong&gt; Iteratively refine noise candidates using verifier feedback.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Search Over Paths:&lt;/strong&gt; Adjust noise at intermediate steps, treating generation as a &lt;strong&gt;trajectory exploration&lt;/strong&gt; rather than a fixed path.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*iTmMX0SLA0u883oPQmGDjg.png&quot; alt=&quot;&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Inference-time scaling is no longer just about running a fixed pipeline more times — it’s about making smarter choices along the way.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;my-thoughts&quot;&gt;My thoughts&lt;/h3&gt;
+
+&lt;p&gt;Maq et al.’s approach is an exciting step forward, but it also raises &lt;strong&gt;critical challenges&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;h4 id=&quot;bias-who-decides-whats-better&quot;&gt;Bias: Who decides what’s “better”?&lt;/h4&gt;
+
+&lt;p&gt;While the paper demonstrates impressive gains, the choice of verifier is &lt;strong&gt;non-trivial&lt;/strong&gt;. Verifier models (like CLIP or ImageReward) come with &lt;strong&gt;built-in biases&lt;/strong&gt; — favoring certain aesthetics, object distributions, or stylistic preferences. This leads to potential &lt;strong&gt;mode collapse&lt;/strong&gt;, where optimizing too aggressively for a specific verifier reduces overall diversity.&lt;/p&gt;
+
+&lt;p&gt;A striking analogy exists in LLMs: when models are fine-tuned on &lt;strong&gt;reward functions like RLHF&lt;/strong&gt;, they can start &lt;strong&gt;overfitting to human preferences&lt;/strong&gt; rather than maintaining broad generalization. This is a serious concern for diffusion models — will optimizing noise for a verifier ultimately &lt;strong&gt;reduce creative variation&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;h4 id=&quot;compute-cost-is-this-scalable&quot;&gt;Compute cost: Is this scalable?&lt;/h4&gt;
+
+&lt;p&gt;While this approach sidesteps retraining, it &lt;strong&gt;dramatically increases inference costs&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Random search scales linearly&lt;/strong&gt; with the number of candidate samples.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Zero-order search requires iterative evaluations&lt;/strong&gt;, compounding compute needs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Path-based search introduces additional denoising passes.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For &lt;strong&gt;real-time applications&lt;/strong&gt; like interactive art generation, these search-based methods might be impractical. Future research should explore ways to &lt;strong&gt;compress the search process&lt;/strong&gt; or &lt;strong&gt;pretrain lightweight noise-ranking networks&lt;/strong&gt; to reduce computational overhead.&lt;/p&gt;
+
+&lt;h4 id=&quot;does-search-capture-complexprompts&quot;&gt;Does search capture complex prompts?&lt;/h4&gt;
+
+&lt;p&gt;A major limitation of diffusion models today is their struggle with &lt;strong&gt;compositional prompts&lt;/strong&gt; (e.g., “a cat wearing sunglasses sitting on a skateboard in front of the Eiffel Tower”). The search-based approach optimizes local noise variations — but does it help with complex scene composition?&lt;/p&gt;
+
+&lt;p&gt;If not, we might need &lt;strong&gt;hierarchical search strategies&lt;/strong&gt; — coarse-to-fine optimizations that first establish global structure before refining details.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-future-of-adaptive-generation&quot;&gt;The future of adaptive generation&lt;/h3&gt;
+
+&lt;p&gt;Maq et al. (2025) mark an important shift in how we think about &lt;strong&gt;inference-time resource allocation&lt;/strong&gt;. Their work suggests that diffusion models can dynamically improve themselves at generation time, similar to how LLMs refine responses through &lt;strong&gt;iterative reasoning and ranking&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This brings us to a bigger question:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Could generative models move beyond static sampling pipelines into&lt;/em&gt; &lt;strong&gt;&lt;em&gt;adaptive generation loops&lt;/em&gt;&lt;/strong&gt;&lt;em&gt;?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Imagine diffusion models that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dynamically adjust noise injection based on &lt;strong&gt;scene complexity&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Leverage multi-step verifier feedback to iteratively &lt;strong&gt;improve object coherence&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Incorporate &lt;strong&gt;user-guided search&lt;/strong&gt;, allowing interactive control over generation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Rather than a fixed “noise-to-image” pipeline, we might be moving toward an era where &lt;strong&gt;generative models actively explore multiple solutions before committing to a final output&lt;/strong&gt; — more akin to &lt;strong&gt;an artist refining a painting rather than a one-shot rendering process&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h3&gt;
+
+&lt;p&gt;The insights from Maq et al. (2025) suggest that inference-time compute can be used &lt;strong&gt;far more intelligently&lt;/strong&gt; than previously assumed. By treating sample generation as &lt;strong&gt;an optimization problem over noise&lt;/strong&gt;, rather than just a denoising pipeline, they demonstrate a scalable approach to boosting performance without retraining.&lt;/p&gt;
+
+&lt;p&gt;However, open questions remain — how do we mitigate verifier bias? Can we make this efficient enough for real-time applications? And most importantly, &lt;strong&gt;how do we ensure that search strategies don’t sacrifice creativity for optimization?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Regardless, one thing is clear: &lt;strong&gt;inference-time search marks the beginning of a new, more dynamic era for diffusion models.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; in March 2025.&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&quot;https://medium.com/data-science-collective/beyond-denoising-rethinking-inference-time-scaling-in-diffusion-models-55603337e44a&quot;&gt;View
+      the original&lt;/a&gt;&lt;/p&gt;
+&lt;/footer&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
+
+&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 05 Mar 2025 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/thoughts/inference-time-scaling-diffusion</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/inference-time-scaling-diffusion</guid>
+        
+        
+        <category>thoughts</category>
+        
+      </item>
+    
+      <item>
+        <title>GenAI Workshop - Insights on implementing RAG in production environments</title>
         <description>&lt;head&gt;
   &lt;meta name=&quot;description&quot; content=&quot;An overview of the GenAI course and workshop I attended, focusing on the challenges and strategies for implementing RAG in production environments, optimizing performance, and evaluating the results.&quot; /&gt;
 &lt;/head&gt;
@@ -221,10 +788,28 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
 
 </description>
-        <pubDate>Fri, 27 Sep 2024 09:49:10 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/2024-09-22-Implementing-rag-systems.html</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/2024-09-22-Implementing-rag-systems.html</guid>
+        <pubDate>Sun, 22 Sep 2024 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/works/genai-workshop-implementation</link>
+        <guid isPermaLink="true">http://localhost:4000/works/genai-workshop-implementation</guid>
         
+        <category>GenerativeAI</category>
+        
+        <category>RAG</category>
+        
+        <category>DeepLearning</category>
+        
+        <category>AI</category>
+        
+        <category>LLM</category>
+        
+        <category>AITraining</category>
+        
+        <category>Embeddings</category>
+        
+        <category>featured</category>
+        
+        
+        <category>works</category>
         
       </item>
     
@@ -236,9 +821,10 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 &lt;p&gt;&lt;strong&gt;TDLR:&lt;/strong&gt; see demo of dilated diffusion &lt;a href=&quot;https://colab.research.google.com/drive/1gHCjibaI91a50bXjYbemUE7khRdZmyle?usp=sharing&quot;&gt;in a collab&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*ZPCdjBebme6X_8-0.png&quot; alt=&quot;Graphical representation of dilated sampling in stable diffusion Unicorn diffusion art&quot; /&gt;
-&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*ZPCdjBebme6X_8-0.png&quot; alt=&quot;Graphical representation of dilated sampling in stable diffusion Unicorn diffusion art&quot; /&gt;
+&amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;At the #CVPR24 best paper review, I came across an exciting stable diffusion paper.&lt;/p&gt;
 
@@ -389,8 +975,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Wed, 19 Jun 2024 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/dilated-difusion-concept-from-demofusion/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/dilated-difusion-concept-from-demofusion/</guid>
+        <link>http://localhost:4000/thoughts/dilated-difusion-concept-from-demofusion/</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/dilated-difusion-concept-from-demofusion/</guid>
         
         
         <category>thoughts</category>
@@ -498,8 +1084,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Thu, 25 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -600,8 +1186,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Sat, 13 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -1020,8 +1606,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Sat, 03 Feb 2024 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
+        <link>http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
         
         
         <category>thoughts</category>
@@ -1300,8 +1886,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Wed, 03 Jan 2024 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</guid>
+        <link>http://localhost:4000/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</guid>
         
         
         <category>thoughts</category>
@@ -1558,8 +2144,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Tue, 19 Dec 2023 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
+        <link>http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
+        <guid isPermaLink="true">http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
         
         
         <category>thoughts</category>
@@ -1739,8 +2325,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</guid>
+        <link>http://localhost:4000/works/deep-dive-in-paddleocr-inference</link>
+        <guid isPermaLink="true">http://localhost:4000/works/deep-dive-in-paddleocr-inference</guid>
         
         <category>data science</category>
         
@@ -1751,197 +2337,6 @@ This in various domains such as language, genomics, audio modeling. It efficient
         <category>computer vision</category>
         
         <category>machine learning</category>
-        
-        <category>featured</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Text in Image 2.0 - improving OCR service with PaddleOCR</title>
-        <description>&lt;head&gt;
-  &lt;meta name=&quot;description&quot; content=&quot;Discover how the Cognition team at Adevinta enhanced the Text in Image service using PaddleOCR, leading to significant improvements in OCR accuracy and performance.&quot; /&gt;
-&lt;/head&gt;
-
-&lt;h2 id=&quot;understanding-ocr-what-is-optical-character-recognition&quot;&gt;Understanding OCR: What is Optical Character Recognition?&lt;/h2&gt;
-
-&lt;p&gt;Optical Character Recognition (OCR) is a popular topic for both industry and personal use. In this article, we share how we tested and used an existing open source library, PaddleOCR, to extract text from an image. This read is for anyone who would like to find out more about OCR, the needs of our customers at &lt;a href=&quot;https://www.adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, and the challenges we face in attending to them. You’ll find out how we upgraded an existing service, benchmarked different solutions and delivered the selected one to satisfy our customers.&lt;/p&gt;
-
-&lt;h2 id=&quot;key-ocr-applications-how-ocr-transforms-business-and-daily-operations&quot;&gt;Key OCR applications: How OCR transforms business and daily operations&lt;/h2&gt;
-
-&lt;p&gt;OCR stands for “Optical Character Recognition” and is a technology that allows computers to recognise and extract text from images and scanned documents. OCR software uses optical recognition algorithms to interpret the text in images and convert it into machine-readable text that can be edited, searched and stored electronically.&lt;/p&gt;
-
-&lt;p&gt;There are numerous use-cases where OCR can be used:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Digitising paper documents&lt;/strong&gt;: to convert scanned images of text into digital text. This is useful for organisations that want to reduce their reliance on paper and improve their document management processes.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extracting data from images&lt;/strong&gt;: eg from documents such as invoices, receipts and forms. This can be useful for automating data entry tasks and reducing the need for manual data entry.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Translating documents&lt;/strong&gt;: to extract text from images of documents written in foreign languages and translate them into a different language.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Archiving&lt;/strong&gt;: to create digital copies of important documents that need to be preserved for long periods of time.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Improving accessibility&lt;/strong&gt;: to make scanned documents more accessible to people with disabilities by converting the text into a format that can be read by assistive technologies such as screen readers.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Searching documents&lt;/strong&gt;: to make scanned documents searchable, allowing users to easily find specific information within a large collection of documents.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-adevinta-context-why-ocr-matters-in-global-marketplace&quot;&gt;The Adevinta context: Why OCR matters in global marketplace&lt;/h2&gt;
-
-&lt;p&gt;Within &lt;a href=&quot;https://www.adevinta.com/&quot;&gt;Adevinta&lt;/a&gt;, a global classifieds specialist with market-leading positions in key European markets, there is space for all of the cited use cases. However, for this article, we focus specifically on “extracting data from images.”&lt;/p&gt;
-
-&lt;p&gt;Applying deep learning to images is the main expertise of our team, Cognition. We are Data Scientists and Machine Learning (ML) Engineers that work together to develop image-based ML solutions at scale, helping Adevinta’s marketplaces build better products and experiences for their customers. Adevinta’s mission is to connect buyers and sellers, enabling people to find jobs, homes, cars, consumer goods and more. By making an accessible ML API with features tailored to our different marketplaces’ needs, Adevinta’s marketplaces are empowered with ML tools at a reasonable cost.&lt;/p&gt;
-
-&lt;h2 id=&quot;text-extraction-in-images-why-its-crucial-for-adevintas-services&quot;&gt;Text Extraction in Images: Why It’s Crucial for Adevinta’s Services&lt;/h2&gt;
-&lt;p&gt;Text extraction from images enables us to:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Detect unwanted content in ads (e.g., insults, hidden messages).&lt;/li&gt;
-  &lt;li&gt;Better understand image content to improve search capabilities.&lt;/li&gt;
-  &lt;li&gt;Support more efficient searches using visible text on items.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;With over 100 million requests per month and growing, our existing Text in Image service was ripe for enhancement. We aimed to improve accuracy and performance, leading to the development of Text in Image 2.0.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-we-chose-paddleocr-benchmarking-the-best-ocr-solution&quot;&gt;Why we chose PaddleOCR: Benchmarking the best OCR solution&lt;/h2&gt;
-
-&lt;p&gt;The existing service was based on &lt;a href=&quot;https://arxiv.org/abs/1801.01671&quot;&gt;Fast Oriented Text Spotting with a Unified Network (Yan et al., 2018)&lt;/a&gt;. Despite being state of the art in 2018, the algorithm achieved 0.4 accuracy on our internal benchmark of 200 marketplace images. Nevertheless, accuracy was not the sole criteria of choice for the Text in Image 2.0, so we compiled a list of edge cases where our partner marketplaces require high-performing algorithms.&lt;/p&gt;
-
-&lt;p&gt;After reviewing different open source OCR frameworks (including &lt;a href=&quot;https://github.com/open-mmlab/mmocr&quot;&gt;MMOCR&lt;/a&gt;, &lt;a href=&quot;https://github.com/JaidedAI/EasyOCR&quot;&gt;EASY OCR&lt;/a&gt;, &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; and &lt;a href=&quot;https://thehive.ai/apis/ocr&quot;&gt;HiveOCR&lt;/a&gt;) and different combinations of proposed models on our internal benchmark and on the edge cases, a indisputable winner was PaddleOCR with an average accuracy of 0.8 and an acceptable performance on our edge cases. This result competes with the paid &lt;a href=&quot;https://cloud.google.com/vision/docs/ocr&quot;&gt;Google Cloud Vision OCR API&lt;/a&gt; on the best accuracy we measured.&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*UUEf-TKs1Lfn7_wx&quot; alt=&quot;Graph showing benchmark results for various OCR frameworks&quot; /&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;how-we-validated-paddleocr-building-a-comprehensive-benchmark&quot;&gt;How We Validated PaddleOCR: Building a Comprehensive Benchmark&lt;/h2&gt;
-
-&lt;p&gt;In order to construct our independent benchmark and validate the choice of PaddleOCR at scale, we built a “Text in Image generator” that uses open source images from &lt;a href=&quot;https://unsplash.com/license&quot;&gt;Unsplash&lt;/a&gt; and &lt;a href=&quot;https://pikwizard.com/free-license&quot;&gt;Pikwizard&lt;/a&gt; and adds randomly generated text on top of them. The created tool is highly customisable in order to simulate a wide variety of cases that combine factors such as font type, rotation, text length, background type, image resolution etc. Using a simulated benchmark of 20k images with a distribution of cases matching business needs, we obtained an improvement factor of x1.4.&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*sWpBlrJtdxsRlqj4&quot; alt=&quot;Sample of Text in Image generator output showing simulated text scenarios&quot; /&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;challenges-with-paddleocr-identifying-and-mitigating-issues&quot;&gt;Challenges with PaddleOCR: Identifying and mitigating issues&lt;/h2&gt;
-
-&lt;p&gt;We identified several cases where PaddleOCR fails. This is mostly when there are different angles of rotated text, some alternative fonts and differing colour/contrast. We also observed that in some cases, the correct words are detected but the spaces between them are not placed correctly. This may or may not be an issue depending on the way the extracted text is used further.&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;
-&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*3CO2dWUYPpVPPBZJDpx4EA.png&quot; alt=&quot;Example of OCR results with incorrectly spaced text&quot; /&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;deep-dive-how-we-optimized-paddleocr-for-production&quot;&gt;Deep Dive: How We Optimized PaddleOCR for Production&lt;/h2&gt;
-
-&lt;p&gt;In order to evaluate the potential for improvement and mitigation of these errors, in addition to defining the serving strategy, we had to deep dive into the PaddleOCR framework.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR&quot;&gt;PaddleOCR&lt;/a&gt; builds on &lt;a href=&quot;https://github.com/PaddlePaddle/Paddle&quot;&gt;PaddlePaddle.&lt;/a&gt; Our team had no previous experience with this and it’s less popular in our community than other frameworks such as Tensorflow, Keras or Pytorch.&lt;/p&gt;
-
-&lt;p&gt;From a technical point of view, PaddleOCR is composed of three distinct models:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Detection&lt;/strong&gt;, for detecting a bounding box where possible text is&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Classification&lt;/strong&gt;, rotating the text 180° if necessary&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Recognition&lt;/strong&gt;, translating the detected image frame to raw text&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pre-trained models in different languages are &lt;a href=&quot;https://github.com/PaddlePaddle/PaddleOCR/blob/18ddb6d5f9bdc2c1b0aa7f6e399ec0f76119dc87/doc/doc_en/models_list_en.md&quot;&gt;provided by authors&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;refactoring-paddleocr-creating-a-clean-production-ready-codebase&quot;&gt;Refactoring PaddleOCR: Creating a Clean, Production-Ready Codebase&lt;/h3&gt;
-
-&lt;p&gt;Whilst exploring the code base of PaddleOCR for inference, we were faced with convoluted code, which was difficult to read and understand. As we wanted to use the PaddleOCR solution in production, we decided to refactor the code, keeping in mind to preserve the performance and the speed of the original code. You can read about the details of that process and the PaddleOCR model in the complementary article of this series. After refactoring the code, we had created a clean and readable code base.&lt;/p&gt;
-
-&lt;p&gt;We believe our code version is easier to work with, given the use case of text extraction from images, and are working on making the code available open source. The different steps and pre-processing and post-processing parts are clearly separated, so they can be called independently, which should make further community extensions easier to add. It also makes putting into production easier, as the simplified, modular code combines well with the structure of inference.py for serving SageMaker endpoints. Our proposed code version does not alter predictions (compared to the 2.6 release) for images.&lt;/p&gt;
-
-&lt;h2 id=&quot;deploying-text-in-image-20-achieving-superior-performance-with-paddleocr&quot;&gt;Deploying Text in Image 2.0: Achieving Superior Performance with PaddleOCR&lt;/h2&gt;
-
-&lt;p&gt;Using the refactored code, we made the model available as an API. To help our customers’ transition, we maintained the same API contract used in the previous service.&lt;/p&gt;
-
-&lt;p&gt;Serving PaddleOCR can be done in multiple ways. The straightforward approach is calling its own Python API (provided by the &lt;a href=&quot;https://pypi.org/project/paddleocr/&quot;&gt;PaddleOCR&lt;/a&gt; package) from within a well-known framework. We selected Multi Model Server, Flask and FastAPI to conduct our benchmark. All our proposed solutions are served by AWS SageMaker Endpoint, building our own container (BYOC) from the same Docker base image.&lt;/p&gt;
-
-&lt;p&gt;MultiModel Server uses its own JAVA ModelServer, while for Flask and FastAPI, we use nginx+gunicorn (combined with &lt;a href=&quot;https://fastapi.tiangolo.com/deployment/server-workers/&quot;&gt;uvicorn workers for the ASGI FastAPI&lt;/a&gt;). The frontend for our customers is served by an API Gateway, which is out of the scope of this article.&lt;/p&gt;
-
-&lt;h2 id=&quot;benchmarking-deployment-options-multi-model-server-flask-and-fastapi&quot;&gt;Benchmarking Deployment Options: Multi-Model Server, Flask, and FastAPI&lt;/h2&gt;
-
-&lt;p&gt;For the performance testing, we recreated a number of requests with a controlled amount of text and different image sizes, mimicking the expected distribution from our customers. We used &lt;a href=&quot;https://locust.io/&quot;&gt;Locust&lt;/a&gt; as the testing framework, and stimulated heavy bursts in the &lt;a href=&quot;https://docs.locust.io/en/stable/writing-a-locustfile.html#wait-time-attribute&quot;&gt;waiting time&lt;/a&gt; as a stress test.&lt;/p&gt;
-
-&lt;p&gt;With the data gathered from the performance tests, we were able to define our infrastructure (type of instance and autoscaling policy) in relation to the Service Level Agreement (SLA) terms, while balancing the risk of a sudden shift from the observed distribution (the service is sensitive to the amount of text per image).&lt;/p&gt;
-
-&lt;p&gt;Currently, we deal with 330 million requests per month, and we have estimated that next year, more Adevinta marketplaces will onboard a Text in Image service, resulting in a 400% growth.&lt;/p&gt;
-
-&lt;h2 id=&quot;results-and-impact-transforming-text-in-image-service-with-paddleocr&quot;&gt;Results and impact: Transforming Text in Image service with PaddleOCR&lt;/h2&gt;
-
-&lt;p&gt;The new API resulted in an improved latency 7.5x compared to the FOTS-based solution, while providing a 7% cost reduction in serving. Also, since the new API being 12x cheaper than a typical external solution, such as GCP OCR, we received positive feedback from our users about both the speed and the accuracy of the Text in Image 2.0.&lt;/p&gt;
-
-&lt;h2 id=&quot;key-takeaways-enhancing-ocr-with-paddleocr&quot;&gt;Key Takeaways: Enhancing OCR with PaddleOCR&lt;/h2&gt;
-
-&lt;p&gt;As a computer vision team working for an international company serving millions of people every day, we aimed to improve our OCR API for text extraction from classified ads. After testing numerous frameworks, we built an image simulator in order to find the algorithm matching the needs of our users. The selected framework, PaddleOCR, went through our internal review and revamp. (There were challenges along the way and you can read more about them in &lt;a href=&quot;/works/deep-dive-in-paddleocr-inference&quot;&gt;&lt;strong&gt;Article 2: Deep Dive in PaddleOCR inference&lt;/strong&gt;&lt;/a&gt;). Now, we’re pleased to say we’re providing a more accurate, faster and cheaper API using the PaddleOCR framework.&lt;/p&gt;
-
-&lt;footer&gt;
-  &lt;p&gt;Exported from &lt;a href=&quot;https://medium.com&quot;&gt;Medium&lt;/a&gt; on June 06,
-    2023.&lt;/p&gt;
-  &lt;p&gt;&lt;a href=&quot;https://medium.com/adevinta-tech-blog/text-in-image-2-0-improving-ocr-service-with-paddleocr-61614c886f93&quot;&gt;This article was orignally co-authored by Cognition team members, special credits to Joaquin Cabezas&lt;/a&gt;&lt;/p&gt;
-&lt;/footer&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/text-in-image-2-0-improving-ocr-service-with-paddleocr</guid>
-        
-        <category>data science</category>
-        
-        <category>OCR</category>
-        
-        <category>deep learning</category>
-        
-        <category>computer vision</category>
-        
-        <category>machine learning</category>
-        
-        <category>API</category>
-        
-        
-        <category>works</category>
-        
-      </item>
-    
-      <item>
-        <title>Named Entity Recognition Tool by Cour de Cassation</title>
-        <description>&lt;!DOCTYPE HTML&gt;
-&lt;html lang=&quot;en-US&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta http-equiv=&quot;refresh&quot; content=&quot;0; url=https://github.com/Cour-de-cassation/moteurNER&quot;&gt;
-        &lt;meta name=&quot;description&quot; content=&quot;Redirecting to the Named Entity Recognition (NER) tool repository by Cour de Cassation. It is a page about building deep learning NLP application for French justice&quot;&gt;
-        &lt;script type=&quot;text/javascript&quot;&gt;
-            window.location.href = &quot;https://github.com/Cour-de-cassation/moteurNER&quot;
-        &lt;/script&gt;
-        &lt;title&gt;Redirecting to Named Entity Recognition Tool by Cour de Cassation, building NER, NLP deep learning applications for French Supreme Court.&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;p&gt;You are being redirected to the Named Entity Recognition tool repository by Cour de Cassation. If you are not redirected automatically, &lt;a rel=&quot;canonical&quot; href=&apos;https://github.com/Cour-de-cassation/moteurNER&apos;&gt;click here to proceed to the repository.&lt;/a&gt;&lt;/p&gt;
-    &lt;/body&gt;
-
-      &lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584ec4ce89deed84&quot;&gt;&lt;/script&gt;
-&lt;!-- Go to www.addthis.com/dashboard to customize your tools --&gt; &lt;div class=&quot;addthis_inline_share_toolbox&quot;&gt;&lt;/div&gt;
-
-&lt;/html&gt;</description>
-        <pubDate>Wed, 01 Sep 2021 00:00:00 +0200</pubDate>
-        <link>http://urszulaczerwinska.github.io/works/ner_cc</link>
-        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/ner_cc</guid>
-        
-        <category>Machine Learning</category>
-        
-        <category>Python</category>
-        
-        <category>Deep Learning</category>
-        
-        <category>NER</category>
-        
-        <category>NLP</category>
-        
-        <category>Justice</category>
-        
-        <category>Flair</category>
         
         <category>featured</category>
         
