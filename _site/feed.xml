@@ -3,23 +3,23 @@
   <channel>
     <title>Urszula Czerwinska | Python, TensorFlow Expert | Data Scientist &amp; Deep Learning Engineer</title>
     <description>Explore the journey of Urszula Czerwinska from PhD to Data Science, featuring insights on Data Science projects, Machine Learning, and Deep Learning. Discover how to become a Data Scientist or Machine Learning Engineer.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 May 2025 17:43:11 +0200</pubDate>
-    <lastBuildDate>Wed, 14 May 2025 17:43:11 +0200</lastBuildDate>
+    <link>http://urszulaczerwinska.github.io/</link>
+    <atom:link href="http://urszulaczerwinska.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 May 2025 14:55:35 +0200</pubDate>
+    <lastBuildDate>Thu, 15 May 2025 14:55:35 +0200</lastBuildDate>
     <generator>Jekyll v4.3.3</generator>
     
       <item>
         <title>How to choose the best image embeddings for your e-commerce business ?</title>
         <description>&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*eSwizQN9nC4jaMvw&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*eSwizQN9nC4jaMvw&quot; alt=&quot;Discover how to select the right image embeddings strategy — pre-trained, fine-tuned, or top-tuned — to boost visual search, product tagging, and recommendations in your e-commerce platform.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Imagine uploading a picture of a designer lamp and instantly finding similar items on &lt;em&gt;Leboncoin&lt;/em&gt;. You don’t need imagine any longer, you can go to &lt;em&gt;Leboncoin&lt;/em&gt; app and try it out by youself ! &lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*O_hLOiIUpaZTmRxGTUluuQ.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*O_hLOiIUpaZTmRxGTUluuQ.gif&quot; alt=&quot;Designer lamp used in visual search example on Leboncoin&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This magic happens because AI converts images into &lt;strong&gt;embeddings&lt;/strong&gt; — compact numerical representations that capture the essential features of an image. These embeddings can be used for:&lt;/p&gt;
 
@@ -44,7 +44,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*YnrSr_AmE29Eg7jWLYD5-A.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*YnrSr_AmE29Eg7jWLYD5-A.png&quot; alt=&quot;Comparison of supervised, self-supervised, and contrastive learning models&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -82,7 +82,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*0lI1KyCIzWdHSfbrehN9AA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*0lI1KyCIzWdHSfbrehN9AA.png&quot; alt=&quot;Benchmark pipeline architecture for evaluating AI models on e-commerce tasks&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -92,7 +92,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*lJg5nMhonkm4tdkWVz47QQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*lJg5nMhonkm4tdkWVz47QQ.png&quot; alt=&quot;Product category distribution across the six real-world e-commerce datasets used&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -154,12 +154,12 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*qbKsOd8pSZsMzj8qmm2P6Q.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*qbKsOd8pSZsMzj8qmm2P6Q.png&quot; alt=&quot;Bar graph showing performance results across model types and tasks&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*erow3Ys7hQrfzkGZ&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/0*erow3Ys7hQrfzkGZ&quot; alt=&quot;Visual comparison of retrieval results using different AI models&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;1-different-model-types-excel-in-different-scenarios&quot;&gt;1. Different Model Types Excel in Different Scenarios&lt;/h4&gt;
@@ -195,7 +195,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*a4akPXoge0Vcgjhw6M2xoQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*a4akPXoge0Vcgjhw6M2xoQ.png&quot; alt=&quot;Detailed classification and retrieval performance of top models&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -209,7 +209,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*vYtN_0ZUPq2DGUU6KGGrxQ.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*vYtN_0ZUPq2DGUU6KGGrxQ.png&quot; alt=&quot;Chart showing retrieval performance of contrastive models across datasets&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -222,7 +222,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*Pq7CdxIxckhlUexbRGOvjw.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1200/1*Pq7CdxIxckhlUexbRGOvjw.png&quot; alt=&quot;Performance comparison between fine-tuning and top-tuning strategies&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -235,7 +235,7 @@
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JnxLfvfeZjsV35Zauq6IgA.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*JnxLfvfeZjsV35Zauq6IgA.png&quot; alt=&quot;SSL model performance improvement with top-tuning across datasets&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
@@ -329,8 +329,8 @@ Fully fine-tuned models perform the best but require &lt;strong&gt;significant c
 
 </description>
         <pubDate>Sun, 13 Apr 2025 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/foundation-models-image-embeddings</link>
-        <guid isPermaLink="true">http://localhost:4000/works/foundation-models-image-embeddings</guid>
+        <link>http://urszulaczerwinska.github.io/works/foundation-models-image-embeddings</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/foundation-models-image-embeddings</guid>
         
         <category>FoundationModels</category>
         
@@ -340,7 +340,9 @@ Fully fine-tuned models perform the best but require &lt;strong&gt;significant c
         
         <category>AI</category>
         
-        <category>Embeddings</category>
+        <category>E-commerce</category>
+        
+        <category>ImageSearch</category>
         
         <category>featured</category>
         
@@ -353,7 +355,7 @@ Fully fine-tuned models perform the best but require &lt;strong&gt;significant c
         <title>Beyond denoising - rethinking inference-time scaling in diffusion models</title>
         <description>&lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*p3GtIq_UgFgPA7ObBMaITw.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*p3GtIq_UgFgPA7ObBMaITw.png&quot; alt=&quot;Illustration of scaling in generative AI showing increasing model complexity and inference steps&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;Generative AI is experiencing a paradigm shift. While early breakthroughs in diffusion models emphasized &lt;strong&gt;training-time scaling&lt;/strong&gt; — bigger models, more data, and longer training — recent research suggests that &lt;strong&gt;inference-time scaling&lt;/strong&gt; might be an equally powerful lever for improving generation quality. Unlike static architectures, diffusion models offer the unique ability to allocate compute dynamically during sampling, yet standard techniques (like increasing denoising steps) hit diminishing returns.&lt;/p&gt;
@@ -376,7 +378,7 @@ Fully fine-tuned models perform the best but require &lt;strong&gt;significant c
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*dvU8hFuvO6NUGWwF89bEhg.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*dvU8hFuvO6NUGWwF89bEhg.png&quot; alt=&quot;Overlayed prediction of Chinchilla, Gopher,GPT-3 and Megatron&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;However, until recently, research on scaling has focused &lt;strong&gt;almost exclusively on training&lt;/strong&gt;. The assumption has been:&lt;/p&gt;
@@ -404,7 +406,7 @@ Fully fine-tuned models perform the best but require &lt;strong&gt;significant c
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rVRrc9bx_YNxwm3p6QJdpQ.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*rVRrc9bx_YNxwm3p6QJdpQ.png&quot; alt=&quot;Inference scalling laws for Pythia&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;There are numerous great ressources on scaling laws for LLM, I recommend you check these ones out:&lt;/p&gt;
@@ -429,7 +431,7 @@ _OpenAI’s Strawberry, LM self-talk, inference scaling laws, and spending more 
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*cyZ4Ak47TauJ4pT5uC-ugw.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*cyZ4Ak47TauJ4pT5uC-ugw.png&quot; alt=&quot;Denoising process in diffusion models showing steps from random noise to realistic image&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;If you need to better understand diffusion models and denoising, here are some great ressources:&lt;/p&gt;
@@ -458,7 +460,7 @@ _Updated on 2021-09-19: Highly recommend this blog post on score-based generativ
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*7Qb7lwpubNreFoceYT7ZMw.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*7Qb7lwpubNreFoceYT7ZMw.png&quot; alt=&quot;Graph showing performance plateau in diffusion models beyond a threshold number of denoising steps&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -483,7 +485,7 @@ _Updated on 2021-09-19: Highly recommend this blog post on score-based generativ
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Bx9m3OO-j0crc_hCK4TD-A.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*Bx9m3OO-j0crc_hCK4TD-A.png&quot; alt=&quot;Diagram of verifier-guided sample scoring in noise search for diffusion models&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Search Algorithms&lt;/strong&gt;: Instead of iterating endlessly on a single noise sample, the model actively &lt;strong&gt;evaluates multiple noise candidates&lt;/strong&gt; and refines the search:&lt;/p&gt;
@@ -496,7 +498,7 @@ _Updated on 2021-09-19: Highly recommend this blog post on score-based generativ
 
 &lt;p&gt;&lt;span class=&quot;image fit&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*iTmMX0SLA0u883oPQmGDjg.png&quot; alt=&quot;&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/800/1*iTmMX0SLA0u883oPQmGDjg.png&quot; alt=&quot;Search algorithms for optimizing noise paths during inference in diffusion models&quot; /&gt;
 &amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Inference-time scaling is no longer just about running a fixed pipeline more times — it’s about making smarter choices along the way.&lt;/strong&gt;&lt;/p&gt;
@@ -568,8 +570,8 @@ _Updated on 2021-09-19: Highly recommend this blog post on score-based generativ
 
 </description>
         <pubDate>Wed, 05 Mar 2025 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/inference-time-scaling-diffusion</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/inference-time-scaling-diffusion</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/inference-time-scaling-diffusion</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/inference-time-scaling-diffusion</guid>
         
         
         <category>thoughts</category>
@@ -789,8 +791,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Sun, 22 Sep 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/works/genai-workshop-implementation</link>
-        <guid isPermaLink="true">http://localhost:4000/works/genai-workshop-implementation</guid>
+        <link>http://urszulaczerwinska.github.io/works/genai-workshop-implementation</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/genai-workshop-implementation</guid>
         
         <category>GenerativeAI</category>
         
@@ -975,8 +977,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Wed, 19 Jun 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/dilated-difusion-concept-from-demofusion/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/dilated-difusion-concept-from-demofusion/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/dilated-difusion-concept-from-demofusion/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/dilated-difusion-concept-from-demofusion/</guid>
         
         
         <category>thoughts</category>
@@ -1084,8 +1086,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Thu, 25 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-2-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -1186,8 +1188,8 @@ I am really grateful to our teachers, our colleagues and the company for giving 
 
 </description>
         <pubDate>Sat, 13 Apr 2024 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/embracing-the-unknown-1-2-applying-to-ai-startup-school-reflections</guid>
         
         
         <category>thoughts</category>
@@ -1606,8 +1608,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Sat, 03 Feb 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/the-mamba-effect-mamba-models-gaining-ground/</guid>
         
         
         <category>thoughts</category>
@@ -1886,8 +1888,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Wed, 03 Jan 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/from-pca-to-ssl-a-personal-odyssey-in-data-science</guid>
         
         
         <category>thoughts</category>
@@ -2144,8 +2146,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Tue, 19 Dec 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
-        <guid isPermaLink="true">http://localhost:4000/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
+        <link>http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/thoughts/foundation-models-a-new-vision-for-e-commerce</guid>
         
         
         <category>thoughts</category>
@@ -2325,8 +2327,8 @@ This in various domains such as language, genomics, audio modeling. It efficient
 
 </description>
         <pubDate>Mon, 06 Mar 2023 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/works/deep-dive-in-paddleocr-inference</link>
-        <guid isPermaLink="true">http://localhost:4000/works/deep-dive-in-paddleocr-inference</guid>
+        <link>http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</link>
+        <guid isPermaLink="true">http://urszulaczerwinska.github.io/works/deep-dive-in-paddleocr-inference</guid>
         
         <category>data science</category>
         
